@@ -5,10 +5,10 @@
 
 // MARK: Document Settings
 #set document(
-  title: details.assignment.title,
-  author: details.author.name,
-  description: details.assignment.subtitle,
-  keywords: (details.course.id, details.course.name),
+  title: data.assignment.title,
+  author: data.author.name,
+  description: data.assignment.subtitle,
+  keywords: (data.course.id, data.course.name),
   date: datetime.today(),
 )
 
@@ -17,11 +17,11 @@
 
 // MARK: The Template Details Page
 #show: university-assignment.with(
-  university: details.university,
-  course: details.course,
-  author: details.author,
-  instructor: details.instructor,
-  assignment: details.assignment,
+  university: data.university,
+  course: data.course,
+  author: data.author,
+  instructor: data.instructor,
+  assignment: data.assignment,
 )
 
 // MARK: Callouts Examples

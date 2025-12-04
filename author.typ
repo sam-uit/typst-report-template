@@ -3,7 +3,7 @@
 
 // YOUR CONTENT HERE
 
-#unheading[#details.author.name]
+#unheading[#data.author.name]
 
 Thành viên của nhóm và bảng nhiệm vụ.
 
@@ -72,7 +72,7 @@ Thành viên của nhóm và bảng nhiệm vụ.
       [],
     )],
   kind: table,
-  // caption: [#author.name],
+  caption: [#data.author.name],
   outlined: false, // Hides it from the List of Tables
   numbering: none, // Hides the "Table X:" prefix (optional)
 )

@@ -1,6 +1,6 @@
 // MARK: Report Details
 // Define the author and report details here
-#let details = (
+#let data = (
   university: (
     name: "Trường Đại Học TP. Hồ Chí Minh",
     college: "Trường Đại Học Công Nghệ Thông Tin",
