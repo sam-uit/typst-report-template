@@ -54,7 +54,7 @@
       dir: ltr,
       spacing: 0.5em,
       // text(weight: "bold", fill: color)[#icon],
-      text(weight: "bold", fill: color)[#title],
+      text(weight: "semibold", fill: color)[#title],
     )
     // #v(0.1em)
     #body
@@ -69,7 +69,7 @@
 #let co-warn(body, title: "Warning") = callout(body, title: title, color: orange, icon: "w")
 
 // Error/Critical
-#let co-err(body, title: "Error") = callout(body, title: title, color: red, icon: "e")
+#let co-erro(body, title: "Error") = callout(body, title: title, color: red, icon: "e")
 
 // Success/Important
 #let co-succ(body, title: "Success") = callout(body, title: title, color: green, icon: "s")
