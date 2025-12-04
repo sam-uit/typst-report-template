@@ -24,6 +24,7 @@ Thành viên của nhóm và bảng nhiệm vụ.
       }
     }
     // TODO: Span full width automatically
+    // TODO: import/use csv data instead of hardcoding
     #rounded-table-lined(
       columns: (10%, 20%, 40%, 30%),
       align: (right, right, left, left),
