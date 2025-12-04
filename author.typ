@@ -1,6 +1,9 @@
 #import "libs/report.typ": *
+#import "data.typ": *
 
 // YOUR CONTENT HERE
+
+#unheading[#details.author.name]
 
 Thành viên của nhóm và bảng nhiệm vụ.
 
