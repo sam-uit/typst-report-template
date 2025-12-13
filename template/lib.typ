@@ -92,7 +92,9 @@
       #text(font: code-font, size: 12pt)[
         #grid(
           columns: (auto, 1fr),
-          column-gutter: 1em,
+          inset: (x: 0.5em, y: 0em),
+          stroke: (x, y) => if x == 0 { (right: 1pt + luma(400)) } else { none },
+          align: (right, left),
           align(right, text(fill: gray)[
             #for i in range(1, it.text.split("\n").len() + 1) [
               #i \
