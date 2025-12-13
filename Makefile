@@ -16,7 +16,7 @@ all: main.pdf slides.pdf
 %.typ: %.md
 	pandoc -f markdown -t typst "$<" -o "$@"
 
-# main.pdf phụ thuộc vào main.typ VÀ tất cả các file typ trong chapters
+# main.pdf phụ thuộc vào main.typ VÀ tất cả các file typ trong content
 # Nếu file .md thay đổi -> make tự động tạo lại .typ -> sau đó tạo lại .pdf
 main.pdf: main.typ $(TYP_CHAPTERS)
 	typst compile main.typ
