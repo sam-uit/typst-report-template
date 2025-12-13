@@ -52,7 +52,7 @@
   set enum(indent: 1em)
   // set par()
 
-  // TODO: Line Number for custom code block styling
+  // Line Numbering implemented in show rule below
 
   // Rename "Figure" to "Mã nguồn" for code blocks
   show figure.where(kind: raw): set figure(supplement: "Mã nguồn")
@@ -79,7 +79,7 @@
     radius: 2pt,
   )
 
-  // Code block
+  // Code block with Line Numbering
   show raw.where(block: true): it => align(start)[
     #block(
       radius: 8pt,
@@ -89,8 +89,17 @@
       breakable: false,
       width: 100%,
     )[
-      #text(font: code-font)[
-        #it
+      #text(font: code-font, size: 12pt)[
+        #grid(
+          columns: (auto, 1fr),
+          column-gutter: 1em,
+          align(right, text(fill: gray)[
+            #for i in range(1, it.text.split("\n").len() + 1) [
+              #i \
+            ]
+          ]),
+          it,
+        )
       ]
     ]
   ]
