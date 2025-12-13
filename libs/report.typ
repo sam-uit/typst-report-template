@@ -1,4 +1,4 @@
-// University Assignment Template
+// University Assignment Report Template
 
 // MARK: Wrapper function for rounded tables
 #let rounded-table(..args) = {
