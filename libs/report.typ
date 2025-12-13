@@ -10,7 +10,7 @@
 
 // #let sans-font = "Google Sans"
 #let heading-font = document-fonts.sans
-#let serif-font = document-fonts.serif
+#let body-font = document-fonts.serif
 #let mono-font = document-fonts.mono
 
 // MARK: Wrapper function for rounded tables
@@ -150,7 +150,7 @@
   // The ROMAN page number
   set page(numbering: "i")
   // set text(font: "CMU Concrete", size: 12pt, weight: "regular")
-  set text(font: serif-font, size: 12pt, weight: "regular")
+  set text(font: body-font, size: 12pt, weight: "regular")
 
   // Paragraph
   set par(
