@@ -1,5 +1,5 @@
-#import "libs/report.typ": *
-#import "data.typ": *
+#import "../template/lib.typ": *
+#import "../metadata.typ": *
 
 // YOUR CONTENT HERE
 
