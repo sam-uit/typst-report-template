@@ -1,108 +1,8 @@
-// University Assignment Template
-
-// MARK: Wrapper function for rounded tables
-#let rounded-table(..args) = {
-  block(
-    radius: 8pt, // Adjust this for more/less roundness
-    stroke: 1pt + luma(220), // The outer border color
-    clip: true, // This cuts off the square corners
-    width: 100%, // Ensures it fits the page
-    inset: 0pt, // No gap between border and table
-
-    // The inner table
-    table(
-      ..args,
-      stroke: none, // We turn off the default grid to avoid double borders
-      // We add horizontal lines between rows for a clean look
-      align: (x, y) => if y == 0 { center } else { left },
-    ),
-  )
-}
-
-// MARK: Rounded border table with lines
-
-#let rounded-table-lined(..args) = block(
-  radius: 8pt,
-  stroke: 1pt + luma(220), // Outer Border
-  clip: true,
-  width: 100%,
-  inset: 0pt,
-  table(
-    ..args,
-    // Define stroke: Only draw bottom lines, and NOT on the last row
-    stroke: (x, y) => (
-      bottom: 1pt + luma(230),
-      // thick white line for vertical separation looks nice on gray backgrounds:
-      right: none,
-    )
-  ),
-)
-
-// MARK: Call Out Boxes
-
-// Generic Callout Function
-#let callout(body, title: "Note", color: blue, icon: "i") = {
-  block(
-    fill: color.lighten(90%),
-    stroke: (left: 4pt + color),
-    radius: 4pt,
-    inset: 1em,
-    width: 100%,
-    below: 1em,
-  )[
-    #stack(
-      dir: ltr,
-      spacing: 0.5em,
-      // text(weight: "bold", fill: color)[#icon],
-      text(weight: "semibold", fill: color)[#title],
-    )
-    // #v(0.1em)
-    #body
-  ]
-}
-
-// Note/Information
-#let co-note(body, title: "Note") = callout(body, title: title, color: blue, icon: "n")
-#let co-info(body, title: "Info") = callout(body, title: title, color: teal, icon: "i")
-
-// Alert/Warning
-#let co-warn(body, title: "Warning") = callout(body, title: title, color: orange, icon: "w")
-
-// Error/Critical
-#let co-erro(body, title: "Error") = callout(body, title: title, color: red, icon: "e")
-
-// Success/Important
-#let co-succ(body, title: "Success") = callout(body, title: title, color: green, icon: "s")
-
-// MARK: Upgraded TODO function (Registers as a 'todo' kind figure)
-#let todo(body) = {
-  figure(
-    kind: "todo",
-    supplement: "TODO",
-    caption: body, // The text acts as the caption for the Outline
-    outlined: true,
-    // The visual box (Red Box)
-    block(
-      fill: red.lighten(95%),
-      stroke: 1pt + red.lighten(80%),
-      inset: 1em,
-      radius: 4pt,
-      width: 100%,
-      align(left)[
-        #text(weight: "bold", fill: red.lighten(20%))[TODO:]
-        #body
-      ],
-    ),
-  )
-}
-
-// MARK: Unheading (Heading without numbering, for TOC entries)
-
-#let unheading(body) = {
-  heading(level: 1, numbering: none, outlined: true)[#body]
-}
-
-// TODO: Rounded border image
+#import "fonts.typ": *
+#import "utils.typ": *
+#import "components/callout.typ": *
+#import "components/todo.typ": *
+#import "components/table.typ": *
 
 // MARK: The Template
 
@@ -137,7 +37,7 @@
   // The ROMAN page number
   set page(numbering: "i")
   // set text(font: "CMU Concrete", size: 12pt, weight: "regular")
-  set text(font: "Lora", size: 12pt, weight: "regular")
+  set text(font: body-font, size: 12pt, weight: "regular")
 
   // Paragraph
   set par(
@@ -152,7 +52,7 @@
   set enum(indent: 1em)
   // set par()
 
-  // TODO: Line Number for custom code block styling
+  // Line Numbering implemented in show rule below
 
   // Rename "Figure" to "Mã nguồn" for code blocks
   show figure.where(kind: raw): set figure(supplement: "Mã nguồn")
@@ -169,7 +69,7 @@
   )
 
   // Raw: font, and size
-  show raw: set text(font: "Iosevka", 1.2em)
+  show raw: set text(font: code-font, 1.2em)
 
   // Inline-raw
   show raw.where(block: false): box.with(
@@ -179,18 +79,40 @@
     radius: 2pt,
   )
 
-  // Code block
+  // Code block with Line Numbering
   show raw.where(block: true): it => align(start)[
     #block(
       radius: 8pt,
       fill: luma(240),
-      inset: 1em,
+      inset: 0pt,
       stroke: none,
       breakable: false,
       width: 100%,
+      clip: true,
     )[
-      #text(font: "Iosevka")[
-        #it
+      #text(font: code-font, size: 12pt)[
+        #grid(
+          columns: (auto, 1fr),
+          // Move padding inside so the vertical line spans full height
+          inset: (x, y) => {
+            let v = 1em
+            let inner = 0.5em
+            let outer = 1.5em
+            if x == 0 {
+              (top: v, bottom: v, left: outer, right: inner)
+            } else {
+              (top: v, bottom: v, left: inner, right: outer)
+            }
+          },
+          stroke: (x, y) => if x == 0 { (right: 1pt + luma(300)) } else { none },
+          align: (right, left),
+          align(right, text(fill: gray)[
+            #for i in range(1, it.text.split("\n").len() + 1) [
+              #i \
+            ]
+          ]),
+          it,
+        )
       ]
     ]
   ]
@@ -203,7 +125,7 @@
   // MARK: Custom heading styles
   show heading.where(level: 1): it => [
     #set align(left)
-    #set text(font: "Montserrat", size: 20pt, weight: "regular")
+    #set text(font: heading-font, size: 20pt, weight: "regular")
 
     #block(
       width: 100%,
@@ -216,12 +138,12 @@
   ]
 
   // show heading.where(level: 2): it => [
-  //   #set text(font: "Montserrat", size: 18pt, weight: "regular", fill: rgb(50, 50, 50))
+  //   #set text(font: sans-font, size: 18pt, weight: "regular", fill: rgb(50, 50, 50))
   //   #block(above: 1.2em, below: 0.8em)[#it.body]
   // ]
 
   // show heading.where(level: 3): it => [
-  //   #set text(font: "Montserrat", size: 16pt, weight: "regular", fill: rgb(50, 50, 50))
+  //   #set text(font: sans-font, size: 16pt, weight: "regular", fill: rgb(50, 50, 50))
   //   #block(above: 1.2em, below: 0.8em)[#it.body]
   // ]
 
@@ -254,15 +176,15 @@
 
     // MARK: University Name
     #if university.name != "" [
-      #text(font: "Montserrat", size: 20pt, weight: "regular", fill: black.lighten(50%))[#upper(university.name)] \
+      #text(font: heading-font, size: 20pt, weight: "regular", fill: black.lighten(50%))[#upper(university.name)] \
       #v(0.2em)
     ]
     #if university.college != "" [
-      #text(font: "Montserrat", size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.college)] \
+      #text(font: heading-font, size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.college)] \
       #v(0.2em)
     ]
     #if university.center != "" [
-      #text(font: "Montserrat", size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.center)] \
+      #text(font: heading-font, size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.center)] \
       #v(0.2em)
     ]
 
@@ -286,7 +208,7 @@
       ),
       width: 100%,
     )[
-      #text(font: "Montserrat", size: 28pt, weight: "regular")[
+      #text(font: heading-font, size: 28pt, weight: "regular")[
         #smallcaps[#assignment.title]
       ]
       #if assignment.subtitle != none [
@@ -300,7 +222,7 @@
     #stack(
       dir: ltr,
       spacing: 1em,
-      if university.logo != "" {
+      if university.keys().contains("logo") and university.logo != "" {
         image(university.logo, width: 3cm)
       } else {
         box(height: 3cm, width: 3cm, stroke: 0.5pt + black.lighten(90%), radius: 50%, fill: none)[

@@ -1,4 +1,4 @@
-#import "libs/report.typ": *
+#import "../template/lib.typ": *
 
 // YOUR CONTENT
 
