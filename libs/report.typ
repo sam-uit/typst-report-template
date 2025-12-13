@@ -1,11 +1,17 @@
 // University Assignment Report Template
 
-// MARK: Fonts
+// MARK: Dictionary of Fonts
+
+#let document-fonts = (
+  sans: "Montserrat",
+  serif: "Lora",
+  mono: "Iosevka",
+)
 
 // #let sans-font = "Google Sans"
-#let sans-font = "Montserrat"
-#let serif-font = "Lora"
-#let mono-font = "Iosevka"
+#let sans-font = document-fonts.sans
+#let serif-font = document-fonts.serif
+#let mono-font = document-fonts.mono
 
 // MARK: Wrapper function for rounded tables
 #let rounded-table(..args) = {
