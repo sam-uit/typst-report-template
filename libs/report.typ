@@ -11,7 +11,7 @@
 // #let sans-font = "Google Sans"
 #let heading-font = document-fonts.sans
 #let body-font = document-fonts.serif
-#let mono-font = document-fonts.mono
+#let code-font = document-fonts.mono
 
 // MARK: Wrapper function for rounded tables
 #let rounded-table(..args) = {
@@ -182,7 +182,7 @@
   )
 
   // Raw: font, and size
-  show raw: set text(font: mono-font, 1.2em)
+  show raw: set text(font: code-font, 1.2em)
 
   // Inline-raw
   show raw.where(block: false): box.with(
@@ -202,7 +202,7 @@
       breakable: false,
       width: 100%,
     )[
-      #text(font: mono-font)[
+      #text(font: code-font)[
         #it
       ]
     ]
