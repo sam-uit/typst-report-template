@@ -1,7 +1,7 @@
 // MARR: imports
 
-#import "libs/report.typ": *
-#import "data.typ": *
+#import "template/lib.typ": *
+#import "metadata.typ": *
 
 // MARK: Document Settings
 #set document(
@@ -53,7 +53,7 @@ Kết quả:
 #pagebreak()
 
 // MARK: AUTHOR INFO
-#include "author.typ"
+#include "content/author.typ"
 
 #pagebreak()
 
@@ -63,9 +63,9 @@ Kết quả:
 
 // MARK: MAIN CONTENT
 
-#include "quiz1.typ"
-#include "quiz2.typ"
-#include "quiz3.typ"
-#include "quiz4.typ"
+#include "content/quiz1.typ"
+#include "content/quiz2.typ"
+#include "content/quiz3.typ"
+#include "content/quiz4.typ"
 
 // THE END
