@@ -144,7 +144,7 @@
   // The ROMAN page number
   set page(numbering: "i")
   // set text(font: "CMU Concrete", size: 12pt, weight: "regular")
-  set text(font: "Lora", size: 12pt, weight: "regular")
+  set text(font: serif-font, size: 12pt, weight: "regular")
 
   // Paragraph
   set par(
@@ -176,7 +176,7 @@
   )
 
   // Raw: font, and size
-  show raw: set text(font: "Iosevka", 1.2em)
+  show raw: set text(font: mono-font, 1.2em)
 
   // Inline-raw
   show raw.where(block: false): box.with(
@@ -196,7 +196,7 @@
       breakable: false,
       width: 100%,
     )[
-      #text(font: "Iosevka")[
+      #text(font: mono-font)[
         #it
       ]
     ]
@@ -210,7 +210,7 @@
   // MARK: Custom heading styles
   show heading.where(level: 1): it => [
     #set align(left)
-    #set text(font: "Montserrat", size: 20pt, weight: "regular")
+    #set text(font: sans-font, size: 20pt, weight: "regular")
 
     #block(
       width: 100%,
@@ -223,12 +223,12 @@
   ]
 
   // show heading.where(level: 2): it => [
-  //   #set text(font: "Montserrat", size: 18pt, weight: "regular", fill: rgb(50, 50, 50))
+  //   #set text(font: sans-font, size: 18pt, weight: "regular", fill: rgb(50, 50, 50))
   //   #block(above: 1.2em, below: 0.8em)[#it.body]
   // ]
 
   // show heading.where(level: 3): it => [
-  //   #set text(font: "Montserrat", size: 16pt, weight: "regular", fill: rgb(50, 50, 50))
+  //   #set text(font: sans-font, size: 16pt, weight: "regular", fill: rgb(50, 50, 50))
   //   #block(above: 1.2em, below: 0.8em)[#it.body]
   // ]
 
@@ -261,15 +261,15 @@
 
     // MARK: University Name
     #if university.name != "" [
-      #text(font: "Montserrat", size: 20pt, weight: "regular", fill: black.lighten(50%))[#upper(university.name)] \
+      #text(font: sans-font, size: 20pt, weight: "regular", fill: black.lighten(50%))[#upper(university.name)] \
       #v(0.2em)
     ]
     #if university.college != "" [
-      #text(font: "Montserrat", size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.college)] \
+      #text(font: sans-font, size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.college)] \
       #v(0.2em)
     ]
     #if university.center != "" [
-      #text(font: "Montserrat", size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.center)] \
+      #text(font: sans-font, size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.center)] \
       #v(0.2em)
     ]
 
@@ -293,7 +293,7 @@
       ),
       width: 100%,
     )[
-      #text(font: "Montserrat", size: 28pt, weight: "regular")[
+      #text(font: sans-font, size: 28pt, weight: "regular")[
         #smallcaps[#assignment.title]
       ]
       #if assignment.subtitle != none [
