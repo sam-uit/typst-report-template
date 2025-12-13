@@ -1,14 +1,13 @@
 // University Assignment Report Template
 
 // MARK: Dictionary of Fonts
-
+// Google Sans is considered as the heading font
 #let document-fonts = (
   sans: "Montserrat",
   serif: "Lora",
   mono: "Iosevka",
 )
 
-// #let sans-font = "Google Sans"
 #let heading-font = document-fonts.sans
 #let body-font = document-fonts.serif
 #let code-font = document-fonts.mono
