@@ -84,16 +84,27 @@
     #block(
       radius: 8pt,
       fill: luma(240),
-      inset: 1em,
+      inset: 0pt,
       stroke: none,
       breakable: false,
       width: 100%,
+      clip: true,
     )[
       #text(font: code-font, size: 12pt)[
         #grid(
           columns: (auto, 1fr),
-          inset: (x: 0.5em, y: 0em),
-          stroke: (x, y) => if x == 0 { (right: 1pt + luma(400)) } else { none },
+          // Move padding inside so the vertical line spans full height
+          inset: (x, y) => {
+            let v = 1em
+            let inner = 0.5em
+            let outer = 1.5em
+            if x == 0 {
+              (top: v, bottom: v, left: outer, right: inner)
+            } else {
+              (top: v, bottom: v, left: inner, right: outer)
+            }
+          },
+          stroke: (x, y) => if x == 0 { (right: 1pt + luma(300)) } else { none },
           align: (right, left),
           align(right, text(fill: gray)[
             #for i in range(1, it.text.split("\n").len() + 1) [
