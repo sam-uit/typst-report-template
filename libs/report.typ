@@ -1,10 +1,13 @@
 // University Assignment Report Template
 
 // MARK: Fonts
-// Google Sans is considered as the heading font
+// The current font set makes the document a LaTeX-like look.
 #let document-fonts = (
-  sans: "Montserrat",
-  serif: "Lora",
+  // Alternative: Montserrat, Google Sans
+  sans: "Tex Gyre Adventor",
+  // Alternative: Lora, Linux Libertine
+  serif: "CMU Serif",
+  // Alternative: Fira Code, Ubuntu Mono
   mono: "Iosevka",
 )
 
