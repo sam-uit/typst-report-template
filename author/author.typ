@@ -5,7 +5,7 @@
 
 #unheading[#data.author.name]
 
-Thành viên của nhóm và bảng nhiệm vụ.
+Thành viên của nhóm và bảng nhiệm vụ cho #data.assignment.title.
 
 #figure(
   align(center)[
