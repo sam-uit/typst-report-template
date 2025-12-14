@@ -1,5 +1,6 @@
 #import "@preview/touying:0.6.1": *
 #import "themes/stargazer.typ": *
+#import "template/lib.typ": *
 #import "template/fonts.typ"
 #import "config/metadata.typ": *
 
@@ -16,8 +17,8 @@
     title: smallcaps[#data.assignment.title],
     subtitle: data.assignment.subtitle,
     author: data.author.name,
-    date: datetime.today(),
-    institution: data.course.name,
+    date: data.assignment.date,
+    institution: data.course.id + ": " + data.course.name,
   ),
   lang: "vi",
   config-colors(
@@ -42,6 +43,8 @@
 
 // Set font
 #set text(font: "Montserrat", weight: "light")
+
+#set heading(numbering: "1.")
 
 // Set heading level 2
 #show heading.where(level: 2): it => [
@@ -97,8 +100,12 @@
 // table of tables
 // table of codes/listing
 
+#include "author/nhom-2.typ"
+
 // MARK: - Nội Dung Chính
-#include "contents.typ"
+// #include "content/btth2-debai.typ"
+#include "content/bai-01.typ"
+#include "content/bai-02.typ"
 
 // MARK: - Kết Thúc
 
