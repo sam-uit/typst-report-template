@@ -16,7 +16,8 @@ Thành viên của nhóm và bảng nhiệm vụ.
         // Use a monofont: Iosevka
         text(
           font: "Iosevka",
-          weight: "regular",
+          weight: 300,
+          fill: black.lighten(40%),
         )[#current_cell]
       } else {
         // Return normal formatting for other columns
