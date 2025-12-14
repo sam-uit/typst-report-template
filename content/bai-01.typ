@@ -4,7 +4,7 @@
 == CREATE - Tạo Các Quan Hệ
 <create-tao-cac-quan-he>
 
-(Đây là các ví dụ, không phải bài làm cuối cùng).
+(Đây là các ví dụ, không phải bài làm hoàn thiện).
 
 === `SINHVIEN`
 <sinhvien>

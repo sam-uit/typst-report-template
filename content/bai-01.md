@@ -3,7 +3,7 @@
 
 ## CREATE - Tạo Các Quan Hệ
 
-(Đây là các ví dụ, không phải bài làm cuối cùng).
+(Đây là các ví dụ, không phải bài làm hoàn thiện).
 
 ### `SINHVIEN`
 
