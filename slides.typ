@@ -44,6 +44,7 @@
 // Set font
 #set text(font: "Montserrat", weight: "light")
 
+// Bật Heading Numbering phục vụ cho Cross Reference (`@tham-chieu`)
 #set heading(numbering: "1.")
 
 // Set heading level 2
