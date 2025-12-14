@@ -1,8 +1,12 @@
+#import "../template/lib.typ": *
+
 = Phần 1
 <phan-1>
 
 == CREATE - Tạo Các Quan Hệ
 <create-tao-cac-quan-he>
+
+#todo[Phần 1]
 
 (Đây là các ví dụ, không phải bài làm hoàn thiện).
 
