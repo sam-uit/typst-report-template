@@ -62,10 +62,10 @@ Kết quả:
 #counter(page).update(1)
 
 // MARK: MAIN CONTENT
-
-#include "content/quiz1.typ"
-#include "content/quiz2.typ"
-#include "content/quiz3.typ"
-#include "content/quiz4.typ"
+#include "content/btth2-debai.typ"
+#pagebreak()
+#include "content/bai-01.typ"
+#pagebreak()
+#include "content/bai-02.typ"
 
 // THE END
