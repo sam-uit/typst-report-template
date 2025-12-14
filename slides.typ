@@ -8,6 +8,7 @@
 
 // TODO: Use the config/metadata file.
 // TODO: Separated font set for slides/presentation and report.
+// TODO: Fix the table of contents displaying anchor "<abc>" (ASCII) instead of the heading text "Anh Bạn Cũ" (Unicode).
 
 // MARK: - Theme
 
