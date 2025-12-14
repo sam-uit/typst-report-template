@@ -30,7 +30,10 @@
 
 // MARK: AUTHOR INFO
 #include "author/author.typ"
+#pagebreak()
 
+// MARK: QUIZ
+#include "content/btth2-debai.typ"
 #pagebreak()
 
 // IMPORTANT Switch page number style and reset its counter
@@ -38,8 +41,6 @@
 #counter(page).update(1)
 
 // MARK: MAIN CONTENT
-#include "content/btth2-debai.typ"
-#pagebreak()
 #include "content/bai-01.typ"
 #pagebreak()
 #include "content/bai-02.typ"
