@@ -51,3 +51,20 @@ This is a Typst template for university assignments, refactored to a modular, pr
     *   `make watch`: Live updates.
     *   `make clean`: Cleans up generated files.
     *   (Optional) Auto-converts `content/*.md` to `.typ` if you prefer writing Markdown.
+
+## Requirements
+
+### Fonts
+
+- Please refer to the [template/fonts.typ](template/fonts.typ) for a list of required fonts.
+- Font types:
+    - Sans: Montserrat, Google Sans, etc.
+    - Serif: Lora, Source Serif, etc.
+    - Mono: Iosevka, Fira Code, etc.
+
+### Tools
+
+- Typst: [https://typst.app/](https://typst.app/)
+- Pandoc: [https://pandoc.org](https://pandoc.org)
+- `entr`: `brew install entr`
+- `make`: Pre-installed by default (mostly).
