@@ -27,7 +27,7 @@ Thành viên của nhóm và bảng nhiệm vụ cho #data.assignment.title.
     // TODO: Span full width automatically
     // TODO: import/use csv data instead of hardcoding
     #rounded-table-lined(
-      columns: (10%, 20%, 30%, 40%),
+      columns: (10%, 15%, 30%, 45%),
       align: (right, right, left, left),
       table.header([No], [MSSV], [Họ và Tên], [Phụ Trách]),
       table.hline(),
