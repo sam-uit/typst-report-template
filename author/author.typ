@@ -27,29 +27,29 @@ Thành viên của nhóm và bảng nhiệm vụ.
     // TODO: Span full width automatically
     // TODO: import/use csv data instead of hardcoding
     #rounded-table-lined(
-      columns: (10%, 20%, 40%, 30%),
+      columns: (10%, 20%, 30%, 40%),
       align: (right, right, left, left),
       table.header([No], [MSSV], [Họ và Tên], [Phụ Trách]),
       table.hline(),
       [1],
       [25410291],
       [Đinh Xuân Sâm],
-      [],
+      [- Tổng hợp & Biên tập.],
       [2],
       [25410319],
       [Đặng Hữu Toàn],
-      [],
+      [- Phần 2.C (@c-trigger[Mục])],
       [3],
       [25410321],
       [Nguyễn Điền Triết],
       [
-        - Phần 1 (@phan-1[Mục])
+        - Phần 1.\* (@phan-1[Mục].xx)
         - Phần 2.A (@a-stored-procedures-voi-tham-so-vao[Mục])
       ],
       [4],
       [25410204],
       [Trương Xuân Hậu],
-      [],
+      [- Phần 2.E (@e-cursor[Mục])],
       [5],
       [25410338],
       [Lê Anh Vũ],
@@ -61,7 +61,7 @@ Thành viên của nhóm và bảng nhiệm vụ.
       [7],
       [25410247],
       [Lê Kim Long],
-      [],
+      [- Phần 2.B (@b-stored-procedures-voi-tham-so-vao-va-ra[Mục])],
       [8],
       [25410337],
       [La Anh Vũ],
@@ -69,7 +69,7 @@ Thành viên của nhóm và bảng nhiệm vụ.
       [9],
       [25410209],
       [Lê Ngọc Hiệp],
-      [],
+      [- Phần 2.D (@d-function[Mục])],
       [10],
       [25410271],
       [Nguyễn Thị Ngọc Nhung],
