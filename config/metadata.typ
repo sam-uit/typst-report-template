@@ -9,14 +9,13 @@
   ),
   course: (
     id: "IE103",
-    name: "Quản Lý Thông Tin (Data Management)",
+    name: "Quản Lý Thông Tin",
     class: "LT.K2025.2.CNTT",
   ),
   instructor: "Ths. Nguyễn Thành Luân",
   author: (
     name: "Nhóm 02",
-    members: (
-    ),
+    members: (),
   ),
   assignment: (
     title: "Bài Tập Thực Hành 02",
