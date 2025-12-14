@@ -25,4 +25,5 @@
     date: "Tháng 12, 2025",
     duration: "115 phút",
   ),
+  company: "A Limited Company Name",
 )

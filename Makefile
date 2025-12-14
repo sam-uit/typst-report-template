@@ -46,5 +46,5 @@ clean:
 watch:
 watch:
 	@echo "Started watching with entr..."
-	@find content author pandoc template . -maxdepth 2 -name "*.md" -o -name "*.typ" -o -name "*.lua" -o -name "*.yaml" \
+	@find config content author pandoc template . -maxdepth 2 -name "*.md" -o -name "*.typ" -o -name "*.lua" -o -name "*.yaml" \
 	| entr -r $(MAKE) all
