@@ -33,4 +33,5 @@
     date: "Dec, 2025",
     duration: "15 phút",
   ),
+  company: "A Limited Company Name",
 )
