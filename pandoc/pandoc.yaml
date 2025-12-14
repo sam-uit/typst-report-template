@@ -13,4 +13,5 @@ filters:
 
 # Optional: Text wrapping (preserves source readability)
 # columns: 80
-# wrap: auto
+# wrap: preserve
+wrap: none
