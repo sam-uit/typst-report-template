@@ -1,7 +1,9 @@
-= Đề Bài - Cơ Sở Dữ Liệu về Quản Lý Đề Tài
+#import "../template/lib.typ": *
+
+#unheading[Đề Bài - Cơ Sở Dữ Liệu về Quản Lý Đề Tài]
 <de-bai-co-so-du-lieu-ve-quan-ly-de-tai>
 
-Cho lược đồ quan hệ sau, hãy hoàn thành các yêu cầu ở @phan-1[ Mục] (Phần 1) và @phan-2[ Mục] (Phần 2).
+Cho lược đồ quan hệ sau, hãy hoàn thành các yêu cầu ở @phan-1[Phần] và @phan-2[Phần].
 
 + SINHVIEN(#underline[MSSV], TENSV, SODT, LOP, DIACHI)
 + DETAI(#underline[MSDT], TENDT)
