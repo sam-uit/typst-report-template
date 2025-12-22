@@ -222,3 +222,53 @@ SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SD
 |ThongBao|SoLuong|Danh sach so dien thoai|
 |---|---|---|
 |Tong so giao vien trung ten: |0||
+
+### Đưa vào `MSHD`
+
+Cho biết:
+
+- Điểm trung bình các đề tài của hội đồng đó.
+
+```sql
+CREATE PROCEDURE sp_DiemTBTheoHD @MSHD INT,
+                                 @DIEM_TB FLOAT OUTPUT
+AS
+BEGIN
+    SET @DIEM_TB = 0;
+    SELECT @DIEM_TB = AVG(T2.DIEM) FROM HOIDONG_DT T1
+    JOIN (
+        SELECT MSDT, DIEM FROM GV_HDDT
+        UNION ALL
+        SELECT MSDT, DIEM FROM GV_PBDT
+        UNION ALL
+        SELECT MSDT, DIEM FROM GV_UVDT
+    ) AS T2 ON T1.MSDT = T2.MSDT
+    WHERE T1.MSHD = @MSHD
+    GROUP BY T1.MSDT;
+end;
+GO
+```
+
+Ví dụ: Hội đồng 1
+
+```sql
+DECLARE @MSHD INT = 1, @DiemTB FLOAT;
+EXEC sp_DiemTBTheoHD @MSHD, @DiemTB output;
+SELECT @MSHD as 'Ma So Hoi Dong', @DiemTB as 'Diem Trung Binh'
+```
+
+| Ma So Hoi Dong | Diem Trung Binh |
+| -------------- | --------------- |
+| 1              | 8.2             |
+
+Ví dụ: Hội đồng 2
+
+```sql
+DECLARE @MSHD INT = 2, @DiemTB FLOAT;
+EXEC sp_DiemTBTheoHD @MSHD, @DiemTB output;
+SELECT @MSHD as 'Ma So Hoi Dong', @DiemTB as 'Diem Trung Binh'
+```
+
+| Ma So Hoi Dong | Diem Trung Binh |
+| -------------- | --------------- |
+| 2              | 8               |
