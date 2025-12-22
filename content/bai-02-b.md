@@ -31,7 +31,7 @@ AS
 GO
 ```
 
-Ví dụ 1:
+#### Ví dụ 1: Học Vị Thạc Sĩ
 
 - Học Vị = Thạc Sĩ
 
@@ -45,7 +45,7 @@ SELECT N'Số GV Thạc sĩ: ' AS KetQua, @KETQUA AS SoLuong;
 |---|---|
 |Số GV Thạc sĩ: |2|
 
-Ví dụ 2:
+#### Ví dụ 2: Học Vị Tiến Sĩ
 
 - Học vị = Tiến Sĩ (Không tồn tại)
 
@@ -111,7 +111,7 @@ EXEC sp_DiemTBDeTai '97007', @KETQUA OUTPUT;
 SELECT 'Diem TB De Tai 97007 ' AS KetQua, @KETQUA AS DiemTB;
 ```
 
-###  Đưa vào `TENGV` trả ra SDT của GV
+### Đưa vào `TENGV` trả ra SDT của GV
 
 Đưa vào TENGV trả ra:
 
@@ -164,18 +164,18 @@ INSERT INTO GIAOVIEN (MSGV, TENGV, DIACHI, SODT, MSHH, NAMHH)
 VALUES (206, N'Nguyễn Văn An', N'Cần Thơ', '12434343', 1, '2025');
 ```
 
+Giá trị của bảng:
 
+| MSGV | TENGV           | DIACHI     | SODT     | MSHH | NAMHH               |
+| ---- | --------------- | ---------- | -------- | ---- | ------------------- |
+| 201  | Trần Trung      | Bến Tre    | 35353535 | 1    | 1996-01-01 00:00:00 |
+| 202  | Nguyễn Văn An   | Tiền Giang | 67868688 | 1    | 1996-01-01 00:00:00 |
+| 203  | Trần Thu Trang  | Cần Thơ    | 74758687 | 1    | 1996-01-01 00:00:00 |
+| 204  | Nguyễn Thị Loan | TP. HCM    | 56575868 | 2    | 2005-01-01 00:00:00 |
+| 205  | Chu Tiến        | Hà Nội     | 46466646 | 2    | 2005-01-01 00:00:00 |
+| 206  | Nguyễn Văn An   | Cần Thơ    | 12434343 | 1    | 2025-01-01 00:00:00 |
 
-|MSGV|TENGV|DIACHI|SODT|MSHH|NAMHH|
-|--:|:--|:--|:--|:--|:--|
-|201|Trần Trung|Bến Tre|35353535|1|1996-01-01 00:00:00|
-|202|Nguyễn Văn An|Tiền Giang|67868688|1|1996-01-01 00:00:00|
-|203|Trần Thu Trang|Cần Thơ|74758687|1|1996-01-01 00:00:00|
-|204|Nguyễn Thị Loan|TP. HCM|56575868|2|2005-01-01 00:00:00|
-|205|Chu Tiến|H&#224; Nội|46466646|2|2005-01-01 00:00:00|
-|206|Nguyễn Văn An|Cần Thơ|12434343|1|2025-01-01 00:00:00|
-
-Ví dụ 1:
+#### Ví dụ 1: Có trùng tên
 
 - Trường hợp trùng tên: Nguyễn Văn An
 
@@ -191,7 +191,7 @@ SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SD
 |---|---|---|
 |Tong so giao vien trung ten: |2|67868688, 12434343|
 
-Ví dụ 2:
+#### Ví dụ 2: Không trùng tên
 
 - Trường hợp không trùng tên: Trần Trung
 
@@ -207,7 +207,7 @@ SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SD
 |---|---|---|
 |Tong so giao vien trung ten: |1|35353535|
 
-Ví dụ 3:
+#### Ví dụ 3: Tên không tồn tại
 
 - Trường hợp không tìm thấy: Lê Kim Long
 
@@ -223,7 +223,7 @@ SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SD
 |---|---|---|
 |Tong so giao vien trung ten: |0||
 
-### Đưa vào `MSHD`
+### Đưa vào `MSHD` cho biết Điểm Trung Bình
 
 Cho biết:
 
@@ -249,7 +249,7 @@ end;
 GO
 ```
 
-Ví dụ: Hội đồng 1
+#### Ví dụ: Hội đồng 1
 
 ```sql
 DECLARE @MSHD INT = 1, @DiemTB FLOAT;
@@ -261,7 +261,7 @@ SELECT @MSHD as 'Ma So Hoi Dong', @DiemTB as 'Diem Trung Binh'
 | -------------- | --------------- |
 | 1              | 8.2             |
 
-Ví dụ: Hội đồng 2
+#### Ví dụ: Hội đồng 2
 
 ```sql
 DECLARE @MSHD INT = 2, @DiemTB FLOAT;

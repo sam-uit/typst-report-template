@@ -34,7 +34,8 @@ AS
 GO
 ```
 
-Ví dụ 1:
+==== Ví dụ 1: Học Vị Thạc Sĩ
+<vi-du-1-hoc-vi-thac-si>
 
 - Học Vị = Thạc Sĩ
 
@@ -44,20 +45,16 @@ EXEC sp_CountGVTheoHocVi N'Thạc sĩ', @KETQUA output ;
 SELECT N'Số GV Thạc sĩ: ' AS KetQua, @KETQUA AS SoLuong;
 ```
 
-#figure(
-  align(center)[#table(
-    columns: 2,
-    align: (auto,auto,),
-    table.header([KetQua], [SoLuong],),
-    table.hline(),
-    [Số GV Thạc sĩ:], [2],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 2,
+  align: (left, left),
+  [KetQua], [SoLuong], [Số GV Thạc sĩ:], [2]
+)
 
-Ví dụ 2:
+==== Ví dụ 2: Học Vị Tiến Sĩ
+<vi-du-2-hoc-vi-tien-si>
 
-- Học vị = Tiến Sĩ (Không tồn tại)
+- Học vị = Tiến Sĩ (Không tồn tại GV có học hàm Tiến Sĩ)
 
 ```sql
 DECLARE @KETQUA INT;
@@ -65,16 +62,11 @@ EXEC sp_CountGVTheoHocVi N'Tiến sĩ', @KETQUA output ;
 SELECT N'Số GV Tiến sĩ: ' AS KetQua, @KETQUA AS SoLuong;
 ```
 
-#figure(
-  align(center)[#table(
-    columns: 2,
-    align: (auto,auto,),
-    table.header([KetQua], [SoLuong],),
-    table.hline(),
-    [Số GV Tiến sĩ:], [0],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 2,
+  align: (left, left),
+  [KetQua], [SoLuong], [Số GV Tiến sĩ:], [0]
+)
 
 === Đưa vào `MSDT` cho biết Điểm trung bình
 <dua-vao-msdt-cho-biet-diem-trung-binh>
@@ -183,23 +175,16 @@ INSERT INTO GIAOVIEN (MSGV, TENGV, DIACHI, SODT, MSHH, NAMHH)
 VALUES (206, N'Nguyễn Văn An', N'Cần Thơ', '12434343', 1, '2025');
 ```
 
-#figure(
-  align(center)[#table(
-    columns: 6,
-    align: (right,left,left,left,left,left,),
-    table.header([MSGV], [TENGV], [DIACHI], [SODT], [MSHH], [NAMHH],),
-    table.hline(),
-    [201], [Trần Trung], [Bến Tre], [35353535], [1], [1996-01-01 00:00:00],
-    [202], [Nguyễn Văn An], [Tiền Giang], [67868688], [1], [1996-01-01 00:00:00],
-    [203], [Trần Thu Trang], [Cần Thơ], [74758687], [1], [1996-01-01 00:00:00],
-    [204], [Nguyễn Thị Loan], [TP. HCM], [56575868], [2], [2005-01-01 00:00:00],
-    [205], [Chu Tiến], [Hà Nội], [46466646], [2], [2005-01-01 00:00:00],
-    [206], [Nguyễn Văn An], [Cần Thơ], [12434343], [1], [2025-01-01 00:00:00],
-  )]
-  , kind: table
-  )
+Giá trị của bảng:
 
-Ví dụ 1:
+#table(
+  columns: (1fr,) * 6,
+  align: (left, left, left, left, left, left),
+  [MSGV], [TENGV], [DIACHI], [SODT], [MSHH], [NAMHH], [201], [Trần Trung], [Bến Tre], [35353535], [1], [1996-01-01 00:00:00], [202], [Nguyễn Văn An], [Tiền Giang], [67868688], [1], [1996-01-01 00:00:00], [203], [Trần Thu Trang], [Cần Thơ], [74758687], [1], [1996-01-01 00:00:00], [204], [Nguyễn Thị Loan], [TP. HCM], [56575868], [2], [2005-01-01 00:00:00], [205], [Chu Tiến], [Hà Nội], [46466646], [2], [2005-01-01 00:00:00], [206], [Nguyễn Văn An], [Cần Thơ], [12434343], [1], [2025-01-01 00:00:00]
+)
+
+==== Ví dụ 1: Có trùng tên
+<vi-du-1-co-trung-ten>
 
 - Trường hợp trùng tên: Nguyễn Văn An
 
@@ -211,18 +196,14 @@ SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SD
 
 - Kết quả: trả về 2 bản ghi có sự trùng lặp ở trường `TENGV`
 
-#figure(
-  align(center)[#table(
-    columns: 3,
-    align: (auto,auto,auto,),
-    table.header([ThongBao], [SoLuong], [Danh sach so dien thoai],),
-    table.hline(),
-    [Tong so giao vien trung ten:], [2], [67868688, 12434343],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 3,
+  align: (left, left, left),
+  [ThongBao], [SoLuong], [Danh sach so dien thoai], [Tong so giao vien trung ten:], [2], [67868688, 12434343]
+)
 
-Ví dụ 2:
+==== Ví dụ 2: Không trùng tên
+<vi-du-2-khong-trung-ten>
 
 - Trường hợp không trùng tên: Trần Trung
 
@@ -234,18 +215,14 @@ SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SD
 
 - Kết quả: trả về duy nhất 1 bản ghi do không tìm thấy sự trùng lặp ở trường `TENGV`
 
-#figure(
-  align(center)[#table(
-    columns: 3,
-    align: (auto,auto,auto,),
-    table.header([ThongBao], [SoLuong], [Danh sach so dien thoai],),
-    table.hline(),
-    [Tong so giao vien trung ten:], [1], [35353535],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 3,
+  align: (left, left, left),
+  [ThongBao], [SoLuong], [Danh sach so dien thoai], [Tong so giao vien trung ten:], [1], [35353535]
+)
 
-Ví dụ 3:
+==== Ví dụ 3: Tên không tồn tại
+<vi-du-3-ten-khong-ton-tai>
 
 - Trường hợp không tìm thấy: Lê Kim Long
 
@@ -257,19 +234,14 @@ SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SD
 
 - Kết quả: `0`, vì không tìm thấy `TENGV` phù hợp.
 
-#figure(
-  align(center)[#table(
-    columns: (1fr, 1fr, 1fr),
-    align: (auto,auto,auto,),
-    table.header([ThongBao], [SoLuong], [Danh sach so dien thoai],),
-    table.hline(),
-    [Tong so giao vien trung ten:], [0], [],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 3,
+  align: (left, left, left),
+  [ThongBao], [SoLuong], [Danh sach so dien thoai], [Tong so giao vien trung ten:], [0], []
+)
 
-=== Đưa vào `MSHD`
-<dua-vao-mshd>
+=== Đưa vào `MSHD` cho biết Điểm Trung Bình
+<dua-vao-mshd-cho-biet-diem-trung-binh>
 
 Cho biết:
 
@@ -295,7 +267,8 @@ end;
 GO
 ```
 
-Ví dụ: Hội đồng 1
+==== Ví dụ: Hội đồng 1
+<vi-du-hoi-dong-1>
 
 ```sql
 DECLARE @MSHD INT = 1, @DiemTB FLOAT;
@@ -303,18 +276,14 @@ EXEC sp_DiemTBTheoHD @MSHD, @DiemTB output;
 SELECT @MSHD as 'Ma So Hoi Dong', @DiemTB as 'Diem Trung Binh'
 ```
 
-#figure(
-  align(center)[#table(
-    columns: (1fr, 1fr),
-    align: (auto,auto,),
-    table.header([Ma So Hoi Dong], [Diem Trung Binh],),
-    table.hline(),
-    [1], [8.2],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 2,
+  align: (left, left),
+  [Ma So Hoi Dong], [Diem Trung Binh], [1], [8.2]
+)
 
-Ví dụ: Hội đồng 2
+==== Ví dụ: Hội đồng 2
+<vi-du-hoi-dong-2>
 
 ```sql
 DECLARE @MSHD INT = 2, @DiemTB FLOAT;
@@ -322,13 +291,8 @@ EXEC sp_DiemTBTheoHD @MSHD, @DiemTB output;
 SELECT @MSHD as 'Ma So Hoi Dong', @DiemTB as 'Diem Trung Binh'
 ```
 
-#figure(
-  align(center)[#table(
-    columns: (1fr, 1fr),
-    align: (auto,auto,),
-    table.header([Ma So Hoi Dong], [Diem Trung Binh],),
-    table.hline(),
-    [2], [8],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 2,
+  align: (left, left),
+  [Ma So Hoi Dong], [Diem Trung Binh], [2], [8]
+)
