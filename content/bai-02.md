@@ -56,10 +56,10 @@ END;
 
 ### Kiểm Tra `MSGV` và `MSHH`
 
-- Giống (1) và (2) kiểm tra xem `MSGV` có trùng không? `MSHH` có tồn tại chưa?
+- Giống [@kiem-tra-mshh-trong-table-hocham Mục] và [@kiem-tra-msgv-trong-table-giaovien Mục], kiểm tra xem `MSGV` có trùng không? `MSHH` có tồn tại chưa?
     - Nếu `MSGV` trùng thì trả về `0`.
     - Nếu `MSHH` chưa tồn tại trả về `1`.
-    - Ngược lại cho insert dữ liệu
+    - Ngược lại cho `INSERT` dữ liệu
 
 ```sql
 CREATE PROC SP_INS_GV_KT_MSHH_MSGV
