@@ -128,7 +128,7 @@ BEGIN
     WHILE @@FETCH_STATUS = 0
     BEGIN
         -- Tính điểm trung bình của đề tài
-        SELECT @DIEMTB = AVG(DIEM)
+        SELECT @DIEMTB = ROUND(AVG(DIEM), 2)
         FROM (
             SELECT DIEM FROM GV_HDDT WHERE MSDT = @MSDT
             UNION ALL
@@ -155,3 +155,17 @@ END;
 EXEC SP_TINH_DIEMTB_DETAI;
 ```
 
+- Kiểm tra bảng `DETAI_DIEM`:
+
+```sql
+SELECT * FROM DETAI_DIEM;
+```
+
+| MSDT  | DIEMTB |
+| :---: | ------ |
+| 97001 | 8      |
+| 97002 | 8.2    |
+| 97003 | 7.5    |
+| 97004 | 8      |
+| 97005 | 8.2    |
+| 97006 | 8.33   |
