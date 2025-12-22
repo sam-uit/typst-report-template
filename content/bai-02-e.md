@@ -35,18 +35,25 @@ CREATE TABLE DETAI_DIEM (
 - Viết Cursor tính điểm trung bình cho từng đề tài.
 - Sau đó lưu kết quả vào bảng `DETAI_DIEM`.
 
+Khởi tạo Cursor:
+
+- Khai báo biến
 ```sql
--- Khai báo biến
 DECLARE @MSDT CHAR(6);
 DECLARE @DIEMTB FLOAT;
+```
+- Xóa dữ liệu cũ trong bảng kết quả (nếu có)
 
--- Xóa dữ liệu cũ trong bảng kết quả (nếu có)
+```sql
 DELETE FROM DETAI_DIEM;
+```
 
--- Khai báo Cursor
+- Khai báo Cursor
+
+```sql
 DECLARE CUR_TINH_DIEM CURSOR FOR
-SELECT MSDT
-FROM DETAI;
+    SELECT MSDT
+    FROM DETAI;
 
 -- Mở Cursor
 OPEN CUR_TINH_DIEM;
@@ -77,8 +84,11 @@ END
 -- Ðóng và hủy Cursor
 CLOSE CUR_TINH_DIEM;
 DEALLOCATE CUR_TINH_DIEM;
+```
 
--- Kiểm tra bảng đã nhập được chưa.
+- Kiểm tra bảng `DETAI_DIEM` đã nhập được chưa.
+
+```sql
 SELECT * FROM DETAI_DIEM;
 ```
 
