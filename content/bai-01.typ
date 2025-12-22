@@ -1,14 +1,9 @@
-#import "../template/lib.typ": *
-
 = Phần 1
 <phan-1>
 
 == CREATE - Tạo Các Quan Hệ
 <create-tao-cac-quan-he>
 
-#todo[Phần 1]
-
-(Đây là các ví dụ, không phải bài làm hoàn thiện).
 
 === `SINHVIEN`
 <sinhvien>
@@ -16,13 +11,11 @@
 ```sql
 -- 1. SINHVIEN
 CREATE TABLE SINHVIEN (
-    -- Khóa chính
-    MSSV char(8) PRIMARY KEY,
-    -- Tên sinh viên
-    TENSV nvarchar(30) NOT NULL,
-    SODT varchar(10),
-    LOP char(10) NOT NULL,
-    DIACHI nchar(50) NOT NULL
+    MSSV CHAR(8) PRIMARY KEY,
+    TENSV NVARCHAR(30) NOT NULL,
+    SODT VARCHAR(10) NOT NULL,
+    LOP CHAR(10) NOT NULL,
+    DIACHI NCHAR(50)
 );
 ```
 
@@ -30,26 +23,22 @@ CREATE TABLE SINHVIEN (
 <detai>
 
 ```sql
--- 2. DETAI
 CREATE TABLE DETAI (
-    -- Khóa chính
-    MSDT char(6) PRIMARY KEY,
-    -- Tên đề tài
-    TENDT nvarchar(30) NOT NULL
+    MSDT CHAR(6) PRIMARY KEY,
+    TENDT NVARCHAR(30) NOT NULL
+);
 ```
 
 === `SV_DETAI`
 <sv-detai>
 
 ```sql
--- 3. SV_DETAI
 CREATE TABLE SV_DETAI (
-    MSSV char(8),
-    MSDT char(6),
-    -- Khóa chính là cặp (MSSV, MSDT)
+    MSSV CHAR(8),
+    MSDT CHAR(6),
     PRIMARY KEY (MSSV, MSDT),
-    FOREIGN KEY (MSSV) REFERENCES SINHVIEN(MSSV),
-    FOREIGN KEY (MSDT) REFERENCES DETAI(MSDT)
+    CONSTRAINT FK_SV_DETAI_SV  FOREIGN KEY (MSSV) REFERENCES SINHVIEN(MSSV),
+    CONSTRAINT FK_SV_DETAI_DT  FOREIGN KEY (MSDT) REFERENCES DETAI(MSDT)
 );
 ```
 
@@ -57,11 +46,9 @@ CREATE TABLE SV_DETAI (
 <hocham>
 
 ```sql
--- 4. HOCHAM
--- GIAOVIEN tham chiếu đến HOCHAM
 CREATE TABLE HOCHAM (
-    MSHH int PRIMARY KEY,
-    TENHH nvarchar(20) NOT NULL
+    MSHH INT PRIMARY KEY,
+    TENHH NVARCHAR(20) NOT NULL
 );
 ```
 
