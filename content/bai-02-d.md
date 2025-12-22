@@ -69,6 +69,20 @@ SELECT
 | :---: | ------------- |
 | 97001 | 8             |
 
+#### Ví dụ 3
+
+- `MSDT` không tồn tại.
+
+```sql
+SELECT
+    '99999' AS 'MSDT',
+    dbo.f_TinhDiemTB('99999') AS DiemTrungBinh;
+```
+
+| MSDT  | DiemTrungBinh |
+| :---: | ------------- |
+| 99999 | 0             |
+
 ### Kết Quả của Đề Tài từ `MSDT`
 
 - Trả về kết quả của đề tài theo MSDT nhập vào.

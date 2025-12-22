@@ -73,6 +73,23 @@ SELECT
   [MSDT], [DiemTrungBinh], [97001], [8]
 )
 
+==== Ví dụ 3
+<vi-du-3>
+
+- `MSDT` không tồn tại.
+
+```sql
+SELECT
+    '99999' AS 'MSDT',
+    dbo.f_TinhDiemTB('99999') AS DiemTrungBinh;
+```
+
+#table(
+  columns: (1fr,) * 2,
+  align: (center, left),
+  [MSDT], [DiemTrungBinh], [99999], [0]
+)
+
 === Kết Quả của Đề Tài từ `MSDT`
 <ket-qua-cua-de-tai-tu-msdt>
 
