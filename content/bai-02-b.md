@@ -283,3 +283,106 @@ SELECT @MSHD as 'Ma So Hoi Dong', @DiemTB as 'Diem Trung Binh'
 | Ma So Hoi Dong | Diem Trung Binh |
 | -------------- | --------------- |
 | 2              | 8               |
+
+### Đưa vào `TENGV`
+
+Đưa vào TENGV cho biết:
+
+- Số đề tài hướng dẫn, số đề tài phản biện do giáo viên đó phụ trách.
+- Nếu trùng tên thì có báo lỗi không hay hệ thống sẽ đếm tất cả các đề tài của những giáo viên trùng tên đó?
+
+Giải đáp:
+
+- Tương tự câu 3 ở trên, hệ thống sẽ không báo lỗi cú pháp SQL. Thay vào đó, hệ thống sẽ lấy được tất cả các records có cùng tên giáo viên đó.
+- Xử lý Stored Procedure để trả về số lượng đề tài hướng dẫn và phản biện dựa theo tên giáo viên, ta có thể xử lý như sau (sử dụng THROW để thông báo lỗi):
+
+```sql
+CREATE PROCEDURE sp_ThongTinDeTaiGV @TENGV NVARCHAR(30),
+                                    @SoDT_HD INT OUTPUT,
+                                    @SoDT_PB INT OUTPUT
+AS
+BEGIN
+    SET @SoDT_HD = 0;
+    SET @SoDT_PB = 0;
+
+    DECLARE @SoLuong_GV_TrungTen INT;
+    SET @SoLuong_GV_TrungTen = 0;
+
+    -- Kiểm tra danh sách giáo viên xem có trùng tên không
+    SELECT @SoLuong_GV_TrungTen = Count(MSGV) FROM GIAOVIEN WHERE TENGV = @TENGV
+
+    -- Nếu là 1: không trùng tên.
+    -- Nếu là 2 trở lên: trùng tên -> Lỗi
+    -- Nếu là 0: không tồn tại giáo viên có tên này
+    IF @SoLuong_GV_TrungTen = 1
+        BEGIN
+            -- Lấy MSGV từ khi chỉ có 1 record duy nhất
+            DECLARE  @MSGV INT;
+            SELECT @MSGV = MSGV FROM GIAOVIEN WHERE TENGV = @TENGV
+
+            -- Đếm số lượng đề tài hướng dẫn và phản biện
+            SELECT @SoDT_HD = Count(MSDT) FROM GV_HDDT WHERE MSGV = @MSGV
+            SELECT @SoDT_PB = COUNT(MSDT) FROM GV_PBDT WHERE MSGV = @MSGV
+        end
+    ELSE IF @SoLuong_GV_TrungTen >= 2
+        BEGIN
+            THROW 51000, N'Trùng tên giáo viên', 2;
+        end
+    ELSE
+        BEGIN
+            THROW 51000, N'Không tìm thấy giáo viên', 1;
+        end
+    end
+GO
+```
+
+#### Ví dụ 1: không tìm thấy giáo viên
+
+- `TENGV`: Lê Kim Long
+
+```sql
+DECLARE @SoDT_HD INT, @SoDT_PB INT
+EXEC sp_ThongTinDeTaiGV N'Lê Kim Long', @SoDT_HD OUTPUT ,@SoDT_PB OUTPUT ;
+SELECT @SoDT_HD AS N'Số lượng đề tài hướng dẫn', @SoDT_PB AS N'Số lượng đề tài phản biện'
+```
+
+- Kết quả: thông báo “Không tìm thấy giáo viên”.
+
+```sql
+Msg 51000, Level 16, State 1, Procedure sp_ThongTinDeTaiGV, Line 34
+Không tìm thấy giáo viên
+```
+
+#### Ví dụ 2: trùng tên giáo viên
+
+- `TENGV`: Nguyễn Văn An
+
+```sql
+DECLARE @SoDT_HD INT, @SoDT_PB INT
+EXEC sp_ThongTinDeTaiGV N'Nguyễn Văn An', @SoDT_HD OUTPUT ,@SoDT_PB OUTPUT ;
+SELECT @SoDT_HD AS N'Số lượng đề tài hướng dẫn', @SoDT_PB AS N'Số lượng đề tài phản biện'
+```
+
+- Kết quả: thông báo “Trùng tên giáo viên”.
+
+```sql
+Msg 51000, Level 16, State 2, Procedure sp_ThongTinDeTaiGV, Line 30
+Trùng tên giáo viên
+```
+
+#### Ví dụ 3: tên giáo viên hợp lệ
+
+- `TENGV`: Trần Trung
+
+```sql
+DECLARE @SoDT_HD INT, @SoDT_PB INT
+EXEC sp_ThongTinDeTaiGV N'Trần Trung', @SoDT_HD OUTPUT ,@SoDT_PB OUTPUT ;
+SELECT @SoDT_HD AS N'Số lượng đề tài hướng dẫn', @SoDT_PB AS N'Số lượng đề tài phản biện'
+```
+
+- Kết quả: trả về số lượng đề tài tương ứng hướng dẫn và phản biện.
+
+| Số lượng đề t&#224;i hướng dẫn | Số lượng đề t&#224;i phản biện |
+| ------------------------------ | ------------------------------ |
+| 1                              | 1                              |
+
