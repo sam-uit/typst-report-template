@@ -1,9 +1,7 @@
-#import "../template/lib.typ": *
-
-#unheading[Đề Bài - Cơ Sở Dữ Liệu về Quản Lý Đề Tài]
+= Đề Bài - Cơ Sở Dữ Liệu về Quản Lý Đề Tài
 <de-bai-co-so-du-lieu-ve-quan-ly-de-tai>
 
-Cho lược đồ quan hệ sau, hãy hoàn thành các yêu cầu ở @phan-1[Phần] và @phan-2[Phần].
+Cho lược đồ quan hệ sau, hãy hoàn thành các yêu cầu ở @phan-1[ Mục] (Phần 1) và @phan-2[ Mục] (Phần 2).
 
 + SINHVIEN(#underline[MSSV], TENSV, SODT, LOP, DIACHI)
 + DETAI(#underline[MSDT], TENDT)
@@ -19,3 +17,7 @@ Cho lược đồ quan hệ sau, hãy hoàn thành các yêu cầu ở @phan-1[P
 + HOIDONG(#underline[MSHD], PHONG, TGBD, NGAYHD, TINHTRANG, MSGV)
 + HOIDONG\_GV(#underline[MSHD, MSGV])
 + HOIDONG\_DT(#underline[MSHD, MSDT], QUYETDINH)
+
+Môi Trường:
+
+- RDBMS: Microsoft SQL Server (Azure SQL Edge)
