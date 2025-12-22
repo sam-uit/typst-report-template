@@ -1,5 +1,3 @@
-# Phần 2
-
 ## A. STORED PROCEDURES VỚI THAM SỐ VÀO
 
 ### Kiểm Tra `MSHH` Trong Table `HOCHAM`

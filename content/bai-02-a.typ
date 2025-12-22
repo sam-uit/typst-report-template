@@ -1,7 +1,3 @@
-= Phần 2
-<phan-2>
-
-
 == A. STORED PROCEDURES VỚI THAM SỐ VÀO
 <a-stored-procedures-voi-tham-so-vao>
 

@@ -1,8 +1,1 @@
-
-## B. STORED PROCEDURES VỚI THAM SỐ VÀO VÀ RA
-
-## C. TRIGGER
-
-## D. FUNCTION
-
-## E. CURSOR
+# Phần 2

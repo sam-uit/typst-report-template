@@ -43,7 +43,10 @@
 // MARK: MAIN CONTENT
 #include "content/bai-01.typ"
 #pagebreak()
-#include "content/bai-02-a.typ"
 #include "content/bai-02.typ"
-
+#include "content/bai-02-a.typ"
+#include "content/bai-02-b.typ"
+#include "content/bai-02-c.typ"
+#include "content/bai-02-d.typ"
+#include "content/bai-02-e.typ"
 // THE END
