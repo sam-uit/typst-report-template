@@ -96,15 +96,17 @@ END
 GO
 ```
 
-#### Ví dụ 1: 97001
-
-- Đề tài `97001`
+#### Ví dụ 1: Đề tài `97001`
 
 ```sql
 DECLARE @KETQUA FLOAT;
 EXEC SP_DiemTBDeTai '97001', @KETQUA output ;
 SELECT 'Diem TB De Tai 97001 ' AS KETQUA, @KETQUA AS DiemTB;
 ```
+
+| KETQUA               | DiemTB |
+| -------------------- | ------ |
+| Diem TB De Tai 97001 | 8      |
 
 #### Ví dụ 2: 97007
 
@@ -115,6 +117,10 @@ DECLARE @KETQUA FLOAT;
 EXEC sp_DiemTBDeTai '97007', @KETQUA OUTPUT;
 SELECT 'Diem TB De Tai 97007 ' AS KetQua, @KETQUA AS DiemTB;
 ```
+
+|KETQUA|DiemTB|
+|---|---|
+|Diem TB De Tai 97007 |0|
 
 ### Đưa vào `TENGV` trả ra SDT của GV
 

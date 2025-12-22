@@ -54,7 +54,7 @@ SELECT N'Số GV Thạc sĩ: ' AS KetQua, @KETQUA AS SoLuong;
 ==== Ví dụ 2: Học Vị Tiến Sĩ
 <vi-du-2-hoc-vi-tien-si>
 
-- Học vị = Tiến Sĩ (Không tồn tại GV có học hàm Tiến Sĩ)
+- Học vị = Tiến Sĩ (Không tồn tại)
 
 ```sql
 DECLARE @KETQUA INT;
@@ -68,13 +68,17 @@ SELECT N'Số GV Tiến sĩ: ' AS KetQua, @KETQUA AS SoLuong;
   [KetQua], [SoLuong], [Số GV Tiến sĩ:], [0]
 )
 
-=== Đưa vào `MSDT` cho biết Điểm trung bình
-<dua-vao-msdt-cho-biet-diem-trung-binh>
+=== Điểm Trung Bình của Đề Tài
+<diem-trung-binh-cua-de-tai>
+
+Đưa vào:
+
+- `MSDT`
 
 Cho biết:
 
 - Điểm trung bình của đề tài.
-- Nếu không tìm thấy trả về `0`.
+  - Nếu không tìm thấy trả về `0`.
 
 ```sql
 CREATE PROCEDURE SP_DiemTBDeTai
@@ -101,9 +105,8 @@ END
 GO
 ```
 
-Ví dụ 1:
-
-- Đề tài `97001`
+==== Ví dụ 1: Đề tài `97001`
+<vi-du-1-de-tai-97001>
 
 ```sql
 DECLARE @KETQUA FLOAT;
@@ -111,7 +114,14 @@ EXEC SP_DiemTBDeTai '97001', @KETQUA output ;
 SELECT 'Diem TB De Tai 97001 ' AS KETQUA, @KETQUA AS DiemTB;
 ```
 
-Ví dụ 2:
+#table(
+  columns: (1fr,) * 2,
+  align: (left, left),
+  [KETQUA], [DiemTB], [Diem TB De Tai 97001], [8]
+)
+
+==== Ví dụ 2: 97007
+<vi-du-2-97007>
 
 - Đề tài không có điểm: `97007`
 
@@ -120,6 +130,12 @@ DECLARE @KETQUA FLOAT;
 EXEC sp_DiemTBDeTai '97007', @KETQUA OUTPUT;
 SELECT 'Diem TB De Tai 97007 ' AS KetQua, @KETQUA AS DiemTB;
 ```
+
+#table(
+  columns: (1fr,) * 2,
+  align: (left, left),
+  [KETQUA], [DiemTB], [Diem TB De Tai 97007], [0]
+)
 
 === Đưa vào `TENGV` trả ra SDT của GV
 <dua-vao-tengv-tra-ra-sdt-cua-gv>
