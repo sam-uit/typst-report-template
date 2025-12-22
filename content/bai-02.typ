@@ -90,7 +90,7 @@ BEGIN
 END;
 ```
 
-=== Thao tác với `MSDT` và `TENDT`
+=== Thao Tác với `MSDT` và `TENDT`
 <thao-tac-voi-msdt-va-tendt>
 
 - Đưa vào `MSDT` cũ, `TENDT` mới.
@@ -112,6 +112,33 @@ BEGIN
     UPDATE DETAI
     SET TENDT = @TENDT
     WHERE MSDT = @MSDT
+    RETURN 1
+END;
+```
+
+=== Thao Tác với `MSSV`, `TENSV`, `DIACHI`
+<thao-tac-voi-mssv-tensv-diachi>
+
+- Tham số đưa vào `MSSV`, `TENSV` mới, `DIACHI` mới.
+- Hãy cập nhật sinh viên trên với `MSSV` không đổi.
+  - Nếu không tìm thấy, trả về `0`.
+  - Ngược lại cập nhật và trả về `1`.
+
+```sql
+CREATE PROC SP_UPD_SINHVIEN_KT_MSSV
+    @MSSV char(8), 
+    @TENSV NVARCHAR(30),
+    @DIACHI nvarchar(50)
+AS
+BEGIN
+    IF NOT EXISTS (SELECT MSSV FROM SINHVIEN WHERE MSSV = @MSSV)
+    BEGIN
+        RETURN 0; -- Nếu không tìm thấy trả về 0,
+    END
+
+    UPDATE SINHVIEN
+    SET TENSV = @TENSV, DIACHI = @DIACHI
+    WHERE MSSV = @MSSV
     RETURN 1
 END;
 ```
