@@ -34,7 +34,9 @@ AS
 GO
 ```
 
-Ví dụ:
+Ví dụ 1:
+
+- Học Vị = Thạc Sĩ
 
 ```sql
 DECLARE @KETQUA INT;
@@ -49,6 +51,27 @@ SELECT N'Số GV Thạc sĩ: ' AS KetQua, @KETQUA AS SoLuong;
     table.header([KetQua], [SoLuong],),
     table.hline(),
     [Số GV Thạc sĩ:], [2],
+  )]
+  , kind: table
+  )
+
+Ví dụ 2:
+
+- Học vị = Tiến Sĩ (Không tồn tại)
+
+```sql
+DECLARE @KETQUA INT;
+EXEC sp_CountGVTheoHocVi N'Tiến sĩ', @KETQUA output ;
+SELECT N'Số GV Tiến sĩ: ' AS KetQua, @KETQUA AS SoLuong;
+```
+
+#figure(
+  align(center)[#table(
+    columns: 2,
+    align: (auto,auto,),
+    table.header([KetQua], [SoLuong],),
+    table.hline(),
+    [Số GV Tiến sĩ:], [0],
   )]
   , kind: table
   )
