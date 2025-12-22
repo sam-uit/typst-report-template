@@ -343,7 +343,9 @@ GO
 ```sql
 DECLARE @SoDT_HD INT, @SoDT_PB INT
 EXEC sp_ThongTinDeTaiGV N'Lê Kim Long', @SoDT_HD OUTPUT ,@SoDT_PB OUTPUT ;
-SELECT @SoDT_HD AS N'Số lượng đề tài hướng dẫn', @SoDT_PB AS N'Số lượng đề tài phản biện'
+SELECT
+	@SoDT_HD AS N'Số lượng đề tài hướng dẫn',
+	@SoDT_PB AS N'Số lượng đề tài phản biện';
 ```
 
 - Kết quả: thông báo “Không tìm thấy giáo viên”.
@@ -360,7 +362,9 @@ Không tìm thấy giáo viên
 ```sql
 DECLARE @SoDT_HD INT, @SoDT_PB INT
 EXEC sp_ThongTinDeTaiGV N'Nguyễn Văn An', @SoDT_HD OUTPUT ,@SoDT_PB OUTPUT ;
-SELECT @SoDT_HD AS N'Số lượng đề tài hướng dẫn', @SoDT_PB AS N'Số lượng đề tài phản biện'
+SELECT
+    @SoDT_HD AS N'Số lượng đề tài hướng dẫn',
+    @SoDT_PB AS N'Số lượng đề tài phản biện';
 ```
 
 - Kết quả: thông báo “Trùng tên giáo viên”.
@@ -377,12 +381,15 @@ Trùng tên giáo viên
 ```sql
 DECLARE @SoDT_HD INT, @SoDT_PB INT
 EXEC sp_ThongTinDeTaiGV N'Trần Trung', @SoDT_HD OUTPUT ,@SoDT_PB OUTPUT ;
-SELECT @SoDT_HD AS N'Số lượng đề tài hướng dẫn', @SoDT_PB AS N'Số lượng đề tài phản biện'
+SELECT
+	N'**Số lượng**' AS N'**Loại**',
+	@SoDT_HD AS N'Đề tài hướng dẫn',
+	@SoDT_PB AS N'Đề tài phản biện';
 ```
 
 - Kết quả: trả về số lượng đề tài tương ứng hướng dẫn và phản biện.
 
-| Số lượng đề t&#224;i hướng dẫn | Số lượng đề t&#224;i phản biện |
-| ------------------------------ | ------------------------------ |
-| 1                              | 1                              |
+| **Loại**     | Đề t&#224;i hướng dẫn | Đề t&#224;i phản biện |
+| ------------ | --------------------- | --------------------- |
+| **Số lượng** | 1                     | 1                     |
 
