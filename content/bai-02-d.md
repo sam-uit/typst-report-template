@@ -142,8 +142,46 @@ SELECT
 
 ### Thông Tin Sinh Viên từ `MSDT`
 
-- Đưa vào MSDT, trả về mã số và họ tên của các sinh viên thực hiện đề tài.
+- Đưa vào `MSDT`, trả về mã số và họ tên của các sinh viên thực hiện đề tài.
 
 ```sql
+IF OBJECT_ID('f_DanhSachSVThucHienDeTai', 'IF') IS NOT NULL
+    DROP FUNCTION f_DanhSachSVThucHienDeTai;
+GO
+
+CREATE FUNCTION f_DanhSachSVThucHienDeTai (@MSDT char(6))
+RETURNS TABLE
+AS
+RETURN (
+    SELECT 
+        SV.MSSV, 
+        SV.TENSV
+    FROM SINHVIEN SV
+    JOIN SV_DETAI SD ON SV.MSSV = SD.MSSV
+    WHERE SD.MSDT = @MSDT
+);
+GO
 ```
 
+#### Ví dụ 1
+
+- `MSDT` cụ thể: 97001
+
+```sql
+SELECT * FROM dbo.f_DanhSachSVThucHienDeTai('97001');
+```
+
+|   MSSV   | TENSV          |
+| :------: | -------------- |
+| 13520003 | Nguyễn Anh Hải |
+
+#### Ví dụ 2
+
+- `MSDT` không tồn tại, có nghĩa không có sinh viên. Kết quả trống.
+
+```sql
+SELECT * FROM dbo.f_DanhSachSVThucHienDeTai('97006');
+```
+
+| MSSV | TENSV |
+| :--: | ----- |
