@@ -85,13 +85,60 @@ SELECT
 
 ### Kết Quả của Đề Tài từ `MSDT`
 
-- Trả về kết quả của đề tài theo MSDT nhập vào.
-- Kết quả là `DAT` nếu như điểm trung bình từ 5 trở lên, và `KHONGDAT` nếu như điểm trung bình dưới 5.
+- Trả về kết quả của đề tài theo `MSDT` nhập vào.
+- Kết quả là `DAT` nếu như điểm trung bình từ `5` trở lên, và `KHONGDAT` nếu như điểm trung bình dưới `5`.
 
 ```sql
+IF OBJECT_ID('f_KetQuaDeTai', 'FN') IS NOT NULL
+    DROP FUNCTION f_KetQuaDeTai;
+GO
+
+CREATE FUNCTION f_KetQuaDeTai (@MSDT char(6))
+RETURNS NVARCHAR(20)
+AS
+BEGIN
+    DECLARE @DiemTB float;
+    DECLARE @KetQua NVARCHAR(20);
+
+    SET @DiemTB = dbo.f_TinhDiemTB(@MSDT);
+
+    IF (@DiemTB >= 5)
+        SET @KetQua = N'DAT';
+    ELSE
+        SET @KetQua = N'KHONGDAT';
+
+    RETURN @KetQua;
+END;
+GO
 ```
 
+#### Ví dụ 1
 
+- Một đề tài cụ thể.
+
+```sql
+SELECT
+    '97001' AS 'MSDT',
+    dbo.f_KetQuaDeTai('97001') AS KetQuaDeTai;
+```
+
+| MSDT  | KetQuaDeTai |
+| :---: | ----------- |
+| 97001 | DAT         |
+
+#### Ví dụ 2
+
+- Đề tài không tồn tại (được xem là KHÔNG ĐẠT).
+
+```sql
+SELECT
+    '99999' AS 'MSDT',
+    dbo.f_KetQuaDeTai('99999') AS KetQuaDeTai;
+```
+
+| MSDT  | KetQuaDeTai |
+| :---: | ----------- |
+| 99999 | KHONGDAT    |
 
 ### Thông Tin Sinh Viên từ `MSDT`
 
