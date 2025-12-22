@@ -90,6 +90,32 @@ BEGIN
 END;
 ```
 
+=== Thao tác với `MSDT` và `TENDT`
+<thao-tac-voi-msdt-va-tendt>
+
+- Đưa vào `MSDT` cũ, `TENDT` mới.
+- Hãy cập nhật tên đề tài mới với mã đề tài cũ không đổi.
+  - Nếu không tìm thấy, trả về `0`.
+  - Ngược lại cập nhật và trả về `1`.
+
+```sql
+CREATE PROC SP_UPD_DETAI_KT_MSDT
+    @MSDT char(6),
+    @TENDT NVARCHAR(30)
+AS
+BEGIN
+    IF NOT EXISTS (SELECT MSDT FROM DETAI WHERE MSDT = @MSDT)
+    BEGIN
+        RETURN 0; -- Nếu MSHH chưa tồn tại trả về 0
+    END
+
+    UPDATE DETAI
+    SET TENDT = @TENDT
+    WHERE MSDT = @MSDT
+    RETURN 1
+END;
+```
+
 == B. STORED PROCEDURES VỚI THAM SỐ VÀO VÀ RA
 <b-stored-procedures-voi-tham-so-vao-va-ra>
 
