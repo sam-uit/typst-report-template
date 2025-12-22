@@ -58,3 +58,35 @@ SELECT N'Số GV Tiến sĩ: ' AS KetQua, @KETQUA AS SoLuong;
 |KetQua|SoLuong|
 |---|---|
 |Số GV Tiến sĩ: |0|
+
+### Đưa vào `MSDT` cho biết Điểm trung bình
+
+Cho biết:
+
+- Điểm trung bình của đề tài.
+- Nếu không tìm thấy trả về `0`.
+
+```sql
+-- NOT AVAILABLE YET
+```
+
+Ví dụ 1:
+
+- Đề tài `97001`
+
+```sql
+DECLARE @KETQUA FLOAT;
+EXEC SP_DiemTBDeTai '97001', @KETQUA output ;
+SELECT 'Diem TB De Tai 97001 ' AS KETQUA, @KETQUA AS DiemTB;
+```
+
+Ví dụ 2:
+
+- Đề tài không có điểm: `97007`
+
+```sql
+DECLARE @KETQUA FLOAT;
+EXEC sp_DiemTBDeTai '97007', @KETQUA OUTPUT;
+SELECT 'Diem TB De Tai 97007 ' AS KetQua, @KETQUA AS DiemTB;
+```
+
