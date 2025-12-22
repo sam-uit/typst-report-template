@@ -169,3 +169,15 @@ SELECT * FROM DETAI_DIEM;
 | 97004 | 8      |
 | 97005 | 8.2    |
 | 97006 | 8.33   |
+
+### Xếp Loại Kết Quả với `XEPLOAI`
+
+- Tạo thêm cột `XEPLOAI` có kiểu là `NVARCCHAR(20)` trong bảng `DETAI_DIEM`.
+- Viết Cursor cập nhật kết quả xếp loại cho mỗi đề tài như sau:
+    + "Xuất sắc": điểm trung bình từ 9 đến 10.
+    + "Giỏi": điểm trung bình từ 8 đến 9.
+    + "Khá": điểm trung bình từ 7 đến 8.
+    + "Trung bình khá": điểm trung bình từ 6 đến 7.
+    + "Trung bình": điểm trung bình từ 5 đến 6.
+    + "Yếu": điểm trung bình từ 4 đến 5.
+    + "Kém": điểm trung bình dưới 4.
