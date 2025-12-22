@@ -179,35 +179,95 @@ CREATE TABLE HOIDONG_DT (
 ### Table `SINHVIEN`
 
 ```sql
-
+INSERT INTO SINHVIEN (MSSV, TENSV, SODT, LOP, DIACHI) VALUES
+('13520001', N'Nguyễn Văn An', '0906762255', 'SE103.U32', N'THỦ ĐỨC'),
+('13520002', N'Phan Tấn Đạt', '0975672350', 'IE204.T21', N'QUẬN 1'),
+('13520003', N'Nguyễn Anh Hải', '0947578688', 'IE205.R12', N'QUẬN 9'),
+('13520004', N'Phạm Tài', '0956757869', 'IE202.A22', N'QUẬN 1'),
+('13520005', N'Lê Thúy Hằng', '0976668688', 'SE304.E22', N'THỦ ĐỨC'),
+('13520006', N'Ưng Hồng Ân', '0957475898', 'IE208.F33', N'QUẬN 2');
 ```
 
 ### Table `DETAI`
 
 ```sql
-
+INSERT INTO DETAI (MSDT, TENDT) VALUES
+('97001', N'Quản lý thư viện'),
+('97002', N'Nhận dạng vân tay'),
+('97003', N'Bán đấu giá trên mạng'),
+('97004', N'Quản lý siêu thị'),
+('97005', N'Xử lý ảnh'),
+('97006', N'Hệ giải toán thông minh');
 ```
 
 ### Table `SV_DETAI`
 
+```sql
+
+```
+
 ### Table `HOCHAM`
+
+```sql
+
+```
 
 ### Table `GIAOVIEN`
 
+```sql
+
+```
+
 ### Table `HOCVI`
+
+```sql
+
+```
 
 ### Table `CHUYENNGANH`
 
+```sql
+
+```
+
 ### Table `GV_HV_CN`
+
+```sql
+
+```
 
 ### Table `GV_HDDT`
 
+```sql
+
+```
+
 ### Table `GV_PBDT`
+
+```sql
+
+```
 
 ### Table `GV_UVDT`
 
+```sql
+
+```
+
 ### Table `HOIDONG`
+
+```sql
+
+```
 
 ### Table `HOIDONG_GV`
 
+```sql
+
+```
+
 ### Table `HOIDONG_DT`
+
+```sql
+
+```
