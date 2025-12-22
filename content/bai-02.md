@@ -26,7 +26,6 @@ END;
 ```
 
 ### Kiểm Tra `MSGV` Trong Table `GIAOVIEN`
-<SP_INS_GV_KT_MSGV>
 
 - Tham số vào là `MSGV`, `TENGV`, `SODT`, `DIACHI`, `MSHH`, `NAMHH`.
 - Trước khi insert dữ liệu cần kiểm tra `MSGV` trong table `GIAOVIEN` có trùng không
