@@ -16,3 +16,7 @@ Cho lược đồ quan hệ sau, hãy hoàn thành các yêu cầu ở [@phan-1 
 12. HOIDONG(<u>MSHD</u>, PHONG, TGBD, NGAYHD, TINHTRANG, MSGV)
 13. HOIDONG_GV(<u>MSHD, MSGV</u>)
 14. HOIDONG_DT(<u>MSHD, MSDT</u>, QUYETDINH)
+
+Môi Trường:
+
+- RDBMS: Microsoft SQL Server (Azure SQL Edge)
