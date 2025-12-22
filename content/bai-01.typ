@@ -4,7 +4,7 @@
 == CREATE - Tạo Các Quan Hệ
 <create-tao-cac-quan-he>
 
-- RDBS: Microsoft SQL Server.
+- RDBMS: Microsoft SQL Server.
 
 === `SINHVIEN`
 <sinhvien>
@@ -190,7 +190,7 @@ CREATE TABLE HOIDONG_DT (
 == INSERT - Thêm Dữ Liệu
 <insert-them-du-lieu>
 
-- RDBS: Microsoft SQL Server.
+- RDBMS: Microsoft SQL Server.
 
 === Table `SINHVIEN`
 <table-sinhvien>
