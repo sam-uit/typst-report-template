@@ -46,11 +46,83 @@ CREATE TABLE HOCHAM (
 );
 ```
 
+### `GIAOVIEN`
+
+```sql
+
+```
+
+### `HOCVI`
+
+```sql
+
+```
+
+### `CHUYENNGANH`
+
+```sql
+
+```
+
+### `GV_HV_CN`
+
+```sql
+
+```
+
+### `GV_HDDT`
+
+```sql
+
+```
+
+### `GV_PBDT`
+
+```sql
+
+```
+
+### `GV_UVDT`
+
+```sql
+
+```
+
+### `HOIDONG`
+
+```sql
+
+```
+
+### `HOIDONG_GV`
+
+```sql
+
+```
+
+### `HOIDONG_DT`
+
+```sql
+
+```
+
 ## INSERT - Thêm Dữ Liệu
+
+```sql
+
+```
 
 ### Table `SINHVIEN`
 
+```sql
+
+```
+
 ### Table `DETAI`
+
+```sql
+
+```
 
 ### Table `SV_DETAI`
 
