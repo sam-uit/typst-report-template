@@ -178,11 +178,26 @@ GO
 
 Dữ liệu bảng `GIAOVIEN` (Đã thêm một record Nguyễn Văn An, `MSGV`: `206`, `SODT`: `12434343`):
 
-#figure(image("assets/2b-3-1.png"),
-  caption: [
-    2b-3-1
-  ]
-)
+```sql
+INSERT INTO GIAOVIEN (MSGV, TENGV, DIACHI, SODT, MSHH, NAMHH)
+VALUES (206, N'Nguyễn Văn An', N'Cần Thơ', '12434343', 1, '2025');
+```
+
+#figure(
+  align(center)[#table(
+    columns: 6,
+    align: (right,left,left,left,left,left,),
+    table.header([MSGV], [TENGV], [DIACHI], [SODT], [MSHH], [NAMHH],),
+    table.hline(),
+    [201], [Trần Trung], [Bến Tre], [35353535], [1], [1996-01-01 00:00:00],
+    [202], [Nguyễn Văn An], [Tiền Giang], [67868688], [1], [1996-01-01 00:00:00],
+    [203], [Trần Thu Trang], [Cần Thơ], [74758687], [1], [1996-01-01 00:00:00],
+    [204], [Nguyễn Thị Loan], [TP. HCM], [56575868], [2], [2005-01-01 00:00:00],
+    [205], [Chu Tiến], [Hà Nội], [46466646], [2], [2005-01-01 00:00:00],
+    [206], [Nguyễn Văn An], [Cần Thơ], [12434343], [1], [2025-01-01 00:00:00],
+  )]
+  , kind: table
+  )
 
 Ví dụ 1:
 
@@ -196,11 +211,16 @@ SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SD
 
 - Kết quả: trả về 2 bản ghi có sự trùng lặp ở trường `TENGV`
 
-#figure(image("assets/2b-3-2.png"),
-  caption: [
-    2b-3-2
-  ]
-)
+#figure(
+  align(center)[#table(
+    columns: 3,
+    align: (auto,auto,auto,),
+    table.header([ThongBao], [SoLuong], [Danh sach so dien thoai],),
+    table.hline(),
+    [Tong so giao vien trung ten:], [2], [67868688, 12434343],
+  )]
+  , kind: table
+  )
 
 Ví dụ 2:
 
@@ -214,11 +234,16 @@ SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SD
 
 - Kết quả: trả về duy nhất 1 bản ghi do không tìm thấy sự trùng lặp ở trường `TENGV`
 
-#figure(image("assets/2b-3-3.png"),
-  caption: [
-    2b-3-3
-  ]
-)
+#figure(
+  align(center)[#table(
+    columns: 3,
+    align: (auto,auto,auto,),
+    table.header([ThongBao], [SoLuong], [Danh sach so dien thoai],),
+    table.hline(),
+    [Tong so giao vien trung ten:], [1], [35353535],
+  )]
+  , kind: table
+  )
 
 Ví dụ 3:
 
@@ -232,8 +257,13 @@ SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SD
 
 - Kết quả: `0`, vì không tìm thấy `TENGV` phù hợp.
 
-#figure(image("assets/2b-3-4.png"),
-  caption: [
-    2b-3-4
-  ]
-)
+#figure(
+  align(center)[#table(
+    columns: 3,
+    align: (auto,auto,auto,),
+    table.header([ThongBao], [SoLuong], [Danh sach so dien thoai],),
+    table.hline(),
+    [Tong so giao vien trung ten:], [0], [],
+  )]
+  , kind: table
+  )
