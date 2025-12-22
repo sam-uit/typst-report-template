@@ -7,6 +7,9 @@
 
 - Tạo Trigger thỏa mãn điều kiện khi xóa một đề tài sẽ xóa các thông tin liên quan.
 
+==== Trigger
+<trigger>
+
 ```sql
 CREATE TRIGGER trg_C1_CheckSoLuongSVDeTai
 ON SV_DETAI
@@ -29,10 +32,20 @@ END
 GO
 ```
 
+==== Ví dụ
+<vi-du>
+
+```sql
+--- VÍ DỤ
+```
+
 === Trigger thay đổi MSGV
 <trigger-thay-doi-msgv>
 
 - Tạo Trigger thỏa mãn ràng buộc là khi đổi 1 mã số giáo viên (MSGV) thì sẽ thay đổi các thông tin liên quan.
+
+==== Trigger
+<trigger-1>
 
 ```sql
 CREATE TRIGGER trg_C2_CheckGVHVCN
@@ -83,11 +96,18 @@ END
 GO
 ```
 
+==== Ví dụ
+<vi-du>
+
+
 === Trigger Hội Đồng và Số Lượng Đề Tài
 <trigger-hoi-dong-va-so-luong-de-tai>
 
 - Tạo Trigger thỏa mãn ràng buộc là một hội đồng không quá 10 đề tài.
 - Dùng "Group by" có được không? Giải thích.
+
+==== Trigger
+<trigger-2>
 
 ```sql
 CREATE TRIGGER trg_C3_CheckGvInHoiDong
@@ -110,11 +130,24 @@ END
 GO
 ```
 
+==== Giải Thích
+<giai-thich>
+
+- CÓ/KHÔNG thể dùng `GROUP BY`.
+- VÌ:
+
+==== Ví Dụ
+<vi-du>
+
+
 === Trigger Đề Tài và Số Lượng Sinh Viên
 <trigger-de-tai-va-so-luong-sinh-vien>
 
 - Tạo Trigger thỏa mãn ràng buộc là một đề tài không quá 2 sinh viên.
 - Dùng "Group by" có được không? Giải thích.
+
+==== Trigger
+<trigger-3>
 
 ```sql
 CREATE TRIGGER trg_C4_CheckPhanBienVsHuongDan
@@ -135,6 +168,16 @@ BEGIN
 END
 GO
 ```
+
+==== Giải Thích
+<giai-thich>
+
+- CÓ/KHÔNG thể dùng `GROUP BY`.
+- VÌ:
+
+==== Ví Dụ
+<vi-du>
+
 
 === Trigger Giáo Viên và Học Hàm
 <trigger-giao-vien-va-hoc-ham>
