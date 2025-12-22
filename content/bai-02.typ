@@ -30,21 +30,34 @@ BEGIN
 END;
 ```
 
-=== Kiểm Tra MSGV Trong Table GIAOVIEN
+=== Kiểm Tra `MSGV` Trong Table `GIAOVIEN`
 <kiem-tra-msgv-trong-table-giaovien>
 
+- Tham số vào là `MSGV`, `TENGV`, `SODT`, `DIACHI`, `MSHH`, `NAMHH`.
+- Trước khi insert dữ liệu cần kiểm tra `MSGV` trong table `GIAOVIEN` có trùng không
+  - Nếu trùng thì trả về giá trị `0`.
+
 ```sql
--- Kiểm tra MSGV trong table GIAOVIEN
-CREATE PROCEDURE kiem_tra_msgv_trong_table_giaovien(
-    @msgv int
-)
+CREATE PROC SP_INS_GV_KT_MSGV
+    @MSGV INT,
+    @TENGV NVARCHAR(30),
+    @SODT VARCHAR(10),
+    @DIACHI NVARCHAR(50),
+    @MSHH INT,
+    @NAMHH SMALLDATETIME
 AS
 BEGIN
-    IF EXISTS (SELECT 1 FROM GIAOVIEN WHERE MSGV = @msgv)
-        RETURN 1
-    ELSE
-        RETURN 0
-END
+    IF EXISTS (
+        SELECT 1
+        FROM GIAOVIEN
+        WHERE MSGV = @MSGV
+    )
+    BEGIN
+        RETURN 0; -- MSGV đã tồn tại
+    END
+    INSERT INTO GIAOVIEN VALUES (@MSGV, @TENGV, @DIACHI, @SODT, @MSHH, @NAMHH)
+    RETURN 1
+END;
 ```
 
 == B. STORED PROCEDURES VỚI THAM SỐ VÀO VÀ RA
