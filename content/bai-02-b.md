@@ -90,3 +90,94 @@ EXEC sp_DiemTBDeTai '97007', @KETQUA OUTPUT;
 SELECT 'Diem TB De Tai 97007 ' AS KetQua, @KETQUA AS DiemTB;
 ```
 
+###  Đưa vào `TENGV` trả ra SDT của GV
+
+Đưa vào TENGV trả ra:
+
+- `SDT` của giáo viên đó.
+- Nếu không tìm thấy trả về `0`.
+- Nếu trùng tên thì có báo lỗi không?
+  - Tại sao?
+- Làm sao để hiện thông báo có bao nhiêu giáo viên trùng tên và trả về các SDT?
+
+Giải đáp:
+
+- Nếu trùng tên thì sẽ không báo lỗi.
+  - Nguyên nhân là nếu trùng tên thì đồng nghĩa với việc đang có nhiều records (bản ghi) có column là `TENGV` đang giống nhau.
+  - Về mặt câu lệnh SQL, có thể như sau: ```sql SELECT * FROM GIAOVIEN WHERE TENGV = %NAME```.
+  - Kết quả trả về của câu lệnh SQL này có khả năng sẽ là `0`, `1` hoặc nhiều records.
+  - Nếu đề cập tới việc xảy ra lỗi ở đây thì có khả năng liên quan tới việc dữ liệu có khả năng bị sai lệch do sẽ không biết được sẽ lấy số điện thoại của record nào để trả về.
+- Đáp ứng yêu cầu hiện thông báo có bao nhiêu giáo viên trùng tên và trả về các SDT, ta có thể làm như sau:
+
+```sql
+CREATE PROCEDURE sp_TimGVTheoTen @TENGV NVARCHAR(30),
+                                 @SOLUONGGV INT OUTPUT,
+                                 @DS_SDT VARCHAR(100) OUTPUT
+AS
+BEGIN
+    SET @DS_SDT = '';
+    -- DEM SO LUONG GIAO VIEN TRUNG TEN
+    SELECT @SOLUONGGV = COUNT(MSGV)
+    FROM GIAOVIEN
+    WHERE TENGV = @TENGV;
+end
+    -- KIEM TRA SO LUONG GIAO VIEN VA TRA VE THONG TIN TUONG UNG
+    IF @SOLUONGGV > 0
+        BEGIN
+            SELECT @DS_SDT = STRING_AGG(SODT, ', ')
+            FROM GIAOVIEN
+            WHERE TENGV = @TENGV;
+        end
+    ELSE
+        BEGIN
+            SET @SOLUONGGV = 0;
+            SET @DS_SDT = '';
+        end;
+GO
+```
+
+Dữ liệu bảng `GIAOVIEN` (Đã thêm một record Nguyễn Văn An, `MSGV`: `206`, `SODT`: `12434343`):
+
+![2b-3-1](assets/2b-3-1.png)
+
+Ví dụ 1:
+
+- Trường hợp trùng tên: Nguyễn Văn An
+
+```sql
+DECLARE @SoLuong INT, @DS_SDT NVARCHAR(100);
+EXEC sp_TimGVTheoTen N'Nguyễn Văn An', @SoLuong OUTPUT, @DS_SDT OUTPUT;
+SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SDT AS 'Danh sach so dien thoai';
+```
+
+- Kết quả: trả về 2 bản ghi có sự trùng lặp ở trường `TENGV`
+
+![2b-3-2](assets/2b-3-2.png)
+
+Ví dụ 2:
+
+- Trường hợp không trùng tên: Trần Trung
+
+```sql
+DECLARE @SoLuong INT, @DS_SDT NVARCHAR(100);
+EXEC sp_TimGVTheoTen N'Trần Trung', @SoLuong OUTPUT, @DS_SDT OUTPUT;
+SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SDT AS 'Danh sach so dien thoai';
+```
+
+- Kết quả: trả về duy nhất 1 bản ghi do không tìm thấy sự trùng lặp ở trường `TENGV`
+
+![2b-3-3](assets/2b-3-3.png)
+
+Ví dụ 3:
+
+- Trường hợp không tìm thấy: Lê Kim Long
+
+```sql
+DECLARE @SoLuong INT, @DS_SDT NVARCHAR(100);
+EXEC sp_TimGVTheoTen N'Lê Kim Long', @SoLuong OUTPUT, @DS_SDT OUTPUT;
+SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SDT AS 'Danh sach so dien thoai';
+```
+
+- Kết quả: `0`, vì không tìm thấy `TENGV` phù hợp.
+
+![2b-3-4](assets/2b-3-4.png)
