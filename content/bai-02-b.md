@@ -336,6 +336,49 @@ BEGIN
 GO
 ```
 
+#### Dữ liệu đang có
+
+- `GIAOVIEN`
+
+```sql
+SELECT TOP (100) [MSGV]
+      ,[TENGV]
+      ,[DIACHI]
+      ,[SODT]
+      ,[MSHH]
+    --   ,[NAMHH]
+  FROM [IE103-BTTH2].[dbo].[GIAOVIEN]
+```
+
+| MSGV | TENGV           | DIACHI     | SODT     | MSHH |
+| ---: | --------------- | ---------- | -------- | ---- |
+|  201 | Trần Trung      | Bến Tre    | 35353535 | 1    |
+|  202 | Nguyễn Văn An   | Tiền Giang | 67868688 | 1    |
+|  203 | Trần Thu Trang  | Cần Thơ    | 74758687 | 1    |
+|  204 | Nguyễn Thị Loan | TP. HCM    | 56575868 | 2    |
+|  205 | Chu Tiến        | Hà Nội     | 46466646 | 2    |
+|  206 | Nguyễn Văn An   | Cần Thơ    | 12434343 | 1    |
+
+- `GV_HDDT`
+
+|MSGV|MSDT|DIEM|
+|--:|---|---|
+|201|97001 |8|
+|202|97002 |7|
+|203|97005 |9|
+|204|97004 |7|
+|205|97001 |9|
+
+- `GV_PBDT`
+
+|MSGV|MSDT|DIEM|
+|--:|---|---|
+|201|97005 |8|
+|202|97001 |7|
+|203|97002 |9|
+|204|97003 |7|
+|205|97004 |9|
+
 #### Ví dụ 1: không tìm thấy giáo viên
 
 - `TENGV`: Lê Kim Long
