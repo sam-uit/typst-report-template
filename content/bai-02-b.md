@@ -59,7 +59,7 @@ SELECT N'Số GV Tiến sĩ: ' AS KetQua, @KETQUA AS SoLuong;
 |---|---|
 |Số GV Tiến sĩ: |0|
 
-### Điểm Trung Bình của Đề Tài
+### Đưa vào `MSDT` trả về Điểm Trung Bình của Đề Tài
 
 Đưa vào:
 

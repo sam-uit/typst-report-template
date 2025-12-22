@@ -68,8 +68,8 @@ SELECT N'Số GV Tiến sĩ: ' AS KetQua, @KETQUA AS SoLuong;
   [KetQua], [SoLuong], [Số GV Tiến sĩ:], [0]
 )
 
-=== Điểm Trung Bình của Đề Tài
-<diem-trung-binh-cua-de-tai>
+=== Đưa vào `MSDT` trả về Điểm Trung Bình của Đề Tài
+<dua-vao-msdt-tra-ve-diem-trung-binh-cua-de-tai>
 
 Đưa vào:
 
