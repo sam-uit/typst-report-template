@@ -20,4 +20,6 @@ Cho lược đồ quan hệ sau, hãy hoàn thành các yêu cầu ở @phan-1[ 
 
 Môi Trường:
 
-- RDBMS: Microsoft SQL Server (Azure SQL Edge)
+- RDBMS: Microsoft SQL Server (Azure SQL Edge).
+- Editor: Azure Database Studio (ADS).
+- Extensions: SQL Database Projects (`microsoft.sql-database-projects`).
