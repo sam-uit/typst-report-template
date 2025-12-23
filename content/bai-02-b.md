@@ -89,8 +89,6 @@ ALTER ROLE r3 ADD MEMBER U6;
 | 15                | r3   | 11                  | U5   |
 | 15                | r3   | 12                  | U6   |
 
-![Role - Users Mapping](assets/image-20251223153326295.png)
-
 ### B.5 Gán quyền hệ thống cho Role
 
 #### r1 là thành viên của SysAdmin
@@ -154,6 +152,34 @@ GO
 | 3       | sysadmin         | 265      | L4         | SQL_LOGIN |
 | 3       | sysadmin         | 266      | L5         | SQL_LOGIN |
 | 3       | sysadmin         | 267      | L6         | SQL_LOGIN |
+
+- User thuộc các role mới tạo (r1 - r3):
+
+```sql
+SELECT 
+    RoleP.principal_id AS [Role ID],
+    RoleP.name AS [Role Name],
+    RoleMem.member_principal_id as [User ID],
+    UserP.name AS [User Name],
+    UserP.type_desc AS [Member Type]
+FROM sys.database_role_members AS RoleMem
+INNER JOIN sys.database_principals AS RoleP
+    ON RoleMem.role_principal_id = RoleP.principal_id
+INNER JOIN sys.database_principals AS UserP
+    ON RoleMem.member_principal_id = UserP.principal_id
+WHERE UserP.name LIKE 'U%' AND RoleP.name LIKE 'r%'
+ORDER BY [Role Name];
+GO
+```
+
+| Role ID | Role Name | User ID | User Name | Member Type |
+| ------- | --------- | ------- | --------- | ----------- |
+| 13      | r1        | 7       | U1        | SQL_USER    |
+| 14      | r2        | 8       | U2        | SQL_USER    |
+| 14      | r2        | 9       | U3        | SQL_USER    |
+| 15      | r3        | 10      | U4        | SQL_USER    |
+| 15      | r3        | 11      | U5        | SQL_USER    |
+| 15      | r3        | 12      | U6        | SQL_USER    |
 
 - User thuộc `db_accessadmin`
 
