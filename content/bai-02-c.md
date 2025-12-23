@@ -10,13 +10,13 @@ Thực hiện các phát biểu `GRANT` / `DENY` / `REVOKE` trên CSDL **Quản 
 
 Tạo các user `U1`, `U2`, `U3` và phân quyền theo yêu cầu.
 
-- U1 có quyền select, delete trên T1, T3
-- U2 có quyền update, delete trên T2
-- U3 có quyền insert trên T1, T2, T3
-- U1 bị từ chối quyền insert trên T1, T2
-- U2 bị từ chối quyền delete trên T3
-- Thu hồi các quyền của U1 trên T1
-- Thu hồi các quyền của U3 trên T2
+1. U1 có quyền select, delete trên T1, T3
+2. U2 có quyền update, delete trên T2
+3. U3 có quyền insert trên T1, T2, T3
+4. U1 bị từ chối quyền insert trên T1, T2
+5. U2 bị từ chối quyền delete trên T3
+6. Thu hồi các quyền của U1 trên T1
+7. Thu hồi các quyền của U3 trên T2
 
 ### C.1 Tạo User
 
@@ -193,7 +193,7 @@ REVERT;
 The SELECT permission was denied on the object 'DETAI', database 'IE103-BTTH2', schema 'dbo'.
 ```
 
-#### REVOKE - Thu hồi các quyền của U3 trên T2
+### REVOKE - Thu hồi các quyền của U3 trên T2
 
 #### REVOKE
 
