@@ -4,7 +4,7 @@
 
 Chọn 1 file dữ liệu (SV) từ excel, và import vào SQL Server.
 
-- Chuột phải vào bảng cần IMPORT dữ liệu và chọn Import/Export > Import Data from File(s)…
+- Chuột phải vào bảng cần IMPORT dữ liệu và chọn Import/Export > **Import Data from File(s)…**
 
 ![Import/Export > Import Data from File(s)…](assets/Import-001.jpg)
 
@@ -24,7 +24,7 @@ Chọn 1 file dữ liệu (SV) từ excel, và import vào SQL Server.
 
 Chọn 1 table trong SQL Server, và export tới file Excel.
 
-- Chuột phải vào bảng cần EXPORT dữ liệu và chọn Import/Export > Export Data to File
+- Chuột phải vào bảng cần EXPORT dữ liệu và chọn **Import/Export** > **Export Data to File**
 
 ![Import/Export > Export Data to File](assets/export-001.jpg)
 
