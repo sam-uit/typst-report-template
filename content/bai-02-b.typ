@@ -194,7 +194,7 @@ VALUES (206, N'Nguyễn Văn An', N'Cần Thơ', '12434343', 1, '2025');
 Giá trị của bảng (không hiển thị cột `NAMHH` để tiết kiệm không gian):
 
 #table(
-  columns: (1fr,) * 5,
+  columns: (10%, 30%, 20%, 20%, 20%),
   align: (right, left, left, left, left),
   [MSGV], [TENGV], [DIACHI], [SODT], [MSHH], [201], [Trần Trung], [Bến Tre], [35353535], [1], [202], [Nguyễn Văn An], [Tiền Giang], [67868688], [1], [203], [Trần Thu Trang], [Cần Thơ], [74758687], [1], [204], [Nguyễn Thị Loan], [TP. HCM], [56575868], [2], [205], [Chu Tiến], [Hà Nội], [46466646], [2], [206], [Nguyễn Văn An], [Cần Thơ], [12434343], [1]
 )
