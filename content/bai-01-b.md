@@ -83,6 +83,21 @@ GO
 
 ### SQL Server Log
 
+Hãy đọc SQL Server Log trong phần SQL Enterprice → Management → SQL Server Log. Trình bày màn hình các bước thực hiện và ý nghĩa của mỗi trường thông tin trong bảng Log.
+
+- **Đường dẫn:** Trong SQL Server Management Studio (SSMS), mở rộng mục **Management** -> Mở rộng **SQL Server Logs**. Click đúp vào **Current** (hoặc Archive #1, #2).
+
+![SQL Server Log](assets/btth3-bai-1-a-8-1.png)
+
+- Ý nghĩa các trường thông tin trong Log:
+  - **Date:** Thời gian (ngày/giờ) sự kiện xảy ra.
+  - **Source:** Nguồn gốc của thông báo (thường là Server, Logon, hoặc spid - Session Process ID).
+  - **Message:** Nội dung chi tiết của thông báo ("Database backed up...", "Login failed for user...").
+
+  - Mục đích: Giúp quản trị viên theo dõi sức khỏe hệ thống, phát hiện lỗi đăng nhập, kiểm tra các tác vụ backup thành công hay thất bại.
+
+![Ý nghĩa các trường thông tin trong Log](assets/btth3-bai-1-a-8-2.png)
+
 ### Employees
 
 ### Mã Hóa Dữ Liệu
