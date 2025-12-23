@@ -23,7 +23,7 @@ Hãy backup CSDL `AAA` thành 1 file `AAA.BAK`, sau đó xóa CSDL `AAA` và hã
 
 #figure(image("assets/btth3-bai-1-a-7-1.png"),
   caption: [
-    #strong[Tasks] \> #strong[Back Up…]
+    Tasks \> Back Up…
   ]
 )
 
@@ -31,7 +31,7 @@ Hãy backup CSDL `AAA` thành 1 file `AAA.BAK`, sau đó xóa CSDL `AAA` và hã
 
 #figure(image("assets/btth3-bai-1-a-7-2.png"),
   caption: [
-    #strong[Destination];: Chọn #strong[Disk]
+    Destination: Chọn Disk
   ]
 )
 
