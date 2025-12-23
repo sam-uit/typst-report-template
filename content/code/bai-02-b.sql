@@ -74,6 +74,20 @@ BEGIN
 END
 GO
 
+-- Ví dụ 1: Đề tài 97001
+
+DECLARE @KETQUA FLOAT;
+EXEC SP_DiemTBDeTai '97001', @KETQUA output ;
+SELECT 'Diem TB De Tai 97001 ' AS KETQUA, @KETQUA AS DiemTB;
+GO
+
+-- Ví dụ 2: Đề tài không có điểm 97007
+
+DECLARE @KETQUA FLOAT;
+EXEC sp_DiemTBDeTai '97007', @KETQUA OUTPUT;
+SELECT 'Diem TB De Tai 97007 ' AS KetQua, @KETQUA AS DiemTB;
+GO
+
 -- ================================================================
 -- 2B.3
 -- Đưa vào TENGV trả ra: SDT của giáo viên đó, nếu không tìm thấy trả về 0.
