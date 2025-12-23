@@ -111,8 +111,8 @@ BEGIN
 
     -- Cursor duyệt từng đề tài
     DECLARE CUR_DETAI CURSOR FOR
-    SELECT MSDT
-    FROM DETAI;
+        SELECT MSDT
+        FROM DETAI;
 
     OPEN CUR_DETAI;
     FETCH NEXT FROM CUR_DETAI INTO @MSDT;
@@ -157,4 +157,95 @@ SELECT * FROM DETAI_DIEM;
   columns: (1fr,) * 2,
   align: (center, left),
   [MSDT], [DIEMTB], [97001], [8], [97002], [8.2], [97003], [7.5], [97004], [8], [97005], [8.2], [97006], [8.33]
+)
+
+=== Xếp Loại Kết Quả với `XEPLOAI`
+<xep-loai-ket-qua-voi-xeploai>
+
+
+==== Yêu cầu
+<yeu-cau>
+
+- Tạo thêm cột `XEPLOAI` có kiểu là `NVARCCHAR(20)` trong bảng `DETAI_DIEM`.
+- Viết Cursor cập nhật kết quả xếp loại cho mỗi đề tài như sau:
+  - "Xuất sắc": điểm trung bình từ 9 đến 10.
+  - "Giỏi": điểm trung bình từ 8 đến 9.
+  - "Khá": điểm trung bình từ 7 đến 8.
+  - "Trung bình khá": điểm trung bình từ 6 đến 7.
+  - "Trung bình": điểm trung bình từ 5 đến 6.
+  - "Yếu": điểm trung bình từ 4 đến 5.
+  - "Kém": điểm trung bình dưới 4.
+
+==== Thực hiện
+<thuc-hien>
+
+- Thêm cột `XEPLOAI`:
+
+```sql
+ALTER TABLE DETAI_DIEM
+ADD XEPLOAI NVARCHAR(20);
+```
+
+- Khai báo biến
+
+```sql
+DECLARE @MSDT CHAR(6);
+DECLARE @DIEMTB FLOAT;
+DECLARE @XEPLOAI NVARCHAR(20);
+```
+
+- Khai báo Cursor, lấy mã đề tài và điểm trung bình:
+
+```sql
+DECLARE CUR_XEPLOAI CURSOR FOR
+    SELECT MSDT, DIEMTB
+    FROM DETAI_DIEM;
+```
+
+- Cấu hình Cursor:
+
+```sql
+-- Mở Cursor
+OPEN CUR_XEPLOAI;
+FETCH NEXT FROM CUR_XEPLOAI INTO @MSDT, @DIEMTB;
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    IF @DIEMTB >= 9 AND @DIEMTB <= 10
+        SET @XEPLOAI = N'Xuất sắc';
+    ELSE IF @DIEMTB >= 8
+        SET @XEPLOAI = N'Giỏi';
+    ELSE IF @DIEMTB >= 7
+        SET @XEPLOAI = N'Khá';
+    ELSE IF @DIEMTB >= 6
+        SET @XEPLOAI = N'Trung bình khá';
+    ELSE IF @DIEMTB >= 5
+        SET @XEPLOAI = N'Trung bình';
+    ELSE IF @DIEMTB >= 4
+        SET @XEPLOAI = N'Yếu';
+    ELSE
+        SET @XEPLOAI = N'Kém';
+
+    UPDATE DETAI_DIEM
+    SET XEPLOAI = @XEPLOAI
+    WHERE MSDT = @MSDT;
+
+    FETCH NEXT FROM CUR_XEPLOAI INTO @MSDT, @DIEMTB;
+END
+-- Đóng Cursor sau khi duyệt xong dữ liệu
+CLOSE CUR_XEPLOAI;
+-- Hủy Cursor sau khi hoàn thành
+DEALLOCATE CUR_XEPLOAI;
+```
+
+- Kiểm tra bảng `DETAI_DIEM`:
+
+```sql
+SELECT * FROM DETAI_DIEM;
+```
+
+#table(
+  columns: (1fr,) * 3,
+  align: (center, left, left),
+  [MSDT], [DIEMTB], [XEPLOAI], [97001], [8], [Giỏi], [97002], [8.2], [Giỏi], [97003], [7.5], [Khá], [97004], [8], [Giỏi], [97005], [8.2], [Giỏi], [97006], [8.33], [Giỏi]
 )
