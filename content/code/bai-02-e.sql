@@ -1,9 +1,79 @@
+-- NHOM 2
 -- IE103
 -- BTTH2
 -- Phần 2
+-- E: CURSOR
+-- NOTE: A Batch/Top-Down processing Script.
+-- ================================================================
+-- 0. Tạo table detai_diem
+-- ================================================================
 
--- 2. Gom các bước xử lý của Cursor ở câu 1 vào một Stored Procedure.
--- Procedure phải được tạo trước trong batch process
+DROP TABLE IF EXISTS DETAI_DIEM;
+GO
+
+CREATE TABLE DETAI_DIEM (
+    MSDT char(6) PRIMARY KEY,
+    DIEMTB FLOAT,
+    CONSTRAINT FK_DETAI_DIEM_DETAI FOREIGN KEY (MSDT) REFERENCES DETAI(MSDT)
+);
+GO
+
+-- ================================================================
+-- 1.
+-- Viết Cursor tính điểm trung bình cho từng đề tài.
+--- Sau đó lưu kết quả vào bảng DETAI_DIEM.
+-- ================================================================
+
+-- Khai báo biến
+DECLARE @MSDT CHAR(6);
+DECLARE @DIEMTB FLOAT;
+
+-- Xóa dữ liệu cũ trong bảng kết quả (nếu có)
+DELETE FROM DETAI_DIEM;
+
+-- Khai báo Cursor
+DECLARE CUR_TINH_DIEM CURSOR FOR
+SELECT MSDT
+FROM DETAI;
+
+-- Mở Cursor
+OPEN CUR_TINH_DIEM;
+
+-- Lấy dòng đầu tiên
+FETCH NEXT FROM CUR_TINH_DIEM INTO @MSDT;
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    -- Tính điểm trung bình cho đề tài
+    SELECT @DIEMTB = ROUND(AVG(DIEM), 2)
+    FROM (
+        SELECT DIEM FROM GV_HDDT WHERE MSDT = @MSDT
+        UNION ALL
+        SELECT DIEM FROM GV_PBDT WHERE MSDT = @MSDT
+        UNION ALL
+        SELECT DIEM FROM GV_UVDT WHERE MSDT = @MSDT
+    ) AS T;
+
+    -- Luu kết quả vào DETAI_DIEM
+    INSERT INTO DETAI_DIEM(MSDT, DIEMTB)
+    VALUES (@MSDT, @DIEMTB);
+
+    -- Lấy dòng tiếp theo
+    FETCH NEXT FROM CUR_TINH_DIEM INTO @MSDT;
+END
+
+-- Ðóng và hủy Cursor
+CLOSE CUR_TINH_DIEM;
+DEALLOCATE CUR_TINH_DIEM;
+GO
+-- Kiểm tra bảng đã nhập được chưa.
+SELECT * FROM DETAI_DIEM;
+GO
+
+-- ================================================================
+-- 2.
+-- Gom các bước xử lý của Cursor ở câu 1 vào một Stored Procedure.
+-- ================================================================
 
 CREATE OR ALTER PROCEDURE SP_TINH_DIEMTB_DETAI
 AS
@@ -48,64 +118,16 @@ BEGIN
 END;
 GO
 
--- 0. Tạo table detai_diem
-CREATE TABLE DETAI_DIEM (
-    MSDT char(6) PRIMARY KEY,
-    DIEMTB FLOAT,
-    CONSTRAINT FK_DETAI_DIEM_DETAI FOREIGN KEY (MSDT) REFERENCES DETAI(MSDT)
-);
-
--- 1. Viết Cursor tính điểm trung bình cho từng đề tài. Sau đó lưu kết quả vào bảng DETAI_DIEM.
-
--- Khai báo biến
-DECLARE @MSDT CHAR(6);
-DECLARE @DIEMTB FLOAT;
-
--- Xóa dữ liệu cũ trong bảng kết quả (nếu có)
-DELETE FROM DETAI_DIEM;
-
--- Khai báo Cursor
-DECLARE CUR_TINH_DIEM CURSOR FOR
-SELECT MSDT
-FROM DETAI;
-
--- Mở Cursor
-OPEN CUR_TINH_DIEM;
-
--- Lấy dòng đầu tiên
-FETCH NEXT FROM CUR_TINH_DIEM INTO @MSDT;
-
-WHILE @@FETCH_STATUS = 0
-BEGIN
-    -- Tính điểm trung bình cho đề tài
-    SELECT @DIEMTB = ROUND(AVG(DIEM), 2)
-    FROM (
-        SELECT DIEM FROM GV_HDDT WHERE MSDT = @MSDT
-        UNION ALL
-        SELECT DIEM FROM GV_PBDT WHERE MSDT = @MSDT
-        UNION ALL
-        SELECT DIEM FROM GV_UVDT WHERE MSDT = @MSDT
-    ) AS T;
-
-    -- Luu kết quả vào DETAI_DIEM
-    INSERT INTO DETAI_DIEM(MSDT, DIEMTB)
-    VALUES (@MSDT, @DIEMTB);
-
-    -- Lấy dòng tiếp theo
-    FETCH NEXT FROM CUR_TINH_DIEM INTO @MSDT;
-END
-
--- Ðóng và hủy Cursor
-CLOSE CUR_TINH_DIEM;
-DEALLOCATE CUR_TINH_DIEM;
------ Kiểm tra bảng đã nhập được chưa.
-SELECT * FROM DETAI_DIEM;
-
 -- Chạy SP vừa tạo để cho kết quả mới
 EXEC SP_TINH_DIEMTB_DETAI;
+GO
 
--- 3.Tạo thêm cột XEPLOAI có kiểu là NVARCCHAR(20) trong bảng DETAI_DIEM, viết Cursor cập nhật kết quả xếp loại cho mỗi đề tài
+-- ================================================================
+-- 3.
+-- Tạo thêm cột XEPLOAI có kiểu là NVARCCHAR(20) trong bảng DETAI_DIEM
+-- Viết Cursor cập nhật kết quả xếp loại cho mỗi đề tài.
 -- Thêm cột XEPLOAI vào bảng DETAI_DIEM để lưu kết quả xếp loại
+-- ================================================================
 
 ALTER TABLE DETAI_DIEM
 ADD XEPLOAI NVARCHAR(20);
@@ -156,3 +178,8 @@ GO
 
 -- Kiểm tra kết quả
 SELECT * FROM DETAI_DIEM;
+GO
+
+-- ================================================================
+-- THE END
+-- ================================================================
