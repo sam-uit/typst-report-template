@@ -14,7 +14,22 @@ Thực hiện bằng 2 cách:
 
 ##### Backup (Sao Lưu)
 
+- Click chuột phải vào CSDL AAA > **Tasks** > **Back Up...**
+- Mục **Destination**: Chọn **Disk**, chọn đường dẫn lưu file `AAA.BAK`.
+- Nhấn **OK**.
+  - Màn hình thông báo "The backup of database 'AAA' completed successfully").
+
+##### Xóa DB
+
+- Click chuột phải vào CSDL AAA -> **Delete**.
+- Check vào ô **Close existing connections** (để ngắt các kết nối đang chạy).
+- Nhấn **OK**.
+
 ##### Restore (Khôi Phục)
+
+- Click chuột phải vào thư mục **Databases** -> **Restore Database...**
+- Chọn **Database** -> Nhấn nút **...** để duyệt file -> Chọn file `AAA.BAK` vừa tạo.
+- Nhấn **OK**.
 
 #### Cách 2: CLI
 
