@@ -12,6 +12,12 @@ Thực hiện bằng 2 cách:
 
 #### Cách 1: Giao Diện (SSMS)
 
+##### Backup (Sao Lưu)
 
+##### Restore (Khôi Phục)
 
 #### Cách 2: CLI
+
+##### Backup (Sao Lưu)
+
+##### Restore (Khôi Phục)
