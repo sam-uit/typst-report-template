@@ -39,7 +39,7 @@ GO
 - Tính điểm tất cả đề tài trong bảng `DETAI`.
 
 ```sql
-SELECT 
+SELECT
     MSDT,
     TENDT,
     dbo.f_TinhDiemTB(MSDT) AS DiemTrungBinh
@@ -153,8 +153,8 @@ CREATE FUNCTION f_DanhSachSVThucHienDeTai (@MSDT char(6))
 RETURNS TABLE
 AS
 RETURN (
-    SELECT 
-        SV.MSSV, 
+    SELECT
+        SV.MSSV,
         SV.TENSV
     FROM SINHVIEN SV
     JOIN SV_DETAI SD ON SV.MSSV = SD.MSSV
