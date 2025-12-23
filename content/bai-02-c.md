@@ -2,7 +2,7 @@
 
 ### Mô Tả Yêu Cầu
 
-Thực hiện các phát biểu `GRANT` / `DENY` / `REVOKE` trên CSDL **Quản lý đề tài** gồm các bảng:
+Thực hiện các phát biểu `GRANT` / `DENY` / `REVOKE` trên CSDL **Quản lý đề tài** gồm các bảng sau (Nhóm 2):
 
 * T1: `DETAI`
 * T2: `HOIDONG`
@@ -48,7 +48,7 @@ GRANT SELECT, DELETE ON DETAI TO U1;
 GRANT SELECT, DELETE ON GV_HDDT TO U1;
 ```
 
-- Kiểm tra:
+#### Kiểm tra
 
 ```sql
 EXECUTE AS USER = 'U1';
@@ -64,3 +64,22 @@ REVERT;
 | 97004 | Quản lý siêu thị        |
 | 97005 | Xử lý ảnh               |
 | 97006 | Hệ giải toán thông minh |
+
+### U2 có quyền UPDATE, DELETE trên T2
+
+#### GRANT
+
+```sql
+GRANT UPDATE, DELETE ON HOIDONG TO U2;
+```
+
+#### Kiểm tra
+
+- DELETE
+
+```sql
+EXECUTE AS USER = 'U2';
+DELETE FROM HOIDONG WHERE MAHD = 'HD001';
+REVERT;
+```
+
