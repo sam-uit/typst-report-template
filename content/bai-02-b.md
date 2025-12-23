@@ -24,7 +24,14 @@ CREATE LOGIN L5 WITH PASSWORD = 'L5@12345678';
 CREATE LOGIN L6 WITH PASSWORD = 'L6@12345678';
 ```
 
-
+| name | principal_id | type | type_desc | is_disabled |
+| :--: | ------------ | ---- | --------- | ----------- |
+|  L1  | 262          | S    | SQL_LOGIN | 0           |
+|  L2  | 263          | S    | SQL_LOGIN | 0           |
+|  L3  | 264          | S    | SQL_LOGIN | 0           |
+|  L4  | 265          | S    | SQL_LOGIN | 0           |
+|  L5  | 266          | S    | SQL_LOGIN | 0           |
+|  L6  | 267          | S    | SQL_LOGIN | 0           |
 
 ### B.2 Tạo User U1 → U6 tương ứng với Login
 
@@ -37,9 +44,14 @@ CREATE USER U5 FOR LOGIN L5;
 CREATE USER U6 FOR LOGIN L6;
 ```
 
-
-
-
+| uid  | status | name | altuid | gid  | hasdbaccess | islogin | issqluser |
+| ---- | ------ | ---- | ------ | ---- | ----------- | ------- | --------- |
+| 7    | 0      | U1   | NULL   | 0    | 1           | 1       | 1         |
+| 8    | 0      | U2   | NULL   | 0    | 1           | 1       | 1         |
+| 9    | 0      | U3   | NULL   | 0    | 1           | 1       | 1         |
+| 10   | 0      | U4   | NULL   | 0    | 1           | 1       | 1         |
+| 11   | 0      | U5   | NULL   | 0    | 1           | 1       | 1         |
+| 12   | 0      | U6   | NULL   | 0    | 1           | 1       | 1         |
 
 ### B.3 Tạo Role r1, r2, r3
 
@@ -49,7 +61,11 @@ CREATE ROLE r2;
 CREATE ROLE r3;
 ```
 
-
+| uid  | status | name | altuid | gid  | hasdbaccess | islogin | issqluser |
+| ---- | ------ | ---- | ------ | ---- | ----------- | ------- | --------- |
+| 13   | 0      | r1   | 1      | 13   | 0           | 0       | 0         |
+| 14   | 0      | r2   | 1      | 14   | 0           | 0       | 0         |
+| 15   | 0      | r3   | 1      | 15   | 0           | 0       | 0         |
 
 ### B.4 Gán User vào Role
 
@@ -64,7 +80,16 @@ ALTER ROLE r3 ADD MEMBER U5;
 ALTER ROLE r3 ADD MEMBER U6;
 ```
 
+| role_principal_id | Role | member_principal_id | User |
+| ----------------- | ---- | ------------------- | ---- |
+| 13                | r1   | 7                   | U1   |
+| 14                | r2   | 8                   | U2   |
+| 14                | r2   | 9                   | U3   |
+| 15                | r3   | 10                  | U4   |
+| 15                | r3   | 11                  | U5   |
+| 15                | r3   | 12                  | U6   |
 
+![Role - Users Mapping](assets/image-20251223153326295.png)
 
 ### B.5 Gán quyền hệ thống cho Role
 
@@ -73,8 +98,6 @@ ALTER ROLE r3 ADD MEMBER U6;
 ```sql
 ALTER SERVER ROLE sysadmin ADD MEMBER L1;
 ```
-
-
 
 #### r2 là thành viên của db_owner, db_accessadmin
 
@@ -104,3 +127,30 @@ ALTER ROLE db_owner ADD MEMBER U6;
 ALTER ROLE db_accessadmin ADD MEMBER U6;
 ```
 
+### Kiểm tra kết quả:
+
+- User thuộc `sysadmin`:
+
+```sql
+SELECT
+    ServerRole.principal_id AS [Role ID],
+    ServerRole.name AS [Server Role Name],
+    ServerLogin.principal_id AS [LOGIN ID],
+    ServerLogin.name AS [LOGIN Name],
+    ServerLogin.type_desc AS [Type]
+FROM sys.server_role_members AS RoleMem
+INNER JOIN sys.server_principals AS ServerRole
+    ON RoleMem.role_principal_id = ServerRole.principal_id
+INNER JOIN sys.server_principals AS ServerLogin
+    ON RoleMem.member_principal_id = ServerLogin.principal_id
+WHERE ServerRole.name = 'sysadmin' AND ServerLogin.name LIKE 'L%'
+ORDER BY [LOGIN Name];
+GO
+```
+
+| Role ID | Server Role Name | LOGIN ID | LOGIN Name | Type      |
+| ------- | ---------------- | -------- | ---------- | --------- |
+| 3       | sysadmin         | 262      | L1         | SQL_LOGIN |
+| 3       | sysadmin         | 265      | L4         | SQL_LOGIN |
+| 3       | sysadmin         | 266      | L5         | SQL_LOGIN |
+| 3       | sysadmin         | 267      | L6         | SQL_LOGIN |
