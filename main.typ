@@ -36,6 +36,9 @@
 
 #pagebreak()
 
+#include "content/info.typ"
+#pagebreak()
+
 // IMPORTANT Switch page number style and reset its counter
 #set page(numbering: "1")
 #counter(page).update(1)
