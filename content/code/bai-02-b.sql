@@ -223,3 +223,52 @@ ELSE
     end
 end
 GO
+
+-- Dữ liệu đang có
+
+SELECT TOP (100) [MSGV]
+,[TENGV]
+,[DIACHI]
+,[SODT]
+,[MSHH]
+-- ,[NAMHH]
+FROM [IE103-BTTH2].[dbo].[GIAOVIEN]
+GO
+
+SELECT * FROM GV_HDDT;
+GO
+
+SELECT * FROM GV_PBDT;
+GO
+
+-- Ví dụ 1: không tìm thấy giáo viên (Lê Kim Long)
+
+DECLARE @SoDT_HD INT, @SoDT_PB INT
+EXEC sp_ThongTinDeTaiGV N'Lê Kim Long', @SoDT_HD OUTPUT ,@SoDT_PB OUTPUT ;
+SELECT
+    @SoDT_HD AS N'Số lượng đề tài hướng dẫn',
+    @SoDT_PB AS N'Số lượng đề tài phản biện';
+GO
+
+-- Ví dụ 2: trùng tên giáo viên (Nguyễn Văn An)
+
+DECLARE @SoDT_HD INT, @SoDT_PB INT
+EXEC sp_ThongTinDeTaiGV N'Nguyễn Văn An', @SoDT_HD OUTPUT ,@SoDT_PB OUTPUT ;
+SELECT
+    @SoDT_HD AS N'Số lượng đề tài hướng dẫn',
+    @SoDT_PB AS N'Số lượng đề tài phản biện';
+GO
+
+-- Ví dụ 3: tên giáo viên hợp lệ (Trần Trung)
+
+DECLARE @SoDT_HD INT, @SoDT_PB INT
+EXEC sp_ThongTinDeTaiGV N'Trần Trung', @SoDT_HD OUTPUT ,@SoDT_PB OUTPUT ;
+SELECT
+    N'**Số lượng**' AS N'**Loại**',
+    @SoDT_HD AS N'Đề tài hướng dẫn',
+    @SoDT_PB AS N'Đề tài phản biện';
+GO
+
+-- ================================================================
+-- THE END
+-- ================================================================
