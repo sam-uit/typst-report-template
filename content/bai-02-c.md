@@ -36,7 +36,7 @@ GO
 
 ### Trigger thay đổi MSGV
 
-- Tạo Trigger thỏa mãn ràng buộc là khi đổi 1 mã số giáo viên (MSGV) thì sẽ thay đổi các thông tin liên quan.
+- Tạo Trigger thỏa mãn ràng buộc là khi đổi 1 mã số giáo viên (`MSGV`) thì sẽ thay đổi các thông tin liên quan.
 
 #### Trigger
 

@@ -1,6 +1,10 @@
+#import "../template/lib.typ": *
+
 == C. TRIGGER
 <c-trigger>
 
+#todo[2.C TRIGGER: Chỉnh sửa LOGIC.]
+#todo[2.C TRIGGER: Bổ sung Ví dụ.]
 
 === Trigger khi Xóa Đề Tài
 <trigger-khi-xoa-de-tai>
@@ -42,7 +46,7 @@ GO
 === Trigger thay đổi MSGV
 <trigger-thay-doi-msgv>
 
-- Tạo Trigger thỏa mãn ràng buộc là khi đổi 1 mã số giáo viên (MSGV) thì sẽ thay đổi các thông tin liên quan.
+- Tạo Trigger thỏa mãn ràng buộc là khi đổi 1 mã số giáo viên (`MSGV`) thì sẽ thay đổi các thông tin liên quan.
 
 ==== Trigger
 <trigger-1>
