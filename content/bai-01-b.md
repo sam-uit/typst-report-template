@@ -40,7 +40,12 @@ Thực hiện bằng 2 cách:
 
 - Click chuột phải vào thư mục **Databases** -> **Restore Database...**
 - Chọn **Database** -> Nhấn nút **...** để duyệt file -> Chọn file `AAA.BAK` vừa tạo.
+
+![Restore (Khôi Phục)](assets/btth3-bai-1-a-7-5.png)
+
 - Nhấn **OK**.
+
+![Restore (Khôi Phục) Hoàn Thành](assets/btth3-bai-1-a-7-6.png)
 
 #### Cách 2: CLI
 
