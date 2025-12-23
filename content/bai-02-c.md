@@ -38,3 +38,29 @@ WHERE name IN ('U1', 'U2', 'U3');
 |  U1  | SQL_USER  |
 |  U2  | SQL_USER  |
 |  U3  | SQL_USER  |
+
+### C.2 Cấp quyền (GRANT)
+
+#### U1 có quyền SELECT, DELETE trên T1, T3
+
+```sql
+GRANT SELECT, DELETE ON DETAI TO U1;
+GRANT SELECT, DELETE ON GV_HDDT TO U1;
+```
+
+- Kiểm tra:
+
+```sql
+EXECUTE AS USER = 'U1';
+SELECT * FROM DETAI;
+REVERT;
+```
+
+| MSDT  | TENDT                   |
+| :---: | :---------------------- |
+| 97001 | Quản lý thư viện        |
+| 97002 | Nhận dạng vân tay       |
+| 97003 | Bán đấu giá trên mạng   |
+| 97004 | Quản lý siêu thị        |
+| 97005 | Xử lý ảnh               |
+| 97006 | Hệ giải toán thông minh |
