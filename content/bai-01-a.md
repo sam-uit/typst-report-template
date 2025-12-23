@@ -45,7 +45,25 @@ Tìm hiểu ý nghĩa các table hệ thống (System tables) trong CSDL Master 
 
 Tham khảo: [Mapping System Tables to System Views (Transact-SQL)](https://learn.microsoft.com/en-us/sql/relational-databases/system-tables/mapping-system-tables-to-system-views-transact-sql?view=sql-server-ver17)
 
-### Khi người dùng tạo 1 CSDL, SQL Server yêu cầu tạo ra tối thiểu bao nhiêu file? Ý nghĩa mỗi file? Chú ý câu lệnh: CREATE DATABASE AAA.
+### Các file của một Cơ Sở Dữ Liệu (DB)
+
+Khi người dùng tạo 1 CSDL, SQL Server yêu cầu tạo ra tối thiểu bao nhiêu file? Ý nghĩa mỗi file? Chú ý câu lệnh:
+
+```sql
+CREATE DATABASE AAA;
+```
+
+Khi tạo một CSDL (lệnh CREATE DATABASE AAA), SQL Server yêu cầu tạo ra tối thiểu 2 file:
+
+1. **File dữ liệu chính (Primary Data File - đuôi `.mdf`):**
+   - Ý nghĩa: Chứa thông tin khởi tạo database và lưu trữ dữ liệu chính của các bảng, view, index...
+   - Mỗi database bắt buộc phải có 1 file này.
+
+2. **File nhật ký giao dịch (Transaction Log File - đuôi ``.ldf`):**
+   - Ý nghĩa: Ghi lại tất cả các giao dịch (`insert`, `update`, `delete`) và các sửa đổi CSDL.
+   - Dùng để khôi phục dữ liệu (restore) khi có sự cố, đảm bảo tính toàn vẹn (*ACID*).
+
+Ngoài ra có thể có Secondary Data Files (`.ndf`) nếu cần chia nhỏ ra (optional).
 
 ### Số user có thể connect cùng 1 thời điểm là bao nhiêu?
 
