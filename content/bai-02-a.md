@@ -4,7 +4,7 @@
 
 Chọn 1 file dữ liệu (SV) từ excel, và import vào SQL Server.
 
-- Chuột phải vào bảng cần IMPORT dữ liệu và chọn Import/Export > **Import Data from File(s)…**
+- Chuột phải vào bảng cần IMPORT dữ liệu và chọn **Import/Export** > **Import Data from File(s)…**
 
 ![Import/Export > Import Data from File(s)…](assets/Import-001.jpg)
 
