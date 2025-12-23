@@ -19,7 +19,6 @@ BEGIN
 
     DECLARE @DiemTB float;
 
-
     SELECT @DiemTB = AVG(DIEM)
     FROM (
         SELECT DIEM FROM GV_HDDT WHERE MSDT = @MSDT
