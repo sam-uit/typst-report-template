@@ -359,7 +359,7 @@
         inset: 1.5em,
         width: 100%,
       )[
-        #unheading[Danh Sách Việc Cần Làm]
+        #unheading[Danh Sách TODO]
         #outline(
           title: none,
           target: figure.where(kind: "todo"),
