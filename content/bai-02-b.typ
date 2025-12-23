@@ -1,6 +1,9 @@
+#import "../template/lib.typ": *
+
 == B. XÁC THỰC NGƯỜI DÙNG
 <b-xac-thuc-nguoi-dung>
 
+#todo[Bài 2.B: SQL Script]
 
 === Mô tả yêu cầu
 <mo-ta-yeu-cau>
