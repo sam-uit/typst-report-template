@@ -45,13 +45,13 @@ CREATE USER U6 FOR LOGIN L6;
 ```
 
 | uid  | status | name | altuid | gid  | hasdbaccess | islogin | issqluser |
-| ---- | ------ | ---- | ------ | ---- | ----------- | ------- | --------- |
-| 7    | 0      | U1   | NULL   | 0    | 1           | 1       | 1         |
-| 8    | 0      | U2   | NULL   | 0    | 1           | 1       | 1         |
-| 9    | 0      | U3   | NULL   | 0    | 1           | 1       | 1         |
-| 10   | 0      | U4   | NULL   | 0    | 1           | 1       | 1         |
-| 11   | 0      | U5   | NULL   | 0    | 1           | 1       | 1         |
-| 12   | 0      | U6   | NULL   | 0    | 1           | 1       | 1         |
+| :--: | ------ | ---- | ------ | ---- | ----------- | ------- | --------- |
+|  7   | 0      | U1   | NULL   | 0    | 1           | 1       | 1         |
+|  8   | 0      | U2   | NULL   | 0    | 1           | 1       | 1         |
+|  9   | 0      | U3   | NULL   | 0    | 1           | 1       | 1         |
+|  10  | 0      | U4   | NULL   | 0    | 1           | 1       | 1         |
+|  11  | 0      | U5   | NULL   | 0    | 1           | 1       | 1         |
+|  12  | 0      | U6   | NULL   | 0    | 1           | 1       | 1         |
 
 ### B.3 Tạo Role r1, r2, r3
 
@@ -62,10 +62,10 @@ CREATE ROLE r3;
 ```
 
 | uid  | status | name | altuid | gid  | hasdbaccess | islogin | issqluser |
-| ---- | ------ | ---- | ------ | ---- | ----------- | ------- | --------- |
-| 13   | 0      | r1   | 1      | 13   | 0           | 0       | 0         |
-| 14   | 0      | r2   | 1      | 14   | 0           | 0       | 0         |
-| 15   | 0      | r3   | 1      | 15   | 0           | 0       | 0         |
+| :--: | ------ | ---- | ------ | ---- | ----------- | ------- | --------- |
+|  13  | 0      | r1   | 1      | 13   | 0           | 0       | 0         |
+|  14  | 0      | r2   | 1      | 14   | 0           | 0       | 0         |
+|  15  | 0      | r3   | 1      | 15   | 0           | 0       | 0         |
 
 ### B.4 Gán User vào Role
 
@@ -81,13 +81,13 @@ ALTER ROLE r3 ADD MEMBER U6;
 ```
 
 | role_principal_id | Role | member_principal_id | User |
-| ----------------- | ---- | ------------------- | ---- |
-| 13                | r1   | 7                   | U1   |
-| 14                | r2   | 8                   | U2   |
-| 14                | r2   | 9                   | U3   |
-| 15                | r3   | 10                  | U4   |
-| 15                | r3   | 11                  | U5   |
-| 15                | r3   | 12                  | U6   |
+| :---------------: | ---- | ------------------- | ---- |
+|        13         | r1   | 7                   | U1   |
+|        14         | r2   | 8                   | U2   |
+|        14         | r2   | 9                   | U3   |
+|        15         | r3   | 10                  | U4   |
+|        15         | r3   | 11                  | U5   |
+|        15         | r3   | 12                  | U6   |
 
 ### B.5 Gán quyền hệ thống cho Role
 
@@ -130,7 +130,7 @@ ALTER ROLE db_accessadmin ADD MEMBER U6;
 ```sql
 SELECT
     ServerRole.principal_id AS [Role ID],
-    ServerRole.name AS [Server Role Name],
+    ServerRole.name AS [Server Role],
     ServerLogin.principal_id AS [LOGIN ID],
     ServerLogin.name AS [LOGIN Name],
     ServerLogin.type_desc AS [Type]
@@ -144,12 +144,12 @@ ORDER BY [LOGIN Name];
 GO
 ```
 
-| Role ID | Server Role Name | LOGIN ID | LOGIN Name | Type      |
-| ------- | ---------------- | -------- | ---------- | --------- |
-| 3       | sysadmin         | 262      | L1         | SQL_LOGIN |
-| 3       | sysadmin         | 265      | L4         | SQL_LOGIN |
-| 3       | sysadmin         | 266      | L5         | SQL_LOGIN |
-| 3       | sysadmin         | 267      | L6         | SQL_LOGIN |
+| Role ID | Server Role | LOGIN ID | LOGIN Name | Type      |
+| :-----: | ----------- | -------- | ---------- | --------- |
+|    3    | sysadmin    | 262      | L1         | SQL_LOGIN |
+|    3    | sysadmin    | 265      | L4         | SQL_LOGIN |
+|    3    | sysadmin    | 266      | L5         | SQL_LOGIN |
+|    3    | sysadmin    | 267      | L6         | SQL_LOGIN |
 
 - User thuộc các role mới tạo (r1 - r3):
 
@@ -171,13 +171,13 @@ GO
 ```
 
 | Role ID | Role Name | User ID | User Name | Member Type |
-| ------- | --------- | ------- | --------- | ----------- |
-| 13      | r1        | 7       | U1        | SQL_USER    |
-| 14      | r2        | 8       | U2        | SQL_USER    |
-| 14      | r2        | 9       | U3        | SQL_USER    |
-| 15      | r3        | 10      | U4        | SQL_USER    |
-| 15      | r3        | 11      | U5        | SQL_USER    |
-| 15      | r3        | 12      | U6        | SQL_USER    |
+| :-----: | --------- | ------- | --------- | ----------- |
+|   13    | r1        | 7       | U1        | SQL_USER    |
+|   14    | r2        | 8       | U2        | SQL_USER    |
+|   14    | r2        | 9       | U3        | SQL_USER    |
+|   15    | r3        | 10      | U4        | SQL_USER    |
+|   15    | r3        | 11      | U5        | SQL_USER    |
+|   15    | r3        | 12      | U6        | SQL_USER    |
 
 - User thuộc `db_accessadmin`
 
@@ -199,12 +199,12 @@ GO
 ```
 
 | Role ID | Role Name      | User ID | User Name | Member Type |
-| ------- | -------------- | ------- | --------- | ----------- |
-| 16385   | db_accessadmin | 8       | U2        | SQL_USER    |
-| 16385   | db_accessadmin | 9       | U3        | SQL_USER    |
-| 16385   | db_accessadmin | 10      | U4        | SQL_USER    |
-| 16385   | db_accessadmin | 11      | U5        | SQL_USER    |
-| 16385   | db_accessadmin | 12      | U6        | SQL_USER    |
+| :-----: | -------------- | ------- | --------- | ----------- |
+|  16385  | db_accessadmin | 8       | U2        | SQL_USER    |
+|  16385  | db_accessadmin | 9       | U3        | SQL_USER    |
+|  16385  | db_accessadmin | 10      | U4        | SQL_USER    |
+|  16385  | db_accessadmin | 11      | U5        | SQL_USER    |
+|  16385  | db_accessadmin | 12      | U6        | SQL_USER    |
 
 - User thuộc `db_owner`
 
@@ -226,9 +226,9 @@ GO
 ```
 
 | Role ID | Role Name | User ID | User Name | Member Type |
-| ------- | --------- | ------- | --------- | ----------- |
-| 16384   | db_owner  | 8       | U2        | SQL_USER    |
-| 16384   | db_owner  | 9       | U3        | SQL_USER    |
-| 16384   | db_owner  | 10      | U4        | SQL_USER    |
-| 16384   | db_owner  | 11      | U5        | SQL_USER    |
-| 16384   | db_owner  | 12      | U6        | SQL_USER    |
+| :-----: | --------- | ------- | --------- | ----------- |
+|  16384  | db_owner  | 8       | U2        | SQL_USER    |
+|  16384  | db_owner  | 9       | U3        | SQL_USER    |
+|  16384  | db_owner  | 10      | U4        | SQL_USER    |
+|  16384  | db_owner  | 11      | U5        | SQL_USER    |
+|  16384  | db_owner  | 12      | U6        | SQL_USER    |
