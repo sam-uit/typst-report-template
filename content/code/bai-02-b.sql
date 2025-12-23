@@ -164,6 +164,20 @@ BEGIN
 end
 go
 
+-- Ví dụ: Hội đồng 1
+
+DECLARE @MSHD INT = 1, @DiemTB FLOAT;
+EXEC sp_DiemTBTheoHD @MSHD, @DiemTB output;
+SELECT @MSHD as 'Ma So Hoi Dong', @DiemTB as 'Diem Trung Binh'
+GO
+
+-- Ví dụ: Hội đồng 2
+
+DECLARE @MSHD INT = 2, @DiemTB FLOAT;
+EXEC sp_DiemTBTheoHD @MSHD, @DiemTB output;
+SELECT @MSHD as 'Ma So Hoi Dong', @DiemTB as 'Diem Trung Binh'
+GO
+
 -- ================================================================
 -- 2B.5
 -- Đưa vào TENGV cho biết:
