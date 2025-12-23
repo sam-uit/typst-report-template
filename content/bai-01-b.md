@@ -15,9 +15,17 @@ Thực hiện bằng 2 cách:
 ##### Backup (Sao Lưu)
 
 - Click chuột phải vào CSDL AAA > **Tasks** > **Back Up...**
+
+![**Tasks** > **Back Up...**](assets/btth3-bai-1-a-7-1.png)
+
 - Mục **Destination**: Chọn **Disk**, chọn đường dẫn lưu file `AAA.BAK`.
+
+![**Destination**: Chọn **Disk**](assets/btth3-bai-1-a-7-2.png)
+
 - Nhấn **OK**.
   - Màn hình thông báo "The backup of database 'AAA' completed successfully").
+
+![Backup Completed Successfully](assets/btth3-bai-1-a-7-3.png)
 
 ##### Xóa DB
 
