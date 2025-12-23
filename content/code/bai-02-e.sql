@@ -4,8 +4,9 @@
 -- Phần 2
 -- E: CURSOR
 -- NOTE: A Batch/Top-Down processing Script.
+
 -- ================================================================
--- 0. Tạo table detai_diem
+-- 2E. 0. Tạo table detai_diem
 -- ================================================================
 
 DROP TABLE IF EXISTS DETAI_DIEM;
@@ -19,9 +20,9 @@ CREATE TABLE DETAI_DIEM (
 GO
 
 -- ================================================================
--- 1.
+-- 2E. 1.
 -- Viết Cursor tính điểm trung bình cho từng đề tài.
---- Sau đó lưu kết quả vào bảng DETAI_DIEM.
+-- Sau đó lưu kết quả vào bảng DETAI_DIEM.
 -- ================================================================
 
 -- Khai báo biến
@@ -71,7 +72,7 @@ SELECT * FROM DETAI_DIEM;
 GO
 
 -- ================================================================
--- 2.
+-- 2E. 2.
 -- Gom các bước xử lý của Cursor ở câu 1 vào một Stored Procedure.
 -- ================================================================
 
@@ -123,7 +124,7 @@ EXEC SP_TINH_DIEMTB_DETAI;
 GO
 
 -- ================================================================
--- 3.
+-- 2E. 3.
 -- Tạo thêm cột XEPLOAI có kiểu là NVARCCHAR(20) trong bảng DETAI_DIEM
 -- Viết Cursor cập nhật kết quả xếp loại cho mỗi đề tài.
 -- Thêm cột XEPLOAI vào bảng DETAI_DIEM để lưu kết quả xếp loại
