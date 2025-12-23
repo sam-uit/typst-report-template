@@ -100,4 +100,55 @@ Hãy đọc SQL Server Log trong phần SQL Enterprice → Management → SQL Se
 
 ### Employees
 
+Cho bảng Employees có cấu trúc như sau:
+
+```sql
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR (50) NOT NULL,
+    LastName VARCHAR (50) NOT NULL,
+    BirthDate DATE NOT NULL,
+    HireDate DATE NOT NULL );
+GO
+```
+
+Giả sử tạo 1 View tên là `EmployeeNames` như sau:
+
+```sql
+CREATE VIEW EmployeeNames
+AS
+    SELECT FirstName, LastName
+    FROM Employees
+```
+
+Hỏi câu lệnh `INSERT` dưới đây có thực hiện được hay không? Tại sao?
+
+```sql
+INSERT INTO EmployeeNames (FirstName, LastName) VALUES ('QuanLyThongTin', 'IE103');
+```
+
+Kết quả:
+
+- Câu lệnh INSERT này KHÔNG thực hiện được.
+
+Giải thích:
+
+- **Cấu trúc bảng (`Employees`)**:
+  - Cột `BirthDate` được định nghĩa là `NOT NULL` (Bắt buộc có dữ liệu).
+  - Cột `HireDate` được định nghĩa là `NOT NULL` (Bắt buộc có dữ liệu).
+  - Không có giá trị mặc định (`DEFAULT`) nào được khai báo cho 2 cột này.
+  
+- **Cấu trúc View (`EmployeeNames`):**
+  - Chỉ chứa 2 cột: `FirstName` và `LastName`.
+  
+- **Hành động INSERT:**
+  - Câu lệnh: `INSERT INTO EmployeeNames (FirstName, LastName) VALUES (...)`
+  - Khi insert vào View, SQL Server thực chất sẽ cố gắng insert vào bảng gốc `Employees`.
+  - Câu lệnh trên cung cấp `FirstName`, `LastName` (và `EmployeeID` nếu ID tự tăng - Identity, trong trường hợp này thì không).
+  - Tuy nhiên, nó **không cung cấp giá trị** cho `BirthDate` và `HireDate`.
+
+**Kết luận:**
+
+- Do bảng gốc yêu cầu `BirthDate` và `HireDate` không được để trống (`NOT NULL`), nhưng câu lệnh `INSERT` thông qua View lại không cung cấp giá trị cho chúng, nên SQL Server sẽ báo lỗi vi phạm ràng buộc dữ liệu.
+
 ### Mã Hóa Dữ Liệu
