@@ -163,7 +163,7 @@ Hãy đọc SQL Server Log trong phần SQL Enterprice → Management → SQL Se
 === Employees
 <employees>
 
-Cho bảng Employees có cấu trúc như sau:
+Cho bảng `Employees` có cấu trúc như sau:
 
 ```sql
 CREATE TABLE Employees (
