@@ -127,11 +127,11 @@ Hỏi câu lệnh `INSERT` dưới đây có thực hiện được hay không? 
 INSERT INTO EmployeeNames (FirstName, LastName) VALUES ('QuanLyThongTin', 'IE103');
 ```
 
-Kết quả:
+**Trả lời:**
 
 - Câu lệnh INSERT này KHÔNG thực hiện được.
 
-Giải thích:
+**Giải thích:**
 
 - **Cấu trúc bảng (`Employees`)**:
   - Cột `BirthDate` được định nghĩa là `NOT NULL` (Bắt buộc có dữ liệu).
@@ -146,6 +146,15 @@ Giải thích:
   - Khi insert vào View, SQL Server thực chất sẽ cố gắng insert vào bảng gốc `Employees`.
   - Câu lệnh trên cung cấp `FirstName`, `LastName` (và `EmployeeID` nếu ID tự tăng - Identity, trong trường hợp này thì không).
   - Tuy nhiên, nó **không cung cấp giá trị** cho `BirthDate` và `HireDate`.
+
+**Thực nghiệm:**
+
+- Nhận thông báo lỗi.
+
+```sql
+Msg 515, Level 16, State 2, Line 15
+Cannot insert the value NULL into column 'HireDate', table 'BTTH2.dbo.Employees'; column does not allow nulls. INSERT fails.
+```
 
 **Kết luận:**
 
