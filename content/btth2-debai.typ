@@ -18,8 +18,9 @@ Cho lược đồ quan hệ sau, hãy hoàn thành các yêu cầu ở @phan-1[ 
 + HOIDONG\_GV(#underline[MSHD, MSGV])
 + HOIDONG\_DT(#underline[MSHD, MSDT], QUYETDINH)
 
-Môi Trường:
+= Môi Trường Triển Khai
+<moi-truong-trien-khai>
 
-- RDBMS: Microsoft SQL Server (Azure SQL Edge).
-- Editor: Azure Database Studio (ADS).
+- RDBMS: Microsoft SQL Server 2019 (Azure SQL Edge).
+- Editor/IDE: Azure Database Studio (ADS).
 - Extensions: SQL Database Projects (`microsoft.sql-database-projects`).

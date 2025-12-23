@@ -17,8 +17,8 @@ Cho lược đồ quan hệ sau, hãy hoàn thành các yêu cầu ở [@phan-1 
 13. HOIDONG_GV(<u>MSHD, MSGV</u>)
 14. HOIDONG_DT(<u>MSHD, MSDT</u>, QUYETDINH)
 
-Môi Trường:
+# Môi Trường Triển Khai
 
-- RDBMS: Microsoft SQL Server (Azure SQL Edge).
+- RDBMS: Microsoft SQL Server 2019 (Azure SQL Edge).
 - Editor: Azure Database Studio (ADS).
 - Extensions: SQL Database Projects (`microsoft.sql-database-projects`).
