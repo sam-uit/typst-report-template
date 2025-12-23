@@ -47,7 +47,7 @@ SELECT N'Số GV Thạc sĩ: ' AS KetQua, @KETQUA AS SoLuong;
 
 #table(
   columns: (1fr,) * 2,
-  align: (left, left),
+  align: (left, center),
   [KetQua], [SoLuong], [Số GV Thạc sĩ:], [2]
 )
 
@@ -64,7 +64,7 @@ SELECT N'Số GV Tiến sĩ: ' AS KetQua, @KETQUA AS SoLuong;
 
 #table(
   columns: (1fr,) * 2,
-  align: (left, left),
+  align: (left, center),
   [KetQua], [SoLuong], [Số GV Tiến sĩ:], [0]
 )
 
@@ -116,7 +116,7 @@ SELECT 'Diem TB De Tai 97001 ' AS KETQUA, @KETQUA AS DiemTB;
 
 #table(
   columns: (1fr,) * 2,
-  align: (left, left),
+  align: (left, center),
   [KETQUA], [DiemTB], [Diem TB De Tai 97001], [8]
 )
 
@@ -133,7 +133,7 @@ SELECT 'Diem TB De Tai 97007 ' AS KetQua, @KETQUA AS DiemTB;
 
 #table(
   columns: (1fr,) * 2,
-  align: (left, left),
+  align: (left, center),
   [KETQUA], [DiemTB], [Diem TB De Tai 97007], [0]
 )
 
@@ -294,7 +294,7 @@ SELECT @MSHD as 'Ma So Hoi Dong', @DiemTB as 'Diem Trung Binh'
 
 #table(
   columns: (1fr,) * 2,
-  align: (left, left),
+  align: (center, center),
   [Ma So Hoi Dong], [Diem Trung Binh], [1], [8.2]
 )
 
@@ -309,7 +309,7 @@ SELECT @MSHD as 'Ma So Hoi Dong', @DiemTB as 'Diem Trung Binh'
 
 #table(
   columns: (1fr,) * 2,
-  align: (left, left),
+  align: (center, center),
   [Ma So Hoi Dong], [Diem Trung Binh], [2], [8]
 )
 
@@ -383,21 +383,21 @@ SELECT TOP (100) [MSGV]
 
 #table(
   columns: (1fr,) * 5,
-  align: (right, left, left, left, left),
+  align: (center, left, left, left, left),
   [MSGV], [TENGV], [DIACHI], [SODT], [MSHH], [201], [Trần Trung], [Bến Tre], [35353535], [1], [202], [Nguyễn Văn An], [Tiền Giang], [67868688], [1], [203], [Trần Thu Trang], [Cần Thơ], [74758687], [1], [204], [Nguyễn Thị Loan], [TP. HCM], [56575868], [2], [205], [Chu Tiến], [Hà Nội], [46466646], [2], [206], [Nguyễn Văn An], [Cần Thơ], [12434343], [1]
 )
 - `GV_HDDT`
 
 #table(
   columns: (1fr,) * 3,
-  align: (right, left, left),
+  align: (center, center, center),
   [MSGV], [MSDT], [DIEM], [201], [97001], [8], [202], [97002], [7], [203], [97005], [9], [204], [97004], [7], [205], [97001], [9]
 )
 - `GV_PBDT`
 
 #table(
   columns: (1fr,) * 3,
-  align: (right, left, left),
+  align: (center, center, center),
   [MSGV], [MSDT], [DIEM], [201], [97005], [8], [202], [97001], [7], [203], [97002], [9], [204], [97003], [7], [205], [97004], [9]
 )
 
@@ -459,6 +459,6 @@ SELECT
 
 #table(
   columns: (1fr,) * 3,
-  align: (left, left, left),
+  align: (center, center, center),
   [#strong[Loại]], [Đề tài hướng dẫn], [Đề tài phản biện], [#strong[Số lượng]], [1], [1]
 )
