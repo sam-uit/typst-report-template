@@ -20,5 +20,22 @@ Chọn 1 file dữ liệu (SV) từ excel, và import vào SQL Server.
 
 ![Import-004](assets/Import-004.jpg)
 
-### Chọn 1 table trong SQL Server, và export tới file Excel.
+### Export Dữ Liệu tới Excel File
 
+Chọn 1 table trong SQL Server, và export tới file Excel.
+
+- Chuột phải vào bảng cần EXPORT dữ liệu và chọn Import/Export > Export Data to File
+
+![Import/Export > Export Data to File](assets/export-001.jpg)
+
+- Chỉ định thể loại file (**Extractor**) và nơi lưu trữ (**Output file**).
+
+![Chỉ định thể loại file và nơi lưu trữ](assets/Export-002.jpg)
+
+- Thông báo EXPORT thành công.
+
+![Thông báo EXPORT thành công.](assets/Export-003.jpg)
+
+- Kiểm tra lại kết quả EXPORT.
+
+![Kiểm tra lại kết quả EXPORT](assets/Export-004.jpg)
