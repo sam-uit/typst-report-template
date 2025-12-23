@@ -28,9 +28,22 @@
 - Dung lượng tối đa của Database là **524,272 Terabytes**.
   - Do đó, 1 table có thể chứa lượng dữ liệu khổng lồ gần như không giới hạn trong thực tế, miễn là lưu trữ còn chỗ trống.
 
-### Tìm hiểu ý nghĩa các table hệ thống (System tables) trong CSDL Master như: Sysusers; Syssserver; Sysxlogin.
+### Ý nghĩa các table hệ thống (System tables)
 
+Tìm hiểu ý nghĩa các table hệ thống (System tables) trong CSDL Master như: `sysusers`; `syssservers`; `sysxlogin`.
 
+- `sysusers`:
+  - Chứa thông tin về mỗi người dùng (user) hoặc nhóm (role) được phép truy cập trong cơ sở dữ liệu.
+  - Đổi thành [sys.database_principals (Transact-SQL)](https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-database-principals-transact-sql?view=sql-server-ver17) ở các phiên bản SQL Server hiện đại.
+- `sysservers`:
+  - Chứa thông tin về các server liên kết (Linked Servers) hoặc remote servers mà SQL Server này có thể giao tiếp.
+  - Đổi thành [sys.servers (Transact-SQL)](https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-servers-transact-sql?view=sql-server-ver17) ở các phiên bản SQL Server hiện đại.
+- `sysxlogins`:
+  - Chứa thông tin về tài khoản đăng nhập (Login account) và mật khẩu (đã mã hóa) cấp server.
+  - Hoặc `syslogins`
+  - Hiện nay là [sys.server_principals](https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-server-principals-transact-sql?view=sql-server-ver17) hoặc [sys.sql_logins](https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-sql-logins-transact-sql?view=sql-server-ver17).
+
+Tham khảo: [Mapping System Tables to System Views (Transact-SQL)](https://learn.microsoft.com/en-us/sql/relational-databases/system-tables/mapping-system-tables-to-system-views-transact-sql?view=sql-server-ver17)
 
 ### Khi người dùng tạo 1 CSDL, SQL Server yêu cầu tạo ra tối thiểu bao nhiêu file? Ý nghĩa mỗi file? Chú ý câu lệnh: CREATE DATABASE AAA.
 
