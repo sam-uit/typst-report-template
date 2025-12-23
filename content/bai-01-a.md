@@ -1,6 +1,8 @@
 ## A. TỔ CHỨC DỮ LIỆU
 
-### Các kiểu dữ liệu (data type) dùng cho các trường (field) và cách sử dụng nó.
+### Kiểu dữ liệu (data type) và cách sử dụng
+
+Các kiểu dữ liệu (data type) dùng cho các trường (field) và cách sử dụng chúng.
 
 - **Kiểu số (Exact Numerics)**:
   - `INT`: Lưu số nguyên (4 bytes). Dùng cho ID, số lượng.
@@ -17,16 +19,20 @@
   - `DATETIME`: Ngày và giờ chính xác đến mili-giây.
   - `DATE`: Chỉ lưu ngày (`YYYY-MM-DD`).
 
-### Dung lượng (KB) tối đa của 1 row trong 1 table mà SQL Server cho phép.
+### Dung lượng (KB) tối đa của 1 row
+
+Dung lượng (KB) tối đa của 1 row trong 1 table mà SQL Server cho phép.
 
 - Dung lượng tối đa của một dòng (row) trong SQL Server được giới hạn bởi kích thước của một trang dữ liệu (Page).
 - Giới hạn này là **8.060 bytes** (xấp xỉ 8KB).
 
-### Dung lượng (KB) tối đa của 1 table mà SQL Server cho phép.
+### Dung lượng (KB) tối đa của 1 table
+
+Dung lượng (KB) tối đa của 1 table mà SQL Server cho phép.
 
 - Về lý thuyết, kích thước bảng chỉ bị giới hạn bởi dung lượng lưu trữ của hệ điều hành (File System) và phiên bản SQL Server.
 - Dung lượng tối đa của Database là **524,272 Terabytes**.
-  - Do đó, 1 table có thể chứa lượng dữ liệu khổng lồ gần như không giới hạn trong thực tế, miễn là lưu trữ còn chỗ trống.
+  - Do đó, 1 table có thể chứa lượng dữ liệu khổng lồ gần như không giới hạn trong thực tế, miễn là lưu trữ còn chỗ trống và xử lý được vấn đề hiệu năng.
 
 ### Ý nghĩa các table hệ thống (System tables)
 
