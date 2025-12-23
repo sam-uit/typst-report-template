@@ -80,3 +80,9 @@ GO
 ```
 
 ![SQL: Khôi Phục](assets/btth3-bai-1-a-7-9.png)
+
+### SQL Server Log
+
+### Employees
+
+### Mã Hóa Dữ Liệu
