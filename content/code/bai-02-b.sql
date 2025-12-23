@@ -32,6 +32,20 @@ BEGIN
 end;
 GO
 
+-- Ví dụ 1: Học Vị Thạc Sĩ
+
+DECLARE @KETQUA INT;
+EXEC sp_CountGVTheoHocVi N'Thạc sĩ', @KETQUA output ;
+SELECT N'Số GV Thạc sĩ: ' AS KetQua, @KETQUA AS SoLuong;
+GO
+
+-- Ví dụ 2: Học Vị không tồn tại GV thỏa mãn
+
+DECLARE @KETQUA INT;
+EXEC sp_CountGVTheoHocVi N'Tiến sĩ', @KETQUA output ;
+SELECT N'Số GV Tiến sĩ: ' AS KetQua, @KETQUA AS SoLuong;
+GO
+
 -- ================================================================
 -- 2B.2
 -- Đưa vào MSDT cho biết: Điểm trung bình của đề tài, nếu không tìm thấy trả về 0
