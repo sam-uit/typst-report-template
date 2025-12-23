@@ -28,21 +28,11 @@ CREATE LOGIN L5 WITH PASSWORD = 'L5@12345678';
 CREATE LOGIN L6 WITH PASSWORD = 'L6@12345678';
 ```
 
-#figure(
-  align(center)[#table(
-    columns: 5,
-    align: (center,auto,auto,auto,auto,),
-    table.header([name], [principal\_id], [type], [type\_desc], [is\_disabled],),
-    table.hline(),
-    [L1], [262], [S], [SQL\_LOGIN], [0],
-    [L2], [263], [S], [SQL\_LOGIN], [0],
-    [L3], [264], [S], [SQL\_LOGIN], [0],
-    [L4], [265], [S], [SQL\_LOGIN], [0],
-    [L5], [266], [S], [SQL\_LOGIN], [0],
-    [L6], [267], [S], [SQL\_LOGIN], [0],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 5,
+  align: (center, left, left, left, left),
+  [name], [principal\_id], [type], [type\_desc], [is\_disabled], [L1], [262], [S], [SQL\_LOGIN], [0], [L2], [263], [S], [SQL\_LOGIN], [0], [L3], [264], [S], [SQL\_LOGIN], [0], [L4], [265], [S], [SQL\_LOGIN], [0], [L5], [266], [S], [SQL\_LOGIN], [0], [L6], [267], [S], [SQL\_LOGIN], [0]
+)
 
 === B.2 Tạo User U1 → U6 tương ứng với Login
 <b-2-tao-user-u1-u6-tuong-ung-voi-login>
@@ -56,21 +46,11 @@ CREATE USER U5 FOR LOGIN L5;
 CREATE USER U6 FOR LOGIN L6;
 ```
 
-#figure(
-  align(center)[#table(
-    columns: (7.84%, 11.76%, 7.84%, 11.76%, 7.84%, 21.57%, 13.73%, 17.65%),
-    align: (auto,auto,auto,auto,auto,auto,auto,auto,),
-    table.header([uid], [status], [name], [altuid], [gid], [hasdbaccess], [islogin], [issqluser],),
-    table.hline(),
-    [7], [0], [U1], [NULL], [0], [1], [1], [1],
-    [8], [0], [U2], [NULL], [0], [1], [1], [1],
-    [9], [0], [U3], [NULL], [0], [1], [1], [1],
-    [10], [0], [U4], [NULL], [0], [1], [1], [1],
-    [11], [0], [U5], [NULL], [0], [1], [1], [1],
-    [12], [0], [U6], [NULL], [0], [1], [1], [1],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 8,
+  align: (center, left, left, left, left, left, left, left),
+  [uid], [status], [name], [altuid], [gid], [hasdbaccess], [islogin], [issqluser], [7], [0], [U1], [NULL], [0], [1], [1], [1], [8], [0], [U2], [NULL], [0], [1], [1], [1], [9], [0], [U3], [NULL], [0], [1], [1], [1], [10], [0], [U4], [NULL], [0], [1], [1], [1], [11], [0], [U5], [NULL], [0], [1], [1], [1], [12], [0], [U6], [NULL], [0], [1], [1], [1]
+)
 
 === B.3 Tạo Role r1, r2, r3
 <b-3-tao-role-r1-r2-r3>
@@ -81,18 +61,11 @@ CREATE ROLE r2;
 CREATE ROLE r3;
 ```
 
-#figure(
-  align(center)[#table(
-    columns: (7.84%, 11.76%, 7.84%, 11.76%, 7.84%, 21.57%, 13.73%, 17.65%),
-    align: (auto,auto,auto,auto,auto,auto,auto,auto,),
-    table.header([uid], [status], [name], [altuid], [gid], [hasdbaccess], [islogin], [issqluser],),
-    table.hline(),
-    [13], [0], [r1], [1], [13], [0], [0], [0],
-    [14], [0], [r2], [1], [14], [0], [0], [0],
-    [15], [0], [r3], [1], [15], [0], [0], [0],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 8,
+  align: (center, left, left, left, left, left, left, left),
+  [uid], [status], [name], [altuid], [gid], [hasdbaccess], [islogin], [issqluser], [13], [0], [r1], [1], [13], [0], [0], [0], [14], [0], [r2], [1], [14], [0], [0], [0], [15], [0], [r3], [1], [15], [0], [0], [0]
+)
 
 === B.4 Gán User vào Role
 <b-4-gan-user-vao-role>
@@ -108,21 +81,11 @@ ALTER ROLE r3 ADD MEMBER U5;
 ALTER ROLE r3 ADD MEMBER U6;
 ```
 
-#figure(
-  align(center)[#table(
-    columns: 4,
-    align: (auto,auto,auto,auto,),
-    table.header([role\_principal\_id], [Role], [member\_principal\_id], [User],),
-    table.hline(),
-    [13], [r1], [7], [U1],
-    [14], [r2], [8], [U2],
-    [14], [r2], [9], [U3],
-    [15], [r3], [10], [U4],
-    [15], [r3], [11], [U5],
-    [15], [r3], [12], [U6],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 4,
+  align: (center, left, left, left),
+  [role\_principal\_id], [Role], [member\_principal\_id], [User], [13], [r1], [7], [U1], [14], [r2], [8], [U2], [14], [r2], [9], [U3], [15], [r3], [10], [U4], [15], [r3], [11], [U5], [15], [r3], [12], [U6]
+)
 
 === B.5 Gán quyền hệ thống cho Role
 <b-5-gan-quyen-he-thong-cho-role>
@@ -171,7 +134,7 @@ ALTER ROLE db_accessadmin ADD MEMBER U6;
 ```sql
 SELECT
     ServerRole.principal_id AS [Role ID],
-    ServerRole.name AS [Server Role Name],
+    ServerRole.name AS [Server Role],
     ServerLogin.principal_id AS [LOGIN ID],
     ServerLogin.name AS [LOGIN Name],
     ServerLogin.type_desc AS [Type]
@@ -185,20 +148,11 @@ ORDER BY [LOGIN Name];
 GO
 ```
 
-#figure(
-  align(center)[#table(
-    columns: 5,
-    align: (auto,auto,auto,auto,auto,),
-    table.header([Role ID], [Server Role Name], [LOGIN ID], [LOGIN Name], [Type],),
-    table.hline(),
-    [3], [sysadmin], [262], [L1], [SQL\_LOGIN],
-    [3], [sysadmin], [265], [L4], [SQL\_LOGIN],
-    [3], [sysadmin], [266], [L5], [SQL\_LOGIN],
-    [3], [sysadmin], [267], [L6], [SQL\_LOGIN],
-  )]
-  , kind: table
-  )
-
+#table(
+  columns: (1fr,) * 5,
+  align: (center, left, left, left, left),
+  [Role ID], [Server Role], [LOGIN ID], [LOGIN Name], [Type], [3], [sysadmin], [262], [L1], [SQL\_LOGIN], [3], [sysadmin], [265], [L4], [SQL\_LOGIN], [3], [sysadmin], [266], [L5], [SQL\_LOGIN], [3], [sysadmin], [267], [L6], [SQL\_LOGIN]
+)
 - User thuộc các role mới tạo (r1 - r3):
 
 ```sql
@@ -218,22 +172,11 @@ ORDER BY [Role Name];
 GO
 ```
 
-#figure(
-  align(center)[#table(
-    columns: 5,
-    align: (auto,auto,auto,auto,auto,),
-    table.header([Role ID], [Role Name], [User ID], [User Name], [Member Type],),
-    table.hline(),
-    [13], [r1], [7], [U1], [SQL\_USER],
-    [14], [r2], [8], [U2], [SQL\_USER],
-    [14], [r2], [9], [U3], [SQL\_USER],
-    [15], [r3], [10], [U4], [SQL\_USER],
-    [15], [r3], [11], [U5], [SQL\_USER],
-    [15], [r3], [12], [U6], [SQL\_USER],
-  )]
-  , kind: table
-  )
-
+#table(
+  columns: (1fr,) * 5,
+  align: (center, left, left, left, left),
+  [Role ID], [Role Name], [User ID], [User Name], [Member Type], [13], [r1], [7], [U1], [SQL\_USER], [14], [r2], [8], [U2], [SQL\_USER], [14], [r2], [9], [U3], [SQL\_USER], [15], [r3], [10], [U4], [SQL\_USER], [15], [r3], [11], [U5], [SQL\_USER], [15], [r3], [12], [U6], [SQL\_USER]
+)
 - User thuộc `db_accessadmin`
 
 ```sql
@@ -253,21 +196,11 @@ ORDER BY [Role Name];
 GO
 ```
 
-#figure(
-  align(center)[#table(
-    columns: 5,
-    align: (auto,auto,auto,auto,auto,),
-    table.header([Role ID], [Role Name], [User ID], [User Name], [Member Type],),
-    table.hline(),
-    [16385], [db\_accessadmin], [8], [U2], [SQL\_USER],
-    [16385], [db\_accessadmin], [9], [U3], [SQL\_USER],
-    [16385], [db\_accessadmin], [10], [U4], [SQL\_USER],
-    [16385], [db\_accessadmin], [11], [U5], [SQL\_USER],
-    [16385], [db\_accessadmin], [12], [U6], [SQL\_USER],
-  )]
-  , kind: table
-  )
-
+#table(
+  columns: (1fr,) * 5,
+  align: (center, left, left, left, left),
+  [Role ID], [Role Name], [User ID], [User Name], [Member Type], [16385], [db\_accessadmin], [8], [U2], [SQL\_USER], [16385], [db\_accessadmin], [9], [U3], [SQL\_USER], [16385], [db\_accessadmin], [10], [U4], [SQL\_USER], [16385], [db\_accessadmin], [11], [U5], [SQL\_USER], [16385], [db\_accessadmin], [12], [U6], [SQL\_USER]
+)
 - User thuộc `db_owner`
 
 ```sql
@@ -287,17 +220,8 @@ ORDER BY [Role Name];
 GO
 ```
 
-#figure(
-  align(center)[#table(
-    columns: 5,
-    align: (auto,auto,auto,auto,auto,),
-    table.header([Role ID], [Role Name], [User ID], [User Name], [Member Type],),
-    table.hline(),
-    [16384], [db\_owner], [8], [U2], [SQL\_USER],
-    [16384], [db\_owner], [9], [U3], [SQL\_USER],
-    [16384], [db\_owner], [10], [U4], [SQL\_USER],
-    [16384], [db\_owner], [11], [U5], [SQL\_USER],
-    [16384], [db\_owner], [12], [U6], [SQL\_USER],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 5,
+  align: (center, left, left, left, left),
+  [Role ID], [Role Name], [User ID], [User Name], [Member Type], [16384], [db\_owner], [8], [U2], [SQL\_USER], [16384], [db\_owner], [9], [U3], [SQL\_USER], [16384], [db\_owner], [10], [U4], [SQL\_USER], [16384], [db\_owner], [11], [U5], [SQL\_USER], [16384], [db\_owner], [12], [U6], [SQL\_USER]
+)
