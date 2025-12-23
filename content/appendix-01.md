@@ -11,9 +11,9 @@
 - Azure Database Studio (ADS)
 - SQL Projects (ADS Extension)
 
-## `Makefile`
+## Quản lý vòng đời của SQL Server.
 
-- Quản lý vòng đời của SQL Server.
+- Sử dụng `make` với `Makefile`.
 
 ```bash
 # Khởi tạo hoặc/và chạy SQL Server
@@ -25,3 +25,14 @@ make down
 # Xóa bỏ SQL Server
 make clean
 ```
+
+## Khởi tạo môi trường lab thủ công
+
+- Kết nối vào SQL Server: `localhost`, `sa`, `Password123!`
+- Tạo DB với `00-CREATE-DB.sql` hoặc nhập truy vấn thủ công.
+- Chạy các script `.sql` tương ứng lần lượt từ thư mục `code`.
+    - `bai-01-1.sql`
+    - `bai-01-2.sql`
+    - ...
+
+## Khởi tạo môi trường lab với ADS (SQL Projects)
