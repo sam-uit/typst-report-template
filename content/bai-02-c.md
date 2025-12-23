@@ -130,3 +130,26 @@ REVERT;
 |  3   | 6969  | 1900-01-01 08:00:00 | 2014-12-06 00:00:00 | Thật      | 203  |
 |  4   | 2     | 1900-01-01 07:00:00 | 2014-11-29 00:00:00 | Thật      | 201  |
 
+### U1 bị từ chối quyền INSERT trên T1, T2
+
+#### DENY
+
+```sql
+DENY INSERT ON DETAI TO U1;
+DENY INSERT ON HOIDONG TO U1;
+```
+
+#### Kiểm tra
+
+```sql
+EXECUTE AS USER = 'U1';
+INSERT INTO DETAI (MSDT, TENDT) VALUES
+('970553', N'Quản lý thư viện2');
+REVERT;
+```
+
+```sql
+Msg 229, Level 14, State 5, Line 9
+The INSERT permission was denied on the object 'DETAI', database 'IE103-BTTH2', schema 'dbo'.
+```
+
