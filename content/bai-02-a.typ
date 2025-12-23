@@ -7,19 +7,19 @@
 
 Chọn 1 file dữ liệu (SV) từ excel, và import vào SQL Server.
 
-- Chuột phải vào bảng cần IMPORT dữ liệu và chọn Import/Export \> Import Data from File(s)…
+- Chuột phải vào bảng cần IMPORT dữ liệu và chọn #strong[Import/Export] \> #strong[Import Data from File(s)…]
 
 #figure(image("assets/Import-001.jpg"),
   caption: [
-    Import-001
+    Import/Export \> Import Data from File(s)…
   ]
 )
 
-- Chọn lựa file Excel chứa dữ liệu.
+- Chọn file Excel chứa dữ liệu.
 
 #figure(image("assets/Import-002.jpg"),
   caption: [
-    Import-002
+    Chọn lựa file Excel chứa dữ liệu.
   ]
 )
 
@@ -27,7 +27,7 @@ Chọn 1 file dữ liệu (SV) từ excel, và import vào SQL Server.
 
 #figure(image("assets/Import-003.jpg"),
   caption: [
-    Import-003
+    Các trường (field) và kiểu dữ liệu (data type)
   ]
 )
 
@@ -35,7 +35,7 @@ Chọn 1 file dữ liệu (SV) từ excel, và import vào SQL Server.
 
 #figure(image("assets/Import-004.jpg"),
   caption: [
-    Import-004
+    Kết quả Import
   ]
 )
 
@@ -44,7 +44,7 @@ Chọn 1 file dữ liệu (SV) từ excel, và import vào SQL Server.
 
 Chọn 1 table trong SQL Server, và export tới file Excel.
 
-- Chuột phải vào bảng cần EXPORT dữ liệu và chọn Import/Export \> Export Data to File
+- Chuột phải vào bảng cần EXPORT dữ liệu và chọn #strong[Import/Export] \> #strong[Export Data to File]
 
 #figure(image("assets/export-001.jpg"),
   caption: [
