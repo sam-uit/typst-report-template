@@ -42,6 +42,8 @@
 
 // MARK: MAIN CONTENT
 #include "content/bai-01.typ"
+#include "content/bai-01-1.typ"
+#include "content/bai-01-2.typ"
 #pagebreak()
 #include "content/bai-02.typ"
 #include "content/bai-02-a.typ"
