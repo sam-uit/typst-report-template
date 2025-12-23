@@ -9,28 +9,19 @@
   ),
   course: (
     id: "IE103",
-    name: "Quản Lý Thông Tin (Data Management)",
+    name: "Quản Lý Thông Tin",
     class: "LT.K2025.2.CNTT",
   ),
-  instructor: "Ths. Nguyễn Văn A",
+  instructor: "Ths. Nguyễn Thành Luân",
   author: (
-    name: "Nhóm xx",
-    members: (
-      (
-        name: lorem(3),
-        id: lorem(1),
-      ),
-      (
-        name: lorem(3),
-        id: lorem(1),
-      ),
-    ),
+    name: "Nhóm 02",
+    members: (),
   ),
   assignment: (
-    title: "Bài Tập Thực Hành 1",
-    subtitle: "Thiết Kế Cơ Sở Dữ Liệu",
+    title: "Bài Tập Thực Hành 03",
+    subtitle: "An Ninh Thông Tin",
     type: "Bài Tập Thực Hành",
-    date: "Dec, 2025",
-    duration: "15 phút",
+    date: "Tháng 12, 2025",
+    duration: "115 phút",
   ),
 )
