@@ -42,7 +42,7 @@ SELECT N'Số GV Thạc sĩ: ' AS KetQua, @KETQUA AS SoLuong;
 ```
 
 |KetQua|SoLuong|
-|---|---|
+|---|:-:|
 |Số GV Thạc sĩ: |2|
 
 #### Ví dụ 2: Học Vị Tiến Sĩ
@@ -56,7 +56,7 @@ SELECT N'Số GV Tiến sĩ: ' AS KetQua, @KETQUA AS SoLuong;
 ```
 
 |KetQua|SoLuong|
-|---|---|
+|---|:-:|
 |Số GV Tiến sĩ: |0|
 
 ### Đưa vào `MSDT` trả về Điểm Trung Bình của Đề Tài
@@ -105,8 +105,8 @@ SELECT 'Diem TB De Tai 97001 ' AS KETQUA, @KETQUA AS DiemTB;
 ```
 
 | KETQUA               | DiemTB |
-| -------------------- | ------ |
-| Diem TB De Tai 97001 | 8      |
+| -------------------- | :----: |
+| Diem TB De Tai 97001 |   8    |
 
 #### Ví dụ 2: 97007
 
@@ -119,7 +119,7 @@ SELECT 'Diem TB De Tai 97007 ' AS KetQua, @KETQUA AS DiemTB;
 ```
 
 |KETQUA|DiemTB|
-|---|---|
+|---|:-:|
 |Diem TB De Tai 97007 |0|
 
 ### Đưa vào `TENGV` trả ra SDT của GV
@@ -269,8 +269,8 @@ SELECT @MSHD as 'Ma So Hoi Dong', @DiemTB as 'Diem Trung Binh'
 ```
 
 | Ma So Hoi Dong | Diem Trung Binh |
-| -------------- | --------------- |
-| 1              | 8.2             |
+| :------------: | :-------------: |
+|       1        |       8.2       |
 
 #### Ví dụ: Hội đồng 2
 
@@ -281,8 +281,8 @@ SELECT @MSHD as 'Ma So Hoi Dong', @DiemTB as 'Diem Trung Binh'
 ```
 
 | Ma So Hoi Dong | Diem Trung Binh |
-| -------------- | --------------- |
-| 2              | 8               |
+| :------------: | :-------------: |
+|       2        |        8        |
 
 ### Đưa vào `TENGV`
 
@@ -351,18 +351,18 @@ SELECT TOP (100) [MSGV]
 ```
 
 | MSGV | TENGV           | DIACHI     | SODT     | MSHH |
-| ---: | --------------- | ---------- | -------- | ---- |
-|  201 | Trần Trung      | Bến Tre    | 35353535 | 1    |
-|  202 | Nguyễn Văn An   | Tiền Giang | 67868688 | 1    |
-|  203 | Trần Thu Trang  | Cần Thơ    | 74758687 | 1    |
-|  204 | Nguyễn Thị Loan | TP. HCM    | 56575868 | 2    |
-|  205 | Chu Tiến        | Hà Nội     | 46466646 | 2    |
-|  206 | Nguyễn Văn An   | Cần Thơ    | 12434343 | 1    |
+| :--: | :-------------- | ---------- | -------- | ---- |
+| 201  | Trần Trung      | Bến Tre    | 35353535 | 1    |
+| 202  | Nguyễn Văn An   | Tiền Giang | 67868688 | 1    |
+| 203  | Trần Thu Trang  | Cần Thơ    | 74758687 | 1    |
+| 204  | Nguyễn Thị Loan | TP. HCM    | 56575868 | 2    |
+| 205  | Chu Tiến        | Hà Nội     | 46466646 | 2    |
+| 206  | Nguyễn Văn An   | Cần Thơ    | 12434343 | 1    |
 
 - `GV_HDDT`
 
 |MSGV|MSDT|DIEM|
-|--:|---|---|
+|:-:|:-:|:-:|
 |201|97001 |8|
 |202|97002 |7|
 |203|97005 |9|
@@ -372,7 +372,7 @@ SELECT TOP (100) [MSGV]
 - `GV_PBDT`
 
 |MSGV|MSDT|DIEM|
-|--:|---|---|
+|:-:|:-:|:-:|
 |201|97005 |8|
 |202|97001 |7|
 |203|97002 |9|
@@ -432,7 +432,7 @@ SELECT
 
 - Kết quả: trả về số lượng đề tài tương ứng hướng dẫn và phản biện.
 
-| **Loại**     | Đề t&#224;i hướng dẫn | Đề t&#224;i phản biện |
-| ------------ | --------------------- | --------------------- |
-| **Số lượng** | 1                     | 1                     |
+|   **Loại**   | Đề t&#224;i hướng dẫn | Đề t&#224;i phản biện |
+| :----------: | :-------------------: | :-------------------: |
+| **Số lượng** |           1           |           1           |
 
