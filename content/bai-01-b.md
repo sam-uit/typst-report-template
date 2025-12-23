@@ -47,8 +47,36 @@ Thực hiện bằng 2 cách:
 
 ![Restore (Khôi Phục) Hoàn Thành](assets/btth3-bai-1-a-7-6.png)
 
-#### Cách 2: CLI
+#### Cách 2: SQL
+
+Mở cửa sổ **New Query** và chạy lần lượt các đoạn lệnh.
 
 ##### Backup (Sao Lưu)
 
+```sql
+BACKUP DATABASE AAA
+TO DISK = 'C:\Users\Admin\Desktop\Backup\AAA.BAK'
+WITH FORMAT;
+GO
+```
+
+![SQL: Sao Lưu](assets/btth3-bai-1-a-7-7.png)
+
+##### Xóa DB
+
+```sql
+ALTER DATABASE AAA SET SINGLE_USER WITH ROLLBACK IMMEDIATE; -- để đảm bảo không có ai đang dùng Database
+DROP DATABASE AAA;
+```
+
+![SQL: Xóa DB](assets/btth3-bai-1-a-7-8.png)
+
 ##### Restore (Khôi Phục)
+
+```sql
+RESTORE DATABASE AAA
+FROM DISK =  'C:\Users\Admin\Desktop\Backup\AAA.BAK;
+GO
+```
+
+![SQL: Khôi Phục](assets/btth3-bai-1-a-7-9.png)
