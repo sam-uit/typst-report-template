@@ -27,9 +27,9 @@
 // MARK: Callouts Examples
 // Feel free to remove this section if not needed
 
-#include "template/callout-examples.typ"
+// #include "template/callout-examples.typ"
 
-#pagebreak()
+// #pagebreak()
 
 // MARK: AUTHOR INFO
 #include "author/author.typ"
