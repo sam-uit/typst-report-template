@@ -1,3 +1,5 @@
+#import "../template/lib.typ": *
+
 == B. AN TOÀN DỮ LIỆU
 <b-an-toan-du-lieu>
 
@@ -80,6 +82,8 @@ Hãy backup CSDL `AAA` thành 1 file `AAA.BAK`, sau đó xóa CSDL `AAA` và hã
 
 ==== Cách 2: SQL
 <cach-2-sql>
+
+#todo[Cách 2: SQL - SQL Script]
 
 Mở cửa sổ #strong[New Query] và chạy lần lượt các đoạn lệnh.
 
