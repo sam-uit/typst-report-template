@@ -6,12 +6,11 @@
 -- NOTE: A Batch/Top-Down processing Script.
 
 -- ================================================================
--- 2A.1
--- Tham số vào là MSGV, TENGV, SODT, DIACHI, MSHH, NAMHH.
--- Trước khi insert dữ liệu cần kiểm tra MSHH đã tồn tại trong table HOCHAM chưa,
--- nếu chưa thì trả về giá trị 0.
+-- 2B.1
+-- Đưa vào TENHV trả ra: Số GV thỏa học vị, nếu không tìm thấy trả về 0
 -- ================================================================
 
+-- Tạo Stored Procedure
 CREATE OR ALTER PROCEDURE sp_CountGVTheoHocVi
     @TenHV NVARCHAR(20),
     @SOGV INT OUTPUT
@@ -34,10 +33,8 @@ end;
 GO
 
 -- ================================================================
--- 2A.2
--- Tham số vào là MSGV, TENGV, SODT, DIACHI, MSHH, NAMHH.
--- Trước khi insert dữ liệu cần kiểm tra MSGV trong table GIAOVIEN có trùng không,
--- nếu trùng thì trả về giá trị 0.
+-- 2B.2
+-- Đưa vào MSDT cho biết: Điểm trung bình của đề tài, nếu không tìm thấy trả về 0
 -- ================================================================
 
 CREATE OR ALTER PROCEDURE SP_DiemTBDeTai
@@ -64,10 +61,10 @@ END
 GO
 
 -- ================================================================
--- 2A.3
--- Giống (1) và (2) kiểm tra xem MSGV có trùng không? MSHH có tồn tại chưa?
--- Nếu MSGV trùng thì trả về 0. Nếu MSHH chưa tồn tại trả về 1,
--- ngược lại cho insert dữ liệu
+-- 2B.3
+-- Đưa vào TENGV trả ra: SDT của giáo viên đó, nếu không tìm thấy trả về 0.
+-- Nếu trùng tên thì có báo lỗi không? Tại sao?
+-- Làm sao để hiện thông báo có bao nhiêu giáo viên trùng tên và trả về các SDT?
 -- ================================================================
 
 CREATE OR ALTER PROCEDURE sp_TimGVTheoTen @TENGV NVARCHAR(30),
@@ -96,10 +93,8 @@ end
 GO
 
 -- ================================================================
--- 2A.4
--- Đưa vào MSDT cũ, TENDT mới.
--- Hãy cập nhật tên đề tài mới với mã đề tài cũ không đổi nếu không tìm thấy trả về 0,
--- ngược lại cập nhật và trả về 1
+-- 2B.4
+-- Đưa vào MSHD cho biết: Điểm trung bình các đề tài của hội đồng đó
 -- ================================================================
 
 CREATE OR ALTER PROCEDURE sp_DiemTBTheoHD @MSHD INT,
@@ -121,11 +116,11 @@ end
 go
 
 -- ================================================================
--- 2A.5
--- Tham số đưa vào MSSV, TENSV mới, DIACHI mới.
--- Hãy cập nhật sinh viên trên với MSSV không đổi,
--- nếu không tìm thấy trả về 0,
--- ngược lại cập nhật và trả về 1
+-- 2B.5
+-- Đưa vào TENGV cho biết:
+-- Số đề tài hướng dẫn, số đề tài phản biện do giáo viên đó phụ trách.
+-- Nếu trùng tên thì có báo lỗi không?
+-- Hay hệ thống sẽ đếm tất cả các đề tài của những giáo viên trùng tên đó?
 -- ================================================================
 
 CREATE OR ALTER PROCEDURE sp_ThongTinDeTaiGV @TENGV NVARCHAR(30),
