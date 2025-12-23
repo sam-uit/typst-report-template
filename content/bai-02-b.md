@@ -107,8 +107,6 @@ ALTER ROLE db_owner ADD MEMBER U3;
 ALTER ROLE db_accessadmin ADD MEMBER U3;
 ```
 
-
-
 #### r3 là thành viên của SysAdmin, db_owner, db_accessadmin
 
 ```sql
@@ -226,8 +224,6 @@ WHERE UserP.name LIKE 'U%' AND RoleP.name LIKE 'db_owner'
 ORDER BY [Role Name];
 GO
 ```
-
-
 
 | Role ID | Role Name | User ID | User Name | Member Type |
 | ------- | --------- | ------- | --------- | ----------- |
