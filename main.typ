@@ -63,9 +63,13 @@ Kết quả:
 
 // MARK: MAIN CONTENT
 
-#include "content/quiz1.typ"
-#include "content/quiz2.typ"
-#include "content/quiz3.typ"
-#include "content/quiz4.typ"
+#include "content/bai-01.typ"
+#include "content/bai-01-a.typ"
+#include "content/bai-01-b.typ"
+#pagebreak()
+#include "content/bai-02.typ"
+#include "content/bai-02-a.typ"
+#include "content/bai-02-b.typ"
+#include "content/bai-02-c.typ"
 
 // THE END
