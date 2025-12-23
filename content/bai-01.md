@@ -3,8 +3,6 @@
 
 ## CREATE - Tạo Các Quan Hệ
 
-- RDBMS: Microsoft SQL Server.
-
 ### `SINHVIEN`
 
 ```sql
@@ -173,8 +171,6 @@ CREATE TABLE HOIDONG_DT (
 ```
 
 ## INSERT - Thêm Dữ Liệu
-
-- RDBMS: Microsoft SQL Server.
 
 ### Table `SINHVIEN`
 
