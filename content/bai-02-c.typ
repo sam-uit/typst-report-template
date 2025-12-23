@@ -37,18 +37,11 @@ SELECT name, type_desc FROM sys.database_principals
 WHERE name IN ('U1', 'U2', 'U3');
 ```
 
-#figure(
-  align(center)[#table(
-    columns: 2,
-    align: (center,auto,),
-    table.header([name], [type\_desc],),
-    table.hline(),
-    [U1], [SQL\_USER],
-    [U2], [SQL\_USER],
-    [U3], [SQL\_USER],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 2,
+  align: (center, left),
+  [name], [type\_desc], [U1], [SQL\_USER], [U2], [SQL\_USER], [U3], [SQL\_USER]
+)
 
 === GRANT - U1 có quyền SELECT, DELETE trên T1, T3
 <grant-u1-co-quyen-select-delete-tren-t1-t3>
@@ -71,21 +64,11 @@ SELECT * FROM DETAI;
 REVERT;
 ```
 
-#figure(
-  align(center)[#table(
-    columns: 2,
-    align: (center,left,),
-    table.header([MSDT], [TENDT],),
-    table.hline(),
-    [97001], [Quản lý thư viện],
-    [97002], [Nhận dạng vân tay],
-    [97003], [Bán đấu giá trên mạng],
-    [97004], [Quản lý siêu thị],
-    [97005], [Xử lý ảnh],
-    [97006], [Hệ giải toán thông minh],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 2,
+  align: (center, left),
+  [MSDT], [TENDT], [97001], [Quản lý thư viện], [97002], [Nhận dạng vân tay], [97003], [Bán đấu giá trên mạng], [97004], [Quản lý siêu thị], [97005], [Xử lý ảnh], [97006], [Hệ giải toán thông minh]
+)
 
 === GRANT - U2 có quyền UPDATE, DELETE trên T2
 <grant-u2-co-quyen-update-delete-tren-t2>
@@ -122,18 +105,11 @@ UPDATE HOIDONG SET PHONG = 6969;
 REVERT;
 ```
 
-#figure(
-  align(center)[#table(
-    columns: (6.67%, 8.33%, 31.67%, 31.67%, 15%, 6.67%),
-    align: (center,auto,auto,auto,auto,auto,),
-    table.header([MSHD], [PHONG], [TGBD], [NGAYHD], [TINHTRANG], [MSGV],),
-    table.hline(),
-    [1], [6969], [1900-01-01 07:00:00], [2014-11-29 00:00:00], [Thật], [201],
-    [2], [6969], [1900-01-01 07:00:00], [2014-12-05 00:00:00], [Thật], [202],
-    [3], [6969], [1900-01-01 08:00:00], [2014-12-06 00:00:00], [Thật], [203],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 4,
+  align: (center, left, left, left),
+  [MSHD], [PHONG], [TINHTRANG], [MSGV], [1], [6969], [Thật], [201], [2], [6969], [Thật], [202], [3], [6969], [Thật], [203]
+)
 
 === GRANT - U3 có quyền INSERT trên T1, T2, T3
 <grant-u3-co-quyen-insert-tren-t1-t2-t3>
@@ -160,19 +136,11 @@ INSERT INTO HOIDONG (MSHD, PHONG, TGBD, NGAYHD, TINHTRANG, MSGV) VALUES
 REVERT;
 ```
 
-#figure(
-  align(center)[#table(
-    columns: (6.67%, 8.33%, 31.67%, 31.67%, 15%, 6.67%),
-    align: (center,auto,auto,auto,auto,auto,),
-    table.header([MSHD], [PHONG], [TGBD], [NGAYHD], [TINHTRANG], [MSGV],),
-    table.hline(),
-    [1], [6969], [1900-01-01 07:00:00], [2014-11-29 00:00:00], [Thật], [201],
-    [2], [6969], [1900-01-01 07:00:00], [2014-12-05 00:00:00], [Thật], [202],
-    [3], [6969], [1900-01-01 08:00:00], [2014-12-06 00:00:00], [Thật], [203],
-    [4], [2], [1900-01-01 07:00:00], [2014-11-29 00:00:00], [Thật], [201],
-  )]
-  , kind: table
-  )
+#table(
+  columns: (1fr,) * 4,
+  align: (center, left, left, left),
+  [MSHD], [PHONG], [TINHTRANG], [MSGV], [1], [6969], [Thật], [201], [2], [6969], [Thật], [202], [3], [6969], [Thật], [203], [4], [2], [Thật], [201]
+)
 
 === DENY - U1 bị từ chối quyền INSERT trên T1, T2
 <deny-u1-bi-tu-choi-quyen-insert-tren-t1-t2>
