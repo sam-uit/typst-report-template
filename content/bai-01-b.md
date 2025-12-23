@@ -31,6 +31,9 @@ Thực hiện bằng 2 cách:
 
 - Click chuột phải vào CSDL AAA -> **Delete**.
 - Check vào ô **Close existing connections** (để ngắt các kết nối đang chạy).
+
+![Xóa DB](assets/btth3-bai-1-a-7-4.png)
+
 - Nhấn **OK**.
 
 ##### Restore (Khôi Phục)
