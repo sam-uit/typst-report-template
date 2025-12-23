@@ -17,7 +17,7 @@ BEGIN
     DECLARE @MSDT char(6);
     -- We use a cursor or set-based approach to handle multiple deleted rows
     -- For simplicity in labs, we often handle single row, but SET-BASED is better.
-    
+
     -- 1. Delete from Child Tables first (referencing tables)
     DELETE FROM SV_DETAI WHERE MSDT IN (SELECT MSDT FROM deleted);
     DELETE FROM GV_HDDT  WHERE MSDT IN (SELECT MSDT FROM deleted);
@@ -32,12 +32,12 @@ GO
 
 
 -- =============================================
--- 2. Tạo Trigger thỏa mãn ràng buộc là khi đổi 1 mã số giáo viên (MSGV) 
+-- 2. Tạo Trigger thỏa mãn ràng buộc là khi đổi 1 mã số giáo viên (MSGV)
 --    thì sẽ thay đổi các thông tin liên quan.
 -- =============================================
 /*
-   ANALYSIS: Updating a Primary Key is dangerous. If Foreign Keys exist, 
-   an AFTER UPDATE will fail before it starts. 
+   ANALYSIS: Updating a Primary Key is dangerous. If Foreign Keys exist,
+   an AFTER UPDATE will fail before it starts.
    We must use INSTEAD OF UPDATE to insert new ID, re-point children, then delete old ID.
    (Or essentially update Child tables first if constraints allow, but INSTEAD OF is safest).
 */
@@ -59,7 +59,7 @@ BEGIN
 
         -- 1. Temporarily disable constraints (Optional, but often needed for circular refs)
         -- In this specific schema, we can insert New Parent -> Update Children -> Delete Old Parent.
-        
+
         -- Insert the New Parent Record (Copy data from 'inserted')
         INSERT INTO GIAOVIEN (MSGV, TENGV, DIACHI, SODT, MSHH, NAMHH)
         SELECT MSGV, TENGV, DIACHI, SODT, MSHH, NAMHH FROM inserted;
@@ -79,7 +79,7 @@ BEGIN
     BEGIN
         -- If MSGV didn't change, just do a normal update
         UPDATE GIAOVIEN
-        SET TENGV = i.TENGV, DIACHI = i.DIACHI, SODT = i.SODT, 
+        SET TENGV = i.TENGV, DIACHI = i.DIACHI, SODT = i.SODT,
             MSHH = i.MSHH, NAMHH = i.NAMHH
         FROM GIAOVIEN g
         JOIN inserted i ON g.MSGV = i.MSGV;
@@ -115,7 +115,7 @@ GO
 
 -- =============================================
 -- 4. Tạo Trigger thỏa mãn ràng buộc là một đề tài không quá 3 sinh viên.
---    (Note: Your comments said "2 sinh viên" but code said 4. Usually labs ask for 3. 
+--    (Note: Your comments said "2 sinh viên" but code said 4. Usually labs ask for 3.
 --     I will set it to 3 based on standard rules).
 -- =============================================
 DROP TRIGGER IF EXISTS trg_C4_LimitStudentsPerTopic;
@@ -153,22 +153,22 @@ AS
 BEGIN
     -- Only check if we are inserting/updating a teacher to be 'PHÓ GIÁO SƯ' (Assume ID 1)
     -- Or we join with HOCHAM table to be sure.
-    
+
     DECLARE @MaPhoGiaoSu INT;
     SELECT @MaPhoGiaoSu = MSHH FROM HOCHAM WHERE TENHH = N'PHÓ GIÁO SƯ';
-    
+
     DECLARE @MaTienSi INT;
     SELECT @MaTienSi = MSHV FROM HOCVI WHERE TENHV = N'Tiến sĩ';
 
     -- Logic: Find any teacher in 'inserted' who is PGS but DOES NOT HAVE a PhD record
     IF EXISTS (
-        SELECT 1 
+        SELECT 1
         FROM inserted i
         WHERE i.MSHH = @MaPhoGiaoSu
           AND NOT EXISTS (
-              SELECT 1 
-              FROM GV_HV_CN degree 
-              WHERE degree.MSGV = i.MSGV 
+              SELECT 1
+              FROM GV_HV_CN degree
+              WHERE degree.MSGV = i.MSGV
                 AND degree.MSHV = @MaTienSi
           )
     )
