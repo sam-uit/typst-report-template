@@ -153,3 +153,64 @@ Msg 229, Level 14, State 5, Line 9
 The INSERT permission was denied on the object 'DETAI', database 'IE103-BTTH2', schema 'dbo'.
 ```
 
+### U2 bị từ chối quyền DELETE trên T3
+
+#### DENY
+
+```sql
+DENY DELETE ON GV_HDDT TO U2;
+```
+
+#### Kiểm tra
+
+```sql
+EXECUTE AS USER = 'U2';
+DELETE FROM GV_HDDT WHERE 1 = 0;
+REVERT;
+```
+
+```sql
+The DELETE permission was denied on the object 'GV_HDDT', database 'IE103-BTTH2', schema 'dbo'.
+```
+
+### REVOKE - Thu hồi các quyền của U1 trên T1
+
+#### REVOKE
+
+```sql
+REVOKE SELECT, DELETE ON DETAI FROM U1;
+```
+
+#### Kiểm tra
+
+```sql
+EXECUTE AS USER = 'U1';
+SELECT * FROM DETAI;
+REVERT;
+```
+
+```sql
+The SELECT permission was denied on the object 'DETAI', database 'IE103-BTTH2', schema 'dbo'.
+```
+
+#### REVOKE - Thu hồi các quyền của U3 trên T2
+
+#### REVOKE
+
+```sql
+REVOKE INSERT ON HOIDONG FROM U3;
+```
+
+#### Kiểm tra
+
+```sql
+EXECUTE AS USER = 'U3';
+INSERT INTO HOIDONG (MSHD, PHONG, TGBD, NGAYHD, TINHTRANG, MSGV) VALUES
+(5, 3, '08:00', '2014-11-30', N'Thật', 202);
+REVERT;
+```
+
+```sql
+The INSERT permission was denied on the object 'HOIDONG', database 'IE103-BTTH2', schema 'dbo'.
+```
+
