@@ -1,4 +1,6 @@
-= Đề Bài - Cơ Sở Dữ Liệu về Quản Lý Đề Tài
+#import "../template/lib.typ": *
+
+#unheading[Đề Bài - Cơ Sở Dữ Liệu về Quản Lý Đề Tài]
 <de-bai-co-so-du-lieu-ve-quan-ly-de-tai>
 
 Cho lược đồ quan hệ sau, hãy hoàn thành các yêu cầu ở @phan-1[ Mục] (Phần 1) và @phan-2[ Mục] (Phần 2).
@@ -18,7 +20,7 @@ Cho lược đồ quan hệ sau, hãy hoàn thành các yêu cầu ở @phan-1[ 
 + HOIDONG\_GV(#underline[MSHD, MSGV])
 + HOIDONG\_DT(#underline[MSHD, MSDT], QUYETDINH)
 
-= Môi Trường Triển Khai
+#unheading[Môi Trường Triển Khai]
 <moi-truong-trien-khai>
 
 - RDBMS: Microsoft SQL Server 2019 (Azure SQL Edge).
