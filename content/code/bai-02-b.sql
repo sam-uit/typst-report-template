@@ -120,6 +120,27 @@ end
         end;
 GO
 
+-- Ví dụ 1: Trường hợp trùng tên (Nguyễn Văn An)
+
+DECLARE @SoLuong INT, @DS_SDT NVARCHAR(100);
+EXEC sp_TimGVTheoTen N'Nguyễn Văn An', @SoLuong OUTPUT, @DS_SDT OUTPUT;
+SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SDT AS 'Danh sach so dien thoai';
+GO
+
+-- Ví dụ 2: Trường hợp không trùng tên (Trần Trung)
+
+DECLARE @SoLuong INT, @DS_SDT NVARCHAR(100);
+EXEC sp_TimGVTheoTen N'Trần Trung', @SoLuong OUTPUT, @DS_SDT OUTPUT;
+SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SDT AS 'Danh sach so dien thoai';
+GO
+
+-- Ví dụ 3: Trường hợp không tìm thấy (Lê Kim Long)
+
+DECLARE @SoLuong INT, @DS_SDT NVARCHAR(100);
+EXEC sp_TimGVTheoTen N'Lê Kim Long', @SoLuong OUTPUT, @DS_SDT OUTPUT;
+SELECT N'Tong so giao vien trung ten: ' AS ThongBao, @SoLuong AS SoLuong, @DS_SDT AS 'Danh sach so dien thoai';
+GO
+
 -- ================================================================
 -- 2B.4
 -- Đưa vào MSHD cho biết: Điểm trung bình các đề tài của hội đồng đó
