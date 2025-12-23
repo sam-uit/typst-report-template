@@ -1,6 +1,9 @@
+#import "../template/lib.typ": *
+
 == C. PHÂN QUYỀN NGƯỜI DÙNG
 <c-phan-quyen-nguoi-dung>
 
+#todo[Bài 2.C: SQL Script]
 
 === Mô Tả Yêu Cầu
 <mo-ta-yeu-cau>
