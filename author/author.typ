@@ -5,7 +5,7 @@
 
 #unheading[#data.author.name]
 
-Thành viên của nhóm và bảng nhiệm vụ.
+Thành viên của nhóm và bảng nhiệm vụ cho #data.assignment.title.
 
 #figure(
   align(center)[
@@ -16,7 +16,8 @@ Thành viên của nhóm và bảng nhiệm vụ.
         // Use a monofont: Iosevka
         text(
           font: "Iosevka",
-          weight: "regular",
+          weight: 300,
+          fill: black.lighten(40%),
         )[#current_cell]
       } else {
         // Return normal formatting for other columns
@@ -26,53 +27,53 @@ Thành viên của nhóm và bảng nhiệm vụ.
     // TODO: Span full width automatically
     // TODO: import/use csv data instead of hardcoding
     #rounded-table-lined(
-      columns: (10%, 20%, 40%, 30%),
+      columns: (10%, 15%, 30%, 45%),
       align: (right, right, left, left),
       table.header([No], [MSSV], [Họ và Tên], [Phụ Trách]),
       table.hline(),
-      [01],
-      [15410301],
-      [Nguyễn Văn A],
-      [@bai-2[Bài]],
-      [02],
-      [15410319],
-      [Trần Minh Tuấn],
+      [1],
+      [25410291],
+      [Đinh Xuân Sâm],
+      [- Tổng hợp & Biên tập.],
+      [2],
+      [25410319],
+      [Đặng Hữu Toàn],
       [],
-      [03],
-      [15410321],
-      [Lê Hoàng Phúc],
+      [3],
+      [25410321],
+      [Nguyễn Điền Triết],
       [],
-      [04],
-      [15410204],
-      [Phạm Minh Tuấn],
+      [4],
+      [25410204],
+      [Trương Xuân Hậu],
       [],
-      [05],
-      [15410338],
-      [Lê Trần Minh Nhật],
+      [5],
+      [25410338],
+      [Lê Anh Vũ],
       [],
-      [06],
-      [15410176],
-      [Phan Văn Dũng],
+      [6],
+      [25410176],
+      [Trần Sơn Bình],
       [],
-      [07],
-      [15410247],
-      [Trần Thị Bích Ngọc],
+      [7],
+      [25410247],
+      [Lê Kim Long],
       [],
-      [08],
-      [15410337],
-      [Võ Thị Thu Hà],
+      [8],
+      [25410337],
+      [La Anh Vũ],
       [],
-      [09],
-      [15410209],
-      [Võ Nguyễn Thành Vinh],
+      [9],
+      [25410209],
+      [Lê Ngọc Hiệp],
       [],
       [10],
-      [15410271],
-      [Lê Thị Bảo Trân],
+      [25410271],
+      [Nguyễn Thị Ngọc Nhung],
       [],
     )],
   kind: table,
   caption: [#data.author.name],
-  outlined: false, // Hides it from the List of Tables
+  outlined: true, // Hides it from the List of Tables
   numbering: none, // Hides the "Table X:" prefix (optional)
 )
