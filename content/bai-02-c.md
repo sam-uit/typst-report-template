@@ -18,7 +18,7 @@ Tạo các user `U1`, `U2`, `U3` và phân quyền theo yêu cầu.
 6. Thu hồi các quyền của U1 trên T1
 7. Thu hồi các quyền của U3 trên T2
 
-### C.1 Tạo User
+### Tạo User - Chuẩn Bị Môi Trường
 
 ```sql
 CREATE USER U1 WITHOUT LOGIN;
@@ -39,9 +39,9 @@ WHERE name IN ('U1', 'U2', 'U3');
 |  U2  | SQL_USER  |
 |  U3  | SQL_USER  |
 
-### C.2 Cấp quyền (GRANT)
+### GRANT - U1 có quyền SELECT, DELETE trên T1, T3
 
-#### U1 có quyền SELECT, DELETE trên T1, T3
+#### GRANT
 
 ```sql
 GRANT SELECT, DELETE ON DETAI TO U1;
@@ -65,7 +65,7 @@ REVERT;
 | 97005 | Xử lý ảnh               |
 | 97006 | Hệ giải toán thông minh |
 
-### U2 có quyền UPDATE, DELETE trên T2
+### GRANT - U2 có quyền UPDATE, DELETE trên T2
 
 #### GRANT
 
@@ -102,7 +102,7 @@ REVERT;
 |  2   | 6969  | 1900-01-01 07:00:00 | 2014-12-05 00:00:00 | Thật      | 202  |
 |  3   | 6969  | 1900-01-01 08:00:00 | 2014-12-06 00:00:00 | Thật      | 203  |
 
-### U3 có quyền INSERT trên T1, T2, T3
+### GRANT - U3 có quyền INSERT trên T1, T2, T3
 
 #### GRANT
 
@@ -130,7 +130,7 @@ REVERT;
 |  3   | 6969  | 1900-01-01 08:00:00 | 2014-12-06 00:00:00 | Thật      | 203  |
 |  4   | 2     | 1900-01-01 07:00:00 | 2014-11-29 00:00:00 | Thật      | 201  |
 
-### U1 bị từ chối quyền INSERT trên T1, T2
+### DENY - U1 bị từ chối quyền INSERT trên T1, T2
 
 #### DENY
 
@@ -153,7 +153,7 @@ Msg 229, Level 14, State 5, Line 9
 The INSERT permission was denied on the object 'DETAI', database 'IE103-BTTH2', schema 'dbo'.
 ```
 
-### U2 bị từ chối quyền DELETE trên T3
+### DENY - U2 bị từ chối quyền DELETE trên T3
 
 #### DENY
 
