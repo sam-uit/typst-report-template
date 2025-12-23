@@ -8,7 +8,7 @@ Chọn 1 file dữ liệu (SV) từ excel, và import vào SQL Server.
 
 ![Import/Export > Import Data from File(s)…](assets/Import-001.jpg)
 
-- Chọn lựa file Excel chứa dữ liệu.
+- Chọn file Excel chứa dữ liệu.
 
 ![Chọn lựa file Excel chứa dữ liệu.](assets/Import-002.jpg)
 
