@@ -79,7 +79,54 @@ GRANT UPDATE, DELETE ON HOIDONG TO U2;
 
 ```sql
 EXECUTE AS USER = 'U2';
-DELETE FROM HOIDONG WHERE MAHD = 'HD001';
+DELETE FROM HOIDONG WHERE 1 = '0';
+REVERT;
+GO
+```
+
+```sql
+Commands completed successfully.
+```
+
+- UPDATE
+
+```sql
+EXECUTE AS USER = 'U2';
+UPDATE HOIDONG SET PHONG = 6969;
 REVERT;
 ```
+
+| MSHD | PHONG | TGBD                | NGAYHD              | TINHTRANG | MSGV |
+| :--: | ----- | ------------------- | ------------------- | --------- | ---- |
+|  1   | 6969  | 1900-01-01 07:00:00 | 2014-11-29 00:00:00 | Thật      | 201  |
+|  2   | 6969  | 1900-01-01 07:00:00 | 2014-12-05 00:00:00 | Thật      | 202  |
+|  3   | 6969  | 1900-01-01 08:00:00 | 2014-12-06 00:00:00 | Thật      | 203  |
+
+### U3 có quyền INSERT trên T1, T2, T3
+
+#### GRANT
+
+```sql
+GRANT INSERT ON DETAI TO U3;
+GRANT INSERT ON HOIDONG TO U3;
+GRANT INSERT ON GV_HDDT TO U3;
+```
+
+#### Kiểm tra
+
+- INSERT trên `HOIDONG`
+
+```sql
+EXECUTE AS USER = 'U3';
+INSERT INTO HOIDONG (MSHD, PHONG, TGBD, NGAYHD, TINHTRANG, MSGV) VALUES
+(4, 2, '07:00', '2014-11-29', N'Thật', 201);
+REVERT;
+```
+
+| MSHD | PHONG | TGBD                | NGAYHD              | TINHTRANG | MSGV |
+| :--: | ----- | ------------------- | ------------------- | --------- | ---- |
+|  1   | 6969  | 1900-01-01 07:00:00 | 2014-11-29 00:00:00 | Thật      | 201  |
+|  2   | 6969  | 1900-01-01 07:00:00 | 2014-12-05 00:00:00 | Thật      | 202  |
+|  3   | 6969  | 1900-01-01 08:00:00 | 2014-12-06 00:00:00 | Thật      | 203  |
+|  4   | 2     | 1900-01-01 07:00:00 | 2014-11-29 00:00:00 | Thật      | 201  |
 
