@@ -161,3 +161,29 @@ Cannot insert the value NULL into column 'HireDate', table 'BTTH2.dbo.Employees'
 - Do bảng gốc yêu cầu `BirthDate` và `HireDate` không được để trống (`NOT NULL`), nhưng câu lệnh `INSERT` thông qua View lại không cung cấp giá trị cho chúng, nên SQL Server sẽ báo lỗi vi phạm ràng buộc dữ liệu.
 
 ### Mã Hóa Dữ Liệu
+
+Cho hình bên dưới.
+
+![Mã Hóa Dữ Liệu](assets/btth3-bai-1-a-10-1.png)
+
+Hỏi hình trên đang mô tả mã hóa dữ liệu ở trạng thái nào? Vì sao?
+
+Biết dữ liệu có 3 trạng thái là:
+
+- Data at rest (trạng thái nghỉ),
+- Data in use (trạng thái đang sử dụng),
+- Data in motion/transit (trạng thái lưu chuyển).
+
+Trả lời:
+
+- Đồ họa trên miêu tả việc mã hóa dữ liệu ở các trạng thái sau đây.
+- **Data in motion/transit (Trạng thái lưu chuyển)**
+  - Mũi tên từ bộ phận điều khiển ADO.NET (phía ứng dụng/Client) gửi đến Database có ghi chú "SQL Query with Cipher Parameters" (Truy vấn SQL với các tham số mật mã).
+  - ADO.NET: “a set of computer software components that programmers can use to access data and data services from a database.”
+  - Điều này có nghĩa là dữ liệu đã được mã hóa ngay tại ứng dụng (Client-side) trước khi nó được gửi tới lưu trữ.
+  - Do đó, trên đường truyền, dữ liệu hoàn toàn ở dạng mã hóa, bảo vệ nó khỏi việc bị nghe lén.
+- **Data at rest (Trạng thái nghỉ)**
+  - Ở phía bên phải (Database), hình ảnh biểu diễn dữ liệu ngay từ trước khi được đưa vào lưu trữ (hình trụ) là "Encrypted Data" (Dữ liệu đã mã hóa).
+  - Ngay cả DBA (người quản trị cơ sở dữ liệu) khi truy xuất vào bảng cũng chỉ thấy chuỗi mã hóa vô nghĩa (ví dụ: 0x823ksk...).
+  - Điều này chứng tỏ dữ liệu nằm trên thiết bị lưu trữ luôn ở trạng thái được mã hóa.
+
