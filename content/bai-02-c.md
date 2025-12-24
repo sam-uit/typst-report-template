@@ -198,7 +198,6 @@ MSGV    MSDT    DIEM
 2020    97002   7
 ```
 
-
 ### Trigger Hội Đồng và Số Lượng Đề Tài
 
 - Tạo Trigger thỏa mãn ràng buộc là một hội đồng không quá 10 đề tài.
@@ -206,33 +205,54 @@ MSGV    MSDT    DIEM
 
 #### Trigger
 
+- Xóa trigger đang tồn tại nếu có (ở các lần chạy thứ 2 trở đi).
+
 ```sql
-CREATE TRIGGER trg_C3_CheckGvInHoiDong
-ON HOIDONG_GV
-AFTER INSERT, UPDATE
+IF OBJECT_ID('BTTH2_TRG_KiemTraSoLuongDeTai', 'TR') IS NOT NULL
+    DROP TRIGGER BTTH2_TRG_KiemTraSoLuongDeTai;
+GO
+```
+
+- Tạo Trigger kiểm tra ràng buộc số lượng Đề Tài
+    - Sử dụng `FOR` (`AFTER`).
+    - Kiểm tra xem có hội đồng nào vi phạm quy định (> 10 đề tài) hay không.
+    - Logic: Chỉ cần kiểm tra các `MSHD` vừa bị tác động (có trong bảng `INSERTED`).
+    - Nếu tìm thấy hội đồng nào có > 10 đề tài, hủy bỏ thao tác (`INSERT`/`UPDATE`) và báo lỗi.
+
+```sql
+CREATE TRIGGER BTTH2_TRG_KiemTraSoLuongDeTai
+ON HOIDONG_DT
+FOR INSERT, UPDATE
 AS
 BEGIN
+
     IF EXISTS (
-        SELECT 1
-        FROM inserted AS i
-        INNER JOIN HOIDONG AS h ON i.MSHD = h.MSHD
-        WHERE i.MSGV = h.MSGV -- Nếu MSGV của thành viên hội đồng trùng với MSGV (Chủ tịch) của HOIDONG
+        SELECT HOIDONG_DT.MSHD
+        FROM HOIDONG_DT
+        JOIN INSERTED ON HOIDONG_DT.MSHD = INSERTED.MSHD
+        GROUP BY HOIDONG_DT.MSHD
+        HAVING COUNT(HOIDONG_DT.MSHD) > 10
     )
     BEGIN
-        RAISERROR(N'LỖI: Giáo viên thành viên không được là Chủ tịch của cùng Hội đồng đó.', 16, 1);
+        RAISERROR(N'Lỗi: Quá 10 đề tài trên Hội Đồng.', 16, 1);
         ROLLBACK TRANSACTION;
-        RETURN;
     END
-END
+END;
 GO
 ```
 
 #### Giải Thích
 
-- CÓ/KHÔNG thể dùng `GROUP BY`.
+- CÓ thể dùng `GROUP BY`. Rất cần thiết cho chức năng đếm số lượng/lần xuất hiện giá trị của một trường cụ thể.
 - VÌ:
+    - Thống kê: Ràng buộc yêu cầu đếm số lượng đề tài trên mỗi hội đồng.
+        - Trong mô hình quan hệ, bảng `HOIDONG_DT` chứa các dòng riêng lẻ (`MSHD`, `MSDT`).
+        - Để biết một `MSHD` xuất hiện bao nhiêu lần (tương ứng với số lượng đề tài), ta gom nhóm các dòng có cùng `MSHD` lại với mệnh đề `GROUP BY`.
+    - Kết hợp với `HAVING`: Sau khi `GROUP BY MSHD`, ta dùng hàm gộp `COUNT(MSDT)` để đếm và mệnh đề `HAVING` để lọc ra những nhóm vi phạm điều kiện (`> 10`).
 
 #### Ví Dụ
+
+
 
 ### Trigger Đề Tài và Số Lượng Sinh Viên
 
