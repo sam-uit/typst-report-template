@@ -225,7 +225,6 @@ ON HOIDONG_DT
 FOR INSERT, UPDATE
 AS
 BEGIN
-
     IF EXISTS (
         SELECT HOIDONG_DT.MSHD
         FROM HOIDONG_DT
@@ -331,16 +330,105 @@ Lỗi: Quá 10 đề tài trên Hội Đồng.
 
 #### Trigger
 
-```sql
+- Xóa trigger đang tồn tại nếu có (ở các lần chạy thứ 2 trở đi).
 
+```sql
+IF OBJECT_ID('BTTH2_TRG_KiemTraSoLuongSinhVien', 'TR') IS NOT NULL
+    DROP TRIGGER BTTH2_TRG_KiemTraSoLuongSinhVien;
+GO
 ```
+
+- Tạo Trigger kiểm tra ràng buộc số lượng Sinh Viên thực hiện Đề Tài.
+    - Sử dụng `FOR INSERT`/`FOR UPDATE` (tương đương `AFTER`).
+    - Kiểm tra xem có đề tài nào vừa bị tác động mà số lượng sinh viên tham gia vượt quá 2 hay không.
+
+```sql
+CREATE TRIGGER BTTH2_TRG_KiemTraSoLuongSinhVien
+ON SV_DETAI
+FOR INSERT, UPDATE
+AS 
+BEGIN
+    IF EXISTS (
+        SELECT SV_DETAI.MSDT
+        FROM SV_DETAI
+        JOIN INSERTED ON SV_DETAI.MSDT = INSERTED.MSDT
+        GROUP BY SV_DETAI.MSDT
+        HAVING COUNT(SV_DETAI.MSSV) > 2
+    )
+    BEGIN
+        RAISERROR(N'Lỗi: Một đề tài không được quá 2 sinh viên thực hiện.', 16, 1);
+        ROLLBACK TRANSACTION;
+    END
+END;
+GO
+```
+
 
 #### Giải Thích
 
-- CÓ/KHÔNG thể dùng `GROUP BY`.
+- CÓ thể dùng `GROUP BY`. Đây là mệnh đề bắt buộc để thực hiện yêu cầu này.
 - VÌ:
+    - Mục đích thống kê: Chúng ta cần đếm số lượng sinh viên (`MSSV`) thuộc về từng đề tài (`MSDT`) riêng biệt.
+    - Cơ chế hoạt động: Trong bảng `SV_DETAI`, dữ liệu được lưu dưới dạng từng dòng chi tiết (Mỗi dòng là một sinh viên đăng ký một đề tài).
+    - Kết hợp `HAVING`: Mệnh đề `GROUP BY SV_DETAI.MSDT` sẽ gom tất cả các dòng có cùng mã đề tài lại thành một nhóm. Sau đó, hàm `COUNT(SV_DETAI.MSSV)` sẽ đếm số thành viên trong nhóm đó. Cuối cùng, `HAVING` sẽ lọc ra nhóm nào có kết quả đếm `> 2` để Trigger xử lý báo lỗi.
 
 #### Ví Dụ
+
+- Chuẩn bị dữ liệu kiểm thử
+    - Tạo một đề tài kiểm thử mới mã 99999.
+    - Chúng ta đang có sẵn 3 sinh viên để thực hiện việc thêm vào đề tài này.
+
+```sql
+IF NOT EXISTS (SELECT * FROM DETAI WHERE MSDT = '99999')
+INSERT INTO DETAI (MSDT, TENDT) VALUES ('99999', N'Đề tài kiểm thử Trigger SV');
+GO
+```
+
+- Thêm 2 sinh viên vào đề tài (Hợp lệ)
+
+```sql
+-- Xóa dữ liệu cũ của đề tài 99999 trong bảng SV_DETAI nếu có để test lại từ đầu
+DELETE FROM SV_DETAI WHERE MSDT = '99999';
+GO
+
+-- Thêm sinh viên thứ 1
+INSERT INTO SV_DETAI (MSSV, MSDT) VALUES ('13520001', '99999');
+GO
+
+-- Thêm sinh viên thứ 2
+INSERT INTO SV_DETAI (MSSV, MSDT) VALUES ('13520002', '99999');
+GO
+```
+
+- Kiểm tra số lượng hiện tại:
+
+```sql
+SELECT MSDT, COUNT(MSSV) AS SoLuongSV 
+FROM SV_DETAI 
+WHERE MSDT = '99999' 
+GROUP BY MSDT;
+GO
+```
+
+```
+MSDT     SoLuongSV
+99999    2
+```
+
+- Thêm sinh viên thứ 3 (Vi phạm ràng buộc)
+
+```sql
+INSERT INTO SV_DETAI (MSSV, MSDT) VALUES ('13520003', '99999');
+GO
+```
+
+- Hệ thống báo lỗi và hủy thao tác.
+
+```sql
+Msg 50000, Level 16, State 1, Procedure BTTH2_TRG_KiemTraSoLuongSinhVien...
+Lỗi: Một đề tài không được quá 2 sinh viên thực hiện.
+The statement has been terminated.
+```
 
 ### Trigger Giáo Viên và Học Hàm
 
