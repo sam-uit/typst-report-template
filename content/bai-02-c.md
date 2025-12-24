@@ -433,12 +433,116 @@ The transaction ended in the trigger. The batch has been aborted.
 
 ### Trigger Giáo Viên và Học Hàm
 
-- Tạo Trigger thỏa mãn ràng buộc là một giáo viên muốn có học hàm PGS phải là tiến sĩ.
+- **Yêu cầu:** Tạo Trigger thỏa mãn ràng buộc là một giáo viên muốn có học hàm Phó Giáo Sư (PGS) thì bắt buộc phải có học vị Tiến sĩ.
 
 #### Trigger
 
-```sql
+- Xóa trigger cũ nếu tồn tại.
 
+```sql
+IF OBJECT_ID('BTTH2_TRG_KiemTraHocHamGiaoVien', 'TR') IS NOT NULL
+    DROP TRIGGER BTTH2_TRG_KiemTraHocHamGiaoVien;
+GO
+```
+
+- Tạo Trigger trên bảng `GIAOVIEN`.
+- **Sự kiện:** `INSERT`, `UPDATE` (Kiểm tra khi thêm mới hoặc khi sửa học hàm).
+- **Logic:**
+    - Lọc ra danh sách các Giáo viên trong bảng `INSERTED` đang được gán học hàm là 'PHÓ GIÁO SƯ'.
+    - Với mỗi giáo viên đó, kiểm tra trong bảng `GV_HV_CN` (Giáo viên - Học vị - Chuyên Ngành) xem họ có sở hữu học vị 'Tiến sĩ' (hoặc 'Tiến sĩ Khoa học') hay không.
+    - Nếu không tìm thấy học vị Tiến sĩ, hệ thống sẽ báo lỗi và hủy thao tác.
+
+```sql
+CREATE TRIGGER BTTH2_TRG_KiemTraHocHamGiaoVien
+ON GIAOVIEN
+FOR INSERT, UPDATE
+AS
+BEGIN
+    IF EXISTS (
+        SELECT INSERTED.MSGV
+        FROM INSERTED
+        JOIN HOCHAM ON INSERTED.MSHH = HOCHAM.MSHH
+        WHERE HOCHAM.TENHH = N'PHÓ GIÁO SƯ' -- Chỉ kiểm tra nếu là PGS
+        AND NOT EXISTS (
+            -- Kiểm tra xem giáo viên này có bằng Tiến sĩ hay không
+            SELECT 1
+            FROM GV_HV_CN
+            JOIN HOCVI ON GV_HV_CN.MSHV = HOCVI.MSHV
+            WHERE GV_HV_CN.MSGV = INSERTED.MSGV
+            AND (HOCVI.TENHV = N'Tiến sĩ' OR HOCVI.TENHV = N'Tiến sĩ Khoa học')
+        )
+    )
+    BEGIN
+        RAISERROR(N'Lỗi: Giáo viên muốn được phong Phó Giáo Sư phải có học vị Tiến sĩ.', 16, 1);
+        ROLLBACK TRANSACTION;
+    END
+END;
+GO
 ```
 
 #### Ví Dụ
+
+Để kiểm thử logic này một cách thực tế, chúng ta cần một trạng thái trung gian (Giáo viên chưa có học hàm) để thêm bằng cấp trước khi phong hàm.
+
+- **Chuẩn bị dữ liệu**
+    - Thêm một loại học hàm tạm thời là "Chưa có" (Mã 0) vào bảng `HOCHAM` để có thể tạo giáo viên ban đầu.
+    - Tạo một giáo viên kiểm thử (Mã 901) với học hàm "Chưa có".
+
+```sql
+IF NOT EXISTS (SELECT * FROM HOCHAM WHERE MSHH = 0)
+    INSERT INTO HOCHAM (MSHH, TENHH) VALUES (0, N'Chưa có');
+GO
+
+IF NOT EXISTS (SELECT * FROM GIAOVIEN WHERE MSGV = 901)
+    INSERT INTO GIAOVIEN (MSGV, TENGV, DIACHI, SODT, MSHH, NAMHH)
+    VALUES (901, N'Nguyễn Văn Test', N'TP.HCM', '0909090909', 0, '2024');
+GO
+```
+
+- **Gán học vị Cử nhân và cố gắng phong hàm PGS (Vi phạm)**
+    - Giáo viên 901 chỉ mới có bằng Cử nhân.
+    - Thực hiện cập nhật `MSHH` lên mức 'PHÓ GIÁO SƯ' (Mã 1 - Theo dữ liệu bài 1).
+
+```sql
+INSERT INTO GV_HV_CN (MSGV, MSHV, MSCN, NAM) VALUES (901, 2, 1, '2010');
+GO
+
+-- Cố gắng cập nhật lên Phó Giáo Sư (Mã 1)
+UPDATE GIAOVIEN SET MSHH = 1 WHERE MSGV = 901;
+GO
+```
+
+- **Hệ thống báo lỗi.**
+
+```sql
+Msg 50000, Level 16, State 1, Procedure BTTH2_TRG_KiemTraHocHamGiaoVien...
+Lỗi: Giáo viên muốn được phong Phó Giáo Sư phải có học vị Tiến sĩ.
+
+```
+
+- **Bổ sung học vị Tiến sĩ và phong hàm lại (Hợp lệ)**
+
+```sql
+-- Bổ sung bằng Tiến sĩ (Mã 4) cho GV 901
+INSERT INTO GV_HV_CN (MSGV, MSHV, MSCN, NAM) VALUES (901, 4, 1, '2015');
+GO
+
+-- Cập nhật lại lên Phó Giáo Sư (Mã 1)
+UPDATE GIAOVIEN SET MSHH = 1 WHERE MSGV = 901;
+GO
+```
+
+- **Cập nhật thành công. Kiểm tra lại dữ liệu.**
+
+```sql
+SELECT GV.MSGV, GV.TENGV, HH.TENHH 
+FROM GIAOVIEN GV 
+JOIN HOCHAM HH ON GV.MSHH = HH.MSHH 
+WHERE GV.MSGV = 901;
+
+```
+
+```
+MSGV    TENGV              TENHH
+901     Nguyễn Văn Test    PHÓ GIÁO SƯ
+```
