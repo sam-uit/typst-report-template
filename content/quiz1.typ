@@ -1,26 +1,24 @@
 #import "../template/lib.typ": *
 
-// YOUR CONTENT
+= Bài 1. Chủ Đề Đầu Tiên
+<bai-1-chu-de-dau-tien>
 
-= Bài 1. #lorem(5)
-<bai-1>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
-#lorem(30)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
 
-#lorem(20)
+== Bài 1 Mục 1
+<bai-1-muc-1>
 
-#todo[@bai-1[Bài]: #lorem(5).]
+#todo[@bai-1-chu-de-dau-tien[Bài]: Ví dụ của TODO ở Bài 1 tại @bai-1-muc-1[Mục].]
 
-== #lorem(5)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
-#lorem(30)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
 
-#lorem(20)
+== Bài 1 Mục 2
+<bai-1-muc-2>
 
-== #lorem(5)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
-#lorem(30)
-
-#lorem(20)
-
-#pagebreak()
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
