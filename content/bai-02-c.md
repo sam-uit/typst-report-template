@@ -160,8 +160,8 @@ SELECT * FROM GV_HDDT WHERE MSGV = 202;
 - Thực hiện đổi ID
 
 ```sql
-UPDATE GIAOVIEN 
-SET MSGV = 2020 
+UPDATE GIAOVIEN
+SET MSGV = 2020
 WHERE MSGV = 202;
 ```
 
@@ -252,7 +252,77 @@ GO
 
 #### Ví Dụ
 
+- Thêm số lượng đề tài trước khi kiểm thử: với các đề tài bổ sung, và một hội đồng giả định.
 
+```sql
+INSERT INTO DETAI (MSDT, TENDT)
+VALUES
+('T01', 'Test 1'),
+('T02', 'Test 2'),
+('T03', 'Test 3'),
+('T04', 'Test 4'),
+('T05', 'Test 5'),
+('T06', 'Test 6');
+```
+
+```sql
+INSERT INTO HOIDONG (MSHD, PHONG, TGBD, NGAYHD, TINHTRANG, MSGV)
+VALUES (99, 101, '07:00', '2024-01-01', N'Test', 201);
+```
+
+- Thêm 10 đề tài vào hội đồng giả định này, khiến số lượng đang ở `= 10`.
+
+```sql
+INSERT INTO HOIDONG_DT (MSHD, MSDT, QUYETDINH) VALUES
+(99, '97002', N'Được'),
+(99, '97003', N'Được'),
+(99, '97004', N'Được'),
+(99, '97005', N'Được'),
+(99, '97006', N'Được'),
+(99, 'T01', N'Được'),
+(99, 'T02', N'Được'),
+(99, 'T03', N'Được'),
+(99, 'T04', N'Được'),
+(99, 'T05', N'Được');
+```
+
+```
+MSHD    MSDT    QUYETDINH
+99      97002   Được
+99      97003   Được
+99      97004   Được
+99      97005   Được
+99      97006   Được
+99      T01     Được
+99      T02     Được
+99      T03     Được
+99      T04     Được
+99      T05     Được
+```
+
+- Kiểm tra số lượng hiện tại
+
+```sql
+SELECT MSHD, COUNT(MSDT) as SoLuong FROM HOIDONG_DT WHERE MSHD = 99 GROUP BY MSHD;
+```
+
+```
+MSHD    SoLuong
+99      10
+```
+
+- Kiểm thử: Thêm đề tài T06 vào hội đồng giả định này, khiến điều kiện trở thành `> 10`.
+
+```sql
+INSERT INTO HOIDONG_DT (MSHD, MSDT, QUYETDINH) VALUES (99, 'T06', N'Được');
+```
+
+- Gặp lỗi: Quá số lượng 10, không cho phép hoàn thành.
+
+```sql
+Msg 50000, Level 16, State 1, Procedure BTTH2_TRG_KiemTraSoLuongDeTai, Line 16
+Lỗi: Quá 10 đề tài trên Hội Đồng.
+```
 
 ### Trigger Đề Tài và Số Lượng Sinh Viên
 
