@@ -332,23 +332,7 @@ Lỗi: Quá 10 đề tài trên Hội Đồng.
 #### Trigger
 
 ```sql
-CREATE TRIGGER trg_C4_CheckPhanBienVsHuongDan
-ON GV_PBDT
-AFTER INSERT, UPDATE
-AS
-BEGIN
-    IF EXISTS (
-        SELECT 1
-        FROM inserted AS i
-        INNER JOIN GV_HDDT AS hd ON i.MSGV = hd.MSGV AND i.MSDT = hd.MSDT
-    )
-    BEGIN
-        RAISERROR(N'LỖI: Giáo viên phản biện (GV_PBDT) không được là Giáo viên hướng dẫn (GV_HDDT) cho cùng một đề tài.', 16, 1);
-        ROLLBACK TRANSACTION;
-        RETURN;
-    END
-END
-GO
+
 ```
 
 #### Giải Thích
@@ -362,24 +346,10 @@ GO
 
 - Tạo Trigger thỏa mãn ràng buộc là một giáo viên muốn có học hàm PGS phải là tiến sĩ.
 
-```sql
-CREATE TRIGGER trg_C5_CheckNamHocHam
-ON GIAOVIEN
-AFTER INSERT, UPDATE
-AS
-BEGIN
-    DECLARE @NamHienTai int = YEAR(GETDATE());
+#### Trigger
 
-    IF EXISTS (
-        SELECT 1
-        FROM inserted AS i
-        WHERE YEAR(i.NAMHH) > @NamHienTai
-    )
-    BEGIN
-        RAISERROR(N'LỖI: Năm nhận học hàm (NAMHH) không được lớn hơn năm hiện tại.', 16, 1);
-        ROLLBACK TRANSACTION;
-        RETURN;
-    END
-END
-GO
+```sql
+
 ```
+
+#### Ví Dụ
