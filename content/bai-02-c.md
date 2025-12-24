@@ -411,8 +411,8 @@ GO
 ```
 
 ```
-MSDT     SoLuongSV
-99999    2
+MSDT    SoLuongSV
+99999   2
 ```
 
 - Thêm sinh viên thứ 3 (Vi phạm ràng buộc)
@@ -425,9 +425,10 @@ GO
 - Hệ thống báo lỗi và hủy thao tác.
 
 ```sql
-Msg 50000, Level 16, State 1, Procedure BTTH2_TRG_KiemTraSoLuongSinhVien...
+Msg 50000, Level 16, State 1, Procedure BTTH2_TRG_KiemTraSoLuongSinhVien, Line 15
 Lỗi: Một đề tài không được quá 2 sinh viên thực hiện.
-The statement has been terminated.
+Msg 3609, Level 16, State 1, Line 46
+The transaction ended in the trigger. The batch has been aborted.
 ```
 
 ### Trigger Giáo Viên và Học Hàm
