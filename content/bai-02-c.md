@@ -462,9 +462,8 @@ BEGIN
         SELECT INSERTED.MSGV
         FROM INSERTED
         JOIN HOCHAM ON INSERTED.MSHH = HOCHAM.MSHH
-        WHERE HOCHAM.TENHH = N'PHÓ GIÁO SƯ' -- Chỉ kiểm tra nếu là PGS
+        WHERE HOCHAM.TENHH = N'PHÓ GIÁO SƯ'
         AND NOT EXISTS (
-            -- Kiểm tra xem giáo viên này có bằng Tiến sĩ hay không
             SELECT 1
             FROM GV_HV_CN
             JOIN HOCVI ON GV_HV_CN.MSHV = HOCVI.MSHV
@@ -515,9 +514,10 @@ GO
 - **Hệ thống báo lỗi.**
 
 ```sql
-Msg 50000, Level 16, State 1, Procedure BTTH2_TRG_KiemTraHocHamGiaoVien...
+Msg 50000, Level 16, State 1, Procedure BTTH2_TRG_KiemTraHocHamGiaoVien, Line 23
 Lỗi: Giáo viên muốn được phong Phó Giáo Sư phải có học vị Tiến sĩ.
-
+Msg 3609, Level 16, State 1, Procedure BTTH2_TRG_CapNhatMSGV, Line 40
+The transaction ended in the trigger. The batch has been aborted.
 ```
 
 - **Bổ sung học vị Tiến sĩ và phong hàm lại (Hợp lệ)**
@@ -543,6 +543,6 @@ WHERE GV.MSGV = 901;
 ```
 
 ```
-MSGV    TENGV              TENHH
-901     Nguyễn Văn Test    PHÓ GIÁO SƯ
+MSGV    TENGV               TENHH
+901     Nguyễn Văn Test     PHÓ GIÁO SƯ
 ```
