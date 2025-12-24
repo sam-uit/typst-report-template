@@ -2,36 +2,83 @@
 
 ### Trigger khi Xóa Đề Tài
 
-- Tạo Trigger thỏa mãn điều kiện khi xóa một đề tài sẽ xóa các thông tin liên quan.
+- Tạo Trigger thỏa mãn điều kiện khi xóa một đề tài (MSDT) sẽ xóa các thông tin liên quan.
+
+Tham khảo: [INSTEAD OF](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-trigger-transact-sql?view=sql-server-ver17#instead-of).
 
 #### Trigger
 
+-- Xóa trigger đã tạo trước đó nếu đây là lần chạy thứ 2 trở lên. Đảm bảo luôn có duy nhất 1 trigger được tạo và mới nhất.
+
 ```sql
-CREATE TRIGGER trg_C1_CheckSoLuongSVDeTai
-ON SV_DETAI
-AFTER INSERT, UPDATE
+IF OBJECT_ID('BTTH2_TRG_XoaDeTai', 'TR') IS NOT NULL
+    DROP TRIGGER BTTH2_TRG_XoaDeTai;
+GO
+```
+
+- Tạo Trigger mới trên `DETAI`. DÙNG INSTEAD OF cho mục đích này.
+
+```sql
+CREATE TRIGGER BTTH2_TRG_XoaDeTai ON DETAI
+INSTEAD OF DELETE
 AS
 BEGIN
-    DECLARE @MSDT char(6);
-    DECLARE @SoLuongSV int;
-    SELECT @MSDT = MSDT FROM inserted;
-    SELECT @SoLuongSV = COUNT(MSSV)
-    FROM SV_DETAI
-    WHERE MSDT = @MSDT;
-    IF @SoLuongSV > 4
-    BEGIN
-        RAISERROR(N'LỖI: Một đề tài không được phép có quá 4 sinh viên thực hiện.', 16, 1);
-        ROLLBACK TRANSACTION;
-        RETURN;
-    END
-END
+    -- Xóa dữ liệu tham chiếu ở các bảng con dựa trên MSDT
+    DELETE FROM SV_DETAI
+    WHERE MSDT IN (SELECT MSDT FROM DELETED);
+
+    DELETE FROM GV_HDDT
+    WHERE MSDT IN (SELECT MSDT FROM DELETED);
+
+    DELETE FROM GV_PBDT
+    WHERE MSDT IN (SELECT MSDT FROM DELETED);
+
+    DELETE FROM GV_UVDT
+    WHERE MSDT IN (SELECT MSDT FROM DELETED);
+
+    DELETE FROM HOIDONG_DT
+    WHERE MSDT IN (SELECT MSDT FROM DELETED);
+
+    -- Xóa chính đề tài đó trong bảng DETAI
+    DELETE FROM DETAI
+    WHERE MSDT IN (SELECT MSDT FROM DELETED);
+
+    PRINT N'Thực thi BTTH2_TRG_XoaDeTai: Đã xóa đề tài và các dữ liệu liên quan.';
+END;
 GO
 ```
 
 #### Ví dụ
 
 ```sql
---- VÍ DỤ
+-- Ví dụ: Xóa đề tài '97001' (Quản lý thư viện)
+DELETE FROM DETAI WHERE MSDT = '97001';
+
+-- Sau khi chạy, bạn có thể select lại để kiểm tra xem nó còn tồn tại không
+SELECT * FROM DETAI;
+SELECT * FROM SV_DETAI;
+```
+
+- MSDT 97001 không còn tồn tại trong DETAI:
+
+```
+MSDT    TENDT
+97002   Nhận dạng vân tay
+97003   Bán đấu giá trên mạng
+97004   Quản lý siêu thị
+97005   Xử lý ảnh
+97006   Hệ giải toán thông minh
+```
+
+- MSDT 97001 không còn tồn tại trong SV_DETAI:
+
+```
+    MSSV    MSDT
+13520001    97004
+13520002    97005
+13520004    97002
+13520005    97003
+13520006    97005
 ```
 
 ### Trigger thay đổi MSGV
