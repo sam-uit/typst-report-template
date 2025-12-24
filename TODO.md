@@ -6,6 +6,17 @@
 - Separated lib files for each of document type above.
 - Language/Type Setting: Typst.
 
+## Workflow
+
+- Writing content in a Markdown format.
+- Utilize Pandoc to convert `.md` files to `.typ` files.
+- Refine and finalize `.typ` files.
+- Content files: `content/` folder.
+
+Automation:
+
+- `make` with a `Makefile` to `watch` the folders and convert (content) files and compile (output) files automatically.
+
 ## Template
 
 Common style, data:
@@ -112,7 +123,7 @@ Each of document type comes with a separated 'main' file:
 
 ## TODO:
 
-- [ ] Pandoc: Include the import statement in every converted file: `#import "../template/lib.typ": *`
+- [ ] Pandoc: Include the import statement in every converted file: `#import "../template/lib.typ": *`. We need a common lib file for every document type.
 - [ ] Code Block spans across pages.
 - [ ] Pandoc: code block with '```' to figure (with or without caption).
 - [ ] Pandoc: table with caption.
