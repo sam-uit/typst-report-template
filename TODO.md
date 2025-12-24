@@ -9,7 +9,8 @@
 
 ### REPORT
 
-- Style: 1 page document.
+- Style:
+    - 1 page document.
 - A cover page:
     - Page number: Roman (i)
 - Common Sections: Table of Contents, List of Figures, List of Tables, List of Code Blocks, List of TODO, etc.
@@ -38,7 +39,8 @@
 
 ### THESIS
 
-- Style: 2 pages document.
+- Style:
+    - 2 pages document.
 - Common Components:
     - Empty Page: "This page is intentionally left blank."
 - A cover pages:
@@ -80,6 +82,10 @@
     - (May/May not) followed by an Empty Page: each section must start on an odd page number.
 
 ### PRESENTATION
+
+- Style:
+    - 16x9 ratio.
+    - Use a theme, for example 'themes/stargazer.typ'.
 
 ## TODO:
 
