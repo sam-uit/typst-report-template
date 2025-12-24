@@ -501,7 +501,7 @@ GO
 
 Để kiểm thử logic này một cách thực tế, chúng ta cần một trạng thái trung gian (Giáo viên chưa có học hàm) để thêm bằng cấp trước khi phong hàm.
 
-- #strong[Chuẩn bị dữ liệu]
+- Chuẩn bị dữ liệu
   - Thêm một loại học hàm tạm thời là "Chưa có" (Mã 0) vào bảng `HOCHAM` để có thể tạo giáo viên ban đầu.
   - Tạo một giáo viên kiểm thử (Mã 901) với học hàm "Chưa có".
 
@@ -516,7 +516,7 @@ IF NOT EXISTS (SELECT * FROM GIAOVIEN WHERE MSGV = 901)
 GO
 ```
 
-- #strong[Gán học vị Cử nhân và cố gắng phong hàm PGS (Vi phạm)]
+- Gán học vị Cử nhân và cố gắng phong hàm PGS (Vi phạm)
   - Giáo viên 901 chỉ mới có bằng Cử nhân.
   - Thực hiện cập nhật `MSHH` lên mức 'PHÓ GIÁO SƯ' (Mã 1 - Theo dữ liệu bài 1).
 
@@ -529,7 +529,7 @@ UPDATE GIAOVIEN SET MSHH = 1 WHERE MSGV = 901;
 GO
 ```
 
-- #strong[Hệ thống báo lỗi.]
+- Hệ thống báo lỗi.
 
 ```sql
 Msg 50000, Level 16, State 1, Procedure BTTH2_TRG_KiemTraHocHamGiaoVien, Line 23
@@ -538,7 +538,7 @@ Msg 3609, Level 16, State 1, Procedure BTTH2_TRG_CapNhatMSGV, Line 40
 The transaction ended in the trigger. The batch has been aborted.
 ```
 
-- #strong[Bổ sung học vị Tiến sĩ và phong hàm lại (Hợp lệ)]
+- Bổ sung học vị Tiến sĩ và phong hàm lại (Hợp lệ)
 
 ```sql
 -- Bổ sung bằng Tiến sĩ (Mã 4) cho GV 901
@@ -550,7 +550,7 @@ UPDATE GIAOVIEN SET MSHH = 1 WHERE MSGV = 901;
 GO
 ```
 
-- #strong[Cập nhật thành công. Kiểm tra lại dữ liệu.]
+- Cập nhật thành công. Kiểm tra lại dữ liệu.
 
 ```sql
 SELECT GV.MSGV, GV.TENGV, HH.TENHH 
