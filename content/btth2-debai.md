@@ -31,3 +31,4 @@ Các tài nguyên (tài liệu, code, vv...) của lab này được lưu tại:
     - `content`: Thư mục chứa các file nội dung của báo cáo.
     - `content/code`: Thư mục chứa các script `.sql` để thực thi.
     - `IE103-BTTH2`: Thư mục chứa file dự án `.sqlproj` cho SQL Projects.
+    - `IE103-BTTH2.ipynb`: Notebook nội dung của lab này.
