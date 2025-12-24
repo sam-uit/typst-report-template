@@ -38,4 +38,4 @@ Các tài nguyên (tài liệu, code, vv…) của lab này được lưu tại:
   - `IE103-BTTH2`: Thư mục chứa file dự án `.sqlproj` cho SQL Projects.
   - `IE103-BTTH2.ipynb`: Notebook nội dung của lab này.
 
-#todo[Hoàn Thành Notebook cho lab này, lưu tại `IE103-BTTH2.ipynb`.]
+#todo[Hoàn Thành Notebook #link("https://github.com/lt20252cnttalpha/LT.K2025.2-CNTT/blob/main/uit/courses/IE103/assignments/BTTH2/IE103-BTTH2.ipynb")[`IE103-BTTH2.ipynb`] cho lab này.]
