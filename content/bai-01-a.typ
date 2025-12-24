@@ -80,4 +80,4 @@ Ngoài ra có thể có Secondary Data Files (`.ndf`) nếu cần chia nhỏ ra 
 
 Số lượng kết nối tối đa (user connections) mà SQL Server hỗ trợ là #strong[32.767] kết nối (#link("https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/configure-the-user-connections-server-configuration-option?view=sql-server-ver17")[Server configuration: user connections];).
 
-- “SQL Server allows a maximum of 32,767 user connections.”
+- "SQL Server allows a maximum of 32,767 user connections."
