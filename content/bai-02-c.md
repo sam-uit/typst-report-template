@@ -8,7 +8,7 @@ Tham khảo: [INSTEAD OF](https://learn.microsoft.com/en-us/sql/t-sql/statements
 
 #### Trigger
 
--- Xóa trigger đã tạo trước đó nếu đây là lần chạy thứ 2 trở lên. Đảm bảo luôn có duy nhất 1 trigger được tạo và mới nhất.
+- Xóa trigger đã tạo trước đó nếu đây là lần chạy thứ 2 trở lên. Đảm bảo luôn có duy nhất 1 trigger được tạo và mới nhất.
 
 ```sql
 IF OBJECT_ID('BTTH2_TRG_XoaDeTai', 'TR') IS NOT NULL
@@ -87,56 +87,117 @@ MSDT    TENDT
 
 #### Trigger
 
+- Xóa trigger đã tạo trước đó nếu đây là lần chạy thứ 2 trở lên. Đảm bảo luôn có duy nhất 1 trigger được tạo và mới nhất.
+
 ```sql
-CREATE TRIGGER trg_C2_CheckGVHVCN
-ON GV_HV_CN
-AFTER INSERT, UPDATE
+IF OBJECT_ID('BTTH2_TRG_CapNhatMSGV', 'TR') IS NOT NULL
+    DROP TRIGGER BTTH2_TRG_CapNhatMSGV;
+GO
+```
+
+- Tạo Trigger mới trên `GIAOVIEN` sử dụng cả INSERTED và DELETED để lưu trữ dữ liệu mới/cũ tương ứng.
+
+```sql
+CREATE TRIGGER BTTH2_TRG_CapNhatMSGV ON GIAOVIEN
+INSTEAD OF UPDATE
 AS
 BEGIN
-    DECLARE @HasError int = 0;
+    -- Khai báo biến để giữ giá trị cũ và mới
+    DECLARE @OldMSGV INT;
+    DECLARE @NewMSGV INT;
 
-    -- 1. Kiểm tra MSGV
-    IF EXISTS (
-        SELECT *
-        FROM inserted AS i
-        WHERE NOT EXISTS (SELECT 1 FROM GIAOVIEN WHERE MSGV = i.MSGV)
-    )
-    BEGIN
-        RAISERROR(N'LỖI: Mã số giáo viên (MSGV) không tồn tại trong bảng GIAOVIEN.', 16, 1);
-        SET @HasError = 1;
-    END
+    -- Lấy MSGV cũ từ bảng DELETED (dữ liệu trước khi update)
+    SELECT @OldMSGV = MSGV FROM DELETED;
 
-    -- 2. Kiểm tra MSHV
-    IF EXISTS (
-        SELECT *
-        FROM inserted AS i
-        WHERE NOT EXISTS (SELECT 1 FROM HOCVI WHERE MSHV = i.MSHV)
-    )
-    BEGIN
-        RAISERROR(N'LỖI: Mã số học vị (MSHV) không tồn tại trong bảng HOCVI.', 16, 1);
-        SET @HasError = 1;
-    END
+    -- Lấy MSGV mới từ bảng INSERTED (dữ liệu người dùng muốn update)
+    SELECT @NewMSGV = MSGV FROM INSERTED;
 
-    -- 3. Kiểm tra MSCN
-    IF EXISTS (
-        SELECT *
-        FROM inserted AS i
-        WHERE NOT EXISTS (SELECT 1 FROM CHUYENNGANH WHERE MSCN = i.MSCN)
-    )
+    -- Kiểm tra: Nếu người dùng có sửa MSGV (Khóa chính)
+    IF (@OldMSGV <> @NewMSGV)
     BEGIN
-        RAISERROR(N'LỖI: Mã số chuyên ngành (MSCN) không tồn tại trong bảng CHUYENNGANH.', 16, 1);
-        SET @HasError = 1;
-    END
+        -- 1. Thêm dòng giáo viên mới với thông tin từ bảng INSERTED
+        INSERT INTO GIAOVIEN (MSGV, TENGV, DIACHI, SODT, MSHH, NAMHH)
+        SELECT MSGV, TENGV, DIACHI, SODT, MSHH, NAMHH
+        FROM INSERTED;
 
-    IF @HasError = 1
-    BEGIN
-        ROLLBACK TRANSACTION;
+        -- 2. Cập nhật các bảng con đang giữ MSGV cũ thành MSGV mới
+        UPDATE GV_HV_CN SET MSGV = @NewMSGV WHERE MSGV = @OldMSGV;
+        UPDATE GV_HDDT  SET MSGV = @NewMSGV WHERE MSGV = @OldMSGV;
+        UPDATE GV_PBDT  SET MSGV = @NewMSGV WHERE MSGV = @OldMSGV;
+        UPDATE GV_UVDT  SET MSGV = @NewMSGV WHERE MSGV = @OldMSGV;
+        UPDATE HOIDONG  SET MSGV = @NewMSGV WHERE MSGV = @OldMSGV;
+        UPDATE HOIDONG_GV SET MSGV = @NewMSGV WHERE MSGV = @OldMSGV;
+
+        -- 3. Xóa dòng giáo viên cũ (dựa trên bảng DELETED)
+        DELETE FROM GIAOVIEN WHERE MSGV = @OldMSGV;
     END
-END
+    ELSE
+    -- Trường hợp: Người dùng chỉ sửa tên, địa chỉ... (không sửa Khóa chính)
+    BEGIN
+        UPDATE GIAOVIEN
+        SET TENGV = I.TENGV,
+            DIACHI = I.DIACHI,
+            SODT = I.SODT,
+            MSHH = I.MSHH,
+            NAMHH = I.NAMHH
+        FROM GIAOVIEN G
+        JOIN INSERTED I ON G.MSGV = I.MSGV;
+    END
+END;
 GO
 ```
 
 #### Ví dụ
+
+- Kiểm tra trước khi đổi (xem bảng GV_HDDT của 202)
+
+```sql
+SELECT * FROM GIAOVIEN WHERE MSGV = 202;
+SELECT * FROM GV_HDDT WHERE MSGV = 202;
+-- Quên không copy kết quả ở lần chạy đầu
+```
+
+- Thực hiện đổi ID
+
+```sql
+UPDATE GIAOVIEN 
+SET MSGV = 2020 
+WHERE MSGV = 202;
+```
+
+- Kiểm tra lại: 202 sẽ mất, thay bằng 2020, dữ liệu con cũng đổi theo.
+
+```sql
+SELECT * FROM GIAOVIEN WHERE MSGV = 202;
+-- Trả về 0 kết quả
+```
+
+- Kiểm tra xem 2020 đã xuất hiện và thông tin liên quan đã chuyển qua.
+
+```sql
+SELECT * FROM GIAOVIEN WHERE MSGV = 2020;
+```
+
+```
+MSGV    TENGV           MSHH
+201     Trần Trung      1
+203     Trần Thu Trang  1
+204     Nguyễn Thị Loan 2
+205     Chu Tiến        2
+2020    Nguyễn Văn An   1
+```
+
+```sql
+SELECT * FROM GV_HDDT WHERE MSGV = 2020;
+```
+
+```
+MSGV    MSDT    DIEM
+203     97005   9
+204     97004   7
+2020    97002   7
+```
+
 
 ### Trigger Hội Đồng và Số Lượng Đề Tài
 
