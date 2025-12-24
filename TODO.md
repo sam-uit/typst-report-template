@@ -4,6 +4,29 @@
 
 - A consolidated lib/template for both REPORT, THESIS and PRESENTATION.
 - Separated lib files for each of document type above.
+- Language/Type Setting: Typst.
+
+## Template
+
+Common style, data:
+
+- `config/metadata.typ`.
+- `template/fonts.typ`.
+- `template/utils.typ`.
+- `template/components/`.
+- etc.
+
+Each of document type comes with a separated 'lib' file, but shares common metadata or style settings:
+
+- REPORT: `templage/libreport.typ`. (current is `template/lib.typ`)
+- THESIS: `template/libthesis.typ`.
+- PRESENTATION: `template/libslides.typ`.
+
+Each of document type comes with a separated 'main' file:
+
+- REPORT: `report.typ`.
+- THESIS: `thesis.typ`.
+- PRESENTATION: `slides.typ`.
 
 ## Formatting
 
