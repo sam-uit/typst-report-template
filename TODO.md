@@ -1,2 +1,3 @@
+- [ ] Pandoc: Include the import statement in every converted file: `#import "../template/lib.typ": *`
 - [ ] Code Block spans across pages.
 - [ ] Pandoc: code block with '```' to figure (with or without caption).
