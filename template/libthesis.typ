@@ -170,19 +170,17 @@
       // cleartoodd()
       // else, thêm pagebreak()
       pagebreak()
-      // Check if it's a "Chapter" or "Appendix" based on numbering?
-      // For now, assume Chapter.
-      // v(15%)
       align(left)[
         #stack(
+          dir: ttb,
+          spacing: 1.5em,
           text(size: 18pt, weight: "bold", fill: gray)[CHƯƠNG #counter(heading).display("1.")],
-          v(0.5em),
           text(size: 30pt, weight: "bold")[#it.body],
+          line(length: 100%, stroke: 1pt + black.lighten(60%)),
         )
-        v(1em)
-        line(length: 100%, stroke: 2pt + black)
-        v(1em)
       ]
+      // Thêm khoảng trắng (vspace) sau heading title
+      v(1em)
     }
 
     rest
@@ -202,7 +200,6 @@
     // cleartoodd()
     // else, thêm pagebreak()
     pagebreak()
-    // v(15%)
     align(left)[
       #stack(
         dir: ttb,
