@@ -61,8 +61,6 @@
   // Configure headings for Front Matter (No numbering)
   set heading(numbering: none)
   show heading.where(level: 1): it => {
-    // Must start on odd page
-    pagebreak(weak: true, to: "odd")
     block(below: 2em)[
       #set align(left)
       #text(size: 24pt, weight: "bold")[#it.body]
