@@ -27,9 +27,17 @@
   // MARK: Back to Top Label
   [#metadata("top") <top>]
 
-  // Page setup
+  // MARK: Page Setup
+  // Căn lề
   set page(margin: 2.5cm)
-  set text(font: body-font, size: 12pt, weight: "regular")
+  // set text(font: "CMU Concrete", size: 12pt, weight: "regular")
+  set text(
+    // Font cho nội dung, vui lòng xem file fonts.typ
+    // Serif font
+    font: body-font,
+    size: 12pt,
+    weight: "regular",
+  )
 
   // Paragraph
   set par(leading: 0.8em, justify: true, spacing: 1.5em)
