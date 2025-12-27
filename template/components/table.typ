@@ -20,17 +20,20 @@
 // MARK: Rounded border table with lines
 
 #let rounded-table-lined(..args) = block(
+  // Góc bo tròn
   radius: 8pt,
-  stroke: 1pt + luma(220), // Outer Border
+  // Đường viền ngoài
+  stroke: 1pt + blue.lighten(90%),
   clip: true,
   width: 100%,
   inset: 0pt,
   table(
     ..args,
-    // Define stroke: Only draw bottom lines, and NOT on the last row
+    // Only draw bottom lines, and NOT on the last row
     stroke: (x, y) => (
-      bottom: 1pt + luma(230),
-      // thick white line for vertical separation looks nice on gray backgrounds:
+      top: none,
+      bottom: 1pt + blue.lighten(90%),
+      left: 1pt + blue.lighten(90%),
       right: none,
     )
   ),
