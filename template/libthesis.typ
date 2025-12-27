@@ -1,3 +1,12 @@
+// A THESIS TEMPLATE
+// Đây là template cho luận văn, bao gồm các component như:
+// - Cover page
+// - Front matter
+// - Main content
+// - Appendix
+// - Back matter
+// Định dạng: 1 trang hoặc 2 trang (book)
+
 #import "fonts.typ": *
 #import "utils.typ": *
 #import "components/callout.typ": *
