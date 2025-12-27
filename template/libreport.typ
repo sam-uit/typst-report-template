@@ -85,7 +85,7 @@
   show table: set par(justify: false)
   // Header của bảng được tô màu xanh dương
   set table(
-    stroke: 0.5pt + gray,
+    stroke: 0.5pt + blue.lighten(90%),
     fill: (x, y) => if y == 0 {
       blue.lighten(90%)
     },
