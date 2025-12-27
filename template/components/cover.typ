@@ -7,7 +7,9 @@
   course: (:),
   instructor: "",
   author: (:),
-  logo-path: none, // Explicit path if needed, or pass university.logo
+  // Chỉ định đường dẫn trực tiếp, hoặc pass university.logo
+  // logo-path: none,
+  logo_image: "🏛️",
 ) = {
   align(center)[
     // MARK: University Name
@@ -35,12 +37,14 @@
     #stack(
       dir: ltr,
       spacing: 1em,
+      // Nếu logo được chỉ định, sử dụng giá trị đó
       if university.keys().contains("logo") and university.logo != "" {
         image(static(university.logo), width: 5cm)
+        // Nếu không thì sử dụng logo mặc định
       } else {
         box(height: 3cm, width: 3cm, stroke: 0.5pt + black.lighten(90%), radius: 50%, fill: none)[
           #align(center + horizon)[
-            #text(size: 40pt, fill: black.lighten(80%))[🏛️]
+            #text(size: 40pt, fill: black.lighten(80%))[#logo_image]
           ]
         ]
       },
