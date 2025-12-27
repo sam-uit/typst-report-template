@@ -18,7 +18,7 @@
 ) = {
   // MARK: Page Setup
   // Page margin
-  set page(margin: 2cm)
+  set page(margin: 2.5cm)
   // set text(font: "CMU Concrete", size: 12pt, weight: "regular")
   set text(font: body-font, size: 12pt, weight: "regular")
 
