@@ -84,8 +84,8 @@
   // Gray header and the first column
   set table(
     stroke: 0.5pt + gray,
-    fill: (x, y) => if x == 0 or y == 0 {
-      gray.lighten(40%)
+    fill: (x, y) => if y == 0 {
+      blue.lighten(90%)
     },
     align: right,
   )
