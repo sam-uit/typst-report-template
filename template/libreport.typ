@@ -16,6 +16,9 @@
   ..args,
   body,
 ) = {
+  // MARK: Back to Top Label
+  [#metadata("top") <top>]
+
   // MARK: Page Setup
   // Căn lề
   set page(margin: 2.5cm)
@@ -329,9 +332,7 @@
   )
 
   // MARK: The BODY
-
-  // Document body
-  [#metadata("top") <top>] + body
+  body
 }
 
 // MARK: Appendix Helper

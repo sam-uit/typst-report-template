@@ -24,7 +24,7 @@
   ..args,
   body,
 ) = {
-  // Document body
+  // MARK: Back to Top Label
   [#metadata("top") <top>]
 
   // Page setup
