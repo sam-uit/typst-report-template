@@ -48,24 +48,8 @@
 
   // Empty Page after Hard Cover
   empty-page()
-
-  // ------------------------------------------------------------------
-  // 2. SOFT COVER (Counted as page i, but not shown)
-  // ------------------------------------------------------------------
-  // We reset counter to 1 here so Soft Cover is page 1 (i)
-  counter(page).update(1)
-
-  cover-page(
-    university: university,
-    course: course,
-    instructor: instructor,
-    author: author,
-    assignment: assignment,
-  )
-  pagebreak()
-
-  // Empty Page after Soft Cover (page ii, not shown)
-  empty-page()
+  // REMOVED/XÓA SOFT COVER
+  // TODO: Nếu có tùy chọn 1-mặt/2-mặt, thì thêm soft cover
 
   // ------------------------------------------------------------------
   // 3. FRONT MATTER (Roman numbering, starts at iii)
