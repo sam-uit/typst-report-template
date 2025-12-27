@@ -88,11 +88,16 @@
     width: 100%,
   )[
     #grid(
+      // Cố tình để lệch sang trái để tạo cảm giác cân bằng
+      // Cột trái chiếm 40% chiều rộng, cột phải chiếm 60% chiều rộng
       columns: (40%, 60%),
+      // Khoảng cách giữa các cột là 1em
       column-gutter: 1em,
+      // Khoảng cách giữa các hàng là 1em
       row-gutter: 1em,
+      // Căn chỉnh các cột là right (trái căn phải) và left (phải căn trái)
       align: (right, left),
-      // Left column
+      // Cột bên trái chứa danh sách thông tin
       [
         #list(
           marker: none,
@@ -103,7 +108,7 @@
           [Thực Hiện:],
         )
       ],
-      // Right column
+      // Cột bên phải chứa giá trị
       [
         #list(
           marker: none,
@@ -118,7 +123,9 @@
 
     #v(2em)
 
-    // Place & Date
+    // MARK: Place & Date
+    // Hiển thị Ngày tháng và Nơi thực hiện
+    // Mặc định là today()
     #align(center)[
       #assignment.date
     ]
