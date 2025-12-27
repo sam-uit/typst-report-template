@@ -25,10 +25,14 @@
   // MARK: Paragraph
   // Paragraph settings
   set par(
-    leading: 0.8em, // Controls space between lines WITHIN a paragraph
-    justify: true, // Recommended for assignments to align text edges
+    // Controls space between lines WITHIN a paragraph
+    leading: 0.8em,
+    // Recommended for assignments to align text edges
+    justify: true,
+    // Controls space between paragraphs
     spacing: 1.5em,
   )
+  // Heading settings
   set heading(numbering: "1.")
   // Indent for List
   set list(indent: 1em)
