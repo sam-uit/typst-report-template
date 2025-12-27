@@ -82,8 +82,21 @@
 
   // Nếu là 2-mặt, thì thêm cleartoodd()
   // cleartoodd()
-  heading("Mục Lục")
-  outline(depth: 3, indent: auto)
+  // MARK: Table of Contents
+  block(
+    radius: 8pt,
+    fill: rgb(248, 250, 252),
+    stroke: 1pt + rgb(200, 220, 240),
+    inset: 1.5em,
+    width: 100%,
+  )[
+    #unheading[Mục Lục]
+    #outline(
+      title: none,
+      indent: auto,
+      depth: 2,
+    )
+  ]
 
   // Nếu là 2-mặt, thì thêm cleartoodd()
   // cleartoodd()
