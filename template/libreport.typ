@@ -17,10 +17,16 @@
   body,
 ) = {
   // MARK: Page Setup
-  // Page margin
+  // Căn lề
   set page(margin: 2.5cm)
   // set text(font: "CMU Concrete", size: 12pt, weight: "regular")
-  set text(font: body-font, size: 12pt, weight: "regular")
+  set text(
+    // Font cho nội dung, vui lòng xem file fonts.typ
+    // Serif font
+    font: body-font,
+    size: 12pt,
+    weight: "regular",
+  )
 
   // MARK: Paragraph
   // Paragraph settings
