@@ -29,9 +29,24 @@
       inset: (bottom: 0.5em),
     )
 
-    #v(3.5em)
+    // MARK: University Logo
+    #v(0.3em)
+    #stack(
+      dir: ltr,
+      spacing: 1em,
+      if university.keys().contains("logo") and university.logo != "" {
+        image("../../static/" + university.logo, width: 3cm)
+      } else {
+        box(height: 3cm, width: 3cm, stroke: 0.5pt + black.lighten(90%), radius: 50%, fill: none)[
+          #align(center + horizon)[
+            #text(size: 40pt, fill: black.lighten(80%))[🏛️]
+          ]
+        ]
+      },
+    )
+    #v(1em)
 
-    // MARK: Assignment Title
+    // MARK: Title
     #block(
       radius: 12pt,
       inset: 4em,
@@ -53,24 +68,9 @@
         ]
       ]
     ]
-    #v(0.3em)
-    #stack(
-      dir: ltr,
-      spacing: 1em,
-      if university.keys().contains("logo") and university.logo != "" {
-        image(university.logo, width: 3cm)
-      } else {
-        box(height: 3cm, width: 3cm, stroke: 0.5pt + black.lighten(90%), radius: 50%, fill: none)[
-          #align(center + horizon)[
-            #text(size: 40pt, fill: black.lighten(80%))[🏛️]
-          ]
-        ]
-      },
-    )
-    #v(1em)
   ]
 
-  // MARK: Assignment Summary Box
+  // MARK: Summary Box
   block(
     radius: 8pt,
     fill: rgb(248, 250, 252),
