@@ -1,4 +1,4 @@
-#import "../themes/stargazer.typ": *
+#import "/themes/stargazer.typ": *
 #import "fonts.typ": *
 
 // MARK: Presentation Template
