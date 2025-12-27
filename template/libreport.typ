@@ -34,13 +34,15 @@
   // MARK: Paragraph
   // Paragraph settings
   set par(
-    // Controls space between lines WITHIN a paragraph
+    // Khoảng cách giữa các dòng trong một đoạn
     leading: 0.8em,
-    // Recommended for assignments to align text edges
+    // Căn đều lề của đoạn
     justify: true,
-    // Controls space between paragraphs
+    // Khoảng cách giữa các đoạn
     spacing: 1.5em,
   )
+
+  // MARK: Heading
   // Heading settings
   set heading(numbering: "1.")
   // Indent for List

@@ -39,8 +39,16 @@
     weight: "regular",
   )
 
-  // Paragraph
-  set par(leading: 0.8em, justify: true, spacing: 1.5em)
+  // MARK: Paragraph
+  // Paragraph settings
+  set par(
+    // Khoảng cách giữa các dòng trong một đoạn
+    leading: 0.8em,
+    // Căn đều lề của đoạn
+    justify: true,
+    // Khoảng cách giữa các đoạn
+    spacing: 1.5em,
+  )
 
   // ------------------------------------------------------------------
   // 1. HARD COVER (No page numbering, not counted)
