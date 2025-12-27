@@ -1,15 +1,13 @@
-#import "../template/lib.typ": *
+= Bài 4. Chủ Đề Thứ Tư
+<bai-4-chu-de-thu-tu>
 
-// YOUR CONTENT HERE
 
-= Bài 4. Trigger & Views trong DBMS.
-<bai-4>
+== Bài 4 Mục 1 - Chứa Code
+<bai-4-muc-1-chua-code>
 
-== #lorem(5)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
-#lorem(30)
-
-#lorem(20)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
 
 #figure(
   ```sql
@@ -49,8 +47,9 @@
   caption: "Bài 4. Truy vấn VIEW",
 )
 
-== #lorem(5)
+== Bài 4 Mục 2
+<bai-4-muc-2>
 
-#lorem(30)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
-#lorem(20)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.

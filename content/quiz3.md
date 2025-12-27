@@ -1,23 +1,15 @@
-#import "../template/lib.typ": *
+# Bài 3. Chủ Đề Thứ Ba
 
-= Bài 1. Chủ Đề Đầu Tiên
-<bai-1-chu-de-dau-tien>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
-
-== Bài 1 Mục 1
-<bai-1-muc-1>
-
-#todo[@bai-1-chu-de-dau-tien[Bài]: Ví dụ của TODO ở Bài 1 tại @bai-1-muc-1[Mục].]
+## Bài 3 Mục 1
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
 
-== Bài 1 Mục 2
-<bai-1-muc-2>
+- Một quá trình khôi phục dữ liệu dùng `testdisk`.
+  - (Sử dụng một USB FAT32/NTFS, format, copy file vào, xóa, và chạy testdisk để thử tìm kiếm/khôi phục lại, vv..)
+
+## Bài 3 Mục 2
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 

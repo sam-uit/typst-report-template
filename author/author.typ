@@ -34,7 +34,7 @@ Thành viên của nhóm và bảng nhiệm vụ.
       [01],
       [15410301],
       [Nguyễn Văn A],
-      [@bai-2[Bài]],
+      [@bai-2-chu-de-thu-hai[Bài]],
       [02],
       [15410319],
       [Trần Minh Tuấn],

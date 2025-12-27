@@ -1,3 +1,5 @@
+// TODO: Make this a template for PRESENTATION
+
 #import "@preview/touying:0.6.1": *
 #import "themes/stargazer.typ": *
 #import "template/fonts.typ"
@@ -5,8 +7,7 @@
 
 #import "@preview/numbly:0.1.0": numbly
 
-// TODO: Use the config/metadata file.
-// TODO: Separated font set for slides/presentation and report.
+// TODO: Separated/Configurable font set for slides/presentation and report.
 
 // MARK: - Theme
 
@@ -98,7 +99,7 @@
 // table of codes/listing
 
 // MARK: - Nội Dung Chính
-#include "contents.typ"
+#include "content/contents.typ"
 
 // MARK: - Kết Thúc
 
