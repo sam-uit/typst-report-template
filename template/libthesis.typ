@@ -53,6 +53,12 @@
   // ------------------------------------------------------------------
   // 3. FRONT MATTER (Roman numbering, starts at iii)
   // ------------------------------------------------------------------
+
+  // Bắt đầu đếm số trang từ 1 (hoặc i)
+  set page(header: auto, footer: auto)
+  counter(page).update(1)
+
+  // Set page numbering to Roman
   set page(
     numbering: "i",
     number-align: center, // Thesis usually center or outer
