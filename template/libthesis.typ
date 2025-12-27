@@ -24,6 +24,9 @@
   ..args,
   body,
 ) = {
+  // Document body
+  [#metadata("top") <top>]
+
   // Page setup
   set page(margin: 2.5cm)
   set text(font: body-font, size: 12pt, weight: "regular")
@@ -35,6 +38,7 @@
   // 1. HARD COVER (No page numbering, not counted)
   // ------------------------------------------------------------------
   set page(header: none, footer: none)
+
   cover-page(
     university: university,
     course: course,
@@ -166,6 +170,23 @@
   show: rest => {
     // Reset page numbering to Arabic
     set page(numbering: "1", number-align: right)
+    set page(
+      footer: context [
+        // We use a stack or grid to align items
+        #set text(size: 10pt, fill: gray)
+        #grid(
+          columns: (1fr, 1fr),
+          align: (left, right),
+
+          // TODO: Un-blue the link here
+          // LEFT: The clickable link
+          link(<top>)[#text(fill: gray)[↑ Back to Top]],
+
+          // RIGHT: The page number
+          counter(page).display(page.numbering),
+        )
+      ],
+    )
     counter(page).update(1)
 
     // Update Heading styling for Chapters
