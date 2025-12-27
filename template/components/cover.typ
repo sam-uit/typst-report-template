@@ -1,6 +1,8 @@
 #import "/template/fonts.typ": *
 #import "/template/utils.typ": static
 
+// MARK: Cover Page
+// Khai báo một macro để tạo trang bìa
 #let cover-page(
   university: (:),
   assignment: (:),
