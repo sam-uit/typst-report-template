@@ -81,13 +81,15 @@
   show figure.where(kind: table): set figure(supplement: "Bảng")
 
   // MARK: TABLE FORMATTING
-  // Gray header and the first column
+  // Tắt chế độ căn lề đều trong bảng
+  show table: set par(justify: false)
+  // Header của bảng được tô màu xanh dương
   set table(
     stroke: 0.5pt + gray,
     fill: (x, y) => if y == 0 {
       blue.lighten(90%)
     },
-    align: right,
+    align: center,
   )
 
   // MARK: RAW/CODE BLOCK FORMATTING
