@@ -19,8 +19,6 @@
   // MARK: Page Setup
   // Page margin
   set page(margin: 2cm)
-  // The ROMAN page number
-  set page(numbering: "i")
   // set text(font: "CMU Concrete", size: 12pt, weight: "regular")
   set text(font: body-font, size: 12pt, weight: "regular")
 
@@ -157,8 +155,12 @@
 
   // Enhanced title page
   // Add the Cover page to TOC
-  place(hide(unheading[Trang Bìa (#assignment.title)]))
+  // place(hide(unheading[Trang Bìa (#assignment.title)]))
 
+  // MARK: Title Page
+  // Trang Bìa
+  // Không có số trang, không có header, footer
+  set page(header: none, footer: none, numbering: none)
   cover-page(
     university: university,
     course: course,
@@ -169,6 +171,14 @@
 
   // Page Break, end of the Title Page
   pagebreak()
+
+  // MARK: PAGE NUMBERING SETUP
+  // List of Tables, List of Figures, List of Code Snippets, List of TODOs
+  // CÓ header, footer
+  // Được đánh số kiểu Roman từ i
+  // Số trang nằm ở giữa
+  set page(header: auto, footer: auto, numbering: "i", number-align: center)
+  counter(page).update(1)
 
   // MARK: Table of Contents
   block(
