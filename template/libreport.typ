@@ -270,14 +270,20 @@
   // End of TOC, start main content on new page
   pagebreak()
 
-  // --- PAGE NUMBERING SETUP ---
+  // MARK: CONTENT PAGE NUMBERING SETUP
+  // Được đánh số kiểu Arabic từ 1
+  // CÓ header, footer
+  // Số trang nằm ở bên phải
   set page(
     numbering: "1",
     number-align: right,
   )
-  counter(page).update(1) // Optional: Resets count so this page starts at 1
+  // Reset page counter về 1 (bắt đầu từ trang 1)
+  counter(page).update(1)
 
-  // SETUP FOOTER WITH BACK-TO-TOP
+  // MARK: FOOTER WITH BACK-TO-TOP
+  // CÓ footer
+  // Có link back to top
   set page(
     footer: context [
       // We use a stack or grid to align items
