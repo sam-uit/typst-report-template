@@ -71,6 +71,9 @@
     ]
   ]
 
+  // Thêm khoảng trống (vspace) giữa title và summary box
+  v(4em)
+
   // MARK: Summary Box
   block(
     radius: 8pt,
