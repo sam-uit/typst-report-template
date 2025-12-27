@@ -77,8 +77,7 @@
   show figure.where(kind: table): set figure(supplement: "Bảng")
 
   // MARK: Table formatting
-  // Gray header, and the first column
-
+  // Gray header and the first column
   set table(
     stroke: 0.5pt + gray,
     fill: (x, y) => if x == 0 or y == 0 {
@@ -87,8 +86,13 @@
     align: right,
   )
 
+  // MARK: RAW/CODE BLOCK FORMATTING
   // Raw: font, and size
-  show raw: set text(font: code-font, size: 1em, weight: 400)
+  show raw: set text(
+    font: code-font,
+    size: 1em,
+    weight: 400,
+  )
 
   // Inline-raw
   show raw.where(block: false): box.with(
@@ -109,7 +113,10 @@
       width: 100%,
       clip: true,
     )[
-      #text(font: code-font, size: 1em)[
+      #text(
+        font: code-font,
+        size: 1em,
+      )[
         #grid(
           columns: (auto, 1fr),
           // Move padding inside so the vertical line spans full height
