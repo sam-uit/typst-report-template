@@ -98,15 +98,53 @@
     )
   ]
 
-  // Nếu là 2-mặt, thì thêm cleartoodd()
-  // cleartoodd()
-  heading("Danh Sách Hình Ảnh")
-  outline(title: none, target: figure.where(kind: image))
+  // MARK: List of Tables
+  pagebreak()
+  block(
+    radius: 8pt,
+    fill: rgb(248, 250, 252),
+    stroke: 1pt + rgb(200, 220, 240),
+    inset: 1.5em,
+    width: 100%,
+  )[
+    #unheading[Danh Sách Bảng]
+    #outline(
+      title: none, // Sets the title of the list
+      target: figure.where(kind: table), // Selects only tables
+    )
+  ]
 
-  // Nếu là 2-mặt, thì thêm cleartoodd()
-  // cleartoodd()
-  heading("Danh Sách Bảng")
-  outline(title: none, target: figure.where(kind: table))
+  // MARK: List of Figures
+  pagebreak()
+  block(
+    radius: 8pt,
+    fill: rgb(248, 250, 252),
+    stroke: 1pt + rgb(200, 220, 240),
+    inset: 1.5em,
+    width: 100%,
+  )[
+    #unheading[Danh Sách Hình Ảnh]
+    #outline(
+      title: none, // Title: "List of Images"
+      target: figure.where(kind: image), // Filter: Only show images
+    )
+  ]
+
+  // MARK: List of Code Snippets
+  pagebreak()
+  block(
+    radius: 8pt,
+    fill: rgb(248, 250, 252),
+    stroke: 1pt + rgb(200, 220, 240),
+    inset: 1.5em,
+    width: 100%,
+  )[
+    #unheading[Danh Sách Mã Nguồn]
+    #outline(
+      title: none,
+      target: figure.where(kind: raw), // Targets figures containing code
+    )
+  ]
 
   // ------------------------------------------------------------------
   // 4. MAIN CONTENT (Arabic numbering, Chapter X)
