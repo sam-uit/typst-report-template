@@ -42,11 +42,27 @@
     spacing: 1.5em,
   )
 
-  // MARK: COMMON FORMATTING
+  // MARK: HEADING FORMATTING
   // Heading settings
   set heading(numbering: "1.")
   // vspace after/below every heading
   show heading: set block(below: 1.2em)
+  // Custom heading level 1 styles
+  show heading.where(level: 1): it => [
+    #set align(left)
+    #set text(font: heading-font, size: 20pt, weight: "regular")
+
+    #block(
+      width: 100%,
+      stroke: (bottom: 0.5pt + rgb("#808080")),
+      inset: (bottom: 0.5em),
+      below: 0.8em,
+    )[
+      #smallcaps[#it.body]
+    ]
+  ]
+
+  // MARK: COMMON FORMATTING
   // Indent for List
   set list(indent: 1em)
   // Indent for Enum
@@ -121,21 +137,6 @@
   ]
 
   show block.where(fill: rgb("#f0f8ff")): it => align(left, it)
-
-  // MARK: Custom heading styles
-  show heading.where(level: 1): it => [
-    #set align(left)
-    #set text(font: heading-font, size: 20pt, weight: "regular")
-
-    #block(
-      width: 100%,
-      stroke: (bottom: 0.5pt + rgb("#808080")),
-      inset: (bottom: 0.5em),
-      below: 0.8em,
-    )[
-      #smallcaps[#it.body]
-    ]
-  ]
 
   // show heading.where(level: 2): it => [
   //   #set text(font: sans-font, size: 18pt, weight: "regular", fill: rgb(50, 50, 50))
