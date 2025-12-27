@@ -53,8 +53,11 @@
 
   // Line Numbering implemented in show rule below
 
-  // Rename "Figure" to "Mã nguồn" for code blocks
+  // MARK: Figure Supplement
+  // Rename "Figure" to "Mã nguồn", "Hình ảnh", "Bảng"
   show figure.where(kind: raw): set figure(supplement: "Mã nguồn")
+  show figure.where(kind: image): set figure(supplement: "Hình ảnh")
+  show figure.where(kind: table): set figure(supplement: "Bảng")
 
   // MARK: Table formatting
   // Gray header, and the first column

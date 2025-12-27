@@ -50,6 +50,12 @@
     spacing: 1.5em,
   )
 
+  // MARK: Figure Supplement
+  // Rename "Figure" to "Mã nguồn", "Hình ảnh", "Bảng"
+  show figure.where(kind: raw): set figure(supplement: "Mã nguồn")
+  show figure.where(kind: image): set figure(supplement: "Hình ảnh")
+  show figure.where(kind: table): set figure(supplement: "Bảng")
+
   // MARK: Cover Page
   // Trang Bìa
   // Không có số trang, không có header, footer
