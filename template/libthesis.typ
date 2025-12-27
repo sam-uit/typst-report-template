@@ -174,13 +174,15 @@
       // For now, assume Chapter.
       // v(15%)
       align(left)[
-        #text(size: 18pt, weight: "bold", fill: gray)[CHƯƠNG #counter(heading).display("1.")]
-        #v(0.5em)
-        #text(size: 30pt, weight: "bold")[#it.body]
-        #v(1em)
-        #line(length: 100%, stroke: 2pt + black)
+        #stack(
+          text(size: 18pt, weight: "bold", fill: gray)[CHƯƠNG #counter(heading).display("1.")],
+          v(0.5em),
+          text(size: 30pt, weight: "bold")[#it.body],
+        )
+        v(1em)
+        line(length: 100%, stroke: 2pt + black)
+        v(1em)
       ]
-      v(1em)
     }
 
     rest
@@ -202,12 +204,15 @@
     pagebreak()
     // v(15%)
     align(left)[
-      #text(size: 18pt, weight: "bold", fill: gray)[PHỤ LỤC #counter(heading).display()]
-      #v(0.5em)
-      #text(size: 30pt, weight: "bold")[#it.body]
-      #v(1em)
-      #line(length: 100%, stroke: 2pt + black)
+      #stack(
+        dir: ttb,
+        spacing: 1.5em,
+        text(size: 18pt, weight: "bold", fill: gray)[PHỤ LỤC #counter(heading).display()],
+        text(size: 30pt, weight: "bold")[#it.body],
+        line(length: 100%, stroke: 1pt + black.lighten(60%)),
+      )
     ]
+    // Thêm khoảng trắng (vspace) sau heading title
     v(1em)
   }
 
