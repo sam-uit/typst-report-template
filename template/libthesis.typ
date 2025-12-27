@@ -54,15 +54,16 @@
   // 3. FRONT MATTER (Roman numbering, starts at iii)
   // ------------------------------------------------------------------
 
-  // Bắt đầu đếm số trang từ 1 (hoặc i)
+  // MARK: PAGE NUMBERING SETUP
+  // List of Tables, List of Figures, List of Code Snippets, List of TODOs
+  // CÓ header, footer
   set page(header: auto, footer: auto)
-  counter(page).update(1)
 
-  // Set page numbering to Roman
-  set page(
-    numbering: "i",
-    number-align: center, // Thesis usually center or outer
-  )
+  // Được đánh số kiểu Roman từ i
+  // Số trang nằm ở giữa
+  // Bắt đầu đếm số trang từ 1
+  set page(numbering: "i", number-align: center)
+  counter(page).update(1)
 
   // Configure headings for Front Matter (No numbering)
   set heading(numbering: none)
@@ -164,7 +165,7 @@
   // The common trick is to use a show rule on the rest of the content.
   show: rest => {
     // Reset page numbering to Arabic
-    set page(numbering: "1")
+    set page(numbering: "1", number-align: right)
     counter(page).update(1)
 
     // Update Heading styling for Chapters

@@ -185,9 +185,12 @@
   // MARK: PAGE NUMBERING SETUP
   // List of Tables, List of Figures, List of Code Snippets, List of TODOs
   // CÓ header, footer
+  set page(header: auto, footer: auto)
+
   // Được đánh số kiểu Roman từ i
   // Số trang nằm ở giữa
-  set page(header: auto, footer: auto, numbering: "i", number-align: center)
+  // Bắt đầu đếm số trang từ 1
+  set page(numbering: "i", number-align: center)
   counter(page).update(1)
 
   // MARK: Table of Contents
