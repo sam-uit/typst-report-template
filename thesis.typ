@@ -19,6 +19,7 @@
 #show: appendix
 #include "content/appendixA.typ"
 
+#show: bibliography
 // Bibliography
 #pagebreak()
 #include "content/bibliography.typ"
