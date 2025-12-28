@@ -1,3 +1,9 @@
+// /template/fonts.typ
+// Common font settings for reports and thesis
+// Author: Sam Dinh
+// Version: 0.1.0
+// License: MIT
+
 // MARK: Fonts
 // The current font set makes the document a LaTeX-like look.
 #let document-fonts = (
