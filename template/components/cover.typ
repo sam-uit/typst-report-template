@@ -16,15 +16,19 @@
   align(center)[
     // MARK: University Name
     #if university.name != "" [
-      #text(font: heading-font, size: 20pt, weight: "regular", fill: black.lighten(50%))[#upper(university.name)] \
+      #text(font: heading-font, size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.name)] \
       #v(0.2em)
     ]
     #if university.college != "" [
       #text(font: heading-font, size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.college)] \
       #v(0.2em)
     ]
-    #if university.center != "" [
-      #text(font: heading-font, size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.center)] \
+    // #if university.center != "" [
+    //   #text(font: heading-font, size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.center)] \
+    //   #v(0.2em)
+    // ]
+    #if university.faculty != "" [
+      #text(font: heading-font, size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.faculty)] \
       #v(0.2em)
     ]
 
