@@ -190,13 +190,7 @@
   context {
     let todos = query(figure.where(kind: "todo"))
     if todos.len() > 0 {
-      block(
-        radius: 8pt,
-        fill: red.lighten(98%),
-        stroke: 1pt + red.lighten(80%),
-        inset: 1.5em,
-        width: 100%,
-      )[
+      toc-section-wrapper(red)[
         #unheading[Danh Sách TODO]
         #outline(title: none, target: figure.where(kind: "todo"))
       ]
