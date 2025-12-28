@@ -3,75 +3,77 @@
 #import "components/callout.typ": *
 #import "components/todo.typ": *
 #import "components/table.typ": *
+#import "components/cover.typ": cover-page
 
 // MARK: The Template
-
-#let university-assignment(
-  university: (
-    name: "",
-    college: "",
-    center: "",
-  ),
-  course: (
-    id: "",
-    name: "",
-    class: "",
-  ),
+// Chuẩn hóa: Gọi tên là document thay vì report
+#let document(
+  university: (:),
+  course: (:),
   instructor: "",
-  author: (
-    name: "",
-    members: (),
-  ),
-  assignment: (
-    title: "",
-    subtitle: "",
-    type: "",
-    date: "",
-    duration: "",
-    location: "",
-  ),
+  author: (:),
+  assignment: (:),
+  // Lớp/Loại tài liệu, mặc định là report
+  type: "report",
+  ..args,
   body,
 ) = {
-  // Page setup
-  set page(margin: 2cm)
-  // The ROMAN page number
-  set page(numbering: "i")
-  // set text(font: "CMU Concrete", size: 12pt, weight: "regular")
-  set text(font: body-font, size: 12pt, weight: "regular")
+  // Anchor/Móc cho nút Back to Top
+  [#metadata("top") <top>]
 
-  // Paragraph
+  // MARK: Page & Text Setup
+  set page(margin: 2.5cm)
+  set text(
+    font: body-font,
+    size: 12pt,
+    weight: "regular",
+  )
   set par(
-    leading: 0.8em, // Controls space between lines WITHIN a paragraph
-    justify: true, // Recommended for assignments to align text edges
+    leading: 0.8em,
+    justify: true,
     spacing: 1.5em,
   )
+
+  // MARK: Formatting - Headings
   set heading(numbering: "1.")
-  // Indent for List
-  set list(indent: 1em)
-  // Indent for Enum
-  set enum(indent: 1em)
-  // set par()
+  show heading: set block(below: 1.2em)
 
-  // Line Numbering implemented in show rule below
+  // Custom Heading 1 Style
+  show heading.where(level: 1): it => [
+    #set align(left)
+    #set text(font: heading-font, size: 20pt, weight: "regular")
+    #block(
+      width: 100%,
+      stroke: (bottom: 0.5pt + rgb("#808080")),
+      inset: (bottom: 0.5em),
+      below: 0.8em,
+    )[
+      #smallcaps[#it.body]
+    ]
+  ]
 
-  // Rename "Figure" to "Mã nguồn" for code blocks
-  show figure.where(kind: raw): set figure(supplement: "Mã nguồn")
-
-  // MARK: Table formatting
-  // Gray header, and the first column
-
+  // MARK: Formatting - Tables
+  // Bảng có đường viền và màu nền
+  // Tắt căn bằng lề cho văn bản trong bảng
+  show table: set par(justify: false)
   set table(
-    stroke: 0.5pt + gray,
-    fill: (x, y) => if x == 0 or y == 0 {
-      gray.lighten(40%)
-    },
-    align: right,
+    // Đường viền cho bảng
+    stroke: 0.5pt + blue.lighten(90%),
+    // Màu nền cho hàng đầu tiên (header)
+    fill: (x, y) => if y == 0 { blue.lighten(90%) },
   )
 
-  // Raw: font, and size
-  show raw: set text(font: code-font, size: 1em, weight: 400)
+  // Bảng có góc bo tròn
+  show table: it => block(
+    radius: 8pt,
+    stroke: 1pt + blue.lighten(90%),
+    clip: true,
+    width: 100%,
+    it,
+  )
 
-  // Inline-raw
+  // MARK: Formatting - Code Blocks
+  // Inline code style
   show raw.where(block: false): box.with(
     fill: luma(240),
     inset: (x: 3pt, y: 0pt),
@@ -79,7 +81,7 @@
     radius: 2pt,
   )
 
-  // Code block with Line Numbering
+  // Block code style with Line Numbering
   show raw.where(block: true): it => align(start)[
     #block(
       radius: 8pt,
@@ -93,68 +95,39 @@
       #text(font: code-font, size: 1em)[
         #grid(
           columns: (auto, 1fr),
-          // Move padding inside so the vertical line spans full height
           inset: (x, y) => {
             let v = 1em
             let inner = 0.5em
             let outer = 1.5em
-            if x == 0 {
-              (top: v, bottom: v, left: outer, right: inner)
-            } else {
+            if x == 0 { (top: v, bottom: v, left: outer, right: inner) } else {
               (top: v, bottom: v, left: inner, right: outer)
             }
           },
           stroke: (x, y) => if x == 0 { (right: 1pt + luma(300)) } else { none },
           align: (right, left),
+          // Line number column
           align(right, text(fill: gray)[
-            #for i in range(1, it.text.split("\n").len() + 1) [
-              #i \
-            ]
+            #for i in range(1, it.text.split("\n").len() + 1) [ #i \ ]
           ]),
+          // Code content column
           it,
         )
       ]
     ]
   ]
 
-  show block.where(fill: rgb("#f0f8ff")): it => align(left, it)
-
-  // vspace after/below every heading
-  show heading: set block(below: 1.2em)
-
-  // MARK: Custom heading styles
-  show heading.where(level: 1): it => [
-    #set align(left)
-    #set text(font: heading-font, size: 20pt, weight: "regular")
-
-    #block(
-      width: 100%,
-      stroke: (bottom: 0.5pt + rgb("#808080")),
-      inset: (bottom: 0.5em),
-      below: 0.8em,
-    )[
-      #smallcaps[#it.body]
-    ]
-  ]
-
-  // show heading.where(level: 2): it => [
-  //   #set text(font: sans-font, size: 18pt, weight: "regular", fill: rgb(50, 50, 50))
-  //   #block(above: 1.2em, below: 0.8em)[#it.body]
-  // ]
-
-  // show heading.where(level: 3): it => [
-  //   #set text(font: sans-font, size: 16pt, weight: "regular", fill: rgb(50, 50, 50))
-  //   #block(above: 1.2em, below: 0.8em)[#it.body]
-  // ]
-
-  // Simple emphasis and strong styling
+  // MARK: Formatting - General
+  // Emph & Strong
   show emph: it => text(style: "italic", weight: "medium")[#it.body]
   show strong: it => text(weight: "bold")[#it.body]
-
-  // Simple list styling
-  // show list: it => block(above: 0.6em, below: 0.6em)[#it]
-
-  // Simple quote styling
+  // Links
+  show link: set text(fill: rgb("#0000EE"))
+  // Lists
+  set list(indent: 1em)
+  set enum(indent: 1em)
+  // Callouts (Left align text inside specialized blocks)
+  show block.where(fill: rgb("#f0f8ff")): it => align(left, it)
+  // Quotes
   show quote: it => block(
     align(center),
     fill: luma(248),
@@ -165,259 +138,231 @@
     #set text(style: "italic")
     #it
   ]
-
-  // Show TODO content/body only
+  // TODOs
   show figure.where(kind: "todo"): it => it.body
 
-  // Enhanced title page
-  align(center)[
-    // Add the Cover page to TOC
-    #place(hide(unheading[Trang Bìa (#assignment.title)]))
-
-    // MARK: University Name
-    #if university.name != "" [
-      #text(font: heading-font, size: 20pt, weight: "regular", fill: black.lighten(50%))[#upper(university.name)] \
-      #v(0.2em)
-    ]
-    #if university.college != "" [
-      #text(font: heading-font, size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.college)] \
-      #v(0.2em)
-    ]
-    #if university.center != "" [
-      #text(font: heading-font, size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.center)] \
-      #v(0.2em)
-    ]
-
-    #block(
-      width: 80%,
-      stroke: (bottom: 0.5pt + gradient.linear(red, blue, angle: 45deg)),
-      inset: (bottom: 0.5em),
-    )
-
-    #v(3.5em)
-
-    // MARK: Assignment Title
-    #block(
-      radius: 12pt,
-      inset: 4em,
-      stroke: (
-        bottom: 2pt + gradient.linear(teal, blue, angle: 45deg),
-        // left: 2pt + gradient.linear(teal, blue, angle: 45deg),
-        // right: 2pt + gradient.linear(teal, blue, angle: 45deg),
-        top: 2pt + gradient.linear(teal, blue, angle: 45deg),
-      ),
-      width: 100%,
-    )[
-      #text(font: heading-font, size: 28pt, weight: "regular")[
-        #smallcaps[#assignment.title]
-      ]
-      #if assignment.subtitle != none [
-        #v(0.5em)
-        #text(size: 20pt, weight: "regular")[
-          #assignment.subtitle
-        ]
-      ]
-    ]
-    #v(0.3em)
-    #stack(
-      dir: ltr,
-      spacing: 1em,
-      if university.keys().contains("logo") and university.logo != "" {
-        image(university.logo, width: 3cm)
-      } else {
-        box(height: 3cm, width: 3cm, stroke: 0.5pt + black.lighten(90%), radius: 50%, fill: none)[
-          #align(center + horizon)[
-            #text(size: 40pt, fill: black.lighten(80%))[🏛️]
-          ]
-        ]
-      },
-      // text(size: 20pt, fill: rgb(100, 100, 100))[#date.display("[month repr:long] [day], [year]")],
-    )
-    #v(1em)
-  ]
-
-  // TODO: Truncate long headings in the outline
-  // MARK: Assignment Summary Box
-  block(
-    radius: 8pt,
-    fill: rgb(248, 250, 252),
-    stroke: 1pt + gradient.linear(teal, blue, angle: 45deg),
-    inset: 1.5em,
-    width: 100%,
-  )[
-    #grid(
-      columns: (40%, 60%),
-      column-gutter: 1em,
-      row-gutter: 1em,
-      align: (right, left),
-      // Left column
-      [
-        #list(
-          marker: none,
-          [Mã Môn:],
-          [Tên Môn:],
-          [Lớp:],
-          [Giảng Viên:],
-          [Thực Hiện:],
-        )
-      ],
-      // Right column
-      [
-        #list(
-          marker: none,
-          [#course.id],
-          [#course.name],
-          [#course.class],
-          [#instructor],
-          [#author.name],
-        )
-      ],
-    )
-
-    #v(2em)
-
-    // Place & Date
-
-    #align(center)[
-      #assignment.date
-    ]
-    #v(0.8em)
-  ]
-
-  // Page Break, end of the Title Page
+  // MARK: Cover Page
+  // No headers/footers, no numbering
+  set page(header: none, footer: none, numbering: none)
+  cover-page(
+    university: university,
+    course: course,
+    instructor: instructor,
+    author: author,
+    assignment: assignment,
+  )
   pagebreak()
 
-  // MARK: Table of Contents
-  block(
-    radius: 8pt,
-    fill: rgb(248, 250, 252),
-    stroke: 1pt + rgb(200, 220, 240),
-    inset: 1.5em,
-    width: 100%,
-  )[
+  // MARK: Front Matter
+  // Roman numbering, Header/Footer active
+  counter(page).update(1)
+
+  // Căn giữa và làm mờ số trang
+  set page(
+    header: auto,
+    numbering: "i",
+    number-align: center,
+    footer: context [
+      #set text(size: 10pt, fill: gray)
+      #align(center)[
+        #counter(page).display(page.numbering)
+      ]
+    ],
+  )
+
+  // MARK: TOC & Lists
+  // Rename "Figure" supplements
+  show figure.where(kind: raw): set figure(supplement: "Mã nguồn")
+  show figure.where(kind: image): set figure(supplement: "Hình ảnh")
+  show figure.where(kind: table): set figure(supplement: "Bảng")
+
+  // Table of Contents
+  toc-section-wrapper(blue)[
     #unheading[Mục Lục]
-    #outline(
-      title: none,
-      indent: auto,
-      depth: 2,
-    )
+    #outline(title: none, indent: auto, depth: 2)
   ]
 
-  // MARK: List of Tables
-  block(
-    radius: 8pt,
-    fill: rgb(248, 250, 252),
-    stroke: 1pt + rgb(200, 220, 240),
-    inset: 1.5em,
-    width: 100%,
-  )[
+  // Nếu tài liệu là luận văn, thêm trang trắng
+  if type == "thesis" {
+    pagebreak()
+  }
+
+  // List of Tables
+  toc-section-wrapper(blue)[
     #unheading[Danh Sách Bảng]
-    #outline(
-      title: none, // Sets the title of the list
-      target: figure.where(kind: table), // Selects only tables
-    )
+    #outline(title: none, target: figure.where(kind: table))
   ]
 
-  // MARK: List of Figures
-  block(
-    radius: 8pt,
-    fill: rgb(248, 250, 252),
-    stroke: 1pt + rgb(200, 220, 240),
-    inset: 1.5em,
-    width: 100%,
-  )[
+  // Nếu tài liệu là luận văn, thêm trang trắng
+  if type == "thesis" {
+    pagebreak()
+  }
+
+  // List of Figures
+  toc-section-wrapper(blue)[
     #unheading[Danh Sách Hình Ảnh]
-    #outline(
-      title: none, // Title: "List of Images"
-      target: figure.where(kind: image), // Filter: Only show images
-    )
+    #outline(title: none, target: figure.where(kind: image))
   ]
 
-  // MARK: List of Code Snippets
-  block(
-    radius: 8pt,
-    fill: rgb(248, 250, 252),
-    stroke: 1pt + rgb(200, 220, 240),
-    inset: 1.5em,
-    width: 100%,
-  )[
+  // Nếu tài liệu là luận văn, thêm trang trắng
+  if type == "thesis" {
+    pagebreak()
+  }
+
+  // List of Code Snippets
+  toc-section-wrapper(blue)[
     #unheading[Danh Sách Mã Nguồn]
-    #outline(
-      title: none,
-      target: figure.where(kind: raw), // Targets figures containing code
-    )
+    #outline(title: none, target: figure.where(kind: raw))
   ]
 
-  // MARK: List of TODOs (Only appears if there are actual TODOs)
+  // Nếu tài liệu là luận văn, thêm trang trắng
+  if type == "thesis" {
+    pagebreak()
+  }
+
+  // List of TODOs (Conditional)
   context {
     let todos = query(figure.where(kind: "todo"))
     if todos.len() > 0 {
-      block(
-        radius: 8pt,
-        fill: red.lighten(95%),
-        stroke: 1pt + red.lighten(80%),
-        inset: 1.5em,
-        width: 100%,
-      )[
+      toc-section-wrapper(red)[
         #unheading[Danh Sách TODO]
-        #outline(
-          title: none,
-          target: figure.where(kind: "todo"),
-        )
+        #outline(title: none, target: figure.where(kind: "todo"))
       ]
     }
   }
 
-  // Some space after the TOC
-  v(2em)
-  // line(length: 100%, stroke: 0.5pt + rgb(200, 220, 240))
-  v(0.5em)
+  // Spacing after TOC
   // v(2em)
+  // v(0.5em)
 
-  // End of TOC, start main content on new page
-  pagebreak()
+  // MARK: Section - Main Content
+  // Arabic numbering, Right aligned
+  set page(numbering: "1", number-align: right)
+  counter(page).update(1)
 
-  // --- PAGE NUMBERING SETUP ---
-  // set page(
-  //   numbering: "1",
-  //   number-align: right
-  // )
-  // counter(page).update(1) // Optional: Resets count so this page starts at 1
+  // Custom Heading 1 Style
+  show heading.where(level: 1): it => {
+    // Tự động ngắt trang
+    pagebreak()
+    // Dành cho Report
+    if type == "report" {
+      align(left)[
+        #set text(
+          font: heading-font,
+          size: 20pt,
+          weight: "regular",
+          fill: black.lighten(60%),
+        )
+        #block(
+          width: 100%,
+          stroke: (bottom: 0.5pt + black.lighten(60%)),
+          inset: (bottom: 0.5em),
+        )[
+          #smallcaps[#it.body]
+        ]
+      ]
+    } else {
+      // Dành cho Thesis
+      align(left)[
+        #stack(
+          dir: ttb,
+          spacing: 2em,
+          text(
+            font: heading-font,
+            size: 18pt,
+            weight: "regular",
+            fill: black.lighten(60%),
+          )[#if it.numbering != none [CHƯƠNG #counter(heading).display(it.numbering)]],
+          text(
+            font: heading-font,
+            size: 30pt,
+            weight: "regular",
+          )[#smallcaps[#it.body]],
+          line(length: 100%, stroke: 1pt + black.lighten(60%)),
+        )
+      ]
+    }
+    // Thêm khoảng trắng (vspace) sau heading title
+    v(0.5em)
+  }
 
-  // SETUP FOOTER WITH BACK-TO-TOP
-  set page(
-    footer: context [
-      // We use a stack or grid to align items
-      #set text(size: 10pt, fill: gray)
-      #grid(
-        columns: (1fr, 1fr),
-        align: (left, right),
+  // MARK: Section - Footer
+  // Footer with "Back to Top"
+  set page(footer: context [
+    #set text(size: 10pt, fill: gray)
+    #grid(
+      columns: (1fr, 1fr),
+      align: (left, right),
+      link(<top>)[#text(fill: gray)[↑ Back to Top]], counter(page).display(page.numbering),
+    )
+  ])
 
-        // TODO: Un-blue the link here
-        // LEFT: The clickable link
-        link(<top>)[#text(fill: gray)[↑ Back to Top]],
+  // MARK: Body
+  body
+}
 
-        // RIGHT: The page number
-        counter(page).display(page.numbering),
+// MARK: Appendix Helper
+// Phụ Lục
+#let appendix(body) = {
+  counter(heading).update(0)
+  set heading(numbering: "A.1", supplement: "Phụ Lục")
+
+  show heading.where(level: 1): it => {
+    pagebreak()
+    align(left)[
+      #stack(
+        dir: ttb,
+        spacing: 1.5em,
+        text(
+          font: heading-font,
+          size: 18pt,
+          weight: "regular",
+          fill: black.lighten(60%),
+        )[PHỤ LỤC #counter(heading).display()],
+        text(
+          font: heading-font,
+          size: 30pt,
+          weight: "regular",
+        )[#it.body],
+        line(length: 100%, stroke: 1pt + black.lighten(60%)),
       )
-    ],
-  )
+    ]
+    // Thêm khoảng trắng (vspace) sau heading title
+    v(0.5em)
+  }
 
-  // --- LINK STYLING ---
-  // We put this HERE so it only affects the actual content, not the TOC.
-  show link: set text(fill: rgb("#0000EE"))
+  body
+}
 
-  // GLOBAL RULE: All tables inside this document get rounded
-  show table: it => block(
-    radius: 8pt,
-    stroke: 1pt + luma(200),
-    clip: true,
-    width: 100%,
-    it,
-  )
+// MARK: Bibliography Helper
+// Tài liệu tham khảo
+#let bibliography(body) = {
+  counter(heading).update(0)
+  set heading(numbering: "I", supplement: "Tài Liệu Tham Khảo")
 
-  // MARK: The BODY
+  show heading.where(level: 1): it => {
+    pagebreak()
+    align(left)[
+      #stack(
+        dir: ttb,
+        spacing: 1.5em,
+        text(
+          font: heading-font,
+          size: 18pt,
+          weight: "regular",
+          fill: black.lighten(60%),
+        )[TÀI LIỆU THAM KHẢO #counter(heading).display()],
+        text(
+          font: heading-font,
+          size: 30pt,
+          weight: "regular",
+        )[#it.body],
+        line(length: 100%, stroke: 1pt + black.lighten(60%)),
+      )
+    ]
+    // Thêm khoảng trắng (vspace) sau heading title
+    v(0.5em)
+  }
 
-  // Document body
   body
 }

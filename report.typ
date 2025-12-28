@@ -1,4 +1,4 @@
-#import "template/libreport.typ": *
+#import "template/lib.typ": *
 #import "config/metadata.typ": data
 
 #show: document.with(..data, type: "report")
