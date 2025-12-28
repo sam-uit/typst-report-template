@@ -49,12 +49,6 @@
     ]
   ]
 
-  // MARK: Formatting - Figures & Tables
-  // Rename "Figure" supplements
-  show figure.where(kind: raw): set figure(supplement: "Mã nguồn")
-  show figure.where(kind: image): set figure(supplement: "Hình ảnh")
-  show figure.where(kind: table): set figure(supplement: "Bảng")
-
   // MARK: Formatting - Tables
   // Bảng có đường viền và màu nền
   set table(
@@ -157,10 +151,16 @@
   )
   pagebreak()
 
-  // MARK: Section - Front Matter (TOC, Lists)
+
   // Roman numbering, Header/Footer active
   set page(header: auto, footer: auto, numbering: "i", number-align: center)
   counter(page).update(1)
+
+  // MARK: Section - Front Matter (TOC, Lists)
+  // Rename "Figure" supplements
+  show figure.where(kind: raw): set figure(supplement: "Mã nguồn")
+  show figure.where(kind: image): set figure(supplement: "Hình ảnh")
+  show figure.where(kind: table): set figure(supplement: "Bảng")
 
   // Table of Contents
   toc-section-wrapper(blue)[
