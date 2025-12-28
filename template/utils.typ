@@ -40,6 +40,7 @@
 
 // MARK: TOC Section Wrapper
 // Standardizes the appearance of TOC, List of Tables, etc.
+// Args: color, body
 #let toc-section-wrapper(color, body) = {
   block(
     radius: 8pt,
