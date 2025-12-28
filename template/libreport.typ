@@ -54,15 +54,14 @@
 
   // MARK: Formatting - Tables
   // Bảng có đường viền và màu nền
+  // Tắt căn bằng lề cho văn bản trong bảng
+  show table: set par(justify: false)
   set table(
     // Đường viền cho bảng
     stroke: 0.5pt + blue.lighten(90%),
     // Màu nền cho hàng đầu tiên (header)
     fill: (x, y) => if y == 0 { blue.lighten(90%) },
   )
-
-  // Tắt căn bằng lề cho văn bản trong bảng
-  show table: set par(justify: false)
 
   // Bảng có góc bo tròn
   show table: it => block(
