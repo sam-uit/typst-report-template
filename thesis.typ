@@ -9,10 +9,10 @@
 #show: document.with(..data, type: "thesis")
 
 // Content goes here
-#include "content/quiz1.typ"
-#include "content/quiz2.typ"
-#include "content/quiz3.typ"
-#include "content/quiz4.typ"
+#include "content/chapter01.typ"
+#include "content/chapter02.typ"
+#include "content/chapter03.typ"
+#include "content/chapter04.typ"
 
 // Show appendix
 #show: appendix
