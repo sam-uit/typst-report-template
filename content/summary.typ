@@ -169,5 +169,3 @@
   outlined: false, // Hides it from the List of Tables
   numbering: none, // Hides the "Table X:" prefix (optional)
 )
-
-== 5. Kết luận
