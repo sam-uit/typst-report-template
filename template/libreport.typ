@@ -246,10 +246,15 @@
     // Dành cho Report
     if type == "report" {
       align(left)[
-        #set text(font: heading-font, size: 20pt, weight: "regular")
+        #set text(
+          font: heading-font,
+          size: 20pt,
+          weight: "regular",
+          fill: black.lighten(60%),
+        )
         #block(
           width: 100%,
-          stroke: (bottom: 0.5pt + rgb("#808080")),
+          stroke: (bottom: 0.5pt + black.lighten(60%)),
           inset: (bottom: 0.5em),
         )[
           #smallcaps[#it.body]
