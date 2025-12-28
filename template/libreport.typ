@@ -207,6 +207,7 @@
   set page(numbering: "1", number-align: right)
   counter(page).update(1)
 
+  // MARK: Section - Footer
   // Footer with "Back to Top"
   set page(footer: context [
     #set text(size: 10pt, fill: gray)
