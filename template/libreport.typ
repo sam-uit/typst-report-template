@@ -148,8 +148,6 @@
     ]
   ]
 
-  // MARK: COMMON FORMATTING
-  show block.where(fill: rgb("#f0f8ff")): it => align(left, it)
 
   // MARK: TEXT FORMATTING
   // Simple emphasis and strong styling
@@ -164,7 +162,11 @@
   // Indent for Enum
   set enum(indent: 1em)
 
-  // MARK: QUOTE FORMATTING
+  // MARK: Callout Formatting
+  // Căn trái cho các khối (như Note/Info) có màu nền #f0f8ff để tránh lỗi giãn dòng khi dùng justify
+  show block.where(fill: rgb("#f0f8ff")): it => align(left, it)
+
+  // MARK: COMMON FORMATTING
   // Simple quote styling
   show quote: it => block(
     align(center),
