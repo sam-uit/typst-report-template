@@ -6,7 +6,8 @@
 #import "components/cover.typ": cover-page
 
 // MARK: The Template
-#let report(
+// Chuẩn hóa: Gọi tên là document thay vì report
+#let document(
   university: (:),
   course: (:),
   instructor: "",
