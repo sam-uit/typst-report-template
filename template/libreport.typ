@@ -242,6 +242,7 @@
 
   // Custom Heading 1 Style
   show heading.where(level: 1): it => {
+    // Tự động ngắt trang
     pagebreak()
     // Dành cho Report
     if type == "report" {
