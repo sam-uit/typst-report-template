@@ -1,20 +1,23 @@
-#import "template/libthesis.typ": *
+#import "template/libreport.typ": *
 #import "config/metadata.typ": data
 
-#show: thesis.with(..data)
+#show: document.with(..data, type: "thesis")
 
-// Acknowledgement
-// #include "content/acknowledgement.typ"
+// Author
+#include "author/author.typ"
 
-// Chapters
+// Content goes here
 #include "content/quiz1.typ"
+#pagebreak()
 #include "content/quiz2.typ"
+#pagebreak()
 #include "content/quiz3.typ"
+#pagebreak()
 #include "content/quiz4.typ"
-
-// Appendix
+#pagebreak()
 #show: appendix
 #include "content/appendixA.typ"
 
 // Bibliography
+#pagebreak()
 #include "content/bibliography.typ"
