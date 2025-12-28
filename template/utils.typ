@@ -40,11 +40,11 @@
 
 // MARK: TOC Section Wrapper
 // Standardizes the appearance of TOC, List of Tables, etc.
-#let toc-section-wrapper(body) = {
+#let toc-section-wrapper(color, body) = {
   block(
     radius: 8pt,
-    fill: blue.lighten(98%),
-    stroke: 1pt + blue.lighten(98%),
+    fill: color.lighten(98%),
+    stroke: 1pt + color.lighten(80%),
     inset: 1.5em,
     width: 100%,
     body,

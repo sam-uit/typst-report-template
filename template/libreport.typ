@@ -163,25 +163,25 @@
   counter(page).update(1)
 
   // Table of Contents
-  toc-section-wrapper[
+  toc-section-wrapper(blue)[
     #unheading[Mục Lục]
     #outline(title: none, indent: auto, depth: 2)
   ]
 
   // List of Tables
-  toc-section-wrapper[
+  toc-section-wrapper(blue)[
     #unheading[Danh Sách Bảng]
     #outline(title: none, target: figure.where(kind: table))
   ]
 
   // List of Figures
-  toc-section-wrapper[
+  toc-section-wrapper(blue)[
     #unheading[Danh Sách Hình Ảnh]
     #outline(title: none, target: figure.where(kind: image))
   ]
 
   // List of Code Snippets
-  toc-section-wrapper[
+  toc-section-wrapper(blue)[
     #unheading[Danh Sách Mã Nguồn]
     #outline(title: none, target: figure.where(kind: raw))
   ]
@@ -192,7 +192,7 @@
     if todos.len() > 0 {
       block(
         radius: 8pt,
-        fill: red.lighten(95%),
+        fill: red.lighten(98%),
         stroke: 1pt + red.lighten(80%),
         inset: 1.5em,
         width: 100%,
