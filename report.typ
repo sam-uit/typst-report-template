@@ -3,9 +3,6 @@
 
 #show: document.with(..data, type: "report")
 
-// Author
-#include "author/author.typ"
-
 // Content goes here
 #include "content/quiz1.typ"
 #include "content/quiz2.typ"
