@@ -29,7 +29,7 @@
   ),
   assignment: (
     title: "BÁO CÁO ĐỒ ÁN QUẢN LÝ THÔNG TIN",
-    subtitle: "Quản Lý Đặt Phòng Khách Sạn",
+    subtitle: "Lorem Ipsum Dolor Sit Amet",
     type: "Luận Án",
     date: "Dec, 2025",
     duration: "15 phút",
