@@ -1,7 +1,7 @@
 #import "template/libreport.typ": *
 #import "config/metadata.typ": data
 
-#show: report.with(..data)
+#show: document.with(..data, type: "thesis")
 
 // Author
 #include "author/author.typ"
