@@ -322,7 +322,39 @@
       )
     ]
     // Thêm khoảng trắng (vspace) sau heading title
-    v(1em)
+    v(0.5em)
+  }
+
+  body
+}
+
+// MARK: Bibliography Helper
+// Tài liệu tham khảo
+#let bibliography(body) = {
+  counter(heading).update(0)
+  set heading(numbering: "I", supplement: "Tài Liệu Tham Khảo")
+
+  show heading.where(level: 1): it => {
+    align(left)[
+      #stack(
+        dir: ttb,
+        spacing: 1.5em,
+        text(
+          font: heading-font,
+          size: 18pt,
+          weight: "regular",
+          fill: black.lighten(60%),
+        )[TÀI LIỆU THAM KHẢO #counter(heading).display()],
+        text(
+          font: heading-font,
+          size: 30pt,
+          weight: "regular",
+        )[#it.body],
+        line(length: 100%, stroke: 1pt + black.lighten(60%)),
+      )
+    ]
+    // Thêm khoảng trắng (vspace) sau heading title
+    v(0.5em)
   }
 
   body
