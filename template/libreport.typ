@@ -234,7 +234,6 @@
   // Spacing after TOC
   v(2em)
   v(0.5em)
-  pagebreak()
 
   // MARK: Section - Main Content
   // Arabic numbering, Right aligned
@@ -243,6 +242,7 @@
 
   // Custom Heading 1 Style
   show heading.where(level: 1): it => {
+    pagebreak()
     // Dành cho Report
     if type == "report" {
       align(left)[
@@ -335,6 +335,7 @@
   set heading(numbering: "I", supplement: "Tài Liệu Tham Khảo")
 
   show heading.where(level: 1): it => {
+    pagebreak()
     align(left)[
       #stack(
         dir: ttb,
