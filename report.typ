@@ -5,6 +5,7 @@
 
 // Author
 #include "author/author.typ"
+#pagebreak()
 
 // Content goes here
 #include "content/quiz1.typ"
