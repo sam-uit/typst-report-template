@@ -40,17 +40,37 @@ SELECT * FROM account_activity_view;
 
 ## An Toàn Thông Tin
 
+### Xác thực và phân quyền
+
+### Import - Export Dữ Liệu
+
+### Backup – Restore Dữ Liệu
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
 
 ## Trình Bày Thông Tin
 
+### Menu
+
+### Form
+
+### Report
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
 
 ## Các Chức Năng Của Hệ Thống
+
+### Quản Lý Thông Tin Nền Tảng
+
+### Quản Lý Dữ Liệu Đặt Phòng
+
+### Thống Kê Và Báo Cáo
+
+### Quản Trị Hệ Thống
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
