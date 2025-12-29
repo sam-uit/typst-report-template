@@ -66,8 +66,8 @@
   set table(
     // Đường viền cho bảng
     stroke: 0.5pt + blue.lighten(90%),
-    // Màu nền cho hàng đầu tiên (header)
-    fill: (x, y) => if y == 0 { blue.lighten(90%) },
+    // Màu nền cho hàng đầu tiên (header) và hàng chẵn (nhạt hơn)
+    fill: (x, y) => if y == 0 { blue.lighten(90%) } else if calc.even(y) { blue.lighten(98%) } else { none },
   )
 
   // Bảng có góc bo tròn
