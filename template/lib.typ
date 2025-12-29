@@ -253,11 +253,16 @@
   // List of TODOs (Conditional)
   context {
     let todos = query(figure.where(kind: "todo"))
+    // Chỉ hiện thị danh sách TODO nếu có
     if todos.len() > 0 {
-      toc-section-wrapper(red)[
-        #unheading[Danh Sách TODO]
-        #outline(title: none, target: figure.where(kind: "todo"))
-      ]
+      // Nếu tài liệu là luận văn, thêm trang trắng
+      if type == "thesis" {
+        pagebreak()
+        toc-section-wrapper(red)[
+          #unheading[Danh Sách TODO]
+          #outline(title: none, target: figure.where(kind: "todo"))
+        ]
+      }
     }
   }
 
