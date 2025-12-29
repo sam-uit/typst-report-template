@@ -3,6 +3,8 @@
 = Bài 1. Chủ Đề Đầu Tiên
 <bai-1-chu-de-dau-tien>
 
+Tài liệu: @technicalwritingapracticalguide.
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
