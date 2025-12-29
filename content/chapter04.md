@@ -1,4 +1,4 @@
-# Bài 4. Chủ Đề Thứ Tư
+# Quản Lý Thông Tin
 
 ## Bài 4 Mục 1 - Chứa Code
 
