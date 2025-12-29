@@ -1,11 +1,11 @@
 #import "../template/lib.typ": *
 
-= Bài 4. Chủ Đề Thứ Tư
-<bai-4-chu-de-thu-tu>
+= Quản Lý Thông Tin
+<quan-ly-thong-tin>
 
 
-== Bài 4 Mục 1 - Chứa Code
-<bai-4-muc-1-chua-code>
+== Xử Lý Thông Tin
+<xu-ly-thong-tin>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
@@ -38,7 +38,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
             timestamp DESC
     ) ul ON ba.account_number = ul.account_number;
   ```,
-  caption: "Bài 4. Khai báo/Khởi tạo VIEW",
+  caption: [@xu-ly-thong-tin[Mục] -- Khai báo/Khởi tạo VIEW],
 )
 
 #figure(
@@ -46,11 +46,71 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   -- Truy vấn từ VIEW như một bảng bình thường
   SELECT * FROM account_activity_view;
   ```,
-  caption: "Bài 4. Truy vấn VIEW",
+  caption: [@xu-ly-thong-tin[Mục] -- Truy vấn VIEW],
 )
 
-== Bài 4 Mục 2
-<bai-4-muc-2>
+== An Toàn Thông Tin
+<an-toan-thong-tin>
+
+
+=== Xác thực và phân quyền
+<xac-thuc-va-phan-quyen>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+
+=== Import - Export Dữ Liệu
+<import-export-du-lieu>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+
+=== Backup -- Restore Dữ Liệu
+<backup-restore-du-lieu>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+
+== Trình Bày Thông Tin
+<trinh-bay-thong-tin>
+
+
+=== Menu
+<menu>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+
+=== Form
+<form>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+
+=== Report
+<report>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+
+== Các Chức Năng Của Hệ Thống
+<cac-chuc-nang-cua-he-thong>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+
+=== Quản Lý Thông Tin Nền Tảng
+<quan-ly-thong-tin-nen-tang>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+
+=== Quản Lý Dữ Liệu Đặt Phòng
+<quan-ly-du-lieu-dat-phong>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+
+=== Thống Kê Và Báo Cáo
+<thong-ke-va-bao-cao>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+
+=== Quản Trị Hệ Thống
+<quan-tri-he-thong>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
