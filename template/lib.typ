@@ -206,7 +206,7 @@
   show figure.where(kind: image): set figure(supplement: "Hình ảnh")
   show figure.where(kind: table): set figure(supplement: "Bảng")
 
-  // Table of Contents
+  // MARK: Table of Contents
   toc-section-wrapper(blue)[
     #unheading[Mục Lục]
     #outline(title: none, indent: auto, depth: 2)
@@ -217,7 +217,7 @@
     pagebreak()
   }
 
-  // List of Tables
+  // MARK: List of Tables
   toc-section-wrapper(blue)[
     #unheading[Danh Sách Bảng]
     #outline(title: none, target: figure.where(kind: table))
@@ -228,7 +228,7 @@
     pagebreak()
   }
 
-  // List of Figures
+  // MARK: List of Figures
   toc-section-wrapper(blue)[
     #unheading[Danh Sách Hình Ảnh]
     #outline(title: none, target: figure.where(kind: image))
@@ -239,18 +239,13 @@
     pagebreak()
   }
 
-  // List of Code Snippets
+  // MARK: List of Code Snippets
   toc-section-wrapper(blue)[
     #unheading[Danh Sách Mã Nguồn]
     #outline(title: none, target: figure.where(kind: raw))
   ]
 
-  // Nếu tài liệu là luận văn, thêm trang trắng
-  if type == "thesis" {
-    pagebreak()
-  }
-
-  // List of TODOs (Conditional)
+  // MARK: List of TODOs (Conditional)
   context {
     let todos = query(figure.where(kind: "todo"))
     // Chỉ hiện thị danh sách TODO nếu có
