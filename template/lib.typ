@@ -362,7 +362,7 @@
 
 // MARK: Bibliography Helper
 // Tài liệu tham khảo
-#let bibliography(body) = {
+#let bibliography-page(body) = {
   counter(heading).update(0)
   set heading(numbering: "I", supplement: "Tài Liệu Tham Khảo")
 
@@ -377,11 +377,13 @@
           size: 18pt,
           weight: "regular",
           fill: black.lighten(60%),
-        )[TÀI LIỆU THAM KHẢO #counter(heading).display()],
+          // Không hiển thị dòng chữ "Tài Liệu Tham Khảo"
+        )[],
         text(
           font: heading-font,
           size: 30pt,
           weight: "regular",
+          // Chỉ hiện thị tiêu đề thực tế, từ lệnh bibliography
         )[#it.body],
         line(length: 100%, stroke: 1pt + black.lighten(60%)),
       )
