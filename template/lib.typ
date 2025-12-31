@@ -22,7 +22,7 @@
   assignment: (:),
   // Lớp/Loại tài liệu, mặc định là report
   type: "report",
-  acronyms: (:),
+  acronyms: none,
   ..args,
   body,
 ) = {
@@ -262,7 +262,7 @@
     }
   }
 
-  if acronyms != none {
+  if acronyms != none and acronyms.len() > 0 {
     // Nếu tài liệu là luận văn, thêm trang trắng
     if type == "thesis" {
       pagebreak()
