@@ -22,6 +22,7 @@
   assignment: (:),
   // Lớp/Loại tài liệu, mặc định là report
   type: "report",
+  acronyms: (:),
   ..args,
   body,
 ) = {
@@ -259,6 +260,29 @@
         ]
       }
     }
+  }
+
+  if acronyms != none {
+    // Nếu tài liệu là luận văn, thêm trang trắng
+    if type == "thesis" {
+      pagebreak()
+    }
+
+    // TODO: Dùng bảng trực tiếp từ Markdown để bỏ qua biến acronyms
+    [ #unheading[Bảng Viết Tắt] ]
+    // Create table from acronyms dictionary wrapped in figure
+    figure(
+      table(
+        columns: (20%, 80%),
+        stroke: 0.5pt + blue.lighten(98%),
+        align: (right, left),
+        table.header([*Viết Tắt*], [*Nghĩa*]),
+        ..acronyms.pairs().map(((key, value)) => (key, value)).flatten(),
+      ),
+      caption: [Bảng Viết Tắt],
+      kind: table,
+      outlined: false,
+    )
   }
 
   // Spacing after TOC
