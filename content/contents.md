@@ -1,4 +1,4 @@
-# AI Là Gì? Và Tại Sao Lại Là Lúc Này?
+# AI Là Gì? Tại Sao Lại Là Lúc Này?
 
 ## AI Là Gì?
 
@@ -13,6 +13,8 @@
 ![Sự Hội Tụ](./assets/AI-ML-DS.png)
 
 ## Hiện Tại
+
+### AI dần trở thành một phần thiết yếu
 
 - AI đã và đang đi vào cuộc sống như một phần không thể thiếu.
 - Như cách điện, điện thoại, internet, đã từng.
