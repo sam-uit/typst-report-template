@@ -9,11 +9,11 @@
     logo: "uit.jpeg",
   ),
   course: (
-    id: "IE103",
-    name: "Quản Lý Thông Tin",
+    id: "IE005",
+    name: "Giới Thiệu Ngành Công Nghệ Thông Tin",
     class: "LT.K2025.2.CNTT",
   ),
-  instructor: "Ths. Nguyễn Thành Luân ",
+  instructor: "Ths. Nguyễn Thị Thùy Trâm ",
   author: (
     name: "Nhóm 02",
     members: (
@@ -28,10 +28,10 @@
     ),
   ),
   assignment: (
-    title: "BÁO CÁO ĐỒ ÁN QUẢN LÝ THÔNG TIN",
-    subtitle: "Quản Lý Dữ Liệu Đặt Phòng Khách Sạn",
+    title: "AI TRONG ĐỜI SỐNG VÀ CÔNG VIỆC",
+    subtitle: "Thực Tế, Giá Trị và Những Nghi Ngờ",
     type: "Luận Án",
-    date: "TP.Hồ Chí Minh, tháng 01 năm 2026",
+    date: "TP. Hồ Chí Minh, Tháng 01 Năm 2026",
     duration: "15 phút",
   ),
   company: "A Limited Company Name",
