@@ -1,15 +1,15 @@
 # AI là gì? Và Tại Sao Lại Là Lúc Này?
 
-# Ứng dụng AI trong Đời Sống
+# AI Trong Đời Sống
 
-## Nhà thông minh (Smart Home) và Sự tiến hóa của Không gian Sống
-### AI giúp tự động hóa và tối ưu hóa không gian sống (Smart Home)
-### AI nâng cao chất lượng sống và an toàn cho con người (Ambient Intelligence)
-### Sự tiến hóa của không gian sống thông minh
+## Smart Home
+### Tự Động Hóa
+### Nâng Cao Chất Lượng Sống
+### Không Gian Sống Thông Minh
 
-## Cá nhân hóa Giải trí: Nền kinh tế của sự Chú ý
-### Thuật toán Đề xuất và Siêu cá nhân hóa (Hyper-personalization)
-### Sáng tạo Nội dung Tương tác
+## Giải Trí
+### Siêu Cá Nhân Hóa
+### Nội Dung Tương Tác
 
 ## Giáo dục & Học tập cá nhân
 ### Phá bỏ rào cản ngôn ngữ và địa lý
