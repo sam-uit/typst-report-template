@@ -27,9 +27,11 @@
 ### Lợi Ích & Thách Thức
 
 # Ứng dụng AI trong Công Việc
-## Văn phòng Thông minh và Sự trỗi dậy của "Siêu Tác tử" (Superagency)
-### Tự động hóa Tác vụ Tri thức
-### Hợp tác Người - AI: Mô hình Centaur và Cobot
+
+## Workspace Thông Minh
+### Tự Động Hóa Tác Vụ
+### Hợp Tác Con Người - AI
+
 ## Lập trình và Phát triển Phần mềm: Nghịch lý Năng suất
 ## Marketing và Tiếp thị: Kỷ nguyên của Sáng tạo Tự động hóa
 ## Sản xuất và Chuỗi Cung ứng: Hướng tới Công nghiệp
