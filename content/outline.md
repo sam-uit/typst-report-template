@@ -1,5 +1,7 @@
 # AI là gì? Và Tại Sao Lại Là Lúc Này?
 
+- AI là gì?
+
 # AI Trong Đời Sống
 
 ## Smart Home
@@ -17,7 +19,7 @@
 ### Nâng Cao Hiệu Quả
 ### Người Đồng Hành Tin Cậy
 
-## Thương Mại & Dịch Vụ Khách hàng
+## Thương Mại & Dịch Vụ Khách Hàng
 ### Cá Nhân Hóa Trải Nghiệm
 ### Conversational Agents (Chatbot CSKH)
 ### Tìm Kiếm và Thử Nghiệm Trực Quan
