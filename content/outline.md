@@ -32,11 +32,10 @@
 ### Tự Động Hóa Tác Vụ
 ### Hợp Tác Con Người - AI
 
-## Lập trình và Phát triển Phần mềm: Nghịch lý Năng suất
-## Marketing và Tiếp thị: Kỷ nguyên của Sáng tạo Tự động hóa
-## Sản xuất và Chuỗi Cung ứng: Hướng tới Công nghiệp
-## Agentic AI - trợ lý AI có tri thức
-## Assistive AI – Hệ thống AI hỗ trợ tạo hồ sơ nghề nghiệp và kết nối việc làm
+## Phát Triển Phần Mềm
+## Marketing và Tiếp Thị
+## Sản Xuất và Chuỗi Cung Ứng
+## Assistive AI
 
 ## Từ tự động hóa đến kiến trúc backend tác nhân (Agentic Backend)
 ### Sự chuyển dịch Mô hình: Từ Microservices sang "Agentic Workflows"
