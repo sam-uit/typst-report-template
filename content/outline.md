@@ -1,6 +1,8 @@
 # AI là gì? Và Tại Sao Lại Là Lúc Này?
 
-- AI là gì?
+## AI là gì?
+
+## Tại Sao Lại Là Lúc Này?
 
 # AI Trong Đời Sống
 
