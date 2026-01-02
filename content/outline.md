@@ -17,14 +17,14 @@
 ### Nâng Cao Hiệu Quả
 ### Người Đồng Hành Tin Cậy
 
-## Cách mạng trong Mua sắm và Dịch vụ Khách hàng
-### Cá nhân hóa Hành trình và Công cụ Gợi ý
-### Chatbot CSKH và Tương tác Tự động 24/7
-### Công nghệ Tìm kiếm và Thử nghiệm Trực quan
+## Thương Mại & Dịch Vụ Khách hàng
+### Cá Nhân Hóa Trải Nghiệm
+### Conversational Agents (Chatbot CSKH)
+### Tìm Kiếm và Thử Nghiệm Trực Quan
 
-## Cách mạng trong Di chuyển và giao thông
-### AI trong di chuyển và giao thông
-### Lợi ích, thách thức của AI trong di chuyển và giao thông
+## Di Chuyển và Giao Thông
+### AI Trên Mọi Nẻo Đường
+### Lợi Ích & Thách Thức
 
 # Ứng dụng AI trong Công Việc
 ## Văn phòng Thông minh và Sự trỗi dậy của "Siêu Tác tử" (Superagency)
