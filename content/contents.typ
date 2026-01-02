@@ -16,9 +16,9 @@
 
 - #data.university.name
 
-=== Công Ty
+=== Thành Viên Nhóm
 
-- #data.company
+- Nhóm 01.
 
 == Nhóm 1
 
