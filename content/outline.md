@@ -1,6 +1,6 @@
-# AI là gì? Và Tại Sao Lại Là Lúc Này?
+# AI Là Gì? Và Tại Sao Lại Là Lúc Này?
 
-## AI là gì?
+## AI Là Gì?
 
 ## Tại Sao Lại Là Lúc Này?
 
