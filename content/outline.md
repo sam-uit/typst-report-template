@@ -33,14 +33,13 @@
 ## Workspace Thông Minh
 ### Tự Động Hóa Tác Vụ
 ### Hợp Tác Con Người - AI
-
-## Phát Triển Phần Mềm
-### Agentic Backend
+## Agentic AI
+## Assistive AI
+## Phát Triển Phần Mềm - Agentic Backend
 ### Agentic Workflows
-### DevSecOps - Generative IaC
+### DevSecOps - Generative IaC & Chaos Engineering
 ## Marketing và Tiếp Thị
 ## Sản Xuất và Chuỗi Cung Ứng
-## Assistive AI
 
 # Vai Trò và Lợi Ích Thực Tiễn
 ## Vai Trò Quan Trọng
