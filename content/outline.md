@@ -33,13 +33,12 @@
 ### Hợp Tác Con Người - AI
 
 ## Phát Triển Phần Mềm
+### Agentic Backend
+### Agentic Workflows
+### DevSecOps - Generative IaC
 ## Marketing và Tiếp Thị
 ## Sản Xuất và Chuỗi Cung Ứng
 ## Assistive AI
-
-## Từ tự động hóa đến kiến trúc backend tác nhân (Agentic Backend)
-### Sự chuyển dịch Mô hình: Từ Microservices sang "Agentic Workflows"
-### DevSecOps : Generative IaC và Chaos Engineering
 
 # Thực tiễn Triển khai AI tại Việt Nam
 ## Bức tranh Toàn cảnh
