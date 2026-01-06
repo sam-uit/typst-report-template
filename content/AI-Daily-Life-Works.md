@@ -356,7 +356,7 @@ AI không hoạt động độc lập để loại bỏ con người mà đóng 
 | **Sự cộng tác** | Con người đưa khung sườn, AI viết chi tiết, con người tinh chỉnh. | Robot làm việc ngay bên cạnh công nhân, hỗ trợ việc nặng nhọc/đòi hỏi chính xác cao. |
 | **Giá trị cốt lõi** | Tối ưu hóa tư duy chiến lược. | Tối ưu hóa sự an toàn và hiệu suất vật lý. |
 
-### Tác động đến tư duy quản trị và đào tạo
+### Tác Động Đến Tư Duy Quản Trị Và Đào Tạo
 
 Sự dịch chuyển sang vai trò cộng sự đòi hỏi một sự thay đổi sâu sắc trong cấu trúc và tư duy nhân sự:
 
