@@ -2,7 +2,9 @@
 
 * CHUYỂN ĐỔI SỐ, CƠ HỘI, HIỆN TRẠNG và THÁCH THỨC.
 
-## Lời Cảm Ơn
+## Giới Thiệu
+
+### Lời Cảm Ơn
 
 Trường:
 
@@ -16,7 +18,7 @@ Môn:
 * Tên Môn: Giới Thiệu Nghành Công Nghệ Thông Tin.
 * Giảng Viên: Ths. Nguyễn Thị Thùy Trâm
 
-## Giới Thiệu Nhóm 01
+### Nhóm 01
 
 * Thực hiện: Nhóm 01.
 
@@ -38,7 +40,7 @@ Môn:
 | 25410204 | Trương Xuân Hậu    | Phần 5: Các Bất Cập Còn Tồn Đọng                      |
 | 25410240 | Nguyễn Tạ Quí Lan  | Phần 6: Tổng Kết/Kết Bài                              |
 
-## AI là gì? Và Tại Sao Lại Là Lúc Này?
+### AI là gì? Và Tại Sao Lại Là Lúc Này?
 
 AI (Artificial Intelligence) là một lĩnh vực không mới, đã được manh nha từ đầu thế kỷ 20, nhưng mãi tới đầu thế kỷ 21, hay ngày nay, mới thực sự trỗi dậy và đi vào đời sống của xã hội.
 
