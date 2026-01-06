@@ -213,23 +213,23 @@ Việc đưa AI vào lĩnh vực giao thông vận tải đã giúp tối ưu h�
 
 Song song với các hữu ích mà AI mang lại cho việc di chuyển và giao thông thì còn nhiều hạn chế, thách thức cần đối mặt như **An ninh mạng, sự tin tưởng của người dùng và tình trạng hạ tầng kỹ thuật cũng như công nghệ kỹ thuật…**
 
-## Ứng dụng AI trong Công Việc
+## AI Trong Công Việc (AI in the Workplace): Từ Công Cụ Đến Đồng Nghiệp
 
 * Tái Định hình Năng suất và Quy trình
 
-Trong môi trường doanh nghiệp, AI không chỉ là công cụ hỗ trợ mà đang trở thành "hệ điều hành" mới cho công việc, thay đổi căn bản cách thức vận hành, ra quyết định và sáng tạo.
+Môi trường công sở đang trải qua sự thay đổi căn bản khi AI chuyển từ vai trò công cụ hỗ trợ sang vai trò "đồng nghiệp ảo" (Copilot) và tác nhân tự chủ (Agent).
 
 ### Văn phòng Thông minh và Sự trỗi dậy của "Siêu Tác tử" (Superagency)
 
-Sự tích hợp của Generative AI vào các bộ công cụ năng suất cốt lõi như Microsoft 365 (với Copilot) và Google Workspace (với Gemini) đã tạo ra một cuộc cách mạng về hiệu suất làm việc văn phòng.18
+Sự tích hợp của Generative AI vào các bộ công cụ năng suất cốt lõi như Microsoft 365 (với Copilot) và Google Workspace (với Gemini) đã tạo ra một cuộc cách mạng về hiệu suất làm việc văn phòng.
 
 #### Tự động hóa Tác vụ Tri thức
 
 AI đóng vai trò như một trợ lý thông minh, giải phóng nhân viên khỏi các công việc hành chính lặp lại và nhàm chán (drudgery).
 
-* **Soạn thảo và Sáng tạo:** AI hỗ trợ viết bản nháp email, báo cáo, bài phát biểu, tạo slide thuyết trình từ tài liệu văn bản chỉ trong vài giây. Thống kê cho thấy 85% người dùng Copilot đạt được bản nháp tốt nhanh hơn, và tốc độ hoàn thành các tác vụ như viết, tìm kiếm, tóm tắt tăng trung bình 29%.18
-* **Tổng hợp thông tin:** Khả năng tóm tắt các cuộc họp Teams/Meet kéo dài hàng giờ, trích xuất các điểm chính và danh sách công việc cần làm (action items) giúp nhân viên tiết kiệm thời gian đáng kể. Việc "bắt kịp" (catch-up) nội dung các cuộc họp bị bỏ lỡ nhanh hơn gấp 4 lần nhờ AI.18
-* **Phân tích dữ liệu:** Trong Excel hay Google Sheets, AI cho phép người dùng truy vấn dữ liệu bằng ngôn ngữ tự nhiên (ví dụ: "Hãy cho tôi biết xu hướng doanh số quý 3 so với năm ngoái và vẽ biểu đồ cột"), giúp việc phân tích dữ liệu trở nên dễ tiếp cận với cả những nhân viên không chuyên về kỹ thuật.19
+* **Soạn thảo và Sáng tạo:** AI hỗ trợ viết bản nháp email, báo cáo, bài phát biểu, tạo slide thuyết trình từ tài liệu văn bản chỉ trong vài giây. Thống kê cho thấy 85% người dùng Copilot đạt được bản nháp tốt nhanh hơn, và tốc độ hoàn thành các tác vụ như viết, tìm kiếm, tóm tắt tăng trung bình 29%.
+* **Tổng hợp thông tin:** Khả năng tóm tắt các cuộc họp Teams/Meet kéo dài hàng giờ, trích xuất các điểm chính và danh sách công việc cần làm (action items) giúp nhân viên tiết kiệm thời gian đáng kể. Việc "bắt kịp" (catch-up) nội dung các cuộc họp bị bỏ lỡ nhanh hơn gấp 4 lần nhờ AI.
+* **Phân tích dữ liệu:** Trong Excel hay Google Sheets, AI cho phép người dùng truy vấn dữ liệu bằng ngôn ngữ tự nhiên (ví dụ: "Hãy cho tôi biết xu hướng doanh số quý 3 so với năm ngoái và vẽ biểu đồ cột"), giúp việc phân tích dữ liệu trở nên dễ tiếp cận với cả những nhân viên không chuyên về kỹ thuật.
 
 Bảng 2: So sánh Năng lực Ứng dụng của Hai Nền tảng AI Văn phòng Dẫn đầu
 
