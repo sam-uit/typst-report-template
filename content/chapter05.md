@@ -5,10 +5,10 @@
 ### Tác Động tới Việc Làm và Kỹ Năng Lao Động
 ### Quyền Riêng Tư, Bảo Vệ Dữ Liệu và Nâng Tín Số
 ### Thao Túng Thông Tin, Deepfake và Xói Mòn Nhận Thức Xã Hội
-### Khoảng Cach Số và Nguy Co Bị Bỏ Lai Phia Sau
+### Khoảng Cách Số và Nguy Cơ Bị Bỏ Lại Phía Sau
 ## Định Hướng Tương Lai Gần
-### Xây dựng khung quản trị và pháp lý cho AI
-### Ưu tiên phát triển năng lực con người và kỹ năng AI
-### Đầu tư hạ tầng dữ liệu và hệ sinh thái AI “Make in Vietnam”
-### Thúc đẩy AI vì mục tiêu phát triển bền vững và bao trùm
-### Xây dựng văn hoá số và đạo đức AI
+### Xây Dựng Khung Quản Trị Và Pháp Lý Cho AI
+### Ưu Tiên Phát Triển Năng Lực Con Người Và Kỹ Năng AI
+### Đầu Tư Hạ Tầng Dữ Liệu Và Hệ Sinh Thái AI “Make in Vietnam”
+### Thúc Đẩy AI Vì Mục Tiêu Phát Triển Bền Vững Và Bao Trùm
+### Xây Dựng Văn Hộ Số Và Đạo Đức AI
