@@ -485,9 +485,9 @@ Trong bối cảnh AI đã đi từ “công cụ hỗ trợ” sang “người
 
 ## Những Vấn Đề Cần Lưu Ý
 
-### Phụ Thuộc Vào Dữ Liệu và Rủi Ro “Ảo Giác” AI
+### Phụ Thuộc Vào Dữ Liệu và Rủi Ro "Ảo Giác" AI
 
-Các hệ thống AI hiện nay vẫn phụ thuộc hoàn toàn vào dữ liệu đầu vào; nếu dữ liệu sai lệch, lỗi thời hoặc mang định kiến, kết quả mô hình tạo ra cũng sẽ sai nhưng được trình bày rất tự tin và thuyết phục, đặc biệt với các mô hình sinh nội dung và Agentic AI. Trong các lĩnh vực nhạy cảm như y tế, pháp lý, tài chính hay nhân sự, nguy cơ đưa ra quyết định dựa trên kết quả “ảo giác” này có thể dẫn đến thiệt hại lớn về kinh tế, pháp lý và danh dự tổ chức
+Các hệ thống AI hiện nay vẫn phụ thuộc hoàn toàn vào dữ liệu đầu vào; nếu dữ liệu sai lệch, lỗi thời hoặc mang định kiến, kết quả mô hình tạo ra cũng sẽ sai nhưng được trình bày rất tự tin và thuyết phục, đặc biệt với các mô hình sinh nội dung và Agentic AI. Trong các lĩnh vực nhạy cảm như y tế, pháp lý, tài chính hay nhân sự, nguy cơ đưa ra quyết định dựa trên kết quả "ảo giác" này có thể dẫn đến thiệt hại lớn về kinh tế, pháp lý và danh dự tổ chức
 
 ### Giới Hạn Trong Việc Hiểu Yếu Tố Con Người và Bối Cảnh Xã Hội
 
@@ -528,7 +528,7 @@ Ngoài ra, những tổ chức, địa phương, nhóm lao động không có đ
 * Cần tập trung vào những kỹ năng mà máy khó làm được (như phản biện, sáng tạo, giao tiếp…) và học cách “phối hợp với AI/robot” sao cho mỗi bên làm đúng phần mạnh của mình, thay vì để AI làm thay hoặc con người làm một mình.
 * Xây dựng các chương trình đào tạo lại cho những nhóm lao động dễ bị ảnh hưởng bởi tự động hoá, như nhân viên hành chính, nhân viên chăm sóc khách hàng tuyến đầu hay một số vị trí trong nhà máy. Mục tiêu là giúp họ học kỹ năng mới để chuyển sang những công việc có giá trị cao hơn, thay vì bị mất việc khi máy móc và AI làm bớt phần việc cũ của họ.
 
-### Đầu Tư Hạ Tầng Dữ Liệu Và Hệ Sinh Thái AI “Make in Vietnam”
+### Đầu Tư Hạ Tầng Dữ Liệu Và Hệ Sinh Thái AI "Make in Vietnam"
 
 * Phát triển hạ tầng dữ liệu dùng chung cho các lĩnh vực ưu tiên như y tế, giáo dục, giao thông, đô thị thông minh, với các chuẩn mở và cơ chế bảo vệ quyền riêng tư rõ ràng.
 
