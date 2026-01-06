@@ -20,7 +20,7 @@ Môn:
 
 * Thực hiện: Nhóm 01.
 
-| MSSV | Họ Tên | [IE005 Project](https://drive.google.com/drive/folders/1-JJWE0ZXXR6tuMk9ADU3qIP2xfAd4TYD?usp=drive_link) (01/01/2026) |
+| MSSV | Họ Tên | NỘi Dung |
 | ----- | ----- | ----- |
 | 25410291 | Đinh Xuân Sâm | Phần 1: Giới thiệu chung (Dẫn nhập) |
 | 25410171 | Lê Thị Tú Anh | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life) |
