@@ -260,8 +260,8 @@ Trong y tế, AI không thay thế bác sĩ mà trở thành "cánh tay phải" 
 
 Marketing là lĩnh vực hưởng lợi lớn từ AI tạo sinh, cho phép các doanh nghiệp sản xuất nội dung với tốc độ và quy mô chưa từng có.
 
-* **Sáng tạo nội dung đa phương thức:** Các công cụ như Jasper, Copy.ai (văn bản), Midjourney, Canva (hình ảnh), Synthesia (video), Predis.ai (mạng xã hội) cho phép tạo ra các chiến dịch marketing trọn gói chỉ từ một vài câu lệnh gợi ý (prompts). Tại Việt Nam, một tỉ lệ lớn người làm marketing đã sử dụng ChatGPT cho công việc.
-* **Cá nhân hóa quy mô lớn (Mass Personalization):** AI cho phép doanh nghiệp tạo ra hàng triệu biến thể quảng cáo, mỗi biến thể được tối ưu hóa cho một cá nhân cụ thể dựa trên dữ liệu hành vi của họ. Điều này thay thế phương pháp tiếp cận "một nội dung cho tất cả" (one-size-fits-all) truyền thống, giúp tăng tỷ lệ chuyển đổi và doanh thu.
+* **Sáng Tạo Nội Dung Đa Phương Thức:** Các công cụ như Jasper, Copy.ai (văn bản), Midjourney, Canva (hình ảnh), Synthesia (video), Predis.ai (mạng xã hội) cho phép tạo ra các chiến dịch marketing trọn gói chỉ từ một vài câu lệnh gợi ý (prompts). Tại Việt Nam, một tỉ lệ lớn người làm marketing đã sử dụng ChatGPT cho công việc.
+* **Cá Nhân Hóa Quy Mô Lớn (Mass Personalization):** AI cho phép doanh nghiệp tạo ra hàng triệu biến thể quảng cáo, mỗi biến thể được tối ưu hóa cho một cá nhân cụ thể dựa trên dữ liệu hành vi của họ. Điều này thay thế phương pháp tiếp cận "một nội dung cho tất cả" (one-size-fits-all) truyền thống, giúp tăng tỷ lệ chuyển đổi và doanh thu.
 
 Các ví dụ:
 
