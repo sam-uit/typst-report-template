@@ -145,9 +145,9 @@ Nhờ sự kết hợp giữa phân tích hành vi tức thời và dữ liệu 
 
 ### Giáo Dục 4.0 (Education 4.0): Cá Nhân Hóa Lộ Trình Học Tập
 
-Trong kỷ nguyên số, giáo dục không còn là một "bản đồng ca" nơi tất cả học sinh phải hát chung một nốt nhạc, cùng một tốc độ. Sự bùng nổ của Trí tuệ nhân tạo (AI) đã chuyển đổi mô hình giáo dục truyền thống sang mô hình cá nhân hóa (Personalized Learning), nơi công nghệ đóng vai trò là một gia sư tận tâm, hiểu rõ từng điểm mạnh, điểm yếu của mỗi cá nhân.
+Giáo dục là lĩnh vực AI mang lại giá trị nhân văn sâu sắc, chuyển dịch vai trò của giáo viên từ người truyền đạt kiến thức sang người hướng dẫn, và học sinh từ người tiếp nhận thụ động sang người học chủ động với lộ trình riêng (Personalized Learning).
 
-#### **Phá bỏ rào cản ngôn ngữ và địa lý**
+#### Phá bỏ rào cản ngôn ngữ và địa lý
 
 Sự góp mặt của các ứng dụng như **Duolingo** hay **Elsa Speak** là minh chứng rõ nhất cho việc AI giúp việc học ngoại ngữ trở nên dễ dàng hơn.
 
