@@ -15,9 +15,13 @@ Giúp hệ thống thực hiện các tác vụ thông minh:
 
 ## Tại Sao Lại Là Lúc Này?
 
-Ý tưởng về “trí thông minh giống con Người” đã xuất hiện từ hàng ngàn năm, và bắt đầu được gọi rõ tên là AI (Trí Thông Minh Nhân Tạo) và nghiên cứu sâu vào giữa thế kỷ 20 nhưng chưa thể thành hiện thực. Cho tới gần đây, vào đầu thế kỷ 21, đặc biệt từ những năm 2010, với sự bùng nổ và lớn mạnh của Internet cho phép thế giới có lượng dữ liệu khổng lồ (Big Data), cũng như hạ tầng phần cứng phát triển (GPU/TPU/NPU), và các Trung Tâm Dữ Liệu (Data Center) xuất hiện với số lượng lớn, AI đã dần xuất hiện rõ ràng hơn và dần đi vào đời sống xã hội chúng ta.
+### Lịch Sử
 
-Hình 1: Trí Tuệ Nhân Tạo (AI) và các nền tảng.
+Khởi nguồn từ đầu thế kỷ 20, bùng nổ mạnh mẽ và ứng dụng sâu rộng vào thế kỷ 21.
+
+### Tại Sao Lại Là Lúc Này?
+
+Hội tụ của các yếu tố sau:
 
 - Toán Học: Các lý thuyết Đại số tuyến tính, Xác Suất, Tối ưu hóa.
 - Dữ liệu: Sự bùng nổ của Internet, Big Data.
