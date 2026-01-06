@@ -269,13 +269,18 @@ Các ví dụ:
 - **Maika AI:** Không chỉ là phần cứng loa thông minh, Maika đã mở rộng sang hệ sinh thái phần mềm hỗ trợ công việc. **Maika AI Extension** giúp người dùng tóm tắt video YouTube, nghiên cứu từ khóa SEO, viết email và tạo nội dung marketing đa kênh một cách nhanh chóng. Các mẫu (template) nội dung được tối ưu hóa cho ngôn ngữ và văn phong tiếng Việt.
 - **LovinBot:** Cung cấp nền tảng AI White-label, cho phép các doanh nghiệp tự xây dựng hệ thống AI nội bộ (In-house AI Platform) để tạo nội dung, chatbot CSKH mà không cần đội ngũ kỹ thuật chuyên sâu. LovinBot giúp doanh nghiệp Việt tiết kiệm chi phí và giữ an toàn dữ liệu.
 
-### Sản xuất và Chuỗi Cung ứng: Hướng tới Công nghiệp 5.0
+### Sản xuất và Chuỗi Cung ứng: Vai Trò AI Cộng Tác (Collaborative AI), Tương Lai Của Lao Động
 
 Trong lĩnh vực sản xuất, AI là trái tim của Công nghiệp 4.0.
 
-* **Bảo trì dự đoán (Predictive Maintenance):** Phân tích dữ liệu từ cảm biến rung động, nhiệt độ, âm thanh của máy móc để dự báo hỏng hóc trước khi nó xảy ra, giúp giảm thời gian chết (downtime) ngoài kế hoạch.28
-* **Kiểm soát chất lượng (Quality Control):** Hệ thống thị giác máy tính (Computer Vision) có thể phát hiện các lỗi sản phẩm siêu nhỏ trên dây chuyền sản xuất với tốc độ và độ chính xác vượt xa mắt người.27
-* **Tối ưu hóa Logistics:** AI phân tích hàng triệu biến số (thời tiết, giao thông, giá xăng, tình trạng xe) để lập kế hoạch tuyến đường tối ưu nhất, giúp tiết kiệm nhiên liệu và thời gian giao hàng.28
+* **Bảo trì dự đoán (Predictive Maintenance):** Phân tích dữ liệu từ cảm biến rung động, nhiệt độ, âm thanh của máy móc để dự báo hỏng hóc trước khi nó xảy ra, giúp giảm thời gian chết (downtime) ngoài kế hoạch.
+* **Kiểm soát chất lượng (Quality Control):** Hệ thống thị giác máy tính (Computer Vision) có thể phát hiện các lỗi sản phẩm siêu nhỏ trên dây chuyền sản xuất với tốc độ và độ chính xác vượt xa mắt người.
+* **Tối ưu hóa Logistics:** AI phân tích hàng triệu biến số (thời tiết, giao thông, giá xăng, tình trạng xe) để lập kế hoạch tuyến đường tối ưu nhất, giúp tiết kiệm nhiên liệu và thời gian giao hàng.
+
+Ví dụ:
+
+* **VinMotion (Việt Nam):** Công ty con của Vingroup chuyên phát triển robot hình người (Humanoid Robots) và robot công nghiệp. Các robot này được thiết kế để làm việc trong các nhà máy của VinFast, đảm nhận các công việc nặng nhọc, độc hại hoặc lặp đi lặp lại như vận chuyển linh kiện, hàn, và lắp ráp chi tiết. Mục tiêu của VinMotion không chỉ là phục vụ nội bộ mà còn hướng tới thương mại hóa robot "Make in Vietnam" ra thị trường quốc tế, cạnh tranh với các ông lớn như Tesla Optimus.
+* 
 
 ### Agentic AI \- trợ lý AI có tri thức
 
