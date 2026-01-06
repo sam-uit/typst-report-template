@@ -131,7 +131,7 @@ Việc tận dụng AI trong học tập cá nhân không còn là một lựa c
 
 Sự kết hợp giữa dữ liệu lớn (Big Data) và trí tuệ nhân tạo (AI) đang chuyển dịch trọng tâm ngành bán lẻ từ "bán hàng đại trà" sang "cá nhân hóa sâu sắc" và "hỗ trợ tức thì", giúp tối ưu hóa hành trình mua sắm của người tiêu dùng.
 
-### Cá nhân hóa Hành trình và Công cụ Gợi ý
+### Cá Nhân Hóa Hành Trình và Công Cụ Gợi Ý
 
 AI đóng vai trò như một tư vấn viên chuyên nghiệp, thấu hiểu sở thích và nhu cầu của từng khách hàng trên các sàn thương mại điện tử (TMĐT) như Shopee hay Lazada.
 
@@ -145,11 +145,11 @@ Các hệ thống Chatbot AI đã trở thành cầu nối giao tiếp quan tr�
 * **Khả năng phản hồi tức thì:** Chatbot AI có khả năng lắng nghe, phân tích các thắc mắc về đơn hàng hoặc khiếu nại và đưa ra giải đáp ngay lập tức tại mọi thời điểm trong ngày.
 * **Thấu hiểu ngữ cảnh:** Nhờ kỹ thuật Xử lý ngôn ngữ tự nhiên (NLP), AI không chỉ trả lời theo kịch bản cứng nhắc mà còn có thể nhận diện ý định và cảm xúc của khách hàng để đưa ra cách ứng xử phù hợp.
 
-### Công nghệ Tìm kiếm và Thử nghiệm Trực quan
+### Công Nghệ Tìm Kiếm và Thử Nghiệm Trực Quan
 
-* **Tìm kiếm bằng hình ảnh:** AI phân tích các thuộc tính hình học, màu sắc và kiểu dáng từ ảnh chụp của người dùng để gợi ý các sản phẩm tương đồng hiện có trên sàn.
-* **Thử đồ ảo (Virtual Try-on):** Tích hợp AI và thực tế ảo tăng cường (AR) cho phép người dùng "mặc thử" quần áo, thử màu son hoặc ướm thử nội thất vào không gian nhà mình trước khi quyết định thanh toán.
-* **Dự báo xu hướng:** AI phân tích dữ liệu thị trường để đưa ra các gợi ý sản phẩm sắp trở thành "hot trend", giúp người dùng luôn dẫn đầu trong các xu hướng tiêu dùng.
+* **Tìm Kiếm Bằng Hình Ảnh:** AI phân tích các thuộc tính hình học, màu sắc và kiểu dáng từ ảnh chụp của người dùng để gợi ý các sản phẩm tương đồng hiện có trên sàn.
+* **Thử Đồ Ảo (Virtual Try-on):** Tích hợp AI và thực tế ảo tăng cường (AR) cho phép người dùng "mặc thử" quần áo, thử màu son hoặc ướm thử nội thất vào không gian nhà mình trước khi quyết định thanh toán.
+* **Dự Báo Xu Hướng:** AI phân tích dữ liệu thị trường để đưa ra các gợi ý sản phẩm sắp trở thành "hot trend", giúp người dùng luôn dẫn đầu trong các xu hướng tiêu dùng.
 
 ## Giao Thông (Transportation): Cuộc Cách Mạng Xe Điện và Tự Lái
 
