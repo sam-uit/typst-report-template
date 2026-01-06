@@ -513,7 +513,7 @@ Ngoài ra, những tổ chức, địa phương, nhóm lao động không có đ
 
 Để khai thác tối đa lợi ích của AI đồng thời giảm thiểu rủi ro, cần một cách tiếp cận mang tính hệ thống, kết hợp giữa công nghệ, thể chế và phát triển con người. Một số định hướng trọng tâm:
 
-### Xây dựng khung quản trị và pháp lý cho AI
+### Xây Dựng Khung Quản Trị và Pháp Lý cho AI
 
 * Hoàn thiện khung pháp lý về bảo vệ dữ liệu cá nhân, minh bạch thuật toán, trách nhiệm giải trình và phân định trách nhiệm pháp lý khi xảy ra sai sót liên quan đến hệ thống AI.
 
@@ -521,14 +521,14 @@ Ngoài ra, những tổ chức, địa phương, nhóm lao động không có đ
 
 * Khuyến khích doanh nghiệp sử dụng AI theo cách an toàn và có trách nhiệm: hệ thống cần rõ ràng, không thiên vị, bảo vệ dữ liệu cá nhân, và ở các quyết định quan trọng thì con người phải là người quyết cuối cùng, không giao hoàn toàn cho AI.
 
-### Ưu tiên phát triển năng lực con người và kỹ năng AI
+### Ưu Tiên Phát Triển Năng Lực Con Người và Kỹ Năng AI
 
 * Triển khai các chương trình đào tạo diện rộng về hiểu biết AI căn bản, tư duy dữ liệu, kỹ năng sử dụng công cụ AI cho học sinh – sinh viên, người lao động và đội ngũ lãnh đạo.
 
 * Cần tập trung vào những kỹ năng mà máy khó làm được (như phản biện, sáng tạo, giao tiếp…) và học cách “phối hợp với AI/robot” sao cho mỗi bên làm đúng phần mạnh của mình, thay vì để AI làm thay hoặc con người làm một mình.
 * Xây dựng các chương trình đào tạo lại cho những nhóm lao động dễ bị ảnh hưởng bởi tự động hoá, như nhân viên hành chính, nhân viên chăm sóc khách hàng tuyến đầu hay một số vị trí trong nhà máy. Mục tiêu là giúp họ học kỹ năng mới để chuyển sang những công việc có giá trị cao hơn, thay vì bị mất việc khi máy móc và AI làm bớt phần việc cũ của họ.
 
-### Đầu tư hạ tầng dữ liệu và hệ sinh thái AI “Make in Vietnam”
+### Đầu Tư Hạ Tầng Dữ Liệu Và Hệ Sinh Thái AI “Make in Vietnam”
 
 * Phát triển hạ tầng dữ liệu dùng chung cho các lĩnh vực ưu tiên như y tế, giáo dục, giao thông, đô thị thông minh, với các chuẩn mở và cơ chế bảo vệ quyền riêng tư rõ ràng.
 
@@ -536,13 +536,13 @@ Ngoài ra, những tổ chức, địa phương, nhóm lao động không có đ
 
 * Tạo môi trường thử nghiệm có kiểm soát cho các ứng dụng AI mới trong tài chính, y tế, giáo dục, chính phủ số để vừa khuyến khích đổi mới, vừa kiểm soát được rủi ro.
 
-### Thúc đẩy AI vì mục tiêu phát triển bền vững và bao trùm
+### Thúc Đẩy AI vì Mục Tiêu Phát Triển Bền Vững và Bao Trùm
 
 * Định hướng các chương trình AI quốc gia không chỉ tập trung vào tăng trưởng GDP, mà còn vào giải quyết các vấn đề xã hội: tiếp cận y tế, giáo dục vùng sâu vùng xa, hỗ trợ người khuyết tật, tối ưu hoá sử dụng năng lượng và bảo vệ môi trường.
 
 * Bảo đảm mọi nhóm dân cư, đặc biệt là người lao động thu nhập thấp, doanh nghiệp nhỏ và siêu nhỏ, phụ nữ, người khuyết tật có cơ hội tiếp cận các công cụ AI trợ giúp để nâng cao năng suất và cơ hội việc làm.
 
-### Xây dựng văn hoá số và đạo đức AI
+### Xây Dựng Văn Hộ Số Và Đạo Đức AI
 
 * Đưa nội dung đạo đức số, an toàn thông tin, kỹ năng phân biệt thật giả và sử dụng AI có trách nhiệm vào chương trình giáo dục và đào tạo trong nhà trường, doanh nghiệp.
 
@@ -551,7 +551,7 @@ Ngoài ra, những tổ chức, địa phương, nhóm lao động không có đ
 * Tăng cường vai trò của truyền thông, các tổ chức nghề nghiệp và cộng đồng chuyên môn trong việc giám sát, phản biện và phổ biến các thực hành tốt về AI.
 
 
-# Kết luận
+# Kết Luận
 
 ~~Trí tuệ nhân tạo đã thực sự bước ra khỏi phòng thí nghiệm để trở thành một phần không thể thiếu của đời sống và công việc. Vai trò của AI đã chuyển từ một công cụ thụ động sang một người cộng sự chủ động, mang lại những lợi ích to lớn về năng suất, kinh tế và chất lượng sống. Tuy nhiên, chìa khóa để khai thác thành công sức mạnh của AI không nằm ở bản thân công nghệ, mà nằm ở khả năng thích ứng, học hỏi và làm chủ công nghệ của con người. Việt Nam, với sự năng động và chiến lược đúng đắn, đang đứng trước cơ hội lịch sử để tận dụng làn sóng công nghệ này, tạo ra bước nhảy vọt về phát triển kinh tế - xã hội trong kỷ nguyên số.~~
 
