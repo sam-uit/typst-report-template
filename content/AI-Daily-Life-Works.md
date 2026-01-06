@@ -155,18 +155,18 @@ Các hệ thống Chatbot AI đã trở thành cầu nối giao tiếp quan tr�
 
 Giao thông là lĩnh vực chịu tác động mạnh mẽ nhất của AI, với sự hội tụ của xe điện, xe tự lái và các dịch vụ gọi xe công nghệ.
 
-### AI trong di chuyển và giao thông
+### AI Trong Di Chuyển và Giao Thông
 
 Trên khắp thế giới có hơn 90% các vụ tai nạn giao thông là do sai lầm, sự chủ quan và sơ ý của con người. Và trong kỉ nguyên mà AI đang được thịnh hành và phát triển thì việc AI xuất hiện trong Giao thông vận tải là một bước tiến lớn để giảm thiểu nguy hiểm và gia tăng tiện ích, an toàn hơn. AI đã và đang xuất hiện trong các lĩnh vực Giao thông vận tải như:
 
-* **Bản đồ và Chỉ đường:** Các ứng Map (Google Maps, Waze, vv..) hiện nay đã tích hợp AI để dự đoán tình hình giao thông, tính toán thời gian di chuyển, tuyến đường và đưa ra các tuyến đường tối ưu hóa nhất theo thời gian thực của các loại phương tiện.
-* **Các ứng dụng đặt xe:** Thịnh hành Grab hay Be đều sử dụng AI để kết nối tài xế ở vị trí gần nhất với người đặt, hỗ trợ tính toán giá tiền cũng như lộ trình đón khách một cách tối ưu hóa.
-* **Xe tự lái:** Là một lĩnh vực hot nhận được rất nhiều sự quan tâm. Các dòng xe hiện đại như Tesla đã sử dụng AI để nhận diện mặt đường, chướng ngại vật, tính toán lộ trình cùng nhiều phương thức khác và đã có thể tự di chuyển ở bất cứ đâu, trong bất kỳ điều kiện thời tiết nào mà không cần con người hỗ trợ
+* **Bản Đồ và Chỉ Đường:** Các ứng Map (Google Maps, Waze, vv..) hiện nay đã tích hợp AI để dự đoán tình hình giao thông, tính toán thời gian di chuyển, tuyến đường và đưa ra các tuyến đường tối ưu hóa nhất theo thời gian thực của các loại phương tiện.
+* **Các Ứng Dụng Đặt Xe:** Thịnh hành Grab hay Be đều sử dụng AI để kết nối tài xế ở vị trí gần nhất với người đặt, hỗ trợ tính toán giá tiền cũng như lộ trình đón khách một cách tối ưu hóa.
+* **Xe Tự Lái:** Là một lĩnh vực hot nhận được rất nhiều sự quan tâm. Các dòng xe hiện đại như Tesla đã sử dụng AI để nhận diện mặt đường, chướng ngại vật, tính toán lộ trình cùng nhiều phương thức khác và đã có thể tự di chuyển ở bất cứ đâu, trong bất kỳ điều kiện thời tiết nào mà không cần con người hỗ trợ
 * **VinFast**, hãng xe điện toàn cầu của Việt Nam, đã tích hợp sâu AI vào các dòng xe VF8 và VF9.
   - **Hệ thống ADAS (Hỗ trợ lái xe nâng cao):** Sử dụng mạng lưới cảm biến và camera dày đặc, AI của VinFast cung cấp các tính năng tự hành cấp độ 2+ như hỗ trợ di chuyển khi ùn tắc, hỗ trợ lái trên cao tốc, và tự động chuyển làn. Đặc biệt, tính năng Smart Summon cho phép xe tự động di chuyển đến vị trí người lái trong bãi đỗ.
-  - **Trợ lý ảo ViVi:** Được phát triển bởi VinBigData, ViVi là trợ lý giọng nói tiếng Việt đa vùng miền, có khả năng hiểu các câu lệnh tự nhiên, kể chuyện cười, và điều khiển các tính năng trên xe, tạo ra trải nghiệm người dùng thân thiện và đậm chất Việt.
+  - **Trợ Lý Ảo ViVi:** Được phát triển bởi VinBigData, ViVi là trợ lý giọng nói tiếng Việt đa vùng miền, có khả năng hiểu các câu lệnh tự nhiên, kể chuyện cười, và điều khiển các tính năng trên xe, tạo ra trải nghiệm người dùng thân thiện và đậm chất Việt.
 
-### Lợi ích, thách thức của AI trong di chuyển và giao thông
+### Lợi Ích, Thách Thức Của AI Trong Di Chuyển Và Giao Thông
 
 Việc đưa AI vào lĩnh vực giao thông vận tải đã giúp tối ưu hóa toàn bộ hệ thống để hướng tới sự bền vững, an toàn và hiệu quả cho con người. Nhiều ích lợi như:
 
