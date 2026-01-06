@@ -1,11 +1,11 @@
 # Lưu Ý và Định Hướng
 ## Những Vấn Đề Cần Lưu Ý
-### Phụ thuộc vào dữ liệu và rủi ro “ảo giác” AI:
-### Giới hạn trong việc hiểu yếu tố con người và bối cảnh xã hội
-### Tác động tới việc làm và kỹ năng lao động
-### Quyền riêng tư, bảo vệ dữ liệu và niềm tin số
-### Thao túng thông tin, deepfake và xói mòn nhận thức xã hội
-### Khoảng cách số và nguy cơ bị bỏ lại phía sau
+### Phụ Thuộc vào Dữ liệu và Rủi ro “ảo giác” AI:
+### Giới hạn trong Việc Hiểu Yếu Tố Con Người và Bối Cảnh Xã Hội
+### Tác Động tới Việc Làm và Kỹ Năng Lao Động
+### Quyền Riêng Tư, Bảo Vệ Dữ Liệu và Nâng Tín Số
+### Thao Túng Thông Tin, Deepfake và Xói Mòn Nhận Thức Xã Hội
+### Khoảng Cach Số và Nguy Co Bị Bỏ Lai Phia Sau
 ## Định Hướng Tương Lai Gần
 ### Xây dựng khung quản trị và pháp lý cho AI
 ### Ưu tiên phát triển năng lực con người và kỹ năng AI
