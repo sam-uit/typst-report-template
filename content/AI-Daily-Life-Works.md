@@ -340,15 +340,15 @@ AI không hoạt động độc lập để loại bỏ con người mà đóng 
 * **Trong Lập trình:** AI không viết thay toàn bộ giải pháp mà đóng vai trò là "động cơ tăng tốc", giúp lập trình viên viết mã nhanh hơn tới 55% bằng cách tự động hóa các đoạn mã mẫu (boilerplate) và đề xuất sửa lỗi.
 * **Trong Marketing:** AI phá vỡ các rào cản về kỹ năng đồ họa hay dựng phim, giúp những người làm sáng tạo có thể hiện thực hóa những ý tưởng phức tạp chỉ thông qua các câu lệnh ngôn ngữ tự nhiên (prompts).
 
-### Sự chuyển dịch mô hình: Từ "Ra lệnh" sang "Cộng tác"
+### Sự Chuyển Dịch Mô Hình: Từ "Ra Lệnh" sang "Cộng Tác"
 
 Đây là sự thay đổi căn bản về tư duy vận hành trong kỷ nguyên 2024-2025. Thay vì máy móc chỉ chờ đợi từng lệnh đơn lẻ, AI đã chuyển mình thành **Trí tuệ Nhân tạo Tác tử (Agentic AI)** – một thực thể có khả năng chủ động:
 
 * **Từ "Người ra lệnh - Máy thực thi":** Đây là mô hình truyền thống nơi con người phải "cầm tay chỉ việc", máy móc chỉ thực hiện các phản hồi tĩnh dựa trên các câu lệnh (prompts) rời rạc.
-* **Sang "Người định hướng - Máy cộng tác":** Với sự xuất hiện của **Agentic AI**, mối quan hệ này dựa trên sự tin tưởng và phân quyền. **Agentic AI** có khả năng tự lập kế hoạch, sử dụng công cụ và thực hiện các chuỗi tác vụ phức tạp để đạt được mục tiêu cuối cùng. Con người đóng vai trò đưa ra chiến lược và thẩm định đạo đức, trong khi AI chủ động thực thi và tối ưu hóa quy trình.
-* **Mô hình Centaur (Nhân mã):** Đây là ví dụ điển hình cho sự cộng tác này, nơi trí tuệ chiến lược của con người kết hợp với sức mạnh xử lý và khả năng tự chủ của Agentic AI để tạo ra những kết quả vượt bậc.
+* **Sang "Người Định Hướng - Máy Cộng Tác":** Với sự xuất hiện của **Agentic AI**, mối quan hệ này dựa trên sự tin tưởng và phân quyền. **Agentic AI** có khả năng tự lập kế hoạch, sử dụng công cụ và thực hiện các chuỗi tác vụ phức tạp để đạt được mục tiêu cuối cùng. Con người đóng vai trò đưa ra chiến lược và thẩm định đạo đức, trong khi AI chủ động thực thi và tối ưu hóa quy trình.
+* **Mô Hình Centaur (Nhân Mã):** Đây là ví dụ điển hình cho sự cộng tác này, nơi trí tuệ chiến lược của con người kết hợp với sức mạnh xử lý và khả năng tự chủ của Agentic AI để tạo ra những kết quả vượt bậc.
 
-### Phân tích chiều sâu các mô hình cộng tác thực tế
+### Phân Tích Chiều Sâu Các Mô Hình Cộng Tác Thực Tế
 
 | Đặc điểm | Mô hình Centaur (Tri thức) | Mô hình Cobot (Sản xuất) |
 | :---- | :---- | :---- |
