@@ -17,13 +17,13 @@
 #outline-slide()
 
 // MARK: - Nội Dung Chính
-#include "content/chapter00.typ"
-#include "content/chapter01.typ"
-#include "content/chapter02.typ"
-#include "content/chapter03.typ"
-#include "content/chapter04.typ"
-#include "content/chapter05.typ"
-#include "content/chapter06.typ"
+#include "content/chapter00-slide.typ"
+#include "content/chapter01-slide.typ"
+#include "content/chapter02-slide.typ"
+#include "content/chapter03-slide.typ"
+#include "content/chapter04-slide.typ"
+#include "content/chapter05-slide.typ"
+#include "content/chapter06-slide.typ"
 
 // MARK: - Kết Thúc
 
