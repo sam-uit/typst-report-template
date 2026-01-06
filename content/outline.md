@@ -1,6 +1,7 @@
 # AI Là Gì?
 ## AI Là Gì?
 ## Tại Sao Lại Là Lúc Này?
+
 # AI Trong Đời Sống (AI in Daily Life): Từ Tiện Ích Đến Thấu Hiểu
 ## Nhà thông minh (Smart Home) và Sự tiến hóa của Không gian Sống
 ### AI giúp tự động hóa và tối ưu hóa không gian sống (Smart Home)
@@ -21,6 +22,7 @@
 ## Giao Thông (Transportation): Cuộc Cách Mạng Xe Điện và Tự Lái
 ### AI trong di chuyển và giao thông
 ### Lợi ích, thách thức của AI trong di chuyển và giao thông
+
 # AI Trong Công Việc (AI in the Workplace): Từ Công Cụ Đến Đồng Nghiệp
 ## Hợp tác Người - AI: Mô hình Centaur và Cobot
 ## Văn Phòng Thông Minh và Sự Trỗi Dậy của "Siêu Tác Tử" (Superagency)
@@ -33,6 +35,7 @@
 ## Marketing & Sáng Tạo Nội Dung
 ## Sản xuất và Chuỗi Cung ứng: Vai Trò AI Cộng Tác (Collaborative AI), Tương Lai Của Lao Động
 ## Tuyển Dụng & Nhân Sự (HR Tech)
+
 # Vai Trò và Lợi Ích Thực Tiễn
 ## Vai Trò và Ý Nghĩa
 ### Vai trò "Người Cộng sự" (Augmentation)
@@ -52,6 +55,7 @@
 ### Thúc đẩy công bằng xã hội và thu hẹp khoảng cách số
 ### Củng cố niềm tin và sự an tâm trong đời sống (Peace of Mind)
 ### Thay đổi văn hóa và mô hình vận hành tổ chức
+
 # Những Vấn Đề Cần Lưu Ý và Định Hướng Tương Lai
 ## Những Vấn Đề Cần Lưu Ý
 ## Định Hướng Tương Lai Gần
@@ -60,7 +64,8 @@
 ### Đầu tư hạ tầng dữ liệu và hệ sinh thái AI “Make in Vietnam”
 ### Thúc đẩy AI vì mục tiêu phát triển bền vững và bao trùm
 ### Xây dựng văn hoá số và đạo đức AI
-# Kết luận
+
+# Kết Luận
 ## AI Là Hiện Hữu Thực Tiễn
 ## AI Trong Đời Sống
 ## AI Trong Công Việc
