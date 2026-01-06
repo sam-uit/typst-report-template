@@ -121,7 +121,7 @@ Giáo dục là lĩnh vực AI mang lại giá trị nhân văn sâu sắc, chuy
 
 **Photomath** lại sử dụng thị giác máy tính (Computer Vision) để đọc các đề toán viết tay và sử dụng AI để giải từng bước, giúp học sinh hiểu quy trình giải toán thay vì chỉ đưa ra đáp số.
 
-### Kết luận: Người đồng hành, không phải người thay thế
+### Kết Luận: Người Đồng Hành, Không Phải Người Thay Thế
 
 AI trong giáo dục không ra đời để thay thế giáo viên hay làm thui chột tư duy của học sinh. Ngược lại, nó giải phóng con người khỏi những bài tập lặp đi lặp lại, cho phép chúng ta tập trung vào tư duy phản biện và sáng tạo. Như một câu nói phổ biến hiện nay: "AI sẽ không thay thế bạn, nhưng người biết sử dụng AI sẽ thay thế người không biết."
 
