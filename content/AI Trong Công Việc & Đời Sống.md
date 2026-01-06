@@ -221,7 +221,7 @@ Môi trường công sở đang trải qua sự thay đổi căn bản khi AI ch
 
 ### Văn phòng Thông minh và Sự trỗi dậy của "Siêu Tác tử" (Superagency)
 
-Sự tích hợp của Generative AI vào các bộ công cụ năng suất cốt lõi như Microsoft 365 (với Copilot) và Google Workspace (với Gemini) đã tạo ra một cuộc cách mạng về hiệu suất làm việc văn phòng.
+Sự tích hợp của Generative AI vào các bộ công cụ năng suất cốt lõi như Microsoft 365 (với Copilot) và Google Workspace (với Gemini) đã tạo ra một cuộc cách mạng về hiệu suất làm việc văn phòng. Gemini Enterprise hay Google Agentspace (A Space of agents) là những giải pháp như vậy, nơi các agent con Người chung bàn làm việc với các agent AI.
 
 #### Tự động hóa Tác vụ Tri thức
 
@@ -288,7 +288,7 @@ Ví dụ:
 
 Agentic AI hiện đang là 1 xu thế mới trong nội dung AI của toàn thế giới, và cũng là 1 trong những cách áp dụng AI trong công việc hiệu quả và đã được rất nhiều doanh nghiệp lớn triển khai mô hình này.
 
-Trong tất cả các lĩnh vực mà cần tương tác với số lượng khổng lồ về kiến thức và quy trình trong một doanh nghiệp trú trọng về an ninh và bảo mật như là doanh nghiệp về mảng công nghệ, thì Agentic AI là một trợ lý ảo rất cần thiết. Gemini Enterprise hay Google Agentspace (A Space of agents) là những giải pháp như vậy.
+Trong tất cả các lĩnh vực mà cần tương tác với số lượng khổng lồ về kiến thức và quy trình trong một doanh nghiệp trú trọng về an ninh và bảo mật như là doanh nghiệp về mảng công nghệ, thì Agentic AI là một trợ lý ảo rất cần thiết.
 
 **Bối cảnh 1:** Trợ lý nghiên cứu tự động (The Research Agent): Cấp trên giao 1 công việc về tìm hiểu sản phẩm có tiềm năng trên thị trường để phát triển cho doanh nghiệp., thay vì mở 1 đống tab trên trình duyệt web rồi sau đó copy paste và chắt lọc thông tin, chúng ta sẽ sử dụng AI Agent, tự động so sánh và tìm hiểu về các sản phẩm trong doanh nghiệp đang có và các sản phẩm trên thị trường và đưa ra những đánh giá, nghiên cứu, chúng ta chỉ cần chắt lọc những thông tin có ích đó và làm báo cáo.
 
