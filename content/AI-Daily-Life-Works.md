@@ -217,7 +217,7 @@ Trong tất cả các lĩnh vực mà cần tương tác với số lượng kh�
 
 ## Lập Trình & Phát Triển Phần Mềm
 
-### Sự chuyển dịch Mô hình: Từ Microservices sang "Agentic Workflows”
+### Sự Chuyển Dịch Mô Hình: Từ Microservices Sang "Agentic Workflows”
 
 Sự chuyển dịch lớn nhất trong năm 2024-2025 là từ Chatbot (hỏi-đáp) sang Agent (hỏi/yêu cầu-làm).
 
