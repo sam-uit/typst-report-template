@@ -14,6 +14,7 @@
 #include "content/chapter03.typ"
 #include "content/chapter04.typ"
 #include "content/chapter05.typ"
+#include "content/chapter06.typ"
 
 // Show appendix
 #show: appendix
