@@ -11,4 +11,4 @@
 ### Ưu Tiên Phát Triển Năng Lực Con Người Và Kỹ Năng AI
 ### Đầu Tư Hạ Tầng Dữ Liệu Và Hệ Sinh Thái AI "Make in Vietnam"
 ### Thúc Đẩy AI Vì Mục Tiêu Phát Triển Bền Vững Và Bao Trùm
-### Xây Dựng Văn Hộ Số Và Đạo Đức AI
+### Xây Dựng Văn Hóa Số Và Đạo Đức AI
