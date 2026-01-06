@@ -1,4 +1,4 @@
-# AI Là Gì?
+# Tổng Quan AI
 
 ## AI Là Gì?
 
@@ -573,4 +573,3 @@ Ngoài ra, những tổ chức, địa phương, nhóm lao động không có đ
 ## Lời Kết
 
 * Từ những phân tích trên, có thể kết luận rằng AI là một công cụ mang tính chiến lược, có khả năng tạo ra giá trị lớn nếu được ứng dụng đúng cách. Trong giai đoạn tới, việc kết hợp hài hòa giữa phát triển công nghệ AI, nâng cao năng lực con người và hoàn thiện thể chế quản lý sẽ là yếu tố then chốt nhằm đảm bảo AI đóng góp tích cực cho sự phát triển bền vững của xã hội.
-
