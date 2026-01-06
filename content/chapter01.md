@@ -27,8 +27,6 @@ Hội tụ của các yếu tố sau:
 - Dữ liệu: Sự bùng nổ của Internet, Big Data.
 - Hạ Tầng: Cloud, Data Center, HPC, GPU, TPU, NPU.
 
+## AI và Các Thành Phần Cấu Trúc
+
 ![AI-ML-DS](assets/AI-ML-DS.png)
-
-AI bây giờ, đã không còn là một lĩnh vực hay khái niệm xa lạ, nó đã và đang dần xuất hiện khắp nơi trong đời sống hiện đại, từ công việc đến giải trí, từ học tập đến nghiên cứu, và hơn thế nữa, AI đã dần trở thành công cụ đắc lực tới người cộng sự hiệu quả và thậm chí là người đồng hành tất yếu.
-
-Trong báo cáo hôm nay, chúng ta sẽ cùng điểm qua một số lĩnh vực đời sống mà AI đang xuất hiện mà thậm chí chúng ta không nhận ra, để cùng đánh giá giá trị, ý nghĩa cũng như những lo lắng đối với AI nói riêng và sự phụ thuộc hoặc tận dụng công nghệ nói chung trong xã hội hiện đại.
