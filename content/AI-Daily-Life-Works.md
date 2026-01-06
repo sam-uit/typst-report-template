@@ -371,7 +371,7 @@ Sức mạnh thực sự của AI không nằm ở khả năng tính toán khô 
 
 ## Lợi Ích Định Lượng (Đo Lường Được)
 
-### Tăng năng suất
+### Tăng Năng Suất
 
 AI giúp người lao động **hoàn thành công việc nhanh hơn và hiệu quả hơn** bằng cách tự động hóa các thao tác lặp lại và hỗ trợ tư duy.
 
@@ -389,7 +389,7 @@ Theo nghiên cứu thực tế, **người lao động sử dụng AI tiết ki�
 
 Tóm lại: AI không làm con người làm việc nhiều hơn, mà giúp họ làm việc hiệu quả hơn.
 
-### Tăng trưởng kinh tế
+### Tăng Trưởng Kinh Tế
 
 Ở **cấp độ vĩ mô**, AI không chỉ tác động đến từng cá nhân hay doanh nghiệp riêng lẻ, mà còn **đóng góp trực tiếp vào tăng trưởng kinh tế và GDP** thông qua việc **nâng cao năng suất toàn xã hội**.
 
@@ -425,12 +425,12 @@ Cụ thể:
 
 AI không chỉ giúp nền kinh tế làm tốt hơn những gì đang có, mà còn tạo ra những sản phẩm, dịch vụ và mô hình kinh doanh hoàn toàn mới. Chính điều này giúp AI trở thành một trong những động lực quan trọng thúc đẩy tăng trưởng kinh tế và GDP trong dài hạn
 
-### Tiết kiệm chi phí
+### Tiết Kiệm Chi Phí
 
 Thông qua:
 
-* **Tự động hóa** quy trình lặp lại → giảm chi phí nhân sự
-* **Tối ưu tài nguyên & năng lượng**
+* **Tự Động Hóa** Quy Trình Lặp Lại → Giảm Chi Phí Nhân Sự
+* **Tối Ưu Tài Nguyên & Năng Lượng**
 * **Giảm sai sót do con người** → giảm chi phí sửa lỗi
 
 Ví dụ thực tế:
