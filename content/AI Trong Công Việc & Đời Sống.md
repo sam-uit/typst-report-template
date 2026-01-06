@@ -231,15 +231,6 @@ AI đóng vai trò như một trợ lý thông minh, giải phóng nhân viên k
 * **Tổng hợp thông tin:** Khả năng tóm tắt các cuộc họp Teams/Meet kéo dài hàng giờ, trích xuất các điểm chính và danh sách công việc cần làm (action items) giúp nhân viên tiết kiệm thời gian đáng kể. Việc "bắt kịp" (catch-up) nội dung các cuộc họp bị bỏ lỡ nhanh hơn gấp 4 lần nhờ AI.
 * **Phân tích dữ liệu:** Trong Excel hay Google Sheets/Looker, AI cho phép người dùng truy vấn dữ liệu bằng **ngôn ngữ tự nhiên** (ví dụ: "Hãy cho tôi biết xu hướng doanh số quý 3 so với năm ngoái và vẽ biểu đồ cột"), giúp việc phân tích dữ liệu trở nên dễ tiếp cận với cả những nhân viên không chuyên về kỹ thuật.
 
-Bảng 2: So sánh Năng lực Ứng dụng của Hai Nền tảng AI Văn phòng Dẫn đầu
-
-| Tính năng | Microsoft Copilot (Microsoft 365\) | Google Gemini (Google Workspace) |
-| :---- | :---- | :---- |
-| **Mô hình nền tảng** | GPT-4 và các mô hình OpenAI. | Gemini 1.5 Pro / Flash. |
-| **Thế mạnh cốt lõi** | Tích hợp sâu vào quy trình làm việc doanh nghiệp qua Microsoft Graph. Mạnh về bảo mật và quản trị dữ liệu doanh nghiệp lớn. | Khả năng đa phương thức (xử lý video, hình ảnh, âm thanh vượt trội). Cửa sổ ngữ cảnh (Context Window) lớn (1-2 triệu tokens) cho phép xử lý tài liệu cực dài. |
-| **Hỗ trợ Hội họp** | Tóm tắt cuộc họp Teams, đề xuất nội dung thời gian thực. | Ghi chú tự động trong Google Meet ("Take notes for me"), dịch thuật trực tiếp. |
-| **Phân tích Dữ liệu** | Excel: Tạo công thức phức tạp, trực quan hóa dữ liệu, xác định xu hướng. | Sheets: Tự động phân loại dữ liệu, điền thông minh (Smart Fill), tạo công thức. |
-
 #### Hợp tác Người \- AI: Mô hình Centaur và Cobot
 
 Mô hình làm việc hiệu quả nhất hiện nay không phải là thay thế con người, mà là sự hợp tác.
