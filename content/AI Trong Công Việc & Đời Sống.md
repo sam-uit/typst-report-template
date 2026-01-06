@@ -219,6 +219,13 @@ Song song với các hữu ích mà AI mang lại cho việc di chuyển và gia
 
 Môi trường công sở đang trải qua sự thay đổi căn bản khi AI chuyển từ vai trò công cụ hỗ trợ sang vai trò "đồng nghiệp ảo" (Copilot) và tác nhân tự chủ (Agent).
 
+### Hợp tác Người \- AI: Mô hình Centaur và Cobot
+
+Mô hình làm việc hiệu quả nhất hiện nay không phải là thay thế con người, mà là sự hợp tác.
+
+* **Mô hình Centaur (Nhân mã):** Kết hợp trí tuệ chiến lược của con người với sức mạnh xử lý của AI. Ví dụ, con người đưa ra ý tưởng và khung sườn, AI thực hiện việc viết chi tiết và kiểm tra lỗi, sau đó con người tinh chỉnh lại. *Human in the loop*, con Người là người quyết định cuối cùng dựa trên sự hỗ trợ của AI hay tác nhân AI.
+* **Mô hình Cobot (Robot cộng tác):** Trong sản xuất, các robot được trang bị AI làm việc an toàn bên cạnh công nhân, hỗ trợ các việc nặng nhọc hoặc đòi hỏi độ chính xác cao, và con người chuyển thành chức năng giám sát.
+
 ### Văn phòng Thông minh và Sự trỗi dậy của "Siêu Tác tử" (Superagency)
 
 Sự tích hợp của Generative AI vào các bộ công cụ năng suất cốt lõi như Microsoft 365 (với Copilot) và Google Workspace (với Gemini) đã tạo ra một cuộc cách mạng về hiệu suất làm việc văn phòng. Gemini Enterprise hay Google Agentspace (A Space of agents) là những giải pháp như vậy, nơi các agent con Người chung bàn làm việc với các agent AI.
@@ -231,12 +238,18 @@ AI đóng vai trò như một trợ lý thông minh, giải phóng nhân viên k
 * **Tổng hợp thông tin:** Khả năng tóm tắt các cuộc họp Teams/Meet kéo dài hàng giờ, trích xuất các điểm chính và danh sách công việc cần làm (action items) giúp nhân viên tiết kiệm thời gian đáng kể. Việc "bắt kịp" (catch-up) nội dung các cuộc họp bị bỏ lỡ nhanh hơn gấp 4 lần nhờ AI.
 * **Phân tích dữ liệu:** Trong Excel hay Google Sheets/Looker, AI cho phép người dùng truy vấn dữ liệu bằng **ngôn ngữ tự nhiên** (ví dụ: "Hãy cho tôi biết xu hướng doanh số quý 3 so với năm ngoái và vẽ biểu đồ cột"), giúp việc phân tích dữ liệu trở nên dễ tiếp cận với cả những nhân viên không chuyên về kỹ thuật.
 
-#### Hợp tác Người \- AI: Mô hình Centaur và Cobot
+#### Agentic AI \- trợ lý AI có tri thức
 
-Mô hình làm việc hiệu quả nhất hiện nay không phải là thay thế con người, mà là sự hợp tác.
+Agentic AI hiện đang là 1 xu thế mới trong nội dung AI của toàn thế giới, và cũng là 1 trong những cách áp dụng AI trong công việc hiệu quả và đã được rất nhiều doanh nghiệp lớn triển khai mô hình này.
 
-* **Mô hình Centaur (Nhân mã):** Kết hợp trí tuệ chiến lược của con người với sức mạnh xử lý của AI. Ví dụ, con người đưa ra ý tưởng và khung sườn, AI thực hiện việc viết chi tiết và kiểm tra lỗi, sau đó con người tinh chỉnh lại. *Human in the loop*, con Người là người quyết định cuối cùng dựa trên sự hỗ trợ của AI hay tác nhân AI.
-* **Mô hình Cobot (Robot cộng tác):** Trong sản xuất, các robot được trang bị AI làm việc an toàn bên cạnh công nhân, hỗ trợ các việc nặng nhọc hoặc đòi hỏi độ chính xác cao, và con người chuyển thành chức năng giám sát.
+Trong tất cả các lĩnh vực mà cần tương tác với số lượng khổng lồ về kiến thức và quy trình trong một doanh nghiệp trú trọng về an ninh và bảo mật như là doanh nghiệp về mảng công nghệ, thì Agentic AI là một trợ lý ảo rất cần thiết.
+
+**Bối cảnh 1:** Trợ lý nghiên cứu tự động (The Research Agent): Cấp trên giao 1 công việc về tìm hiểu sản phẩm có tiềm năng trên thị trường để phát triển cho doanh nghiệp., thay vì mở 1 đống tab trên trình duyệt web rồi sau đó copy paste và chắt lọc thông tin, chúng ta sẽ sử dụng AI Agent, tự động so sánh và tìm hiểu về các sản phẩm trong doanh nghiệp đang có và các sản phẩm trên thị trường và đưa ra những đánh giá, nghiên cứu, chúng ta chỉ cần chắt lọc những thông tin có ích đó và làm báo cáo.
+
+**Bối Cảnh 2:** Trợ lý gửi mail & đặt lịch (The Booking Agent): 1 team dự án trong công ty gần 500 người đang cần phải đặt 1 phòng họp để chuẩn bị cho cuộc họp gấp liên quan tới dự án của mình, nhưng tìm mãi không thấy có phòng họp và khung giờ trống bởi vì quá nhiều \> Sử dụng AI Agent để tìm kiếm lịch và phòng họp trống để đặt trong ngày hôm nay, tự động, nhanh chóng và hiệu quả.
+
+* **Giải đáp thắc mắc \- (Research Agent):** Giải đáp các câu hỏi về toàn bộ các quy trình và các quy định về an ninh và bảo mật trong một doanh nghiệp. Từ đó có thể tránh các rủi ro về an ninh và bảo mật, đảm bảo được một quy trình vận hành không bị lỗ hổng.
+* **Tự động hóa quy trình \- (Automatic Workflow):** AI Agent sẽ được phân công và có tri thức để giải quyết các quy trình và hoạt động tự động hóa trong doanh nghiệp. Ví dụ như quy trình bàn giao thu hồi tài sản, gửi mail và thực hiện các quy trình như quy trình mua hàng,.... Đây là mô hình Agent-2-Agent, hoặc Agent Orchestration.
 
 ### Lập Trình & Phát Triển Phần Mềm
 
@@ -305,19 +318,6 @@ Ví dụ:
 * **Amazon Robotics:** Amazon tiếp tục là người mở đường với các robot cộng tác tiên tiến:
   * **Proteus:** Robot tự hành hoàn toàn (AMR) đầu tiên có thể di chuyển an toàn giữa các nhân viên kho mà không cần lồng bảo vệ, nhờ hệ thống cảm biến và AI tiên tiến giúp nó nhận biết và tránh né con người theo thời gian thực.
   * **Sparrow:** Cánh tay robot sử dụng thị giác máy tính và giác hút chân không để nhặt và xử lý hàng triệu loại sản phẩm có hình dạng và kích thước khác nhau. Sparrow giải phóng con người khỏi các thao tác lặp lại nhàm chán, cho phép họ tập trung vào các công việc giám sát và quản lý.
-
-### Agentic AI \- trợ lý AI có tri thức
-
-Agentic AI hiện đang là 1 xu thế mới trong nội dung AI của toàn thế giới, và cũng là 1 trong những cách áp dụng AI trong công việc hiệu quả và đã được rất nhiều doanh nghiệp lớn triển khai mô hình này.
-
-Trong tất cả các lĩnh vực mà cần tương tác với số lượng khổng lồ về kiến thức và quy trình trong một doanh nghiệp trú trọng về an ninh và bảo mật như là doanh nghiệp về mảng công nghệ, thì Agentic AI là một trợ lý ảo rất cần thiết.
-
-**Bối cảnh 1:** Trợ lý nghiên cứu tự động (The Research Agent): Cấp trên giao 1 công việc về tìm hiểu sản phẩm có tiềm năng trên thị trường để phát triển cho doanh nghiệp., thay vì mở 1 đống tab trên trình duyệt web rồi sau đó copy paste và chắt lọc thông tin, chúng ta sẽ sử dụng AI Agent, tự động so sánh và tìm hiểu về các sản phẩm trong doanh nghiệp đang có và các sản phẩm trên thị trường và đưa ra những đánh giá, nghiên cứu, chúng ta chỉ cần chắt lọc những thông tin có ích đó và làm báo cáo.
-
-**Bối Cảnh 2:** Trợ lý gửi mail & đặt lịch (The Booking Agent): 1 team dự án trong công ty gần 500 người đang cần phải đặt 1 phòng họp để chuẩn bị cho cuộc họp gấp liên quan tới dự án của mình, nhưng tìm mãi không thấy có phòng họp và khung giờ trống bởi vì quá nhiều \> Sử dụng AI Agent để tìm kiếm lịch và phòng họp trống để đặt trong ngày hôm nay, tự động, nhanh chóng và hiệu quả.
-
-* **Giải đáp thắc mắc \- (Research Agent):** Giải đáp các câu hỏi về toàn bộ các quy trình và các quy định về an ninh và bảo mật trong một doanh nghiệp. Từ đó có thể tránh các rủi ro về an ninh và bảo mật, đảm bảo được một quy trình vận hành không bị lỗ hổng.
-* **Tự động hóa quy trình \- (Automatic Workflow):** AI Agent sẽ được phân công và có tri thức để giải quyết các quy trình và hoạt động tự động hóa trong doanh nghiệp. Ví dụ như quy trình bàn giao thu hồi tài sản, gửi mail và thực hiện các quy trình như quy trình mua hàng,.... Đây là mô hình Agent-2-Agent, hoặc Agent Orchestration.
 
 ### Tuyển Dụng & Nhân Sự (HR Tech)
 
