@@ -257,12 +257,17 @@ Trong y tế, AI không thay thế bác sĩ mà trở thành "cánh tay phải" 
 - **Cơ chế:** DrAid được huấn luyện trên bộ dữ liệu khổng lồ gồm hơn 2,3 triệu hình ảnh y tế. Hệ thống hoạt động như một "bác sĩ thứ hai", tự động sàng lọc và khoanh vùng các bất thường trên ảnh X-quang ngực thẳng (như lao, tràn khí màng phổi, ung thư) trong vòng chưa đầy 5 giây với độ chính xác trên 91%.
 - **Tác động:** Giúp giảm 80-85% thời gian sàng lọc ban đầu, giảm thiểu sai sót chẩn đoán và hỗ trợ bác sĩ tại hơn 100 bệnh viện trên khắp Việt Nam.
 
-### Marketing và Tiếp thị: Kỷ nguyên của Sáng tạo Tự động hóa
+### Marketing & Sáng Tạo Nội Dung
 
 Marketing là lĩnh vực hưởng lợi lớn từ AI tạo sinh, cho phép các doanh nghiệp sản xuất nội dung với tốc độ và quy mô chưa từng có.
 
 * **Sáng tạo nội dung đa phương thức:** Các công cụ như Jasper, Copy.ai (văn bản), Midjourney, Canva (hình ảnh), Synthesia (video), Predis.ai (mạng xã hội) cho phép tạo ra các chiến dịch marketing trọn gói chỉ từ một vài câu lệnh gợi ý (prompts). Tại Việt Nam, một tỉ lệ lớn người làm marketing đã sử dụng ChatGPT cho công việc.
 * **Cá nhân hóa quy mô lớn (Mass Personalization):** AI cho phép doanh nghiệp tạo ra hàng triệu biến thể quảng cáo, mỗi biến thể được tối ưu hóa cho một cá nhân cụ thể dựa trên dữ liệu hành vi của họ. Điều này thay thế phương pháp tiếp cận "một nội dung cho tất cả" (one-size-fits-all) truyền thống, giúp tăng tỷ lệ chuyển đổi và doanh thu.
+
+Các ví dụ:
+
+- **Maika AI:** Không chỉ là phần cứng loa thông minh, Maika đã mở rộng sang hệ sinh thái phần mềm hỗ trợ công việc. **Maika AI Extension** giúp người dùng tóm tắt video YouTube, nghiên cứu từ khóa SEO, viết email và tạo nội dung marketing đa kênh một cách nhanh chóng. Các mẫu (template) nội dung được tối ưu hóa cho ngôn ngữ và văn phong tiếng Việt.
+- **LovinBot:** Cung cấp nền tảng AI White-label, cho phép các doanh nghiệp tự xây dựng hệ thống AI nội bộ (In-house AI Platform) để tạo nội dung, chatbot CSKH mà không cần đội ngũ kỹ thuật chuyên sâu. LovinBot giúp doanh nghiệp Việt tiết kiệm chi phí và giữ an toàn dữ liệu.
 
 ### Sản xuất và Chuỗi Cung ứng: Hướng tới Công nghiệp 5.0
 
