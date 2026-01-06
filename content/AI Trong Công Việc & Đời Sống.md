@@ -20,23 +20,23 @@ Môn:
 
 * Thực hiện: Nhóm 01.
 
-| MSSV | Họ Tên | NỘi Dung |
-| ----- | ----- | ----- |
-| 25410291 | Đinh Xuân Sâm | Phần 1: Giới thiệu chung (Dẫn nhập) |
-| 25410171 | Lê Thị Tú Anh | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life) |
-| 25410213 | Phan Chí Hiếu | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life) |
-| 25410183 | Nguyễn Đào Anh Đạt | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life) |
-| 25410193 | Nguyễn Minh Duy | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life) |
-| 25410338 | Lê Anh Vũ | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life) |
-| 25410179 | Giang Hải Chương | Phần 3: AI trong Công Việc & Chuyên Môn (Work) |
-| 25410239 | Phạm Tuấn Kiệt | Phần 3: AI trong Công Việc & Chuyên Môn (Work) |
-| 25410325 | Nguyễn Văn Trung | Phần 3: AI trong Công Việc & Chuyên Môn (Work) |
-| 25410319 | Đặng Hữu Toàn | Phần 4: Vai Trò và Lợi Ích Cốt Lõi (Roles & Benefits) |
-| 25410220 | Vũ Huy Hoàng | Phần 4: Vai Trò và Lợi Ích Cốt Lõi (Roles & Benefits) |
-| 25410321 | Nguyễn Điền Triết | Phần 4: Vai Trò và Lợi Ích Cốt Lõi (Roles & Benefits) |
-| 25410244 | Nguyễn Thành Lộc | Phần 5: Các Bất Cập Còn Tồn Đọng |
-| 25410204 | Trương Xuân Hậu | Phần 5: Các Bất Cập Còn Tồn Đọng |
-| 25410240 | Nguyễn Tạ Quí Lan | Phần 6: Tổng Kết/Kết Bài |
+| MSSV     | Họ Tên             | NỘi Dung                                              |
+| -------- | ------------------ | ----------------------------------------------------- |
+| 25410291 | Đinh Xuân Sâm      | Phần 1: Giới thiệu chung (Dẫn nhập)                   |
+| 25410171 | Lê Thị Tú Anh      | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life)      |
+| 25410213 | Phan Chí Hiếu      | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life)      |
+| 25410183 | Nguyễn Đào Anh Đạt | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life)      |
+| 25410193 | Nguyễn Minh Duy    | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life)      |
+| 25410338 | Lê Anh Vũ          | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life)      |
+| 25410179 | Giang Hải Chương   | Phần 3: AI trong Công Việc & Chuyên Môn (Work)        |
+| 25410239 | Phạm Tuấn Kiệt     | Phần 3: AI trong Công Việc & Chuyên Môn (Work)        |
+| 25410325 | Nguyễn Văn Trung   | Phần 3: AI trong Công Việc & Chuyên Môn (Work)        |
+| 25410319 | Đặng Hữu Toàn      | Phần 4: Vai Trò và Lợi Ích Cốt Lõi (Roles & Benefits) |
+| 25410220 | Vũ Huy Hoàng       | Phần 4: Vai Trò và Lợi Ích Cốt Lõi (Roles & Benefits) |
+| 25410321 | Nguyễn Điền Triết  | Phần 4: Vai Trò và Lợi Ích Cốt Lõi (Roles & Benefits) |
+| 25410244 | Nguyễn Thành Lộc   | Phần 5: Các Bất Cập Còn Tồn Đọng                      |
+| 25410204 | Trương Xuân Hậu    | Phần 5: Các Bất Cập Còn Tồn Đọng                      |
+| 25410240 | Nguyễn Tạ Quí Lan  | Phần 6: Tổng Kết/Kết Bài                              |
 
 ## AI là gì? Và Tại Sao Lại Là Lúc Này?
 
