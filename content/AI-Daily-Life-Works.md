@@ -268,13 +268,13 @@ Các ví dụ:
 - **Maika AI:** Không chỉ là phần cứng loa thông minh, Maika đã mở rộng sang hệ sinh thái phần mềm hỗ trợ công việc. **Maika AI Extension** giúp người dùng tóm tắt video YouTube, nghiên cứu từ khóa SEO, viết email và tạo nội dung marketing đa kênh một cách nhanh chóng. Các mẫu (template) nội dung được tối ưu hóa cho ngôn ngữ và văn phong tiếng Việt.
 - **LovinBot:** Cung cấp nền tảng AI White-label, cho phép các doanh nghiệp tự xây dựng hệ thống AI nội bộ (In-house AI Platform) để tạo nội dung, chatbot CSKH mà không cần đội ngũ kỹ thuật chuyên sâu. LovinBot giúp doanh nghiệp Việt tiết kiệm chi phí và giữ an toàn dữ liệu.
 
-## Sản xuất và Chuỗi Cung ứng: Vai Trò AI Cộng Tác (Collaborative AI), Tương Lai Của Lao Động
+## Sản Xuất và Chuỗi Cung Ứng: Vai Trò AI Cộng Tác (Collaborative AI), Tương Lai Của Lao Động
 
 Trong lĩnh vực sản xuất, AI là trái tim của Công nghiệp 4.0.
 
-* **Bảo trì dự đoán (Predictive Maintenance):** Phân tích dữ liệu từ cảm biến rung động, nhiệt độ, âm thanh của máy móc để dự báo hỏng hóc trước khi nó xảy ra, giúp giảm thời gian chết (downtime) ngoài kế hoạch.
-* **Kiểm soát chất lượng (Quality Control):** Hệ thống thị giác máy tính (Computer Vision) có thể phát hiện các lỗi sản phẩm siêu nhỏ trên dây chuyền sản xuất với tốc độ và độ chính xác vượt xa mắt người.
-* **Tối ưu hóa Logistics:** AI phân tích hàng triệu biến số (thời tiết, giao thông, giá xăng, tình trạng xe) để lập kế hoạch tuyến đường tối ưu nhất, giúp tiết kiệm nhiên liệu và thời gian giao hàng.
+* **Bảo Trì Dự Đoán (Predictive Maintenance):** Phân tích dữ liệu từ cảm biến rung động, nhiệt độ, âm thanh của máy móc để dự báo hỏng hóc trước khi nó xảy ra, giúp giảm thời gian chết (downtime) ngoài kế hoạch.
+* **Kiểm Soát Chất Lượng (Quality Control):** Hệ thống thị giác máy tính (Computer Vision) có thể phát hiện các lỗi sản phẩm siêu nhỏ trên dây chuyền sản xuất với tốc độ và độ chính xác vượt xa mắt người.
+* **Tối Ưu Hóa Logistics:** AI phân tích hàng triệu biến số (thời tiết, giao thông, giá xăng, tình trạng xe) để lập kế hoạch tuyến đường tối ưu nhất, giúp tiết kiệm nhiên liệu và thời gian giao hàng.
 
 Ví dụ:
 
