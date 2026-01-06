@@ -7,8 +7,9 @@
 
 === Giảng Viên
 
-- #data.instructor
-- Môn: IE005.
+- #text(weight: 500, data.instructor)
+- Mã Môn: IE005.
+- Tên Môn: Giới Thiệu Nghành Công Nghệ Thông Tin.
 
 === Nhà Trường
 
