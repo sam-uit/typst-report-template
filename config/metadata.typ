@@ -29,7 +29,7 @@
   ),
   assignment: (
     title: "AI TRONG ĐỜI SỐNG VÀ CÔNG VIỆC",
-    subtitle: "Thực Tế, Giá Trị và Những Nghi Ngờ",
+    subtitle: "Ứng Dụng, Giá Trị và Lưu Ý",
     type: "Luận Án",
     date: "TP. Hồ Chí Minh, Tháng 01 Năm 2026",
     duration: "15 phút",
