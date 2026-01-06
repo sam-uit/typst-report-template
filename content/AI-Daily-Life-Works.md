@@ -26,11 +26,11 @@ Trong báo cáo hôm nay, chúng ta sẽ cùng điểm qua một số lĩnh vự
 
 Ứng dụng của AI trong đời sống hàng ngày đang chuyển dịch từ mô hình "điều khiển mệnh lệnh" sang mô hình "trí tuệ môi trường" (Ambient Intelligence), nơi công nghệ trở nên vô hình và phục vụ con người một cách chủ động dựa trên ngữ cảnh.
 
-## Nhà thông minh (Smart Home) và Sự tiến hóa của Không gian Sống
+## Nhà Thông Minh (Smart Home) và Sự Tiến Hóa của Không Gian Sống
 
 Khái niệm nhà thông minh năm 2025 đã vượt xa các kịch bản tự động hóa đơn giản (như bật đèn khi mở cửa). Trong nhà thông minh, AI giúp các thiết bị có khả năng nhận biết ngữ cảnh, học từ thói quen sinh hoạt và tự điều chỉnh hoạt động sao cho phù hợp với nhu cầu của người sử dụng, mà không cần can thiệp trực tiếp.
 
-### AI giúp tự động hóa và tối ưu hóa không gian sống (Smart Home)
+### AI Giúp Tự Động Hóa và Tối Ưu Hóa Không Gian Sống (Smart Home)
 
 **Tự động hóa** là một trong những lợi ích rõ rệt nhất của AI trong nhà thông minh. Các thiết bị trong gia đình như đèn chiếu sáng, điều hòa, quạt, máy nước nóng hay rèm cửa có thể được kết nối và điều khiển thông qua hệ thống AI trung tâm. Thay vì phải thao tác thủ công, người dùng chỉ cần cài đặt sẵn hoặc ra lệnh bằng giọng nói.
 
@@ -40,7 +40,7 @@ Ngoài ra, các thiết bị thông minh còn giúp **tối ưu hóa việc sử
 
 Có thể nói, AI đã biến không gian sống từ bị động thành **một môi trường thông minh, biết thích nghi với con người**.
 
-### AI nâng cao chất lượng sống và an toàn cho con người (Ambient Intelligence)
+### AI Nâng Cao Chất Lượng Sống và An Toàn Cho Con Người (Ambient Intelligence)
 
 Bên cạnh sự tiện ích, AI còn đóng vai trò quan trọng trong việc **nâng cao chất lượng sống và đảm bảo an toàn**. Các hệ thống camera thông minh được tích hợp trí tuệ nhân tạo có khả năng nhận diện khuôn mặt, phân biệt giữa người quen và người lạ, từ đó hạn chế nguy cơ xâm nhập trái phép.
 
@@ -52,7 +52,7 @@ Ngoài ra, AI trong nhà thông minh còn đóng vai trò như một **trợ lý
 
 Như vậy, AI không chỉ làm cho ngôi nhà thông minh hơn mà còn **tạo ra một không gian sống an toàn, nhân văn và gần gũi với con người**.
 
-### Sự tiến hóa của không gian sống thông minh
+### Sự Tiến Hóa của Không Gian Sống Thông Minh
 
 Từ các *tiện ích đơn lẻ*, AI đang dần biến ngôi nhà thành một **không gian sống thông minh**, *có khả năng học hỏi, dự đoán và thích nghi* với nhu cầu của con người. Ngôi nhà không chỉ phản ứng theo mệnh lệnh mà còn *chủ động* đề xuất các giải pháp nhằm nâng cao chất lượng cuộc sống.
 
