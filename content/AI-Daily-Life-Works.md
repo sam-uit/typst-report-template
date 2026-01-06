@@ -94,7 +94,7 @@ Bảng 1: So sánh Đặc điểm Hệ thống Nhà thông minh Việt Nam và Q
 
 AI đã biến đổi ngành giải trí từ mô hình phát sóng đại chúng (one-to-many) sang mô hình phân phối cá nhân hóa (one-to-one), nơi mỗi người dùng có một trải nghiệm nội dung độc bản.
 
-### Thuật toán Đề xuất và Siêu cá nhân hóa (Hyper-personalization)
+### Thuật Toán Đề Xuất và Siêu Cá Nhân Hóa (Hyper-personalization)
 
 Các nền tảng giải trí như Netflix, Spotify, TikTok và YouTube đã nâng tầm thuật toán đề xuất lên mức độ nghệ thuật nhờ AI. Không chỉ dựa vào lịch sử xem, AI phân tích hàng nghìn điểm dữ liệu vi mô: thời điểm trong ngày, thiết bị sử dụng, thời lượng xem, hành động tua nhanh hay tạm dừng, và thậm chí cả bối cảnh văn hóa.
 
