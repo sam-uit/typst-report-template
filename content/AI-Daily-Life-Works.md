@@ -542,7 +542,7 @@ Ngoài ra, những tổ chức, địa phương, nhóm lao động không có đ
 
 * Bảo đảm mọi nhóm dân cư, đặc biệt là người lao động thu nhập thấp, doanh nghiệp nhỏ và siêu nhỏ, phụ nữ, người khuyết tật có cơ hội tiếp cận các công cụ AI trợ giúp để nâng cao năng suất và cơ hội việc làm.
 
-### Xây Dựng Văn Hộ Số Và Đạo Đức AI
+### Xây Dựng Văn Hóa Số Và Đạo Đức AI
 
 * Đưa nội dung đạo đức số, an toàn thông tin, kỹ năng phân biệt thật giả và sử dụng AI có trách nhiệm vào chương trình giáo dục và đào tạo trong nhà trường, doanh nghiệp.
 
