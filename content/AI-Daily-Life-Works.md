@@ -571,7 +571,7 @@ Ngoài ra, những tổ chức, địa phương, nhóm lao động không có đ
 
 * Ở góc độ kinh tế – xã hội, AI mang lại những giá trị rõ rệt trong việc tối ưu hóa chi phí, nâng cao hiệu quả sản xuất – kinh doanh và thúc đẩy tăng trưởng kinh tế. Thực tiễn tại Việt Nam cho thấy AI đang từng bước được ứng dụng vào nhiều lĩnh vực như sản xuất, tài chính, dịch vụ và quản lý, qua đó khẳng định tiềm năng lớn của AI trong quá trình chuyển đổi số quốc gia.
 
-## Kết Luận Cuối Cùng
+## Lời Kết
 
 * Từ những phân tích trên, có thể kết luận rằng AI là một công cụ mang tính chiến lược, có khả năng tạo ra giá trị lớn nếu được ứng dụng đúng cách. Trong giai đoạn tới, việc kết hợp hài hòa giữa phát triển công nghệ AI, nâng cao năng lực con người và hoàn thiện thể chế quản lý sẽ là yếu tố then chốt nhằm đảm bảo AI đóng góp tích cực cho sự phát triển bền vững của xã hội.
 
