@@ -18,7 +18,7 @@ Môn:
 
 ## Giới Thiệu Nhóm 01
 
-* Thực hiện: Nhóm 01\.
+* Thực hiện: Nhóm 01.
 
 | MSSV | Họ Tên | [IE005 Project](https://drive.google.com/drive/folders/1-JJWE0ZXXR6tuMk9ADU3qIP2xfAd4TYD?usp=drive_link) (01/01/2026) |
 | ----- | ----- | ----- |
@@ -38,7 +38,7 @@ Môn:
 | 25410204 | Trương Xuân Hậu | Phần 5: Các Bất Cập Còn Tồn Đọng |
 | 25410240 | Nguyễn Tạ Quí Lan | Phần 6: Tổng Kết/Kết Bài |
 
-## 1\. AI là gì? Và Tại Sao Lại Là Lúc Này?
+## 1. AI là gì? Và Tại Sao Lại Là Lúc Này?
 
 AI (Artificial Intelligence) là một lĩnh vực không mới, đã được manh nha từ đầu thế kỷ 20, nhưng mãi tới đầu thế kỷ 21, hay ngày nay, mới thực sự trỗi dậy và đi vào đời sống của xã hội.
 
@@ -58,7 +58,7 @@ AI bây giờ, đã không còn là một lĩnh vực hay khái niệm xa lạ, 
 
 Trong báo cáo hôm nay, chúng ta sẽ cùng điểm qua một số lĩnh vực đời sống mà AI đang xuất hiện mà thậm chí chúng ta không nhận ra, để cùng đánh giá giá trị, ý nghĩa cũng như những lo lắng đối với AI nói riêng và sự phụ thuộc công nghệ nói chung trong xã hội hiện đại.
 
-## 2\. Ứng dụng AI trong Đời Sống
+## 2. Ứng dụng AI trong Đời Sống
 
 * Từ Tiện ích đến "Trí thông minh Môi trường" (Ambient Intelligence)
 
@@ -191,7 +191,7 @@ Việc đưa AI vào lĩnh vực giao thông vận tải đã giúp tối ưu h�
 
 Song song với các hữu ích mà AI mang lại cho việc di chuyển và giao thông thì còn nhiều hạn chế, thách thức cần đối mặt như **An ninh mạng, sự tin tưởng của người dùng và tình trạng hạ tầng kỹ thuật cũng như công nghệ kỹ thuật…**
 
-## 3\. Ứng dụng AI trong Công Việc
+## 3. Ứng dụng AI trong Công Việc
 
 * Tái Định hình Năng suất và Quy trình
 
@@ -321,7 +321,7 @@ Nếu những phần trước chúng ta nói về việc AI hỗ trợ viết m�
   * **Mô phỏng sự cố dựa trên dữ liệu thực:** AI phân tích lịch sử sự cố (Post-mortems) để tạo ra các kịch bản kiểm thử "Chaos" sát với thực tế nhất (ví dụ: độ trễ mạng tăng đột ngột ở một microservice cụ thể).
   * **Dự báo điểm gãy (Failure Prediction):** Thay vì chờ hệ thống sập, AI phân tích các tín hiệu yếu (weak signals) để dự báo thành phần nào có nguy cơ bị lỗi cao nhất và đề xuất phương án gia cố trước khi sự cố xảy ra.
 
-## 4\. Thực tiễn Triển khai AI tại Việt Nam
+## 4. Thực tiễn Triển khai AI tại Việt Nam
 
 * Điển hình và Bài học
 
@@ -360,7 +360,7 @@ Bên cạnh các ông lớn quốc tế, các giải pháp AI "Make in Vietnam" 
 
 Mặc dù đạt được những bước tiến lớn, Việt Nam vẫn đối mặt với thách thức về nhân lực. 55% doanh nghiệp cho biết thiếu hụt nhân sự có kỹ năng AI là rào cản lớn nhất.30 Phần lớn doanh nghiệp vẫn dừng lại ở mức ứng dụng cơ bản, chưa khai thác hết tiềm năng của AI để chuyển đổi mô hình kinh doanh cốt lõi. Tuy nhiên, sự cởi mở của người dùng Việt (78% người dùng trực tuyến đã sử dụng AI) và sự hỗ trợ của Chính phủ là động lực mạnh mẽ cho sự phát triển trong tương lai.34
 
-## 5\. Vai trò và Lợi ích Thực tiễn
+## 5. Vai trò và Lợi ích Thực tiễn
 
 Tổng hợp từ các phân tích trên, có thể đúc kết vai trò và lợi ích của AI qua các khía cạnh cốt lõi sau:
 
@@ -515,7 +515,7 @@ Ví dụ thực tế:
 * **Xây dựng văn hóa số:** AI thúc đẩy việc hình thành các bộ quy tắc ứng xử mới, nâng cao kỹ năng phản biện và quản trị "ảo giác AI", giúp tổ chức trở nên minh bạch và chuyên nghiệp hơn.
 * **Tối ưu hóa sự gắn kết nhân viên:** Bằng cách loại bỏ sự nhàm chán (drudgery) trong công việc, AI giúp giảm áp lực và quá tải, từ đó cải thiện sức khỏe tinh thần và sự hài lòng của nhân viên đối với tổ chức.
 
-## 6\. Những Vấn đề Cần Lưu ý và Định hướng Tương lai
+## 6. Những Vấn đề Cần Lưu ý và Định hướng Tương lai
 
 Trong bối cảnh AI đã đi từ “công cụ hỗ trợ” sang “người cộng sự” trong cả đời sống và công việc, câu hỏi quan trọng không còn là “AI làm được gì?” mà là “Con người sẽ tổ chức, quản trị và đồng hành với AI như thế nào cho an toàn, hiệu quả và nhân văn?”. Phần này tổng hợp các vấn đề cần lưu ý và đề xuất một số định hướng cho giai đoạn 2025–2030, đặc biệt trong bối cảnh Việt Nam đang tăng tốc chuyển đổi số và ứng dụng AI ở quy mô quốc gia.
 
@@ -570,7 +570,7 @@ Trong bối cảnh AI đã đi từ “công cụ hỗ trợ” sang “người
 * Tăng cường vai trò của truyền thông, các tổ chức nghề nghiệp và cộng đồng chuyên môn trong việc giám sát, phản biện và phổ biến các thực hành tốt về AI.
 
 
-## 7\. Kết luận
+## 7. Kết luận
 
 ~~Trí tuệ nhân tạo đã thực sự bước ra khỏi phòng thí nghiệm để trở thành một phần không thể thiếu của đời sống và công việc. Vai trò của AI đã chuyển từ một công cụ thụ động sang một người cộng sự chủ động, mang lại những lợi ích to lớn về năng suất, kinh tế và chất lượng sống. Tuy nhiên, chìa khóa để khai thác thành công sức mạnh của AI không nằm ở bản thân công nghệ, mà nằm ở khả năng thích ứng, học hỏi và làm chủ công nghệ của con người. Việt Nam, với sự năng động và chiến lược đúng đắn, đang đứng trước cơ hội lịch sử để tận dụng làn sóng công nghệ này, tạo ra bước nhảy vọt về phát triển kinh tế - xã hội trong kỷ nguyên số.~~
 
