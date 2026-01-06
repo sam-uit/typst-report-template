@@ -336,29 +336,29 @@ Việc ứng dụng **Assistive AI** trong giải pháp **AI-assisted Career Pro
 
 Hệ thống đóng vai trò như một trợ lý hỗ trợ nghề nghiệp, giúp người lao động thể hiện năng lực của mình thông qua những hình thức đơn giản và gần gũi, từ đó tối ưu hóa quá trình kết nối giữa cung và cầu lao động.
 
-### Từ tự động hóa đến kiến trúc backend tác nhân (Agentic Backend)
+### Ứng Dụng Kỹ Thuật & Backend: Phần Chìm Của Tảng Băng Số
 
-#### Sự chuyển dịch Mô hình: Từ Microservices sang "Agentic Workflows"
+Đằng sau các ứng dụng hào nhoáng là một hạ tầng kỹ thuật được vận hành bởi AI, đảm bảo sự ổn định và an toàn cho hệ thống.
+
+#### Sự chuyển dịch Mô hình: Từ Microservices sang "Agentic Workflows”
+
+Sự chuyển dịch lớn nhất trong năm 2024-2025 là từ Chatbot (hỏi-đáp) sang Agent (hỏi/yêu cầu-làm).
 
 Nếu những phần trước chúng ta nói về việc AI hỗ trợ viết mã, thì phần này đánh dấu sự chuyển dịch sang Agentic AI (AI tác nhân). Backend không chỉ là nơi xử lý logic tĩnh mà trở thành môi trường điều phối các tác nhân AI có khả năng suy luận, lập kế hoạch và thực thi chuỗi tác vụ phức tạp.
 
-*  **Sự trỗi dậy của Kiến trúc Tác nhân (Agentic Architecture)**
-  Mô hình "Prompt-Response" đơn giản đang được thay thế bằng các quy trình làm việc của tác nhân (Agentic Workflows). Thay vì chỉ gọi API đơn lẻ, backend giờ đây đóng vai trò là "Orchestrator" (Người điều phối) cho các tác nhân AI:
+*  **Sự trỗi dậy của Kiến trúc Tác nhân (Agentic Architecture)**: Mô hình "Prompt-Response" đơn giản đang được thay thế bằng các quy trình làm việc của tác nhân (Agentic Workflows). Thay vì chỉ gọi API đơn lẻ, backend giờ đây đóng vai trò là "Orchestrator" (Người điều phối) cho các tác nhân AI:
   * **Mẫu thiết kế Saga Orchestration:** Sử dụng các framework như LangGraph hoặc AWS Step Functions để quản lý trạng thái của các tác nhân AI khi chúng thực hiện các chuỗi tác vụ dài (ví dụ: Tác nhân A tìm dữ liệu \-\> Tác nhân B phân tích \-\> Tác nhân C ra quyết định). Nếu một bước thất bại, hệ thống tự động kích hoạt quy trình bù trừ (compensating transaction) thông minh hơn nhờ AI suy luận.
   * **Scatter-Gather Pattern cho LLM:** Backend chia nhỏ một yêu cầu phức tạp thành nhiều tác vụ con, gửi song song đến các mô hình chuyên biệt (Specialized Agents) để xử lý, sau đó tổng hợp kết quả. Điều này giúp giảm độ trễ và tăng độ chính xác so với việc dùng một mô hình LLM khổng lồ.
-
-* **Model Context Protocol (MCP) \- Chuẩn giao tiếp mới**
-  Sự ra đời của giao thức MCP (Model Context Protocol) đang thay đổi cách backend kết nối với AI. MCP cho phép các trợ lý AI truy cập an toàn vào dữ liệu thời gian thực (logs, database) của hệ thống backend để chẩn đoán lỗi hoặc thực thi lệnh mà không cần hard-code các tích hợp. Tuy nhiên, điều này cũng mở ra rủi ro bảo mật mới nếu các máy chủ MCP không được giám sát chặt chẽ.
+  
+*  **Model Context Protocol (MCP) \- Chuẩn giao tiếp mới**: Sự ra đời của giao thức MCP (Model Context Protocol) đang thay đổi cách backend kết nối với AI. MCP cho phép các trợ lý AI truy cập an toàn vào dữ liệu thời gian thực (logs, database) của hệ thống backend để chẩn đoán lỗi hoặc thực thi lệnh mà không cần hard-code các tích hợp. Tuy nhiên, điều này cũng mở ra rủi ro bảo mật mới nếu các máy chủ MCP không được giám sát chặt chẽ.
 
 #### DevSecOps 2.0: Generative IaC và Chaos Engineering
 
-* **Generative Infrastructure as Code (IaC)**
-  Vai trò của DevOps đang thay đổi triệt để. Thay vì viết thủ công hàng nghìn dòng Terraform hay CloudFormation, các kỹ sư đang sử dụng AI để tạo ra toàn bộ kiến trúc hạ tầng từ mô tả ngôn ngữ tự nhiên hoặc sơ đồ kiến trúc.
+* **Generative Infrastructure as Code (IaC)**: Vai trò của DevOps đang thay đổi triệt để. Thay vì viết thủ công hàng nghìn dòng Terraform hay CloudFormation, các kỹ sư đang sử dụng AI để tạo ra toàn bộ kiến trúc hạ tầng từ mô tả ngôn ngữ tự nhiên hoặc sơ đồ kiến trúc.
   * **Tự động hóa Terraform/CloudFormation:** Các công cụ AI hiện nay có thể "dịch" yêu cầu như "Triển khai cụm Kubernetes với 3 node worker, mạng riêng ảo và backup hàng ngày trên AWS us-east-1" thành mã IaC tuân thủ các tiêu chuẩn bảo mật (PCI DSS, HIPAA) ngay lập tức.
   * **Phát hiện sai lệch (Drift Detection):** AI liên tục so sánh trạng thái thực tế của hạ tầng với mã nguồn IaC để phát hiện và tự động sửa chữa các thay đổi không mong muốn (configuration drift).
-
-* **AI-Driven Chaos Engineering (Kỹ thuật hỗn loạn dẫn dắt bởi AI)**
-  Chaos Engineering truyền thống thường là ngẫu nhiên. Trong năm 2025, AI biến nó thành quy trình có mục tiêu và dự báo được:
+  
+* **AI-Driven Chaos Engineering (Kỹ thuật hỗn loạn dẫn dắt bởi AI)**”: Chaos Engineering (một kỹ thuật trong phát triển và kiểm thử phần mềm) truyền thống thường là ngẫu nhiên. Trong năm 2025, AI biến nó thành quy trình có mục tiêu và dự báo được:
   * **Mô phỏng sự cố dựa trên dữ liệu thực:** AI phân tích lịch sử sự cố (Post-mortems) để tạo ra các kịch bản kiểm thử "Chaos" sát với thực tế nhất (ví dụ: độ trễ mạng tăng đột ngột ở một microservice cụ thể).
   * **Dự báo điểm gãy (Failure Prediction):** Thay vì chờ hệ thống sập, AI phân tích các tín hiệu yếu (weak signals) để dự báo thành phần nào có nguy cơ bị lỗi cao nhất và đề xuất phương án gia cố trước khi sự cố xảy ra.
 
