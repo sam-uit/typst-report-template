@@ -1,4 +1,4 @@
-# Trí Tuệ Nhân Tạo (AI) - Tổng Quan
+# Tổng Quan AI
 
 ## AI Là Gì?
 
