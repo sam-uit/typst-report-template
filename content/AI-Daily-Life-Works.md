@@ -485,15 +485,15 @@ Trong bối cảnh AI đã đi từ “công cụ hỗ trợ” sang “người
 
 ## Những Vấn Đề Cần Lưu Ý
 
-### Phụ Thuộc vào Dữ liệu và Rủi ro “ảo giác” AI
+### Phụ Thuộc Vào Dữ Liệu và Rủi Ro “Ảo Giác” AI
 
 Các hệ thống AI hiện nay vẫn phụ thuộc hoàn toàn vào dữ liệu đầu vào; nếu dữ liệu sai lệch, lỗi thời hoặc mang định kiến, kết quả mô hình tạo ra cũng sẽ sai nhưng được trình bày rất tự tin và thuyết phục, đặc biệt với các mô hình sinh nội dung và Agentic AI. Trong các lĩnh vực nhạy cảm như y tế, pháp lý, tài chính hay nhân sự, nguy cơ đưa ra quyết định dựa trên kết quả “ảo giác” này có thể dẫn đến thiệt hại lớn về kinh tế, pháp lý và danh dự tổ chức
 
-### Giới hạn trong Việc Hiểu Yếu Tố Con Người và Bối Cảnh Xã Hội
+### Giới Hạn Trong Việc Hiểu Yếu Tố Con Người và Bối Cảnh Xã Hội
 
 AI hiện chưa thể hiểu sâu sắc các yếu tố văn hoá tổ chức, động lực nội tại, cảm xúc và những sắc thái tinh tế trong mối quan hệ giữa con người với con người. Việc sử dụng AI vào đánh giá nhân sự, ra quyết định tuyển dụng, thăng tiến hay kỷ luật nếu thiếu kiểm soát có thể làm gia tăng cảm giác bất công, xói mòn niềm tin nội bộ và làm tổn hại văn hoá doanh nghiệp.
 
-### Tác Động tới Việc Làm và Kỹ Năng Lao Động
+### Tác Động Đến Việc Làm và Kỹ Năng Lao Động
 
 Nhiều công việc lặp lại đang bị tự động hoá nhanh, trong khi người lao động chưa được học kịp các kỹ năng mới phù hợp với thời đại AI, nhất là lao động phổ thông và cấp trung. Nếu doanh nghiệp và nhà nước không có kế hoạch đào tạo, nâng cấp kỹ năng rõ ràng, xã hội rất dễ rơi vào cảnh “nhiều người cần việc nhưng lại thiếu đúng kỹ năng”, khiến khoảng cách giữa người có tay nghề cao và người ít kỹ năng ngày càng lớn
 
