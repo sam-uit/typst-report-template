@@ -1,46 +1,12 @@
-# Giới Thiệu
+# AI Là Gì?
 
-## Lời Cảm Ơn
-
-Trường:
-
-* Đại Học Quốc Gia Thành Phố Hồ Chí Minh.
-* Trường Đại Học Công Nghệ Thông Tin.
-* Khoa Khoa Học và Kỹ Thuật Thông Tin.
-
-Môn:
-
-* Mã Môn: IE005
-* Tên Môn: Giới Thiệu Nghành Công Nghệ Thông Tin.
-* Giảng Viên: Ths. Nguyễn Thị Thùy Trâm
-
-## Nhóm 01
-
-* Thực hiện: Nhóm 01.
-
-| MSSV     | Họ Tên             | NỘi Dung                                              |
-| -------- | ------------------ | ----------------------------------------------------- |
-| 25410291 | Đinh Xuân Sâm      | Phần 1: Giới thiệu chung (Dẫn nhập)                   |
-| 25410171 | Lê Thị Tú Anh      | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life)      |
-| 25410213 | Phan Chí Hiếu      | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life)      |
-| 25410183 | Nguyễn Đào Anh Đạt | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life)      |
-| 25410193 | Nguyễn Minh Duy    | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life)      |
-| 25410338 | Lê Anh Vũ          | Phần 2: AI trong Đời Sống Hằng Ngày (Daily Life)      |
-| 25410179 | Giang Hải Chương   | Phần 3: AI trong Công Việc & Chuyên Môn (Work)        |
-| 25410239 | Phạm Tuấn Kiệt     | Phần 3: AI trong Công Việc & Chuyên Môn (Work)        |
-| 25410325 | Nguyễn Văn Trung   | Phần 3: AI trong Công Việc & Chuyên Môn (Work)        |
-| 25410319 | Đặng Hữu Toàn      | Phần 4: Vai Trò và Lợi Ích Cốt Lõi (Roles & Benefits) |
-| 25410220 | Vũ Huy Hoàng       | Phần 4: Vai Trò và Lợi Ích Cốt Lõi (Roles & Benefits) |
-| 25410321 | Nguyễn Điền Triết  | Phần 4: Vai Trò và Lợi Ích Cốt Lõi (Roles & Benefits) |
-| 25410244 | Nguyễn Thành Lộc   | Phần 5: Các Bất Cập Còn Tồn Đọng                      |
-| 25410204 | Trương Xuân Hậu    | Phần 5: Các Bất Cập Còn Tồn Đọng                      |
-| 25410240 | Nguyễn Tạ Quí Lan  | Phần 6: Tổng Kết/Kết Bài                              |
-
-## AI Là Gì? Và Tại Sao Lại Là Lúc Này?
+## AI Là Gì?
 
 AI (Artificial Intelligence) là một lĩnh vực không mới, đã được manh nha từ đầu thế kỷ 20, nhưng mãi tới đầu thế kỷ 21, hay ngày nay, mới thực sự trỗi dậy và đi vào đời sống của xã hội.
 
 Vậy, AI là gì? AI hay Trí Tuệ Nhân Tạo, là một lĩnh vực của Khoa Học Máy Tính tập trung nghiên cứu xây dựng một mô hình trí tuệ cho các hệ thống máy tính, nhằm mô phỏng trí tuệ của con người. Mục đích giúp máy móc thực hiện các nhiệm vụ liên quan đến trí thông minh của con người, như học tập, suy luận, giải quyết vấn đề, nhận thức và đưa ra quyết định, thậm chí có cả cảm xúc tương tự như con Người thật.
+
+## Tại Sao Lại Là Lúc Này?
 
 Ý tưởng về “trí thông minh giống con Người” đã xuất hiện từ hàng ngàn năm, và bắt đầu được gọi rõ tên là AI (Trí Thông Minh Nhân Tạo) và nghiên cứu sâu vào giữa thế kỷ 20 nhưng chưa thể thành hiện thực. Cho tới gần đây, vào đầu thế kỷ 21, đặc biệt từ những năm 2010, với sự bùng nổ và lớn mạnh của Internet cho phép thế giới có lượng dữ liệu khổng lồ (Big Data), cũng như hạ tầng phần cứng phát triển (GPU/TPU/NPU), và các Trung Tâm Dữ Liệu (Data Center) xuất hiện với số lượng lớn, AI đã dần xuất hiện rõ ràng hơn và dần đi vào đời sống xã hội chúng ta.
 
