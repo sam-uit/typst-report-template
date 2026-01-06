@@ -29,8 +29,8 @@
 
 // = Q&A
 
-// #focus-slide[
-//   #smallcaps(lorem(10))
-// ]
+#focus-slide[
+  Xin Cảm Ơn!
+]
 
-#ending-slide(title: [Xin Cảm Ơn!])[Questions?]
+// #ending-slide(title: [Xin Cảm Ơn!])[Questions?]
