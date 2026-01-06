@@ -1,6 +1,6 @@
-# TRÍ TUỆ NHÂN TẠO (AI) TRONG ĐỜI SỐNG VÀ CÔNG VIỆC (2024-2025)
+# TRÍ TUỆ NHÂN TẠO (AI) TRONG ĐỜI SỐNG VÀ CÔNG VIỆC
 
-* CHUYỂN ĐỔI SỐ, CƠ HỘI, HIỆN TRẠNG và THÁCH THỨC
+* CHUYỂN ĐỔI SỐ, CƠ HỘI, HIỆN TRẠNG và THÁCH THỨC.
 
 ## Lời Cảm Ơn
 
