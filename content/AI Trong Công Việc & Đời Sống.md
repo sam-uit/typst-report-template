@@ -146,33 +146,33 @@ AI trong giáo dục không ra đời để thay thế giáo viên hay làm thui
 
 Việc tận dụng AI trong học tập cá nhân không còn là một lựa chọn, mà là một kỹ năng sinh tồn trong kỷ nguyên tri thức mới.
 
-## Cách mạng trong Mua sắm và Dịch vụ Khách hàng
+### Cách mạng trong Mua sắm và Dịch vụ Khách hàng
 
 Sự kết hợp giữa dữ liệu lớn (Big Data) và trí tuệ nhân tạo (AI) đang chuyển dịch trọng tâm ngành bán lẻ từ "bán hàng đại trà" sang "cá nhân hóa sâu sắc" và "hỗ trợ tức thì", giúp tối ưu hóa hành trình mua sắm của người tiêu dùng.
 
-### Cá nhân hóa Hành trình và Công cụ Gợi ý
+#### Cá nhân hóa Hành trình và Công cụ Gợi ý
 
 AI đóng vai trò như một tư vấn viên chuyên nghiệp, thấu hiểu sở thích và nhu cầu của từng khách hàng trên các sàn thương mại điện tử (TMĐT) như Shopee hay Lazada.
 
 * **Cơ chế hoạt động:** Các thuật toán Học máy (Machine Learning) phân tích lịch sử tìm kiếm, hành vi nhấp chuột và xu hướng tiêu dùng để mã hóa thành các hồ sơ sở thích riêng biệt cho từng người dùng.
 * **Hiệu quả thực tiễn:** Người dùng cảm thấy hài lòng hơn khi các sản phẩm "đúng ý" tự động hiển thị, giúp giảm đáng kể thời gian tìm kiếm và tăng tỷ lệ chuyển đổi đơn hàng cho doanh nghiệp.
 
-### Chatbot CSKH và Tương tác Tự động 24/7
+#### Chatbot CSKH và Tương tác Tự động 24/7
 
 Các hệ thống Chatbot AI đã trở thành cầu nối giao tiếp quan trọng, thay đổi hoàn toàn cách thức doanh nghiệp chăm sóc và hỗ trợ khách hàng.
 
 * **Khả năng phản hồi tức thì:** Chatbot AI có khả năng lắng nghe, phân tích các thắc mắc về đơn hàng hoặc khiếu nại và đưa ra giải đáp ngay lập tức tại mọi thời điểm trong ngày.
 * **Thấu hiểu ngữ cảnh:** Nhờ kỹ thuật Xử lý ngôn ngữ tự nhiên (NLP), AI không chỉ trả lời theo kịch bản cứng nhắc mà còn có thể nhận diện ý định và cảm xúc của khách hàng để đưa ra cách ứng xử phù hợp.
 
-### Công nghệ Tìm kiếm và Thử nghiệm Trực quan
+#### Công nghệ Tìm kiếm và Thử nghiệm Trực quan
 
 * **Tìm kiếm bằng hình ảnh:** AI phân tích các thuộc tính hình học, màu sắc và kiểu dáng từ ảnh chụp của người dùng để gợi ý các sản phẩm tương đồng hiện có trên sàn.
 * **Thử đồ ảo (Virtual Try-on):** Tích hợp AI và thực tế ảo tăng cường (AR) cho phép người dùng "mặc thử" quần áo, thử màu son hoặc ướm thử nội thất vào không gian nhà mình trước khi quyết định thanh toán.
 * **Dự báo xu hướng:** AI phân tích dữ liệu thị trường để đưa ra các gợi ý sản phẩm sắp trở thành "hot trend", giúp người dùng luôn dẫn đầu trong các xu hướng tiêu dùng.
 
-## Cách mạng trong Di chuyển và giao thông
+### Cách mạng trong Di chuyển và giao thông
 
-### AI trong di chuyển và giao thông
+#### AI trong di chuyển và giao thông
 
 Trên khắp thế giới có hơn 90% các vụ tai nạn giao thông là do sai lầm, sự chủ quan và sơ ý của con người. Và trong kỉ nguyên mà AI đang được thịnh hành và phát triển thì việc AI xuất hiện trong Giao thông vận tải là một bước tiến lớn để giảm thiểu nguy hiểm và gia tăng tiện ích, an toàn hơn. AI đã và đang xuất hiện trong các lĩnh vực Giao thông vận tải như:
 
@@ -180,7 +180,7 @@ Trên khắp thế giới có hơn 90% các vụ tai nạn giao thông là do sa
 * **Các ứng dụng đặt xe:** Thịnh hành Grab hay Uber đều sử dụng AI để kết nối tài xế ở vị trí gần nhất với người đặt, hỗ trợ tính toán giá tiền cũng như lộ trình đón khách một cách tối ưu hóa.
 * **Xe tự lái:** Là một lĩnh vực hot nhận được rất nhiều sự quan tâm. Các dòng xe hiện đại như Tesla đã sử dụng AI để nhận diện mặt đường, chướng ngại vật, tính toán lộ trình cùng nhiều phương thức khác và đã có thể tự di chuyển ở bất cứ đâu, trong bất kỳ điều kiện thời tiết nào mà không cần con người hỗ trợ
 
-### Lợi ích, thách thức của AI trong di chuyển và giao thông
+#### Lợi ích, thách thức của AI trong di chuyển và giao thông
 
 Việc đưa AI vào lĩnh vực giao thông vận tải đã giúp tối ưu hóa toàn bộ hệ thống để hướng tới sự bền vững, an toàn và hiệu quả cho con người. Nhiều ích lợi như:
 
