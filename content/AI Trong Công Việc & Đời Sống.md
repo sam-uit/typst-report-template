@@ -235,8 +235,8 @@ AI đóng vai trò như một trợ lý thông minh, giải phóng nhân viên k
 
 Mô hình làm việc hiệu quả nhất hiện nay không phải là thay thế con người, mà là sự hợp tác.
 
-* **Mô hình Centaur (Nhân mã):** Kết hợp trí tuệ chiến lược của con người với sức mạnh xử lý của AI. Ví dụ, con người đưa ra ý tưởng và khung sườn, AI thực hiện việc viết chi tiết và kiểm tra lỗi, sau đó con người tinh chỉnh lại.21
-* **Mô hình Cobot (Robot cộng tác):** Trong sản xuất, các robot được trang bị AI làm việc an toàn bên cạnh công nhân, hỗ trợ các việc nặng nhọc hoặc đòi hỏi độ chính xác cao mà không cần lồng bảo vệ.22
+* **Mô hình Centaur (Nhân mã):** Kết hợp trí tuệ chiến lược của con người với sức mạnh xử lý của AI. Ví dụ, con người đưa ra ý tưởng và khung sườn, AI thực hiện việc viết chi tiết và kiểm tra lỗi, sau đó con người tinh chỉnh lại. *Human in the loop*, con Người là người quyết định cuối cùng dựa trên sự hỗ trợ của AI hay tác nhân AI.
+* **Mô hình Cobot (Robot cộng tác):** Trong sản xuất, các robot được trang bị AI làm việc an toàn bên cạnh công nhân, hỗ trợ các việc nặng nhọc hoặc đòi hỏi độ chính xác cao, và con người chuyển thành chức năng giám sát.
 
 ### Lập trình và Phát triển Phần mềm: Nghịch lý Năng suất
 
