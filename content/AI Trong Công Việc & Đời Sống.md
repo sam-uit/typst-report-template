@@ -248,6 +248,15 @@ Mô hình làm việc hiệu quả nhất hiện nay không phải là thay th�
 
 **Gemini Code Assist:** Được vận hành bởi mô hình Gemini mới nhất với cửa sổ ngữ cảnh (*context window*) siêu lớn, công cụ này mang lại khả năng thấu hiểu **toàn bộ kho mã nguồn** (full codebase awareness) thay vì chỉ các tệp tin cục bộ. Tích hợp xuyên suốt từ IDE (qua Cloud Code) đến tận Google Cloud Console, Gemini hỗ trợ toàn diện vòng đời phần mềm: từ viết code, thiết kế hạ tầng, đến gỡ lỗi và vận hành trực tiếp trên cloud, tạo nên một trải nghiệm DevOps thống nhất và bảo mật cấp doanh nghiệp.
 
+### Y Tế & Chăm Sóc Sức Khỏe (Healthcare)
+
+Trong y tế, AI không thay thế bác sĩ mà trở thành "cánh tay phải" đắc lực.
+
+**DrAid** của VinBrain là minh chứng cho trí tuệ Việt trên bản đồ AI y tế thế giới. Đây là nền tảng AI đầu tiên của Đông Nam Á đạt chuẩn FDA (Cục quản lý Thực phẩm và Dược phẩm Hoa Kỳ) cho chẩn đoán X-quang.
+
+- **Cơ chế:** DrAid được huấn luyện trên bộ dữ liệu khổng lồ gồm hơn 2,3 triệu hình ảnh y tế. Hệ thống hoạt động như một "bác sĩ thứ hai", tự động sàng lọc và khoanh vùng các bất thường trên ảnh X-quang ngực thẳng (như lao, tràn khí màng phổi, ung thư) trong vòng chưa đầy 5 giây với độ chính xác trên 91%.
+- **Tác động:** Giúp giảm 80-85% thời gian sàng lọc ban đầu, giảm thiểu sai sót chẩn đoán và hỗ trợ bác sĩ tại hơn 100 bệnh viện trên khắp Việt Nam.
+
 ### Marketing và Tiếp thị: Kỷ nguyên của Sáng tạo Tự động hóa
 
 Marketing là lĩnh vực hưởng lợi lớn từ AI tạo sinh, cho phép các doanh nghiệp sản xuất nội dung với tốc độ và quy mô chưa từng có.
