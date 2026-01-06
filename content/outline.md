@@ -1,63 +1,62 @@
-# Giới Thiệu
-## Lời Cảm Ơn
-## Nhóm 01
-## AI Là Gì? Và Tại Sao Lại Là Lúc Này?
+# AI Là Gì?
+## AI Là Gì?
+## Tại Sao Lại Là Lúc Này?
 # AI Trong Đời Sống (AI in Daily Life): Từ Tiện Ích Đến Thấu Hiểu
-## Nhà Thông Minh (Smart Home) Và Sự Tiến Hóa Của Không Gian Sống
-### AI Giúp Tự Động Hóa Và Tối Ưu Hóa Không Gian Sống (Smart Home)
-### AI Nâng Cao Chất Lượng Sống Và An Toàn Cho Người (Ambient Intelligence)
-### Sự Tiến Hóa Của Không Gian Sống Thông Minh
+## Nhà thông minh (Smart Home) và Sự tiến hóa của Không gian Sống
+### AI giúp tự động hóa và tối ưu hóa không gian sống (Smart Home)
+### AI nâng cao chất lượng sống và an toàn cho con người (Ambient Intelligence)
+### Sự tiến hóa của không gian sống thông minh
 ### Các Ví Dụ
 #### Tiên Phong Tại Việt Nam: Lumi, Rạng Đông và FPT
 #### Đối Chiếu Quốc Tế: Hệ Sinh Thái Matter và Google/Amazon
 ## Giải Trí Kỹ Thuật Số (Digital Entertainment): Siêu Cá Nhân Hóa
-### Thuật Toán Đề Xuất Và Siêu Cá Nhân Hóa (Hyper-personalization)
+### Thuật toán Đề xuất và Siêu cá nhân hóa (Hyper-personalization)
 ## Giáo Dục 4.0 (Education 4.0): Cá Nhân Hóa Lộ Trình Học Tập
 ### Những Ứng Dụng Thực Tiễn
-### Kết Luận: Người Đồng Hành, Không Phải Người Thay Thế
+### Kết luận: Người đồng hành, không phải người thay thế
 ## Mua Sắm & Thương Mại Điện Tử: Từ Tìm Kiếm Đến Khám Phá
-### Cá Nhân Hóa Hành Trình Và Công Cụ Gợi Ý
-### Chatbot CSKH Và Tương Tác Tự Động 24/7
-### Công Nghệ Tìm Kiếm Và Thử Nghiệm Trực Quan
-## Giao Thông (Transportation): Cuộc Cách Mạng Xe Điện Và Tự Lái
-### AI Trong Di Chuyển Và Giao Thông
-### Lợi Ích, Thách Thức Của AI Trong Di Chuyển Và Giao Thông
+### Cá nhân hóa Hành trình và Công cụ Gợi ý
+### Chatbot CSKH và Tương tác Tự động 24/7
+### Công nghệ Tìm kiếm và Thử nghiệm Trực quan
+## Giao Thông (Transportation): Cuộc Cách Mạng Xe Điện và Tự Lái
+### AI trong di chuyển và giao thông
+### Lợi ích, thách thức của AI trong di chuyển và giao thông
 # AI Trong Công Việc (AI in the Workplace): Từ Công Cụ Đến Đồng Nghiệp
-## Hợp Tác Người - AI: Mô Hình Centaur Và Cobot
-## Văn Phòng Thông Minh Và Sự Trỗi Dậy Của "Siêu Tác Tử" (Superagency)
-### Tự Động Hóa Tác Vụ Tri Thức
-### Agentic AI - Trợ Lý AI Có Tri Thức
+## Hợp tác Người - AI: Mô hình Centaur và Cobot
+## Văn Phòng Thông Minh và Sự Trỗi Dậy của "Siêu Tác Tử" (Superagency)
+### Tự động hóa Tác vụ Tri thức
+### Agentic AI - trợ lý AI có tri thức
 ## Lập Trình & Phát Triển Phần Mềm
-### Sự Chuyển Dịch Mô Hình: Từ Microservices Sáng "Agentic Workflows"
-### DevSecOps 2.0: Generative IaC Và Chaos Engineering
+### Sự chuyển dịch Mô hình: Từ Microservices sang "Agentic Workflows”
+### DevSecOps 2.0: Generative IaC và Chaos Engineering
 ## Y Tế & Chăm Sóc Sức Khỏe (Healthcare)
 ## Marketing & Sáng Tạo Nội Dung
-## Sản Xuất Và Chuỗi Cung Uyng: Vai Trò AI Cộng Tác (Collaborative AI), Tương Lai Của Lao Động
+## Sản xuất và Chuỗi Cung ứng: Vai Trò AI Cộng Tác (Collaborative AI), Tương Lai Của Lao Động
 ## Tuyển Dụng & Nhân Sự (HR Tech)
-# Vai Trò Và Lợi Ích Thực Tiễn
-## Vai Trò Và Ý Nghĩa
-### Vai Trò "Người Cộng Sự" (Augmentation)
-### Bản Cạnh Của Sự "Nâng Tầm Năng Lực"
-### Sự Chuyển Dịch Mô Hình: Từ "Ra Lệnh" Sáng "Cộng Tác"
-### Phân Tích Chiều Sâu Các Mô Hình Cộng Tác Thực Tế
-### Tác Động Đến Tư Duy Quản Trị Và Đào Tạo
+# Vai Trò và Lợi Ích Thực Tiễn
+## Vai Trò và Ý Nghĩa
+### Vai trò "Người Cộng sự" (Augmentation)
+### Bản chất của sự “Nâng tầm năng lực
+### Sự chuyển dịch mô hình: Từ "Ra lệnh" sang "Cộng tác"
+### Phân tích chiều sâu các mô hình cộng tác thực tế
+### Tác động đến tư duy quản trị và đào tạo
 ## Lợi Ích Định Lượng (Đo Lường Được)
-### Tăng Năng Suất
-### Tăng Trưởng Kinh Tế
-### Tiết Kiệm Chi Phí
+### Tăng năng suất
+### Tăng trưởng kinh tế
+### Tiết kiệm chi phí
 ## Lợi Ích Định Tính (Vô Hình)
-### Nâng Cao Chất Lượng Cuộc Sống Và Giải Phóng Sức Lao Động Sáng Tạo:
-### Cá Nhân Hóa Trải Nghiệm Và Tăng Cường Sự Gắn Kết:
-### Giải Quyet Các Vấn Đề Xã Hội Và Dân Chủ Hóa Quyền Tiếp Cận:
-### Nâng Tầm Giá Trị Nhân Văn Và Tư Duy Chiến lược:
-### Thúc Đẩy Công Bằng Xã Hội Và Thu Hẹp Khoảng Cách Số
-### Củng Cố Niềm Tin Và Sự An Tâm Trong Đời Sống (Peace of Mind)
-### Thay Đổi Văn Hóa Và Mô Hình Vận Hành Tổ Chức
+### Nâng cao chất lượng cuộc sống và giải phóng sức lao động sáng tạo:
+### Cá nhân hóa trải nghiệm và tăng cường sự gắn kết:
+### Giải quyết các vấn đề xã hội và dân chủ hóa quyền tiếp cận:
+### Nâng tầm giá trị nhân văn và tư duy chiến lược:
+### Thúc đẩy công bằng xã hội và thu hẹp khoảng cách số
+### Củng cố niềm tin và sự an tâm trong đời sống (Peace of Mind)
+### Thay đổi văn hóa và mô hình vận hành tổ chức
 # Những Vấn Đề Cần Lưu Ý và Định Hướng Tương Lai
 ## Những Vấn Đề Cần Lưu Ý
 ## Định Hướng Tương Lai Gần
-### Xây Dựng Khung Quản Trị Và Pháp Lý Cho AI
-### Ưu Tiên Phát Triển Năng Lực Con Người Và Kỹ Năng AI
+### Xây dựng khung quản trị và pháp lý cho AI
+### Ưu tiên phát triển năng lực con người và kỹ năng AI
 ### Đầu tư hạ tầng dữ liệu và hệ sinh thái AI “Make in Vietnam”
 ### Thúc đẩy AI vì mục tiêu phát triển bền vững và bao trùm
 ### Xây dựng văn hoá số và đạo đức AI
