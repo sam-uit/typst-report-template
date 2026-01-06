@@ -226,7 +226,7 @@ Mô hình làm việc hiệu quả nhất hiện nay không phải là thay th�
 * **Mô hình Centaur (Nhân mã):** Kết hợp trí tuệ chiến lược của con người với sức mạnh xử lý của AI. Ví dụ, con người đưa ra ý tưởng và khung sườn, AI thực hiện việc viết chi tiết và kiểm tra lỗi, sau đó con người tinh chỉnh lại. *Human in the loop*, con Người là người quyết định cuối cùng dựa trên sự hỗ trợ của AI hay tác nhân AI.
 * **Mô hình Cobot (Robot cộng tác):** Trong sản xuất, các robot được trang bị AI làm việc an toàn bên cạnh công nhân, hỗ trợ các việc nặng nhọc hoặc đòi hỏi độ chính xác cao, và con người chuyển thành chức năng giám sát.
 
-### Văn phòng Thông minh và Sự trỗi dậy của "Siêu Tác tử" (Superagency)
+### Văn Phòng Thông Minh và Sự Trỗi Dậy của "Siêu Tác Tử" (Superagency)
 
 Sự tích hợp của Generative AI vào các bộ công cụ năng suất cốt lõi như Microsoft 365 (với Copilot) và Google Workspace (với Gemini) đã tạo ra một cuộc cách mạng về hiệu suất làm việc văn phòng. Gemini Enterprise hay Google Agentspace (A Space of agents) là những giải pháp như vậy, nơi các agent con Người chung bàn làm việc với các agent AI.
 
@@ -358,7 +358,7 @@ Việc ứng dụng **Assistive AI** trong giải pháp **AI-assisted Career Pro
 
 Hệ thống đóng vai trò như một trợ lý hỗ trợ nghề nghiệp, giúp người lao động thể hiện năng lực của mình thông qua những hình thức đơn giản và gần gũi, từ đó tối ưu hóa quá trình kết nối giữa cung và cầu lao động.
 
-## Vai trò và Lợi ích Thực tiễn
+## Vai Trò và Lợi Ích Thực Tiễn
 
 Tổng hợp từ các phân tích trên, có thể đúc kết vai trò và lợi ích của AI qua các khía cạnh cốt lõi sau:
 
