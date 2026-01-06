@@ -24,7 +24,7 @@ Khởi nguồn từ đầu thế kỷ 20, bùng nổ mạnh mẽ và ứng dụn
 Hội tụ của các yếu tố sau:
 
 - Toán Học: Các lý thuyết Đại số tuyến tính, Xác Suất, Tối ưu hóa.
-- Dữ liệu: Sự bùng nổ của Internet, Big Data.
+- Dữ Liệu: Sự bùng nổ của Internet, Big Data.
 - Hạ Tầng: Cloud, Data Center, HPC, GPU, TPU, NPU.
 
 ## AI và Các Thành Phần Cấu Trúc
