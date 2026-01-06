@@ -229,7 +229,7 @@ AI đóng vai trò như một trợ lý thông minh, giải phóng nhân viên k
 
 * **Soạn thảo và Sáng tạo:** AI hỗ trợ viết bản nháp email, báo cáo, bài phát biểu, tạo slide thuyết trình từ tài liệu văn bản chỉ trong vài giây. Thống kê cho thấy 85% người dùng Copilot đạt được bản nháp tốt nhanh hơn, và tốc độ hoàn thành các tác vụ như viết, tìm kiếm, tóm tắt tăng trung bình 29%.
 * **Tổng hợp thông tin:** Khả năng tóm tắt các cuộc họp Teams/Meet kéo dài hàng giờ, trích xuất các điểm chính và danh sách công việc cần làm (action items) giúp nhân viên tiết kiệm thời gian đáng kể. Việc "bắt kịp" (catch-up) nội dung các cuộc họp bị bỏ lỡ nhanh hơn gấp 4 lần nhờ AI.
-* **Phân tích dữ liệu:** Trong Excel hay Google Sheets, AI cho phép người dùng truy vấn dữ liệu bằng ngôn ngữ tự nhiên (ví dụ: "Hãy cho tôi biết xu hướng doanh số quý 3 so với năm ngoái và vẽ biểu đồ cột"), giúp việc phân tích dữ liệu trở nên dễ tiếp cận với cả những nhân viên không chuyên về kỹ thuật.
+* **Phân tích dữ liệu:** Trong Excel hay Google Sheets/Looker, AI cho phép người dùng truy vấn dữ liệu bằng **ngôn ngữ tự nhiên** (ví dụ: "Hãy cho tôi biết xu hướng doanh số quý 3 so với năm ngoái và vẽ biểu đồ cột"), giúp việc phân tích dữ liệu trở nên dễ tiếp cận với cả những nhân viên không chuyên về kỹ thuật.
 
 Bảng 2: So sánh Năng lực Ứng dụng của Hai Nền tảng AI Văn phòng Dẫn đầu
 
