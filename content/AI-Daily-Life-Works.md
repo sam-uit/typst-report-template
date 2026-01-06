@@ -485,12 +485,29 @@ Trong bối cảnh AI đã đi từ “công cụ hỗ trợ” sang “người
 
 ## Những Vấn Đề Cần Lưu Ý
 
-* **Phụ thuộc vào dữ liệu và rủi ro “ảo giác” AI:** Các hệ thống AI hiện nay vẫn phụ thuộc hoàn toàn vào dữ liệu đầu vào; nếu dữ liệu sai lệch, lỗi thời hoặc mang định kiến, kết quả mô hình tạo ra cũng sẽ sai nhưng được trình bày rất tự tin và thuyết phục, đặc biệt với các mô hình sinh nội dung và Agentic AI. Trong các lĩnh vực nhạy cảm như y tế, pháp lý, tài chính hay nhân sự, nguy cơ đưa ra quyết định dựa trên kết quả “ảo giác” này có thể dẫn đến thiệt hại lớn về kinh tế, pháp lý và danh dự tổ chức
-* **Giới hạn trong việc hiểu yếu tố con người và bối cảnh xã hội:** AI hiện chưa thể hiểu sâu sắc các yếu tố văn hoá tổ chức, động lực nội tại, cảm xúc và những sắc thái tinh tế trong mối quan hệ giữa con người với con người. Việc sử dụng AI vào đánh giá nhân sự, ra quyết định tuyển dụng, thăng tiến hay kỷ luật nếu thiếu kiểm soát có thể làm gia tăng cảm giác bất công, xói mòn niềm tin nội bộ và làm tổn hại văn hoá doanh nghiệp.
-* **Tác động tới việc làm và kỹ năng lao động:** Nhiều công việc lặp lại đang bị tự động hoá nhanh, trong khi người lao động chưa được học kịp các kỹ năng mới phù hợp với thời đại AI, nhất là lao động phổ thông và cấp trung. Nếu doanh nghiệp và nhà nước không có kế hoạch đào tạo, nâng cấp kỹ năng rõ ràng, xã hội rất dễ rơi vào cảnh “nhiều người cần việc nhưng lại thiếu đúng kỹ năng”, khiến khoảng cách giữa người có tay nghề cao và người ít kỹ năng ngày càng lớn
-* **Quyền riêng tư, bảo vệ dữ liệu và niềm tin số:** Việc thu thập, lưu trữ và phân tích khối lượng lớn dữ liệu cá nhân (hành vi, giọng nói, hình ảnh, vị trí…) để huấn luyện và vận hành các hệ thống AI đặt ra thách thức lớn về quyền riêng tư và an toàn dữ liệu. Người dùng thường không rõ dữ liệu của mình được lưu ở đâu, được dùng vào mục đích gì và có thể bị khai thác, rò rỉ hoặc mua bán như thế nào, dẫn đến nguy cơ mất niềm tin số nếu không có cơ chế minh bạch và bảo vệ đủ mạnh.
-* **Thao túng thông tin, deepfake và xói mòn nhận thức xã hội:** Công nghệ sinh nội dung (text, hình ảnh, video, giọng nói) làm mờ ranh giới thật – giả, tạo điều kiện cho các chiến dịch thao túng dư luận, lừa đảo, bôi nhọ danh dự cá nhân, tổ chức. Khi nội dung được “cá nhân hoá cực độ” trên mạng xã hội, người dùng càng dễ bị nhốt trong “bong bóng thông tin”, suy giảm năng lực tư duy phản biện và đối thoại, ảnh hưởng trực tiếp đến chất lượng không gian công cộng và niềm tin xã hội.
-* **Khoảng cách số và nguy cơ bị bỏ lại phía sau:** Những tổ chức, địa phương, nhóm lao động không có điều kiện tiếp cận hạ tầng số, dữ liệu và kỹ năng sử dụng AI sẽ bị bất lợi so với nhóm tiên phong. Nếu không có chính sách “bao trùm số” làn sóng AI có thể làm gia tăng khoảng cách giữa doanh nghiệp lớn và nhỏ, giữa thành thị và nông thôn, giữa nhóm lao động tri thức và nhóm lao động phổ thông.
+### Phụ thuộc vào dữ liệu và rủi ro “ảo giác” AI
+
+Các hệ thống AI hiện nay vẫn phụ thuộc hoàn toàn vào dữ liệu đầu vào; nếu dữ liệu sai lệch, lỗi thời hoặc mang định kiến, kết quả mô hình tạo ra cũng sẽ sai nhưng được trình bày rất tự tin và thuyết phục, đặc biệt với các mô hình sinh nội dung và Agentic AI. Trong các lĩnh vực nhạy cảm như y tế, pháp lý, tài chính hay nhân sự, nguy cơ đưa ra quyết định dựa trên kết quả “ảo giác” này có thể dẫn đến thiệt hại lớn về kinh tế, pháp lý và danh dự tổ chức
+
+### Giới hạn trong việc hiểu yếu tố con người và bối cảnh xã hội
+
+AI hiện chưa thể hiểu sâu sắc các yếu tố văn hoá tổ chức, động lực nội tại, cảm xúc và những sắc thái tinh tế trong mối quan hệ giữa con người với con người. Việc sử dụng AI vào đánh giá nhân sự, ra quyết định tuyển dụng, thăng tiến hay kỷ luật nếu thiếu kiểm soát có thể làm gia tăng cảm giác bất công, xói mòn niềm tin nội bộ và làm tổn hại văn hoá doanh nghiệp.
+
+### Tác động tới việc làm và kỹ năng lao động
+
+Nhiều công việc lặp lại đang bị tự động hoá nhanh, trong khi người lao động chưa được học kịp các kỹ năng mới phù hợp với thời đại AI, nhất là lao động phổ thông và cấp trung. Nếu doanh nghiệp và nhà nước không có kế hoạch đào tạo, nâng cấp kỹ năng rõ ràng, xã hội rất dễ rơi vào cảnh “nhiều người cần việc nhưng lại thiếu đúng kỹ năng”, khiến khoảng cách giữa người có tay nghề cao và người ít kỹ năng ngày càng lớn
+
+### Quyền riêng tư, bảo vệ dữ liệu và niềm tin số
+
+Việc thu thập, lưu trữ và phân tích khối lượng lớn dữ liệu cá nhân (hành vi, giọng nói, hình ảnh, vị trí…) để huấn luyện và vận hành các hệ thống AI đặt ra thách thức lớn về quyền riêng tư và an toàn dữ liệu. Người dùng thường không rõ dữ liệu của mình được lưu ở đâu, được dùng vào mục đích gì và có thể bị khai thác, rò rỉ hoặc mua bán như thế nào, dẫn đến nguy cơ mất niềm tin số nếu không có cơ chế minh bạch và bảo vệ đủ mạnh.
+
+### Thao túng thông tin, deepfake và xói mòn nhận thức xã hội
+
+Công nghệ sinh nội dung (text, hình ảnh, video, giọng nói) làm mờ ranh giới thật – giả, tạo điều kiện cho các chiến dịch thao túng dư luận, lừa đảo, bôi nhọ danh dự cá nhân, tổ chức. Khi nội dung được “cá nhân hoá cực độ” trên mạng xã hội, người dùng càng dễ bị nhốt trong “bong bóng thông tin”, suy giảm năng lực tư duy phản biện và đối thoại, ảnh hưởng trực tiếp đến chất lượng không gian công cộng và niềm tin xã hội.
+
+### Khoảng cách số và nguy cơ bị bỏ lại phía sau
+
+Ngoài ra, những tổ chức, địa phương, nhóm lao động không có điều kiện tiếp cận hạ tầng số, dữ liệu và kỹ năng sử dụng AI sẽ bị bất lợi so với nhóm tiên phong. Nếu không có chính sách “bao trùm số” làn sóng AI có thể làm gia tăng khoảng cách giữa doanh nghiệp lớn và nhỏ, giữa thành thị và nông thôn, giữa nhóm lao động tri thức và nhóm lao động phổ thông.
 
 ## Định Hướng Tương Lai Gần
 
