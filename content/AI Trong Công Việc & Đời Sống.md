@@ -280,7 +280,9 @@ Trong lĩnh vực sản xuất, AI là trái tim của Công nghiệp 4.0.
 Ví dụ:
 
 * **VinMotion (Việt Nam):** Công ty con của Vingroup chuyên phát triển robot hình người (Humanoid Robots) và robot công nghiệp. Các robot này được thiết kế để làm việc trong các nhà máy của VinFast, đảm nhận các công việc nặng nhọc, độc hại hoặc lặp đi lặp lại như vận chuyển linh kiện, hàn, và lắp ráp chi tiết. Mục tiêu của VinMotion không chỉ là phục vụ nội bộ mà còn hướng tới thương mại hóa robot "Make in Vietnam" ra thị trường quốc tế, cạnh tranh với các ông lớn như Tesla Optimus.
-* 
+* **Amazon Robotics:** Amazon tiếp tục là người mở đường với các robot cộng tác tiên tiến:
+  * **Proteus:** Robot tự hành hoàn toàn (AMR) đầu tiên có thể di chuyển an toàn giữa các nhân viên kho mà không cần lồng bảo vệ, nhờ hệ thống cảm biến và AI tiên tiến giúp nó nhận biết và tránh né con người theo thời gian thực.
+  * **Sparrow:** Cánh tay robot sử dụng thị giác máy tính và giác hút chân không để nhặt và xử lý hàng triệu loại sản phẩm có hình dạng và kích thước khác nhau. Sparrow giải phóng con người khỏi các thao tác lặp lại nhàm chán, cho phép họ tập trung vào các công việc giám sát và quản lý.
 
 ### Agentic AI \- trợ lý AI có tri thức
 
