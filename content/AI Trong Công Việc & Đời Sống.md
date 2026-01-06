@@ -291,11 +291,16 @@ Trong tất cả các lĩnh vực mà cần tương tác với số lượng kh�
 * **Ngăn chặn xâm nhập \- (Attacker Detection):**  AI Agent là 1 hệ thống luôn vận hành 24/7 và tương tác với các thiết bị bảo mật để đảm bảo rằng có thể phát hiện hiện xâm nhập bất hợp pháp, từ đó có thể gửi cảnh báo tới người vận hành để nhanh chóng khắc phục hoặc thậm chí có thể tự động ngăn chặn luôn nếu được đào tạo chính xác.
 * **Tự động hóa quy trình \- (Automatic Workflow):** AI Agent sẽ được phân công và có tri thức để giải quyết các quy trình và hoạt động tự động hóa trong doanh nghiệp. Ví dụ như quy trình bàn giao thu hồi tài sản, gửi mail và thực hiện các quy trình như quy trình mua hàng,....
 
-### Assistive AI – Hệ thống AI hỗ trợ tạo hồ sơ nghề nghiệp và kết nối việc làm
+### Tuyển Dụng & Nhân Sự (HR Tech)
 
 Trong bối cảnh chuyển đổi số hiện nay, trí tuệ nhân tạo (AI) không chỉ được ứng dụng để tự động hóa các quy trình phức tạp mà còn đóng vai trò hỗ trợ con người tiếp cận công nghệ một cách dễ dàng và bình đẳng hơn. Đặc biệt, đối với lĩnh vực việc làm và tuyển dụng, nhiều nhóm người lao động vẫn gặp khó khăn trong việc tạo lập hồ sơ nghề nghiệp do hạn chế về kỹ năng công nghệ và khả năng trình bày thông tin.
 
 Giải pháp **AI-assisted Career Profiling** được xây dựng dựa trên khái niệm **Assistive AI**, trong đó AI đóng vai trò là một trợ lý hỗ trợ người dùng, giúp chuyển đổi các dữ liệu đơn giản như hình ảnh, giọng nói và nội dung ngắn thành hồ sơ nghề nghiệp có cấu trúc, rõ ràng và phù hợp với nhu cầu tuyển dụng.
+
+AI đang giải quyết bài toán "lệch pha" cung cầu trong thị trường lao động.
+
+- **TopCV:** Sử dụng công nghệ **Toppy AI** để phân tích sâu hồ sơ ứng viên (CV Parsing) và hành vi tìm việc. Hệ thống tự động chấm điểm độ phù hợp của hồ sơ với bản mô tả công việc (Job Description), giúp nhà tuyển dụng lọc ra các ứng viên tiềm năng nhất trong hàng ngàn hồ sơ.
+- **JobHopin:** Được biết đến với **Bunny AI**, nền tảng này phân tích dữ liệu thị trường thời gian thực để đưa ra các báo cáo về mức lương, xu hướng kỹ năng. JobHopin là startup Việt Nam đầu tiên tích hợp thành công vào hệ sinh thái SAP SuccessFactors, giúp các tập đoàn lớn quản lý nhân tài hiệu quả hơn.
 
 **Bối cảnh 1:** Hỗ trợ tạo hồ sơ nghề nghiệp tự động hoặc cập nhật và duy trì hồ sơ nghề nghiệp và đề xuất việc làm phù hợp
 
