@@ -1,34 +1,20 @@
-# Phân Tích Và Thiết Kế
-
-## Các Chức Năng Nghiệp Vụ
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-![Bài 2. Cây thư mục trong CLI của macOS.](assets/macos-fhs-root-system.png)
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
-
-## Đối Tượng và Mối Quan Hệ
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
-
-Bảng Thông Tin (dàn trên nhiều trang):
-
-| **Thuộc tính**          | **Ổ đĩa (Volume/Drive)**          | **Thư mục (Folder)**             | **Tập tin (File)**                   |
-| ----------------------- | --------------------------------- | -------------------------------- | ------------------------------------ |
-| **Tên (Name)**          | Tên phân vùng (VD: Macintosh HD). | Tên thư mục.                     | Tên file + Đuôi mở rộng (Extension). |
-| **Loại (Kind)**         | Định dạng (APFS, NTFS...).        | Folder.                          | Định dạng (PDF, JPG, Docx...).       |
-| **Kích thước (Size)**   | Dung lượng tổng / Khả dụng.       | Tổng kích thước nội dung.        | Kích thước thực của file.            |
-| **Ngày tháng**          | Ngày tạo phân vùng.               | Ngày tạo, ngày sửa đổi nội dung. | Ngày tạo, sửa đổi, mở gần nhất.      |
-| **Quyền (Permissions)** | Quản trị hệ thống (System R/W).   | Read/Write/Execute (truy cập).   | Read/Write/Execute (thao tác).       |
-| **Khác**                | Mount point, thông tin phần cứng. | Số lượng mục con (items count).  | App mặc định (Open with).            |
-
-## Mô Hình Mức Quan Niệm
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-## Thiết Kế Cơ Sở Dữ Liệu
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+# AI Trong Đời Sống
+## Nhà thông minh (Smart Home) và Sự tiến hóa của Không gian Sống
+### AI giúp tự động hóa và tối ưu hóa không gian sống (Smart Home)
+### AI nâng cao chất lượng sống và an toàn cho con người (Ambient Intelligence)
+### Sự tiến hóa của không gian sống thông minh
+### Các Ví Dụ
+#### Tiên Phong Tại Việt Nam: Lumi, Rạng Đông và FPT
+#### Đối Chiếu Quốc Tế: Hệ Sinh Thái Matter và Google/Amazon
+## Giải Trí Kỹ Thuật Số (Digital Entertainment): Siêu Cá Nhân Hóa
+### Thuật toán Đề xuất và Siêu cá nhân hóa (Hyper-personalization)
+## Giáo Dục 4.0 (Education 4.0): Cá Nhân Hóa Lộ Trình Học Tập
+### Những Ứng Dụng Thực Tiễn
+### Kết luận: Người đồng hành, không phải người thay thế
+## Mua Sắm & Thương Mại Điện Tử: Từ Tìm Kiếm Đến Khám Phá
+### Cá nhân hóa Hành trình và Công cụ Gợi ý
+### Chatbot CSKH và Tương tác Tự động 24/7
+### Công nghệ Tìm kiếm và Thử nghiệm Trực quan
+## Giao Thông (Transportation): Cuộc Cách Mạng Xe Điện và Tự Lái
+### AI trong di chuyển và giao thông
+### Lợi ích, thách thức của AI trong di chuyển và giao thông

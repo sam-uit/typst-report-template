@@ -1,17 +1,8 @@
-# Kết Luận
-
-## Kết Quả Đạt Được
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-## Hạn Chế
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-## Hướng Phát Triển
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-## Kết Luận
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+# Những Vấn Đề Cần Lưu Ý và Định Hướng Tương Lai
+## Những Vấn Đề Cần Lưu Ý
+## Định Hướng Tương Lai Gần
+### Xây dựng khung quản trị và pháp lý cho AI
+### Ưu tiên phát triển năng lực con người và kỹ năng AI
+### Đầu tư hạ tầng dữ liệu và hệ sinh thái AI “Make in Vietnam”
+### Thúc đẩy AI vì mục tiêu phát triển bền vững và bao trùm
+### Xây dựng văn hoá số và đạo đức AI
