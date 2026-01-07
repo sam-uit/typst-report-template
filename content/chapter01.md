@@ -183,9 +183,9 @@ GO
 
 ### Màn hình design và preview của chart sau khi chỉnh sửa
 
-![Bài 1.C - Màn hình design và preview của chart sau khi chỉnh sửa (1)](./images/1c-1-7.png)
+![Bài 1.C - Màn hình design và preview của chart (1)](./images/1c-1-7.png)
 
-![Bài 1.C - Màn hình design và preview của chart sau khi chỉnh sửa (2)](./images/1c-1-8.png)
+![Bài 1.C - Màn hình design và preview của chart (2)](./images/1c-1-8.png)
 
 ### Bảng số liệu chi tiết - tạo thêm 1 sheet cho chi tiết và mapping dữ liệu từ view V_BAOCAO_DOANHTHU_2006
    
