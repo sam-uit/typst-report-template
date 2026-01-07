@@ -12,33 +12,33 @@ Yêu cầu:
 - Ngăn cách phần Details với Report Footer bằng 1 đường kẻ. 
 - Trình bày từng bước để tạo được Crystal Report.
 
-### 1.Kết nối SQL Server với Tableau
+### Kết nối SQL Server với Tableau
 
 ![Tableau Connection](./images/tableau_connection.png)
 
-### 2.Cập nhật title của report
+### Cập nhật title của report
 
 ![Update title](./images/update_title.png)
 
-### 3.Drag các database fields từ data panel qua Rows panel
+### Drag các database fields từ data panel qua Rows panel
 
 ![Drag data](./images/drag_data.png)
 
-### 4.Bổ sung column STT
+### Bổ sung column STT
 
-#### 4.1 Tạo Calculated Field
+#### Tạo Calculated Field
 
 ![Create stt field](./images/create_stt_field.png)
 
-#### 4.2 Drag vào Row panel và chỉnh sửa thuộc tính cho phù hợp
+#### Drag vào Row panel và chỉnh sửa thuộc tính cho phù hợp
 
 Chọn thuộc tính `Discrete` để hiển thị STT rõ ràng.
 
 ![Drag stt field](./images/drag_stt_field.png)
 
-### 5.Format lại layout
+### Format lại layout
 
-#### 5.1 Ẩn đi column không cần thiết có chứa nội dung "ABC"
+#### Ẩn đi column không cần thiết có chứa nội dung "ABC"
 
 ##### Drag row `Dia chi` vào mục `Text` của `Marks` panel
 
@@ -65,24 +65,24 @@ Chọn thuộc tính `Discrete` để hiển thị STT rõ ràng.
 
 ![Update calculation](./images/update_calculation.png)
 
-### 6.Tạo Dashboard cho report
+### Tạo Dashboard cho report
 
-#### 6.1 Tạo Dashboard và setup layout
+#### Tạo Dashboard và setup layout
 
 ![Create dashboard](./images/create_dashboard.png)
 
-#### 6.2 Thêm title cho dashboard
+#### Thêm title cho dashboard
 
 ![Add title dashboard](./images/add_title_dashboard.png)
 
-#### 6.3 Drag report vào dashboard
+#### Drag report vào dashboard
 
 ![Drag report to dashboard](./images/drag_report_to_dashboard.png)
 
-#### 6.4 Add footer to dashboard
+#### Add footer to dashboard
 ![Add footer to dashboard](./images/add_footer_dashboard.png)
 
-### 7. Report hoàn chỉnh
+### Report hoàn chỉnh
 
 ![Full Report](./images/full_report.png)
 
