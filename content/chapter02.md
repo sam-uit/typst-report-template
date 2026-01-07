@@ -15,6 +15,9 @@ Hướng dẫn làm bài:
 
 Ngoài **Crystal Report**, Visual Studio còn hỗ trợ một số loại Report phổ biến sau:
 
+- RDLC (Local Report): Microsoft Report Viewer
+- SSRS (SQL Server Reporting Services): Server Report
+
 ### RDLC (Local Report) – Microsoft Report Viewer
 
 - Dùng tốt cho WinForms, WPF, ASP.NET MVC, WebForms.
