@@ -1,34 +1,12 @@
 # Bài 2. Các Loại Reports 
 
-## Các Chức Năng Nghiệp Vụ
+Yêu cầu:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- Tìm hiểu ngoài Crystal Report, còn có những loại Report nào mà Visual Studio hỗ trợ?
+- Hiện tại, loại Report nào phổ biến và hay được dùng nhất?
+- Ngoài ra, nếu không dùng Visual Studio thì có cách nào tạo Report không?
 
-![Bài 2. Cây thư mục trong CLI của macOS.](assets/macos-fhs-root-system.png)
+Hướng dẫn làm bài:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
-
-## Đối Tượng và Mối Quan Hệ
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
-
-Bảng Thông Tin (dàn trên nhiều trang):
-
-| **Thuộc tính**          | **Ổ đĩa (Volume/Drive)**          | **Thư mục (Folder)**             | **Tập tin (File)**                   |
-| ----------------------- | --------------------------------- | -------------------------------- | ------------------------------------ |
-| **Tên (Name)**          | Tên phân vùng (VD: Macintosh HD). | Tên thư mục.                     | Tên file + Đuôi mở rộng (Extension). |
-| **Loại (Kind)**         | Định dạng (APFS, NTFS...).        | Folder.                          | Định dạng (PDF, JPG, Docx...).       |
-| **Kích thước (Size)**   | Dung lượng tổng / Khả dụng.       | Tổng kích thước nội dung.        | Kích thước thực của file.            |
-| **Ngày tháng**          | Ngày tạo phân vùng.               | Ngày tạo, ngày sửa đổi nội dung. | Ngày tạo, sửa đổi, mở gần nhất.      |
-| **Quyền (Permissions)** | Quản trị hệ thống (System R/W).   | Read/Write/Execute (truy cập).   | Read/Write/Execute (thao tác).       |
-| **Khác**                | Mount point, thông tin phần cứng. | Số lượng mục con (items count).  | App mặc định (Open with).            |
-
-## Mô Hình Mức Quan Niệm
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-## Thiết Kế Cơ Sở Dữ Liệu
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- Đối với Windows OS: Sử dụng phần mềm Crystal Report tương ứng với phiên bản của Visual Studio đang dùng.
+- Đối với MacOS: Sử dụng phần mềm Tableau Desktop.
