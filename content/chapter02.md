@@ -11,7 +11,7 @@ Hướng dẫn làm bài:
 - Đối với Windows OS: Sử dụng phần mềm Crystal Report tương ứng với phiên bản của Visual Studio đang dùng.
 - Đối với MacOS: Sử dụng phần mềm Tableau Desktop.
 
-## Ngoài Crystal Report, Visual Studio còn hỗ trợ những loại Report nào?
+## Visual Studio Hỗ trợ Những Loại Report Nào?
 
 Ngoài **Crystal Report**, Visual Studio còn hỗ trợ một số loại Report phổ biến sau:
 
@@ -39,7 +39,7 @@ Hiện nay, một số phần mềm bệnh viện đang sử dụng **RDLC** và
 - Gia An
 - Truyền máu Huyết Học
 
-## Loại Report Nào Phổ Biến và Hay Được Dùng Nhất Hiện Nay?
+## Loại Report Phổ Biến và Hay Được Dùng Nhất Hiện Nay?
 
 Hiện nay, **Local Report (RDLC)** và **SSRS** là hai loại report được sử dụng nhiều nhất trong thực tế, đặc biệt trong các hệ thống lớn:
 
@@ -47,7 +47,7 @@ Hiện nay, **Local Report (RDLC)** và **SSRS** là hai loại report được 
 - Quản lý bệnh viện (HIS)
 - Quản lý tài chính – kế toán
 
-## Nếu Không Dùng Visual Studio Thì Có Cách nào Tạo Report Không?
+## Nếu Không Dùng Visual Studio Thì Có Cách Khác Không?
 
 Ngoài Visual Studio, vẫn có thể tạo report bằng cách:
 
