@@ -18,18 +18,19 @@ Ngoài **Crystal Report**, Visual Studio còn hỗ trợ một số loại Repor
 ### RDLC (Local Report) – Microsoft Report Viewer
 
 - Dùng tốt cho WinForms, WPF, ASP.NET MVC, WebForms.
-- File report: .rdlc
+- File report: `.rdlc`
 - Thiết kế report bằng designer kéo-thả trong Visual Studio
 
 ### SSRS (SQL Server Reporting Services) – Server Report
 
 - Dùng khi muốn tạo report chạy trên server.
-- Thiết kế file .rdl (khác với .rdlc).
+- Thiết kế file `.rdl` (khác với `.rdlc`).
 - Report chạy trên Report Server: Web, API.
 
 ### Ví dụ thực tế
 
 Hiện nay, một số phần mềm bệnh viện đang sử dụng **RDLC** và **SSRS**, ví dụ:
+
 - Hoàn Mỹ
 - Nam Sài Gòn
 - Gia An
@@ -51,4 +52,4 @@ Ngoài Visual Studio, vẫn có thể tạo report bằng cách:
 
 - Công cụ kéo-thả giao diện
 - Kết nối trực tiếp với Database
-- Thiết kế report mà **không cần code**
+- Thiết kế report mà **không cần code**.
