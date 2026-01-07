@@ -11,9 +11,9 @@
 // Content goes here
 #include "content/chapter01.typ"
 #include "content/chapter02.typ"
-#include "content/chapter03.typ"
-#include "content/chapter04.typ"
-#include "content/chapter05.typ"
+// #include "content/chapter03.typ"
+// #include "content/chapter04.typ"
+// #include "content/chapter05.typ"
 
 // Show appendix
 #show: appendix
