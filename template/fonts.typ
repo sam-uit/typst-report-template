@@ -8,9 +8,9 @@
 // The current font set makes the document a LaTeX-like look.
 #let document-fonts = (
   // Alternative: Montserrat, Google Sans
-  sans: "Tex Gyre Adventor",
+  sans: "Montserrat",
   // Alternative: Lora, Linux Libertine
-  serif: "CMU Serif",
+  serif: "Source Serif 4",
   // Alternative: Fira Code, Ubuntu Mono
   mono: "Iosevka",
 )
