@@ -161,65 +161,65 @@ GO
    SELECT * FROM V_BAOCAO_DOANHTHU_2006  ORDER BY MANV, Thang;
 ```
 
-![Kiểm tra kết quả view](./images/1c-1-1.png)
+![Bài 1.C - Kiểm tra kết quả view](./images/1c-1-1.png)
 
 ### Kết nối SQL Server với Tableau
 
-![Kết nối SQL Server với Tableau](./images/1c-1-2.png)
+![Bài 1.C - Kết nối SQL Server với Tableau](./images/1c-1-2.png)
 
 ### Kéo VIEW V_BAOCAO_DOANHTHU_2006 vào trong Worksheet để tạo chart line
 
-![Kéo view vào worksheet](./images/1c-1-3.png)
+![Bài 1.C - Kéo view vào worksheet](./images/1c-1-3.png)
 
 ### Mapping dữ liệu từ View V_BAOCAO_DOANHTHU_2006 đã tạo theo trục X và Y
 
-![Mapping dữ liệu](./images/1c-1-4.png)
+![Bài 1.C - Mapping dữ liệu](./images/1c-1-4.png)
 
 ### Format và chỉnh sửa lại các tiêu đề trên chart
 
-![Format và chỉnh sửa lại các tiêu đề trên chart (1)](./images/1c-1-5.png)
+![Bài 1.C - Format và chỉnh sửa lại các tiêu đề trên chart (1)](./images/1c-1-5.png)
 
-![Format và chỉnh sửa lại các tiêu đề trên chart (2)](./images/1c-1-6.png)
+![Bài 1.C - Format và chỉnh sửa lại các tiêu đề trên chart (2)](./images/1c-1-6.png)
 
 ### Màn hình design và preview của chart sau khi chỉnh sửa
 
-![Màn hình design và preview của chart sau khi chỉnh sửa (1)](./images/1c-1-7.png)
+![Bài 1.C - Màn hình design và preview của chart sau khi chỉnh sửa (1)](./images/1c-1-7.png)
 
-![Màn hình design và preview của chart sau khi chỉnh sửa (2)](./images/1c-1-8.png)
+![Bài 1.C - Màn hình design và preview của chart sau khi chỉnh sửa (2)](./images/1c-1-8.png)
 
 ### Bảng số liệu chi tiết - tạo thêm 1 sheet cho chi tiết và mapping dữ liệu từ view V_BAOCAO_DOANHTHU_2006
    
-![Bảng số liệu chi tiết](./images/1c-1-9.png)
+![Bài 1.C - Bảng số liệu chi tiết](./images/1c-1-9.png)
 
 ### Tạo label để hiển thị dạng MaNV - HoTen
 
-![Tạo label để hiển thị dạng MaNV - HoTen (1)](./images/1c-1-10.png)
+![Bài 1.C - Tạo label để hiển thị dạng MaNV - HoTen (1)](./images/1c-1-10.png)
 
-![Tạo label để hiển thị dạng MaNV - HoTen (2)](./images/1c-1-11.png)
+![Bài 1.C - Tạo label để hiển thị dạng MaNV - HoTen (2)](./images/1c-1-11.png)
 
 ### Format các cột tính tổng, vị trí hiển thị
 
-![Format các cột tính tổng, vị trí hiển thị](./images/1c-1-12.png)
+![Bài 1.C - Format các cột tính tổng, vị trí hiển thị](./images/1c-1-12.png)
 
 ### Màn hình design và preview của table chi tiết
 
-![Màn hình design và preview của table chi tiết (1)](./images/1c-1-13.png)
+![Bài 1.C - Màn hình design và preview của table chi tiết (1)](./images/1c-1-13.png)
 
-![Màn hình design và preview của table chi tiết (2)](./images/1c-1-14.png)
+![Bài 1.C - Màn hình design và preview của table chi tiết (2)](./images/1c-1-14.png)
 
 ### Tạo thêm 1 dashboard để hiển thị biểu đồ và chi tiết
 
-![Tạo thêm 1 dashboard để hiển thị biểu đồ và chi tiết](./images/1c-1-15.png)
+![Bài 1.C - Tạo thêm 1 dashboard để hiển thị biểu đồ và chi tiết](./images/1c-1-15.png)
 
 ### Format dashboard
 
-![Format dashboard](./images/1c-1-16.png)
+![Bài 1.C - Format dashboard](./images/1c-1-16.png)
 
 ### Màn hình design và preview cuối
 
-![Màn hình design và preview cuối (1)](./images/1c-1-17.png)
+![Bài 1.C - Màn hình design và preview cuối (1)](./images/1c-1-17.png)
 
-![Màn hình design và preview cuối (2)](./images/1c-1-18.png)
+![Bài 1.C - Màn hình design và preview cuối (2)](./images/1c-1-18.png)
 
 ## D. Crystal Report Báo Cáo Tổng Doanh Thu
 
