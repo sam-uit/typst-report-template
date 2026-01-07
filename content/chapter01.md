@@ -14,27 +14,27 @@ Yêu cầu:
 
 ### Kết nối SQL Server với Tableau
 
-![Tableau Connection](./images/tableau_connection.png)
+![Bài 1.A - Tableau Connection](./images/tableau_connection.png)
 
 ### Cập nhật title của report
 
-![Update title](./images/update_title.png)
+![Bài 1.A - Update title](./images/update_title.png)
 
 ### Drag các database fields từ data panel qua Rows panel
 
-![Drag data](./images/drag_data.png)
+![Bài 1.A - Drag data](./images/drag_data.png)
 
 ### Bổ sung column STT
 
 #### Tạo Calculated Field
 
-![Create stt field](./images/create_stt_field.png)
+![Bài 1.A - Create stt field](./images/create_stt_field.png)
 
 #### Drag vào Row panel và chỉnh sửa thuộc tính cho phù hợp
 
 Chọn thuộc tính `Discrete` để hiển thị STT rõ ràng.
 
-![Drag stt field](./images/drag_stt_field.png)
+![Bài 1.A - Drag stt field](./images/drag_stt_field.png)
 
 ### Format lại layout
 
@@ -42,49 +42,49 @@ Chọn thuộc tính `Discrete` để hiển thị STT rõ ràng.
 
 ##### Drag row `Dia chi` vào mục `Text` của `Marks` panel
 
-![Mark dia chi](./images/mark_diachi.png)
+![Bài 1.A - Mark dia chi](./images/mark_diachi.png)
 
 ##### Drag `Measure Names` từ `Data` panel vào `Columns` panel
 
-![Drag measure name](./images/drag_measure_names.png)
+![Bài 1.A - Drag measure name](./images/drag_measure_names.png)
 
 ##### Cập nhật lại color của header
 
-![Update color](./images/update_color.png)
+![Bài 1.A - Update color](./images/update_color.png)
 
 ##### Cập nhật lại công thức tính index của STT để hiển thị chính xác
 
 - Chọn `Edit Table Calculation`
 
-![Choose edit table calculation](./images/choose_edit_table_calculation.png)
+![Bài 1.A - Choose edit table calculation](./images/choose_edit_table_calculation.png)
 
 - Cập nhật lại logic
   - Chọn `Specific Dimensions`
   - Check tất cả các giá trị hiện tại cần kết hợp để xác định index.
   - Ở mục `At the level`: chọn `Deepest`
 
-![Update calculation](./images/update_calculation.png)
+![Bài 1.A - Update calculation](./images/update_calculation.png)
 
 ### Tạo Dashboard cho report
 
 #### Tạo Dashboard và setup layout
 
-![Create dashboard](./images/create_dashboard.png)
+![Bài 1.A - Create dashboard](./images/create_dashboard.png)
 
 #### Thêm title cho dashboard
 
-![Add title dashboard](./images/add_title_dashboard.png)
+![Bài 1.A - Add title dashboard](./images/add_title_dashboard.png)
 
 #### Drag report vào dashboard
 
-![Drag report to dashboard](./images/drag_report_to_dashboard.png)
+![Bài 1.A - Drag report to dashboard](./images/drag_report_to_dashboard.png)
 
 #### Add footer to dashboard
-![Add footer to dashboard](./images/add_footer_dashboard.png)
+![Bài 1.A - Add footer to dashboard](./images/add_footer_dashboard.png)
 
 ### Report hoàn chỉnh
 
-![Full Report](./images/full_report.png)
+![Bài 1.A - Full Report](./images/full_report.png)
 
 ## B. Crystal Report Từ View
 
