@@ -271,7 +271,7 @@ GO
 
 ### Tạo chart (Pie) trong sheet mới
 
-![Ví dụ 1](./images/1d-1-1.png)
+![Bài 1.D - Tạo chart (Pie) trong sheet mới](./images/1d-1-1.png)
 
 ### Mapping dữ liệu từ View V_BAOCAO_DOANHTHU_SP_2006_2007 vào chart
 
@@ -281,46 +281,46 @@ Kéo thả vào mục Marks các trường trong view:
 - Sum(TongCaNam) -> Angle => để chia tỉ lệ trong biểu đồ
 - Sum(TongCaNam) và MaSP -> Label => để hiển thị trên biểu đồ
 
-![Ví dụ 2](./images/1d-1-2.png)
+![Bài 1.D - Mapping dữ liệu từ View vào chart (1)](./images/1d-1-2.png)
 
-![Ví dụ 3](./images/1d-1-3.png)
+![Bài 1.D - Mapping dữ liệu từ View vào chart (2)](./images/1d-1-3.png)
 
-![Ví dụ 4](./images/1d-1-4.png)
+![Bài 1.D - Mapping dữ liệu từ View vào chart (3)](./images/1d-1-4.png)
 
 ### Màn hình design của chart
 
-![Ví dụ 5](./images/1d-1-5.png)
+![Bài 1.D - Màn hình design của chart](./images/1d-1-5.png)
 
 ### Bảng số liệu chi tiết, tạo sheet mới, tô màu và vẽ đường viền
 
 Kéo thả các field trong View
 
-![Ví dụ 6](./images/1d-1-6.png)
+![Bài 1.D - Bảng số liệu chi tiết (1)](./images/1d-1-6.png)
 
-![Ví dụ 7](./images/1d-1-7.png)
+![Bài 1.D - Bảng số liệu chi tiết (2)](./images/1d-1-7.png)
 
 ### Tạo STT
 
-![Ví dụ 8](./images/1d-1-8.png)
+![Bài 1.D - Tạo STT (1)](./images/1d-1-8.png)
 
-![Ví dụ 9](./images/1d-1-9.png)
+![Bài 1.D - Tạo STT (2)](./images/1d-1-9.png)
 
 ### Màn hình design & preview chi tiết
 
-![Ví dụ 10](./images/1d-1-10.png)
+![Bài 1.D - Màn hình design & preview chi tiết (1)](./images/1d-1-10.png)
 
-![Ví dụ 11](./images/1d-1-12.png)
+![Bài 1.D - Màn hình design & preview chi tiết (2)](./images/1d-1-12.png)
 
 ### Tạo dashboard để hiển thị biểu đồ và chi tiết
 
 Kéo thả 2 sheet biểu đồ và sheet chi tiết vào
 
-![Ví dụ 12](./images/1d-1-11.png)
+![Bài 1.D - Tạo dashboard để hiển thị biểu đồ và chi tiết](./images/1d-1-11.png)
 
 ### Màn hình design cuối cùng
 
-![Ví dụ 13](./images/1d-1-13.png)
+![Bài 1.D - Màn hình design cuối cùng](./images/1d-1-13.png)
 
 ### Màn hình preview
 
-![Ví dụ 14](./images/1d-1-14.png)
+![Bài 1.D - Màn hình preview](./images/1d-1-14.png)
