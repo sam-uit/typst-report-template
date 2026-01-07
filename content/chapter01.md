@@ -23,7 +23,7 @@ Yêu cầu:
 - Ngăn cách phần mỗi đề tài trong phần Details bằng 1 đường kẻ trước mỗi đề tài.
 
 
-## C.Crystal Report Báo Cáo Doanh Thu
+## C. Crystal Report Báo Cáo Doanh Thu
 
 Cho CSDL Quản lý bán hàng đính kèm bên dưới. Hãy dùng Crystal Report để thiết kế một báo cáo cho biết Doanh thu theo tháng của từng nhân viên trong năm 2006.
 
@@ -38,4 +38,21 @@ Yêu cầu gồm có 2 phần sau:
     - Tổng doanh thu của tất cả nhân viên trong năm 2006. 
     - Lưu ý: Một số tháng không được hiển thị là do bảng `HOADON` không có số liệu bán hàng của tháng đó.
 
-## D.Crystal Report Báo Cáo Tổng Doanh Thu
+## D. Crystal Report Báo Cáo Tổng Doanh Thu
+
+Cho CSDL Quản lý bán hàng đính kèm bên dưới. Hãy dùng Crystal Report để thiết kế một báo cáo cho biết Tổng doanh thu theo từng sản phẩm trong năm 2006 + 2007.
+
+Yêu cầu gồm có 2 phần sau: 
+
+- Phần Biểu đồ tròn (Pie Chart): Cho biết tỷ lệ phần trăm doanh số bán được của từng sản phẩm trong năm 2006 + 2007. 
+    - Sử dụng `MASP` (mã sản phẩm) để phân biệt các sản phẩm với nhau (Vì sản phẩm có thể trùng tên). 
+    - Gán nhãn `MASP` cho từng phần trong biểu đồ. 
+    - Thông tin phần trăm của từng sản phẩm để bên phải của biểu đồ. 
+    - Lưu ý: Thông tin phần trăm trong biểu đồ là tổng doanh thu của từng sản phẩm trong năm 2006 + 2007, tức cột cuối cùng trong phần Bảng số liệu chi tiết bên dưới. 
+
+- Phần Bảng số liệu chi tiết: Cho biết doanh thu cụ thể của từng sản phẩm trong năm 2006, năm 2007 và năm (2006 + 2007). Cụ thể: 
+    - Tổng doanh thu theo từng sản phẩm trong năm 2006. 
+    - Tổng doanh thu theo từng sản phẩm trong năm 2007. 
+    - Tổng doanh thu theo từng sản phẩm trong năm 2006 + 2007. 
+    - Phần Page Header tô nền vàng và có Border xung quanh. 
+    - Phần Detail có Border xung quanh. 
