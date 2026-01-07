@@ -30,7 +30,7 @@ Ngoài **Crystal Report**, Visual Studio còn hỗ trợ một số loại Repor
 - Thiết kế file `.rdl` (khác với `.rdlc`).
 - Report chạy trên Report Server: Web, API.
 
-### Ví dụ thực tế
+### Ví Dụ Thực Tế
 
 Hiện nay, một số phần mềm bệnh viện đang sử dụng **RDLC** và **SSRS**, ví dụ:
 
@@ -39,7 +39,7 @@ Hiện nay, một số phần mềm bệnh viện đang sử dụng **RDLC** và
 - Gia An
 - Truyền máu Huyết Học
 
-## Hiện tại, loại Report nào phổ biến và hay được dùng nhất?
+## Loại Report Nào Phổ Biến và Hay Được Dùng Nhất Hiện Nay?
 
 Hiện nay, **Local Report (RDLC)** và **SSRS** là hai loại report được sử dụng nhiều nhất trong thực tế, đặc biệt trong các hệ thống lớn:
 
@@ -47,12 +47,11 @@ Hiện nay, **Local Report (RDLC)** và **SSRS** là hai loại report được 
 - Quản lý bệnh viện (HIS)
 - Quản lý tài chính – kế toán
 
-## Nếu không dùng Visual Studio thì có cách nào tạo Report không?
+## Nếu Không Dùng Visual Studio Thì Có Cách nào Tạo Report Không?
 
 Ngoài Visual Studio, vẫn có thể tạo report bằng cách:
 
-### Sử dụng Report Builder
-
-- Công cụ kéo-thả giao diện
-- Kết nối trực tiếp với Database
-- Thiết kế report mà **không cần code**.
+- Sử Dụng Report Builder.
+    - Công cụ kéo-thả giao diện.
+    - Kết nối trực tiếp với Database.
+    - Thiết kế report mà **không cần code**.
