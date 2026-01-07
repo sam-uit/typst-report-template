@@ -51,7 +51,7 @@ Hiện nay, **Local Report (RDLC)** và **SSRS** là hai loại report được 
 
 Ngoài Visual Studio, vẫn có thể tạo report bằng cách:
 
-- Sử Dụng Report Builder.
+- Sử Dụng **Report Builder**
     - Công cụ kéo-thả giao diện.
     - Kết nối trực tiếp với Database.
     - Thiết kế report mà **không cần code**.
