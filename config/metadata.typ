@@ -15,7 +15,7 @@
   ),
   instructor: "Ths. Trần Hoàng Lộc",
   author: (
-    name: "Nhóm 25410321: Nguyễn Điền Triết",
+    name: "Nhóm 12",
     members: (
       (
         name: lorem(3),
