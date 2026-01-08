@@ -17,6 +17,7 @@
 #outline-slide()
 
 // MARK: - Nội Dung Chính
+#include "content/nhom.typ"
 #include "content/contents.typ"
 
 // MARK: - Kết Thúc
