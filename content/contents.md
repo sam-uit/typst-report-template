@@ -8,8 +8,6 @@
 
 # Các Kiểu Địa Chỉ Nhớ
 
-**Có 4 loại địa chỉ nhớ bao gồm:**
-
 ## Địa chỉ vật lý (physical address) (địa chỉ thực)
 
 - Là **địa chỉ thực tế** của một ô nhớ trong **bộ nhớ chính (RAM)**.
@@ -64,15 +62,70 @@
 
 # Thời Điểm Chuyển Đổi Địa Chỉ Nhớ
 
+## Các thời điểm
 
+Địa chỉ lệnh và dữ liệu được chuyển đổi thành địa chỉ thực tại **ba thời điểm** khác nhau:
+
+1. Compile Time
+2. Load Time
+3. Execution Time
+
+## Compile time
+
+- Nếu biết trước địa chỉ bộ nhớ của chương trình thì có thể kết gán địa chỉ tuyệt đối lúc biên dịch.
+
+- Ví dụ: Chương trình .COM của MS-DOS.
+
+- Khuyết điểm: Phải biên dịch lại nếu thay đổi địa chỉ nạp chương trình.
+
+## Load time
+
+Vào thời điểm loading, loader phải chuyển đổi địa chỉ khả tái định vị thành địa chỉ thực dựa trên một địa chỉ nền.
+
+- Địa chỉ thực được tính toán vào thời điểm nạp chương trình.
+- **=>** Phải tiến hành reload nếu địa chỉ nền thay đổi.
+
+## Execution time (Thời điểm thực thi)
+
+Nếu tiến trình có thể được di chuyển giữa các phân đoạn (segment) khác nhau trong bộ nhớ trong quá trình thực thi, việc chuyển đổi địa chỉ sẽ được trì hoãn đến lúc này.
+
+- Cần sự hỗ trợ của phần cứng cho việc ánh xạ địa chỉ (ví dụ dùng thanh ghi base và limit khi địa chỉ luận lý là relocatable).
+- Được sử dụng trong đa số các hệ điều hành hiện đại có cơ chế swapping, paging, segmentation.
 
 # Phân biệt Dynamic linking và Dynamic loading
 
+## Dynamic Linking (Liên kết động)
 
+- **Cơ chế hoạt động** Sử dụng các đoạn mã giữ chỗ (stub) trong chương trình để tham chiếu đến các module bên ngoài. Khi thực thi lần đầu, stub sẽ nạp routine và thay thế bằng địa chỉ thực tế.
+- **Mục đích chính** Cho phép cập nhật thư viện mà không cần biên dịch lại chương trình; hỗ trợ chia sẻ mã nguồn giữa các tiến trình.
+- **Đối tượng áp dụng**Thường là các thư viện tiện ích của hệ điều hành (file .DLL trên Windows, .so trên Unix).
+- **Khả năng chia sẻ** Chia sẻ mã (code sharing): Một module chỉ nạp một lần và nhiều tiến trình có thể dùng chung, giúp tiết kiệm RAM và đĩa.
+- **Vai trò của OS**Cần sự hỗ trợ chặt chẽ từ OS để kiểm tra routine đã nạp chưa và quản lý việc chia sẻ giữa các tiến trình.
+
+## Dynamic Loading (Nạp động)
+
+- **Cơ chế hoạt động** Chỉ khi nào một thủ tục được gọi đến thì nó mới được nạp vào bộ nhớ chính.
+- **Mục đích chính** Tăng hiệu dụng của bộ nhớ bằng cách tránh nạp các phần mã không được sử dụng đến.
+- **Đối tượng áp dụng** Các chương trình có khối lượng mã lớn nhưng tần suất sử dụng thấp (ví dụ: các thủ tục xử lý lỗi).
+- **Khả năng chia sẻ** Tập trung vào việc quản lý bộ nhớ trong phạm vi thực thi của chương trình.
+
+**Vai trò của OS** Người dùng (lập trình viên) chịu trách nhiệm thiết kế; OS chỉ cung cấp các thư viện hỗ trợ để thực hiện dễ dàng hơn.
 
 # Cơ Chế Phân Chia Bộ Nhớ Cố Định và Phân Chia Động
 
+## Cơ chế cố định
 
+- Bộ nhớ chính được **chia sẵn thành các phân vùng có kích thước cố định** ngay từ đầu, kích thước bằng nhau hoặc khác nhau.
+- Mỗi tiến trình được nạp vào **một phân vùng**. Tiến trình nào có kích thước nhỏ hơn hoặcbằng hoặc nhỏ hơn thì được nạp vào phân vùng đó.
+- Nếu chương trình có kích thước lớn hơn partition thì phải dùng cơ chế overlay.
+- Nhận xét: Không hiệu quả do bị phân mảnh nội: một chương trình dù lớn hay nhỏ đều được cấp phát trọn một partition.
+
+## Chia động
+
+- Số lượng partition không cố định và partition có thể có kích thước khác nhau.
+
+- Mỗi tiến trình được cấp phát chính xác dung lượng bộ nhớ cần thiết.
+- Gây ra hiện tượng phân mảnh ngoại.
 
 # Phân Biệt Phân Mảnh Ngoại vs Phân Mảnh Nội
 
