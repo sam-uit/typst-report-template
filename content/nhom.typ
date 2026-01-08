@@ -1,5 +1,5 @@
 = Giới Thiệu
-== Nhóm 25410321
+== Nhóm 12
 
 #align(center)[
   #show table.cell: current_cell => {
@@ -24,7 +24,7 @@
       left: none,
       right: none,
     ),
-    [01], [25410321], [Nguyễn Điền Triết], [06], [25410204], [Trương Xuân Hậu],
+    [01], [25410321], [*Nguyễn Điền Triết*], [06], [25410204], [Trương Xuân Hậu],
     [02], [25410320], [Nguyễn Hữu Trí], [07], [25410201], [Phạm Phước Hão],
     [03], [25410302], [Trần Thiện Thiên Tân], [08], [25410185], [Nguyễn Phong Đạt],
     [04], [25410291], [Đinh Xuân Sâm], [09], [25410183], [Nguyễn Đào Anh Đạt],
