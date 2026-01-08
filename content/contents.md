@@ -113,6 +113,17 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 
 # Cơ Chế Phân Chia Bộ Nhớ Cố Định và Phân Chia Động
 
+## So Sánh
+
+| **Tiêu chí**               | **Phân chia cố định**                                        | **Phân chia động**                                           |
+| -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Khởi tạo và Phân chia**  | Khi khởi động hệ thống, bộ nhớ chính được chia thành nhiều phần rời nhau gọi là các partition. | Số lượng partition không cố định và partition có thể có kích thước khác nhau. |
+| **Kích thước Partition**   | Có kích thước bằng nhau hoặc khác nhau.                      | Partition có thể có kích thước khác nhau.                    |
+| **Cơ chế cấp phát**        | Tiến trình nào có kích thước nhỏ hơn hoặc bằng kích thước partition thì có thể được nạp vào partition đó. | Mỗi tiến trình được cấp phát chính xác dung lượng bộ nhớ cần thiết. |
+| **Vấn đề phân mảnh**       | Không hiệu quả do bị **phân mảnh nội** (một chương trình dù lớn hay nhỏ đều được cấp phát trọn một partition). | Gây ra hiện tượng **phân mảnh ngoại** (kích thước không gian nhớ còn trống thỏa mãn yêu cầu nhưng không liên tục). |
+| **Xử lý khi không đủ chỗ** | Nếu chương trình có kích thước lớn hơn partition thì phải dùng cơ chế **overlay**. | Có thể dùng cơ chế **kết khối (compaction)** để gom lại thành vùng nhớ liên tục. |
+
+
 ## Cơ chế cố định
 
 - Bộ nhớ chính được **chia sẵn thành các phân vùng có kích thước cố định** ngay từ đầu, kích thước bằng nhau hoặc khác nhau.
@@ -126,16 +137,6 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 
 - Mỗi tiến trình được cấp phát chính xác dung lượng bộ nhớ cần thiết.
 - Gây ra hiện tượng phân mảnh ngoại.
-
-## Tóm Tắt
-
-| **Tiêu chí**               | **Phân chia cố định**                                        | **Phân chia động**                                           |
-| -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Khởi tạo và Phân chia**  | Khi khởi động hệ thống, bộ nhớ chính được chia thành nhiều phần rời nhau gọi là các partition. | Số lượng partition không cố định và partition có thể có kích thước khác nhau. |
-| **Kích thước Partition**   | Có kích thước bằng nhau hoặc khác nhau.                      | Partition có thể có kích thước khác nhau.                    |
-| **Cơ chế cấp phát**        | Tiến trình nào có kích thước nhỏ hơn hoặc bằng kích thước partition thì có thể được nạp vào partition đó. | Mỗi tiến trình được cấp phát chính xác dung lượng bộ nhớ cần thiết. |
-| **Vấn đề phân mảnh**       | Không hiệu quả do bị **phân mảnh nội** (một chương trình dù lớn hay nhỏ đều được cấp phát trọn một partition). | Gây ra hiện tượng **phân mảnh ngoại** (kích thước không gian nhớ còn trống thỏa mãn yêu cầu nhưng không liên tục). |
-| **Xử lý khi không đủ chỗ** | Nếu chương trình có kích thước lớn hơn partition thì phải dùng cơ chế **overlay**. | Có thể dùng cơ chế **kết khối (compaction)** để gom lại thành vùng nhớ liên tục. |
 
 # Phân Biệt Phân Mảnh Ngoại vs Phân Mảnh Nội
 
