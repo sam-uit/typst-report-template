@@ -92,7 +92,7 @@
 
 - Nếu biết trước địa chỉ bộ nhớ của chương trình thì có thể kết gán địa chỉ tuyệt đối lúc biên dịch.
 
-- Ví dụ: Chương trình .COM của MS-DOS.
+- Ví dụ: Chương trình `.COM` của MS-DOS.
 
 - Khuyết điểm: Phải biên dịch lại nếu thay đổi địa chỉ nạp chương trình.
 
