@@ -23,8 +23,8 @@
 
 = Q&A
 
-#focus-slide[
-  #smallcaps(lorem(10))
-]
+// #focus-slide[
+//   #smallcaps(lorem(10))
+// ]
 
 #ending-slide(title: [Thank You!])[Questions?]
