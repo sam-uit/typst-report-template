@@ -74,7 +74,7 @@
 
 - Nếu biết trước địa chỉ bộ nhớ của chương trình thì có thể kết gán địa chỉ tuyệt đối lúc biên dịch.
 
-- Ví dụ: Chương trình .COM của MS-DOS.
+- Ví dụ: Chương trình `.COM` của MS-DOS.
 
 - Khuyết điểm: Phải biên dịch lại nếu thay đổi địa chỉ nạp chương trình.
 
@@ -121,16 +121,20 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 
 # Phân Mảnh Ngoại vs Nội
 
-## Phân mảnh ngoại (External fragmentation):
+## Phân Biệt
+
+### Phân mảnh ngoại (External fragmentation):
 
 - Xảy ra khi tổng kích thước không gian nhớ còn trống đủ để thỏa mãn yêu cầu nhưng **không liên tục**.
 - Thường gặp trong phân chia động (dynamic partitioning). Có thể khắc phục bằng kỹ thuật kết khối (compaction).
 
-## Phân mảnh nội (Internal fragmentation):
+### Phân mảnh nội (Internal fragmentation):
 
 - Xảy ra khi kích thước vùng nhớ được cấp phát **lớn hơn** kích thước tiến trình yêu cầu, phần thừa ra bên trong vùng được cấp phát bị lãng phí.
 - Thường xảy ra khi bộ nhớ chia thành các khối kích thước cố định (như Fixed partitioning hoặc Paging) và các tiến trình được cấp phát theo đơn vị khối.
 
-## Kết khối (Compaction) (bổ sung):
+## Bổ Sung
+
+### Kết khối (Compaction) (bổ sung):
 
 - Hệ điều hành sẽ thực hiện dịch chuyển các vùng nhớ đang được sử dụng (các tiến trình đang chạy) sát lại gần nhau nhằm dồn tất cả các vùng nhớ trống rải rác lại thành một vùng nhớ trống liên tục lớn duy nhất.
