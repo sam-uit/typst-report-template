@@ -149,7 +149,7 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
   [Giảm dung lượng file thực thi, tiết kiệm RAM nhờ chia sẻ],
   [Giảm RAM sử dụng vì không nạp phần không dùng],
 
-  [#strong[Ví dụ]], [Chương trình dùng libc.so chỉ nạp khi chạy], [Module xử lý lỗi chỉ nạp khi lỗi xảy ra],
+  [#strong[Ví dụ]], [Chương trình dùng `libc.so` chỉ nạp khi chạy], [Module xử lý lỗi chỉ nạp khi lỗi xảy ra],
 )
 
 == Dynamic Linking (Liên kết động)
