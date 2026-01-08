@@ -9,13 +9,13 @@
     logo: "uit.jpeg",
   ),
   course: (
-    id: "IE103",
-    name: "Quản Lý Thông Tin",
+    id: "IT007",
+    name: "Hệ Điều Hành",
     class: "LT.K2025.2.CNTT",
   ),
-  instructor: "Ths. Nguyễn Thành Luân ",
+  instructor: "Ths. Trần Hoàng Lộc",
   author: (
-    name: "Nhóm 02",
+    name: "Nhóm 25410321: Nguyễn Điền Triết",
     members: (
       (
         name: lorem(3),
@@ -28,11 +28,11 @@
     ),
   ),
   assignment: (
-    title: "BÁO CÁO ĐỒ ÁN QUẢN LÝ THÔNG TIN",
-    subtitle: "Quản Lý Dữ Liệu Đặt Phòng Khách Sạn",
+    title: "Thảo Luận Nhóm",
+    subtitle: "Ôn Tập Kiến Thức Hệ Điều Hành",
     type: "Luận Án",
-    date: "TP.Hồ Chí Minh, tháng 01 năm 2026",
-    duration: "15 phút",
+    date: "08/01/2026",
+    duration: "45 phút",
   ),
   company: "A Limited Company Name",
 )
