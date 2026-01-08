@@ -22,3 +22,21 @@
 - Nêu sự khác biệt giữa cơ chế phân chia bộ nhớ cố định và phân chia động?
 - Phân biệt sự khác nhau giữa phân mảnh ngoại và phân mảnh nội?
 
+# Các Kiểu Địa Chỉ Nhớ
+
+
+
+# Thời Điểm Chuyển Đổi Địa Chỉ Nhớ
+
+
+
+# Phân biệt Dynamic linking và Dynamic loading
+
+
+
+# Cơ Chế Phân Chia Bộ Nhớ Cố Định và Phân Chia Động
+
+
+
+# Phân Biệt Phân Mảnh Ngoại vs Phân Mảnh Nội
+
