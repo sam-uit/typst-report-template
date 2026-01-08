@@ -99,7 +99,7 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 | **Tiêu chí**               | **Dynamic Linking (Liên kết động)**                          | **Dynamic Loading (Nạp động)**                               |
 | -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Thời điểm liên kết/nạp** | Liên kết thư viện khi chương trình đang chạy (runtime), thường ở lần gọi đầu tiên | Nạp từng phần/thủ tục của chương trình chỉ khi cần dùng      |
-| **Đối tượng chính**        | Thư viện ngoài (DLL trên Windows, .so trên Unix/Linux)       | Các module/thủ tục bên trong chương trình                    |
+| **Đối tượng chính**        | Thư viện ngoài (`.dll` trên Windows, `.so` trên Unix/Linux)  | Các module/thủ tục bên trong chương trình                    |
 | **Cách hoạt động**         | File thực thi chứa stub; khi gọi hàm, stub nạp thư viện và vá địa chỉ | Lập trình viên chủ động thiết kế: thủ tục nào được gọi mới nạp vào RAM |
 | **Hỗ trợ của HĐH**         | Cần HĐH hỗ trợ mạnh (quản lý thư viện dùng chung, kiểm tra đã nạp chưa) | Ít phụ thuộc HĐH, chủ yếu qua thư viện hỗ trợ                |
 | **Chia sẻ mã**             | Có – nhiều tiến trình dùng chung 1 bản thư viện trong RAM    | Không bắt buộc (mỗi tiến trình/module tự quản)               |
