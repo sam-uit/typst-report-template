@@ -119,21 +119,6 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 | **Vấn đề phân mảnh**       | Không hiệu quả do bị **phân mảnh nội** (một chương trình dù lớn hay nhỏ đều được cấp phát trọn một partition). | Gây ra hiện tượng **phân mảnh ngoại** (kích thước không gian nhớ còn trống thỏa mãn yêu cầu nhưng không liên tục). |
 | **Xử lý khi không đủ chỗ** | Nếu chương trình có kích thước lớn hơn partition thì phải dùng cơ chế **overlay**. | Có thể dùng cơ chế **kết khối (compaction)** để gom lại thành vùng nhớ liên tục. |
 
-
-## Cơ chế cố định
-
-- Bộ nhớ chính được **chia sẵn thành các phân vùng có kích thước cố định** ngay từ đầu, kích thước bằng nhau hoặc khác nhau.
-- Mỗi tiến trình được nạp vào **một phân vùng**. Tiến trình nào có kích thước nhỏ hơn hoặcbằng hoặc nhỏ hơn thì được nạp vào phân vùng đó.
-- Nếu chương trình có kích thước lớn hơn partition thì phải dùng cơ chế overlay.
-- Nhận xét: Không hiệu quả do bị phân mảnh nội: một chương trình dù lớn hay nhỏ đều được cấp phát trọn một partition.
-
-## Chia động
-
-- Số lượng partition không cố định và partition có thể có kích thước khác nhau.
-
-- Mỗi tiến trình được cấp phát chính xác dung lượng bộ nhớ cần thiết.
-- Gây ra hiện tượng phân mảnh ngoại.
-
 # Phân Mảnh Ngoại vs Nội
 
 ## Phân mảnh ngoại (External fragmentation):
