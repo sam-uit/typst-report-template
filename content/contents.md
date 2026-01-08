@@ -104,23 +104,8 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 | **Hỗ trợ của HĐH**         | Cần HĐH hỗ trợ mạnh (quản lý thư viện dùng chung, kiểm tra đã nạp chưa) | Ít phụ thuộc HĐH, chủ yếu qua thư viện hỗ trợ                |
 | **Chia sẻ mã**             | Có – nhiều tiến trình dùng chung 1 bản thư viện trong RAM    | Không bắt buộc (mỗi tiến trình/module tự quản)               |
 | **Lợi ích chính**          | Giảm dung lượng file thực thi, tiết kiệm RAM nhờ chia sẻ     | Giảm RAM sử dụng vì không nạp phần không dùng                |
-| **Ví dụ**                  | Chương trình dùng libc.so chỉ nạp khi chạy                   | Module xử lý lỗi chỉ nạp khi lỗi xảy ra                      |
+| **Ví dụ**                  | Chương trình dùng `libc.so` chỉ nạp khi chạy                 | Module xử lý lỗi chỉ nạp khi lỗi xảy ra                      |
 
-## Dynamic Linking (Liên kết động)
-
-- **Cơ chế hoạt động**: Sử dụng các đoạn mã giữ chỗ (stub) trong chương trình để tham chiếu đến các module bên ngoài. Khi thực thi lần đầu, stub sẽ nạp routine và thay thế bằng địa chỉ thực tế.
-- **Mục đích chính**: Cho phép cập nhật thư viện mà không cần biên dịch lại chương trình; hỗ trợ chia sẻ mã nguồn giữa các tiến trình.
-- **Đối tượng áp dụng**: Thường là các thư viện tiện ích của hệ điều hành (file .DLL trên Windows, .so trên Unix).
-- **Khả năng chia sẻ**: Chia sẻ mã (code sharing): Một module chỉ nạp một lần và nhiều tiến trình có thể dùng chung, giúp tiết kiệm RAM và đĩa.
-- **Vai trò của OS**: Cần sự hỗ trợ chặt chẽ từ OS để kiểm tra routine đã nạp chưa và quản lý việc chia sẻ giữa các tiến trình.
-
-## Dynamic Loading (Nạp động)
-
-- **Cơ chế hoạt động**: Chỉ khi nào một thủ tục được gọi đến thì nó mới được nạp vào bộ nhớ chính.
-- **Mục đích chính**: Tăng hiệu dụng của bộ nhớ bằng cách tránh nạp các phần mã không được sử dụng đến.
-- **Đối tượng áp dụng**: Các chương trình có khối lượng mã lớn nhưng tần suất sử dụng thấp (ví dụ: các thủ tục xử lý lỗi).
-- **Khả năng chia sẻ**: Tập trung vào việc quản lý bộ nhớ trong phạm vi thực thi của chương trình.
-- **Vai trò của OS**: Người dùng (lập trình viên) chịu trách nhiệm thiết kế; OS chỉ cung cấp các thư viện hỗ trợ để thực hiện dễ dàng hơn.
 
 # Cơ Chế Phân Chia Bộ Nhớ
 
