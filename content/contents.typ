@@ -102,7 +102,7 @@
 Vào thời điểm loading, loader phải chuyển đổi địa chỉ khả tái định vị thành địa chỉ thực dựa trên một địa chỉ nền.
 
 - Địa chỉ thực được tính toán vào thời điểm nạp chương trình.
-- #strong[=\>] Phải tiến hành reload nếu địa chỉ nền thay đổi.
+- $arrow.r.double$ Phải tiến hành reload nếu địa chỉ nền thay đổi.
 
 == Execution time (Thời điểm thực thi)
 
