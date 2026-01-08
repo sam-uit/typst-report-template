@@ -60,7 +60,7 @@
   - Quản lý nhiều tiến trình
   - Tăng tính linh hoạt và an toàn.
 
-# Thời Điểm Chuyển Đổi Địa Chỉ Nhớ
+# Chuyển Đổi Địa Chỉ Nhớ
 
 ## Các thời điểm
 
@@ -92,7 +92,7 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 - Cần sự hỗ trợ của phần cứng cho việc ánh xạ địa chỉ (ví dụ dùng thanh ghi base và limit khi địa chỉ luận lý là relocatable).
 - Được sử dụng trong đa số các hệ điều hành hiện đại có cơ chế swapping, paging, segmentation.
 
-# Phân biệt Dynamic Linking và Dynamic Loading
+# Dynamic Linking và Dynamic Loading
 
 ## So Sánh
 
@@ -123,7 +123,7 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 
 **Vai trò của OS** Người dùng (lập trình viên) chịu trách nhiệm thiết kế; OS chỉ cung cấp các thư viện hỗ trợ để thực hiện dễ dàng hơn.
 
-# Cơ Chế Phân Chia Bộ Nhớ Cố Định và Phân Chia Động
+# Cơ Chế Phân Chia Bộ Nhớ
 
 ## So Sánh
 
@@ -150,7 +150,7 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 - Mỗi tiến trình được cấp phát chính xác dung lượng bộ nhớ cần thiết.
 - Gây ra hiện tượng phân mảnh ngoại.
 
-# Phân Biệt Phân Mảnh Ngoại vs Phân Mảnh Nội
+# Phân Mảnh Ngoại vs Nội
 
 ## Phân mảnh ngoại (External fragmentation):
 
