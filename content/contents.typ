@@ -179,7 +179,7 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 
 
 #table(
-  columns: (1fr,) * 3,
+  columns: (20%, 40%, 40%),
   align: (left, left, left),
   [#strong[Tiêu chí]], [#strong[Phân chia cố định]], [#strong[Phân chia động]],
   [#strong[Khởi tạo và Phân chia]],
