@@ -126,20 +126,8 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 | Tiêu Chí        | Internal Fragmentation                                       | External Fragmentation                                       |
 | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Định nghĩa**  | Xảy ra khi kích thước vùng nhớ được cấp phát lớn hơn một chút so với kích thước mà tiến trình thực sự yêu cầu. Phần chênh lệch dư thừa nằm *bên trong* vùng nhớ đã được cấp phát bị lãng phí. | Xảy ra khi tổng kích thước không gian nhớ còn trống đủ để thỏa mãn yêu cầu cấp phát, nhưng không gian này lại *không liên tục* (bị chia nhỏ thành nhiều mảnh), do đó không thể cấp phát cho tiến trình. |
-| **Nguyên nhân** | Thường xảy ra trong cơ chế phân chia cố định (Fixed Partitioning) hoặc phân trang (Paging), nơi bộ nhớ được chia thành các khối kích thước cố định. | Thường xảy ra trong cơ chế phân chia động (Dynamic Partitioning). |
+| **Nguyên nhân** | Thường xảy ra khi bộ nhớ chia thành các khối kích thước cố định (như Fixed partitioning hoặc Paging) và các tiến trình được cấp phát theo đơn vị khối. | Thường xảy ra trong cơ chế phân chia động (Dynamic Partitioning). |
 | **Giải pháp**   | Giảm kích thước khối.                                        | Có thể khắc phục bằng kỹ thuật kết khối (compaction) để gom các vùng nhớ trống lại, nhưng chi phí thực hiện cao. |
-
-## Chi Tiết Hơn
-
-### Phân mảnh ngoại (External fragmentation):
-
-- Xảy ra khi tổng kích thước không gian nhớ còn trống đủ để thỏa mãn yêu cầu nhưng **không liên tục**.
-- Thường gặp trong phân chia động (dynamic partitioning). Có thể khắc phục bằng kỹ thuật kết khối (compaction).
-
-### Phân mảnh nội (Internal fragmentation):
-
-- Xảy ra khi kích thước vùng nhớ được cấp phát **lớn hơn** kích thước tiến trình yêu cầu, phần thừa ra bên trong vùng được cấp phát bị lãng phí.
-- Thường xảy ra khi bộ nhớ chia thành các khối kích thước cố định (như Fixed partitioning hoặc Paging) và các tiến trình được cấp phát theo đơn vị khối.
 
 ## Bổ Sung
 
