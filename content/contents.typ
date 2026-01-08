@@ -225,25 +225,28 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 
 - Mỗi tiến trình được cấp phát chính xác dung lượng bộ nhớ cần thiết.
 
-- Gây ra hiện tượng phân mảnh ngoại.
+== Phân Biệt
 
 = Phân Mảnh Ngoại vs Nội
 
 
-
-== Phân mảnh ngoại (External fragmentation):
+=== Phân mảnh ngoại (External fragmentation):
 
 
 - Xảy ra khi tổng kích thước không gian nhớ còn trống đủ để thỏa mãn yêu cầu nhưng #strong[không liên tục];.
 - Thường gặp trong phân chia động (dynamic partitioning). Có thể khắc phục bằng kỹ thuật kết khối (compaction).
 
-== Phân mảnh nội (Internal fragmentation):
+=== Phân mảnh nội (Internal fragmentation):
 
 
 - Xảy ra khi kích thước vùng nhớ được cấp phát #strong[lớn hơn] kích thước tiến trình yêu cầu, phần thừa ra bên trong vùng được cấp phát bị lãng phí.
 - Thường xảy ra khi bộ nhớ chia thành các khối kích thước cố định (như Fixed partitioning hoặc Paging) và các tiến trình được cấp phát theo đơn vị khối.
 
-== Kết khối (Compaction) (bổ sung):
+== Bổ Sung
+
+
+
+=== Kết khối (Compaction) (bổ sung):
 
 
 - Hệ điều hành sẽ thực hiện dịch chuyển các vùng nhớ đang được sử dụng (các tiến trình đang chạy) sát lại gần nhau nhằm dồn tất cả các vùng nhớ trống rải rác lại thành một vùng nhớ trống liên tục lớn duy nhất.
