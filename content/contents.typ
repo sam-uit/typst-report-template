@@ -112,7 +112,7 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 - Cần sự hỗ trợ của phần cứng cho việc ánh xạ địa chỉ (ví dụ dùng thanh ghi base và limit khi địa chỉ luận lý là relocatable).
 - Được sử dụng trong đa số các hệ điều hành hiện đại có cơ chế swapping, paging, segmentation.
 
-= Dynamic linking và Dynamic loading
+= Dynamic Linking và Dynamic Loading
 
 
 
