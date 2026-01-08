@@ -40,6 +40,27 @@
 - Khi đã có địa chỉ tuyệt đối, chương trình **không thể di chuyển** sang vị trí khác trong bộ nhớ nếu không nạp lại.
 - Ví dụ: Lệnh ở địa chỉ tuyệt đối `4000H` trong **RAM.**
 
+## Địa chỉ tương đối (relative address)
+
+- địa chỉ khả tái định vị, *relocatable address*
+- Là địa chỉ được biểu diễn **dưới dạng độ lệch (offset)**.
+- Được tính **tương đối so với một vị trí gốc** (thường là địa chỉ bắt đầu chương trình).
+- Là một dạng **địa chỉ luận lý có khả năng tái định vị**.
+- Giúp chương trình **có thể nạp vào nhiều vị trí khác nhau trong bộ nhớ** mà không cần sửa mã.
+
+### Ví dụ
+
++ 12 byte so với vị trí bắt đầu chương trình.
+
+## Kết Luận
+
+- Chương trình sử dụng **địa chỉ luận lý / tương đối**, Hệ điều hành + MMU chuyển đổi sang **địa chỉ vật lý / tuyệt đối** khi thực thi.
+
+- Hệ điều hành không cho chương trình làm việc trực tiếp với **địa chỉ vật lý**, mà sử dụng **địa chỉ luận lý và tương đối** để:
+  - Bảo vệ bộ nhớ
+  - Quản lý nhiều tiến trình
+  - Tăng tính linh hoạt và an toàn.
+
 # Thời Điểm Chuyển Đổi Địa Chỉ Nhớ
 
 
