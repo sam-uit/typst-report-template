@@ -94,6 +94,18 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 
 # Phân biệt Dynamic linking và Dynamic loading
 
+## So Sánh
+
+| **Tiêu chí**               | **Dynamic Linking (Liên kết động)**                          | **Dynamic Loading (Nạp động)**                               |
+| -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Thời điểm liên kết/nạp** | Liên kết thư viện khi chương trình đang chạy (runtime), thường ở lần gọi đầu tiên | Nạp từng phần/thủ tục của chương trình chỉ khi cần dùng      |
+| **Đối tượng chính**        | Thư viện ngoài (DLL trên Windows, .so trên Unix/Linux)       | Các module/thủ tục bên trong chương trình                    |
+| **Cách hoạt động**         | File thực thi chứa stub; khi gọi hàm, stub nạp thư viện và vá địa chỉ | Lập trình viên chủ động thiết kế: thủ tục nào được gọi mới nạp vào RAM |
+| **Hỗ trợ của HĐH**         | Cần HĐH hỗ trợ mạnh (quản lý thư viện dùng chung, kiểm tra đã nạp chưa) | Ít phụ thuộc HĐH, chủ yếu qua thư viện hỗ trợ                |
+| **Chia sẻ mã**             | Có – nhiều tiến trình dùng chung 1 bản thư viện trong RAM    | Không bắt buộc (mỗi tiến trình/module tự quản)               |
+| **Lợi ích chính**          | Giảm dung lượng file thực thi, tiết kiệm RAM nhờ chia sẻ     | Giảm RAM sử dụng vì không nạp phần không dùng                |
+| **Ví dụ**                  | Chương trình dùng libc.so chỉ nạp khi chạy                   | Module xử lý lỗi chỉ nạp khi lỗi xảy ra                      |
+
 ## Dynamic Linking (Liên kết động)
 
 - **Cơ chế hoạt động** Sử dụng các đoạn mã giữ chỗ (stub) trong chương trình để tham chiếu đến các module bên ngoài. Khi thực thi lần đầu, stub sẽ nạp routine và thay thế bằng địa chỉ thực tế.
@@ -140,3 +152,16 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 
 # Phân Biệt Phân Mảnh Ngoại vs Phân Mảnh Nội
 
+## Phân mảnh ngoại (External fragmentation):
+
+- Xảy ra khi tổng kích thước không gian nhớ còn trống đủ để thỏa mãn yêu cầu nhưng **không liên tục**.
+- Thường gặp trong phân chia động (dynamic partitioning). Có thể khắc phục bằng kỹ thuật kết khối (compaction).
+
+## Phân mảnh nội (Internal fragmentation):
+
+- Xảy ra khi kích thước vùng nhớ được cấp phát **lớn hơn** kích thước tiến trình yêu cầu, phần thừa ra bên trong vùng được cấp phát bị lãng phí.
+- Thường xảy ra khi bộ nhớ chia thành các khối kích thước cố định (như Fixed partitioning hoặc Paging) và các tiến trình được cấp phát theo đơn vị khối.
+
+## Kết khối (Compaction) (bổ sung):
+
+- Hệ điều hành sẽ thực hiện dịch chuyển các vùng nhớ đang được sử dụng (các tiến trình đang chạy) sát lại gần nhau nhằm dồn tất cả các vùng nhớ trống rải rác lại thành một vùng nhớ trống liên tục lớn duy nhất.
