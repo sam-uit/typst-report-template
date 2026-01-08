@@ -171,7 +171,7 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 
 #strong[Vai trò của OS] Người dùng (lập trình viên) chịu trách nhiệm thiết kế; OS chỉ cung cấp các thư viện hỗ trợ để thực hiện dễ dàng hơn.
 
-= Phân Chia Bộ Nhớ
+= Cơ Chế Phân Chia Bộ Nhớ
 
 
 
