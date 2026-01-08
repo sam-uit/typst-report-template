@@ -8,7 +8,37 @@
 
 # Các Kiểu Địa Chỉ Nhớ
 
+**Có 4 loại địa chỉ nhớ bao gồm:**
 
+## Địa chỉ vật lý (physical address) (địa chỉ thực)
+
+- Là **địa chỉ thực tế** của một ô nhớ trong **bộ nhớ chính (RAM)**.
+- Đây là địa chỉ mà **phần cứng bộ nhớ** trực tiếp sử dụng để truy cập dữ liệu.
+- Người lập trình **không làm việc trực tiếp** với địa chỉ vật lý trong các hệ điều hành hiện đại.
+- **Ví dụ**: Ô nhớ tại vị trí `0x000A3F2C` trong RAM.
+
+
+
+## Địa chỉ luận lý (logical address)
+
+- Là địa chỉ được **CPU sinh ra trong quá trình thực thi chương trình**.
+- Được sử dụng trong **mã chương trình** và các lệnh truy cập bộ nhớ.
+- Còn được gọi là **địa chỉ ảo (virtual address)**.
+- Địa chỉ luận lý **không trùng trực tiếp** với địa chỉ vật lý.
+- Phải thông qua **bộ quản lý bộ nhớ MMU (Memory Management Unit)** để chuyển đổi sang địa chỉ vật lý.
+
+### Vai trò
+
+- Giúp **che giấu cấu trúc bộ nhớ vật lý**
+- Cho phép **mỗi tiến trình có không gian địa chỉ riêng**
+
+## Địa chỉ tuyệt đối (absolute address)
+
+-  Là địa chỉ **xác định chính xác vị trí trong bộ nhớ**.
+- Thường **tương đương với địa chỉ vật lý**.
+- Xuất hiện sau khi chương trình đã được **liên kết và nạp vào bộ nhớ**.
+- Khi đã có địa chỉ tuyệt đối, chương trình **không thể di chuyển** sang vị trí khác trong bộ nhớ nếu không nạp lại.
+- Ví dụ: Lệnh ở địa chỉ tuyệt đối `4000H` trong **RAM.**
 
 # Thời Điểm Chuyển Đổi Địa Chỉ Nhớ
 
