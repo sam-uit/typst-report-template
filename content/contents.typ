@@ -210,24 +210,12 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
     nhớ liên tục.],
 )
 
-== Cơ chế cố định
+= Phân Mảnh Ngoại vs Nội
 
 
-- Bộ nhớ chính được #strong[chia sẵn thành các phân vùng có kích thước cố định] ngay từ đầu, kích thước bằng nhau hoặc khác nhau.
-- Mỗi tiến trình được nạp vào #strong[một phân vùng];. Tiến trình nào có kích thước nhỏ hơn hoặcbằng hoặc nhỏ hơn thì được nạp vào phân vùng đó.
-- Nếu chương trình có kích thước lớn hơn partition thì phải dùng cơ chế overlay.
-- Nhận xét: Không hiệu quả do bị phân mảnh nội: một chương trình dù lớn hay nhỏ đều được cấp phát trọn một partition.
-
-== Chia động
-
-
-- Số lượng partition không cố định và partition có thể có kích thước khác nhau.
-
-- Mỗi tiến trình được cấp phát chính xác dung lượng bộ nhớ cần thiết.
 
 == Phân Biệt
 
-= Phân Mảnh Ngoại vs Nội
 
 
 === Phân mảnh ngoại (External fragmentation):
