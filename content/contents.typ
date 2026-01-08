@@ -130,7 +130,7 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
   [Nạp từng phần/thủ tục của chương trình chỉ khi cần dùng],
 
   [#strong[Đối tượng chính]],
-  [Thư viện ngoài (DLL trên Windows, .so trên Unix/Linux)],
+  [Thư viện ngoài (`.dll` trên Windows, `.so` trên Unix/Linux)],
   [Các module/thủ tục bên trong chương trình],
 
   [#strong[Cách hoạt động]],
