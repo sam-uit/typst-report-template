@@ -31,6 +31,7 @@
 )
 #show table.cell: set text(font: "Lora", size: 0.8em)
 
+
 #include "content/contents.typ"
 
 // MARK: - Kết Thúc
