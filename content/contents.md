@@ -15,9 +15,10 @@
 - Là **địa chỉ thực tế** của một ô nhớ trong **bộ nhớ chính (RAM)**.
 - Đây là địa chỉ mà **phần cứng bộ nhớ** trực tiếp sử dụng để truy cập dữ liệu.
 - Người lập trình **không làm việc trực tiếp** với địa chỉ vật lý trong các hệ điều hành hiện đại.
-- **Ví dụ**: Ô nhớ tại vị trí `0x000A3F2C` trong RAM.
 
+### Ví dụ
 
+Ô nhớ tại vị trí `0x000A3F2C` trong RAM.
 
 ## Địa chỉ luận lý (logical address)
 
