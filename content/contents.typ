@@ -119,8 +119,9 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
 == So Sánh
 
 
+
 #table(
-  columns: (1fr,) * 3,
+  columns: (20%, 40%, 40%),
   align: (left, left, left),
   [#strong[Tiêu chí]], [#strong[Dynamic Linking (Liên kết động)]], [#strong[Dynamic Loading (Nạp động)]],
   [#strong[Thời điểm liên kết/nạp]],
@@ -149,7 +150,7 @@ Nếu tiến trình có thể được di chuyển giữa các phân đoạn (se
   [Giảm RAM sử dụng vì không nạp phần không dùng],
 
   [#strong[Ví dụ]], [Chương trình dùng libc.so chỉ nạp khi chạy], [Module xử lý lỗi chỉ nạp khi lỗi xảy ra],
-)
+),
 
 == Dynamic Linking (Liên kết động)
 
