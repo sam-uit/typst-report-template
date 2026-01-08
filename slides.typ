@@ -17,8 +17,11 @@
 // Unordered List of Content
 #outline-slide()
 
+#show text: set text(font: "Lora", size: 0.8em)
+
 // MARK: - Nội Dung Chính
 #include "content/nhom.typ"
+
 
 #set table(
   // Đường viền cho bảng
@@ -26,7 +29,7 @@
   // Màu nền cho hàng đầu tiên (header) và hàng chẵn (nhạt hơn)
   fill: (x, y) => if y == 0 { blue.lighten(90%) } else if calc.even(y) { blue.lighten(98%) } else { none },
 )
-#show table.cell: set text(font: "Montserrat", size: 0.8em)
+#show table.cell: set text(font: "Lora", size: 0.8em)
 
 #include "content/contents.typ"
 
