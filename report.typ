@@ -24,5 +24,5 @@
 #include "content/appendixA.typ"
 
 // Show bibliography
-#show: bibliography-page
-#bibliography("content/bibliography.bib", title: "Tài Liệu Tham Khảo")
+// #show: bibliography-page
+// #bibliography("content/bibliography.bib", title: "Tài Liệu Tham Khảo")
