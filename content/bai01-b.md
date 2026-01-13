@@ -20,10 +20,12 @@ Yêu cầu:
 
 ### Các Đối Tượng Sử Dụng
 
-- `Diem`: `SUM(Diem)`
+Các Bảng và Trường tương ứng:
+
 - `STT`
-- `Msdt`
-- `Tendt`
-- `Msgv(Giaovien)`
+- `GV_UVDT`.`Diem`: `SUM(Diem)`
+- `DETAI`.`Msdt`
+- `DETAI`.`Tendt`
+- `GIAOVIEN`.`Msgv(Giaovien)`
 
 ![Bài 1.B - Các Đối Tượng Sử Dụng](./images/drag_relevant_fields.png)
