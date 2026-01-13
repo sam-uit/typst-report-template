@@ -10,6 +10,10 @@
 
 // Content goes here
 #include "content/chapter01.typ"
+#include "content/bai01-a.typ"
+#include "content/bai01-b.typ"
+#include "content/bai01-c.typ"
+#include "content/bai01-d.typ"
 #include "content/chapter02.typ"
 // #include "content/chapter03.typ"
 // #include "content/chapter04.typ"
