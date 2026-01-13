@@ -42,7 +42,7 @@ Thành viên của nhóm và bảng nhiệm vụ.
       [3],
       [25410321],
       [Nguyễn Điền Triết],
-      [],
+      [- Câu 2],
       [4],
       [25410204],
       [Trương Xuân Hậu],
@@ -58,7 +58,9 @@ Thành viên của nhóm và bảng nhiệm vụ.
       [7],
       [25410247],
       [Lê Kim Long],
-      [],
+      [
+        - Câu 1.A, 1.B
+      ],
       [8],
       [25410337],
       [La Anh Vũ],
@@ -66,7 +68,9 @@ Thành viên của nhóm và bảng nhiệm vụ.
       [9],
       [25410209],
       [Lê Ngọc Hiệp],
-      [],
+      [
+        - Câu 1.C, 1.D
+      ],
       [10],
       [25410271],
       [Nguyễn Thị Ngọc Nhung],
