@@ -84,3 +84,13 @@ Chọn thuộc tính `Discrete` để hiển thị STT rõ ràng.
 ### Màn Hình Preview
 
 ![Bài 1.A - Full Report](./images/full_report.png)
+
+### Các Đối Tượng Sử Dụng
+
+- `Mssv`
+- `Tenv`
+- `Sodt`
+- `LOP`
+- `Diachi`
+
+![Bài 1.A - Các Trường Dữ Liệu Sử Dụng](./images/drag_data.png)
