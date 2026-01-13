@@ -14,76 +14,76 @@ Yêu cầu:
 
 #### Kết Nối SQL Server Với Tableau
 
-![Bài 1.A - Tableau Connection](./images/tableau_connection.png)
+![Bài 1.A - Kết nối SQL Server với Tableau](./images/tableau_connection.png)
 
 #### Cập Nhật Title Của Report
 
-![Bài 1.A - Update title](./images/update_title.png)
+![Bài 1.A - Cập Nhật Title Của Report](./images/update_title.png)
 
 #### Kéo Các Database Fields Từ Data Panel Qua Rows Panel
 
-![Bài 1.A - Drag data](./images/drag_data.png)
+![Bài 1.A - Kéo Database Fields Từ Data Panel Qua Rows Panel](./images/drag_data.png)
 
 #### Bổ Sung Column STT
 
 ##### Tạo Calculated Field STT
 
-![Bài 1.A - Create stt field](./images/create_stt_field.png)
+![Bài 1.A - Tạo Calculated Field STT](./images/create_stt_field.png)
 
 ##### Kéo STT Vào Row Panel Và Chỉnh Sửa Thuộc Tính Cho Phù Hợp
 
 Chọn thuộc tính `Discrete` để hiển thị STT rõ ràng.
 
-![Bài 1.A - Drag stt field](./images/drag_stt_field.png)
+![Bài 1.A - Chọn Thuộc Tính Discrete](./images/drag_stt_field.png)
 
 #### Format Lại Layout
 
 ##### Kéo Row `Dia chi` Vào Mục `Text` Của `Marks` Panel
 
-![Bài 1.A - Mark dia chi](./images/mark_diachi.png)
+![Bài 1.A - Kéo Row Dia chi Vào Mục Text Của Marks Panel](./images/mark_diachi.png)
 
 ##### Kéo `Measure Names` Từ `Data` Panel Vào `Columns` Panel
 
-![Bài 1.A - Drag measure name](./images/drag_measure_names.png)
+![Bài 1.A - Kéo Measure Names Từ Data Vào Columns Panel](./images/drag_measure_names.png)
 
-##### Cập Nhật Lại Color Của Header
+##### Cập Nhật Lại Màu Của Header
 
-![Bài 1.A - Update color](./images/update_color.png)
+![Bài 1.A - Cập Nhật Lại Màu Của Header](./images/update_color.png)
 
 ##### Cập Nhật Lại Công Thức Tính Index Của STT Để Hiển Thị Chính Xác
 
 - Chọn `Edit Table Calculation`
 
-![Bài 1.A - Choose edit table calculation](./images/choose_edit_table_calculation.png)
+![Bài 1.A - Chọn Edit Table Calculation](./images/choose_edit_table_calculation.png)
 
 - Cập nhật lại logic
   - Chọn `Specific Dimensions`
   - Check tất cả các giá trị hiện tại cần kết hợp để xác định index.
   - Ở mục `At the level`: chọn `Deepest`
 
-![Bài 1.A - Update calculation](./images/update_calculation.png)
+![Bài 1.A - Cập Nhật Lại Công Thức Tính Index Của STT](./images/update_calculation.png)
 
 ### Màn Hình Design
 
 #### Tạo Dashboard Và Setup Layout
 
-![Bài 1.A - Create dashboard](./images/create_dashboard.png)
+![Bài 1.A - Tạo Dashboard Và Setup Layout](./images/create_dashboard.png)
 
 #### Thêm Title Cho Dashboard
 
-![Bài 1.A - Add title dashboard](./images/add_title_dashboard.png)
+![Bài 1.A - Thêm Title Cho Dashboard](./images/add_title_dashboard.png)
 
 #### Kéo Report Vào Dashboard
 
-![Bài 1.A - Drag report to dashboard](./images/drag_report_to_dashboard.png)
+![Bài 1.A - Kéo Report Vào Dashboard](./images/drag_report_to_dashboard.png)
 
 #### Thêm Footer To Dashboard
 
-![Bài 1.A - Add footer to dashboard](./images/add_footer_dashboard.png)
+![Bài 1.A - Thêm Footer To Dashboard](./images/add_footer_dashboard.png)
 
 ### Màn Hình Preview
 
-![Bài 1.A - Full Report](./images/full_report.png)
+![Bài 1.A - Màn Hình Preview](./images/full_report.png)
 
 ### Các Đối Tượng Sử Dụng
 
