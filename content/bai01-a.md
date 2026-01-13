@@ -38,21 +38,19 @@ Chọn thuộc tính `Discrete` để hiển thị STT rõ ràng.
 
 #### Format Lại Layout
 
-##### Ẩn Đi Column Không Cần Thiết Có Chứa Nội Dung "ABC"
-
-###### Kéo Row `Dia chi` Vào Mục `Text` Của `Marks` Panel
+##### Kéo Row `Dia chi` Vào Mục `Text` Của `Marks` Panel
 
 ![Bài 1.A - Mark dia chi](./images/mark_diachi.png)
 
-###### Kéo `Measure Names` Từ `Data` Panel Vào `Columns` Panel
+##### Kéo `Measure Names` Từ `Data` Panel Vào `Columns` Panel
 
 ![Bài 1.A - Drag measure name](./images/drag_measure_names.png)
 
-###### Cập Nhật Lại Color Của Header
+##### Cập Nhật Lại Color Của Header
 
 ![Bài 1.A - Update color](./images/update_color.png)
 
-###### Cập Nhật Lại Công Thức Tính Index Của STT Để Hiển Thị Chính Xác
+##### Cập Nhật Lại Công Thức Tính Index Của STT Để Hiển Thị Chính Xác
 
 - Chọn `Edit Table Calculation`
 
