@@ -20,9 +20,9 @@ Yêu cầu:
 
 ![Bài 1.A - Cập Nhật Title Của Report](./images/update_title.png)
 
-#### Kéo Các Database Fields Từ Data Panel Qua Rows Panel
+#### Kéo Fields Từ Data Panel Qua Rows Panel
 
-![Bài 1.A - Kéo Database Fields Từ Data Panel Qua Rows Panel](./images/drag_data.png)
+![Bài 1.A - Kéo Fields Từ Data Panel Qua Rows Panel](./images/drag_data.png)
 
 #### Bổ Sung Column STT
 
@@ -38,9 +38,9 @@ Chọn thuộc tính `Discrete` để hiển thị STT rõ ràng.
 
 #### Format Lại Layout
 
-##### Kéo Row `Dia chi` Vào Mục `Text` Của `Marks` Panel
+##### Kéo `Dia chi` Vào Mục `Text` Của `Marks` Panel
 
-![Bài 1.A - Kéo Row Dia chi Vào Mục Text Của Marks Panel](./images/mark_diachi.png)
+![Bài 1.A - Kéo Dia chi Vào Mục Text Của Marks Panel](./images/mark_diachi.png)
 
 ##### Kéo `Measure Names` Từ `Data` Panel Vào `Columns` Panel
 
