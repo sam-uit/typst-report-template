@@ -17,7 +17,7 @@ Yêu cầu gồm có 2 phần sau:
     - Phần Page Header tô nền vàng và có Border xung quanh.
     - Phần Detail có Border xung quanh.
 
-### Phần Biểu đồ tròn (Pie Chart)
+### Phần Biểu Đồ Tròn (Pie Chart)
 
 ```sql
 -- Tạo View tính tổng doanh thu riêng từng sản phẩm trong năm 2006, 2007
@@ -40,17 +40,17 @@ GROUP BY
 GO
 ```
 
-### Kiểm tra kết quả của view vừa tạo
+### Kiểm Tra Kết Quả Của View Vua Tạo
 
 ```sql
    SELECT * FROM V_BAOCAO_DOANHTHU_SP_2006_2007;
 ```
 
-### Tạo chart (Pie) trong sheet mới
+### Tạo Chart (Pie) Trong Sheet Mới
 
 ![Bài 1.D - Tạo chart (Pie) trong sheet mới](./images/1d-1-1.png)
 
-### Mapping dữ liệu từ View V_BAOCAO_DOANHTHU_SP_2006_2007 vào chart
+### Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_SP_2006_2007 Vào Chart
 
 Kéo thả vào mục Marks các trường trong view:
 
@@ -64,11 +64,11 @@ Kéo thả vào mục Marks các trường trong view:
 
 ![Bài 1.D - Mapping dữ liệu từ View vào chart (3)](./images/1d-1-4.png)
 
-### Màn hình design của chart
+### Màn Hình Design Của Chart
 
 ![Bài 1.D - Màn hình design của chart](./images/1d-1-5.png)
 
-### Bảng số liệu chi tiết, tạo sheet mới, tô màu và vẽ đường viền
+### Bảng Số Liệu Chi Tiết, Tạo Sheet Mới, Tô Màu Và Vẽ Đường Viền
 
 Kéo thả các field trong View
 
@@ -82,22 +82,22 @@ Kéo thả các field trong View
 
 ![Bài 1.D - Tạo STT (2)](./images/1d-1-9.png)
 
-### Màn hình design & preview chi tiết
+### Màn Hình Design & Preview Chi Tiết
 
 ![Bài 1.D - Màn hình design & preview chi tiết (1)](./images/1d-1-10.png)
 
 ![Bài 1.D - Màn hình design & preview chi tiết (2)](./images/1d-1-12.png)
 
-### Tạo dashboard để hiển thị biểu đồ và chi tiết
+### Tạo Dashboard Để Hiển Thị Biểu Đồ Và Chi Tiết
 
 Kéo thả 2 sheet biểu đồ và sheet chi tiết vào
 
 ![Bài 1.D - Tạo dashboard để hiển thị biểu đồ và chi tiết](./images/1d-1-11.png)
 
-### Màn hình design cuối cùng
+### Màn Hình Design Của Dashboard
 
 ![Bài 1.D - Màn hình design cuối cùng](./images/1d-1-13.png)
 
-### Màn hình preview
+### Màn Hình Preview
 
 ![Bài 1.D - Màn hình preview](./images/1d-1-14.png)
