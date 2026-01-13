@@ -10,18 +10,14 @@ Yêu cầu:
 - Page Header có 2 đường kẻ trên cùng và 1 đường kẻ dưới cùng, Report Footer có 2 đường kẻ. Tô nền vàng cho Page Header và Report Footer.
 - Ngăn cách phần mỗi đề tài trong phần Details bằng 1 đường kẻ trước mỗi đề tài.
 
-### 1. Kết Nối Database
+### Màn Hình Design
 
-![Connect Database](./images/connect_database_2.png)
+![Bài 1.B - Màn Hình Design](./images/config_stt_field.png)
 
-### 2. Kết Nối Các Fields Và Data Liên Quan Vào Columns Và Rows Panels
+### Màn Hình Preview 
 
-![Drag Relevant Fields](./images/drag_relevant_fields.png)
+![Bài 1.B - Màn Hình Preview](./images/dashboard_2.png)
 
-### 3. Config STT Field Để Group Theo Từng Đề Tài
+### Các Đối Tượng Sử Dụng
 
-![Config STT Field](./images/config_stt_field.png)
-
-### 4. Thiết Kế Dashboard
-
-![Dashboard](./images/dashboard_2.png)
+![Bài 1.B - Các Đối Tượng Sử Dụng](./images/drag_relevant_fields.png)
