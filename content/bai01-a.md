@@ -56,7 +56,7 @@ Chọn thuộc tính `Discrete` để hiển thị STT rõ ràng.
 
 ![Bài 1.A - Chọn Edit Table Calculation](./images/choose_edit_table_calculation.png)
 
-- Cập nhật lại logic
+- Cập nhật lại logic:
   - Chọn `Specific Dimensions`
   - Check tất cả các giá trị hiện tại cần kết hợp để xác định index.
   - Ở mục `At the level`: chọn `Deepest`
