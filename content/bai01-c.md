@@ -114,8 +114,10 @@ GO
 
 ![Bài 1.C - Format dashboard](./images/1c-1-16.png)
 
-### Màn Hình Design Và Preview Hoàn Thành
+### Màn Hình Design
 
-![Bài 1.C - Màn hình design và preview hoàn thành (1)](./images/1c-1-17.png)
+![Bài 1.C - Màn hình Design](./images/1c-1-17.png)
 
-![Bài 1.C - Màn hình design và preview hoàn thành (2)](./images/1c-1-18.png)
+### Màn Hình Preview
+
+![Bài 1.C - Màn hình Preview](./images/1c-1-18.png)
