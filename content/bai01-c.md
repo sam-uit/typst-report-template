@@ -75,11 +75,11 @@ Yêu cầu gồm có 2 phần sau:
 
 ### Màn Hình Design
 
-![Bài 1.C - Màn hình Design](./images/1c-1-17.png)
+![Bài 1.C - Màn hình Design](./images/1c-1-15.png)
 
 ### Màn Hình Preview
 
-![Bài 1.C - Màn hình Preview](./images/1c-1-18.png)
+![Bài 1.C - Màn hình Preview](./images/1c-1-17.png)
 
 ### Các Đối Tượng Sử Dụng
 
