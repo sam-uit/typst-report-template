@@ -1,7 +1,9 @@
-# Phụ Lục: Các Bước Thực Hiện
+# Kết Quả Thực Hiện
 
-## Các Bước Thực Hiện 1.B
+## 1.A
 
-## Các Bước Thực Hiện 1.C
+## 1.B
 
-## Các Bước Thực Hiện 1.D
+## 1.C
+
+## 1.D
