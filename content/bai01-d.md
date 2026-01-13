@@ -96,8 +96,11 @@ Kéo thả 2 sheet biểu đồ và sheet chi tiết vào
 
 ### Màn Hình Design Của Dashboard
 
-![Bài 1.D - Màn hình design cuối cùng](./images/1d-1-13.png)
+![Bài 1.D - Màn Hình Design Của Dashboard](./images/1d-1-13.png)
 
 ### Màn Hình Preview
 
-![Bài 1.D - Màn hình preview](./images/1d-1-14.png)
+![Bài 1.D - Màn Hình Preview](./images/1d-1-14.png)
+
+### Các Đối Tượng Sử Dụng
+
