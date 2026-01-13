@@ -20,7 +20,7 @@ Yêu cầu:
 
 ### Các Đối Tượng Sử Dụng
 
-- `Diem`
+- `Diem`: `SUM(Diem)`
 - `STT`
 - `Msdt`
 - `Tendt`
