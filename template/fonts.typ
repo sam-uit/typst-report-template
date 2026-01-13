@@ -10,7 +10,7 @@
   // Alternative: Montserrat, Google Sans
   sans: "Montserrat",
   // Alternative: Lora, Linux Libertine
-  serif: "Source Serif 4",
+  serif: "New Computer Modern",
   // Alternative: Fira Code, Ubuntu Mono
   mono: "Iosevka",
 )
