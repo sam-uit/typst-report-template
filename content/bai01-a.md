@@ -63,24 +63,24 @@ Chọn thuộc tính `Discrete` để hiển thị STT rõ ràng.
 
 ![Bài 1.A - Update calculation](./images/update_calculation.png)
 
-#### Màn Hình Design
+### Màn Hình Design
 
-##### Tạo Dashboard Và Setup Layout
+#### Tạo Dashboard Và Setup Layout
 
 ![Bài 1.A - Create dashboard](./images/create_dashboard.png)
 
-##### Thêm Title Cho Dashboard
+#### Thêm Title Cho Dashboard
 
 ![Bài 1.A - Add title dashboard](./images/add_title_dashboard.png)
 
-##### Kéo Report Vào Dashboard
+#### Kéo Report Vào Dashboard
 
 ![Bài 1.A - Drag report to dashboard](./images/drag_report_to_dashboard.png)
 
-##### Thêm Footer To Dashboard
+#### Thêm Footer To Dashboard
 
 ![Bài 1.A - Add footer to dashboard](./images/add_footer_dashboard.png)
 
-#### Màn Hình Preview
+### Màn Hình Preview
 
 ![Bài 1.A - Full Report](./images/full_report.png)
