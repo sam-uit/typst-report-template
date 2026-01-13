@@ -20,4 +20,10 @@ Yêu cầu:
 
 ### Các Đối Tượng Sử Dụng
 
+- `Diem`
+- `STT`
+- `Msdt`
+- `Tendt`
+- `Msgv(Giaovien)`
+
 ![Bài 1.B - Các Đối Tượng Sử Dụng](./images/drag_relevant_fields.png)
