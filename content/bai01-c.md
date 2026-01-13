@@ -13,46 +13,7 @@ Yêu cầu gồm có 2 phần sau:
     - Tổng doanh thu của tất cả nhân viên trong năm 2006.
     - Lưu ý: Một số tháng không được hiển thị là do bảng `HOADON` không có số liệu bán hàng của tháng đó.
 
-### Tạo View Cho Doanh Thu Năm 2006
 
-```sql
--- Tạo View để tổng hợp doanh thu theo nhân viên và tháng trong năm 2006
-
-CREATE OR ALTER VIEW V_BAOCAO_DOANHTHU_2006 AS
-WITH
-NhanVienActive AS (
-    SELECT DISTINCT NV.MANV, NV.HOTEN
-    FROM NHANVIEN NV
-    JOIN HOADON HD ON NV.MANV = HD.MANV
-    WHERE YEAR(HD.NGHD) = 2006
-),
-
-CacThangActive AS (
-    SELECT DISTINCT MONTH(NGHD) AS Thang
-    FROM HOADON
-    WHERE YEAR(NGHD) = 2006
-),
-
-Data AS (
-    SELECT NV.MANV, NV.HOTEN, T.Thang
-    FROM NhanVienActive NV
-    CROSS JOIN CacThangActive T
-)
-SELECT
-    K.MANV,
-    K.HOTEN,
-    K.Thang,
-    ISNULL(SUM(HD.TRIGIA), 0) AS TongTien
-FROM
-    Data K
-LEFT JOIN
-    HOADON HD ON K.MANV = HD.MANV
-              AND K.Thang = MONTH(HD.NGHD)
-              AND YEAR(HD.NGHD) = 2006
-GROUP BY
-    K.MANV, K.HOTEN, K.Thang
-GO
-```
 
 ### Kiểm Tra Kết Quả Của View Vừa Tạo
 
@@ -66,9 +27,7 @@ GO
 
 ![Bài 1.C - Kết nối SQL Server với Tableau](./images/1c-1-2.png)
 
-### Kéo VIEW V_BAOCAO_DOANHTHU_2006 Vào Trong Worksheet Để Tạo Chart Line
-
-![Bài 1.C - Kéo view vào worksheet](./images/1c-1-3.png)
+### Kéo 
 
 ### Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_2006 Đã Tạo Theo Trục X Và Y
 
@@ -121,3 +80,62 @@ GO
 ### Màn Hình Preview
 
 ![Bài 1.C - Màn hình Preview](./images/1c-1-18.png)
+
+### Các Đối Tượng Sử Dụng
+
+#### Tạo View Cho Doanh Thu Năm 2006
+
+```sql
+-- Tạo View để tổng hợp doanh thu theo nhân viên và tháng trong năm 2006
+
+CREATE OR ALTER VIEW V_BAOCAO_DOANHTHU_2006 AS
+WITH
+NhanVienActive AS (
+    SELECT DISTINCT NV.MANV, NV.HOTEN
+    FROM NHANVIEN NV
+    JOIN HOADON HD ON NV.MANV = HD.MANV
+    WHERE YEAR(HD.NGHD) = 2006
+),
+
+CacThangActive AS (
+    SELECT DISTINCT MONTH(NGHD) AS Thang
+    FROM HOADON
+    WHERE YEAR(NGHD) = 2006
+),
+
+Data AS (
+    SELECT NV.MANV, NV.HOTEN, T.Thang
+    FROM NhanVienActive NV
+    CROSS JOIN CacThangActive T
+)
+SELECT
+    K.MANV,
+    K.HOTEN,
+    K.Thang,
+    ISNULL(SUM(HD.TRIGIA), 0) AS TongTien
+FROM
+    Data K
+LEFT JOIN
+    HOADON HD ON K.MANV = HD.MANV
+              AND K.Thang = MONTH(HD.NGHD)
+              AND YEAR(HD.NGHD) = 2006
+GROUP BY
+    K.MANV, K.HOTEN, K.Thang
+GO
+```
+
+#### VIEW V_BAOCAO_DOANHTHU_2006
+
+![Bài 1.C - VIEW V_BAOCAO_DOANHTHU_2006](./images/1c-1-3.png)
+
+#### Cột Tháng và SUM Tổng Tiền
+
+![Bài 1.C - Cột Tháng và SUM Tổng Tiền](./images/1c-1-4.png)
+
+#### Caculated Field MaNV - HoTen
+
+- Để Hiển Thị Dạng MaNV - HoTen
+
+![Bài 1.C - Caculated field MaNV - HoTen (1)](./images/1c-1-10.png)
+
+![Bài 1.C - Caculated field MaNV - HoTen (2)](./images/1c-1-11.png)
