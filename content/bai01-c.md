@@ -70,11 +70,11 @@ Kết Quả Của View Vừa Tạo:
    SELECT * FROM V_BAOCAO_DOANHTHU_2006  ORDER BY MANV, Thang;
 ```
 
-![Bài 1.C - Kết Quả của view V_BAOCAO_DOANHTHU_2006](./images/1c-1-1.png)
+![Bài 1.C - View V_BAOCAO_DOANHTHU_2006](./images/1c-1-1.png)
 
 #### VIEW V_BAOCAO_DOANHTHU_2006
 
-![Bài 1.C - VIEW V_BAOCAO_DOANHTHU_2006](./images/1c-1-3.png)
+![Bài 1.C - Sử Dụng V_BAOCAO_DOANHTHU_2006](./images/1c-1-3.png)
 
 #### Cột Tháng và SUM Tổng Tiền
 
