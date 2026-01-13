@@ -63,7 +63,7 @@ Chọn thuộc tính `Discrete` để hiển thị STT rõ ràng.
 
 ![Bài 1.A - Update calculation](./images/update_calculation.png)
 
-#### Tạo Dashboard Cho Report
+#### Màn Hình Design
 
 ##### Tạo Dashboard Và Setup Layout
 
@@ -81,6 +81,6 @@ Chọn thuộc tính `Discrete` để hiển thị STT rõ ràng.
 
 ![Bài 1.A - Add footer to dashboard](./images/add_footer_dashboard.png)
 
-#### Report Hoàn Chỉnh
+#### Màn Hình Preview
 
 ![Bài 1.A - Full Report](./images/full_report.png)
