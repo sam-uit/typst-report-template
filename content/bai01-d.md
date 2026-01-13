@@ -17,7 +17,17 @@ Yêu cầu gồm có 2 phần sau:
     - Phần Page Header tô nền vàng và có Border xung quanh.
     - Phần Detail có Border xung quanh.
 
-### Phần Biểu Đồ Tròn (Pie Chart)
+### Màn Hình Design Của Dashboard
+
+![Bài 1.D - Màn Hình Design Của Dashboard](./images/1d-1-13.png)
+
+### Màn Hình Preview
+
+![Bài 1.D - Màn Hình Preview](./images/1d-1-14.png)
+
+### Các Đối Tượng Sử Dụng
+
+#### VIEW V_BAOCAO_DOANHTHU_SP_2006_2007
 
 ```sql
 -- Tạo View tính tổng doanh thu riêng từng sản phẩm trong năm 2006, 2007
@@ -40,67 +50,10 @@ GROUP BY
 GO
 ```
 
-### Kiểm Tra Kết Quả Của View Vua Tạo
+#### Các Trường Dữ Liệu
 
-```sql
-   SELECT * FROM V_BAOCAO_DOANHTHU_SP_2006_2007;
-```
-
-### Tạo Chart (Pie) Trong Sheet Mới
-
-![Bài 1.D - Tạo chart (Pie) trong sheet mới](./images/1d-1-1.png)
-
-### Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_SP_2006_2007 Vào Chart
-
-Kéo thả vào mục Marks các trường trong view:
-
-- MaSP -> Color => để hiển thị màu phân biệt sp
-- Sum(TongCaNam) -> Angle => để chia tỉ lệ trong biểu đồ
-- Sum(TongCaNam) và MaSP -> Label => để hiển thị trên biểu đồ
-
-![Bài 1.D - Mapping dữ liệu từ View vào chart (1)](./images/1d-1-2.png)
-
-![Bài 1.D - Mapping dữ liệu từ View vào chart (2)](./images/1d-1-3.png)
+- `MaSP`: Color, hiển thị màu phân biệt sản phẩm.
+- `SUM(TongCaNam)`: Angle, hiển thị góc của phần trăm trong biểu đồ.
+- `SUM(TongCaNam)` và `MaSP`: Label, để hiện thị trên biểu đồ.
 
 ![Bài 1.D - Mapping dữ liệu từ View vào chart (3)](./images/1d-1-4.png)
-
-### Màn Hình Design Của Chart
-
-![Bài 1.D - Màn hình design của chart](./images/1d-1-5.png)
-
-### Bảng Số Liệu Chi Tiết, Tạo Sheet Mới, Tô Màu Và Vẽ Đường Viền
-
-Kéo thả các field trong View
-
-![Bài 1.D - Bảng số liệu chi tiết (1)](./images/1d-1-6.png)
-
-![Bài 1.D - Bảng số liệu chi tiết (2)](./images/1d-1-7.png)
-
-### Tạo STT
-
-![Bài 1.D - Tạo STT (1)](./images/1d-1-8.png)
-
-![Bài 1.D - Tạo STT (2)](./images/1d-1-9.png)
-
-### Màn Hình Design & Preview Chi Tiết
-
-![Bài 1.D - Màn hình design & preview chi tiết (1)](./images/1d-1-10.png)
-
-![Bài 1.D - Màn hình design & preview chi tiết (2)](./images/1d-1-12.png)
-
-### Tạo Dashboard Để Hiển Thị Biểu Đồ Và Chi Tiết
-
-Kéo thả 2 sheet biểu đồ và sheet chi tiết vào
-
-![Bài 1.D - Tạo dashboard để hiển thị biểu đồ và chi tiết](./images/1d-1-11.png)
-
-### Màn Hình Design Của Dashboard
-
-![Bài 1.D - Màn Hình Design Của Dashboard](./images/1d-1-13.png)
-
-### Màn Hình Preview
-
-![Bài 1.D - Màn Hình Preview](./images/1d-1-14.png)
-
-### Các Đối Tượng Sử Dụng
-
