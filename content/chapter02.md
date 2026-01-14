@@ -81,6 +81,12 @@ Viết lệnh Xquery trả về danh sách sinh viên có `ID < 12` với `MSDH 
 #raw(read("code/BTTH5-b-3.sql"), lang: "sql", block: true)
 ```
 
+Giải thích:
+
+- `for $sv in /THONGTINSV/sinhvien`: Duyệt qua tất cả các phần tử `sinhvien`.
+- `where $sv/@ID < 12`: Lọc các sinh viên có ID nhỏ hơn 12.
+- `return $sv`: Trả về phần tử sinh viên thỏa mãn điều kiện.
+
 Kết quả:
 
 ![BTTH5-b-3](assets/BTTH5-b-3.png)
