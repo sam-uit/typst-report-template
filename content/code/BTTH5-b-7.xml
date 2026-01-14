@@ -1,0 +1,10 @@
+<sinhvien ID="10" Ten="Nam">
+	<monhoc ID="1" Ten="Co So Du Lieu" />
+	<monhoc ID="2" Ten="Cau Truc Du Lieu" />
+	<monhoc ID="3" Ten="Lap Trinh Mobile" />
+</sinhvien>
+<sinhvien ID="12" Ten="Thanh">
+	<monhoc ID="7" Ten="Anh Van" />
+	<monhoc ID="8" Ten="Thiet Ke Web" />
+	<monhoc ID="9" Ten="An Toan Thong Tin" />
+</sinhvien>
