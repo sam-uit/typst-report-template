@@ -43,6 +43,22 @@ Viết lệnh trả về tất cả các nút từ nút gốc là `THONGTINSV`.
 #raw(read("code/BTTH5-b-2.sql"), lang: "sql", block: true)
 ```
 
+Kết quả:
+
+![BTTH5-b-2](assets/BTTH5-b-2.png)
+
+- CNTT:
+
+```{=typst}
+#raw(read("code/BTTH5-b-2a.xml"), lang: "xml", block: true)
+```
+
+- KHTN:
+
+```{=typst}
+#raw(read("code/BTTH5-b-2b.xml"), lang: "xml", block: true)
+```
+
 ## Câu 3
 
 Viết lệnh Xquery trả về danh sách sinh viên có `ID < 12` với `MSDH = 1`.
