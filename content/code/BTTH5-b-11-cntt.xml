@@ -1,60 +1,36 @@
-<row>
-	<TenKhoaHoc>DH CNTT</TenKhoaHoc>
+<row><TenKhoaHoc>DH CNTT</TenKhoaHoc>
 	<TenSinhVien>Nam</TenSinhVien>
-	<TenMonHoc>Co So Du Lieu</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH CNTT</TenKhoaHoc>
+	<TenMonHoc>Co So Du Lieu</TenMonHoc></row>
+<row><TenKhoaHoc>DH CNTT</TenKhoaHoc>
 	<TenSinhVien>Nam</TenSinhVien>
-	<TenMonHoc>Cau Truc Du Lieu</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH CNTT</TenKhoaHoc>
+	<TenMonHoc>Cau Truc Du Lieu</TenMonHoc></row>
+<row><TenKhoaHoc>DH CNTT</TenKhoaHoc>
 	<TenSinhVien>Nam</TenSinhVien>
-	<TenMonHoc>Lap Trinh Mobile</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH CNTT</TenKhoaHoc>
+	<TenMonHoc>Lap Trinh Mobile</TenMonHoc></row>
+<row><TenKhoaHoc>DH CNTT</TenKhoaHoc>
 	<TenSinhVien>Binh</TenSinhVien>
-	<TenMonHoc>Toan Giai Tich</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH CNTT</TenKhoaHoc>
+	<TenMonHoc>Toan Giai Tich</TenMonHoc></row>
+<row><TenKhoaHoc>DH CNTT</TenKhoaHoc>
 	<TenSinhVien>Binh</TenSinhVien>
-	<TenMonHoc>Lap Trinh Java</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH CNTT</TenKhoaHoc>
+	<TenMonHoc>Lap Trinh Java</TenMonHoc></row>
+<row><TenKhoaHoc>DH CNTT</TenKhoaHoc>
 	<TenSinhVien>Binh</TenSinhVien>
-	<TenMonHoc>He Quan Tri CSDL</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH CNTT</TenKhoaHoc>
+	<TenMonHoc>He Quan Tri CSDL</TenMonHoc></row>
+<row><TenKhoaHoc>DH CNTT</TenKhoaHoc>
 	<TenSinhVien>Thanh</TenSinhVien>
-	<TenMonHoc>Anh Van</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH CNTT</TenKhoaHoc>
+	<TenMonHoc>Anh Van</TenMonHoc></row>
+<row><TenKhoaHoc>DH CNTT</TenKhoaHoc>
 	<TenSinhVien>Thanh</TenSinhVien>
-	<TenMonHoc>Thiet Ke Web</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH CNTT</TenKhoaHoc>
+	<TenMonHoc>Thiet Ke Web</TenMonHoc></row>
+<row><TenKhoaHoc>DH CNTT</TenKhoaHoc>
 	<TenSinhVien>Thanh</TenSinhVien>
-	<TenMonHoc>An Toan Thong Tin</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH CNTT</TenKhoaHoc>
+	<TenMonHoc>An Toan Thong Tin</TenMonHoc></row>
+<row><TenKhoaHoc>DH CNTT</TenKhoaHoc>
 	<TenSinhVien>Lan</TenSinhVien>
-	<TenMonHoc>Toan Roi Rac</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH CNTT</TenKhoaHoc>
+	<TenMonHoc>Toan Roi Rac</TenMonHoc></row>
+<row><TenKhoaHoc>DH CNTT</TenKhoaHoc>
 	<TenSinhVien>Lan</TenSinhVien>
-	<TenMonHoc>Lap Trinh C#</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH CNTT</TenKhoaHoc>
+	<TenMonHoc>Lap Trinh C#</TenMonHoc></row>
+<row><TenKhoaHoc>DH CNTT</TenKhoaHoc>
 	<TenSinhVien>Lan</TenSinhVien>
-	<TenMonHoc>CSDL Nang Cao</TenMonHoc>
-</row>
+	<TenMonHoc>CSDL Nang Cao</TenMonHoc></row>
