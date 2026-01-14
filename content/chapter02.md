@@ -314,9 +314,16 @@ Kết quả:
 
 Thêm `Lan` vào `THONGTINSV`:
 
+Sử dụng lệnh `insert` với các tùy chọn vị trí: `as first`, `as last`, `before`, `after`.
+
 ```{=typst}
 #raw(read("code/BTTH5-b-10b.sql"), lang: "sql", block: true)
 ```
+
+Giải thích:
+
+- `insert ... as last into [/THONGTINSV](1)`: Chèn phần tử mới vào cuối cùng của phần tử `THONGTINSV` đầu tiên.
+- `(1)`: Chỉ định phần tử đầu tiên (vì có thể có nhiều phần tử `THONGTINSV`).
 
 Hoàn thành:
 
