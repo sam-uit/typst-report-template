@@ -1,0 +1,5 @@
+<sinhvien ID="12" Ten="Thanh">
+	<monhoc ID="7" Ten="Anh Van" />
+	<monhoc ID="8" Ten="Thiet Ke Web" />
+	<monhoc ID="9" Ten="An Toan Thong Tin" />
+</sinhvien>
