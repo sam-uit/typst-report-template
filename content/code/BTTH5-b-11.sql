@@ -1,3 +1,4 @@
+-- Câu 11. Thực hiện phép nối bằng Xquery
 SELECT ChiTietSV.query('
   for $sv in /THONGTINSV/sinhvien
   for $mh in $sv/monhoc
@@ -9,3 +10,4 @@ SELECT ChiTietSV.query('
     </row>
 ') AS KetQua
 FROM QuanLySV
+GO
