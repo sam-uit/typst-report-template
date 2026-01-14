@@ -17,11 +17,9 @@ Hãy sử dụng Xpath, Xquery để thực hiện các yêu cầu sau đây.
 #raw(read("code/BTTH5-b-1a.sql"), lang: "sql", block: true)
 Kết quả:
 
-#figure(image("assets/BTTH5-b-1a.png"),
-  caption: [
-    BTTH5-b-1a
-  ]
-)
+#figure(image("assets/BTTH5-b-1a.png"), caption: [
+  Câu 1 - Sinh viên có `ID=10`
+])
 
 #raw(read("code/BTTH5-b-1a.xml"), lang: "xml", block: true)
 
@@ -31,11 +29,9 @@ Kết quả:
 #raw(read("code/BTTH5-b-1b.sql"), lang: "sql", block: true)
 Kết quả:
 
-#figure(image("assets/BTTH5-b-1b.png"),
-  caption: [
-    BTTH5-b-1b
-  ]
-)
+#figure(image("assets/BTTH5-b-1b.png"), caption: [
+  Câu 1 - Sinh viên ở vị trí cuối cùng trong trường `CNTT`
+])
 
 #raw(read("code/BTTH5-b-1b.xml"), lang: "xml", block: true)
 
@@ -47,11 +43,9 @@ Viết lệnh trả về tất cả các nút từ nút gốc là `THONGTINSV`.
 #raw(read("code/BTTH5-b-2.sql"), lang: "sql", block: true)
 Kết quả:
 
-#figure(image("assets/BTTH5-b-2.png"),
-  caption: [
-    BTTH5-b-2
-  ]
-)
+#figure(image("assets/BTTH5-b-2.png"), caption: [
+  Câu 2 - Trả về tất cả các nút từ nút gốc là `THONGTINSV`
+])
 
 - CNTT:
 
@@ -68,11 +62,9 @@ Viết lệnh Xquery trả về danh sách sinh viên có `ID < 12` với `MSDH 
 #raw(read("code/BTTH5-b-3.sql"), lang: "sql", block: true)
 Kết quả:
 
-#figure(image("assets/BTTH5-b-3.png"),
-  caption: [
-    BTTH5-b-3
-  ]
-)
+#figure(image("assets/BTTH5-b-3.png"), caption: [
+  Câu 3 - Danh sách sinh viên có `ID < 12` với `MSDH = 1`
+])
 
 #raw(read("code/BTTH5-b-3.xml"), lang: "xml", block: true)
 
@@ -84,11 +76,9 @@ Viết lệnh Xquery trả về danh sách sinh viên sắp xếp theo tên vớ
 #raw(read("code/BTTH5-b-4.sql"), lang: "sql", block: true)
 Kết quả:
 
-#figure(image("assets/BTTH5-b-4.png"),
-  caption: [
-    BTTH5-b-4
-  ]
-)
+#figure(image("assets/BTTH5-b-4.png"), caption: [
+  Câu 4 - Danh sách sinh viên sắp xếp theo tên với `MSDH=2`
+])
 
 #raw(read("code/BTTH5-b-4.xml"), lang: "xml", block: true)
 
@@ -107,11 +97,9 @@ Viết lệnh Xquery trả về `MSDH` và `TenDH` theo định dạng sau:
 #raw(read("code/BTTH5-b-5.sql"), lang: "sql", block: true)
 Kết quả:
 
-#figure(image("assets/BTTH5-b-5.png"),
-  caption: [
-    BTTH5-b-5
-  ]
-)
+#figure(image("assets/BTTH5-b-5.png"), caption: [
+  Câu 5 - Trả về `MSDH` và `TenDH` theo định dạng
+])
 
 #raw(read("code/BTTH5-b-5.xml"), lang: "xml", block: true)
 
@@ -123,11 +111,9 @@ Viết lệnh Xquery xóa tên các sinh viên trường DH `KHTN`.
 #raw(read("code/BTTH5-b-6.sql"), lang: "sql", block: true)
 Hoàn thành:
 
-#figure(image("assets/BTTH5-b-6.png"),
-  caption: [
-    BTTH5-b-6
-  ]
-)
+#figure(image("assets/BTTH5-b-6.png"), caption: [
+  Câu 6 - Xóa tên các sinh viên trường DH `KHTN`
+])
 
 Kiểm tra lại:
 
@@ -146,11 +132,9 @@ Viết lệnh Xquery trả về thông tin các sinh viên có tên là '`Nam`' 
 #raw(read("code/BTTH5-b-7.sql"), lang: "sql", block: true)
 Kết quả:
 
-#figure(image("assets/BTTH5-b-7.png"),
-  caption: [
-    BTTH5-b-7
-  ]
-)
+#figure(image("assets/BTTH5-b-7.png"), caption: [
+  Câu 7 - Các sinh viên có tên là '`Nam`' hoặc '`Thanh`'
+])
 
 #raw(read("code/BTTH5-b-7.xml"), lang: "xml", block: true)
 
@@ -162,11 +146,9 @@ Viết lệnh Xquery thay đổi tên sinh viên thứ 2 thành tên '`Binh`' tr
 #raw(read("code/BTTH5-b-8.sql"), lang: "sql", block: true)
 Hoàn thành:
 
-#figure(image("assets/BTTH5-b-8.png"),
-  caption: [
-    BTTH5-b-8
-  ]
-)
+#figure(image("assets/BTTH5-b-8.png"), caption: [
+  Câu 8 - Thay đổi tên sinh viên thành tên 'Binh'
+])
 
 Kiểm tra lại:
 
@@ -190,15 +172,14 @@ Hoàn thành:
 
 - Có 1 sinh viên có `ID = 12` trong trường `KHTN`.
 
-#figure(image("assets/BTTH5-b-9.png"),
-  caption: [
-    BTTH5-b-9
-  ]
-)
+#figure(image("assets/BTTH5-b-9.png"), caption: [
+  Câu 9 - Kiểm tra sinh viên có `ID` là 12 trong trường `KHTN`
+])
 
 Kiểm tra lại:
 
 #raw(read("code/BTTH5-b-9a.sql"), lang: "sql", block: true)
+
 Kết quả:
 
 - Trả về `sinhvien` có `ID = 12` trong trường `KHTN`.
@@ -231,15 +212,14 @@ Và `INSERT` thêm vào `THONGTINSV`:
 Kiểm tra xem có tồn tại sinh viên `Lan` trong trường `CNTT` không:
 
 #raw(read("code/BTTH5-b-10a.sql"), lang: "sql", block: true)
+
 Kết quả:
 
 - Không có sinh viên nào tên `Lan` trong trường `CNTT`.
 
-#figure(image("assets/BTTH5-b-10.png"),
-  caption: [
-    BTTH5-b-10
-  ]
-)
+#figure(image("assets/BTTH5-b-10.png"), caption: [
+  Câu 10 - Kiểm tra sinh viên có tên `Lan` trong trường `CNTT`
+])
 
 === Thêm Thông Tin
 <them-thong-tin>
@@ -249,22 +229,19 @@ Thêm `Lan` vào `THONGTINSV`:
 #raw(read("code/BTTH5-b-10b.sql"), lang: "sql", block: true)
 Hoàn thành:
 
-#figure(image("assets/BTTH5-b-10b.png"),
-  caption: [
-    BTTH5-b-10b
-  ]
-)
+#figure(image("assets/BTTH5-b-10b.png"), caption: [
+  Câu 10 - Thêm sinh viên `Lan` vào `THONGTINSV`
+])
 
 Kiểm tra lại:
 
 #raw(read("code/BTTH5-b-10d.sql"), lang: "sql", block: true)
+
 Kết quả:
 
-#figure(image("assets/BTTH5-b-10d.png"),
-  caption: [
-    BTTH5-b-10d
-  ]
-)
+#figure(image("assets/BTTH5-b-10d.png"), caption: [
+  Câu 10 - Thông tin của sinh viên
+])
 
 Thông tin của sinh viên:
 
@@ -278,15 +255,14 @@ Viết lệnh Xquery thực hiện phép nối bằng các lệnh Xquery như m�
 #raw(read("code/BTTH5-b-11.sql"), lang: "sql", block: true)
 Kết quả:
 
-#figure(image("assets/BTTH5-b-11.png"),
-  caption: [
-    BTTH5-b-11
-  ]
-)
+#figure(image("assets/BTTH5-b-11.png"), caption: [
+  Câu 11 - Thực hiện phép nối bằng các lệnh Xquery
+])
 
 - CNTT: Thông tin đầy đủ bao gồm Khóa học, Tên sinh viên, Tên môn học. Ví dụ, đã lược bớt số dòng vì quá dài.
 
 #raw(read("code/BTTH5-b-11-cntt.xml"), lang: "xml", block: true)
+
 - KHTN: Không có Tên sinh viên do đã bị xóa ở Câu 6. Dưới đây là các ví dụ, đã lược bớt số dòng vì quá dài.
 
 #raw(read("code/BTTH5-b-11-khtn.xml"), lang: "xml", block: true)
