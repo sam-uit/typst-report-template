@@ -127,9 +127,16 @@ Viết lệnh Xquery trả về `MSDH` và `TenDH` theo định dạng sau:
 </QuanLySV>
 ```
 
+Sử dụng `FOR XML PATH` để tạo cấu trúc XML từ dữ liệu quan hệ.
+
 ```{=typst}
 #raw(read("code/BTTH5-b-5.sql"), lang: "sql", block: true)
 ```
+
+Giải thích:
+
+- `FOR XML PATH('QuanLySV')`: Tạo cấu trúc XML với phần tử gốc là `QuanLySV`.
+- `CAST(MSDH AS VARCHAR) + ' ' + TenDH`: Nối MSDH và TenDH thành một chuỗi.
 
 Kết quả:
 
