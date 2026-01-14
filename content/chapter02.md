@@ -299,6 +299,11 @@ Kiểm tra xem có tồn tại sinh viên `Lan` trong trường `CNTT` không:
 #raw(read("code/BTTH5-b-10a.sql"), lang: "sql", block: true)
 ```
 
+Giải thích:
+
+- `exist()`: Phương thức kiểm tra sự tồn tại của phần tử hoặc điều kiện trong XML.
+- Trả về `1` nếu tìm thấy sinh viên tên 'Lan', `0` nếu không tìm thấy.
+
 Kết quả:
 
 - Không có sinh viên nào tên `Lan` trong trường `CNTT`.
