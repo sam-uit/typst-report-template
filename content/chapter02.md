@@ -133,8 +133,20 @@ Viết lệnh Xquery kiểm tra xem có tồn tại sinh viên tên '`Lan`' tron
 </sinhvien>
 ```
 
+### Kiểm Tra
+
+Kiểm tra xem có tồn tại sinh viên `Lan` trong trường `CNTT` không:
+
 ```{=typst}
-#raw(read("code/BTTH5-b-10.sql"), lang: "sql", block: true)
+#raw(read("code/BTTH5-b-10a.sql"), lang: "sql", block: true)
+```
+
+### Thêm Thông Tin
+
+Thêm `Lan` vào `THONGTINSV`:
+
+```{=typst}
+#raw(read("code/BTTH5-b-10b.sql"), lang: "sql", block: true)
 ```
 
 ## Câu 11
