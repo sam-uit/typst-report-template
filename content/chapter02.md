@@ -27,6 +27,14 @@ Kết quả:
 #raw(read("code/BTTH5-b-1b.sql"), lang: "sql", block: true)
 ```
 
+Kết quả:
+
+![BTTH5-b-1b](assets/BTTH5-b-1b.png)
+
+```{=typst}
+#raw(read("code/BTTH5-b-1b.xml"), lang: "xml", block: true)
+```
+
 ## Câu 2
 
 Viết lệnh trả về tất cả các nút từ nút gốc là `THONGTINSV`.
