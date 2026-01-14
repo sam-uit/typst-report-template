@@ -32,6 +32,10 @@ Kết quả:
 #raw(read("code/BTTH5-b-1b.sql"), lang: "sql", block: true)
 ```
 
+Giải thích:
+
+- `[last()]`: Hàm XPath trả về phần tử cuối cùng trong tập hợp các phần tử `sinhvien`.
+
 Kết quả:
 
 ![BTTH5-b-1b](assets/BTTH5-b-1b.png)
