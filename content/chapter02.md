@@ -150,9 +150,17 @@ Kết quả:
 
 Viết lệnh Xquery xóa tên các sinh viên trường DH `KHTN`.
 
+Sử dụng phương thức `modify()` với lệnh `delete` để xóa thuộc tính.
+
 ```{=typst}
 #raw(read("code/BTTH5-b-6.sql"), lang: "sql", block: true)
 ```
+
+Giải thích:
+
+- `modify('delete ...')`: Phương thức để sửa đổi XML.
+- `/THONGTINSV/sinhvien/@Ten`: Đường dẫn đến thuộc tính `Ten` của tất cả các phần tử `sinhvien`.
+- Sau khi thực thi, tất cả các thuộc tính `Ten` của sinh viên trong trường DH KHTN sẽ bị xóa.
 
 Hoàn thành:
 
