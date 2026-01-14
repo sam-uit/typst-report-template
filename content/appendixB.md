@@ -172,11 +172,11 @@ Kéo thả vào mục Marks các trường trong view:
 - Sum(TongCaNam) -> Angle => để chia tỉ lệ trong biểu đồ
 - Sum(TongCaNam) và MaSP -> Label => để hiển thị trên biểu đồ
 
-![Bài 1.D - Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_SP_2006_2007 (1)](./images/1d-1-2.png)
+![Bài 1.D - Dữ Liệu Từ View (1)](./images/1d-1-2.png)
 
-![Bài 1.D - Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_SP_2006_2007 (2)](./images/1d-1-3.png)
+![Bài 1.D - Dữ Liệu Từ View (2)](./images/1d-1-3.png)
 
-![Bài 1.D - Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_SP_2006_2007 (3)](./images/1d-1-4.png)
+![Bài 1.D - Dữ Liệu Từ View (3)](./images/1d-1-4.png)
 
 ### Màn Hình Design Của Chart
 
