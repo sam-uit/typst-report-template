@@ -67,6 +67,14 @@ Viết lệnh Xquery trả về danh sách sinh viên có `ID < 12` với `MSDH 
 #raw(read("code/BTTH5-b-3.sql"), lang: "sql", block: true)
 ```
 
+Kết quả:
+
+![BTTH5-b-3](assets/BTTH5-b-3.png)
+
+```{=typst}
+#raw(read("code/BTTH5-b-3.xml"), lang: "xml", block: true)
+```
+
 ## Câu 4
 
 Viết lệnh Xquery trả về danh sách sinh viên sắp xếp theo tên với `MSDH=2`.
