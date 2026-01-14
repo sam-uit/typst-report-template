@@ -1,0 +1,8 @@
+-- KhoaHoc
+CREATE TABLE KhoaHoc
+(
+    MaKhoaHoc INT IDENTITY(1,1) NOT NULL,
+    TenKhoaHoc VARCHAR(200) NOT NULL,
+    CONSTRAINT PK_KhoaHoc PRIMARY KEY(MaKhoaHoc)
+)
+GO
