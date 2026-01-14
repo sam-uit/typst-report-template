@@ -207,6 +207,8 @@ Kết quả:
 
 Viết lệnh Xquery thay đổi tên sinh viên thứ 2 thành tên '`Binh`' trong trường `CNTT`.
 
+Sử dụng `replace value of` để thay đổi giá trị của thuộc tính tại vị trí cụ thể
+
 ```{=typst}
 #raw(read("code/BTTH5-b-8.sql"), lang: "sql", block: true)
 ```
