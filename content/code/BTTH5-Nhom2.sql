@@ -153,9 +153,21 @@ GO
 
 -- Câu 2.
 
+-- Lấy tất cả các nút từ nút gốc là THONGTINSV
+SELECT ChiTietSV.query('/THONGTINSV/*') as KetQua
+FROM QuanLySV
+GO
 
 -- Câu 3.
 
+-- Trả về danh sách sinh viên có ID < 12
+SELECT ChiTietSV.query('
+  for $sv in /THONGTINSV/sinhvien
+  where $sv/@ID < 12
+  return $sv
+') AS KetQua
+FROM QuanLySV WHERE MSDH = 1
+GO
 
 -- Câu 4.
 
