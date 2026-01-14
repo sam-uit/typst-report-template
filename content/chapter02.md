@@ -193,6 +193,27 @@ Viết lệnh Xquery kiểm tra xem có tồn tại sinh viên có `ID` là 12 t
 #raw(read("code/BTTH5-b-9.sql"), lang: "sql", block: true)
 ```
 
+Hoàn thành:
+
+- Có 1 sinh viên có `ID = 12` trong trường `KHTN`.
+
+![BTTH5-b-9](assets/BTTH5-b-9.png)
+
+Kiểm tra lại:
+
+```{=typst}
+#raw(read("code/BTTH5-b-9a.sql"), lang: "sql", block: true)
+```
+
+Kết quả:
+
+- Trả về `sinhvien` có `ID = 12` trong trường `KHTN`.
+- Hiện tại đã không còn thuộc tính `Ten` trong `sinhvien`.
+
+```{=typst}
+#raw(read("code/BTTH5-b-9.xml"), lang: "xml", block: true)
+```
+
 ## Câu 10
 
 Viết lệnh Xquery kiểm tra xem có tồn tại sinh viên tên '`Lan`' trong trường `CNTT` không?
