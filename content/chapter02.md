@@ -119,7 +119,10 @@ Viết lệnh Xquery kiểm tra xem có tồn tại sinh viên có `ID` là 12 t
 
 ## Câu 10
 
-Viết lệnh Xquery kiểm tra xem có tồn tại sinh viên tên '`Lan`' trong trường `CNTT` không? (Nếu có trả về 1, nếu không thì trả về 0). Và `INSERT` thêm vào `THONGTINSV`:
+Viết lệnh Xquery kiểm tra xem có tồn tại sinh viên tên '`Lan`' trong trường `CNTT` không?
+
+- Nếu có trả về 1, nếu không thì trả về 0.
+- Và `INSERT` thêm vào `THONGTINSV`:
 
 ```xml
 <!-- Dữ liệu mẫu -->
