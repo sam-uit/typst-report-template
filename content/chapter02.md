@@ -13,6 +13,11 @@ Hãy sử dụng Xpath, Xquery để thực hiện các yêu cầu sau đây.
 #raw(read("code/BTTH5-b-1a.sql"), lang: "sql", block: true)
 ```
 
+Giải thích:
+
+- `/THONGTINSV/sinhvien[@ID="10"]`: Đường dẫn XPath tìm phần tử `sinhvien` có thuộc tính `ID` bằng "10".
+- `query()`: Phương thức để thực thi biểu thức XPath/XQuery trên cột XML.
+
 Kết quả:
 
 ![BTTH5-b-1a](assets/BTTH5-b-1a.png)
