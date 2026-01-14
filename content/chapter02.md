@@ -122,12 +122,38 @@ Viết lệnh Xquery xóa tên các sinh viên trường DH `KHTN`.
 #raw(read("code/BTTH5-b-6.sql"), lang: "sql", block: true)
 ```
 
+Hoàn thành:
+
+![BTTH5-b-6](assets/BTTH5-b-6.png)
+
+Kiểm tra lại:
+
+```{=typst}
+#raw(read("code/BTTH5-b-6a.sql"), lang: "sql", block: true)
+```
+
+Kết quả:
+
+- Không còn thuộc tính `Ten` trong `sinhvien`.
+
+```{=typst}
+#raw(read("code/BTTH5-b-6.xml"), lang: "xml", block: true)
+```
+
 ## Câu 7
 
 Viết lệnh Xquery trả về thông tin các sinh viên có tên là '`Nam`' hoặc '`Thanh`'.
 
 ```{=typst}
 #raw(read("code/BTTH5-b-7.sql"), lang: "sql", block: true)
+```
+
+Kết quả:
+
+![BTTH5-b-7](assets/BTTH5-b-7.png)
+
+```{=typst}
+#raw(read("code/BTTH5-b-7.xml"), lang: "xml", block: true)
 ```
 
 ## Câu 8
