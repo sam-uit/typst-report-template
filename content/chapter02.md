@@ -32,3 +32,24 @@ Hãy sử dụng Xpath, Xquery để thực hiện các yêu cầu sau:
 
 - Câu 11: Thực hiện phép nối bằng các lệnh Xquery như một câu truy vấn trong SQL để trả về thông tin là sinh viên nào học khóa học tên là gì, sinh viên nào học môn học gì?
 
+## Câu 1
+
+## Câu 2
+
+## Câu 3
+
+## Câu 4
+
+## Câu 5
+
+## Câu 6
+
+## Câu 7
+
+## Câu 8
+
+## Câu 9
+
+## Câu 10
+
+## Câu 11
