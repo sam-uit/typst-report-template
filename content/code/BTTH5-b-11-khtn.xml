@@ -18,28 +18,4 @@
 	<TenSinhVien />
 	<TenMonHoc>Toan Giai Tich</TenMonHoc>
 </row>
-<row>
-	<TenKhoaHoc>DH KHTN</TenKhoaHoc>
-	<TenSinhVien />
-	<TenMonHoc>Lap Trinh Java</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH KHTN</TenKhoaHoc>
-	<TenSinhVien />
-	<TenMonHoc>He Quan Tri CSDL</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH KHTN</TenKhoaHoc>
-	<TenSinhVien />
-	<TenMonHoc>Anh Van</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH KHTN</TenKhoaHoc>
-	<TenSinhVien />
-	<TenMonHoc>Thiet Ke Web</TenMonHoc>
-</row>
-<row>
-	<TenKhoaHoc>DH KHTN</TenKhoaHoc>
-	<TenSinhVien />
-	<TenMonHoc>An Toan Thong Tin</TenMonHoc>
-</row>
+...
