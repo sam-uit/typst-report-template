@@ -90,5 +90,9 @@ CREATE TABLE QuanLySV
 GO
 ```
 
+### Kết Quả: Danh Sách Các Bảng
+
+![Phần A - Danh Sách Các Bảng](assets/01-database-tables.png)
+
 ## Thêm Dữ Liệu
 
