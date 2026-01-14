@@ -4,35 +4,19 @@
 <phu-luc-a>
 
 
-== Link Video Demo
-<link-video-demo>
+== Tài Nguyên
+<tai-nguyen>
 
-- Mục đích: Tất cả các demo trong một video đầy đủ.
-- #link("https://www.youtube.com/watch?v=dQw4w9WgXcQ")[Video Demo]
+Các tài nguyên (tài liệu, code, vv…) của lab này được lưu tại:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- #link("https://github.com/lt20252cnttalpha/LT.K2025.2-CNTT/tree/main/uit/courses/IE103/assignments/BTTH5")[LT.K2025.2-CNTT \> IE103 \> assignments \> BTTH5]
+  - `BTTH5-Nhom2.pdf`: Báo cáo của nhóm 2.
+  - `BTTH5-Nhom2.sql`: Script SQL của nhóm 2.
+  - `IE103-BTTH5`: SQL Projects.
 
-== Repo Mã Nguồn
-<repo-ma-nguon>
+== Môi Trường Triển Khai
+<moi-truong-trien-khai>
 
-
-=== Mã Nguồn Báo Cáo
-<ma-nguon-bao-cao>
-
-- Mục đích: Tái tạo báo cáo này từ mã nguồn Typst.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Mã Nguồn Ứng Dụng
-<ma-nguon-ung-dung>
-
-- Mục đích: Tái tạo ứng dụng được trình bày trong báo cáo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Mã Nguồn SQL Projects
-<ma-nguon-sql-projects>
-
-- Mục đích: Tái tạo dự án SQL được trình bày trong báo cáo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- RDBMS: Microsoft SQL Server 2019 (Azure SQL Edge).
+- Editor/IDE: Azure Database Studio (ADS).
+- Extensions: SQL Database Projects (`microsoft.sql-database-projects`).
