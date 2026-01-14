@@ -117,7 +117,7 @@ GO
 
 ### Tạo Thêm 1 Dashboard Để Hiển Thị Biểu Đồ Và Chi Tiết
 
-![Bài 1.C - Tạo thêm 1 dashboard để hiển thị biểu đồ và chi tiết](./images/1c-1-15.png)
+![Bài 1.C - Dashboard để hiển thị biểu đồ và chi tiết](./images/1c-1-15.png)
 
 ### Format Dashboard
 
