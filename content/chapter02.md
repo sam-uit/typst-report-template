@@ -254,6 +254,26 @@ Thêm `Lan` vào `THONGTINSV`:
 #raw(read("code/BTTH5-b-10b.sql"), lang: "sql", block: true)
 ```
 
+Hoàn thành:
+
+![BTTH5-b-10b](assets/BTTH5-b-10b.png)
+
+Kiểm tra lại:
+
+```{=typst}
+#raw(read("code/BTTH5-b-10d.sql"), lang: "sql", block: true)
+```
+
+Kết quả:
+
+![BTTH5-b-10d](assets/BTTH5-b-10d.png)
+
+Thông tin của sinh viên:
+
+```{=typst}
+#raw(read("code/BTTH5-b-10d.xml"), lang: "xml", block: true)
+```
+
 ## Câu 11
 
 Viết lệnh Xquery thực hiện phép nối bằng các lệnh Xquery như một câu truy vấn trong SQL để trả về thông tin là sinh viên nào học khóa học tên là gì, sinh viên nào học môn học gì?
