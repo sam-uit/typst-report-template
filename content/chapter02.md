@@ -281,3 +281,19 @@ Viết lệnh Xquery thực hiện phép nối bằng các lệnh Xquery như m�
 ```{=typst}
 #raw(read("code/BTTH5-b-11.sql"), lang: "sql", block: true)
 ```
+
+Kết quả:
+
+![BTTH5-b-11](assets/BTTH5-b-11.png)
+
+- CNTT: Thông tin đầy đủ bao gồm Khóa học, Tên sinh viên, Tên môn học.
+
+```{=typst}
+#raw(read("code/BTTH5-b-11-cntt.xml"), lang: "xml", block: true)
+```
+
+- KHTN: Không có Tên sinh viên do đã bị xóa ở Câu 6.
+
+```{=typst}
+#raw(read("code/BTTH5-b-11-khtn.xml"), lang: "xml", block: true)
+```
