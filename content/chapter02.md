@@ -34,7 +34,7 @@ Hãy sử dụng Xpath, Xquery để thực hiện các yêu cầu sau:
 
 ## Câu 1
 
-- Xpath lấy Sinh viên có `ID=10`
+### Sinh viên có `ID=10`
 
 ```sql
 SELECT ChiTietSV.query('/THONGTINSV/sinhvien[@ID="10"]') AS KetQua
@@ -42,7 +42,7 @@ FROM QuanLySV WHERE TenDH = 'DH CNTT'
 GO
 ```
 
-- Xpath lấy sinh viên ở vị trí cuối cùng ở trường `CNTT`
+### Sinh Viên Ở Vị Trí Cuối Cùng Trong Trường `CNTT`
 
 ```sql
 SELECT ChiTietSV.query('/THONGTINSV/sinhvien[last()]') AS KetQua
@@ -52,6 +52,8 @@ GO
 
 ## Câu 2
 
+Viết lệnh trả về tất cả các nút từ nút gốc là `THONGTINSV`.
+
 ```sql
 SELECT ChiTietSV.query('/THONGTINSV/*') as KetQua
 FROM QuanLySV
@@ -59,6 +61,8 @@ GO
 ```
 
 ## Câu 3
+
+Viết lệnh Xquery trả về danh sách sinh viên có `ID < 12` với `MSDH = 1`.
 
 ```{=typst}
 #raw(read("code/BTTH5-b-3.sql"), lang: "sql", block: true)
