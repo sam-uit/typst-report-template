@@ -28,11 +28,11 @@
     ),
   ),
   assignment: (
-    title: "BÁO CÁO ĐỒ ÁN QUẢN LÝ THÔNG TIN",
-    subtitle: "Quản Lý Dữ Liệu Đặt Phòng Khách Sạn",
-    type: "Luận Án",
+    title: "Bài Tập Thực Hành 5",
+    subtitle: "XPATH, XQUERY",
+    type: "Bài Tập Thực Hành",
     date: "TP.Hồ Chí Minh, tháng 01 năm 2026",
-    duration: "15 phút",
+    duration: "115 phút",
   ),
   company: "A Limited Company Name",
 )
