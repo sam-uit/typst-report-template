@@ -36,18 +36,14 @@ Hãy sử dụng Xpath, Xquery để thực hiện các yêu cầu sau:
 
 ### Sinh viên có `ID=10`
 
-```sql
-SELECT ChiTietSV.query('/THONGTINSV/sinhvien[@ID="10"]') AS KetQua
-FROM QuanLySV WHERE TenDH = 'DH CNTT'
-GO
+```{=typst}
+#raw(read("code/BTTH5-b-1a.sql"), lang: "sql", block: true)
 ```
 
 ### Sinh Viên Ở Vị Trí Cuối Cùng Trong Trường `CNTT`
 
-```sql
-SELECT ChiTietSV.query('/THONGTINSV/sinhvien[last()]') AS KetQua
-FROM QuanLySV WHERE TenDH = 'DH CNTT'
-GO
+```{=typst}
+#raw(read("code/BTTH5-b-1b.sql"), lang: "sql", block: true)
 ```
 
 ## Câu 2
