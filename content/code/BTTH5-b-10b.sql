@@ -1,4 +1,4 @@
--- INSERT dữ liệu mẫu vào THONGTINSV
+-- Câu 10. INSERT dữ liệu mẫu vào THONGTINSV
 UPDATE QuanLySV
 SET ChiTietSV.modify('
   insert <sinhvien ID="15" Ten="Lan">
