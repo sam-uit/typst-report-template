@@ -96,3 +96,14 @@ GO
 
 ## Thêm Dữ Liệu
 
+### `KhoaHoc`
+
+### `SinhVien`
+
+### `MonHoc`
+
+### `KhoaHocMonHoc`
+
+### `Diem`
+
+### `QuanLySV`
