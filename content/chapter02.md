@@ -50,10 +50,8 @@ Hãy sử dụng Xpath, Xquery để thực hiện các yêu cầu sau:
 
 Viết lệnh trả về tất cả các nút từ nút gốc là `THONGTINSV`.
 
-```sql
-SELECT ChiTietSV.query('/THONGTINSV/*') as KetQua
-FROM QuanLySV
-GO
+```{=typst}
+#raw(read("code/BTTH5-b-2.sql"), lang: "sql", block: true)
 ```
 
 ## Câu 3
