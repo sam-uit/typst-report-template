@@ -240,6 +240,12 @@ Kiểm tra xem có tồn tại sinh viên `Lan` trong trường `CNTT` không:
 #raw(read("code/BTTH5-b-10a.sql"), lang: "sql", block: true)
 ```
 
+Kết quả:
+
+- Không có sinh viên nào tên `Lan` trong trường `CNTT`.
+
+![BTTH5-b-10](assets/BTTH5-b-10.png)
+
 ### Thêm Thông Tin
 
 Thêm `Lan` vào `THONGTINSV`:
