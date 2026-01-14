@@ -171,9 +171,23 @@ GO
 
 -- Câu 4.
 
+-- Trả về danh sách sinh viên sắp xếp theo tên với MSDH = 2
+SELECT ChiTietSV.query('
+  for $sv in /THONGTINSV/sinhvien
+  order by $sv/@Ten
+  return $sv
+') as KetQua
+FROM QuanLySV WHERE MSDH = 2
+GO
 
 -- Câu 5.
 
+-- Câu 5. Định dạng MSDH và TenDH
+SELECT
+   CAST(MSDH AS VARCHAR) + ' ' + TenDH AS ChiTietSV
+FROM QuanLySV
+FOR XML PATH('QuanLySV')
+GO
 
 -- Câu 6.
 
