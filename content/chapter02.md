@@ -103,6 +103,11 @@ Viết lệnh Xquery trả về danh sách sinh viên sắp xếp theo tên vớ
 #raw(read("code/BTTH5-b-4.sql"), lang: "sql", block: true)
 ```
 
+Giải thích:
+
+- `order by $sv/@Ten`: Sắp xếp các sinh viên theo thuộc tính `Ten` (tên).
+- Kết quả được sắp xếp theo thứ tự bảng chữ cái.
+
 Kết quả:
 
 ![BTTH5-b-4](assets/BTTH5-b-4.png)
