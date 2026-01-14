@@ -164,6 +164,24 @@ Viết lệnh Xquery thay đổi tên sinh viên thứ 2 thành tên '`Binh`' tr
 #raw(read("code/BTTH5-b-8.sql"), lang: "sql", block: true)
 ```
 
+Hoàn thành:
+
+![BTTH5-b-8](assets/BTTH5-b-8.png)
+
+Kiểm tra lại:
+
+```{=typst}
+#raw(read("code/BTTH5-b-8a.sql"), lang: "sql", block: true)
+```
+
+Kết quả:
+
+- Thay đổi tên sinh viên thứ 2 (không phụ thuộc vào ID) thành tên 'Binh' trong trường CNTT.
+
+```{=typst}
+#raw(read("code/BTTH5-b-8.xml"), lang: "xml", block: true)
+```
+
 ## Câu 9
 
 Viết lệnh Xquery kiểm tra xem có tồn tại sinh viên có `ID` là 12 trong trường `KHTN` không?
