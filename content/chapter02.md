@@ -83,6 +83,14 @@ Viết lệnh Xquery trả về danh sách sinh viên sắp xếp theo tên vớ
 #raw(read("code/BTTH5-b-4.sql"), lang: "sql", block: true)
 ```
 
+Kết quả:
+
+![BTTH5-b-4](assets/BTTH5-b-4.png)
+
+```{=typst}
+#raw(read("code/BTTH5-b-4.xml"), lang: "xml", block: true)
+```
+
 ## Câu 5
 
 Viết lệnh Xquery trả về `MSDH` và `TenDH` theo định dạng sau:
