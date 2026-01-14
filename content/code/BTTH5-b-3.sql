@@ -1,3 +1,4 @@
+-- Trả về danh sách sinh viên có ID < 12
 SELECT ChiTietSV.query('
   for $sv in /THONGTINSV/sinhvien
   where $sv/@ID < 12
