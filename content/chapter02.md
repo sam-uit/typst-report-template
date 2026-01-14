@@ -286,7 +286,7 @@ Kết quả:
 
 ![BTTH5-b-11](assets/BTTH5-b-11.png)
 
-- CNTT: Thông tin đầy đủ bao gồm Khóa học, Tên sinh viên, Tên môn học.
+- CNTT: Thông tin đầy đủ bao gồm Khóa học, Tên sinh viên, Tên môn học. Ví dụ, đã lược bớt số dòng.
 
 ```{=typst}
 #raw(read("code/BTTH5-b-11-cntt.xml"), lang: "xml", block: true)
