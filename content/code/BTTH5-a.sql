@@ -1,9 +1,12 @@
+-- Tao CSDL
 CREATE DATABASE TEST_XML
 GO
+
+-- Su Dung CSDL
 USE TEST_XML
 GO
 
--- KhoaHoc
+-- Tao Bang KhoaHoc
 CREATE TABLE KhoaHoc
 (
     MaKhoaHoc INT IDENTITY(1,1) NOT NULL,
@@ -12,6 +15,7 @@ CREATE TABLE KhoaHoc
 )
 GO
 
+-- Insert KhoaHoc
 INSERT INTO KhoaHoc (TenKhoaHoc) SELECT 'Mang May Tinh Truyen Thong'
 INSERT INTO KhoaHoc (TenKhoaHoc) SELECT 'Khoa Hoc May Tinh'
 INSERT INTO KhoaHoc (TenKhoaHoc) SELECT 'Ky Thuat May Tinh'
@@ -40,6 +44,7 @@ CREATE TABLE MonHoc
 )
 GO
 
+-- Insert MonHoc
 INSERT INTO MonHoc (TenMonHoc) SELECT ('Co So Du Lieu')
 INSERT INTO MonHoc (TenMonHoc) SELECT ('Cau Truc Du Lieu')
 INSERT INTO MonHoc (TenMonHoc) SELECT ('Lap Trinh Di Dong')
@@ -61,6 +66,7 @@ CREATE TABLE KhoaHocMonHoc
 )
 GO
 
+-- Insert KhoaHocMonHoc
 INSERT INTO KhoaHocMonHoc (MaKhoaHoc,MaMonHoc) SELECT 1,1
 INSERT INTO KhoaHocMonHoc (MaKhoaHoc,MaMonHoc) SELECT 1,2
 INSERT INTO KhoaHocMonHoc (MaKhoaHoc,MaMonHoc) SELECT 1,3
@@ -102,6 +108,7 @@ CREATE TABLE QuanLySV
 )
 GO
 
+-- Insert QuanLySV
 INSERT INTO QuanLySV VALUES (
     1,
     'DH CNTT',
@@ -123,6 +130,8 @@ INSERT INTO QuanLySV VALUES (
         </sinhvien>
     </THONGTINSV>'
 )
+
+-- Insert QuanLySV
 INSERT INTO QuanLySV VALUES (
     2,
     'DH KHTN',
