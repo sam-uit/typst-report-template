@@ -1,4 +1,4 @@
--- Tao Bang KhoaHoc
+-- Tạo bảng KhoaHoc
 CREATE TABLE KhoaHoc
 (
     MaKhoaHoc INT IDENTITY(1,1) NOT NULL,

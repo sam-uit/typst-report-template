@@ -1,4 +1,4 @@
--- Diem
+-- Tạo bảng Diem
 CREATE TABLE Diem
 (
     MSSV BIGINT CONSTRAINT FK_Diem_MSSV FOREIGN KEY REFERENCES SinhVien(MSSV),

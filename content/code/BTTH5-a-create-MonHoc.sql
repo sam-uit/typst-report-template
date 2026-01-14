@@ -1,4 +1,4 @@
--- MonHoc
+-- Tạo bảng MonHoc
 CREATE TABLE MonHoc
 (
     MaMonHoc INT IDENTITY NOT NULL CONSTRAINT PK_MonHoc PRIMARY KEY(MaMonHoc),

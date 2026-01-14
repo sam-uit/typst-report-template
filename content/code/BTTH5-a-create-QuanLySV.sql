@@ -1,4 +1,4 @@
--- QuanLySV
+-- Tạo bảng QuanLySV
 CREATE TABLE QuanLySV
 (
     MSDH INT NOT NULL,

@@ -1,4 +1,4 @@
--- KhoaHocMonHoc
+-- Tạo bảng KhoaHocMonHoc
 CREATE TABLE KhoaHocMonHoc
 (
     MaKhoaHoc INT CONSTRAINT FK_KhoaHocMonHoc_MaKhoaHoc FOREIGN KEY REFERENCES

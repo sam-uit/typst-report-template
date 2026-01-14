@@ -1,4 +1,4 @@
--- SinhVien
+-- Tạo bảng SinhVien
 CREATE TABLE SinhVien
 (
     MSSV BIGINT IDENTITY(1,1)NOT NULL CONSTRAINT PK_SinhVien PRIMARY KEY(MSSV),
