@@ -98,7 +98,7 @@ Viết lệnh Xquery trả về `MSDH` và `TenDH` theo định dạng sau:
 ```xml
 <!-- Dữ liệu mẫu -->
 <QuanLySV>
-<ChiTietSV>1 DH CNTT</ChiTietSV>
+    <ChiTietSV>1 DH CNTT</ChiTietSV>
 </QuanLySV>
 ```
 
