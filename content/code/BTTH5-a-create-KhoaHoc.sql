@@ -1,4 +1,4 @@
--- KhoaHoc
+-- Tao Bang KhoaHoc
 CREATE TABLE KhoaHoc
 (
     MaKhoaHoc INT IDENTITY(1,1) NOT NULL,
