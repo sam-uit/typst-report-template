@@ -253,6 +253,7 @@ Thông tin của sinh viên:
 Viết lệnh Xquery thực hiện phép nối bằng các lệnh Xquery như một câu truy vấn trong SQL để trả về thông tin là sinh viên nào học khóa học tên là gì, sinh viên nào học môn học gì?
 
 #raw(read("code/BTTH5-b-11.sql"), lang: "sql", block: true)
+
 Kết quả:
 
 #figure(image("assets/BTTH5-b-11.png"), caption: [
