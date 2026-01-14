@@ -184,9 +184,16 @@ Kết quả:
 
 Viết lệnh Xquery trả về thông tin các sinh viên có tên là '`Nam`' hoặc '`Thanh`'.
 
+Sử dụng toán tử logic `or` trong mệnh đề `where` để lọc dữ liệu theo nhiều điều kiện.
+
 ```{=typst}
 #raw(read("code/BTTH5-b-7.sql"), lang: "sql", block: true)
 ```
+
+Giải thích:
+
+- `where $s/@Ten = "Nam" or $s/@Ten = "Thanh"`: Lọc các sinh viên có tên là "Nam" hoặc "Thanh".
+- Kết quả trả về tất cả các phần tử `sinhvien` thỏa mãn một trong hai điều kiện.
 
 Kết quả:
 
