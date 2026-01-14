@@ -191,6 +191,16 @@ GO
 
 -- Câu 6.
 
+-- Câu 6. Xóa tên các sinh viên trường DH KHTN
+UPDATE QuanLySV
+SET ChiTietSV.modify('delete /THONGTINSV/sinhvien/@Ten')
+WHERE TenDH = 'DH KHTN'
+GO
+
+-- Câu 6. Kiểm tra kết quả, thuộc tính Ten đã bị xóa
+SELECT ChiTietSV.query('/THONGTINSV/sinhvien') AS KetQua
+FROM QuanLySV WHERE TenDH = 'DH KHTN'
+GO
 
 -- Câu 7.
 
