@@ -6,11 +6,8 @@ Mục tiêu:
 
 ## Tạo Cơ Sở Dữ Liệu
 
-```sql
-CREATE DATABASE TEST_XML
-GO
-USE TEST_XML
-GO
+```{=typst}
+#raw(read("code/BTTH5-a-1.sql"), lang: "sql", block: true)
 ```
 
 ## Tạo Các Bảng
