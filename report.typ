@@ -11,14 +11,14 @@
 // Content goes here
 #include "content/chapter01.typ"
 #include "content/chapter02.typ"
-#include "content/chapter03.typ"
-#include "content/chapter04.typ"
-#include "content/chapter05.typ"
+// #include "content/chapter03.typ"
+// #include "content/chapter04.typ"
+// #include "content/chapter05.typ"
 
 // Show appendix
 #show: appendix
-#include "content/appendixA.typ"
+// #include "content/appendixA.typ"
 
 // Show bibliography
-#show: bibliography-page
-#bibliography("content/bibliography.bib", title: "Tài Liệu Tham Khảo")
+// #show: bibliography-page
+// #bibliography("content/bibliography.bib", title: "Tài Liệu Tham Khảo")
