@@ -269,6 +269,7 @@ Kết quả:
 #raw(read("code/BTTH5-b-11-khtn.xml"), lang: "xml", block: true)
 
 == Tổng Kết
+<tong-ket>
 
 - Sử dụng XPath để định vị và chọn phần tử XML.
 - Sử dụng XQuery với cú pháp FLWOR để truy vấn dữ liệu XML.
