@@ -34,6 +34,8 @@ Hãy sử dụng Xpath, Xquery để thực hiện các yêu cầu sau:
 
 ## Câu 1
 
+Viết lệnh Xpath lấy Sinh viên có `ID=10` và Lệnh Xpath lấy sinh viên ở vị trí cuối cùng ở trường CNTT.
+
 ### Sinh viên có `ID=10`
 
 ```{=typst}
@@ -111,7 +113,10 @@ Viết lệnh Xquery thay đổi tên sinh viên thứ 2 thành tên '`Binh`' tr
 
 ## Câu 9
 
-Viết lệnh Xquery kiểm tra xem có tồn tại sinh viên có `ID` là 12 trong trường `KHTN` không? (Nếu có trả về 1, nếu không thì trả về 0).
+Viết lệnh Xquery kiểm tra xem có tồn tại sinh viên có `ID` là 12 trong trường `KHTN` không?
+
+- Nếu có trả về 1
+- Nếu không thì trả về 0.
 
 ```{=typst}
 #raw(read("code/BTTH5-b-9.sql"), lang: "sql", block: true)
@@ -121,8 +126,10 @@ Viết lệnh Xquery kiểm tra xem có tồn tại sinh viên có `ID` là 12 t
 
 Viết lệnh Xquery kiểm tra xem có tồn tại sinh viên tên '`Lan`' trong trường `CNTT` không?
 
-- Nếu có trả về 1, nếu không thì trả về 0.
-- Và `INSERT` thêm vào `THONGTINSV`:
+- Nếu có trả về 1
+- Nếu không thì trả về 0.
+
+Và `INSERT` thêm vào `THONGTINSV`:
 
 ```xml
 <!-- Dữ liệu mẫu -->
