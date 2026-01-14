@@ -164,7 +164,7 @@ GO
 
 ![PL. 1.D - Tạo Chart (Pie) Trong Sheet Mới](./images/1d-1-1.png)
 
-### Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_SP_2006_2007 Vào Chart
+### Mapping Dữ Liệu Từ View Vào Chart
 
 Kéo thả vào mục Marks các trường trong view:
 
