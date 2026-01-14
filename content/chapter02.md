@@ -353,6 +353,14 @@ Viết lệnh Xquery thực hiện phép nối bằng các lệnh Xquery như m�
 #raw(read("code/BTTH5-b-11.sql"), lang: "sql", block: true)
 ```
 
+Giải thích:
+
+- `for $sv in /THONGTINSV/sinhvien`: Vòng lặp ngoài duyệt qua tất cả sinh viên.
+- `for $mh in $sv/monhoc`: Vòng lặp trong duyệt qua tất cả môn học của mỗi sinh viên.
+- `sql:column("TenDH")`: Lấy giá trị từ cột quan hệ `TenDH` của bảng.
+- `data($sv/@Ten)`: Lấy giá trị của thuộc tính `Ten` từ biến `$sv`.
+- Kết quả: Mỗi dòng sẽ là một cặp (Sinh viên, Môn học) với tên khóa học tương ứng.
+
 Kết quả:
 
 ![BTTH5-b-11](assets/BTTH5-b-11.png)
