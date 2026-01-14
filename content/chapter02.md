@@ -13,6 +13,14 @@ Hãy sử dụng Xpath, Xquery để thực hiện các yêu cầu sau đây.
 #raw(read("code/BTTH5-b-1a.sql"), lang: "sql", block: true)
 ```
 
+Kết quả:
+
+![BTTH5-b-1a](assets/BTTH5-b-1a.png)
+
+```{=typst}
+#raw(read("code/BTTH5-b-1a.xml"), lang: "xml", block: true)
+```
+
 ### Sinh Viên Ở Vị Trí Cuối Cùng Trong Trường `CNTT`
 
 ```{=typst}
