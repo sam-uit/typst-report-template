@@ -4,19 +4,19 @@
 
 ### Kết nối database
 
-![PL. Bài 1.B - Kết nối database](./images/connect_database_2.png)
+![PL. 1.B - Kết nối database](./images/connect_database_2.png)
 
 ### Kéo fields và data liên quan vào columns và rows
 
-![PL. Bài 1.B - Kéo fields và data liên quan vào columns và rows](./images/drag_relevant_fields.png)
+![PL. 1.B - Kéo fields và data liên quan vào columns và rows](./images/drag_relevant_fields.png)
 
 ### Config STT field để group theo từng đề tài
 
-![PL. Bài 1.B - Config STT field để group theo từng đề tài](./images/config_stt_field.png)
+![PL. 1.B - Config STT field để group theo từng đề tài](./images/config_stt_field.png)
 
 ### Thiết kế Dashboard
 
-![PL. Bài 1.B - Thiết kế Dashboard](./images/dashboard_2.png)
+![PL. 1.B - Thiết kế Dashboard](./images/dashboard_2.png)
 
 ## 1.C
 
@@ -67,67 +67,67 @@ GO
    SELECT * FROM V_BAOCAO_DOANHTHU_2006  ORDER BY MANV, Thang;
 ```
 
-![PL. Bài 1.C - Kiểm tra kết quả view](./images/1c-1-1.png)
+![PL. 1.C - Kiểm tra kết quả view](./images/1c-1-1.png)
 
 ### Kết Nối SQL Server Với Tableau
 
-![PL. Bài 1.C - Kết nối SQL Server với Tableau](./images/1c-1-2.png)
+![PL. 1.C - Kết nối SQL Server với Tableau](./images/1c-1-2.png)
 
 ### Kéo VIEW V_BAOCAO_DOANHTHU_2006 Vào Trong Worksheet Để Tạo Chart Line
 
-![PL. Bài 1.C - Kéo view vào worksheet](./images/1c-1-3.png)
+![PL. 1.C - Kéo view vào worksheet](./images/1c-1-3.png)
 
 ### Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_2006 Đã Tạo Theo Trục X Và Y
 
-![PL. Bài 1.C - Mapping dữ liệu](./images/1c-1-4.png)
+![PL. 1.C - Mapping dữ liệu](./images/1c-1-4.png)
 
 ### Format Và Chỉnh Sửa Lại Các Tiêu Đề Trên Chart
 
-![PL. Bài 1.C - Format và chỉnh sửa lại các tiêu đề trên chart (1)](./images/1c-1-5.png)
+![PL. 1.C - Format và chỉnh sửa lại các tiêu đề trên chart (1)](./images/1c-1-5.png)
 
-![PL. Bài 1.C - Format và chỉnh sửa lại các tiêu đề trên chart (2)](./images/1c-1-6.png)
+![PL. 1.C - Format và chỉnh sửa lại các tiêu đề trên chart (2)](./images/1c-1-6.png)
 
 ### Màn Hình Design Và Preview Của Chart Sau Khi Chỉnh Sửa
 
-![PL. Bài 1.C - Màn hình design và preview của chart (1)](./images/1c-1-7.png)
+![PL. 1.C - Màn hình design và preview của chart (1)](./images/1c-1-7.png)
 
-![PL. Bài 1.C - Màn hình design và preview của chart (2)](./images/1c-1-8.png)
+![PL. 1.C - Màn hình design và preview của chart (2)](./images/1c-1-8.png)
 
 ### Bảng Số Liệu Chi Tiết
 
 - Tạo Thêm 1 Sheet Cho Chi Tiết Và Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_2006
 
-![PL. Bài 1.C - Bảng số liệu chi tiết](./images/1c-1-9.png)
+![PL. 1.C - Bảng số liệu chi tiết](./images/1c-1-9.png)
 
 ### Tạo Label Để Hiển Thị Dạng MaNV - HoTen
 
-![PL. Bài 1.C - Tạo label để hiển thị dạng MaNV - HoTen (1)](./images/1c-1-10.png)
+![PL. 1.C - Tạo label để hiển thị dạng MaNV - HoTen (1)](./images/1c-1-10.png)
 
-![PL. Bài 1.C - Tạo label để hiển thị dạng MaNV - HoTen (2)](./images/1c-1-11.png)
+![PL. 1.C - Tạo label để hiển thị dạng MaNV - HoTen (2)](./images/1c-1-11.png)
 
 ### Format Các Cột Tính Tổng, Vị Trí Hiển Thị
 
-![PL. Bài 1.C - Format các cột tính tổng, vị trí hiển thị](./images/1c-1-12.png)
+![PL. 1.C - Format các cột tính tổng, vị trí hiển thị](./images/1c-1-12.png)
 
 ### Màn Hình Design Và Preview Của Table Chi Tiết
 
-![PL. Bài 1.C - Màn hình design và preview của table chi tiết (1)](./images/1c-1-13.png)
+![PL. 1.C - Màn hình design và preview của table chi tiết (1)](./images/1c-1-13.png)
 
-![PL. Bài 1.C - Màn hình design và preview của table chi tiết (2)](./images/1c-1-14.png)
+![PL. 1.C - Màn hình design và preview của table chi tiết (2)](./images/1c-1-14.png)
 
 ### Tạo Thêm 1 Dashboard Để Hiển Thị Biểu Đồ Và Chi Tiết
 
-![PL. Bài 1.C - Dashboard để hiển thị biểu đồ và chi tiết](./images/1c-1-15.png)
+![PL. 1.C - Dashboard để hiển thị biểu đồ và chi tiết](./images/1c-1-15.png)
 
 ### Format Dashboard
 
-![PL. Bài 1.C - Format dashboard](./images/1c-1-16.png)
+![PL. 1.C - Format dashboard](./images/1c-1-16.png)
 
 ### Màn Hình Design Và Preview Hoàn Thành
 
-![PL. Bài 1.C - Màn hình design và preview hoàn thành (1)](./images/1c-1-17.png)
+![PL. 1.C - Màn hình design và preview hoàn thành (1)](./images/1c-1-17.png)
 
-![PL. Bài 1.C - Màn hình design và preview hoàn thành (2)](./images/1c-1-18.png)
+![PL. 1.C - Màn hình design và preview hoàn thành (2)](./images/1c-1-18.png)
 
 ## 1.D
 
@@ -162,7 +162,7 @@ GO
 
 ### Tạo Chart (Pie) Trong Sheet Mới
 
-![PL. Bài 1.D - Tạo Chart (Pie) Trong Sheet Mới](./images/1d-1-1.png)
+![PL. 1.D - Tạo Chart (Pie) Trong Sheet Mới](./images/1d-1-1.png)
 
 ### Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_SP_2006_2007 Vào Chart
 
@@ -172,46 +172,46 @@ Kéo thả vào mục Marks các trường trong view:
 - Sum(TongCaNam) -> Angle => để chia tỉ lệ trong biểu đồ
 - Sum(TongCaNam) và MaSP -> Label => để hiển thị trên biểu đồ
 
-![PL. Bài 1.D - Dữ Liệu Từ View (1)](./images/1d-1-2.png)
+![PL. 1.D - Dữ Liệu Từ View (1)](./images/1d-1-2.png)
 
-![PL. Bài 1.D - Dữ Liệu Từ View (2)](./images/1d-1-3.png)
+![PL. 1.D - Dữ Liệu Từ View (2)](./images/1d-1-3.png)
 
-![PL. Bài 1.D - Dữ Liệu Từ View (3)](./images/1d-1-4.png)
+![PL. 1.D - Dữ Liệu Từ View (3)](./images/1d-1-4.png)
 
 ### Màn Hình Design Của Chart
 
-![PL. Bài 1.D - Màn Hình Design Của Chart](./images/1d-1-5.png)
+![PL. 1.D - Màn Hình Design Của Chart](./images/1d-1-5.png)
 
 ### Bảng Số Liệu Chi Tiết, Tạo Sheet Mới, Tô Màu Và Vẽ Đường Viền
 
 Kéo thả các field trong View
 
-![PL. Bài 1.D - Bảng Số Liệu Chi Tiết (1)](./images/1d-1-6.png)
+![PL. 1.D - Bảng Số Liệu Chi Tiết (1)](./images/1d-1-6.png)
 
-![PL. Bài 1.D - Bảng Số Liệu Chi Tiết (2)](./images/1d-1-7.png)
+![PL. 1.D - Bảng Số Liệu Chi Tiết (2)](./images/1d-1-7.png)
 
 ### Tạo STT
 
-![PL. Bài 1.D - Tạo STT (1)](./images/1d-1-8.png)
+![PL. 1.D - Tạo STT (1)](./images/1d-1-8.png)
 
-![PL. Bài 1.D - Tạo STT (2)](./images/1d-1-9.png)
+![PL. 1.D - Tạo STT (2)](./images/1d-1-9.png)
 
 ### Màn Hình Design & Preview Chi Tiết
 
-![PL. Bài 1.D - Design & Preview Chi Tiết (1)](./images/1d-1-10.png)
+![PL. 1.D - Design & Preview Chi Tiết (1)](./images/1d-1-10.png)
 
-![PL. Bài 1.D - Design & Preview Chi Tiết (2)](./images/1d-1-12.png)
+![PL. 1.D - Design & Preview Chi Tiết (2)](./images/1d-1-12.png)
 
 ### Tạo Dashboard Để Hiển Thị Biểu Đồ Và Chi Tiết
 
 Kéo thả 2 sheet biểu đồ và sheet chi tiết vào
 
-![PL. Bài 1.D - Dashboard Để Hiển Thị Biểu Đồ Và Chi Tiết](./images/1d-1-11.png)
+![PL. 1.D - Dashboard Để Hiển Thị Biểu Đồ Và Chi Tiết](./images/1d-1-11.png)
 
 ### Màn Hình Design Của Dashboard
 
-![PL. Bài 1.D - Design](./images/1d-1-13.png)
+![PL. 1.D - Design](./images/1d-1-13.png)
 
 ### Màn Hình Preview
 
-![PL. Bài 1.D - Preview](./images/1d-1-14.png)
+![PL. 1.D - Preview](./images/1d-1-14.png)
