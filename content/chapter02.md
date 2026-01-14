@@ -106,6 +106,14 @@ Viết lệnh Xquery trả về `MSDH` và `TenDH` theo định dạng sau:
 #raw(read("code/BTTH5-b-5.sql"), lang: "sql", block: true)
 ```
 
+Kết quả:
+
+![BTTH5-b-5](assets/BTTH5-b-5.png)
+
+```{=typst}
+#raw(read("code/BTTH5-b-5.xml"), lang: "xml", block: true)
+```
+
 ## Câu 6
 
 Viết lệnh Xquery xóa tên các sinh viên trường DH `KHTN`.
