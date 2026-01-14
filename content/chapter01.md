@@ -50,7 +50,7 @@ Mục tiêu:
 
 ### Kết Quả: Danh Sách Các Bảng
 
-![Phần A - Danh Sách Các Bảng](assets/01-database-tables.png)
+![Phần A - Các Bảng Trong CSDL](assets/01-database-tables.png)
 
 ## Thêm Dữ Liệu
 

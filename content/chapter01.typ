@@ -51,7 +51,7 @@ Mục tiêu:
 
 #figure(image("assets/01-database-tables.png"),
   caption: [
-    Phần A - Danh Sách Các Bảng
+    Phần A - Các Bảng Trong CSDL
   ]
 )
 
