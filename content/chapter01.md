@@ -86,22 +86,6 @@ Mục tiêu:
 
 ### `QuanLySV`
 
-```{=typst}
-#raw(read("code/BTTH5-a-insert-QuanLySV.sql"), lang: "sql", block: true)
-```
-
-### Kết Quả: Danh Sách Các Bảng
-
-![Phần A - Danh Sách Các Bảng](assets/01-database-tables.png)
-
-### `Diem`
-
-```{=typst}
-#raw(read("code/BTTH5-a-insert-Diem.sql"), lang: "sql", block: true)
-```
-
-### `QuanLySV`
-
 - CNTT:
 
 ```{=typst}
