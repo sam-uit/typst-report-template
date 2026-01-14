@@ -7,7 +7,7 @@ Mục tiêu:
 ## Tạo Cơ Sở Dữ Liệu
 
 ```{=typst}
-#raw(read("code/BTTH5-a-1.sql"), lang: "sql", block: true)
+#raw(read("code/BTTH5-a-0-create-db.sql"), lang: "sql", block: true)
 ```
 
 ## Tạo Các Bảng
