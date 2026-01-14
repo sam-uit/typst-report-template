@@ -297,3 +297,14 @@ Kết quả:
 ```{=typst}
 #raw(read("code/BTTH5-b-11-khtn.xml"), lang: "xml", block: true)
 ```
+
+## Tổng Kết
+
+- Sử dụng XPath để định vị và chọn phần tử XML.
+- Sử dụng XQuery với cú pháp FLWOR để truy vấn dữ liệu XML.
+- Sử dụng phương thức `modify()` để sửa đổi dữ liệu XML:
+  - `insert`: Chèn phần tử mới.
+  - `delete`: Xóa phần tử hoặc thuộc tính.
+  - `replace value of`: Thay thế giá trị.
+- Sử dụng phương thức `exist()` để kiểm tra sự tồn tại.
+- Thực hiện phép nối (join) giữa các phần tử XML và dữ liệu quan hệ.
