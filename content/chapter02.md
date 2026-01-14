@@ -213,6 +213,11 @@ Sử dụng `replace value of` để thay đổi giá trị của thuộc tính 
 #raw(read("code/BTTH5-b-8.sql"), lang: "sql", block: true)
 ```
 
+Giải thích:
+
+- `[/THONGTINSV/sinhvien](2)`: Chọn phần tử `sinhvien` thứ 2 (chỉ số bắt đầu từ 1).
+- `replace value of ... with "Binh"`: Thay thế giá trị của thuộc tính `Ten` bằng "Binh"
+
 Hoàn thành:
 
 ![BTTH5-b-8](assets/BTTH5-b-8.png)
