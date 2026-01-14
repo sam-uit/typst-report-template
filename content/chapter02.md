@@ -52,6 +52,12 @@ GO
 
 ## Câu 2
 
+```sql
+SELECT ChiTietSV.query('/THONGTINSV/*') as KetQua
+FROM QuanLySV
+GO
+```
+
 ## Câu 3
 
 ## Câu 4
