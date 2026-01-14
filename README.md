@@ -65,6 +65,16 @@ This is a Typst template for university reports and thesis, refactored to a modu
     - Sans: Montserrat, Google Sans, etc.
     - Serif: Lora, Source Serif, etc.
     - Mono: Iosevka, Fira Code, etc.
+- Font paths:
+    - Sans: `template/fonts/`
+    - Serif: `template/fonts/`
+    - Mono: `template/fonts/`
+
+```bash
+typst compile report.typ --font-path template/fonts
+typst compile thesis.typ --font-path template/fonts
+typst compile slides.typ --font-path template/fonts
+```
 
 ### Tools
 
