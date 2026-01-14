@@ -284,9 +284,9 @@ Kết quả:
   ]
 )
 
-- CNTT: Thông tin đầy đủ bao gồm Khóa học, Tên sinh viên, Tên môn học.
+- CNTT: Thông tin đầy đủ bao gồm Khóa học, Tên sinh viên, Tên môn học. Ví dụ, đã lược bớt số dòng vì quá dài.
 
 #raw(read("code/BTTH5-b-11-cntt.xml"), lang: "xml", block: true)
-- KHTN: Không có Tên sinh viên do đã bị xóa ở Câu 6.
+- KHTN: Không có Tên sinh viên do đã bị xóa ở Câu 6. Dưới đây là các ví dụ, đã lược bớt số dòng vì quá dài.
 
 #raw(read("code/BTTH5-b-11-khtn.xml"), lang: "xml", block: true)
