@@ -6,7 +6,7 @@ SET ChiTietSV.modify('
             <monhoc ID="11" Ten="Lap Trinh C#" />
             <monhoc ID="12" Ten="CSDL Nang Cao" />
          </sinhvien>
-  as last into [/THONGTINSV](1)
+  as last into (/THONGTINSV)[1]
 ')
 WHERE TenDH = 'DH CNTT'
 GO
