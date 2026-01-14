@@ -52,6 +52,11 @@ Viết lệnh trả về tất cả các nút từ nút gốc là `THONGTINSV`.
 #raw(read("code/BTTH5-b-2.sql"), lang: "sql", block: true)
 ```
 
+Giải thích:
+
+- `/THONGTINSV/*`: Ký tự `*` đại diện cho tất cả các phần tử con trực tiếp của `THONGTINSV`.
+- Kết quả trả về tất cả các phần tử `sinhvien` trong XML.
+
 Kết quả:
 
 ![BTTH5-b-2](assets/BTTH5-b-2.png)
