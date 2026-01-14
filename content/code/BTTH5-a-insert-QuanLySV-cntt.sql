@@ -20,3 +20,4 @@ INSERT INTO QuanLySV VALUES (
         </sinhvien>
     </THONGTINSV>'
 )
+GO
