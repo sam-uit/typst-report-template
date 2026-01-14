@@ -14,7 +14,10 @@ Hãy sử dụng Xpath, Xquery để thực hiện các yêu cầu sau đây.
 === Sinh viên có `ID=10`
 <sinh-vien-co-id-10>
 
-#raw(read("code/BTTH5-b-1a.sql"), lang: "sql", block: true)
+#figure(
+    raw(read("code/BTTH5-b-1a.sql"), lang: "sql", block: true),
+    caption: "Câu 1 - Sinh viên có ID=10"
+)
 Giải thích:
 
 - `/THONGTINSV/sinhvien[@ID="10"]`: Đường dẫn XPath tìm phần tử `sinhvien` có thuộc tính `ID` bằng "10".
@@ -31,7 +34,10 @@ Kết quả:
 === Sinh Viên Ở Vị Trí Cuối Cùng Trong Trường `CNTT`
 <sinh-vien-o-vi-tri-cuoi-cung-trong-truong-cntt>
 
-#raw(read("code/BTTH5-b-1b.sql"), lang: "sql", block: true)
+#figure(
+    raw(read("code/BTTH5-b-1b.sql"), lang: "sql", block: true),
+    caption: "Câu 1 - Sinh viên ở vị trí cuối cùng"
+)
 Giải thích:
 
 - `[last()]`: Hàm XPath trả về phần tử cuối cùng trong tập hợp các phần tử `sinhvien`.
@@ -49,7 +55,10 @@ Kết quả:
 
 Viết lệnh trả về tất cả các nút từ nút gốc là `THONGTINSV`.
 
-#raw(read("code/BTTH5-b-2.sql"), lang: "sql", block: true)
+#figure(
+    raw(read("code/BTTH5-b-2.sql"), lang: "sql", block: true),
+    caption: "Câu 2 - Tất cả các nút từ nút gốc THONGTINSV"
+)
 Giải thích:
 
 - `/THONGTINSV/*`: Ký tự `*` đại diện cho tất cả các phần tử con trực tiếp của `THONGTINSV`.
@@ -73,7 +82,10 @@ Kết quả:
 
 Viết lệnh Xquery trả về danh sách sinh viên có `ID < 12` với `MSDH = 1`.
 
-#raw(read("code/BTTH5-b-3.sql"), lang: "sql", block: true)
+#figure(
+    raw(read("code/BTTH5-b-3.sql"), lang: "sql", block: true),
+    caption: "Câu 3 - Danh sách sinh viên có ID < 12 với MSDH = 1"
+)
 Giải thích:
 
 - `for $sv in /THONGTINSV/sinhvien`: Duyệt qua tất cả các phần tử `sinhvien`.
@@ -93,7 +105,10 @@ Kết quả:
 
 Viết lệnh Xquery trả về danh sách sinh viên sắp xếp theo tên với `MSDH=2`.
 
-#raw(read("code/BTTH5-b-4.sql"), lang: "sql", block: true)
+#figure(
+    raw(read("code/BTTH5-b-4.sql"), lang: "sql", block: true),
+    caption: "Câu 4 - Sinh viên sắp xếp theo tên với MSDH=2"
+)
 Giải thích:
 
 - `order by $sv/@Ten`: Sắp xếp các sinh viên theo thuộc tính `Ten` (tên).
@@ -119,7 +134,12 @@ Viết lệnh Xquery trả về `MSDH` và `TenDH` theo định dạng sau:
 </QuanLySV>
 ```
 
-#raw(read("code/BTTH5-b-5.sql"), lang: "sql", block: true)
+Sử dụng `FOR XML PATH` để tạo cấu trúc XML từ dữ liệu quan hệ.
+
+#figure(
+    raw(read("code/BTTH5-b-5.sql"), lang: "sql", block: true),
+    caption: "Câu 5 - Tạo cấu trúc XML từ dữ liệu quan hệ"
+)
 Giải thích:
 
 - `FOR XML PATH('QuanLySV')`: Tạo cấu trúc XML với phần tử gốc là `QuanLySV`.
@@ -140,7 +160,10 @@ Viết lệnh Xquery xóa tên các sinh viên trường DH `KHTN`.
 
 Sử dụng phương thức `modify()` với lệnh `delete` để xóa thuộc tính.
 
-#raw(read("code/BTTH5-b-6.sql"), lang: "sql", block: true)
+#figure(
+    raw(read("code/BTTH5-b-6.sql"), lang: "sql", block: true),
+    caption: "Câu 6 - Xóa tên các sinh viên trường DH KHTN"
+)
 Giải thích:
 
 - `modify('delete ...')`: Phương thức để sửa đổi XML.
@@ -169,7 +192,10 @@ Viết lệnh Xquery trả về thông tin các sinh viên có tên là '`Nam`' 
 
 Sử dụng toán tử logic `or` trong mệnh đề `where` để lọc dữ liệu theo nhiều điều kiện.
 
-#raw(read("code/BTTH5-b-7.sql"), lang: "sql", block: true)
+#figure(
+    raw(read("code/BTTH5-b-7.sql"), lang: "sql", block: true),
+    caption: "Câu 7 - Các sinh viên có tên là 'Nam' hoặc 'Thanh'"
+)
 Giải thích:
 
 - `where $s/@Ten = "Nam" or $s/@Ten = "Thanh"`: Lọc các sinh viên có tên là "Nam" hoặc "Thanh".
@@ -190,7 +216,10 @@ Viết lệnh Xquery thay đổi tên sinh viên thứ 2 thành tên '`Binh`' tr
 
 Sử dụng `replace value of` để thay đổi giá trị của thuộc tính tại vị trí cụ thể
 
-#raw(read("code/BTTH5-b-8.sql"), lang: "sql", block: true)
+#figure(
+    raw(read("code/BTTH5-b-8.sql"), lang: "sql", block: true),
+    caption: "Câu 8 - Thay đổi tên sinh viên thứ 2 thành tên 'Binh'"
+)
 Giải thích:
 
 - `[/THONGTINSV/sinhvien](2)`: Chọn phần tử `sinhvien` thứ 2 (chỉ số bắt đầu từ 1).
@@ -219,7 +248,10 @@ Viết lệnh Xquery kiểm tra xem có tồn tại sinh viên có `ID` là 12 t
 - Nếu có trả về 1
 - Nếu không thì trả về 0.
 
-#raw(read("code/BTTH5-b-9.sql"), lang: "sql", block: true)
+#figure(
+    raw(read("code/BTTH5-b-9.sql"), lang: "sql", block: true),
+    caption: "Câu 9 - Kiểm tra tồn tại sinh viên ID 12 trong KHTN"
+)
 Giải thích:
 
 - `exist()`: Phương thức kiểm tra sự tồn tại của phần tử hoặc điều kiện trong XML.
@@ -268,7 +300,10 @@ Và `INSERT` thêm vào `THONGTINSV`:
 
 Kiểm tra xem có tồn tại sinh viên `Lan` trong trường `CNTT` không:
 
-#raw(read("code/BTTH5-b-10a.sql"), lang: "sql", block: true)
+#figure(
+    raw(read("code/BTTH5-b-10a.sql"), lang: "sql", block: true),
+    caption: "Câu 10 - Kiểm tra sinh viên tên 'Lan' trong CNTT"
+)
 Giải thích:
 
 - `exist()`: Phương thức kiểm tra sự tồn tại của phần tử hoặc điều kiện trong XML.
@@ -289,7 +324,10 @@ Thêm `Lan` vào `THONGTINSV`:
 
 Sử dụng lệnh `insert` với các tùy chọn vị trí: `as first`, `as last`, `before`, `after`.
 
-#raw(read("code/BTTH5-b-10b.sql"), lang: "sql", block: true)
+#figure(
+    raw(read("code/BTTH5-b-10b.sql"), lang: "sql", block: true),
+    caption: "Câu 10 - Thêm sinh viên tên 'Lan' vào CNTT"
+)
 Giải thích:
 
 - `insert ... as last into [/THONGTINSV](1)`: Chèn phần tử mới vào cuối cùng của phần tử `THONGTINSV` đầu tiên.
@@ -320,7 +358,10 @@ Thông tin của sinh viên:
 
 Viết lệnh Xquery thực hiện phép nối bằng các lệnh Xquery như một câu truy vấn trong SQL để trả về thông tin là sinh viên nào học khóa học tên là gì, sinh viên nào học môn học gì?
 
-#raw(read("code/BTTH5-b-11.sql"), lang: "sql", block: true)
+#figure(
+    raw(read("code/BTTH5-b-11.sql"), lang: "sql", block: true),
+    caption: "Câu 11 - Xquery thực hiện phép nối"
+)
 Giải thích:
 
 - `for $sv in /THONGTINSV/sinhvien`: Vòng lặp ngoài duyệt qua tất cả sinh viên.
