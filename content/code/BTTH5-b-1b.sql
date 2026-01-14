@@ -1,4 +1,4 @@
--- Xpath lấy sinh viên ở vị trí cuối cùng ở trường CNTT
+-- Câu 2. Xpath lấy sinh viên ở vị trí cuối cùng ở trường CNTT
 SELECT ChiTietSV.query('/THONGTINSV/sinhvien[last()]') AS KetQua
 FROM QuanLySV WHERE TenDH = 'DH CNTT'
 GO
