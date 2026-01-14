@@ -1,3 +1,4 @@
+-- Insert Diem
 INSERT INTO Diem (MSSV,MaMonHoc,Diem) SELECT 1,1,75
 INSERT INTO Diem (MSSV,MaMonHoc,Diem) SELECT 1,2,80
 INSERT INTO Diem (MSSV,MaMonHoc,Diem) SELECT 1,3,70
