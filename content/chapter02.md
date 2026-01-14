@@ -247,6 +247,11 @@ Viết lệnh Xquery kiểm tra xem có tồn tại sinh viên có `ID` là 12 t
 #raw(read("code/BTTH5-b-9.sql"), lang: "sql", block: true)
 ```
 
+Giải thích:
+
+- `exist()`: Phương thức kiểm tra sự tồn tại của phần tử hoặc điều kiện trong XML.
+- Trả về `1` nếu tìm thấy sinh viên có ID=12, `0` nếu không tìm thấy.
+
 Hoàn thành:
 
 - Có 1 sinh viên có `ID = 12` trong trường `KHTN`.
