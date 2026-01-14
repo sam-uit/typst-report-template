@@ -162,7 +162,7 @@ GO
 
 ### Tạo Chart (Pie) Trong Sheet Mới
 
-![Bài 1.D - Tạo chart (Pie) trong sheet mới](./images/1d-1-1.png)
+![Bài 1.D - Tạo Chart (Pie) Trong Sheet Mới](./images/1d-1-1.png)
 
 ### Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_SP_2006_2007 Vào Chart
 
@@ -172,23 +172,23 @@ Kéo thả vào mục Marks các trường trong view:
 - Sum(TongCaNam) -> Angle => để chia tỉ lệ trong biểu đồ
 - Sum(TongCaNam) và MaSP -> Label => để hiển thị trên biểu đồ
 
-![Bài 1.D - Mapping dữ liệu từ View vào chart (1)](./images/1d-1-2.png)
+![Bài 1.D - Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_SP_2006_2007 (1)](./images/1d-1-2.png)
 
-![Bài 1.D - Mapping dữ liệu từ View vào chart (2)](./images/1d-1-3.png)
+![Bài 1.D - Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_SP_2006_2007 (2)](./images/1d-1-3.png)
 
-![Bài 1.D - Mapping dữ liệu từ View vào chart (3)](./images/1d-1-4.png)
+![Bài 1.D - Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_SP_2006_2007 (3)](./images/1d-1-4.png)
 
 ### Màn Hình Design Của Chart
 
-![Bài 1.D - Màn hình design của chart](./images/1d-1-5.png)
+![Bài 1.D - Màn Hình Design Của Chart](./images/1d-1-5.png)
 
 ### Bảng Số Liệu Chi Tiết, Tạo Sheet Mới, Tô Màu Và Vẽ Đường Viền
 
 Kéo thả các field trong View
 
-![Bài 1.D - Bảng số liệu chi tiết (1)](./images/1d-1-6.png)
+![Bài 1.D - Bảng Số Liệu Chi Tiết (1)](./images/1d-1-6.png)
 
-![Bài 1.D - Bảng số liệu chi tiết (2)](./images/1d-1-7.png)
+![Bài 1.D - Bảng Số Liệu Chi Tiết (2)](./images/1d-1-7.png)
 
 ### Tạo STT
 
@@ -198,20 +198,20 @@ Kéo thả các field trong View
 
 ### Màn Hình Design & Preview Chi Tiết
 
-![Bài 1.D - Màn hình design & preview chi tiết (1)](./images/1d-1-10.png)
+![Bài 1.D - Design & Preview Chi Tiết (1)](./images/1d-1-10.png)
 
-![Bài 1.D - Màn hình design & preview chi tiết (2)](./images/1d-1-12.png)
+![Bài 1.D - Design & Preview Chi Tiết (2)](./images/1d-1-12.png)
 
 ### Tạo Dashboard Để Hiển Thị Biểu Đồ Và Chi Tiết
 
 Kéo thả 2 sheet biểu đồ và sheet chi tiết vào
 
-![Bài 1.D - Tạo dashboard để hiển thị biểu đồ và chi tiết](./images/1d-1-11.png)
+![Bài 1.D - Dashboard Để Hiển Thị Biểu Đồ Và Chi Tiết](./images/1d-1-11.png)
 
 ### Màn Hình Design Của Dashboard
 
-![Bài 1.D - Màn hình design cuối cùng](./images/1d-1-13.png)
+![Bài 1.D - Design](./images/1d-1-13.png)
 
 ### Màn Hình Preview
 
-![Bài 1.D - Màn hình preview](./images/1d-1-14.png)
+![Bài 1.D - Preview](./images/1d-1-14.png)
