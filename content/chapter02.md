@@ -60,6 +60,10 @@ GO
 
 ## Câu 3
 
+```{=typst}
+#raw(read("code/BTTH5-b-3.sql"), lang: "sql", block: true)
+```
+
 ## Câu 4
 
 ## Câu 5
