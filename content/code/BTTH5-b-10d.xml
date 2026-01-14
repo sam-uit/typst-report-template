@@ -1,0 +1,5 @@
+<sinhvien ID="15" Ten="Lan">
+	<monhoc ID="10" Ten="Toan Roi Rac" />
+	<monhoc ID="11" Ten="Lap Trinh C#" />
+	<monhoc ID="12" Ten="CSDL Nang Cao" />
+</sinhvien>
