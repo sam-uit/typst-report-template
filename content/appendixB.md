@@ -93,7 +93,9 @@ GO
 
 ![Bài 1.C - Màn hình design và preview của chart (2)](./images/1c-1-8.png)
 
-### Bảng Số Liệu Chi Tiết - Tạo Thêm 1 Sheet Cho Chi Tiết Và Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_2006
+### Bảng Số Liệu Chi Tiết
+
+- Tạo Thêm 1 Sheet Cho Chi Tiết Và Mapping Dữ Liệu Từ View V_BAOCAO_DOANHTHU_2006
 
 ![Bài 1.C - Bảng số liệu chi tiết](./images/1c-1-9.png)
 
