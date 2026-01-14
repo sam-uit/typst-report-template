@@ -1,71 +1,66 @@
 #import "../template/lib.typ": *
 
-= Phân Tích Và Thiết Kế
-<phan-tich-va-thiet-ke>
+= Bài 2. Các Loại Reports
+<bai-2-cac-loai-reports>
 
+Yêu cầu:
 
-== Các Chức Năng Nghiệp Vụ
-<cac-chuc-nang-nghiep-vu>
+- Tìm hiểu ngoài Crystal Report, còn có những loại Report nào mà Visual Studio hỗ trợ?
+- Hiện tại, loại Report nào phổ biến và hay được dùng nhất?
+- Ngoài ra, nếu không dùng Visual Studio thì có cách nào tạo Report không?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+Hướng dẫn làm bài:
 
-#figure(image("assets/macos-fhs-root-system.png"), caption: [
-  Bài 2. Cây thư mục trong CLI của macOS.
-])
+- Đối với Windows OS: Sử dụng phần mềm Crystal Report tương ứng với phiên bản của Visual Studio đang dùng.
+- Đối với MacOS: Sử dụng phần mềm Tableau Desktop.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+== Visual Studio Hỗ trợ Những Loại Report Nào?
+<visual-studio-ho-tro-nhung-loai-report-nao>
 
-== Đối Tượng và Mối Quan Hệ
-<doi-tuong-va-moi-quan-he>
+Ngoài #strong[Crystal Report];, Visual Studio còn hỗ trợ một số loại Report phổ biến sau:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- RDLC (Local Report): Microsoft Report Viewer
+- SSRS (SQL Server Reporting Services): Server Report
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+=== RDLC (Local Report) -- Microsoft Report Viewer
+<rdlc-local-report-microsoft-report-viewer>
 
-#figure(
-  align(center)[
-    #table(
-      columns: (1fr,) * 4,
-      align: (left, left, left, left),
-      [#strong[Thuộc tính]], [#strong[Ổ đĩa (Volume/Drive)]], [#strong[Thư mục (Folder)]], [#strong[Tập tin (File)]],
-      [#strong[Tên (Name)]],
-      [Tên phân vùng (VD: Macintosh HD).],
-      [Tên thư mục.],
-      [Tên file + Đuôi mở rộng (Extension).],
+- Dùng tốt cho WinForms, WPF, ASP.NET MVC, WebForms.
+- File report: `.rdlc`
+- Thiết kế report bằng designer kéo-thả trong Visual Studio
 
-      [#strong[Loại (Kind)]], [Định dạng (APFS, NTFS…).], [Folder.], [Định dạng (PDF, JPG, Docx…).],
-      [#strong[Kích thước (Size)]],
-      [Dung lượng tổng / Khả dụng.],
-      [Tổng kích thước nội dung.],
-      [Kích thước thực của file.],
+=== SSRS (SQL Server Reporting Services) -- Server Report
+<ssrs-sql-server-reporting-services-server-report>
 
-      [#strong[Ngày tháng]],
-      [Ngày tạo phân vùng.],
-      [Ngày tạo, ngày sửa đổi nội dung.],
-      [Ngày tạo, sửa đổi, mở gần nhất.],
+- Dùng khi muốn tạo report chạy trên server.
+- Thiết kế file `.rdl` (khác với `.rdlc`).
+- Report chạy trên Report Server: Web, API.
 
-      [#strong[Quyền (Permissions)]],
-      [Quản trị hệ thống (System R/W).],
-      [Read/Write/Execute (truy cập).],
-      [Read/Write/Execute (thao tác).],
+=== Ví Dụ Thực Tế
+<vi-du-thuc-te>
 
-      [#strong[Khác]],
-      [Mount point, thông tin phần cứng.],
-      [Số lượng mục con (items count).],
-      [App mặc định (Open with).],
-    )
-  ],
-  caption: [
-    @phan-tich-va-thiet-ke[Chương] -- Ví Dụ Về Bảng
-  ],
-)
+Hiện nay, một số phần mềm bệnh viện đang sử dụng #strong[RDLC] và #strong[SSRS];, ví dụ:
 
-== Mô Hình Mức Quan Niệm
-<mo-hinh-muc-quan-niem>
+- Hoàn Mỹ
+- Nam Sài Gòn
+- Gia An
+- Truyền máu Huyết Học
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+== Loại Report Phổ Biến và Hay Được Dùng Nhất Hiện Nay?
+<loai-report-pho-bien-va-hay-duoc-dung-nhat-hien-nay>
 
-== Thiết Kế Cơ Sở Dữ Liệu
-<thiet-ke-co-so-du-lieu>
+Hiện nay, #strong[Local Report (RDLC)] và #strong[SSRS] là hai loại report được sử dụng nhiều nhất trong thực tế, đặc biệt trong các hệ thống lớn:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- Quản lý doanh nghiệp (ERP)
+- Quản lý bệnh viện (HIS)
+- Quản lý tài chính -- kế toán
+
+== Nếu Không Dùng Visual Studio Thì Có Cách Khác Không?
+<neu-khong-dung-visual-studio-thi-co-cach-khac-khong>
+
+Ngoài Visual Studio, vẫn có thể tạo report bằng cách:
+
+- Sử Dụng #strong[Report Builder]
+  - Công cụ kéo-thả giao diện.
+  - Kết nối trực tiếp với Database.
+  - Thiết kế report mà #strong[không cần code];.
