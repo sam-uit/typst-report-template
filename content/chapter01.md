@@ -102,6 +102,14 @@ Mục tiêu:
 
 ### `QuanLySV`
 
+- CNTT:
+
 ```{=typst}
-#raw(read("code/BTTH5-a-insert-QuanLySV.sql"), lang: "sql", block: true)
+#raw(read("code/BTTH5-a-insert-QuanLySV-cntt.sql"), lang: "sql", block: true)
+```
+
+- KHTN:
+
+```{=typst}
+#raw(read("code/BTTH5-a-insert-QuanLySV-khtn.sql"), lang: "sql", block: true)
 ```
