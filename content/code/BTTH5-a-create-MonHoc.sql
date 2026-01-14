@@ -1,0 +1,7 @@
+-- MonHoc
+CREATE TABLE MonHoc
+(
+    MaMonHoc INT IDENTITY NOT NULL CONSTRAINT PK_MonHoc PRIMARY KEY(MaMonHoc),
+    TenMonHoc VARCHAR(200)
+)
+GO
