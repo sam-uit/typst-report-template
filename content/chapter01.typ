@@ -10,4 +10,8 @@ Dựa vào CSDL đã thiết kế ở BTTH số 2 (QLĐT), hãy thực hiện c�
 == Sơ Đồ ERD (Chen Notation)
 <so-do-erd-chen-notation>
 
-\(Trình bày ở đây).
+#figure(image("diagrams/BTTH6-ER.svg"),
+  caption: [
+    Câu 1 - Sơ Đồ ERD
+  ]
+)
