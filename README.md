@@ -13,6 +13,15 @@ Cách dùng:
 5. Bắt đầu thêm nội dung tại `content/`.
 6. Chạy `make watch` để xem thay đổi.
 
+Lưu ý:
+
+- Fonts cần dùng được lưu tại `template/fonts/`.
+- Biên dịch với fonts (nếu chưa cài đặt trên máy):
+
+```bash
+typst compile report.typ --font-path template/fonts
+```
+
 Yêu cầu:
 
 - Typst: [https://typst.app/](https://typst.app/)
