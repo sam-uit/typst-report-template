@@ -2,7 +2,7 @@
 #unheading[Lưu Ý Quan Trọng]
 ```
 
-- Chỉ thực hiện câu 1, và 3 trong BTTH6.
+- **Chỉ thực hiện câu 1, và 3 trong BTTH6.**
 
 ## Bài Làm
 
