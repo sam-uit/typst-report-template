@@ -12,7 +12,7 @@
   // Alternative: Lora, Linux Libertine
   serif: "CMU Serif",
   // Alternative: Fira Code, Ubuntu Mono
-  mono: "Iosevka",
+  mono: "Google Sans Code",
 )
 
 #let heading-font = document-fonts.sans
