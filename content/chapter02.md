@@ -23,10 +23,10 @@ Viết các truy vấn xử lý thông tin như dưới đây (tùy ý sử dụ
 
 (Trình bày ở đây)
 
-## Tính Số Lượng Đề Tài Làm Phản Biện Và Số Lượng Đề Tài Làm Uỷ Viên Của Từng GV
+## Số Lượng Đề Tài Làm Phản Biện Và Đề Tài Làm Uỷ Viên
 
 (Trình bày ở đây)
 
-## In Ra Danh Sách Tên Các Sinh Viên Có Điểm Trung Bình Đề Tài Cao Nhất
+## Các Sinh Viên Có Điểm Trung Bình Đề Tài Cao Nhất
 
 (Trình bày ở đây)
