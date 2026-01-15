@@ -10,6 +10,14 @@
 
 ## Quy Cách
 
+- Tham khảo [BTTH5](https://github.com/sam-uit/typst-report-template/tree/report/IE103-BTTH5/content)
+
+Cấu trúc thư mục:
+
+- `./code/`: Các file code SQL.
+- `./assets/`: Các file ảnh.
+- `./chapterX.md`: File báo cáo của câu hỏi X.
+
 Đặt tên file theo mô hình sau:
 
 - `BTTH6-quizX-1.sql`: Code SQL của câu 1.
