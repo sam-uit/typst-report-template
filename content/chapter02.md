@@ -1,34 +1,14 @@
-# Phân Tích Và Thiết Kế
+# Câu 2. Xử Lý Thông Tin
 
-## Các Chức Năng Nghiệp Vụ
+Hiện thực các ràng buộc như sau. Vẽ bảng tầm ảnh hưởng và hiện thực trong SQL Server (Check, Constraints, Trigger).
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+1. Một sinh viên chỉ được tham gia một đề tài.
+2. Điểm của đề tài trong thang điểm từ 0 đến 10.
+3. GV là chủ tịch hội đồng phải có học vị tiến sĩ.
 
-![Bài 2. Cây thư mục trong CLI của macOS.](assets/macos-fhs-root-system.png)
+Viết các truy vấn xử lý thông tin như dưới đây (tùy ý sử dụng Function, Stored Procedure hoặc Cursor):
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+4. Tính số lượng đề tài làm phản biện và số lượng đề tài làm ủy viên của từng GV.
+5. In ra danh sách tên các sinh viên có điểm trung bình đề tài cao nhất.
 
-## Đối Tượng và Mối Quan Hệ
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
-
-Bảng Thông Tin (dàn trên nhiều trang):
-
-| **Thuộc tính**          | **Ổ đĩa (Volume/Drive)**          | **Thư mục (Folder)**             | **Tập tin (File)**                   |
-| ----------------------- | --------------------------------- | -------------------------------- | ------------------------------------ |
-| **Tên (Name)**          | Tên phân vùng (VD: Macintosh HD). | Tên thư mục.                     | Tên file + Đuôi mở rộng (Extension). |
-| **Loại (Kind)**         | Định dạng (APFS, NTFS...).        | Folder.                          | Định dạng (PDF, JPG, Docx...).       |
-| **Kích thước (Size)**   | Dung lượng tổng / Khả dụng.       | Tổng kích thước nội dung.        | Kích thước thực của file.            |
-| **Ngày tháng**          | Ngày tạo phân vùng.               | Ngày tạo, ngày sửa đổi nội dung. | Ngày tạo, sửa đổi, mở gần nhất.      |
-| **Quyền (Permissions)** | Quản trị hệ thống (System R/W).   | Read/Write/Execute (truy cập).   | Read/Write/Execute (thao tác).       |
-| **Khác**                | Mount point, thông tin phần cứng. | Số lượng mục con (items count).  | App mặc định (Open with).            |
-
-## Mô Hình Mức Quan Niệm
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-## Thiết Kế Cơ Sở Dữ Liệu
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
