@@ -8,5 +8,6 @@
     "editor.autoIndentOnPaste": true,
     "editor.tabCompletion": "on",
     "makefile.configureOnOpen": false,
-    "D2.updateOnSave": true
+    "D2.updateOnSave": true,
+    "D2.previewLayout": "dagre"
 }
