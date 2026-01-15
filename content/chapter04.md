@@ -9,3 +9,11 @@ Dùng Crystal Report (Trên Windows) hoặc Tableau (Trên MAC) để thiết k�
 2. Thông tin hội đồng đánh giá đề tài.
 
 ![BTTH6-quiz4-2](assets/BTTH6-quiz4-2.png)
+
+## Thông Tin GV Phản Biện
+
+(Trình bày ở đây)
+
+## Thông Tin Hội Đồng Đánh Giá Đề Tài
+
+(Trình bày ở đây)
