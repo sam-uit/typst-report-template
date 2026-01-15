@@ -1,24 +1,44 @@
 #import "../template/lib.typ": *
 
-= Cài Đặt - Triển Khai
-<cai-dat-trien-khai>
+= Câu 3. An Ninh Thông Tin
+<cau-3-an-ninh-thong-tin>
+
+Dựa vào CSDL đã thiết kế ở BTTH số 2 (QLĐT), hãy thực hiện các yêu cầu sau:
+
++ Tạo ra 3 users: `GIANGVIEN`, `GIAOVU` và `SINHVIEN`, đặt #emph[mật khẩu tuỳ ý].
++ Phân quyền cho các users trên database như sau:
+  - `GIAOVU` có quyền xem và chỉnh sửa (cập nhật) trên tất cả các bảng
+  - `GIANGVIEN`:
+    - Có quyền xem trên các bảng có liên quan đến thông tin GV, các đề tài mà GV hướng dẫn, phản biện hay làm uỷ viên, xem thông tin hội đồng và danh sách các đề tài hiện có.
+    - Có quyền cập nhật thông tin của mình.
+  - `SINHVIEN` có quyền xem thông tin của sinh viên, thông tin của hội đồng và danh sách các đề tài hiện có.
+  - Tất cả người dùng trên đều không có quyền xoá thông tin.
+
+== Tạo Ra 3 Users
+<tao-ra-3-users>
+
+\(Trình bày ở đây)
+
+== Phân Quyền Cho Các Users Trên Database
+<phan-quyen-cho-cac-users-tren-database>
 
 
-== Cài Đặt Mô Hình Dữ Liệu
-<cai-dat-mo-hinh-du-lieu>
+=== GIAOVU
+<giaovu>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+\(Trình bày ở đây)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+=== GIANGVIEN
+<giangvien>
 
-#todo[@cai-dat-mo-hinh-du-lieu[Mục]: Vẽ mô hình dữ liệu (`mermaid`, `plantuml`, `dbdiagram`).]
+\(Trình bày ở đây)
 
-- Một quá trình khôi phục dữ liệu dùng `testdisk`.
-  - (Sử dụng một USB FAT32/NTFS, format, copy file vào, xóa, và chạy testdisk để thử tìm kiếm/khôi phục lại, vv..)
+=== SINHVIEN
+<sinhvien>
 
-== Dữ Liệu Mẫu
-<du-lieu-mau>
+\(Trình bày ở đây)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+=== Tất Cả Người Dùng
+<tat-ca-nguoi-dung>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+\(Trình bày ở đây)
