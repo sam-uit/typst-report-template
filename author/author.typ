@@ -46,7 +46,7 @@ Thành viên của nhóm và bảng nhiệm vụ.
       [4],
       [25410204],
       [Trương Xuân Hậu],
-      [],
+      [- Câu 1, 3],
       [5],
       [25410338],
       [Lê Anh Vũ],
