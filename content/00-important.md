@@ -20,10 +20,10 @@ Cấu trúc thư mục:
 
 Đặt tên file theo mô hình sau:
 
-- `BTTH6-quizX-1.sql`: Code SQL của câu 1.
-- `BTTH6-quizX-1.xml`: Code XML của câu 1.
-- `BTTH6-quizX-1a.png`: Màn hình Design của câu 1.
-- `BTTH6-quizX-1b.png`: Màn hình Preview của câu 1.
+- `BTTH6-quiz1-a.sql`: Code SQL của câu 1, mục a.
+- `BTTH6-quiz1-a.xml`: Code XML của câu 1, mục a.
+- `BTTH6-quiz1-a1.png`: Màn hình Design của câu 1, mục a, ảnh 1.
+- `BTTH6-quiz1-a2.png`: Màn hình Preview của câu 1, mục a, ảnh 2.
 
 ## Tài Nguyên
 
