@@ -1,6 +1,6 @@
 #import "../template/lib.typ": *
 #unheading[Lưu Ý Quan Trọng]
-- Chỉ thực hiện câu 1, và 3 trong BTTH6.
+- #strong[Chỉ thực hiện câu 1, và 3 trong BTTH6.]
 
 == Bài Làm
 <bai-lam>
