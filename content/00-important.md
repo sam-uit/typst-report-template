@@ -22,10 +22,8 @@ Cấu trúc thư mục:
 
 - `BTTH6-quizX-1.sql`: Code SQL của câu 1.
 - `BTTH6-quizX-1.xml`: Code XML của câu 1.
-- `BTTH6-quizX-1.png`: Màn hình Design của câu 1.
-- `BTTH6-quizX-2`: Câu 2.
-- `BTTH6-quizX-2a`: Câu 2 phần 1 hoặc a.
-- `BTTH6-quizX-2b`: Câu 2 phần 2 hoặc b.
+- `BTTH6-quizX-1a.png`: Màn hình Design của câu 1.
+- `BTTH6-quizX-1b.png`: Màn hình Preview của câu 1.
 
 ## Tài Nguyên
 
