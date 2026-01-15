@@ -2,12 +2,32 @@
 #unheading[Lưu Ý Quan Trọng]
 ```
 
-Bài Làm:
+## Bài Làm
 
 - Trình bày ngắn gọn các câu trả lời.
 - Đối với các câu hỏi liên quan đến thực thi code SQL, thực hiện dán code SQL vào file báo cáo tương ứng với câu hỏi.
 - Đối với các Crystal Report/Tableau, chụp Màn hình Design và Màn hình Preview của từng câu.
 
-Tài Nguyên:
+## Quy Cách
 
-- 
+Đặt tên file theo mô hình sau:
+
+- `BTTH6-quizX-1.sql`: Code SQL của câu 1.
+- `BTTH6-quizX-1.xml`: Code XML của câu 1.
+- `BTTH6-quizX-1.png`: Màn hình Design của câu 1.
+- `BTTH6-quizX-2`: Câu 2.
+- `BTTH6-quizX-2a`: Câu 2 phần 1 hoặc a.
+- `BTTH6-quizX-2b`: Câu 2 phần 2 hoặc b.
+
+## Tài Nguyên
+
+Code SQL của BTTH2 được lưu tại: [LT.K2025.2-CNTT > courses > IE103 > assignments > BTTH2](https://github.com/lt20252cnttalpha/LT.K2025.2-CNTT/tree/main/uit/courses/IE103/assignments/BTTH2)
+
+- `IE103-BTTH2`:
+    - Thư mục chứa SQL Project cho BTTH2
+    - Có thể triển khai ngay một cách tự động.
+    - Chỉ chứa các bảng và insert dữ liệu.
+    - Không chứa các stored procedure, function, trigger, view.
+- `content/code`:
+    - Thư mục chứa code SQL của BTTH2.
+    - Có thể triển khai thủ công mọi thành phần.
