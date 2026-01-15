@@ -168,29 +168,29 @@ chi_tiet -- attr_dongia: {class: link_attr}
 
 # Admin Flow
 admins -- phan_quyen: 1
-phan_quyen -- roles: N
+phan_quyen -- roles: n
 
 roles -- gan_quyen: 1
-gan_quyen -- perms: N
+gan_quyen -- perms: n
 
 # User Flow
 users -- thuc_hien: 1
-thuc_hien -- datphong: N
+thuc_hien -- datphong: n
 
 # Room Flow
 datphong -- chi_tiet: 1
-chi_tiet -- phong: N
+chi_tiet -- phong: n
 
-phong -- thuoc_loai: N
+phong -- thuoc_loai: n
 thuoc_loai -- loaiphong: 1
 
 # Payment Flow
 datphong -- thanh_toan: 1
-thanh_toan -- payments: N
+thanh_toan -- payments: n
 
 payments -- hoan_tien: 1
-hoan_tien -- refunds: N
+hoan_tien -- refunds: n
 
 # Approval Flow
 admins -- duyet_hoan: 1
-duyet_hoan -- refunds: N
+duyet_hoan -- refunds: n
