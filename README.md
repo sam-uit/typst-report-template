@@ -2,6 +2,24 @@
 
 This is a Typst template for university reports and thesis, refactored to a modular, professional book-like structure.
 
+# Hướng Dẫn Nhanh
+
+Cách dùng:
+
+1. Clone/Fork repo này.
+2. Tạo 1 branch mới tương ứng, ví dụ `IE103-BTTH5`.
+3. Sửa file `config/metadata.typ` để thay đổi thông tin của báo cáo.
+4. Sửa file `author/author.typ` để thay đổi thông tin của tác giả/nhóm.
+5. Bắt đầu thêm nội dung tại `content/`.
+6. Chạy `make watch` để xem thay đổi.
+
+Yêu cầu:
+
+- Typst: [https://typst.app/](https://typst.app/)
+- Pandoc: [https://pandoc.org](https://pandoc.org)
+- `entr`: `brew install entr`
+- `make`: Pre-installed by default (mostly).
+
 ## Resources
 
 - [Thesis Structure - AthenaCheck](https://athenacheck.nl/en/knowledge-base/writing/thesis-structure/thesis-structure)
