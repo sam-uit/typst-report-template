@@ -1,4 +1,4 @@
-# Câu 1. Tổ Chức Và Biểu Diễn Thông Tin 
+# Câu 1. Tổ Chức Và Biểu Diễn Thông Tin
 
 Dựa vào CSDL đã thiết kế ở BTTH số 2 (QLĐT), hãy thực hiện các yêu cầu sau:
 
@@ -6,4 +6,4 @@ Dựa vào CSDL đã thiết kế ở BTTH số 2 (QLĐT), hãy thực hiện c�
 
 ## Sơ Đồ ERD (Chen Notation)
 
-(Trình bày ở đây).
+![Câu 1 - Sơ Đồ ERD](diagrams/BTTH6-ER.svg)
