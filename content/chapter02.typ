@@ -1,71 +1,43 @@
 #import "../template/lib.typ": *
 
-= Phân Tích Và Thiết Kế
-<phan-tich-va-thiet-ke>
+= Câu 2. Xử Lý Thông Tin
+<cau-2-xu-ly-thong-tin>
 
+Hiện thực các ràng buộc như sau. Vẽ bảng tầm ảnh hưởng và hiện thực trong SQL Server (Check, Constraints, Trigger).
 
-== Các Chức Năng Nghiệp Vụ
-<cac-chuc-nang-nghiep-vu>
++ Một sinh viên chỉ được tham gia một đề tài.
++ Điểm của đề tài trong thang điểm từ 0 đến 10.
++ GV là chủ tịch hội đồng phải có học vị tiến sĩ.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+Viết các truy vấn xử lý thông tin như dưới đây (tùy ý sử dụng Function, Stored Procedure hoặc Cursor):
 
-#figure(image("assets/macos-fhs-root-system.png"), caption: [
-  Bài 2. Cây thư mục trong CLI của macOS.
-])
+#block[
+#set enum(numbering: "1.", start: 4)
++ Tính số lượng đề tài làm phản biện và số lượng đề tài làm ủy viên của từng GV.
++ In ra danh sách tên các sinh viên có điểm trung bình đề tài cao nhất.
+]
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+== Sinh Viên Chỉ Tham Gia 1 Đề Tài
+<sinh-vien-chi-tham-gia-1-de-tai>
 
-== Đối Tượng và Mối Quan Hệ
-<doi-tuong-va-moi-quan-he>
+\(Trình bày ở đây)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+== Điểm Của Đề Tài Trong Thang Điểm Từ 0 Đến 10
+<diem-cua-de-tai-trong-thang-diem-tu-0-den-10>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+\(Trình bày ở đây)
 
-#figure(
-  align(center)[
-    #table(
-      columns: (1fr,) * 4,
-      align: (left, left, left, left),
-      [#strong[Thuộc tính]], [#strong[Ổ đĩa (Volume/Drive)]], [#strong[Thư mục (Folder)]], [#strong[Tập tin (File)]],
-      [#strong[Tên (Name)]],
-      [Tên phân vùng (VD: Macintosh HD).],
-      [Tên thư mục.],
-      [Tên file + Đuôi mở rộng (Extension).],
+== GV Là Chủ tịch Hội Đồng Phải Có Học Vị Tiến Sĩ
+<gv-la-chu-tich-hoi-dong-phai-co-hoc-vi-tien-si>
 
-      [#strong[Loại (Kind)]], [Định dạng (APFS, NTFS…).], [Folder.], [Định dạng (PDF, JPG, Docx…).],
-      [#strong[Kích thước (Size)]],
-      [Dung lượng tổng / Khả dụng.],
-      [Tổng kích thước nội dung.],
-      [Kích thước thực của file.],
+\(Trình bày ở đây)
 
-      [#strong[Ngày tháng]],
-      [Ngày tạo phân vùng.],
-      [Ngày tạo, ngày sửa đổi nội dung.],
-      [Ngày tạo, sửa đổi, mở gần nhất.],
+== Số Lượng Đề Tài Làm Phản Biện Và Đề Tài Làm Uỷ Viên
+<so-luong-de-tai-lam-phan-bien-va-de-tai-lam-uy-vien>
 
-      [#strong[Quyền (Permissions)]],
-      [Quản trị hệ thống (System R/W).],
-      [Read/Write/Execute (truy cập).],
-      [Read/Write/Execute (thao tác).],
+\(Trình bày ở đây)
 
-      [#strong[Khác]],
-      [Mount point, thông tin phần cứng.],
-      [Số lượng mục con (items count).],
-      [App mặc định (Open with).],
-    )
-  ],
-  caption: [
-    @phan-tich-va-thiet-ke[Chương] -- Ví Dụ Về Bảng
-  ],
-)
+== Các Sinh Viên Có Điểm Trung Bình Đề Tài Cao Nhất
+<cac-sinh-vien-co-diem-trung-binh-de-tai-cao-nhat>
 
-== Mô Hình Mức Quan Niệm
-<mo-hinh-muc-quan-niem>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-== Thiết Kế Cơ Sở Dữ Liệu
-<thiet-ke-co-so-du-lieu>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+\(Trình bày ở đây)
