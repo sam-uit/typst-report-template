@@ -9,6 +9,7 @@
 #show: document.with(..data, doc-type: "report")
 
 // Content goes here
+#include "content/00-important.typ"
 #include "content/chapter01.typ"
 #include "content/chapter02.typ"
 #include "content/chapter03.typ"
