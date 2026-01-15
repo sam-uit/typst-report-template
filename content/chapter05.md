@@ -1,17 +1,4 @@
-# Kết Luận
+# Câu 5. Các Mô Hình CSDL Tiên Tiến
 
-## Kết Quả Đạt Được
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-## Hạn Chế
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-## Hướng Phát Triển
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-## Kết Luận
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+1. Giả sử cần chuyển bài toán QLDT sang một mô hình CSDL khác. Bạn sẽ lựa chọn mô hình nào (Phân tán, NoSQL, HĐT, Di động). Tại sao?
+2. Cho ví dụ chuyển đổi sang mô hình đã chọn (Chọn 2 bảng bất kỳ khi chuyển, không cần chuyển hết tất cả các bảng).
