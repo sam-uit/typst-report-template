@@ -1,0 +1,120 @@
+# Template: D2
+# Author: Sam Dinh
+# Mục đích: Tạo ER Diagram Chen Notation cho BTTH2.
+# Trang nguồn: https://d2lang.com/
+# VSCode extension: Terrastruct.d2
+
+direction: right
+
+# Tiêu đề: căn góc trên-giữa
+# title: |md
+#   # BTTH2: Mô Hình Thực Thể Quan Hệ (Chen Notation)
+# | {near: top-center}
+
+# title.style: {
+#   font-size: 20
+# font: "mono"
+# }
+
+# --- 0. STYLES ---
+style: {
+  # font: "mono"
+  opacity: 0.0
+  # fill: "#dcdcdc"
+  # stroke: "orange"
+  # stroke-width: 5
+}
+
+# --- 1. CSS STYLES (THEME) ---
+classes: {
+  # Thực thể (Entity): Chữ nhật
+  entity: {
+    shape: rectangle
+    style: {
+      border-radius: 15
+      stroke-width: 2
+      fill: "#FFFFFF"
+      stroke: "#333333"
+    }
+  }
+
+  # Quan hệ (Relationship): Hình thoi
+  rel: {
+    shape: diamond
+    style: {
+      fill: "#F2F2F7"
+      stroke: "#8E8E93"
+      stroke-width: 2
+    }
+  }
+}
+
+# --- 2. ENTITIES (THỰC THỂ) ---
+
+SINHVIEN: {class: entity; label: "SINHVIEN"}
+DETAI: {class: entity; label: "DETAI"}
+GIAOVIEN: {class: entity; label: "GIAOVIEN"}
+HOCHAM: {class: entity; label: "HOCHAM"}
+HOCVI: {class: entity; label: "HOCVI"}
+CHUYENNGANH: {class: entity; label: "CHUYENNGANH"}
+HOIDONG: {class: entity; label: "HOIDONG"}
+
+# --- 3. RELATIONSHIPS (MỐI QUAN HỆ) ---
+
+# N-N Relationships (Explicit Tables)
+SV_DETAI: {class: rel; label: "Thực Hiện\n(SV_DETAI)"}
+GV_HDDT: {class: rel; label: "Hướng Dẫn\n(GV_HDDT)"}
+GV_PBDT: {class: rel; label: "Phản Biện\n(GV_PBDT)"}
+GV_UVDT: {class: rel; label: "Ủy Viên\n(GV_UVDT)"}
+HOIDONG_GV: {class: rel; label: "Thành Viên\n(HOIDONG_GV)"}
+HOIDONG_DT: {class: rel; label: "Quyết Định\n(HOIDONG_DT)"}
+
+# Ternary Relationship (GV_HV_CN)
+GV_HV_CN: {class: rel; label: "Bằng Cấp\n(GV_HV_CN)"}
+
+# 1-N Relationships (Logical)
+co_hoc_ham: {class: rel; label: "Có"}
+chu_tich: {class: rel; label: "Chủ Tịch"}
+
+# --- 4. CONNECTIONS (CARDINALITY) ---
+
+# --- Sinh Viên & Đề Tài ---
+# N-N: SV - DeTai
+SINHVIEN -- SV_DETAI: m
+SV_DETAI -- DETAI: n
+
+# --- Giáo Viên & Đề Tài (Vai trò) ---
+# N-N: GV Huong Dan DT
+GIAOVIEN -- GV_HDDT: m
+GV_HDDT -- DETAI: n
+
+# N-N: GV Phan Bien DT
+GIAOVIEN -- GV_PBDT: m
+GV_PBDT -- DETAI: n
+
+# N-N: GV Uy Vien DT
+GIAOVIEN -- GV_UVDT: m
+GV_UVDT -- DETAI: n
+
+# --- Giáo Viên & Học Hàm / Học Vị / Chuyên Ngành ---
+# 1-N: Giao Vien - Hoc Ham (Giao vien thuoc 1 Hoc ham)
+HOCHAM -- co_hoc_ham: 1
+co_hoc_ham -- GIAOVIEN: n
+
+# Ternary N-N-N: GV - HV - CN
+GIAOVIEN -- GV_HV_CN: n
+HOCVI -- GV_HV_CN: n
+CHUYENNGANH -- GV_HV_CN: n
+
+# --- Hội Đồng ---
+# 1-N: Giao Vien lam Chu Tich HD
+GIAOVIEN -- chu_tich: 1
+chu_tich -- HOIDONG: n
+
+# N-N: Thanh vien Hoi Dong (Giao vien tham gia HD)
+HOIDONG -- HOIDONG_GV: m
+HOIDONG_GV -- GIAOVIEN: n
+
+# N-N: Hoi Dong cham De Tai (Quyet Dinh)
+HOIDONG -- HOIDONG_DT: m
+HOIDONG_DT -- DETAI: n
