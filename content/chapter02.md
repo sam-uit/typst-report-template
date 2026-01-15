@@ -11,4 +11,22 @@ Viết các truy vấn xử lý thông tin như dưới đây (tùy ý sử dụ
 4. Tính số lượng đề tài làm phản biện và số lượng đề tài làm ủy viên của từng GV.
 5. In ra danh sách tên các sinh viên có điểm trung bình đề tài cao nhất.
 
+## Sinh Viên Chỉ Tham Gia 1 Đề Tài
 
+(Trình bày ở đây)
+
+## Điểm Của Đề Tài Trong Thang Điểm Từ 0 Đến 10
+
+(Trình bày ở đây)
+
+## GV Là Chủ tịch Hội Đồng Phải Có Học Vị Tiến Sĩ
+
+(Trình bày ở đây)
+
+## Tính Số Lượng Đề Tài Làm Phản Biện Và Số Lượng Đề Tài Làm Uỷ Viên Của Từng GV
+
+(Trình bày ở đây)
+
+## In Ra Danh Sách Tên Các Sinh Viên Có Điểm Trung Bình Đề Tài Cao Nhất
+
+(Trình bày ở đây)
