@@ -1,25 +1,7 @@
 #import "../template/lib.typ": *
 
-= Kết Luận
-<ket-luan>
+= Câu 5. Các Mô Hình CSDL Tiên Tiến
+<cau-5-cac-mo-hinh-csdl-tien-tien>
 
-
-== Kết Quả Đạt Được
-<ket-qua-dat-duoc>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-== Hạn Chế
-<han-che>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-== Hướng Phát Triển
-<huong-phat-trien>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-== Kết Luận
-<ket-luan>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
++ Giả sử cần chuyển bài toán QLDT sang một mô hình CSDL khác. Bạn sẽ lựa chọn mô hình nào (Phân tán, NoSQL, HĐT, Di động). Tại sao?
++ Cho ví dụ chuyển đổi sang mô hình đã chọn (Chọn 2 bảng bất kỳ khi chuyển, không cần chuyển hết tất cả các bảng).
