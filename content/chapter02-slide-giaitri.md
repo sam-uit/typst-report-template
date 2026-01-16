@@ -80,6 +80,12 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 #pagebreak()
 ```
 
+```{=typst}
+#align(right)[
+#image("assets/TIKTOK_SOCIAL_ICON_CIRCLE_BLACK.png", height: 2em)
+]
+```
+
 ### TikTok
 
 - "Real-time Loop": Phản hồi thời gian thực.
