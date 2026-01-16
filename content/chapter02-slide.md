@@ -2,19 +2,19 @@
 
 ## Nhà Thông Minh
 
-- Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient Intelligence).
+> Từ "**Điều Khiển Mệnh Lệnh**" đến "**Trí Tuệ Môi Trường**" (Ambient Intelligence).
 
 ### Tự Động Hóa và Tối Ưu Hóa Không Gian Sống (Smart Home)
 
-- Tự động hóa:
-    - Tự động bật đèn khi mở cửa.
-    - Tự động điều chỉnh nhiệt độ phòng vào ban đêm.
-    - Tự động tắt các thiết bị điện khi không có người trong nhà.
+- **Tự động hóa**
+    - Bật đèn khi mở cửa.
+    - Điều chỉnh nhiệt độ phòng vào ban đêm.
+    - Tắt các thiết bị điện khi không có người trong nhà.
 
-- Tối ưu hóa:
-    - Tối ưu hóa việc sử dụng năng lượng.
-    - Tối ưu hóa việc sử dụng thời gian.
-    - Tối ưu hóa việc sử dụng tài nguyên.
+- **Tối ưu hóa**
+    - Sử dụng năng lượng.
+    - Sử dụng thời gian.
+    - Sử dụng tài nguyên.
 
 ### Nâng Cao Chất Lượng Sống và An Toàn Cho Con Người
 
