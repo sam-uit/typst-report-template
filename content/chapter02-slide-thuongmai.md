@@ -9,7 +9,7 @@
 
 #upper[Mua Sắm & Thương Mại Điện Tử]
 
-Tối Ưu Hóa Hành Trình Mua Sắm và Tương Tác Tự Động.
+Tối Ưu Hóa Hành Trình Mua Sắm và Tương Tác Tự Động. Từ Tìm Kiếm Đến Khám Phá.
 ]
 ```
 
@@ -21,6 +21,10 @@ Tối Ưu Hóa Hành Trình Mua Sắm và Tương Tác Tự Động.
 - Đề xuất sản phẩm phù hợp.
     - Giảm thời gian tìm kiếm.
     - Tăng mức độ hài lòng.
+
+```{=typst}
+#pagebreak()
+```
 
 ### Chatbot CSKH và Tương tác Tự động 24/7
 ### Tìm kiếm và Thử nghiệm Trực quan
