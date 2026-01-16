@@ -148,8 +148,7 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 
 #upper[Giáo Dục 4.0]
 
-- Cá nhân hóa lộ trình học tập (Personalized Learning).
-- Chuyển dịch vai trò của người dạy.
+Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Người Dạy.
 ]
 ```
 
