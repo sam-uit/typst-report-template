@@ -1,3 +1,7 @@
+```{=typst}
+#import "../template/libslides.typ": *
+```
+
 # Lưu Ý và Định Hướng
 ## Những Vấn Đề Cần Lưu Ý
 ### Phụ Thuộc Dữ Liệu và Rủi Ro "Ảo Giác" AI
