@@ -27,3 +27,25 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 - Và hơn thế.
 ]
 ```
+
+```{=typst}
+#slide(composer: (70%, auto))[
+=== Zing MP3
+
+- Ứng dụng nghe nhạc hàng đầu Việt Nam.
+- Sử dụng AI:
+    - Phân tích đặc trưng âm thanh của nhạc Việt.
+    - "Daily Mix" hay gợi ý theo tâm trạng (mood-based).
+][
+    #align(right)[
+        #image("assets/chapter02-giaitri-zingmp3.png")
+    ]
+]
+```
+
+```{=typst}
+#pagebreak()
+```
+
+### Sportify
+
