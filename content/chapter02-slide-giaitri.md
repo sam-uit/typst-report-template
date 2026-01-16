@@ -61,4 +61,12 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
     - Giọng nói AI để dẫn chuyện, chia sẻ thông tin bài hát/nghệ sĩ.
     - Như một chương trình phát thanh cá nhân hóa.
 
+### Netflix
 
+- "Dynamic Optimizer": Tối ưu từng khung hình.
+    - Điều chỉnh chất lượng nén dựa trên bối cảnh của phim, băng thông mạng.
+    - $\Rightarrow$ Đem đến trải nghiệm mượt mà.
+- "Dynamic Thumbnail": Tạo thumbnail động của phim dựa trên sở thích của người xem.
+    - $\Rightarrow$ Cùng một bộ phim nhưng mỗi người xem sẽ thấy thumbnail khác nhau.
+    - Tương ứng mối quan tâm hoặc sở thích của người xem.
+    - $\Rightarrow$ Tăng tỷ lệ click (CTR).
