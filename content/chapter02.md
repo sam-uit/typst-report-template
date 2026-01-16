@@ -83,6 +83,8 @@ Các nền tảng giải trí như Netflix, Spotify, TikTok và YouTube đã nâ
 
 Nhờ sự kết hợp giữa phân tích hành vi tức thời và dữ liệu lịch sử bền vững, các nền tảng này không chỉ đáp ứng nhu cầu mà còn có khả năng "dẫn dắt" xu hướng, khiến người dùng cảm thấy như ứng dụng đang thực sự đọc được suy nghĩ của chính mình.
 
+Ngoài ra, YouTube còn có tính năng tự động chuyển ngữ, giúp người dùng có thể xem video bằng ngôn ngữ của mình. Ví dụ, bạn đang xem video của "mkbhd" (Marques Brownlee), một YouTuber nổi tiếng về công nghệ, và nếu thiết bị của bạn được cài đặt ngôn ngữ là tiếng Việt, YouTube sẽ tự động chuyển ngữ video sang tiếng Việt.
+
 ## Giáo Dục 4.0 (Education 4.0): Cá Nhân Hóa Lộ Trình Học Tập
 
 Giáo dục là lĩnh vực AI mang lại giá trị nhân văn sâu sắc, chuyển dịch vai trò của giáo viên từ người truyền đạt kiến thức sang người hướng dẫn, và học sinh từ người tiếp nhận thụ động sang người học chủ động với lộ trình riêng (Personalized Learning).
