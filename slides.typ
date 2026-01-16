@@ -34,6 +34,8 @@
 #include "content/chapter03-slide-tuyendung.typ"
 #include "content/chapter04-slide.typ"
 #include "content/chapter05-slide.typ"
+#include "content/chapter05-slide-vandeluuy.typ"
+#include "content/chapter05-slide-dinhhuongtuonglai.typ"
 #include "content/chapter06-slide.typ"
 #include "content/chapter06-slide-ailathuctien.typ"
 #include "content/chapter06-slide-aitrongdoisong.typ"
