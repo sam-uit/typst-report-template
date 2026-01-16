@@ -93,3 +93,26 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
     - Ưu tiên "tỉ lệ hoàn thành".
         - Điều chỉnh luồng nội dung "Dành Cho Bạn" ngay lập tức.
         - Vòng lặp liên tục dựa trên sở thích của người dùng.
+
+```{=typst}
+#pagebreak()
+```
+
+```{=typst}
+#align(right)[
+#image("assets/yt_logo_fullcolor_almostblack_digital.png", height: 2em)
+]
+```
+
+### YouTube
+
+- Mạng Thần Kinh Đa Tầng (Neural Networks)
+    - Dự doán bạn muốn xem gì.
+    - Tối ưu "thời gian xem chất lượng".
+        - Lọc nội dung phù hợp.
+        - Chấm điểm tương tác.
+    - Dẫn dắt xu hướng.
+        - "Đọc được suy nghĩ" của người xem.
+    - Tự động chuyển ngữ.
+        - Âm thanh.
+        - Phụ đề.
