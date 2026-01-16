@@ -45,6 +45,15 @@ Từ "**Điều Khiển Mệnh Lệnh**" đến "**Trí Tuệ Môi Trường**" 
     - Theo dõi thói quen sinh hoạt.
     - Đề xuất giải pháp.
 
+### Kết
+
+- AI đã biến ngôi nhà thông minh hơn.
+- AI còn tạo ra một không gian sống an toàn, nhân văn và gần gũi với con người.
+
+```{=typst}
+#pagebreak()
+```
+
 ### Sự Tiến Hóa của Không Gian Sống Thông Minh
 ### Các Ví Dụ
 #### Tiên Phong Tại Việt Nam: Lumi, Rạng Đông và FPT
