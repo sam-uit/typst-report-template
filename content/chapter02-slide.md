@@ -118,9 +118,20 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 
 ### Đề Xuất và Siêu Cá Nhân Hóa (Hyper-personalization)
 
+```{=typst}
+#slide[
+=== Netflix, Spotify, TikTok & YouTube
 
-
-
+- Nâng tầm thuật toán đề xuất lên mức độ nghệ thuật nhờ AI.
+][
+- Lịch sử xem.
+- Thời điểm trong ngày.
+- Thiết bị sử dụng.
+- Thời lượng xem.
+- Hành vi tương tác (tua nhanh/chậm).
+- Và hơn thế.
+]
+```
 
 ## Giáo Dục 4.0
 ### Những Ứng Dụng Thực Tiễn
