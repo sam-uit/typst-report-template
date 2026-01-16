@@ -19,7 +19,12 @@
 // MARK: - Nội Dung Chính
 #include "content/chapter00-slide.typ"
 #include "content/chapter01-slide.typ"
-#include "content/chapter02-slide.typ"
+// #include "content/chapter02-slide.typ"
+#include "content/chapter02-01-smarthome-slide.typ"
+#include "content/chapter02-02-giaitri-slide.typ"
+#include "content/chapter02-03-giaoduc-slide.typ"
+#include "content/chapter02-04-thuongmai-slide.typ"
+#include "content/chapter02-05-giaothong-slide.typ"
 #include "content/chapter03-slide.typ"
 #include "content/chapter04-slide.typ"
 #include "content/chapter05-slide.typ"
