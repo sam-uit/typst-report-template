@@ -44,5 +44,11 @@ Cầu nối giao tiếp quan trọng, thay đổi cách thức chăm sóc và h�
 ### Tìm Kiếm Và Thử Nghiệm Trực Quan
 
 - Tìm Kiếm Bằng Hình Ảnh.
+    - Upload hình ảnh sản phẩm.
+    - Tìm kiếm sản phẩm chính xác hoặc tương tự.
 - Thử Đồ Ảo (Virtual Try-on).
+    - Thực tế ảo tăng cường (AR).
+    - "Thử" sản phẩm vào thực tế bản thân hoặc không gian riêng.
 - Dự Báo Xu Hướng.
+    - Gợi ý các sản phẩm "hot trend".
+    - Luôn bắt kịp xu hướng.
