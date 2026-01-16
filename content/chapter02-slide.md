@@ -2,7 +2,11 @@
 
 ## Nhà Thông Minh
 
-> Từ "**Điều Khiển Mệnh Lệnh**" đến "**Trí Tuệ Môi Trường**" (Ambient Intelligence).
+Từ "**Điều Khiển Mệnh Lệnh**" đến "**Trí Tuệ Môi Trường**" (Ambient Intelligence).
+
+```{=typst}
+#pagebreak()
+```
 
 ### Tự Động Hóa và Tối Ưu Hóa Không Gian Sống (Smart Home)
 
@@ -16,6 +20,10 @@
     - Sử dụng thời gian.
     - Sử dụng tài nguyên.
 
+```{=typst}
+#pagebreak()
+```
+
 ### Nâng Cao Chất Lượng Sống và An Toàn Cho Con Người
 
 - **Camera thông minh**
@@ -28,6 +36,14 @@
     - Phát hiện rò rỉ khí gas, khói, cháy nổ hoặc nước tràn.
         - Tự động ngắt nguồn điện.
         - Gửi thông báo khẩn cấp.
+
+```{=typst}
+#pagebreak()
+```
+
+- **Trợ Lý Cá Nhân**
+    - Theo dõi thói quen sinh hoạt.
+    - Đề xuất giải pháp.
 
 ### Sự Tiến Hóa của Không Gian Sống Thông Minh
 ### Các Ví Dụ
