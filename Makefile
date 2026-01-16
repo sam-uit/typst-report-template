@@ -36,15 +36,15 @@ typ: $(TYP_FILES)
 
 # Report PDF
 report.pdf: report.typ $(TYP_FILES)
-	typst compile report.typ
+	typst compile report.typ --font-path template/fonts
 
 # Thesis PDF
 thesis.pdf: thesis.typ $(TYP_FILES)
-	typst compile thesis.typ
+	typst compile thesis.typ --font-path template/fonts
 
 # Slides PDF
 slides.pdf: slides.typ
-	typst compile slides.typ
+	typst compile slides.typ --font-path template/fonts
 
 # Clean build artifacts
 clean:
