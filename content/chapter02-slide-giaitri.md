@@ -61,6 +61,10 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
     - Giọng nói AI để dẫn chuyện, chia sẻ thông tin bài hát/nghệ sĩ.
     - Như một chương trình phát thanh cá nhân hóa.
 
+```{=typst}
+#pagebreak()
+```
+
 ### Netflix
 
 - "Dynamic Optimizer": Tối ưu từng khung hình.
@@ -71,3 +75,15 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
     - Tương ứng mối quan tâm hoặc sở thích của người đó.
     - $\Rightarrow$ Tăng tỷ lệ click (CTR) và thời gian xem.
     - $\Rightarrow$ Người dùng được trải nghiệm đa dạng khía cạnh của nội dung.
+
+```{=typst}
+#pagebreak()
+```
+
+### TikTok
+
+- "Real-time Loop": Phản hồi thời gian thực.
+    - Phân tích nội dung video (thị giác, âm thanh)
+    - Ưu tiên "tỉ lệ hoàn thành".
+        - Điều chỉnh luồng nội dung "Dành Cho Bạn" ngay lập tức.
+        - Vòng lặp liên tục dựa trên sở thích của người dùng.
