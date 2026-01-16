@@ -50,3 +50,8 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 ```
 
 ### Người Đồng Hành, Không Phải Người Thay Thế
+
+- AI không nhằm thay thế vai trò của Giáo Viên/Giảng Viên.
+    - Giáo viên là người truyền cảm hứng, định hướng, và phát triển kỹ năng cá nhân.
+- Đồng hành giúp tăng tốc quá trình học tập.
+    - Giúp mở rộng, khai triển những khả năng hoặc ý tưởng mới.
