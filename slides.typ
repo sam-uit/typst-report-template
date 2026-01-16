@@ -35,6 +35,11 @@
 #include "content/chapter04-slide.typ"
 #include "content/chapter05-slide.typ"
 #include "content/chapter06-slide.typ"
+#include "content/chapter06-slide-ailathuctien.typ"
+#include "content/chapter06-slide-aitrongdoisong.typ"
+#include "content/chapter06-slide-aitrongcongviec.typ"
+#include "content/chapter06-slide-danhgiachung.typ"
+#include "content/chapter06-slide-loiket.typ"
 
 // MARK: - Kết Thúc
 
