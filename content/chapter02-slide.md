@@ -6,7 +6,14 @@
 
 ## Nhà Thông Minh
 
+```{=typst}
+#focus-slide[
+
+#upper[Nhà Thông Minh (Smart Home)]
+
 Từ "**Điều Khiển Mệnh Lệnh**" đến "**Trí Tuệ Môi Trường**" (Ambient Intelligence).
+]
+```
 
 ```{=typst}
 #pagebreak()
@@ -112,6 +119,9 @@ Từ "**Điều Khiển Mệnh Lệnh**" đến "**Trí Tuệ Môi Trường**" 
 
 ```{=typst}
 #focus-slide[
+
+#upper[Giải Trí Kỹ Thuật Số]
+
 Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhân Hóa".
 ]
 ```
