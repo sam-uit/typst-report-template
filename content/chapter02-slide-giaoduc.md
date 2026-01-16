@@ -26,8 +26,8 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 
 ### Elsa Speak
 
-- Ứng dụng học tiếng Anh.
-- Công nghệ nhận diện giọng nói và phân tích phát âm.
+- Ứng dụng học tiếng Anh toàn cầu.
+- Công nghệ nhận diện giọng nói độc quyền và phân tích phát âm.
 - Chỉ ra lỗi sai cụ thể: cách uốn lưỡi, âm gió, vv..
 - "Gia sư ảo": thực hành hội thoại tự do (role-play)
     - Mô phỏng tình huống thực tế (xin việc, gọi món, vv..)
@@ -37,5 +37,16 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 ```
 
 ### Duolingo
+
+- Toàn cầu, hàng triệu người dùng, hàng trăm ngôn ngữ.
+- Mô hình AI "Birdbrain".
+    - Cá nhân hóa độ khó của bài học.
+- "Explain My Answer":
+    - Giải thích lỗi sai.
+    - Mô phỏng vai trò của giáo viên.
+
+```{=typst}
+#pagebreak()
+```
 
 ### Người Đồng Hành, Không Phải Người Thay Thế
