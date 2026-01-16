@@ -27,4 +27,22 @@ Tối Ưu Hóa Hành Trình Mua Sắm và Tương Tác Tự Động. Từ Tìm K
 ```
 
 ### Chatbot CSKH và Tương tác Tự động 24/7
-### Tìm kiếm và Thử nghiệm Trực quan
+
+Cầu nối giao tiếp quan trọng, thay đổi cách thức chăm sóc và hỗ trợ khách hàng.
+
+- Khả năng phản hồi tức thì.
+    - 24/7, có hoặc không cần giám sát.
+- Hỗ trợ đa ngôn ngữ.
+    - Vượt qua rào cản ngôn ngữ.
+- Thấu hiểu ngữ cảnh.
+    - Phân tích cảm xúc, ý định.
+
+```{=typst}
+#pagebreak()
+```
+
+### Tìm Kiếm Và Thử Nghiệm Trực Quan
+
+- Tìm Kiếm Bằng Hình Ảnh.
+- Thử Đồ Ảo (Virtual Try-on).
+- Dự Báo Xu Hướng.
