@@ -2,8 +2,6 @@
 #import "../template/libslides.typ": *
 ```
 
-# AI Trong Đời Sống
-
 ## Nhà Thông Minh
 
 ```{=typst}
