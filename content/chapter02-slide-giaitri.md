@@ -67,6 +67,7 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
     - Điều chỉnh chất lượng nén dựa trên bối cảnh của phim, băng thông mạng.
     - $\Rightarrow$ Đem đến trải nghiệm mượt mà.
 - "Dynamic Thumbnail": Tạo thumbnail động của phim dựa trên sở thích của người xem.
-    - $\Rightarrow$ Cùng một bộ phim nhưng mỗi người xem sẽ thấy thumbnail khác nhau.
-    - Tương ứng mối quan tâm hoặc sở thích của người xem.
-    - $\Rightarrow$ Tăng tỷ lệ click (CTR).
+    - Cùng một bộ phim nhưng mỗi người sẽ thấy thumbnail khác nhau.
+    - Tương ứng mối quan tâm hoặc sở thích của người đó.
+    - $\Rightarrow$ Tăng tỷ lệ click (CTR) và thời gian xem.
+    - $\Rightarrow$ Người dùng được trải nghiệm đa dạng khía cạnh của nội dung.
