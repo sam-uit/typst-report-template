@@ -99,23 +99,19 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 ```
 
 ```{=typst}
-#align(right)[
-#image("assets/yt_logo_fullcolor_almostblack_digital.png", height: 2em)
-]
-
 #slide[
 === YouTube: Mạng Thần Kinh Đa Tầng (Neural Networks)
 - Dự đoán bạn muốn xem gì.
 - Tối ưu "thời gian xem chất lượng".
     - Lọc nội dung phù hợp.
     - Chấm điểm tương tác.
+- Dẫn dắt xu hướng.
+    - "Đọc được suy nghĩ" của người xem.
 ][
    #align(right)[
 #image("assets/yt_logo_fullcolor_almostblack_digital.png", height: 2em)
 ] 
 
-- Dẫn dắt xu hướng.
-    - "Đọc được suy nghĩ" của người xem.
 - Tự động chuyển ngữ.
     - Âm thanh.
     - Phụ đề.
