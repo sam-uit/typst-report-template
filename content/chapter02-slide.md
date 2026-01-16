@@ -116,8 +116,6 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 ]
 ```
 
-### Đề Xuất và Siêu Cá Nhân Hóa (Hyper-personalization)
-
 ```{=typst}
 #slide[
 === Netflix, Spotify, TikTok & YouTube
