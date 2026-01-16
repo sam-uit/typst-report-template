@@ -21,11 +21,11 @@
 - **Camera thông minh**
     - Nhận diện khuôn mặt
         - Ngăn chặn người lạ.
-    - Phát hiện chuyển động lạ
+    - Phát hiện chuyển động hoặc hành vi bất thường.
         - Cảnh báo nguy hiểm.
 
 - **Cảm biến thông minh**
-    - Phát hiện rò rỉ khí gas, khói, cháy nổ hoặc nước tràn
+    - Phát hiện rò rỉ khí gas, khói, cháy nổ hoặc nước tràn.
         - Tự động ngắt nguồn điện.
         - Gửi thông báo khẩn cấp.
 
