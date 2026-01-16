@@ -22,7 +22,7 @@
     ),
     lang: "vi",
     config-colors(
-      primary: rgb("#150592"),
+      primary: rgb("#1454de"),
       primary-dark: rgb("#004078"),
       secondary: rgb("#ffffff"),
       tertiary: rgb("#8b3de5"),
