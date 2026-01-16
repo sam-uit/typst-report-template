@@ -23,7 +23,7 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 - Thời điểm trong ngày.
 - Thiết bị sử dụng.
 - Thời lượng xem.
-- Hành vi tương tác (tua nhanh/chậm).
+- Hành vi tương tác.
 - Và hơn thế.
 ]
 ```
