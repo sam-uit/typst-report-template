@@ -41,21 +41,27 @@ Từ "**Điều Khiển Mệnh Lệnh**" đến "**Trí Tuệ Môi Trường**" 
 #pagebreak()
 ```
 
+### Nâng Cao Chất Lượng Sống và An Toàn Cho Con Người
+
 - **Trợ Lý Cá Nhân**
     - Theo dõi thói quen sinh hoạt.
     - Nhận diện bất thường hoặc tình huống khẩn cấp.
     - Đề xuất giải pháp.
-
-### Kết
-
-- AI đã biến ngôi nhà thông minh hơn.
-- AI còn tạo ra một không gian sống an toàn, nhân văn và gần gũi với con người.
 
 ```{=typst}
 #pagebreak()
 ```
 
 ### Sự Tiến Hóa của Không Gian Sống Thông Minh
+
+- Không gian sống thông minh.
+- Có khả năng học hỏi, dự đoán và thích nghi với nhu cầu của con người.
+- Thay đổi cách con người sống và tương tác với không gian.
+
+```{=typst}
+#pagebreak()
+```
+
 ### Các Ví Dụ
 #### Tiên Phong Tại Việt Nam: Lumi, Rạng Đông và FPT
 #### Đối Chiếu Quốc Tế: Hệ Sinh Thái Matter và Google/Amazon
