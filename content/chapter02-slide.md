@@ -62,9 +62,48 @@ Từ "**Điều Khiển Mệnh Lệnh**" đến "**Trí Tuệ Môi Trường**" 
 #pagebreak()
 ```
 
-### Các Ví Dụ
-#### Tiên Phong Tại Việt Nam: Lumi, Rạng Đông và FPT
-#### Đối Chiếu Quốc Tế: Hệ Sinh Thái Matter và Google/Amazon
+### Lumi, Rạng Đông và FPT
+
+- **Lumi Việt Nam**
+    - Tự nhận biết trời tối để đóng rèm, bật đèn.
+    - Điều chỉnh nhiệt độ điều hòa phù hợp.
+    - Tự nhận biết thời tiết để điều chỉnh nhiệt độ.
+
+- **Rạng Đông**
+    - **RalliSmart**
+        - "Chiếu sáng vì sức khỏe" (Human Centric Lighting)
+        - Điều chỉnh phổ ánh sáng và cường độ theo nhịp sinh học.
+        - Mô phỏng ánh sáng tự nhiên.
+
+```{=typst}
+#pagebreak()
+```
+
+### Lumi, Rạng Đông và FPT
+
+- **FPT**
+    - **FPT Smart Home**
+        - Điều khiển thông minh thông qua giọng nói.
+        - FPT Play: "Trái tim", kết hợp giải trí và điều khiển SmartHome.
+
+```{=typst}
+#pagebreak()
+```
+
+### Hệ Sinh Thái Matter và Google/Amazon
+
+- **Matter**
+    - Hệ sinh thái IoT toàn diện.
+    - Chuẩn hóa và tương thích nhiều nhà cung cấp.
+
+- Sản phẩm:
+    - Google Nest
+    - Amazon Echo
+
+```{=typst}
+#pagebreak()
+```
+
 ## Giải Trí Kỹ Thuật Số
 ### Đề Xuất và Siêu Cá Nhân Hóa (Hyper-personalization)
 ## Giáo Dục 4.0
