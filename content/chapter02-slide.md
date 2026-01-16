@@ -160,5 +160,15 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 ### Chatbot CSKH và Tương tác Tự động 24/7
 ### Tìm kiếm và Thử nghiệm Trực quan
 ## Giao Thông
+
+```{=typst}
+#focus-slide[
+
+#upper[Giao Thông]
+
+Nền Kinh Tế Chia Sẻ và AI Trên Mọi Nẻo Đường.
+]
+```
+
 ### AI Trong Di Chuyển và Giao Thông
 ### Lợi Ích, Thách Thức
