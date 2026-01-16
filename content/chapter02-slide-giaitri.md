@@ -47,5 +47,18 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 #pagebreak()
 ```
 
+```{=typst}
+#align(right)[
+#image("assets/Spotify_Full_Logo_RGB_Green.png", height: 2em)
+]
+```
+
 ### Sportify
+
+- "Dailylist"
+    - Thay đổi tiêu đề & nội dung theo tâm trạng.
+- "AI DJ"
+    - Giọng nói AI để dẫn chuyện, chia sẻ thông tin bài hát/nghệ sĩ.
+    - Như một chương trình phát thanh cá nhân hóa.
+
 
