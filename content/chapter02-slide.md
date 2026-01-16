@@ -43,6 +43,7 @@ Từ "**Điều Khiển Mệnh Lệnh**" đến "**Trí Tuệ Môi Trường**" 
 
 - **Trợ Lý Cá Nhân**
     - Theo dõi thói quen sinh hoạt.
+    - Nhận diện bất thường hoặc tình huống khẩn cấp.
     - Đề xuất giải pháp.
 
 ### Kết
