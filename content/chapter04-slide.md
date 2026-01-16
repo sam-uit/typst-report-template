@@ -1,3 +1,7 @@
+```{=typst}
+#import "../template/libslides.typ": *
+```
+
 # Vai Trò và Lợi Ích
 ## Vai Trò và Ý Nghĩa
 ### "Người Cộng Sự" (Augmentation)
