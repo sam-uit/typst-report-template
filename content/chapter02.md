@@ -85,6 +85,8 @@ Nhờ sự kết hợp giữa phân tích hành vi tức thời và dữ liệu 
 
 Ngoài ra, YouTube còn có tính năng tự động chuyển ngữ, giúp người dùng có thể xem video bằng ngôn ngữ của mình. Ví dụ, bạn đang xem video của "mkbhd" (Marques Brownlee), một YouTuber nổi tiếng về công nghệ, và nếu thiết bị của bạn được cài đặt ngôn ngữ là tiếng Việt, YouTube sẽ tự động chuyển ngữ video sang tiếng Việt.
 
+Từ góc độ của người làm nội dung, YouTube cũng cung cấp các công cụ hỗ trợ để phân tích hiệu quả tương tác của người xem với nội dung của mình, ví dụ như: Google Analytics, Google Tag Manager (GTM), vv... vốn cùng nền tảng với Google Ads nổi tiếng.
+
 ## Giáo Dục 4.0 (Education 4.0): Cá Nhân Hóa Lộ Trình Học Tập
 
 Giáo dục là lĩnh vực AI mang lại giá trị nhân văn sâu sắc, chuyển dịch vai trò của giáo viên từ người truyền đạt kiến thức sang người hướng dẫn, và học sinh từ người tiếp nhận thụ động sang người học chủ động với lộ trình riêng (Personalized Learning).
