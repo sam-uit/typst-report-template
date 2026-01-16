@@ -26,7 +26,7 @@
   #show table.cell: current_cell => {
     if current_cell.x in (0, 1, 3, 4) {
       text(
-        font: "Iosevka",
+        font: code-font,
         weight: "light",
         size: 0.9em,
         fill: gray,
