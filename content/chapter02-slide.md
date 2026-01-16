@@ -1,3 +1,7 @@
+```{=typst}
+#import "../template/libslides.typ": *
+```
+
 # AI Trong Đời Sống
 
 ## Nhà Thông Minh
@@ -105,7 +109,19 @@ Từ "**Điều Khiển Mệnh Lệnh**" đến "**Trí Tuệ Môi Trường**" 
 ```
 
 ## Giải Trí Kỹ Thuật Số
+
+```{=typst}
+#focus-slide[
+Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhân Hóa".
+]
+```
+
 ### Đề Xuất và Siêu Cá Nhân Hóa (Hyper-personalization)
+
+
+
+
+
 ## Giáo Dục 4.0
 ### Những Ứng Dụng Thực Tiễn
 ### Người Đồng Hành, Không Phải Người Thay Thế
