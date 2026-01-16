@@ -227,7 +227,7 @@
           components.custom-progressive-outline(
             level: level,
             alpha: self.store.alpha,
-            indent: (0em, 1em),
+            indent: (1em, 1em),
             vspace: (.4em,),
             numbered: (numbered,),
             depth: 1,
