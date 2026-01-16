@@ -142,6 +142,17 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 ```
 
 ## Giáo Dục 4.0
+
+```{=typst}
+#focus-slide[
+
+#upper[Giáo Dục 4.0]
+
+- Cá nhân hóa lộ trình học tập (Personalized Learning).
+- Chuyển dịch vai trò của người dạy.
+]
+```
+
 ### Những Ứng Dụng Thực Tiễn
 ### Người Đồng Hành, Không Phải Người Thay Thế
 ## Mua Sắm & Thương Mại Điện Tử
