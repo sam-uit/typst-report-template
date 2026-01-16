@@ -1,10 +1,19 @@
+```{=typst}
+#import "../template/libslides.typ": *
+```
+
 # Tổng Quan AI
 
 ## AI Là Gì?
 
-### Định Nghĩa
+```{=typst}
+#focus-slide[
 
-*Lĩnh vực Khoa Học Máy Tính tập Trung Xây Dựng Mô Hình Trí Tuệ Cho Máy Móc, Mô Phỏng Khả Năng Của Con Người.*
+#upper[AI Là Gì]
+
+Lĩnh vực Khoa Học Máy Tính tập Trung Xây Dựng Mô Hình Trí Tuệ Cho Máy Móc, Mô Phỏng Khả Năng Của Con Người.
+]
+```
 
 ### Mục Tiêu
 
