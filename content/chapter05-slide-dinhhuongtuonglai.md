@@ -4,8 +4,15 @@
 
 ## Định Hướng Tương Lai Gần
 
-**Một cách tiếp cận mang tính hệ thống, nhân bản.**
+```{=typst}
+#focus-slide[
 
+#upper[Định Hướng Tương Lai Gần]
+
+Một Cách Tiếp Cận Mang Tính Hệ Thống, Nhân Bản.
+
+]
+```
 
 ```{=typst}
 #pagebreak()
