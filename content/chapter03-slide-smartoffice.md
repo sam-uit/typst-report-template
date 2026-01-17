@@ -41,7 +41,11 @@ Tự động hóa quy trình:
 - Agents Orchestration
 
 ][
-#image("assets/chapter-03-smartoffice-gemini-enterprise.png", height: 80%)
+#figure(
+image("assets/chapter-03-smartoffice-gemini-enterprise.png", height: 80%),
+caption: [Gemini Enterprise],
+numbering: none
+)
 ]
 ```
 
