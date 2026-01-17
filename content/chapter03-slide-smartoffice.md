@@ -30,4 +30,15 @@ Mô Hình Hợp Tác: Con Người - Tác Nhân AI.
 #pagebreak()
 ```
 
-### Agentic AI - Trợ Lý AI Có Tri Thức
+```{=typst}
+#slide(composer: (35%, 65%))[
+=== Agentic AI - Trợ Lý AI Có Tri Thức
+
+- Agents
+- Agents Orchestration
+
+][
+#image("assets/chapter-03-smartoffice-gemini-enterprise.png", height: 80%)
+]
+```
+
