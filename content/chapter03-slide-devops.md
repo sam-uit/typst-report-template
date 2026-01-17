@@ -26,4 +26,21 @@ Agentic Workflows: Từ "Prompt-Response" (Hỏi - Đáp) tới "Agentic Workflo
 #pagebreak()
 ```
 
+```{=typst}
+#slide(composer: (35%, 65%))[
+- Agentic Coding
+    - Đưa ra yêu cầu.
+    - Tự động lên kế hoạch.
+    - Tự thực hiện.
+
+][
+#figure(
+image("assets/codevista-agentic.png", height: 80%),
+caption: [FPT CodeVista],
+numbering: none
+)]
+
+#pagebreak()
+```
+
 ### DevSecOps 2.0: Generative IaC và Chaos Engineering
