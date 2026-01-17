@@ -3,6 +3,16 @@
 ```
 
 ## Lợi Ích Định Tính
+
+```{=typst}
+#focus-slide[
+
+#upper[Lợi Ích Định Tính]
+
+Không Phải Mọi Giá Trị Đều Đo Được Bằng Những Con Số.
+]
+```
+
 ### Giải Phóng Sức Lao Động Sáng Tạo
 
 AI là các trợ lý thông minh:
