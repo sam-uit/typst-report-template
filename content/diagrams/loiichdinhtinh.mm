@@ -1,6 +1,6 @@
 ---
 config:
-  theme: base
+  theme: neo
   themeVariables:
     primaryColor: '#e1f5fe'
     primaryTextColor: '#0277bd'
@@ -10,8 +10,8 @@ config:
     fontSize: 16px
 ---
 mindmap
-((**Lợi Ích <br>Định Tính**))
-  (Giải Phóng Sức Lao Động Sáng Tạo)
-  (Cá Nhân Hóa Trải Nghiệm Và Tăng Cường Sự Gắn Kết)
-  (Củng Cố Niềm Tin Và Sự An Tâm Trong Đời Sống)
-  (Thay Đổi Văn Hóa Và Mô Hình Vận Hành Tổ Chức)
+root((fa:fa-gem **LỢI ÍCH <br>ĐỊNH TÍNH**))
+  (fa:fa-lightbulb **Giải Phóng<br/>Sức Sáng Tạo**<br/>Tập trung vào giá trị cốt lõi)
+  (fa:fa-handshake **Cá Nhân Hóa &<br/>Tăng Gắn Kết**<br/>Tối ưu trải nghiệm riêng biệt)
+  (fa:fa-shield-alt **Củng Cố Niềm Tin &<br/>Sự An Tâm**<br/>Nền tảng vững chắc cho đời sống)
+  (fa:fa-sync-alt **Thay Đổi Văn Hóa &<br/>Vận Hành**<br/>Chuyển đổi mô hình tổ chức)
