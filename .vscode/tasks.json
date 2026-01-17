@@ -6,10 +6,9 @@
         "type": "shell",
         "command": "mmdc",
         "args": [
-          "-i", "${file}",               // Input file (file bạn đang mở)
-          "-o", "${fileDirname}/${fileBasenameNoExtension}.svg", // Output vào folder assets
-          "-w",                          // Watch mode (Tự động biên dịch khi save)
-          "-b", "transparent"            // Nền trong suốt
+          "-i", "${file}",
+          "-o", "${fileDirname}/${fileBasenameNoExtension}.svg",
+          "-b", "transparent"
         ],
         "group": "build",
         "presentation": {
