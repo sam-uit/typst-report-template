@@ -20,13 +20,21 @@ Mô Hình Hợp Tác: Con Người - Tác Nhân AI.
     - Google Workspace: Gemini
     - Các bộ suite đầy đủ: Gemini Enterprise.
 
-- AI như một trợ lý thông minh:
-    - Viết bản nháp email, báo cáo, trình chiếu trong vài giây.
-    - Tổng hợp thông tin từ tài liệu nội bộ.
-    - Tóm tắt cuộc họp hoặc các văn bản dài.
-    - Phân tích dữ liệu hoặc báo cáo.
-
 ```{=typst}
+#slide(composer: (35%, 65%))[
+Trợ lý thông minh:
+- Viết bản nháp email, báo cáo, trình chiếu trong vài giây.
+- Tổng hợp thông tin từ tài liệu nội bộ.
+- Tóm tắt cuộc họp hoặc các văn bản dài.
+- Phân tích dữ liệu hoặc báo cáo.
+
+][
+#figure(
+image("assets/chapter03-smartoffice-misaoneai.png", height: 80%),
+caption: [MISA One AI],
+numbering: none
+)]
+
 #pagebreak()
 ```
 
@@ -42,7 +50,7 @@ Tự động hóa quy trình:
 
 ][
 #figure(
-image("assets/chapter-03-smartoffice-gemini-enterprise.png", height: 80%),
+image("assets/chapter03-smartoffice-gemini-enterprise.png", height: 80%),
 caption: [Gemini Enterprise],
 numbering: none
 )
