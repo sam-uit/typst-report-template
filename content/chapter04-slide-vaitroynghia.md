@@ -44,15 +44,15 @@ Người *Ra Lệnh* \u{2194} Máy *Phản Hồi*:
 - "Cầm tay chỉ việc".
 - Máy không hiểu ngữ cảnh.
 - Thông tin đưa vào rời rạc (prompts).
-#pause
+//#pause
 ][
 #align(center)[
 === Từ "Ra Lệnh" sang "Cộng Tác"
-#pause
+//#pause
 #text(fill: orange.lighten(30%), size: 2em)[\u{22D9}]
 ]
 ][
-#pause
+//#pause
 Người *Định Hướng* \u{2194} Máy *Cộng Tác*:
 
 - Tin tưởng & phân quyền.
