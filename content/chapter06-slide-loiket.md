@@ -25,6 +25,6 @@
 - AI phản ánh nhu cầu và tâm lý của con người.
 - Quan trọng hơn, AI sẽ khuếch đại các yếu tố đó một cách mạnh mẽ.
 - Đây là một vòng lặp liên tục và khép kín.
-- Vì vậy, khi AI được nhận những điều tích cực, nó sẽ tạo ra những điều tích cực
+- Vì vậy, khi AI được nhận những điều đẹp đẽ, nó sẽ tạo ra những điều đẹp đẽ.
 
 *VÀ NGƯỢC LẠI!* 
