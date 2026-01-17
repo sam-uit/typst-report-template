@@ -1,6 +1,5 @@
 ---
 config:
-  htmlLabels: false
   theme: redux-color
   themeVariables:
     fontFamily: Google Sans
