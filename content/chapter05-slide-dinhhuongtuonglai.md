@@ -22,6 +22,13 @@
 - Cách phối hợp và làm việc với AI.
 - Chương trình "Đào tạo lại" cho các nhân sự có công việc bị ảnh hưởng.
 
-### Đầu Tư Hạ Tầng Dữ Liệu Và Hệ Sinh Thái AI "Make in Vietnam"
-### Thúc Đẩy AI Vì Mục Tiêu Phát Triển Bền Vững Và Bao Trùm
+<!-- ### Đầu Tư Hạ Tầng Dữ Liệu Và Hệ Sinh Thái AI "Make in Vietnam" -->
+<!-- ### Thúc Đẩy AI Vì Mục Tiêu Phát Triển Bền Vững Và Bao Trùm -->
+
 ### Xây Dựng Văn Hóa Số Và Đạo Đức AI
+
+- Sử dụng AI có trách nhiệm.
+- Kiến thức về An toàn thông tin.
+- "Bộ Quy Tắc Ứng Xử với AI".
+    - Dùng khi nào, thế nào.
+- Nguyên tắc "Human in the loop".
