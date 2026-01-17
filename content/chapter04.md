@@ -8,8 +8,6 @@ Tổng hợp từ các phân tích trên, có thể đúc kết vai trò và l�
 
 AI không thay thế con người, mà nâng cao năng lực của con người. Trong y tế, AI giúp bác sĩ chẩn đoán chính xác hơn; trong lập trình, AI giúp kỹ sư viết mã nhanh hơn; trong marketing, AI giúp người sáng tạo vượt qua rào cản kỹ thuật để hiện thực hóa ý tưởng. Mối quan hệ này chuyển từ "người ra lệnh - máy thực thi" sang "người định hướng - máy cộng tác"
 
-### Bản Chất Của Sự “Nâng Tầm Năng Lực"
-
 AI không hoạt động độc lập để loại bỏ con người mà đóng vai trò là một lớp khuếch đại năng lực (Amplifier). Sự nâng tầm này được thể hiện qua khả năng giải quyết các giới hạn về sinh học và kỹ thuật của con người:
 
 * **Trong Y tế:** AI đóng vai trò là "mắt Thần" giúp bác sĩ phân tích các hình ảnh y khoa, từ đó đưa ra các chẩn đoán có độ chính xác cao hơn so với việc chỉ dựa vào quan sát bằng mắt thường.
