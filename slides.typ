@@ -50,8 +50,10 @@
 
 // = Q&A
 
-#focus-slide[
-  Xin Cảm Ơn!
-]
+// #focus-slide[
+//   Xin Cảm Ơn!
+// ]
+
+#ending-slide(title: [Xin Cảm Ơn!])[\u{22B7}]
 
 // #ending-slide(title: [Xin Cảm Ơn!])[Questions?]
