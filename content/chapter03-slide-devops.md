@@ -13,9 +13,9 @@ Agentic Workflows: Từ "Prompt-Response" (Hỏi - Đáp) tới "Agentic Workflo
 ]
 ```
 
-### Xu Hướng Chung
+### Xu Hướng Chung: Agentic Workflows
 
-- Các Tác Nhân AI (Agents)
+- Các Tác Nhân AI (Agents) Cùng Hợp Tác
     - Giải thích các đoạn mã nguồn.
     - Tự động tạo mã nguồn.
     - Phát hiện lỗi.
