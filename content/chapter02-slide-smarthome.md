@@ -23,6 +23,13 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 ]
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-tu-dong-hoa-va-toi-uu-hoa-khong-gian.png", width: auto)
+]
+```
+
+
 ### Tự Động Hóa và Tối Ưu Hóa Không Gian Sống (Smart Home)
 
 - **Tự động hóa**
