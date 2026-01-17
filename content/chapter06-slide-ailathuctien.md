@@ -7,7 +7,7 @@
 ```{=typst}
 #focus-slide[
 
-#upper[Vai Trò và Ý Nghĩa]
+#upper[AI Là Hiện Hữu Thực Tiễn]
 
 Trí Tuệ Nhân Tạo Đã và Đang Đồng Hành Với Chúng Ta Trong Mọi Lĩnh Vực Đời Sống.
 
