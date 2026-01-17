@@ -97,10 +97,16 @@ it,
   [#text(fill: orange)[\u{002B}]], [*Centaur (Tri thức)*], [*Cobot (Sản xuất)*], [#strong[Môi Trường]], [Văn phòng; Nghiên cứu; Sáng tạo nội dung.], [Nhà máy, dây chuyền lắp ráp, logistics.], [#strong[Cộng Tác]], [Con người đưa khung sườn, AI viết chi tiết, con người tinh chỉnh.], [Robot làm việc ngay bên cạnh công nhân, hỗ trợ việc nặng nhọc/đòi hỏi
 chính xác cao.], [#strong[Giá Trị]], [Tối ưu hóa *tư duy chiến lược*.], [Tối ưu hóa *sự an toàn* và *hiệu suất* vật lý.]
 )
+
+#image("./diagrams/cacmohinhcongtac.svg", width: 100%)
 ```
 
 ```{=typst}
 #pagebreak()
+```
+
+```{=typst}
+
 ```
 
 
