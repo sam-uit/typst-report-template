@@ -12,9 +12,9 @@
 
 ### AI Không Còn Là Lý Thuyết Hay Tương Lai Xa
 
+- AI đã và đang hiện hữu trong đời sống hàng ngày.
+- Từ cuộc sống đến công việc.
+- Từ Giải Trí đến Học Tập.
+- Từ Giao Thông đến Mua Sắm.
 
-```{=typst}
-#pagebreak()
-```
-
-### AI Hiện Hữu Trong Đời Sống Hàng Ngày
+*Dù có thể bạn không nhận ra*.
