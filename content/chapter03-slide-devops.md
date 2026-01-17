@@ -64,5 +64,24 @@ numbering: none
 ]
 ```
 
+```{=typst}
+#pagebreak()
+```
+
+```{=typst}
+#slide(composer: (40%, 60%))[
+=== Giao Thức A2A (Agent2Agent)
+- Ngôn ngữ chung của các AI Agent.
+- Hợp tác và tự động hóa hoàn toàn.
+- Giải quyết những vấn đề lớn cần sự tham gia của nhiều bên.
+
+][
+#figure(
+image("assets/a2a-mcp-readme.png", height: 80%),
+caption: [A2A Protocol],
+numbering: none
+)]
+```
+
 
 ### DevSecOps 2.0: Generative IaC và Chaos Engineering
