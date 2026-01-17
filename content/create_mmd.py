@@ -194,8 +194,8 @@ def parse_and_convert(filepath, dry_run=True, seen_slugs=None):
                     except Exception as e:
                         print(f"Error running mmdc for {mmd_path}: {e}")
 
-                # Replacement Content
-                replacement_text = f"```{'{=typst}'}\n#align(center)[\n    #image(\"{png_relative_path}\", height: 110%)\n]\n```\n\n<!--\n{''.join(current_raw_block)}-->"
+                # Thêm vào phần typst code cho file .md 
+                replacement_text = f"```{'{=typst}'}\n#align(center)[\n\t#image(\"{png_relative_path}\", width: 100%)\n]\n```\n\n{''.join(current_raw_block)}"
                 new_lines.append(replacement_text)
                 new_lines.append("\n") 
                 
