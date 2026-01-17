@@ -1,16 +1,13 @@
 ---
 config:
-  theme: base
+  htmlLabels: false
+  theme: redux-color
   themeVariables:
-    primaryColor: '#e1f5fe'
-    primaryTextColor: '#0277bd'
-    primaryBorderColor: '#0288d1'
-    lineColor: '#0288d1'
-    fontFamily: ''
-    fontSize: 16px
+    fontFamily: Google Sans
+    fontSize: 20px
 ---
 mindmap
-(**Lợi Ích Định Lượng**)
+((**Lợi Ích Định Lượng**))
   (Tăng Năng Suất)
   (Tăng Trưởng Kinh Tế)
   (Tiết Kiệm Chi Phí)
