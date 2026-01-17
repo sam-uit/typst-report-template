@@ -19,7 +19,7 @@ Là Những Cộng Sự Số Nhằm Nâng Tầm Năng Lực Cá Nhân.
 === "Người Cộng Sự"
 
 - AI *KHÔNG* thay thế con người.
-    - *Nâng cao năng lực* của con người.
+    - *Nâng Tầm Năng Lực* của con người.
 ][
 
 - Bác Sĩ:
@@ -33,7 +33,6 @@ Là Những Cộng Sự Số Nhằm Nâng Tầm Năng Lực Cá Nhân.
 ]
 ```
 
-### "Nâng Tầm Năng Lực"
 ### Từ "Ra Lệnh" sang "Cộng Tác"
 ### Các Mô Hình Cộng Tác Thực Tế
 ### Tác Động Đến Tư Duy Quản Trị Và Đào Tạo
