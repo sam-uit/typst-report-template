@@ -62,9 +62,7 @@ Nếu những phần trước chúng ta nói về việc AI hỗ trợ viết m�
 
 **CodeVista**: FPT Software đã phát triển **CodeVista**, một trợ lý lập trình AI "Make in Vietnam". CodeVista được tích hợp trực tiếp vào môi trường phát triển (IDE), hỗ trợ lập trình viên giải thích các đoạn mã phức tạp, tự động tạo mã (code generation), phát hiện lỗi (bug fixing) và tối ưu hóa mã nguồn (refactoring). Được huấn luyện trên dữ liệu nội bộ và các tiêu chuẩn coding của FPT, CodeVista giúp tăng tốc độ phát triển phần mềm và đảm bảo tính nhất quán của mã nguồn trong các dự án lớn.
 
-**GitHub Copilot:** Sử dụng mô hình OpenAI Codex, Copilot đóng vai trò như một lập trình viên đôi (pair programmer), gợi ý cả đoạn code hoàn chỉnh dựa trên ngữ cảnh và comment của người dùng.
-
-**Amazon Q Developer:** Tập trung sâu vào hệ sinh thái AWS. Amazon Q không chỉ viết code mà còn là chuyên gia về hạ tầng đám mây, giúp tối ưu hóa cấu hình bảo mật, nâng cấp phiên bản ngôn ngữ (ví dụ: Java upgrade), và giải thích các kiến trúc hệ thống phức tạp, giúp doanh nghiệp tiết kiệm hàng ngàn giờ công lao động kỹ thuật.
+Với Agentic Code, các lập trình viên có thể giao cho AI các tác vụ phức tạp như: Hoàn thiện một chức năng cụ thể của ứng dụng. Agent tự động lên kế hoạch thực hiện và hoàn thành yêu cầu tương ứng.
 
 **Google Antigravity:** Được phát triển bởi Google, Antigravity là một nền tảng AI hỗ trợ lập trình viên trong toàn bộ vòng đời phát triển phần mềm. Nó tích hợp các mô hình AI tiên tiến nhất của Google để cung cấp các tính năng như tự động sinh mã, gỡ lỗi, tối ưu hóa mã nguồn và kiểm thử. Antigravity giúp tăng tốc độ phát triển phần mềm và nâng cao chất lượng mã nguồn.
 
