@@ -1,6 +1,6 @@
 ---
 config:
-  theme: default
+  theme: redux-color
   themeVariables:
     fontFamily: Google Sans
     fontSize: 20px
