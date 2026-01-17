@@ -82,6 +82,3 @@ caption: [A2A Protocol],
 numbering: none
 )]
 ```
-
-
-### DevSecOps 2.0: Generative IaC và Chaos Engineering
