@@ -56,4 +56,3 @@ Tự động hóa quy trình:
 
 ]
 ```
-
