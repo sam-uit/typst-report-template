@@ -33,7 +33,7 @@ Là Những Cộng Sự Số Nhằm Nâng Tầm Năng Lực Cá Nhân.
 ]
 ```
 
-### Từ "Ra Lệnh" sang "Cộng Tác"
+<!-- ### Từ "Ra Lệnh" sang "Cộng Tác" -->
 
 ```{=typst}
 #slide(composer: (40%, 20%, 40%))[
