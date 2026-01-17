@@ -39,9 +39,9 @@ AI Là Công Cụ Chiến lược, Có Khả Năng Tạo Ra Giá Trị Lớn N�
 
 Vì Vậy #pause
 
-Khi AI được nhận những điều đẹp đẽ, nó sẽ tạo ra những điều đẹp đẽ. #pause
+Khi NHẬN những điều đẹp đẽ, AI sẽ TẠO RA những điều đẹp đẽ. #pause
 
-VÀ NGƯỢC LẠI!
+#text(fill: rgb("#FF8500"))[VÀ NGƯỢC LẠI!]
 ]
 ```
 
