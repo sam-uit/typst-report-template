@@ -62,5 +62,12 @@ Người *Định Hướng* - Máy *Cộng Tác*:
 ]
 ```
 
+```{=typst}
+#pagebreak()
+```
+
 ### Các Mô Hình Cộng Tác Thực Tế
+
+
+
 ### Tác Động Đến Tư Duy Quản Trị Và Đào Tạo
