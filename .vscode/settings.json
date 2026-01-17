@@ -3,10 +3,11 @@
     "editor.fontFamily": "Iosevka, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 15,
     "editor.wordWrap": "off",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
     "editor.autoIndentOnPaste": true,
     "editor.tabCompletion": "on",
     "makefile.configureOnOpen": false,
-    "D2.previewLayout": "elk"
+    "D2.previewLayout": "elk",
+    "D2.updateOnSave": true
 }
