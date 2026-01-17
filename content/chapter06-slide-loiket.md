@@ -27,4 +27,12 @@
 - Đây là một vòng lặp liên tục và khép kín.
 - Vì vậy, khi AI được nhận những điều đẹp đẽ, nó sẽ tạo ra những điều đẹp đẽ.
 
-*VÀ NGƯỢC LẠI!* 
+```{=typst}
+//#focus-slide[
+//VÀ NGƯỢC LẠI!
+//]
+
+#ending-slide(title: [VÀ NGƯỢC LẠI!])[\u{22B7}]
+```
+
+
