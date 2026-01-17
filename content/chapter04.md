@@ -6,7 +6,7 @@ Tổng hợp từ các phân tích trên, có thể đúc kết vai trò và l�
 
 ### Vai Trò "Người Cộng Sự" (Augmentation)
 
-AI không thay thế con người, mà nâng cao năng lực của con người. Trong y tế, AI giúp bác sĩ chẩn đoán chính xác hơn; trong lập trình, AI giúp kỹ sư viết mã nhanh hơn; trong marketing, AI giúp người sáng tạo vượt qua rào cản kỹ thuật để hiện thực hóa ý tưởng. Mối quan hệ này chuyển từ "người ra lệnh - máy thực thi" sang "người định hướng - máy cộng tác".3
+AI không thay thế con người, mà nâng cao năng lực của con người. Trong y tế, AI giúp bác sĩ chẩn đoán chính xác hơn; trong lập trình, AI giúp kỹ sư viết mã nhanh hơn; trong marketing, AI giúp người sáng tạo vượt qua rào cản kỹ thuật để hiện thực hóa ý tưởng. Mối quan hệ này chuyển từ "người ra lệnh - máy thực thi" sang "người định hướng - máy cộng tác"
 
 ### Bản Chất Của Sự “Nâng Tầm Năng Lực"
 
