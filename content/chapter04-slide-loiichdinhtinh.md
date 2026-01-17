@@ -37,5 +37,33 @@ Mua Sắm:
 ### Giải Quyết Các Vấn Đề Xã Hội Và Dân Chủ Hóa Quyền Tiếp Cận
 ### Nâng Tầm Giá Trị Nhân Văn Và Tư Duy Chiến Lược
 ### Thúc Đẩy Công Bằng Xã Hội Và Thu Hẹp Khoảng Cận Số
+
 ### Củng Cố Niềm Tin Và Sự An Tâm Trong Đời Sống
+
+An Ninh Dự Báo Chủ Động:
+
+- Dự báo và phòng ngừa rủi ro từ sớm.
+- Phát hiện các gian lận tài chính hay email spam thời gian thực.
+
+Edge AI - Bảo Vệ Quyền Riêng Tư:
+
+- Thông tin được lưu trữ ngay tại thiết bị biên (edge).
+- Dữ liệu không rời thiết bị hoặc không gian của người dùng.
+
+```{=typst}
+#pagebreak()
+```
+
 ### Thay Đổi Văn Hóa Và Mô Hình Vận Hành Tổ Chức
+
+Xây dựng "Văn Hóa Số":
+
+- Hình thành các quy tắc ứng xử mới.
+- Nâng cao kỹ năng phản biện.
+- Tổ chức trở nên minh bạch và chuyên nghiệp hơn.
+
+Gắn Kết Nhân Viên:
+
+- Giúp giảm áp lực và quá tải.
+- Giúp cải thiện sức khỏe tinh thần và sự hài lòng (eNPS).
+- Tăng cường sự gắn kết và lòng trung thành của nhân viên.
