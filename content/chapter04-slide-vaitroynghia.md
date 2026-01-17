@@ -36,29 +36,19 @@ Là Những Cộng Sự Số Nhằm Nâng Tầm Năng Lực Cá Nhân.
 <!-- ### Từ "Ra Lệnh" sang "Cộng Tác" -->
 
 ```{=typst}
-#slide(composer: (40%, 20%, 40%))[
+#slide(composer: (50%, 50%))[
 
-Người *Ra Lệnh* \u{2194} Máy *Phản Hồi*:
+#place(
+  bottom + right,
+  dy: 100pt,
+  heading(level: 3, hanging-indent: auto)[Từ Ra Lệnh Đến Cộng Tác],
+)
 
-- Mô hình truyền thống.
-- "Cầm tay chỉ việc".
-- Máy không hiểu ngữ cảnh.
-- Thông tin đưa vào rời rạc (prompts).
+#image("./diagrams/chapter04-ralenh-phanhoi-neutral.svg", width: 100%)
 //#pause
 ][
-#align(center)[
-=== Từ \ "Ra Lệnh" \ sang \ "Cộng Tác"
 //#pause
-#text(fill: orange.lighten(30%), size: 2em)[\u{22D9}]
-]
-][
-//#pause
-Người *Định Hướng* \u{2194} Máy *Cộng Tác*:
-
-- Tin tưởng & phân quyền.
-- Người: Chỉ định mục tiêu.
-- AI: Hiểu ngữ cảnh.
-- AI: Lên kế hoạch và thực hiện.
+#image("./diagrams/chapter04-dinhhuong-congtac-reduxcolor.svg", width: 100%)
 ]
 ```
 
