@@ -112,9 +112,18 @@ def parse_and_convert(filepath, dry_run=True, seen_slugs=None):
                 
                 # Slug handling
                 raw_slug = slugify(title)
-                # Truncate to avoid too long filenames
-                if len(raw_slug) > 40: raw_slug = raw_slug[:40]
-                # Remove trailing hyphens which might result from truncation
+                
+                # Truncate to max 40 but respect word boundaries (indicated by hyphens)
+                if len(raw_slug) > 40:
+                    truncated = raw_slug[:40]
+                    # Find last dash to cut cleanly
+                    last_dash = truncated.rfind('-')
+                    if last_dash > 0:
+                        raw_slug = truncated[:last_dash]
+                    else:
+                        # Fallback if no dash found (rare for very long single word)
+                        raw_slug = truncated
+                
                 raw_slug = raw_slug.strip('-')
                 
                 if raw_slug in seen_slugs:
