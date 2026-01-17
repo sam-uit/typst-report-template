@@ -45,4 +45,3 @@ Nền Kinh Tế Chia Sẻ và AI Trên Mọi Nẻo Đường.
     - Luôn cần sự giám sát của con người.
     - Vấn đề pháp lý và trách nhiệm khi xảy ra tai nạn.
     - Vấn đề bảo mật dữ liệu.
-
