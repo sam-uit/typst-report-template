@@ -19,6 +19,7 @@
 // MARK: - Nội Dung Chính
 #include "content/chapter00-slide.typ"
 #include "content/chapter01-slide.typ"
+#include "content/chapter01-slide-ailagi.typ"
 #include "content/chapter02-slide.typ"
 #include "content/chapter02-slide-smarthome.typ"
 #include "content/chapter02-slide-giaitri.typ"
