@@ -5,11 +5,8 @@
 ## Lợi Ích Định Tính
 
 ```{=typst}
-#focus-slide[
-
-#upper[Lợi Ích Định Tính]
-
-Không Phải Mọi Giá Trị Đều Đo Được Bằng Những Con Số.
+#align(center)[
+    #image("./diagrams/loiichdinhtinh.png", width: 100%)
 ]
 ```
 
