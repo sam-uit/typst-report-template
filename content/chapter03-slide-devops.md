@@ -15,7 +15,7 @@ Agentic Workflows: Từ "Prompt-Response" (Hỏi - Đáp) tới "Agentic Workflo
 
 ```{=typst}
 #align(center)[
-	#image("./diagrams/chapter03-xu-huong-chung-agentic-workflows.png", width: 100%)
+	#image("./diagrams/chapter03-xu-huong-chung-agentic-workflows.svg", width: 100%)
 ]
 ```
 
