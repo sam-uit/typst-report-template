@@ -41,6 +41,11 @@
 
 ### Quyền Riêng Tư, Bảo Vệ Dữ Liệu và Nâng Tín Số
 
+- Thu thập, lưu trữ và phân tích lượng lớn dữ liệu cá nhân.
+- Thường không rõ hoặc không thể biết dữ liệu được quản lý thế nào.
+- Nguy cơ rò rỉ, mua bán dữ liệu.
+- Từ đó gây mất niềm tin, hoặc thậm chí các nguy hiểm.
+
 ```{=typst}
 #pagebreak()
 ```
