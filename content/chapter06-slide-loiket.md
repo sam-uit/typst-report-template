@@ -44,5 +44,3 @@ AI Là Công Cụ Chiến lược, Có Khả Năng Tạo Ra Giá Trị Lớn N�
 #text(fill: rgb("#FF8500"), size: 2em, font: "Raleway")[VÀ NGƯỢC LẠI!]
 ]
 ```
-
-
