@@ -1,0 +1,78 @@
+direction: right
+
+# ------------------------------
+# STYLING CLASSES (Humanist & Clean Blue/White)
+# ------------------------------
+classes: {
+  root_node: {
+    style: {
+      fill: "#0277bd"
+      stroke: "#01579b"
+      font-color: "#ffffff"
+      stroke-width: 2
+      border-radius: 12
+      shadow: true
+      font-size: 24
+    }
+  }
+
+  category_node: {
+    style: {
+      fill: "#e1f5fe"
+      stroke: "#0288d1"
+      font-color: "#01579b"
+      stroke-width: 2
+      border-radius: 8
+      font-size: 18
+    }
+  }
+
+  leaf_node: {
+    style: {
+      fill: "#ffffff"
+      stroke: "#b3e5fc"
+      font-color: "#455a64"
+      stroke-width: 1
+      border-radius: 6
+      font-size: 14
+      stroke-dash: 0
+    }
+  }
+}
+
+# ------------------------------
+# NODES & CONTENT
+# ------------------------------
+
+# Root
+Root: Các Mô Hình\nCộng Tác Thực Tế {class: root_node}
+
+# Branch 1: Centaur
+Centaur: Mô hình Centaur\n(Tri thức) {class: category_node}
+
+C_Env: "Văn phòng, nghiên cứu, sáng tạo nội dung" {class: leaf_node}
+C_Collab: "Người: Khung sườn; AI: Viết chi tiết; Người: Tinh chỉnh" {class: leaf_node}
+C_Value: "Tối ưu hóa tư duy chiến lược" {class: leaf_node}
+
+# Branch 2: Cobot
+Cobot: Mô hình Cobot\n(Sản xuất) {class: category_node}
+
+Co_Env: "Nhà máy, logistics, dây chuyền lắp ráp" {class: leaf_node}
+Co_Collab: "Robot làm việc bên cạnh công nhân (Hỗ trợ nặng/chính xác)" {class: leaf_node}
+Co_Value: "Tối ưu hóa an toàn & hiệu suất vật lý" {class: leaf_node}
+
+# ------------------------------
+# CONNECTIONS (Curved for Mindmap feel)
+# ------------------------------
+Root -> Centaur: {style: {stroke: "#0288d1"; stroke-width: 3}}
+Root -> Cobot: {style: {stroke: "#0288d1"; stroke-width: 3}}
+
+# Connections for Centaur
+Centaur -> C_Env: {style: {stroke: "#81d4fa"; stroke-width: 2}}
+Centaur -> C_Collab: {style: {stroke: "#81d4fa"; stroke-width: 2}}
+Centaur -> C_Value: {style: {stroke: "#81d4fa"; stroke-width: 2}}
+
+# Connections for Cobot
+Cobot -> Co_Env: {style: {stroke: "#81d4fa"; stroke-width: 2}}
+Cobot -> Co_Collab: {style: {stroke: "#81d4fa"; stroke-width: 2}}
+Cobot -> Co_Value: {style: {stroke: "#81d4fa"; stroke-width: 2}}
