@@ -38,7 +38,7 @@ Là Những Cộng Sự Số Nhằm Nâng Tầm Năng Lực Cá Nhân.
 ```{=typst}
 #slide(composer: (40%, 20%, 40%))[
 
-Người *Ra Lệnh* - Máy *Phản Hồi*:
+Người *Ra Lệnh* \u{2194} Máy *Phản Hồi*:
 
 - Mô hình truyền thống.
 - "Cầm tay chỉ việc".
@@ -49,11 +49,11 @@ Người *Ra Lệnh* - Máy *Phản Hồi*:
 #align(center)[
 === Từ "Ra Lệnh" sang "Cộng Tác"
 #pause
-#text(fill: orange, size: 2em)[\u{22D9}]
+#text(fill: orange.lighten(30%), size: 2em)[\u{22D9}]
 ]
 ][
 #pause
-Người *Định Hướng* - Máy *Cộng Tác*:
+Người *Định Hướng* \u{2194} Máy *Cộng Tác*:
 
 - Tin tưởng & phân quyền.
 - Người: Chỉ định mục tiêu.
