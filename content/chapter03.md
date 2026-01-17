@@ -50,6 +50,14 @@ Với Agentic Code, các lập trình viên có thể giao cho AI các tác vụ
 
 Công cụ này mang lại khả năng thấu hiểu **toàn bộ kho mã nguồn** (full codebase awareness) thay vì chỉ các tệp tin cục bộ. Tích hợp xuyên suốt từ IDE (qua Cloud Code) đến tận Google Cloud Console, Gemini hỗ trợ toàn diện vòng đời phần mềm: từ viết code, thiết kế hạ tầng, đến gỡ lỗi và vận hành trực tiếp trên cloud, tạo nên một trải nghiệm DevOps thống nhất và bảo mật cấp doanh nghiệp.
 
+### Agent2Agent (A2A) Protocol
+
+Là một giao thức đang được phát triển giữa các ông lớn trong ngành (Google, Microsoft, vv..), cho phép các AI agents trao đổi và hợp tác với nhau qua các kết nối và ngôn ngữ chung nhất quán.
+
+Điều này mở ra một khả năng mới cho tương lai, nơi các AI Agent thực sự làm việc tự động hoàn toàn với nhau mà không bị giới hạn bởi các rào cản về môi trường và framework, và từ đó giải quyết những vấn đề có quy mô lớn hơn.
+
+Một ví dụ như các công ty X, Y, Z đều cần hợp tác để giải quyết một vấn đề. Agent A của công ty X được giao một công việc cụ thể, sau đó Agent A sẽ chuyển nội dung cho Agent B của công ty Y để hoàn thành phần tiếp theo, sau đó Agent B sẽ giao nhiệm vụ cho Agent C để kết thúc vấn đề, tạo thành một vòng lặp liên tục cho đến khi vấn đề được giải quyết.
+
 ## Y Tế & Chăm Sóc Sức Khỏe (Healthcare)
 
 Trong y tế, AI không thay thế bác sĩ mà trở thành "cánh tay phải" đắc lực.
