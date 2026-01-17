@@ -3,6 +3,18 @@
 ```
 
 ## Lợi Ích Định Lượng
+
+```{=typst}
+#align(center)[
+    #image("./diagrams/loiichdinhluong.svg", height: 100%)
+]
+```
+
+
+```{=typst}
+#pagebreak()
+```
+
 ### Tăng Năng Suất
 
 Giá trị:
