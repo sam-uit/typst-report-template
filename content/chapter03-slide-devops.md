@@ -3,5 +3,27 @@
 ```
 
 ## Lập Trình & Phát Triển Phần Mềm
-### Sự Chuyển Dịch Mô Hình: Từ Microservices sang "Agentic Workflows"
+
+```{=typst}
+#focus-slide[
+
+#upper[Lập Trình & Phát Triển Phần Mềm]
+
+Agentic Workflows: Từ "Prompt-Response" (Hỏi - Đáp) tới "Agentic Workflows" (Yêu Cầu - Thực Hiện).
+]
+```
+
+### CodeVista
+
+- Một Trợ Lý Lập Trình của FPT Software.
+    - Giải thích các đoạn mã nguồn.
+    - Tự động tạo mã nguồn.
+    - Phát hiện lỗi.
+    - Tối ưu mã nguồn.
+- Tăng tốc độ và chất lượng phát triển phần mềm.
+
+```{=typst}
+#pagebreak()
+```
+
 ### DevSecOps 2.0: Generative IaC và Chaos Engineering
