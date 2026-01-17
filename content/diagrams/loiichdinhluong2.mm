@@ -1,6 +1,6 @@
 ---
 config:
-  theme: neo 
+  theme: default
   themeVariables:
     fontFamily: Google Sans
     fontSize: 20px
