@@ -4,7 +4,15 @@
 
 ## AI Là Hiện Hữu Thực Tiễn
 
-**Trí Tuệ Nhân Tạo đã và đang đồng hành với chúng ta trong mọi lĩnh vực đời sống.**
+```{=typst}
+#focus-slide[
+
+#upper[Vai Trò và Ý Nghĩa]
+
+Trí Tuệ Nhân Tạo Đã và Đang Đồng Hành Với Chúng Ta Trong Mọi Lĩnh Vực Đời Sống.
+
+]
+```
 
 ```{=typst}
 #pagebreak()
