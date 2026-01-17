@@ -33,7 +33,10 @@ AI Là Công Cụ Chiến lược, Có Khả Năng Tạo Ra Giá Trị Lớn N�
 - AI phản ánh nhu cầu và tâm lý của con người.
 - Quan trọng hơn, AI sẽ khuếch đại các yếu tố đó một cách mạnh mẽ.
 - Đây là một vòng lặp liên tục và khép kín.
-- Vì vậy, khi AI được nhận những điều đẹp đẽ, nó sẽ tạo ra những điều đẹp đẽ.
+
+Vì vậy:
+
+> *Khi AI được nhận những điều đẹp đẽ, nó sẽ tạo ra những điều đẹp đẽ.*
 
 ```{=typst}
 //#focus-slide[
