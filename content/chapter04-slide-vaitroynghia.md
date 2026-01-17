@@ -70,7 +70,7 @@ Người *Định Hướng* \u{2194} Máy *Cộng Tác*:
 #slide(composer: (15%, 85%))[
 === Mô Hình Cộng Tác Thực Tế
 ][
-#image("./diagrams/cacmohinhcongtac.svg", width: 110%)
+#image("./diagrams/cacmohinhcongtac-mm.svg", height: 100%)
 ]
 ```
 
