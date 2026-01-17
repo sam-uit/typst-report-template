@@ -1,4 +1,4 @@
 #import "../template/lib.typ": *
 #import "../template/libslides.typ": *
 
-= Tổng Quan AI
+= Tổng Quan Về AI
