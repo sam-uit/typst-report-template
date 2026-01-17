@@ -6,7 +6,7 @@
 
 ```{=typst}
 #align(center)[
-    #image("./diagrams/loiichdinhluong2.png", height: 110%)
+    #image("./diagrams/chuong04-loiichdinhluong.png", height: 110%)
 ]
 ```
 
