@@ -70,11 +70,11 @@ Người *Định Hướng* \u{2194} Máy *Cộng Tác*:
 #slide[
 #place(
   bottom + left,
-  dy: 100pt,
+  dy: -120pt,
   heading(level: 3, hanging-indent: auto)[Các Mô Hình Cộng Tác Thực Tế],
 )
-#align(center)[
-#image("./diagrams/chapter04-cacmohinhcongtac-mc.svg", height: 106%)
+#align(right)[
+#image("./diagrams/chapter04-cacmohinhcongtac-base.svg", height: 120%)
 ]]
 ```
 
