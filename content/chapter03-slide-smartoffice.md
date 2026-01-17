@@ -39,7 +39,13 @@ numbering: none
 ```
 
 ```{=typst}
-#slide(composer: (35%, 65%))[
+#slide(composer: (65%, 35%))[
+#figure(
+image("assets/chapter03-smartoffice-gemini-enterprise.png", height: 80%),
+caption: [Gemini Enterprise],
+numbering: none
+)
+][
 === Agentic AI - Trợ Lý AI Có Tri Thức
 
 Tác vụ cụ thể:
@@ -48,12 +54,6 @@ Tác vụ cụ thể:
 Tự động hóa quy trình:
 - Agents Orchestration
 
-][
-#figure(
-image("assets/chapter03-smartoffice-gemini-enterprise.png", height: 80%),
-caption: [Gemini Enterprise],
-numbering: none
-)
 ]
 ```
 
