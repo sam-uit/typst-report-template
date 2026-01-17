@@ -34,7 +34,10 @@ Mô Hình Hợp Tác: Con Người - Tác Nhân AI.
 #slide(composer: (35%, 65%))[
 === Agentic AI - Trợ Lý AI Có Tri Thức
 
+Tác vụ cụ thể:
 - Agents
+
+Tự động hóa quy trình:
 - Agents Orchestration
 
 ][
