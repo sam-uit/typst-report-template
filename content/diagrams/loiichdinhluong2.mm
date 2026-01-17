@@ -17,4 +17,11 @@ root((fa:fa-chart-bar <br/> **LỢI ÍCH ĐỊNH LƯỢNG**))
       Phân tích, sáng tạo, ra quyết định
       Giảm áp lực và quá tải công việc
   ( **Tăng Trưởng Kinh Tế**<br/> fa:fa-chart-line <br/> Thúc đẩy GDP và mở rộng thị trường)
+    (Cấp Độ Vĩ Mô)
+      Tăng hiệu quả sản xuất.
+      Đóng góp vào tăng trưởng kinh tế.
+      Tăng năng suất lao động.
   ( **Tiết Kiệm Chi Phí**<br/> fa:fa-piggy-bank <br/> Cắt giảm lãng phí và chi phí vận hành)
+    Tự động hóa các công đoạn lặp lại
+    Tối ưu hóa chuỗi cung ứng, logistics, năng lượng
+    Giảm sai sót và chi phí sửa lỗi
