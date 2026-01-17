@@ -9,7 +9,7 @@
 
 #upper[Vai Trò và Ý Nghĩa]
 
-Những Cộng Sự Số Nâng Tầm Năng Lực Cá Nhân.
+Là Những Cộng Sự Số Nhằm Nâng Tầm Năng Lực Cá Nhân.
 
 ]
 ```
