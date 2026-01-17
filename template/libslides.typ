@@ -49,8 +49,8 @@
     #set align(left)
     #set text(font: heading-font, size: 24pt, weight: "regular")
     #block(
-      width: 100%,
-      stroke: (bottom: 0.5pt + rgb("#808080")),
+      width: auto,
+      stroke: (bottom: 0.5pt + orange.lighten(40%)),
       inset: (bottom: 0.5em),
       below: 0.8em,
     )[
@@ -63,8 +63,8 @@
     #set align(left)
     #set text(font: heading-font, size: 20pt, weight: "regular")
     #block(
-      width: 100%,
-      stroke: (bottom: 0.5pt + rgb("#808080")),
+      width: auto,
+      stroke: (bottom: 0.5pt + orange.lighten(40%)),
       inset: (bottom: 0.5em),
       below: 0.8em,
     )[
