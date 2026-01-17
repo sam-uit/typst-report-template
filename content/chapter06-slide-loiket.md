@@ -34,16 +34,15 @@ AI Là Công Cụ Chiến lược, Có Khả Năng Tạo Ra Giá Trị Lớn N�
 - Quan trọng hơn, AI sẽ khuếch đại các yếu tố đó một cách mạnh mẽ.
 - Đây là một vòng lặp liên tục và khép kín.
 
-Vì vậy:
-
-> *Khi AI được nhận những điều đẹp đẽ, nó sẽ tạo ra những điều đẹp đẽ.*
-
 ```{=typst}
-//#focus-slide[
-//VÀ NGƯỢC LẠI!
-//]
+#focus-slide[
 
-#ending-slide(title: [VÀ NGƯỢC LẠI!])[\u{22B7}]
+Vì Vậy #pause
+
+Khi AI được nhận những điều đẹp đẽ, nó sẽ tạo ra những điều đẹp đẽ. #pause
+
+VÀ NGƯỢC LẠI!
+]
 ```
 
 
