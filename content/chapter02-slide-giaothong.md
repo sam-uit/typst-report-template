@@ -33,5 +33,16 @@ Nền Kinh Tế Chia Sẻ và AI Trên Mọi Nẻo Đường.
 #pagebreak()
 ```
 
-
 ### Lợi Ích, Thách Thức
+
+- Lợi Ích
+    - Nâng cao an toàn giao thông.
+    - Tối ưu hóa lưu thông và giảm ùn tắc.
+    - Tăng hiệu quả kinh tế và vận tải.
+    - Bảo vệ môi trường.
+
+- Thách Thức:
+    - Luôn cần sự giám sát của con người.
+    - Vấn đề pháp lý và trách nhiệm khi xảy ra tai nạn.
+    - Vấn đề bảo mật dữ liệu.
+
