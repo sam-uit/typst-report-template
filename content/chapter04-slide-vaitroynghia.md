@@ -68,6 +68,11 @@ Người *Định Hướng* \u{2194} Máy *Cộng Tác*:
 
 ```{=typst}
 #slide[
+#place(
+  bottom + left,
+  dy: 20pt,
+  heading(level: 3, hanging-indent: auto)[Các Mô Hình Cộng Tác Thực Tế],
+)
 #image("./diagrams/cacmohinhcongtac-mm.svg", height: 106%)
 ]
 ```
