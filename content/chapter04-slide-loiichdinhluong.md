@@ -10,10 +10,7 @@
 ]
 ```
 
-```{=typst}
-#pagebreak()
-```
-
+<!-- 
 ### Tăng Năng Suất
 
 - Hoàn thành công việc nhanh hơn.
@@ -31,3 +28,4 @@
 - Hạ giá thành sản phẩm.
 - Tăng biên lợi nhuận.
 - Tái đầu tư cho nghiên cứu và mở rộng sản xuất.
+-->
