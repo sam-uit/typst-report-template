@@ -13,6 +13,12 @@ Agentic Workflows: Từ "Prompt-Response" (Hỏi - Đáp) tới "Agentic Workflo
 ]
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter03-xu-huong-chung-agentic-workflows.png", width: 100%)
+]
+```
+
 ### Xu Hướng Chung: Agentic Workflows
 
 - Các Tác Nhân AI (Agents) Cùng Hợp Tác

@@ -13,6 +13,12 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 ]
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-vioedu.png", width: 100%)
+]
+```
+
 ### VioEdu
 
 - EdTech Việt Nam.
@@ -22,6 +28,12 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 
 ```{=typst}
 #pagebreak()
+```
+
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-elsa-speak.png", width: 100%)
+]
 ```
 
 ### Elsa Speak
@@ -36,6 +48,12 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 #pagebreak()
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-duolingo.png", width: 100%)
+]
+```
+
 ### Duolingo
 
 - Toàn cầu, hàng triệu người dùng, hàng trăm ngôn ngữ.
@@ -47,6 +65,12 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 
 ```{=typst}
 #pagebreak()
+```
+
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-nguoi-dong-hanh-khong-phai-nguoi-thay.png", width: 100%)
+]
 ```
 
 ### Người Đồng Hành, Không Phải Người Thay Thế

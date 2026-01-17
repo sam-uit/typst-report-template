@@ -18,6 +18,12 @@ AI Là Công Cụ Chiến lược, Có Khả Năng Tạo Ra Giá Trị Lớn N�
 #pagebreak()
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter06-ai-la-hien-tai-xu-the-va-tuong-lai.png", width: 100%)
+]
+```
+
 ### AI Là Hiện Tại, Xu Thế và Tương Lai
 
 - Các công cụ AI trong Cuộc Sống & Công Việc sẽ còn phát triển hơn nữa.
@@ -26,6 +32,12 @@ AI Là Công Cụ Chiến lược, Có Khả Năng Tạo Ra Giá Trị Lớn N�
 
 ```{=typst}
 #pagebreak()
+```
+
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter06-ai-phan-anh-con-nguoi-va-xa-hoi.png", width: 100%)
+]
 ```
 
 ### AI Phản Ánh Con Người và Xã Hội

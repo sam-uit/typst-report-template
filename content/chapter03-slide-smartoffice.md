@@ -13,6 +13,12 @@ Mô Hình Hợp Tác: Con Người - Tác Nhân AI.
 ]
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter03-tu-dong-hoa-tac-vu-tri-thuc.png", width: 100%)
+]
+```
+
 ### Tự Động Hóa Tác Vụ Tri Thức
 
 - Tích hợp Generative AI vào các công cụ văn phòng.

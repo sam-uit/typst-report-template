@@ -13,6 +13,12 @@ Nền Kinh Tế Chia Sẻ và AI Trên Mọi Nẻo Đường.
 ]
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-ai-trong-di-chuyen-va-giao-thong.png", width: 100%)
+]
+```
+
 ### AI Trong Di Chuyển và Giao Thông
 
 - Bản Đồ và Chỉ Đường.
@@ -31,6 +37,12 @@ Nền Kinh Tế Chia Sẻ và AI Trên Mọi Nẻo Đường.
 
 ```{=typst}
 #pagebreak()
+```
+
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-loi-ich-thach-thuc.png", width: 100%)
+]
 ```
 
 ### Lợi Ích, Thách Thức

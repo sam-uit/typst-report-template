@@ -13,6 +13,12 @@ Tối Ưu Hóa Hành Trình Mua Sắm và Tương Tác Tự Động. Từ Tìm K
 ]
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-ca-nhan-hoa-hanh-trinh-va-cong-cu-goi-y.png", width: 100%)
+]
+```
+
 ### Cá nhân hóa Hành trình và Công cụ Gợi ý
 
 - AI như một tư vấn viên chuyên nghiệp.
@@ -24,6 +30,12 @@ Tối Ưu Hóa Hành Trình Mua Sắm và Tương Tác Tự Động. Từ Tìm K
 
 ```{=typst}
 #pagebreak()
+```
+
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-chatbot-cskh-va-tuong-tac-tu-dong-24-7.png", width: 100%)
+]
 ```
 
 ### Chatbot CSKH và Tương tác Tự động 24/7
@@ -39,6 +51,12 @@ Cầu nối giao tiếp quan trọng, thay đổi cách thức chăm sóc và h�
 
 ```{=typst}
 #pagebreak()
+```
+
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-tim-kiem-va-thu-nghiem-truc-quan.png", width: 100%)
+]
 ```
 
 ### Tìm Kiếm Và Thử Nghiệm Trực Quan

@@ -17,6 +17,12 @@ Tổ Chức, Quản Trị và Đồng Hành với AI như thế nào cho an toà
 #pagebreak()
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter05-phu-thuoc-du-lieu-va-rui-ro-ao-giac-ai.png", width: 100%)
+]
+```
+
 ### Phụ Thuộc Dữ Liệu và Rủi Ro "Ảo Giác" AI
 
 - Kết quả phụ thuộc hoàn toàn dữ liệu đầu vào.
@@ -30,6 +36,12 @@ Tổ Chức, Quản Trị và Đồng Hành với AI như thế nào cho an toà
 
 <!-- ### Giới Hạn Trong Việc Hiểu Yếu Tố Con Người và Bối Cảnh Xã Hội -->
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter05-tac-dong-den-viec-lam-va-ky-nang-lao.png", width: 100%)
+]
+```
+
 ### Tác Động Đến Việc Làm và Kỹ Năng Lao Động
 
 - Nhiều công việc bị tự động hóa nhanh.
@@ -41,6 +53,12 @@ Tổ Chức, Quản Trị và Đồng Hành với AI như thế nào cho an toà
 #pagebreak()
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter05-quyen-rieng-tu-bao-ve-du-lieu-va-nang.png", width: 100%)
+]
+```
+
 ### Quyền Riêng Tư, Bảo Vệ Dữ Liệu và Nâng Tín Số
 
 - Thu thập, lưu trữ và phân tích lượng lớn dữ liệu cá nhân.
@@ -50,6 +68,12 @@ Tổ Chức, Quản Trị và Đồng Hành với AI như thế nào cho an toà
 
 ```{=typst}
 #pagebreak()
+```
+
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter05-thao-tung-thong-tin-deepfake-va-xoi-mon.png", width: 100%)
+]
 ```
 
 ### Thao Túng Thông Tin, Deepfake và Xói Mòn Nhận Thức Xã Hội

@@ -18,6 +18,12 @@ Trí Tuệ Nhân Tạo Đã và Đang Đồng Hành Với Chúng Ta Trong Mọi 
 #pagebreak()
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter06-ai-khong-con-la-ly-thuyet-hay-tuong-lai.png", width: 100%)
+]
+```
+
 ### AI Không Còn Là Lý Thuyết Hay Tương Lai Xa
 
 - AI đã và đang hiện hữu trong đời sống hàng ngày.

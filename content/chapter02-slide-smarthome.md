@@ -17,6 +17,12 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 #pagebreak()
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-tu-dong-hoa-va-toi-uu-hoa-khong-gian.png", width: 100%)
+]
+```
+
 ### Tự Động Hóa và Tối Ưu Hóa Không Gian Sống (Smart Home)
 
 - **Tự động hóa**
@@ -31,6 +37,12 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 
 ```{=typst}
 #pagebreak()
+```
+
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-nang-cao-chat-luong-song-va-an-toan-cho.png", width: 100%)
+]
 ```
 
 ### Nâng Cao Chất Lượng Sống và An Toàn Cho Con Người
@@ -50,6 +62,12 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 #pagebreak()
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-nang-cao-chat-luong-song-va-an-toan-cho-1.png", width: 100%)
+]
+```
+
 ### Nâng Cao Chất Lượng Sống và An Toàn Cho Con Người
 
 - **Trợ Lý Cá Nhân**
@@ -61,6 +79,12 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 #pagebreak()
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-su-tien-hoa-cua-khong-gian-song-thong.png", width: 100%)
+]
+```
+
 ### Sự Tiến Hóa của Không Gian Sống Thông Minh
 
 - Không gian sống thông minh.
@@ -69,6 +93,12 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 
 ```{=typst}
 #pagebreak()
+```
+
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-lumi-rang-dong-va-fpt.png", width: 100%)
+]
 ```
 
 ### Lumi, Rạng Đông và FPT
@@ -88,6 +118,12 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 #pagebreak()
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-lumi-rang-dong-va-fpt-1.png", width: 100%)
+]
+```
+
 ### Lumi, Rạng Đông và FPT
 
 - **FPT**
@@ -97,6 +133,12 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 
 ```{=typst}
 #pagebreak()
+```
+
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter02-he-sinh-thai-matter-va-google-amazon.png", width: 100%)
+]
 ```
 
 ### Hệ Sinh Thái Matter và Google/Amazon

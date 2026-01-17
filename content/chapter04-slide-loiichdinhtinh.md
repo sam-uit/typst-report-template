@@ -57,6 +57,12 @@ Edge AI - Bảo Vệ Quyền Riêng Tư:
 #pagebreak()
 ```
 <!-- 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter04-thay-doi-van-hoa-va-mo-hinh-van-hanh-to.png", width: 100%)
+]
+```
+
 ### Thay Đổi Văn Hóa Và Mô Hình Vận Hành Tổ Chức
 
 Xây dựng "Văn Hóa Số":

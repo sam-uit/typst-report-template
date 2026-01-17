@@ -18,6 +18,12 @@ Một Cách Tiếp Cận Mang Tính Hệ Thống, Nhân Bản.
 #pagebreak()
 ```
 
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter05-xay-dung-khung-quan-tri-va-phap-ly-cho.png", width: 100%)
+]
+```
+
 ### Xây Dựng Khung Quản Trị Và Pháp Lý Cho AI
 
 - Bảo vệ dữ liệu cá nhân.
@@ -28,6 +34,12 @@ Một Cách Tiếp Cận Mang Tính Hệ Thống, Nhân Bản.
 
 ```{=typst}
 #pagebreak()
+```
+
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter05-uu-tien-phat-trien-nang-luc-con-nguoi.png", width: 100%)
+]
 ```
 
 ### Ưu Tiên Phát Triển Năng Lực Con Người Và Kỹ Năng AI
@@ -43,6 +55,12 @@ Một Cách Tiếp Cận Mang Tính Hệ Thống, Nhân Bản.
 
 ```{=typst}
 #pagebreak()
+```
+
+```{=typst}
+#align(center)[
+	#image("./diagrams/chapter05-xay-dung-van-hoa-so-va-dao-duc-ai.png", width: 100%)
+]
 ```
 
 ### Xây Dựng Văn Hóa Số Và Đạo Đức AI
