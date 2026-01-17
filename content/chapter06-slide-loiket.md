@@ -7,7 +7,7 @@
 ```{=typst}
 #focus-slide[
 
-#upper[Vai Trò và Ý Nghĩa]
+#upper[Lời Kết]
 
 AI Là Công Cụ Chiến lược, Có Khả Năng Tạo Ra Giá Trị Lớn Nếu Được Áp Dụng Đúng Đắn.
 
