@@ -48,7 +48,7 @@ Người *Ra Lệnh* - Máy *Phản Hồi*:
 ][
 #align(center)[
 === Từ "Ra Lệnh" sang "Cộng Tác"
-
+#pause
 #text(fill: orange, size: 2em)[\u{22D9}]
 ]
 ][
