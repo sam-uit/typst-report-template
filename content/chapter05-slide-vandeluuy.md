@@ -4,7 +4,14 @@
 
 ## Những Vấn Đề Cần Lưu Ý
 
-**Tổ Chức, Quản Trị và Đồng Hành với AI như thế nào cho an toàn, hiệu quả và nhân văn?**
+```{=typst}
+#focus-slide[
+
+#upper[Những Vấn Đề Cần Lưu Ý]
+
+Tổ Chức, Quản Trị và Đồng Hành với AI như thế nào cho an toàn, hiệu quả và nhân văn?
+]
+```
 
 ```{=typst}
 #pagebreak()
