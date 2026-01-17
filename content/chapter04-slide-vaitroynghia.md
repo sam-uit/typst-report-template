@@ -68,6 +68,11 @@ Người *Định Hướng* \u{2194} Máy *Cộng Tác*:
 
 ### Các Mô Hình Cộng Tác Thực Tế
 
+| Đặc điểm | Mô hình Centaur (Tri thức) | Mô hình Cobot (Sản xuất) |
+| :---- | :---- | :---- |
+| **Môi trường** | Văn phòng, nghiên cứu, sáng tạo nội dung. | Nhà máy, dây chuyền lắp ráp, logistics. |
+| **Sự cộng tác** | Con người đưa khung sườn, AI viết chi tiết, con người tinh chỉnh. | Robot làm việc ngay bên cạnh công nhân, hỗ trợ việc nặng nhọc/đòi hỏi chính xác cao. |
+| **Giá trị cốt lõi** | Tối ưu hóa tư duy chiến lược. | Tối ưu hóa sự an toàn và hiệu suất vật lý. |
 
 
 ### Tác Động Đến Tư Duy Quản Trị Và Đào Tạo
