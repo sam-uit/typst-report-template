@@ -38,7 +38,7 @@ Là Những Cộng Sự Số Nhằm Nâng Tầm Năng Lực Cá Nhân.
 ```{=typst}
 #slide(composer: (40%, 20%, 40%))[
 
-Người *Ra Lệnh* - Máy *Thực Thi*:
+Người *Ra Lệnh* - Máy *Phản Hồi*:
 
 - Mô hình truyền thống.
 - "Cầm tay chỉ việc".
@@ -55,7 +55,10 @@ Người *Ra Lệnh* - Máy *Thực Thi*:
 #pause
 Người *Định Hướng* - Máy *Cộng Tác*:
 
-    - ABC
+- Tin tưởng & phân quyền.
+- Người: Chỉ định mục tiêu.
+- AI: Hiểu ngữ cảnh.
+- AI: Lên kế hoạch và thực hiện.
 ]
 ```
 
