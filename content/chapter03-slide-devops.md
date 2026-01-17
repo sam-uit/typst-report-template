@@ -29,8 +29,7 @@ Agentic Workflows: Từ "Prompt-Response" (Hỏi - Đáp) tới "Agentic Workflo
 ```{=typst}
 #slide(composer: (35%, 65%))[
 - Agentic Coding
-    - Đưa ra yêu cầu.
-    - Tự động lên kế hoạch.
+    - Lên kế hoạch.
     - Tự thực hiện.
 
 ][
