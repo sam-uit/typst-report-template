@@ -18,6 +18,9 @@
 
 - Các chương trình đào tạo diện rộng về AI.
 - Tư duy dữ liệu, kỹ năng sử dụng cho nhiều tầng lớp.
+- Tập trung kỹ năng "con Người": giao tiếp, sáng tạo, phản biện.
+- Cách phối hợp và làm việc với AI.
+- Chương trình "Đào tạo lại" cho các nhân sự có công việc bị ảnh hưởng.
 
 ### Đầu Tư Hạ Tầng Dữ Liệu Và Hệ Sinh Thái AI "Make in Vietnam"
 ### Thúc Đẩy AI Vì Mục Tiêu Phát Triển Bền Vững Và Bao Trùm
