@@ -11,7 +11,7 @@ config:
 ---
 mindmap
 ((**Các Mô Hình<br>Cộng Tác**))
-  (Centaur<br>Tri thức)
+  (**CENTAUR**<br>Tri thức)
     (Môi trường)
       Văn phòng
       Nghiên cứu
@@ -22,7 +22,7 @@ mindmap
       Con người: Tinh chỉnh
     (Giá trị cốt lõi)
       Tối ưu hóa<br>tư duy chiến lược
-  (Cobot<br>Sản xuất)
+  (**COBOT**<br>Sản xuất)
     (Môi trường)
       Nhà máy
       Dây chuyền lắp ráp
