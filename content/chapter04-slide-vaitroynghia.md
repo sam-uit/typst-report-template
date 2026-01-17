@@ -36,25 +36,41 @@ Là Những Cộng Sự Số Nhằm Nâng Tầm Năng Lực Cá Nhân.
 <!-- ### Từ "Ra Lệnh" sang "Cộng Tác" -->
 
 ```{=typst}
-#slide(composer: (50%, 50%))[
-
+#slide[
 #place(
-  bottom + right,
-  dy: 100pt,
+  bottom + left,
+  dy: -50pt,
   heading(level: 3, hanging-indent: auto)[Từ Ra Lệnh Đến Cộng Tác],
 )
 
-#image("./diagrams/chapter04-ralenh-phanhoi-neutral.svg", width: 100%)
+#place(
+  top + left,
+  dy: 0pt,
+  image("./diagrams/chapter04-ralenh-phanhoi-neutral.svg", width: 50%),
+)
+
+#place(
+  top + center,
+  dy: 130pt,
+  dx: 0pt,
+  text(fill: orange.lighten(30%), size: 2em)[\u{22D9}]
+)
 //#pause
-][
+
 //#pause
-#image("./diagrams/chapter04-dinhhuong-congtac-reduxcolor.svg", width: 100%)
+#place(
+  bottom + right,
+  dy: 0pt,
+    image("./diagrams/chapter04-dinhhuong-congtac-reduxcolor.svg", width: 70%)
+)
 ]
 ```
 
 ```{=typst}
 #pagebreak()
 ```
+
+<!-- ### Các Mô Hình Cộng Tác Thực Tế -->
 
 ```{=typst}
 #slide[
