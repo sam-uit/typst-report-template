@@ -49,4 +49,12 @@ Lợi Ích:
 - Tăng biên lợi nhuận
 - Tái đầu tư cho nghiên cứu và mở rộng sản xuất
 
+```{=typst}
+#pagebreak()
+```
+
 ### Tiết Kiệm Chi Phí
+
+- Tự Động Hóa các quy trình lặp lại.
+- Tối Ưu Tài Nguyên & Năng Lượng.
+- Giảm Sai Sót do Con Người.
