@@ -7,7 +7,7 @@
 ```{=typst}
 #focus-slide[
 
-#upper[AI Là Gì]
+#upper[AI Là Gì?]
 
 Lĩnh vực Khoa Học Máy Tính tập Trung Xây Dựng Mô Hình Trí Tuệ Cho Máy Móc, Mô Phỏng Khả Năng Của Con Người.
 ]
@@ -15,7 +15,7 @@ Lĩnh vực Khoa Học Máy Tính tập Trung Xây Dựng Mô Hình Trí Tuệ C
 
 ```{=typst}
 #align(center)[
-	#image("./diagrams/chapter01-muc-tieu.png", width: 100%)
+	#image("./diagrams/chapter01-ai-la-gi.png", height: 110%)
 ]
 ```
 
