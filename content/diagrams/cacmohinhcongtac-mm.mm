@@ -1,6 +1,6 @@
 ---
 config:
-  theme: mc
+  theme: base
   themeVariables:
     primaryColor: '#e1f5fe'
     primaryTextColor: '#0277bd'
@@ -10,8 +10,8 @@ config:
     fontSize: 16px
 ---
 mindmap
-((**Các Mô Hình<br>Cộng Tác**))
-  (**CENTAUR**<br>Tri thức)
+{{**Các Mô Hình<br>Cộng Tác**}}
+  ((**CENTAUR**<br>Tri thức))
     (Môi trường)
       Văn phòng
       Nghiên cứu
@@ -22,7 +22,7 @@ mindmap
       Con người: Tinh chỉnh
     (Giá trị cốt lõi)
       Tối ưu hóa<br>tư duy chiến lược
-  (**COBOT**<br>Sản xuất)
+  ((**COBOT**<br>Sản xuất))
     (Môi trường)
       Nhà máy
       Dây chuyền lắp ráp
