@@ -7,8 +7,9 @@
         "command": "mmdc",
         "args": [
           "-i", "${file}",
-          "-o", "${fileDirname}/${fileBasenameNoExtension}.svg",
-          "-b", "transparent"
+          "-o", "${fileDirname}/${fileBasenameNoExtension}.png",
+          "-b", "transparent",
+          "-s", "3"
         ],
         "group": "build",
         "presentation": {
