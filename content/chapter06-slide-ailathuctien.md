@@ -4,6 +4,7 @@
 
 ## AI Là Hiện Hữu Thực Tiễn
 
+**Trí Tuệ Nhân Tạo đã và đang đồng hành với chúng ta trong mọi lĩnh vực đời sống.**
 
 ```{=typst}
 #pagebreak()
