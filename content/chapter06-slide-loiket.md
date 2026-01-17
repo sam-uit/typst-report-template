@@ -37,11 +37,11 @@ AI Là Công Cụ Chiến lược, Có Khả Năng Tạo Ra Giá Trị Lớn N�
 ```{=typst}
 #focus-slide[
 
-Vì Vậy #pause
+#text(size: 2em)[Đồng Nghĩa] #pause
 
 Khi NHẬN những điều đẹp đẽ, AI sẽ TẠO RA những điều đẹp đẽ. #pause
 
-#text(fill: rgb("#FF8500"))[VÀ NGƯỢC LẠI!]
+#text(fill: rgb("#FF8500"), size: 2em, font: "LHanoienne Typeface")[VÀ NGƯỢC LẠI!]
 ]
 ```
 
