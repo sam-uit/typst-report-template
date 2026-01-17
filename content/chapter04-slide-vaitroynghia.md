@@ -34,5 +34,30 @@ Là Những Cộng Sự Số Nhằm Nâng Tầm Năng Lực Cá Nhân.
 ```
 
 ### Từ "Ra Lệnh" sang "Cộng Tác"
+
+```{=typst}
+#slide(composer: (40%, 20%, 40%))[
+
+Người *Ra Lệnh* - Máy *Thực Thi*:
+
+- Mô hình truyền thống.
+- "Cầm tay chỉ việc".
+- Máy không hiểu ngữ cảnh.
+- Thông tin đưa vào rời rạc (prompts).
+#pause
+][
+#align(center)[
+=== Từ "Ra Lệnh" sang "Cộng Tác"
+
+#text(fill: orange, size: 2em)[\u{22D9}]
+]
+][
+#pause
+Người *Định Hướng* - Máy *Cộng Tác*:
+
+    - ABC
+]
+```
+
 ### Các Mô Hình Cộng Tác Thực Tế
 ### Tác Động Đến Tư Duy Quản Trị Và Đào Tạo
