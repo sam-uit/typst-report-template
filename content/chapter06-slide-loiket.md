@@ -4,7 +4,15 @@
 
 ## Lời Kết
 
-**AI Là Công Cụ Chiến lược, Có Khả Năng Tạo Ra Giá Trị Lớn Nếu Được Áp Dụng Đúng Đắn.**
+```{=typst}
+#focus-slide[
+
+#upper[Vai Trò và Ý Nghĩa]
+
+AI Là Công Cụ Chiến lược, Có Khả Năng Tạo Ra Giá Trị Lớn Nếu Được Áp Dụng Đúng Đắn.
+
+]
+```
 
 ```{=typst}
 #pagebreak()
