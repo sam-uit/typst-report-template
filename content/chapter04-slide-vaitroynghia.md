@@ -67,18 +67,14 @@ Người *Định Hướng* \u{2194} Máy *Cộng Tác*:
 ```
 
 ```{=typst}
-#slide(composer: (15%, 85%))[
-=== Mô Hình Cộng Tác Thực Tế
-][
-#image("./diagrams/cacmohinhcongtac-mm.svg", height: 100%)
+#slide[
+#image("./diagrams/cacmohinhcongtac-mm.svg", height: 120%)
 ]
 ```
 
 ```{=typst}
 #pagebreak()
 ```
-
-### Tác Động Đến Tư Duy Quản Trị Và Đào Tạo
 
 <!-- - Chuyển Đổi Vai Trò
     - Từ: Thực Hiện.
