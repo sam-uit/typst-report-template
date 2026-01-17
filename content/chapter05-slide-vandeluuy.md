@@ -3,6 +3,9 @@
 ```
 
 ## Những Vấn Đề Cần Lưu Ý
+
+**Tổ Chức, Quản Trị và Đồng Hành với AI như thế nào cho an toàn, hiệu quả và nhân văn?**
+
 ### Phụ Thuộc Dữ Liệu và Rủi Ro "Ảo Giác" AI
 ### Giới Hạn Trong Việc Hiểu Yếu Tố Con Người và Bối Cảnh Xã Hội
 ### Tác Động Đến Việc Làm và Kỹ Năng Lao Động
