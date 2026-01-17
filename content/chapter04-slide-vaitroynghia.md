@@ -91,9 +91,9 @@ Người *Định Hướng* \u{2194} Máy *Cộng Tác*:
 
 ```{=typst}
 #place(
-  bottom + left,
-  dy: -150pt,
-  heading(level: 3, hanging-indent: auto)[Tác Động Đến \ Tư Duy Quản Trị \ Và Đào Tạo],
+  bottom + center,
+  dy: 100pt,
+  heading(level: 3)[Tác Động Đến Tư Duy Quản Trị Và Đào Tạo],
 )
 #align(center)[
     #image("./diagrams/tacdongtuduy.svg", height: 120%)
