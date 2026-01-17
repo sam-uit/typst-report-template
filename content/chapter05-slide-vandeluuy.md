@@ -21,12 +21,7 @@
 #pagebreak()
 ```
 
-
-### Giới Hạn Trong Việc Hiểu Yếu Tố Con Người và Bối Cảnh Xã Hội
-
-```{=typst}
-#pagebreak()
-```
+<!-- ### Giới Hạn Trong Việc Hiểu Yếu Tố Con Người và Bối Cảnh Xã Hội -->
 
 ### Tác Động Đến Việc Làm và Kỹ Năng Lao Động
 
