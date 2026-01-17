@@ -47,7 +47,7 @@ Người *Ra Lệnh* \u{2194} Máy *Phản Hồi*:
 //#pause
 ][
 #align(center)[
-=== Từ "Ra Lệnh" sang "Cộng Tác"
+=== Từ \ "Ra Lệnh" \ sang \ "Cộng Tác"
 //#pause
 #text(fill: orange.lighten(30%), size: 2em)[\u{22D9}]
 ]
