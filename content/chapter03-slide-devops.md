@@ -13,13 +13,14 @@ Agentic Workflows: Từ "Prompt-Response" (Hỏi - Đáp) tới "Agentic Workflo
 ]
 ```
 
-### CodeVista
+### Xu Hướng Chung
 
-- Một Trợ Lý Lập Trình của FPT Software.
+- Các Tác Nhân AI (Agents)
     - Giải thích các đoạn mã nguồn.
     - Tự động tạo mã nguồn.
     - Phát hiện lỗi.
     - Tối ưu mã nguồn.
+- Tự động lên kế hoạch và hoàn thành yêu cầu.
 - Tăng tốc độ và chất lượng phát triển phần mềm.
 
 ```{=typst}
@@ -28,6 +29,7 @@ Agentic Workflows: Từ "Prompt-Response" (Hỏi - Đáp) tới "Agentic Workflo
 
 ```{=typst}
 #slide(composer: (35%, 65%))[
+=== CodeVista
 - Agentic Coding
     - Lên kế hoạch.
     - Tự thực hiện.
@@ -43,13 +45,6 @@ numbering: none
 ```{=typst}
 #pagebreak()
 ```
-
-### Antigravity
-
-- Sản phẩm của Google.
-- Môi trường Phát triển Tích Hợp (IDE).
-- Các mô hình AI tiên tiến nhất.
-- Tự động hóa quy trình phát triển phần mềm bằng các tác nhân.
 
 ```{=typst}
 #slide(composer: (65%, 35%))[
