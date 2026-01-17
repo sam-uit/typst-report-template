@@ -34,7 +34,6 @@ Trong tất cả các lĩnh vực mà cần tương tác với số lượng kh�
 **Bối Cảnh 2:** Trợ lý gửi mail & đặt lịch (The Booking Agent): 1 team dự án trong công ty gần 500 người đang cần phải đặt 1 phòng họp để chuẩn bị cho cuộc họp gấp liên quan tới dự án của mình, nhưng tìm mãi không thấy có phòng họp và khung giờ trống bởi vì quá nhiều \> Sử dụng AI Agent để tìm kiếm lịch và phòng họp trống để đặt trong ngày hôm nay, tự động, nhanh chóng và hiệu quả.
 
 * **Giải đáp thắc mắc - (Research Agent):** Giải đáp các câu hỏi về toàn bộ các quy trình và các quy định về an ninh và bảo mật trong một doanh nghiệp. Từ đó có thể tránh các rủi ro về an ninh và bảo mật, đảm bảo được một quy trình vận hành không bị lỗ hổng.
-* **Tự động hóa quy trình - (Automatic Workflow):** AI Agent sẽ được phân công và có tri thức để giải quyết các quy trình và hoạt động tự động hóa trong doanh nghiệp. Ví dụ như quy trình bàn giao thu hồi tài sản, gửi mail và thực hiện các quy trình như quy trình mua hàng,.... Đây là mô hình Agent-2-Agent, hoặc Agent Orchestration.
 
 ## Lập Trình & Phát Triển Phần Mềm
 
@@ -57,6 +56,8 @@ Là một giao thức đang được phát triển giữa các ông lớn trong 
 Điều này mở ra một khả năng mới cho tương lai, nơi các AI Agent thực sự làm việc tự động hoàn toàn với nhau mà không bị giới hạn bởi các rào cản về môi trường và framework, và từ đó giải quyết những vấn đề có quy mô lớn hơn.
 
 Một ví dụ như các công ty X, Y, Z đều cần hợp tác để giải quyết một vấn đề. Agent A của công ty X được giao một công việc cụ thể, sau đó Agent A sẽ chuyển nội dung cho Agent B của công ty Y để hoàn thành phần tiếp theo, sau đó Agent B sẽ giao nhiệm vụ cho Agent C để kết thúc vấn đề, tạo thành một vòng lặp liên tục cho đến khi vấn đề được giải quyết.
+
+* **Tự động hóa quy trình - (Automatic Workflow):** AI Agent sẽ được phân công và có tri thức để giải quyết các quy trình và hoạt động tự động hóa trong doanh nghiệp. Ví dụ như quy trình bàn giao thu hồi tài sản, gửi mail và thực hiện các quy trình như quy trình mua hàng,.... Đây là mô hình Agent-2-Agent, hoặc Agent Orchestration.
 
 ## Y Tế & Chăm Sóc Sức Khỏe (Healthcare)
 
