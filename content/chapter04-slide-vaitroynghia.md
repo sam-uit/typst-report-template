@@ -79,3 +79,11 @@ Người *Định Hướng* \u{2194} Máy *Cộng Tác*:
 ```
 
 ### Tác Động Đến Tư Duy Quản Trị Và Đào Tạo
+
+- Chuyển Đổi Vai Trò
+    - Từ: Thực Hiện.
+    - Sang: Hướng Dẫn, Thẩm Định.
+
+- Giá Trị Nhân Văn
+    - Máy Móc: Thực hiện nghiệp vụ.
+    - Con Người: Giá trị cốt lõi, cảm xúc, đạo đức nghề nghiệp.
