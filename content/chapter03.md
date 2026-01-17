@@ -66,9 +66,9 @@ Nếu những phần trước chúng ta nói về việc AI hỗ trợ viết m�
 
 **Amazon Q Developer:** Tập trung sâu vào hệ sinh thái AWS. Amazon Q không chỉ viết code mà còn là chuyên gia về hạ tầng đám mây, giúp tối ưu hóa cấu hình bảo mật, nâng cấp phiên bản ngôn ngữ (ví dụ: Java upgrade), và giải thích các kiến trúc hệ thống phức tạp, giúp doanh nghiệp tiết kiệm hàng ngàn giờ công lao động kỹ thuật.
 
-**Gemini Code Assist:** Được vận hành bởi mô hình Gemini mới nhất với cửa sổ ngữ cảnh (*context window*) siêu lớn, công cụ này mang lại khả năng thấu hiểu **toàn bộ kho mã nguồn** (full codebase awareness) thay vì chỉ các tệp tin cục bộ. Tích hợp xuyên suốt từ IDE (qua Cloud Code) đến tận Google Cloud Console, Gemini hỗ trợ toàn diện vòng đời phần mềm: từ viết code, thiết kế hạ tầng, đến gỡ lỗi và vận hành trực tiếp trên cloud, tạo nên một trải nghiệm DevOps thống nhất và bảo mật cấp doanh nghiệp.
-
 **Google Antigravity:** Được phát triển bởi Google, Antigravity là một nền tảng AI hỗ trợ lập trình viên trong toàn bộ vòng đời phát triển phần mềm. Nó tích hợp các mô hình AI tiên tiến nhất của Google để cung cấp các tính năng như tự động sinh mã, gỡ lỗi, tối ưu hóa mã nguồn và kiểm thử. Antigravity giúp tăng tốc độ phát triển phần mềm và nâng cao chất lượng mã nguồn.
+
+Công cụ này mang lại khả năng thấu hiểu **toàn bộ kho mã nguồn** (full codebase awareness) thay vì chỉ các tệp tin cục bộ. Tích hợp xuyên suốt từ IDE (qua Cloud Code) đến tận Google Cloud Console, Gemini hỗ trợ toàn diện vòng đời phần mềm: từ viết code, thiết kế hạ tầng, đến gỡ lỗi và vận hành trực tiếp trên cloud, tạo nên một trải nghiệm DevOps thống nhất và bảo mật cấp doanh nghiệp.
 
 ## Y Tế & Chăm Sóc Sức Khỏe (Healthcare)
 
