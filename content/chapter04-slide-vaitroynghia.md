@@ -90,6 +90,11 @@ Người *Định Hướng* \u{2194} Máy *Cộng Tác*:
     - Con Người: Giá trị cốt lõi, cảm xúc, đạo đức nghề nghiệp. -->
 
 ```{=typst}
+#place(
+  bottom + left,
+  dy: -150pt,
+  heading(level: 3, hanging-indent: auto)[Tác Động Đến \ Tư Duy Quản Trị \ Và Đào Tạo],
+)
 #align(center)[
     #image("./diagrams/tacdongtuduy.svg", height: 120%)
 ]
