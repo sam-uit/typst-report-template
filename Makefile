@@ -11,6 +11,8 @@
 # Define source and destination lists
 MD_FILES := $(wildcard content/*.md)
 TYP_FILES := $(MD_FILES:.md=.typ)
+MMD_FILES := $(wildcard content/diagrams/*.mmd)
+PNG_FILES := $(MMD_FILES:.mmd=.png)
 
 # Config and Filters
 CONFIG := pandoc/pandoc.yaml
@@ -24,7 +26,7 @@ WATCH_FILES := $(MD_FILES) $(FILTERS) $(CONFIG) template/ report.typ thesis.typ 
 .PHONY: all clean typ watch report thesis slides
 
 # Default target: Build all PDFs
-all: report.pdf thesis.pdf slides.pdf
+all: report.pdf thesis.pdf slides.pdf $(PNG_FILES)
 
 # Target: Only convert MD to TYP (no PDF compile)
 typ: $(TYP_FILES)
@@ -46,6 +48,10 @@ thesis.pdf: thesis.typ $(TYP_FILES)
 slides.pdf: slides.typ
 	typst compile slides.typ --font-path template/fonts
 
+# Rule to convert .mmd to .png
+%.png: %.mmd
+	mmdc -i "$<" -o "$@" -b transparent -s 3
+
 # Clean build artifacts
 clean:
 	rm -f report.pdf thesis.pdf slides.pdf main.pdf
@@ -55,5 +61,6 @@ clean:
 # Finds all relevant files and runs 'make all' on change
 watch:
 	@echo "Started watching with entr..."
-	@find config content author pandoc template . -maxdepth 2 -name "*.md" -o -name "*.typ" -o -name "*.lua" -o -name "*.yaml" \
+	@find config content author pandoc template . -maxdepth 2 -name "*.md" -o -name "*.typ" -o -name "*.lua" -o -name "*.yaml" -o -name "*.mmd" \
 	| entr -r $(MAKE) all
+
