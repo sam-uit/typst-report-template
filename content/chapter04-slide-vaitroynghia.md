@@ -68,7 +68,7 @@ Người *Định Hướng* \u{2194} Máy *Cộng Tác*:
 
 ```{=typst}
 #slide[
-#image("./diagrams/cacmohinhcongtac-mm.svg", height: 120%)
+#image("./diagrams/cacmohinhcongtac-mm.svg", height: 106%)
 ]
 ```
 
