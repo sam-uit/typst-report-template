@@ -27,9 +27,9 @@ Nền Kinh Tế Chia Sẻ và AI Trên Mọi Nẻo Đường.
 
 #place(
   top + left,
-  dy: 150pt,
+  dy: 50pt,
   heading(level: 3)[Lợi Ích và Thách Thức],
 )
-#align(center)[
-    #image("./diagrams/chapter02-loi-ich-thach-thuc.png", width: auto)
+#align(right)[
+    #image("./diagrams/chapter02-loi-ich-thach-thuc.svg", height: auto)
 ]
