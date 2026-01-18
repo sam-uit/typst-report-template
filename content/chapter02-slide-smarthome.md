@@ -72,7 +72,6 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 
 ### Sự Tiến Hóa của Không Gian Sống Thông Minh
 
-- Không gian sống thông minh.
 - Có khả năng học hỏi, dự đoán và thích nghi với nhu cầu của con người.
 - Thay đổi cách con người sống và tương tác với không gian.
 
