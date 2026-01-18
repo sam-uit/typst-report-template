@@ -22,11 +22,10 @@ AI Đem Tới Những Thách Thức và Cả Những Cơ Hội.
 
 #pagebreak()
 
-#place(bottom + left, dx: 0pt, dy: 0pt)[
+#place(top + left, dx: 0pt, dy: 50pt)[
   #heading(level: 3)[Các Nền Tảng Thực Tế]
 ]
 
 #align(center)[
-    #image("./diagrams/chapter03-topcv-jobhopin.png", width: auto)
+    #image("./diagrams/chapter03-topcv-jobhopin.svg", width: auto)
 ]
-
