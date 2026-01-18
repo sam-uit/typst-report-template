@@ -69,7 +69,7 @@ Là Những Cộng Sự Số Nhằm Nâng Tầm Năng Lực Cá Nhân.
     heading(level: 3, hanging-indent: auto)[Các Mô Hình Cộng Tác Thực Tế],
   )
   #align(right)[
-    #image("./diagrams/chapter04-cacmohinhcongtac-base.svg", height: 120%)
+    #image("./diagrams/chapter04-cacmohinhcongtac-mm.svg", height: 120%)
   ]
 ]
 
