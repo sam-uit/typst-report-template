@@ -57,7 +57,8 @@
 
 // CHAPTER 05
 #include "content/chapter05-slide.typ"
-#include "content/chapter05-slide-vandeluuy.typ"
+// #include "content/chapter05-slide-vandeluuy.typ"
+#include "content/chapter05-slide-vandeluuy-mm.typ"
 #include "content/chapter05-slide-dinhhuongtuonglai.typ"
 
 // CHAPTER 06
