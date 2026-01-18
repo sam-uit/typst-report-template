@@ -6,17 +6,27 @@
 == Lời Cảm Ơn
 
 #slide(composer: (70%, 30%))[
+=== Nhà Trường
+
+- #data.university.name
+- Trường Đại Học Công Nghệ Thông Tin
+- Trung Tâm Phát Triển Công Nghệ Thông Tin.
+
 === Giảng Viên
 
 - #text(weight: 500, data.instructor)
 - Mã Môn: IE005.
-- Tên Môn: Giới Thiệu Nghành Công Nghệ Thông Tin.
+- *Giới Thiệu Nghành Công Nghệ Thông Tin*.
 
-=== Nhà Trường
-
-- #data.university.name
-- Trung Tâm Phát Triển Công Nghệ Thông Tin.
 ][
+#align(center)[
+  #image("../static/Logo_UIT_updated.jpg", height: 40%)
+  // #block(width: 100%, stroke: (0.5pt + orange))
+  // #text(size: 2em, fill: orange)[#sym.star.op]
+]
+
+// #v(1em)
+
 === Thành Viên Nhóm
 
 - Nhóm 01.
@@ -24,7 +34,7 @@
 
 #pagebreak()
 
-== Nhóm 1
+== Nhóm 01
 
 #align(center)[
   #show table.cell: current_cell => {
