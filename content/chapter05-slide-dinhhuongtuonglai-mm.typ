@@ -16,12 +16,12 @@ Một Cách Tiếp Cận Mang Tính Hệ Thống, Nhân Bản.
 
 #place(
   bottom + left,
-  dy: -100pt,
+  dy: 25pt,
   heading(level: 3)[Xây Dựng Khung Quản Trị Và Pháp Lý Cho AI],
 )
 
-#align(center)[
-    #image("./diagrams/chapter05-xay-dung-khung-quan-tri-va-phap-ly-cho.png", width: auto)
+#align(right)[
+    #image("./diagrams/chapter05-xay-dung-khung-quan-tri-va-phap-ly-cho.svg", width: auto)
 ]
 
 #pagebreak()
