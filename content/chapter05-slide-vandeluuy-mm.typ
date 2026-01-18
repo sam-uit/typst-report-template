@@ -39,12 +39,12 @@ Tổ Chức, Quản Trị và Đồng Hành với AI như thế nào cho an toà
 
 #place(
   bottom + left,
-  dy: 0pt,
-  heading(level: 3)[Quyền Riêng Tư,\ Bảo Vệ Dữ Liệu\ và Uy Tín Số],
+  dy: -100pt,
+  heading(level: 3)[Quyền Riêng Tư,\ Bảo Vệ Dữ Liệu\ và Niềm Tin Số],
 )
 
-#align(center)[
-    #image("./diagrams/chapter05-quyen-rieng-tu-bao-ve-du-lieu-va-nang.png", width: auto)
+#align(right)[
+    #image("./diagrams/chapter05-quyen-rieng-tu-bao-ve-du-lieu-va-nang.svg", width: auto)
 ]
 
 #pagebreak()
