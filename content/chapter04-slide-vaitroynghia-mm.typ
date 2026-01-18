@@ -77,11 +77,11 @@ Là Những Cộng Sự Số Nhằm Nâng Tầm Năng Lực Cá Nhân.
 
 #slide[
   #place(
-    bottom + center,
-    dy: 100pt,
-    heading(level: 3)[Tác Động Đến Tư Duy Quản Trị Và Đào Tạo],
+    bottom + left,
+    dy: -150pt,
+    heading(level: 3)[Tác Động Đến \ Tư Duy Quản Trị Và Đào Tạo],
   )
-  #align(center)[
+  #align(right)[
     #image("./diagrams/chapter04-tacdongtuduy-01.svg", height: 120%)
   ]
 ]
