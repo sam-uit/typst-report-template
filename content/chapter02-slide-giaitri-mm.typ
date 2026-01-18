@@ -72,6 +72,15 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 
 #pagebreak()
 
+#place(
+  bottom + right,
+  dy: 0pt,
+  heading(level: 3)[YouTube],
+)
+#align(right)[
+    #image("./diagrams/chapter02-youtube.png", height: 100%)
+]
+
 #slide[
 === YouTube: Mạng Thần Kinh Đa Tầng (Neural Networks)
 - Dự đoán bạn muốn xem gì.
