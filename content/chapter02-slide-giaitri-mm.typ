@@ -55,6 +55,13 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
   dy: 150pt,
   heading(level: 3)[Netflix],
 )
+
+#place(
+    top + right,
+    dy: 0pt,
+    image("assets/Netflix_Logo_RGB.png", height: 4em)
+)
+
 #align(center)[
     #image("./diagrams/chapter02-netflix.svg", height: 120%)
 ]
