@@ -4,6 +4,14 @@
 == Lợi Ích Định Tính
 <loi-ich-dinh-tinh>
 
+#focus-slide[
+    #upper[Lợi Ích Định Tính]
+
+    Những Tác Động Sâu Sắc Trong Cuộc Sống.
+]
+
+#pagebreak()
+
 #align(center)[
     #image("./diagrams/chapter04-loiichdinhtinh2.svg", height: 100%)
 ]
