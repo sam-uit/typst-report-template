@@ -11,17 +11,17 @@
 #pagebreak()
 
 #align(center)[
-    #image("./diagrams/chapter04-tangnangsuat.svg", height: auto)
+    #image("./diagrams/chapter04-tangnangsuat.svg", height: 100%)
 ]
 
 #pagebreak()
 
 #align(center)[
-    #image("./diagrams/chapter04-tietkiemchiphi.svg", height: auto)
+    #image("./diagrams/chapter04-tietkiemchiphi.svg", height: 100%)
 ]
 
 #pagebreak()
 
 #align(center)[
-    #image("./diagrams/chapter04-tangtruongkinhte.svg", height: auto)
+    #image("./diagrams/chapter04-tangtruongkinhte.svg", width: 100%)
 ]
