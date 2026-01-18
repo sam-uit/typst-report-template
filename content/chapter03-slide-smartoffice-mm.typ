@@ -13,8 +13,14 @@ Mô Hình Hợp Tác: Con Người - Tác Nhân AI.
 
 #pagebreak()
 
-#align(center)[
-    #image("./diagrams/chapter03-smartoffice.png", width: auto)
+#place(
+  top + right,
+  dy: 20pt,
+  heading(level: 3, hanging-indent: auto)[AI Như Các Cộng Sự Số],
+)
+
+#align(right)[
+    #image("./diagrams/chapter03-smartoffice.svg", width: auto)
 ]
 
 #pagebreak()
