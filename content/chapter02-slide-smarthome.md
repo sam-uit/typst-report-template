@@ -63,34 +63,12 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 - **Cảm biến thông minh**
     - Phát hiện rò rỉ khí gas, khói, cháy nổ hoặc nước tràn.
         - Tự động ngắt nguồn điện.
-        - Gửi thông báo khẩn cấp. -->
-
-```{=typst}
-#pagebreak()
-```
-
-```{=typst}
-#align(center)[
-	#image("./diagrams/chapter02-nang-cao-chat-luong-song-va-an-toan-cho-1.png", width: 100%)
-]
-```
-
-### Nâng Cao Chất Lượng Sống và An Toàn Cho Con Người
+        - Gửi thông báo khẩn cấp.
 
 - **Trợ Lý Cá Nhân**
     - Theo dõi thói quen sinh hoạt.
     - Nhận diện bất thường hoặc tình huống khẩn cấp.
-    - Đề xuất giải pháp.
-
-```{=typst}
-#pagebreak()
-```
-
-```{=typst}
-#align(center)[
-	#image("./diagrams/chapter02-su-tien-hoa-cua-khong-gian-song-thong.png", width: 100%)
-]
-```
+    - Đề xuất giải pháp. -->
 
 ### Sự Tiến Hóa của Không Gian Sống Thông Minh
 
