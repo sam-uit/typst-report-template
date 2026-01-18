@@ -27,13 +27,13 @@ Một Cách Tiếp Cận Mang Tính Hệ Thống, Nhân Bản.
 #pagebreak()
 
 #place(
-  bottom + left,
-  dy: -100pt,
-  heading(level: 3)[Ưu Tiên Phát Triển Năng Lực Con Người Và Kỹ Năng AI],
+  top + left,
+  dy: 10pt,
+  heading(level: 3)[Ưu Tiên Phát Triển Năng Lực \ Con Người Và Kỹ Năng AI],
 )
 
-#align(center)[
-    #image("./diagrams/chapter05-uu-tien-phat-trien-nang-luc-con-nguoi.png", width: auto)
+#align(right)[
+    #image("./diagrams/chapter05-uu-tien-phat-trien-nang-luc-con-nguoi.svg", width: auto)
 ]
 
 #pagebreak()
