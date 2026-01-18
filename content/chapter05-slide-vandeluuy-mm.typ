@@ -16,11 +16,11 @@ Tổ Chức, Quản Trị và Đồng Hành với AI như thế nào cho an toà
 #place(
   bottom + left,
   dy: 0pt,
-  heading(level: 3)[Phụ Thuộc Dữ Liệu và Rủi Ro "Ảo Giác" AI],
+  heading(level: 3)[Phụ Thuộc Dữ Liệu \ và Rủi Ro "Ảo Giác" AI],
 )
 
 #align(center)[
-    #image("./diagrams/chapter05-phu-thuoc-du-lieu-va-rui-ro-ao-giac-ai.png", width: auto)
+    #image("./diagrams/chapter05-phu-thuoc-du-lieu-va-rui-ro-ao-giac-ai.svg", width: auto)
 ]
 
 #pagebreak()
