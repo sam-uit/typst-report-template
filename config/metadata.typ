@@ -15,7 +15,7 @@
   ),
   instructor: "Ths. Nguyễn Thị Thùy Trâm ",
   author: (
-    name: "Nhóm 02",
+    name: "Nhóm 01",
     members: (
       (
         name: lorem(3),
