@@ -50,7 +50,8 @@
 #include "content/chapter04-slide.typ"
 // #include "content/chapter04-slide-vaitroynghia.typ"
 #include "content/chapter04-slide-vaitroynghia-mm.typ"
-#include "content/chapter04-slide-loiichdinhluong.typ"
+// #include "content/chapter04-slide-loiichdinhluong.typ"
+#include "content/chapter04-slide-loiichdinhluong-mm.typ"
 #include "content/chapter04-slide-loiichdinhtinh.typ"
 
 // CHAPTER 05
