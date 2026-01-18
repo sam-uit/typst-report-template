@@ -48,7 +48,7 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 
 ```{=typst}
 #align(center)[
-	#image("./diagrams/chapter02-nang-cao-chat-luong-song-va-an-toan-cho.png", width: 100%)
+	#image("./diagrams/chapter02-nang-cao-chat-luong-song-va-an-toan-cho.png", width: auto)
 ]
 ```
 
