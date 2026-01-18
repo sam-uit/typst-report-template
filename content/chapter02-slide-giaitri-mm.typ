@@ -29,7 +29,7 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
   heading(level: 3)[Zing MP3],
 )
 
-#image("./diagrams/chapter02-sportify.png", width: auto)
+#image("./diagrams/chapter02-zingmp3.png", width: auto)
 ][
     #align(right)[
         #image("assets/chapter02-giaitri-zingmp3.png")
