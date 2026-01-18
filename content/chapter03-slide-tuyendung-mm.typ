@@ -32,8 +32,16 @@ AI Đem Tới Những Thách Thức và Cả Những Cơ Hội.
     #image("./diagrams/chapter03-ai-driven-employee-development.png", width: auto)
 ]
 
-=== Các Nền Tảng Thực Tế
-<cac-nen-tang-thuc-te>
+#pagebreak()
+
+#place(bottom + left, dx: 0pt, dy: 0pt)[
+  #heading(level: 3)[Các Nền Tảng Thực Tế]
+]
+
+#align(center)[
+    #image("./diagrams/chapter03-topcv-jobhopin.png", width: auto)
+]
+
 
 #align(center)[
     #image("./diagrams/chapter03-topcv-viet-nam.png", width: auto)
