@@ -38,11 +38,11 @@ Tối Ưu Hóa Hành Trình Mua Sắm và Tương Tác Tự Động. Từ Tìm K
 #pagebreak()
 
 #place(
-  bottom + left,
-  dy: -50pt,
+  top + right,
+  dy: 20pt,
   heading(level: 3)[Tìm Kiếm Và Thử Nghiệm Trực Quan],
 )
 
 #align(center)[
-    #image("./diagrams/chapter02-tim-kiem-va-thu-nghiem-truc-quan.png", width: auto)
+    #image("./diagrams/chapter02-tim-kiem-va-thu-nghiem-truc-quan.svg", height: auto)
 ]
