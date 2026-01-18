@@ -17,5 +17,11 @@
 #pagebreak()
 
 #align(center)[
+    #image("./diagrams/chapter04-tietkiemchiphi.svg", height: auto)
+]
+
+#pagebreak()
+
+#align(center)[
     #image("./diagrams/chapter04-tangtruongkinhte.svg", height: auto)
 ]
