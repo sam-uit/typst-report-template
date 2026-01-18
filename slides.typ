@@ -48,7 +48,8 @@
 #include "content/chapter03-slide-tuyendung.typ"
 // CHAPTER 04
 #include "content/chapter04-slide.typ"
-#include "content/chapter04-slide-vaitroynghia.typ"
+// #include "content/chapter04-slide-vaitroynghia.typ"
+#include "content/chapter04-slide-vaitroynghia-mm.typ"
 #include "content/chapter04-slide-loiichdinhluong.typ"
 #include "content/chapter04-slide-loiichdinhtinh.typ"
 
