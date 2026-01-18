@@ -64,7 +64,8 @@
 
 // CHAPTER 06
 #include "content/chapter06-slide.typ"
-#include "content/chapter06-slide-ailathuctien.typ"
+// #include "content/chapter06-slide-ailathuctien.typ"
+#include "content/chapter06-slide-ailathuctien-mm.typ"
 // #include "content/chapter06-slide-aitrongdoisong.typ"
 // #include "content/chapter06-slide-aitrongcongviec.typ"
 // #include "content/chapter06-slide-danhgiachung.typ"
