@@ -59,6 +59,11 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 ```
 
 ```{=typst}
+#place(
+  top + left,
+  dy: 200pt,
+  heading(level: 3)[Duolingo],
+)
 #align(center)[
 	#image("./diagrams/chapter02-duolingo.svg", width: auto)
 ]
@@ -78,6 +83,10 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 ```
 
 ```{=typst}
+#place(
+  bottom + right,
+  heading(level: 3)[AI - Người Đồng Hành Tin Cậy],
+)
 #align(center)[
 	#image("./diagrams/chapter02-nguoi-dong-hanh-khong-phai-nguoi-thay.svg", width: auto) 
 ]
