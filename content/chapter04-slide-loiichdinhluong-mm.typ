@@ -4,6 +4,14 @@
 == Lợi Ích Định Lượng
 <loi-ich-dinh-luong>
 
+#focus-slide[
+    #upper[Lợi Ích Định Lượng]
+
+    Các Thay Đổi Đo Đếm Được Từ Ứng Dụng AI.
+]
+
+#pagebreak()
+
 #align(center)[
     #image("./diagrams/chapter04-loiichdinhluong2.svg", height: 100%)
 ]
