@@ -31,6 +31,11 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 ```
 
 ```{=typst}
+#place(
+  bottom + left,
+  dy: -50pt,
+  heading(level: 3, hanging-indent: auto)[Elsa Speak],
+)
 #align(center)[
 	#image("./diagrams/chapter02-elsa-speak.svg", width: auto)
 ]
