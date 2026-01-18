@@ -13,3 +13,9 @@
 #align(center)[
     #image("./diagrams/chapter04-tangnangsuat.svg", height: auto)
 ]
+
+#pagebreak()
+
+#align(center)[
+    #image("./diagrams/chapter04-tangtruongkinhte.svg", height: auto)
+]
