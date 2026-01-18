@@ -10,7 +10,15 @@
 AI Đem Tới Những Thách Thức và Cả Những Cơ Hội.
 ]
 
-=== AI Trong Tuyển & Nhân Sự
+#pagebreak()
+
+#place(bottom + left, dx: 0pt, dy: 0pt)[
+  #heading(level: 3)[AI Trong Tuyển & Nhân Sự]
+]
+
+#align(center)[
+    #image("./diagrams/chapter03-tuyendung.png", width: auto)
+]
 
 #align(center)[
     #image("./diagrams/chapter03-ai-assisted-career-profiling.png", width: auto)
