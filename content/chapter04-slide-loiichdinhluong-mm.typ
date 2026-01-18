@@ -7,3 +7,9 @@
 #align(center)[
     #image("./diagrams/chuong04-loiichdinhluong.png", height: auto)
 ]
+
+#pagebreak()
+
+#align(center)[
+    #image("./diagrams/chapter04-tangnangsuat.svg", height: auto)
+]
