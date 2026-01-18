@@ -220,29 +220,37 @@ def parse_and_convert(filepath, dry_run=True, seen_slugs=None):
             f.writelines(new_lines)
         print(f"Updated {filepath}")
 
-def process_all(dry_run=True):
-    # Search for md files in the same directory as script (content/)
-    files = glob.glob(os.path.join(BASE_DIR, "chapter0*-slide*.md"))
-    files.sort()
+def process_all(dry_run=True, specific_file=None):
+    if specific_file:
+        files = [specific_file]
+    else:
+        # Search for md files in the same directory as script (content/)
+        files = glob.glob(os.path.join(BASE_DIR, "chapter0*-slide*.md"))
+        files.sort()
     
     for filepath in files:
         if "loiichdinhluong" in filepath: continue
+        # Verify file exists if specific_file
+        if specific_file and not os.path.exists(filepath):
+            print(f"File not found: {filepath}")
+            continue
+            
         parse_and_convert(filepath, dry_run=dry_run)
 
 if __name__ == "__main__":
-    import sys
-    # Default to False (Execution) if user runs this script now, 
-    # but let's allow CLI arg or defaulting to dry run for safety if called without args?
-    # User asked for the script to be provided.
-    # Usually safer to default to Dry Run unless explicit.
-    # But for "Agent automation", I often hardcode False.
-    # I'll default to True (Dry Run) and print instruction.
+    import argparse
     
-    dry_run = True
-    if len(sys.argv) > 1 and sys.argv[1] == "--run":
-        dry_run = False
-        print("Running in EXECUTION mode...")
-    else:
+    parser = argparse.ArgumentParser(description="Convert Markdown lists to Mermaid diagrams.")
+    parser.add_argument("--run", action="store_true", help="Execute changes (disable dry run)")
+    parser.add_argument("-i", "--input", help="Specific file to process")
+    
+    args = parser.parse_args()
+    
+    dry_run = not args.run
+    
+    if dry_run:
         print("Running in DRY RUN mode. Use --run to execute changes.")
+    else:
+        print("Running in EXECUTION mode...")
         
-    process_all(dry_run=dry_run)
+    process_all(dry_run=dry_run, specific_file=args.input)
