@@ -204,7 +204,7 @@ def parse_and_convert(filepath, dry_run=True, seen_slugs=None):
                         print(f"Error running mmdc for {mmd_path}: {e}")
 
                 # Thêm vào phần typst code cho file .md 
-                replacement_text = f"```{'{=typst}'}\n#align(center)[\n\t#image(\"{png_relative_path}\", width: 100%)\n]\n```\n\n{''.join(current_raw_block)}"
+                replacement_text = f"```{'{=typst}'}\n#align(center)[\n\t#image(\"{png_relative_path}\", width: auto)\n]\n```\n\n{''.join(current_raw_block)}"
                 new_lines.append(replacement_text)
                 # new_lines.append("\n") 
                 
