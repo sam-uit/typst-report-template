@@ -13,6 +13,12 @@ Agentic Workflows: Từ "Prompt-Response" (Hỏi - Đáp) tới "Agentic Workflo
 
 #pagebreak()
 
+#place(
+  bottom + right,
+  dy: 20pt,
+  heading(level: 3, hanging-indent: auto)[Agentic Workflows],
+)
+
 #align(center)[
     #image("./diagrams/chapter03-xu-huong-chung-agentic-workflows.svg", width: 100%)
 ]
