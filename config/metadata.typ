@@ -31,7 +31,7 @@
     title: "AI TRONG ĐỜI SỐNG VÀ CÔNG VIỆC",
     subtitle: "Ứng Dụng, Giá Trị và Lưu Ý",
     type: "Luận Án",
-    date: "TP. Hồ Chí Minh, Tháng 01 Năm 2026",
+    date: "Tháng 01 Năm 2026",
     duration: "15 phút",
   ),
   company: "A Limited Company Name",
