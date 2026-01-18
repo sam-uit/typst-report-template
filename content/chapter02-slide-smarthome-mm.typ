@@ -26,11 +26,11 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 
 #place(
   top + left,
-  dy: 150pt,
+  dy: 100pt,
   heading(level: 3)[Tự Động và Tối Ưu],
 )
 #align(center)[
-    #image("./diagrams/chapter02-tu-dong-hoa-va-toi-uu-hoa-khong-gian.png", width: auto)
+    #image("./diagrams/chapter02-tu-dong-hoa-va-toi-uu-hoa-khong-gian.svg", width: auto)
 ]
 
 #pagebreak()
