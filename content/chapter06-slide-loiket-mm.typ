@@ -15,9 +15,9 @@ AI Là Công Cụ Chiến lược, Có Khả Năng Tạo Ra Giá Trị Lớn N�
 #pagebreak()
 
 #place(
-    bottom + left,
-    dy: -100pt,
-    heading(level: 3)[AI Là Hiện Tại, Xu Thế và Tương Lai],
+    top + left,
+    dy: 150pt,
+    heading(level: 3)[AI Phản Ánh Xã Hội],
 )
 
 #align(center)[
