@@ -42,9 +42,9 @@
 #include "content/chapter03-slide-smartoffice-mm.typ"
 // #include "content/chapter03-slide-devops.typ"
 #include "content/chapter03-slide-devops-mm.typ"
-#include "content/chapter03-slide-healthcare.typ"
-#include "content/chapter03-slide-marketing.typ"
-#include "content/chapter03-slide-sanxuat.typ"
+// #include "content/chapter03-slide-healthcare.typ"
+// #include "content/chapter03-slide-marketing.typ"
+// #include "content/chapter03-slide-sanxuat.typ"
 #include "content/chapter03-slide-tuyendung.typ"
 // CHAPTER 04
 #include "content/chapter04-slide.typ"
