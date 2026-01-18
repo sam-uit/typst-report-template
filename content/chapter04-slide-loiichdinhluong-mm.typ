@@ -5,7 +5,7 @@
 <loi-ich-dinh-luong>
 
 #align(center)[
-    #image("./diagrams/chuong04-loiichdinhluong2.svg", height: auto)
+    #image("./diagrams/chuong04-loiichdinhluong2.svg", height: 100%)
 ]
 
 #pagebreak()
