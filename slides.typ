@@ -41,6 +41,31 @@
 #include "content/chapter06-slide-ailathuctien-mm.typ"
 #include "content/chapter06-slide-loiket-mm.typ"
 
+// MARK: GROUP MD
+// #include "content/chapter00-slide.typ"
+// #include "content/chapter01-slide.typ"
+// #include "content/chapter01-slide-ailagi.typ"
+// #include "content/chapter02-slide.typ"
+// #include "content/chapter02-slide-smarthome.typ"
+// #include "content/chapter02-slide-giaitri.typ"
+// #include "content/chapter02-slide-giaoduc.typ"
+// #include "content/chapter02-slide-thuongmai.typ"
+// #include "content/chapter02-slide-giaothong.typ"
+// #include "content/chapter03-slide.typ"
+// #include "content/chapter03-slide-smartoffice.typ"
+// #include "content/chapter03-slide-devops.typ"
+// #include "content/chapter03-slide-tuyendung.typ"
+// #include "content/chapter04-slide.typ"
+// #include "content/chapter04-slide-vaitroynghia.typ"
+// #include "content/chapter04-slide-loiichdinhluong.typ"
+// #include "content/chapter04-slide-loiichdinhtinh.typ"
+// #include "content/chapter05-slide.typ"
+// #include "content/chapter05-slide-vandeluuy.typ"
+// #include "content/chapter05-slide-dinhhuongtuonglai.typ"
+// #include "content/chapter06-slide.typ"
+// #include "content/chapter06-slide-ailathuctien.typ"
+// #include "content/chapter06-slide-loiket.typ"
+
 // MARK: - Kết Thúc
 
 // = Q&A
