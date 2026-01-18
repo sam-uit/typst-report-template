@@ -37,16 +37,16 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
     ]
 ]
 
-#pagebreak()
+// #pagebreak()
 
-#place(
-  top + left,
-  dy: 150pt,
-  heading(level: 3)[Sportify],
-)
-#align(center)[
-    #image("./diagrams/chapter02-sportify.svg", width: auto)
-]
+// #place(
+//   top + left,
+//   dy: 150pt,
+//   heading(level: 3)[Sportify],
+// )
+// #align(center)[
+//     #image("./diagrams/chapter02-sportify.svg", width: auto)
+// ]
 
 #pagebreak()
 
