@@ -15,25 +15,35 @@
 ]
 
 #align(center)[
-    #image("./diagrams/chapter04-loiichdinhtinh-canhanhoa.svg", height: auto)
+    #image("./diagrams/chapter04-loiichdinhtinh-canhanhoa.svg", width: 100%)
 ]
 
 #pagebreak()
 
-#place(top + left, dy: 20pt)[
+#place(top + left, dy: 150pt)[
     #heading(level: 3)[Giải Phóng Sáng Tạo]
 ]
 
 #align(center)[
-    #image("./diagrams/chapter04-loiichdinhtinh-giaiphongsangtao.svg", height: auto)
+    #image("./diagrams/chapter04-loiichdinhtinh-giaiphongsangtao.svg", width: 100%)
 ]
 
 #pagebreak()
 
 #place(bottom + right)[
-    #heading(level: 3)[Tăng Trưởng Kinh Tế]
+    #heading(level: 3)[Củng Cố Niềm Tin]
 ]
 
 #align(center)[
-    #image("./diagrams/chapter04-tangtruongkinhte.svg", width: 100%)
+    #image("./diagrams/chapter04-loiichdinhtinh-cungconiemtin.svg", width: 100%)
+]
+
+#pagebreak()
+
+#place(bottom + right)[
+    #heading(level: 3)[Thay Đổi Văn Hóa]
+]
+
+#align(center)[
+    #image("./diagrams/chapter04-loiichdinhtinh-thaydoivanhoa.svg", width: 100%)
 ]
