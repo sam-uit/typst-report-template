@@ -13,8 +13,14 @@ Nền Kinh Tế Chia Sẻ và AI Trên Mọi Nẻo Đường.
 
 #pagebreak()
 
+#place(
+    bottom + right,
+    dy: 0pt,
+    heading(level: 3)[AI Trong Giao Thông],
+)
+
 #align(center)[
-    #image("./diagrams/chapter02-ai-trong-di-chuyen-va-giao-thong.png", width: auto)
+    #image("./diagrams/chapter02-ai-trong-di-chuyen-va-giao-thong.svg", width: auto)
 ]
 
 #pagebreak()
