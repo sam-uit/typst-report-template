@@ -103,17 +103,7 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
         - Điều khiển thông minh thông qua giọng nói.
         - FPT Play: "Trái tim", kết hợp giải trí và điều khiển SmartHome. -->
 
-```{=typst}
-#pagebreak()
-```
-
-```{=typst}
-#align(center)[
-	#image("./diagrams/chapter02-he-sinh-thai-matter-va-google-amazon.png", width: 100%)
-]
-```
-
-### Hệ Sinh Thái Matter và Google/Amazon
+<!-- ### Hệ Sinh Thái Matter và Google/Amazon
 
 - **Matter**
     - Hệ sinh thái IoT toàn diện.
@@ -121,8 +111,4 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 
 - Sản phẩm:
     - Google Nest
-    - Amazon Echo
-
-```{=typst}
-#pagebreak()
-```
+    - Amazon Echo -->
