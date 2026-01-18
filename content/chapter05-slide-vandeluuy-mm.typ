@@ -51,10 +51,10 @@ Tổ Chức, Quản Trị và Đồng Hành với AI như thế nào cho an toà
 
 #place(
   bottom + left,
-  dy: 0pt,
+  dy: -100pt,
   heading(level: 3)[Thao Túng Thông Tin,\ Deepfake và Xói Mòn\ Nhận Thức Xã Hội],
 )
 
 #align(center)[
-    #image("./diagrams/chapter05-thao-tung-thong-tin-deepfake-va-xoi-mon.png", width: auto)
+    #image("./diagrams/chapter05-thao-tung-thong-tin-deepfake-va-xoi-mon.svg", width: auto)
 ]
