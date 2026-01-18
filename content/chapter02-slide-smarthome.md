@@ -81,7 +81,7 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 
 ```{=typst}
 #align(center)[
-	#image("./diagrams/chapter02-lumi-rang-dong-va-fpt.png", width: 100%)
+	#image("./diagrams/chapter02-lumi-rang-dong-va-fpt.png", width: auto)
 ]
 ```
 
