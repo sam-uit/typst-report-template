@@ -14,6 +14,11 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 ```
 
 ```{=typst}
+#place(
+  top + left,
+  dy: 100pt,
+  heading(level: 3, hanging-indent: auto)[VioEdu],
+)
 #align(center)[
 	#image("./diagrams/chapter02-vioedu.svg", width: auto)
 ]
