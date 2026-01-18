@@ -30,7 +30,7 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
   heading(level: 3)[Zing MP3],
 )
 
-#image("./diagrams/chapter02-zingmp3.svg", width: auto)
+#image("./diagrams/chapter02-zingmp3.svg", height: 110%)
 ][
     #align(right)[
         #image("assets/chapter02-giaitri-zingmp3.png")
@@ -56,18 +56,18 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
   heading(level: 3)[Netflix],
 )
 #align(center)[
-    #image("./diagrams/chapter02-netflix.svg", width: auto)
+    #image("./diagrams/chapter02-netflix.svg", height: 120%)
 ]
 
 #pagebreak()
 
 #place(
-  top + left,
-  dy: 150pt,
+  bottom + right,
+  dy: 0pt,
   heading(level: 3)[TikTok],
 )
-#align(center)[
-    #image("./diagrams/chapter02-tiktok.png", width: auto)
+#align(right)[
+    #image("./diagrams/chapter02-tiktok.svg", height: 100%)
 ]
 
 #pagebreak()
