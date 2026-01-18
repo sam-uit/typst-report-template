@@ -17,7 +17,8 @@
 // #outline-slide()
 
 // MARK: - Nội Dung Chính
-#include "content/chapter00-slide.typ"
+// #include "content/chapter00-slide.typ"
+#include "content/chapter00-slide-mm.typ"
 
 // CHAPTER 01
 #include "content/chapter01-slide.typ"
@@ -45,7 +46,9 @@
 // #include "content/chapter03-slide-healthcare.typ"
 // #include "content/chapter03-slide-marketing.typ"
 // #include "content/chapter03-slide-sanxuat.typ"
-#include "content/chapter03-slide-tuyendung.typ"
+// #include "content/chapter03-slide-tuyendung.typ"
+#include "content/chapter03-slide-tuyendung-mm.typ"
+
 // CHAPTER 04
 #include "content/chapter04-slide.typ"
 // #include "content/chapter04-slide-vaitroynghia.typ"
