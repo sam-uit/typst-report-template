@@ -81,11 +81,11 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 
 ```{=typst}
 #align(center)[
-	#image("./diagrams/chapter02-lumi-rang-dong-va-fpt.png", width: auto)
+	#image("./diagrams/chapter02-lumi-rang-dong-va-fpt.svg", width: auto)
 ]
 ```
 
-### Lumi, Rạng Đông và FPT
+<!-- ### Lumi, Rạng Đông và FPT
 
 - **Lumi Việt Nam**
     - Tự nhận biết trời tối để đóng rèm, bật đèn.
@@ -98,22 +98,10 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
         - Điều chỉnh phổ ánh sáng và cường độ theo nhịp sinh học.
         - Mô phỏng ánh sáng tự nhiên.
 
-```{=typst}
-#pagebreak()
-```
-
-```{=typst}
-#align(center)[
-	#image("./diagrams/chapter02-lumi-rang-dong-va-fpt-1.png", width: 100%)
-]
-```
-
-### Lumi, Rạng Đông và FPT
-
 - **FPT**
     - **FPT Smart Home**
         - Điều khiển thông minh thông qua giọng nói.
-        - FPT Play: "Trái tim", kết hợp giải trí và điều khiển SmartHome.
+        - FPT Play: "Trái tim", kết hợp giải trí và điều khiển SmartHome. -->
 
 ```{=typst}
 #pagebreak()
