@@ -12,12 +12,12 @@ AI Đem Tới Những Thách Thức và Cả Những Cơ Hội.
 
 #pagebreak()
 
-#place(bottom + left, dx: 0pt, dy: 0pt)[
-  #heading(level: 3)[AI Trong Tuyển & Nhân Sự]
+#place(bottom + right, dx: 0pt, dy: 0pt)[
+  #heading(level: 3)[AI Trong Tuyển Dụng & Nhân Sự]
 ]
 
 #align(center)[
-    #image("./diagrams/chapter03-tuyendung.png", width: auto)
+    #image("./diagrams/chapter03-tuyendung.svg", width: auto)
 ]
 
 #pagebreak()
