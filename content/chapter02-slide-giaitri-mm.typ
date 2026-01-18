@@ -56,7 +56,7 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
   heading(level: 3)[Netflix],
 )
 #align(center)[
-    #image("./diagrams/chapter02-netflix.png", width: auto)
+    #image("./diagrams/chapter02-netflix.svg", width: auto)
 ]
 
 #pagebreak()
