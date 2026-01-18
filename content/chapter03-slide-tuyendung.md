@@ -4,6 +4,14 @@
 
 ## Tuyển Dụng & Nhân Sự
 
+```{=typst}
+#focus-slide[
+#upper[Tuyển Dụng & Nhân Sự]
+
+AI Đem Tới Những Thách Thức và Cả Những Cơ Hội.
+]
+```
+
 ### AI-assisted Career Profiling
 
 - Xây dựng hồ sơ năng lực cá nhân.
