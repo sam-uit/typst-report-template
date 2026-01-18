@@ -42,7 +42,7 @@ numbering: none
 
 #slide(composer: (65%, 35%))[
   #figure(
-    image("assets/antigravity-manager.png", height: 80%),
+    image("assets/editor-open-agent-manager.png", height: 80%),
     caption: [Google Antigravity],
     numbering: none
   )
