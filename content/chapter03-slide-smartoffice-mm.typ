@@ -20,11 +20,11 @@ Mô Hình Hợp Tác: Con Người - Tác Nhân AI.
 #pagebreak()
 
 #slide(composer: (35%, 65%))[
-Trợ lý thông minh:
-- Viết bản nháp email, báo cáo, trình chiếu trong vài giây.
-- Tổng hợp thông tin từ tài liệu nội bộ.
-- Tóm tắt cuộc họp hoặc các văn bản dài.
-- Phân tích dữ liệu hoặc báo cáo.
+=== MISA ONE AI
+
+- Phân tích dữ liệu.
+- Tạo báo cáo tài chính.
+- Và nhiều hơn thế.
 
 ][
 #figure(
@@ -42,12 +42,12 @@ numbering: none
     numbering: none
   )
 ][
-=== Agentic AI - Trợ Lý AI Có Tri Thức
+=== AgentSpace - Trợ Lý AI Cho Môi Trường Doanh Nghiệp
 
-Tác vụ cụ thể:
-- Agents
+- Tác vụ cụ thể:
+  - Agents
 
-Tự động hóa quy trình:
-- Agents Orchestration
+- Tự động hóa quy trình:
+  - Agents Orchestration
 
 ]
