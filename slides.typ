@@ -18,8 +18,12 @@
 
 // MARK: - Nội Dung Chính
 #include "content/chapter00-slide.typ"
+
+// CHAPTER 01
 #include "content/chapter01-slide.typ"
 #include "content/chapter01-slide-ailagi.typ"
+
+// CHAPTER 02
 #include "content/chapter02-slide.typ"
 // #include "content/chapter02-slide-smarthome.typ"
 #include "content/chapter02-slide-smarthome-mm.typ"
@@ -31,6 +35,8 @@
 #include "content/chapter02-slide-thuongmai-mm.typ"
 // #include "content/chapter02-slide-giaothong.typ"
 #include "content/chapter02-slide-giaothong-mm.typ"
+
+// CHAPTER 03
 #include "content/chapter03-slide.typ"
 // #include "content/chapter03-slide-smartoffice.typ"
 #include "content/chapter03-slide-smartoffice-mm.typ"
@@ -40,13 +46,18 @@
 #include "content/chapter03-slide-marketing.typ"
 #include "content/chapter03-slide-sanxuat.typ"
 #include "content/chapter03-slide-tuyendung.typ"
+// CHAPTER 04
 #include "content/chapter04-slide.typ"
 #include "content/chapter04-slide-vaitroynghia.typ"
 #include "content/chapter04-slide-loiichdinhluong.typ"
 #include "content/chapter04-slide-loiichdinhtinh.typ"
+
+// CHAPTER 05
 #include "content/chapter05-slide.typ"
 #include "content/chapter05-slide-vandeluuy.typ"
 #include "content/chapter05-slide-dinhhuongtuonglai.typ"
+
+// CHAPTER 06
 #include "content/chapter06-slide.typ"
 #include "content/chapter06-slide-ailathuctien.typ"
 // #include "content/chapter06-slide-aitrongdoisong.typ"
