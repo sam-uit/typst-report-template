@@ -14,13 +14,13 @@ Tối Ưu Hóa Hành Trình Mua Sắm và Tương Tác Tự Động. Từ Tìm K
 #pagebreak()
 
 #place(
-  bottom + left,
-  dy: -50pt,
-  heading(level: 3)[Cá Nhân Hóa Hành Trình Mua Sắm],
+  top + left,
+  dy: 150pt,
+  heading(level: 3)[Cá Nhân Hóa \ Hành Trình Mua Sắm],
 )
 
 #align(center)[
-    #image("./diagrams/chapter02-ca-nhan-hoa-hanh-trinh-va-cong-cu-goi-y.png", width: auto)
+    #image("./diagrams/chapter02-ca-nhan-hoa-hanh-trinh-va-cong-cu-goi-y.svg", width: auto)
 ]
 
 #pagebreak()
