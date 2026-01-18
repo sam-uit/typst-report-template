@@ -78,7 +78,7 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
   heading(level: 3)[YouTube],
 )
 #align(right)[
-    #image("./diagrams/chapter02-youtube.png", height: 100%)
+    #image("./diagrams/chapter02-youtube2.svg", height: auto)
 ]
 
 #slide[
