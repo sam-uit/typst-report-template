@@ -32,7 +32,7 @@ Tổ Chức, Quản Trị và Đồng Hành với AI như thế nào cho an toà
 )
 
 #align(center)[
-    #image("./diagrams/chapter05-tac-dong-den-viec-lam-va-ky-nang-lao.png", width: auto)
+    #image("./diagrams/chapter05-tac-dong-den-viec-lam-va-ky-nang-lao.svg", width: auto)
 ]
 
 #pagebreak()
