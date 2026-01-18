@@ -55,7 +55,7 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 
 ```{=typst}
 #align(center)[
-	#image("./diagrams/chapter02-sportify.png", width: 100%)
+	#image("./diagrams/chapter02-sportify.png", width: auto)
 ]
 ```
 
@@ -73,7 +73,7 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 
 ```{=typst}
 #align(center)[
-	#image("./diagrams/chapter02-netflix.png", width: 100%)
+	#image("./diagrams/chapter02-netflix.png", width: auto)
 ]
 ```
 
@@ -100,7 +100,7 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 
 ```{=typst}
 #align(center)[
-	#image("./diagrams/chapter02-tiktok.png", width: 100%)
+	#image("./diagrams/chapter02-tiktok.png", width: auto)
 ]
 ```
 
