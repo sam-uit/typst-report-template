@@ -66,6 +66,13 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
   dy: 0pt,
   heading(level: 3)[TikTok],
 )
+
+#place(
+    bottom + right,
+    dy: -100pt,
+    image("assets/TIKTOK_SOCIAL_ICON_CIRCLE_BLACK.png", height: 4em)
+)
+
 #align(right)[
     #image("./diagrams/chapter02-tiktok.svg", height: 100%)
 ]
