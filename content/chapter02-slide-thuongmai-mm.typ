@@ -26,13 +26,13 @@ Tối Ưu Hóa Hành Trình Mua Sắm và Tương Tác Tự Động. Từ Tìm K
 #pagebreak()
 
 #place(
-  top + left,
-  dy: 150pt,
-  heading(level: 3)[Chatbot CSKH và Tương tác Tự động 24/7],
+  top + right,
+  dy: 20pt,
+  heading(level: 3)[Chatbot CSKH],
 )
 
-#align(center)[
-    #image("./diagrams/chapter02-chatbot-cskh-va-tuong-tac-tu-dong-24-7.png", width: auto)
+#align(right)[
+    #image("./diagrams/chapter02-chatbot.svg", height: 110%)
 ]
 
 #pagebreak()
