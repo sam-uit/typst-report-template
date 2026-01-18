@@ -22,7 +22,8 @@
 
 // CHAPTER 01
 #include "content/chapter01-slide.typ"
-#include "content/chapter01-slide-ailagi.typ"
+// #include "content/chapter01-slide-ailagi.typ"
+#include "content/chapter01-slide-ailagi-mm.typ"
 
 // CHAPTER 02
 #include "content/chapter02-slide.typ"
