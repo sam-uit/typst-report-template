@@ -17,7 +17,7 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 #place(
   top + left,
   dy: 100pt,
-  heading(level: 3, hanging-indent: auto)[VioEdu],
+  heading(level: 3)[VioEdu],
 )
 #align(center)[
 	#image("./diagrams/chapter02-vioedu.svg", width: auto)
@@ -39,7 +39,7 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 #place(
   bottom + left,
   dy: -50pt,
-  heading(level: 3, hanging-indent: auto)[Elsa Speak],
+  heading(level: 3)[Elsa Speak],
 )
 #align(center)[
 	#image("./diagrams/chapter02-elsa-speak.svg", width: auto)
