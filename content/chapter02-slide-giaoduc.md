@@ -32,7 +32,7 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 
 ```{=typst}
 #align(center)[
-	#image("./diagrams/chapter02-elsa-speak.png", width: 100%)
+	#image("./diagrams/chapter02-elsa-speak.png", width: auto)
 ]
 ```
 
@@ -50,7 +50,7 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 
 ```{=typst}
 #align(center)[
-	#image("./diagrams/chapter02-duolingo.png", width: 100%)
+	#image("./diagrams/chapter02-duolingo.png", width: auto)
 ]
 ```
 
