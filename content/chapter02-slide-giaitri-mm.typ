@@ -24,12 +24,13 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
 ]
 #slide(composer: (70%, auto))[
 #place(
-  top + left,
-  dy: 150pt,
+  bottom + right,
+  dy: -100pt,
+  dx: -50pt,
   heading(level: 3)[Zing MP3],
 )
 
-#image("./diagrams/chapter02-zingmp3.png", width: auto)
+#image("./diagrams/chapter02-zingmp3.svg", width: auto)
 ][
     #align(right)[
         #image("assets/chapter02-giaitri-zingmp3.png")
