@@ -69,7 +69,8 @@
 // #include "content/chapter06-slide-aitrongdoisong.typ"
 // #include "content/chapter06-slide-aitrongcongviec.typ"
 // #include "content/chapter06-slide-danhgiachung.typ"
-#include "content/chapter06-slide-loiket.typ"
+// #include "content/chapter06-slide-loiket.typ"
+#include "content/chapter06-slide-loiket-mm.typ"
 
 // MARK: - Kết Thúc
 
