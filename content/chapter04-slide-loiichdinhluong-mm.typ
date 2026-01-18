@@ -5,5 +5,5 @@
 <loi-ich-dinh-luong>
 
 #align(center)[
-    #image("./diagrams/chuong04-loiichdinhluong.png", height: 110%)
+    #image("./diagrams/chuong04-loiichdinhluong.png", height: auto)
 ]
