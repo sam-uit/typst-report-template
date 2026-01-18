@@ -5,6 +5,7 @@
 
 == Lời Cảm Ơn
 
+#slide(composer: (70%, 30%))[
 === Giảng Viên
 
 - #text(weight: 500, data.instructor)
@@ -15,10 +16,13 @@
 
 - #data.university.name
 - Trung Tâm Phát Triển Công Nghệ Thông Tin.
-
+][
 === Thành Viên Nhóm
 
 - Nhóm 01.
+]
+
+#pagebreak()
 
 == Nhóm 1
 
