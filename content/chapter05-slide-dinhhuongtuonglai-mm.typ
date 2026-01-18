@@ -40,10 +40,10 @@ Một Cách Tiếp Cận Mang Tính Hệ Thống, Nhân Bản.
 
 #place(
   bottom + left,
-  dy: -100pt,
-  heading(level: 3)[Xây Dựng Văn Hóa Số Và Đạo Đức AI],
+  dy: -50pt,
+  heading(level: 3)[Xây Dựng Văn Hóa Số \ Và Đạo Đức AI],
 )
 
 #align(center)[
-    #image("./diagrams/chapter05-xay-dung-van-hoa-so-va-dao-duc-ai.png", width: auto)
+    #image("./diagrams/chapter05-xay-dung-van-hoa-so-va-dao-duc-ai.svg", height: auto)
 ]
