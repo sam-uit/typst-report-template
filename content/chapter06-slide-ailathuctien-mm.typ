@@ -17,9 +17,9 @@ Trí Tuệ Nhân Tạo Đã và Đang Đồng Hành Với Chúng Ta Trong Mọi 
 #place(
   bottom + left,
   dy: -100pt,
-  heading(level: 3)[AI Không Còn Là Lý Thuyết Hay Tương Lai Xa],
+  heading(level: 3)[AI Là Thực Tế Hiện Tại],
 )
 
-#align(center)[
-    #image("./diagrams/chapter06-ai-khong-con-la-ly-thuyet-hay-tuong-lai.png", width: auto)
+#align(right)[
+    #image("./diagrams/chapter06-ai-hien-huu.svg", width: auto)
 ]
