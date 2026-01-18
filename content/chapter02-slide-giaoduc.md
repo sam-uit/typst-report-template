@@ -50,7 +50,7 @@ Cá Nhân Hóa Lộ Trình Học Tập. Sự Chuyển Dịch Vai Trò Của Ngư
 
 ```{=typst}
 #align(center)[
-	#image("./diagrams/chapter02-duolingo.png", width: auto)
+	#image("./diagrams/chapter02-duolingo.svg", width: auto)
 ]
 ```
 
