@@ -230,6 +230,8 @@
             indent: (0em, 1em),
             vspace: (.4em,),
             numbered: (numbered,),
+            // Giữ nguyên tiêu đề bao gồm định dạng và số lượng từ
+            short-heading: false,
             depth: 1,
             ..args.named(),
           ),
