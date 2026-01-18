@@ -14,7 +14,7 @@ Mô Hình Hợp Tác: Con Người - Tác Nhân AI.
 #pagebreak()
 
 #align(center)[
-    #image("./diagrams/chapter03-tu-dong-hoa-tac-vu-tri-thuc.png", width: auto)
+    #image("./diagrams/chapter03-smartoffice.png", width: auto)
 ]
 
 #pagebreak()
