@@ -30,7 +30,7 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 ```
 
 
-### Tự Động Hóa và Tối Ưu Hóa Không Gian Sống (Smart Home)
+<!-- ### Tự Động Hóa và Tối Ưu Hóa Không Gian Sống (Smart Home)
 
 - **Tự động hóa**
     - Bật đèn khi mở cửa.
@@ -40,7 +40,7 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 - **Tối ưu hóa**
     - Sử dụng năng lượng.
     - Sử dụng thời gian.
-    - Sử dụng tài nguyên.
+    - Sử dụng tài nguyên. -->
 
 ```{=typst}
 #pagebreak()
@@ -48,11 +48,11 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 
 ```{=typst}
 #align(right)[
-	#image("./diagrams/chapter02-nang-cao-chat-luong-song-va-an-toan-cho.svg", height: 120%)
+	#image("./diagrams/chapter02-nang-cao-chat-luong-song-va-an-toan-cho.svg", height: auto)
 ]
 ```
 
-### Nâng Cao Chất Lượng Sống và An Toàn Cho Con Người
+<!-- ### Nâng Cao Chất Lượng Sống và An Toàn Cho Con Người
 
 - **Camera thông minh**
     - Nhận diện khuôn mặt
@@ -63,7 +63,7 @@ Từ "Điều Khiển Mệnh Lệnh" đến "Trí Tuệ Môi Trường" (Ambient
 - **Cảm biến thông minh**
     - Phát hiện rò rỉ khí gas, khói, cháy nổ hoặc nước tràn.
         - Tự động ngắt nguồn điện.
-        - Gửi thông báo khẩn cấp.
+        - Gửi thông báo khẩn cấp. -->
 
 ```{=typst}
 #pagebreak()
