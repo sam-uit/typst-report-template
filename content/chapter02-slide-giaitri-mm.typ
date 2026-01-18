@@ -45,7 +45,7 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
   heading(level: 3)[Sportify],
 )
 #align(center)[
-    #image("./diagrams/chapter02-sportify.png", width: auto)
+    #image("./diagrams/chapter02-sportify.svg", width: auto)
 ]
 
 #pagebreak()
