@@ -77,25 +77,13 @@ Từ mô hình "Phát Sóng Đại Chúng" sang mô hình "Phân Phối Cá Nhâ
   dy: 0pt,
   heading(level: 3)[YouTube],
 )
+
+#place(
+    top + right,
+    dy: 0pt,
+    image("assets/yt_logo_fullcolor_almostblack_digital.png", height: 4em)
+)
+
 #align(right)[
     #image("./diagrams/chapter02-youtube2.svg", height: auto)
-]
-
-#slide[
-=== YouTube: Mạng Thần Kinh Đa Tầng (Neural Networks)
-- Dự đoán bạn muốn xem gì.
-- Tối ưu "thời gian xem chất lượng".
-    - Lọc nội dung phù hợp.
-    - Chấm điểm tương tác.
-- Dẫn dắt xu hướng.
-    - "Đọc được suy nghĩ" của người xem.
-][
-   #align(right)[
-#image("assets/yt_logo_fullcolor_almostblack_digital.png", height: 2em)
-] 
-
-- Tự động chuyển ngữ.
-    - Âm thanh.
-    - Phụ đề.
-
 ]
