@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Báo Cáo Đồ Án: AI Trong Đời Sống và Công Việc</title>
+    <title>Presentation Template</title>
+    
+    <!-- Google Fonts: Montserrat (Humanist/Geometric) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
     <style>
-        /* --- 1. CORE RESET & THEME SETUP --- */
         :root {
-            --bg-dark: #050505;
-            --bg-purple-deep: #130f25;
-            --text-white: #ffffff;
-            --text-gray: #e2e8f0;
-            --accent-gradient: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
-            --gemini-gradient: linear-gradient(90deg, #4F8AFF 0%, #9B8DFF 50%, #D96570 100%);
-            --glass-bg: rgba(255, 255, 255, 0.05);
-            --glass-border: 1px solid rgba(255, 255, 255, 0.1);
-            --card-radius: 24px;
+            /* Palette extracted from libslides.typ */
+            --primary: #D5724A;        /* Orange/Terracotta */
+            --primary-dark: #004078;   /* Deep Blue */
+            --neutral-darkest: #20293F; /* Dark Slate */
+            --neutral-lightest: #ffffff;
+            --accent: #b51d69;         /* Magenta-ish for list markers */
+            
+            --bg-color: #ffffff;
+            --text-color: var(--neutral-darkest);
+            
+            --font-main: 'Montserrat', sans-serif;
+            
+            /* Sizing */
+            --ratio-w: 16;
+            --ratio-h: 9;
+            --base-width: 1280px; /* Reference width for scaling calculation */
         }
 
         * {
@@ -29,536 +37,350 @@
         }
 
         body {
-            background-color: #1e1e1e; /* Canvas background */
-            font-family: 'Outfit', sans-serif;
+            font-family: var(--font-main);
+            background-color: #f0f2f5;
+            color: var(--text-color);
+            height: 100vh;
+            width: 100vw;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            padding: 40px 0;
-            gap: 40px;
-        }
-
-        /* --- 2. SLIDE CONTAINER STYLING --- */
-        .slide-container {
-            width: 1280px;
-            height: 720px;
-            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-purple-deep) 100%);
-            position: relative;
             overflow: hidden;
-            border-radius: 16px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-            color: var(--text-white);
-            display: flex;
-            flex-direction: column;
         }
 
-        /* Abstract Background Elements (Gemini Feel) */
-        .slide-container::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -20%;
-            width: 80%;
-            height: 80%;
-            background: radial-gradient(circle, rgba(79, 138, 255, 0.15) 0%, rgba(0,0,0,0) 70%);
-            z-index: 0;
-            filter: blur(80px);
-        }
-
-        .slide-container::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            right: -10%;
-            width: 60%;
-            height: 60%;
-            background: radial-gradient(circle, rgba(217, 101, 112, 0.1) 0%, rgba(0,0,0,0) 70%);
-            z-index: 0;
-            filter: blur(80px);
-        }
-
-        .content-area {
+        /* 
+           The Container 
+           Maintains 16:9 Aspect Ratio using the padding-bottom hack or aspect-ratio property.
+           We use aspect-ratio for modern browser support + max-height/width constraints.
+        */
+        #presentation-container {
+            width: 100%;
+            max-width: 100%;
+            aspect-ratio: 16 / 9;
+            background-color: var(--bg-color);
             position: relative;
-            z-index: 2;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* If screen is too wide (wider than 16:9), constrain height */
+        @media (min-aspect-ratio: 16/9) {
+            #presentation-container {
+                height: 98vh; /* Leave a tiny gap */
+                width: auto;
+            }
+        }
+        
+        /* If screen is too tall (taller than 16:9), constrain width */
+        @media (max-aspect-ratio: 16/9) {
+            #presentation-container {
+                width: 98vw;
+                height: auto;
+            }
+        }
+
+        /* Slides */
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            padding: 60px;
+            padding: 4rem 5rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease-in-out;
+            z-index: 0;
             display: flex;
             flex-direction: column;
         }
 
-        /* --- 3. TYPOGRAPHY --- */
-        h1, h2, h3 {
-            font-weight: 600;
-            line-height: 1.2;
+        .slide.active {
+            opacity: 1;
+            pointer-events: auto;
+            z-index: 1;
         }
 
-        .slide-title {
-            font-size: 42px;
-            margin-bottom: 40px;
-            background: var(--text-white);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: inline-block;
+        /* Typography & Content Styling */
+        h1, h2, h3, h4 {
+            color: var(--primary-dark);
+            text-transform: uppercase; /* Smallcaps feeling */
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5em;
         }
-
-        .slide-title.gradient {
-            background: var(--gemini-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        
+        h1 { font-size: 3.5rem; color: var(--primary); }
+        h2 { 
+            font-size: 2.2rem; 
+            border-bottom: 2px solid #ccc; /* Underline style from Typst */
+            padding-bottom: 0.2em;
+            margin-bottom: 1em;
+            width: 100%;
         }
-
-        p, li {
-            font-size: 18px;
+        
+        p {
+            font-size: 1.5rem;
             line-height: 1.6;
-            color: var(--text-gray);
+            margin-bottom: 1rem;
             font-weight: 300;
         }
 
-        /* --- 4. COMPONENTS --- */
-
-        /* Glass Card */
-        .card {
-            background: var(--glass-bg);
-            border: var(--glass-border);
-            border-radius: var(--card-radius);
-            padding: 30px;
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+        ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+        
+        ul li {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5em;
         }
 
-        .card h3 {
-            font-size: 24px;
-            margin-bottom: 12px;
-            color: #fff;
-            display: flex;
+        /* Custom Bullet: Circle with outline */
+        ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.4em;
+            width: 0.6em;
+            height: 0.6em;
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        /* Title Slide Variant */
+        .slide.title-slide {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #1a5c9a 100%);
+            color: white;
+            justify-content: center;
             align-items: center;
-            gap: 10px;
+            text-align: center;
+        }
+        
+        .slide.title-slide h1 {
+            color: white;
+            border: none;
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
         }
 
-        .icon-box {
+        .slide.title-slide h2 {
+            color: rgba(255,255,255,0.9);
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+            font-size: 1.8rem;
+            text-transform: none;
+            font-weight: 400;
+            display: inline-block;
+            width: auto;
+            padding: 0 2rem 0.5rem 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .slide.title-slide .meta {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-top: 1rem;
+        }
+
+        /* Footer / Progress (Optional) */
+        .footer {
+            position: absolute;
+            bottom: 1.5rem;
+            right: 2rem;
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        /* Navigation Controls */
+        #controls {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(32, 41, 63, 0.8);
+            backdrop-filter: blur(5px);
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        
+        #controls.hidden {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateX(-50%) translateY(20px);
+        }
+
+        button {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: var(--font-main);
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        
+        button:active {
+            transform: translateY(1px);
+        }
+
+        /* Toggle Button for Controls */
+        #toggle-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
             width: 40px;
             height: 40px;
-            border-radius: 10px;
-            background: rgba(255,255,255,0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            color: #4F8AFF;
-        }
-
-        /* Badge */
-        .badge {
-            display: inline-block;
-            padding: 6px 16px;
-            border-radius: 50px;
-            background: rgba(79, 138, 255, 0.15);
-            border: 1px solid rgba(79, 138, 255, 0.3);
-            color: #4F8AFF;
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 15px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        /* --- 5. LAYOUTS --- */
-
-        /* Two Column */
-        .two-col {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            height: 100%;
-            align-items: center;
-        }
-
-        .image-wrapper {
-            width: 100%;
-            height: 100%;
-            border-radius: var(--card-radius);
-            overflow: hidden;
-            border: var(--glass-border);
-            position: relative;
-        }
-
-        .image-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        /* Grid Layouts */
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            height: 100%;
-        }
-
-        .grid-4 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            gap: 30px;
-            height: 100%;
-        }
-
-        /* Chart/Diagram Placeholders */
-        .diagram-circle {
-            width: 150px;
-            height: 150px;
             border-radius: 50%;
-            border: 2px solid rgba(255,255,255,0.1);
+            background: var(--neutral-darkest);
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 1001;
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            opacity: 0.3;
+            transition: opacity 0.3s;
         }
-
-        .sparkle-icon {
-             position: absolute;
-             color: #D96570;
-             font-size: 24px;
-             filter: drop-shadow(0 0 5px rgba(217, 101, 112, 0.5));
+        
+        #toggle-btn:hover {
+            opacity: 1;
         }
 
     </style>
 </head>
 <body>
 
-<!-- SLIDE 1: TITLE SLIDE -->
-<div class="slide-container" id="slide1">
-    <img src="https://images.stockcake.com/public/e/d/a/edade85f-a686-4d48-8736-ed1e2c3d41fa_medium/celestial-geometric-pattern-stockcake.jpg" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; opacity:0.3; z-index:0;" alt="Background">
-    <div class="content-area" style="justify-content: center; align-items: flex-start; text-align: left;">
-        <span class="badge">Báo Cáo Đồ Án Cuối Môn</span>
-        <h1 style="font-size: 80px; font-weight: 700; margin-bottom: 20px; line-height: 1.1;">
-            AI TRONG<br>
-            <span style="background: var(--gemini-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">ĐỜI SỐNG VÀ CÔNG VIỆC</span>
-        </h1>
-        <p style="font-size: 24px; max-width: 600px; margin-bottom: 60px;">
-            Từ ứng dụng thực tiễn đến định hướng tương lai, khám phá cách Trí tuệ nhân tạo đang tái định hình thế giới của chúng ta.
-        </p>
-
-        <div style="display: flex; gap: 60px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; width: 100%;">
-            <div>
-                <p style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #888;">Nhóm thực hiện</p>
-                <p style="font-weight: 500; color: white;">Nhóm 01 - LT.2025.2-CNTT</p>
-            </div>
-            <div>
-                <p style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #888;">Thời gian</p>
-                <p style="font-weight: 500; color: white;">Tháng 01 Năm 2026</p>
+    <div id="presentation-container">
+        
+        <!-- Slide 1: Title Slide -->
+        <div class="slide title-slide active">
+            <h1>Presentation Title</h1>
+            <h2>Subtitle or Author Name</h2>
+            <div class="meta">
+                <p>University of Information Technology</p>
+                <p>January 2026</p>
             </div>
         </div>
-    </div>
-</div>
 
-<!-- SLIDE 2: TỔNG QUAN VỀ AI -->
-<div class="slide-container" id="slide2">
-    <div class="content-area">
-        <h2 class="slide-title">Tổng Quan Về AI</h2>
-        <div class="grid-3" style="align-items: stretch;">
-            <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
-                <div>
-                    <div class="icon-box" style="margin-bottom: 20px;"><i class="fa-solid fa-brain"></i></div>
-                    <h3>AI Là Gì?</h3>
-                    <p>Lĩnh vực Khoa Học Máy Tính tập trung xây dựng Mô Hình Trí Tuệ cho máy móc, mô phỏng khả năng của con người như học tập, suy luận và giải quyết vấn đề.</p>
-                </div>
-            </div>
-            <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
-                <div>
-                    <div class="icon-box" style="margin-bottom: 20px; color: #D96570;"><i class="fa-solid fa-bolt"></i></div>
-                    <h3>Tại Sao Lúc Này?</h3>
-                    <p>Sự hội tụ của 3 yếu tố:</p>
-                    <ul style="padding-left: 20px; margin-top: 10px;">
-                        <li>Sự bùng nổ <strong>Big Data</strong>.</li>
-                        <li>Hạ tầng phần cứng mạnh mẽ (GPU, TPU).</li>
-                        <li>Các thuật toán tối ưu mới.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
-                <div>
-                    <div class="icon-box" style="margin-bottom: 20px; color: #9B8DFF;"><i class="fa-solid fa-bullseye"></i></div>
-                    <h3>Mục Tiêu</h3>
-                    <p>Xây dựng các hệ thống có khả năng tự nhận thức, ra quyết định và thực hiện các tác vụ thông minh mà không cần sự can thiệp liên tục của con người.</p>
-                </div>
+        <!-- Slide 2: Standard Content -->
+        <div class="slide">
+            <h2>Introduction</h2>
+            <p>This is a static HTML presentation template designed to match the styling of the Typst Report Template project.</p>
+            <ul>
+                <li>Ratio: 16:9</li>
+                <li>Font: Montserrat (Google Fonts)</li>
+                <li>Colors: Custom Palette</li>
+            </ul>
+        </div>
+
+        <!-- Slide 3: Detailed List -->
+        <div class="slide">
+            <h2>Key Features</h2>
+            <p>The template is built with standard HTML, CSS, and vanilla JavaScript.</p>
+            <ul>
+                <li><strong>No Dependencies:</strong> No build step required.</li>
+                <li><strong>Easy to Edit:</strong> Just duplicate `.slide` divs.</li>
+                <li><strong>Responsive:</strong> Scales to fit the browser window.</li>
+                <li><strong>Navigation:</strong> Arrow keys or on-screen buttons.</li>
+            </ul>
+            <div class="footer">Slide 3</div>
+        </div>
+        
+        <!-- Slide 4: Image Example (Placeholder) -->
+        <div class="slide">
+            <h2>Image Example</h2>
+            <p>You can easily embed images or charts here.</p>
+            <div style="width: 100%; height: 50%; background: #eee; display: flex; align-items: center; justify-content: center; color: #888; border: 2px dashed #ccc; border-radius: 8px;">
+                Image Placeholder (16:9 friendly content area)
             </div>
         </div>
-    </div>
-</div>
-
-<!-- SLIDE 3: AI TRONG ĐỜI SỐNG (SMART HOME) -->
-<div class="slide-container" id="slide3">
-    <div class="content-area">
-        <h2 class="slide-title">AI Trong Đời Sống: Nhà Thông Minh</h2>
-        <div class="two-col">
-            <div class="image-wrapper">
-                <img src="https://images.stockcake.com/public/5/b/c/5bc10d9c-9a4e-473a-b674-f8a9c02ccd17_large/futuristic-smart-home-stockcake.jpg">
-                <div style="position: absolute; bottom: 20px; left: 20px; background: rgba(0,0,0,0.6); padding: 10px 20px; border-radius: 20px; backdrop-filter: blur(5px);">
-                    <p style="font-size: 14px; margin: 0; color: #fff;">Ambient Intelligence</p>
-                </div>
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 20px;">
-                <div class="card">
-                    <h3><i class="fa-solid fa-sliders" style="font-size: 18px; color: #4F8AFF;"></i> Tự Động & Tối Ưu</h3>
-                    <p>Hệ thống tự học thói quen người dùng để điều chỉnh ánh sáng, nhiệt độ. Tối ưu hóa năng lượng tiêu thụ (tắt thiết bị khi vắng nhà).</p>
-                </div>
-                <div class="card">
-                    <h3><i class="fa-solid fa-shield-halved" style="font-size: 18px; color: #D96570;"></i> An Ninh & An Toàn</h3>
-                    <p>Nhận diện khuôn mặt để phát hiện người lạ. Cảm biến phát hiện té ngã, đột quỵ hoặc rò rỉ khí gas để cảnh báo khẩn cấp.</p>
-                </div>
-                <div class="card">
-                    <h3><i class="fa-solid fa-microchip" style="font-size: 18px; color: #9B8DFF;"></i> Ví Dụ Thực Tế</h3>
-                    <p><strong>Việt Nam:</strong> FPT Smart Home, Lumi, Rạng Đông (Chiếu sáng vì sức khỏe - Human Centric Lighting).</p>
-                </div>
-            </div>
+        
+        <!-- Slide 5: Thank You -->
+        <div class="slide title-slide">
+            <h1>Thank You</h1>
         </div>
+
     </div>
-</div>
 
-<!-- SLIDE 4: AI TRONG ĐỜI SỐNG (GIẢI TRÍ & GIÁO DỤC) -->
-<div class="slide-container" id="slide4">
-    <div class="content-area">
-        <h2 class="slide-title">Giải Trí & Giáo Dục 4.0</h2>
-        <div class="two-col">
-            <!-- Cột Giải Trí -->
-            <div class="card" style="height: 100%; display: flex; flex-direction: column;">
-                <h3 style="color: #D96570; font-size: 28px; margin-bottom: 20px;">Giải Trí Kỹ Thuật Số</h3>
-                <p style="margin-bottom: 20px;">Chuyển từ "Phát sóng đại chúng" sang "Phân phối cá nhân hóa".</p>
-                <div style="display: grid; gap: 15px;">
-                    <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 12px;">
-                        <strong style="color: #fff;">Netflix/YouTube/TikTok</strong>
-                        <p style="font-size: 16px; margin-top: 5px;">Thuật toán đề xuất nội dung theo thời gian thực. "Dynamic Thumbnail" thay đổi ảnh bìa phim dựa trên sở thích.</p>
-                    </div>
-                    <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 12px;">
-                        <strong style="color: #fff;">Spotify/ZingMP3</strong>
-                        <p style="font-size: 16px; margin-top: 5px;">Tạo Daily Mix theo tâm trạng (Mood-based) và bối cảnh nghe nhạc.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Cột Giáo Dục -->
-            <div class="card" style="height: 100%; display: flex; flex-direction: column;">
-                <h3 style="color: #4F8AFF; font-size: 28px; margin-bottom: 20px;">Giáo Dục Cá Nhân Hóa</h3>
-                <p style="margin-bottom: 20px;">AI đóng vai trò "Gia sư ảo" và người đồng hành.</p>
-                <div style="display: grid; gap: 15px;">
-                    <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 12px;">
-                        <strong style="color: #fff;">Duolingo / Elsa Speak</strong>
-                        <p style="font-size: 16px; margin-top: 5px;">Phân tích phát âm chi tiết, chỉ ra lỗi sai cụ thể (âm gió, cách uốn lưỡi).</p>
-                    </div>
-                    <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 12px;">
-                        <strong style="color: #fff;">VioEdu</strong>
-                        <p style="font-size: 16px; margin-top: 5px;">Mô hình "Cây kiến thức" giúp xác định lỗ hổng kiến thức và đề xuất lộ trình học riêng biệt.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Navigation Controls -->
+    <div id="controls">
+        <button onclick="prevSlide()">Previous</button>
+        <span style="color:white; align-self: center; font-size: 0.8rem; opacity: 0.6;">Keyboards: ← / →</span>
+        <button onclick="nextSlide()">Next</button>
+        <button onclick="toggleFullScreen()">⛶ Fullscreen</button>
     </div>
-</div>
 
-<!-- SLIDE 5: AI TRONG CÔNG VIỆC (SMART OFFICE) -->
-<div class="slide-container" id="slide5">
-    <div class="content-area">
-        <h2 class="slide-title">Văn Phòng Thông Minh: Cộng Sự Số</h2>
-        <div class="two-col">
-            <div style="display: flex; flex-direction: column; justify-content: center; gap: 25px;">
-                <p style="font-size: 20px;">Chuyển đổi từ công cụ hỗ trợ sang <strong>Tác nhân AI (Agents)</strong> chủ động.</p>
+    <button id="toggle-btn" onclick="toggleControls()" title="Toggle Controls">⚙</button>
 
-                <div class="card" style="border-left: 4px solid #4F8AFF;">
-                    <h3>Trợ Lý Đa Năng</h3>
-                    <p>Các công cụ như <strong>Microsoft Copilot</strong> hay <strong>Gemini Enterprise</strong> được tích hợp sâu vào không gian làm việc.</p>
-                </div>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const controls = document.getElementById('controls');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+            currentSlide = index;
+        }
 
-                <div class="card" style="border-left: 4px solid #9B8DFF;">
-                    <h3>Tự Động Hóa Tác Vụ Tri Thức</h3>
-                    <ul style="padding-left: 20px; font-size: 16px; color: var(--text-gray);">
-                        <li>Tóm tắt cuộc họp, email dài trong vài giây.</li>
-                        <li>Phân tích dữ liệu báo cáo tài chính tự động.</li>
-                        <li>Soạn thảo văn bản, tạo slide thuyết trình từ dàn ý.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="image-wrapper">
-                 <img src="https://img.freepik.com/premium-photo/man-is-working-laptop-with-futuristic-robot-assistant-beside-him-modern-office-se_924727-69600.jpg" alt="AI in Office">
-            </div>
-        </div>
-    </div>
-</div>
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                showSlide(currentSlide + 1);
+            }
+        }
 
-<!-- SLIDE 6: LẬP TRÌNH & DEVOPS (AGENTIC) -->
-<div class="slide-container" id="slide6">
-    <div class="content-area">
-        <h2 class="slide-title">Lập Trình: Agentic Workflows</h2>
-        <div class="grid-3">
-            <div class="card" style="grid-column: span 1;">
-                <div class="image-wrapper" style="height: 250px; margin-bottom: 20px;">
-                    <img src="https://builtin.com/sites/www.builtin.com/files/2025-06/dark-mode-coding.jpg" alt="Coding">
-                </div>
-                <h3>Sự Chuyển Dịch</h3>
-                <p>Từ mô hình <em>Prompt-Response</em> (Hỏi - Đáp) sang mô hình <em>Agentic Workflows</em> (Giao nhiệm vụ - Tự thực hiện).</p>
-            </div>
+        function prevSlide() {
+            if (currentSlide > 0) {
+                showSlide(currentSlide - 1);
+            }
+        }
 
-            <div class="card" style="grid-column: span 2; display: flex; flex-direction: column; justify-content: center;">
-                <h3 style="margin-bottom: 30px;">Quy Trình Mới</h3>
-                <div style="display: flex; gap: 20px; align-items: center;">
-                    <div style="flex: 1; text-align: center; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 16px;">
-                        <i class="fa-solid fa-user" style="font-size: 30px; margin-bottom: 10px; color: #ccc;"></i>
-                        <p style="font-weight: 500; color: #fff;">Con Người</p>
-                        <p style="font-size: 14px;">Định hướng mục tiêu & Review</p>
-                    </div>
-                    <i class="fa-solid fa-arrow-right" style="color: #4F8AFF;"></i>
-                    <div style="flex: 1; text-align: center; background: rgba(79, 138, 255, 0.1); padding: 20px; border-radius: 16px; border: 1px solid #4F8AFF;">
-                        <i class="fa-solid fa-robot" style="font-size: 30px; margin-bottom: 10px; color: #4F8AFF;"></i>
-                        <p style="font-weight: 500; color: #fff;">AI Agents</p>
-                        <p style="font-size: 14px;">Lên kế hoạch -> Viết Code -> Debug -> Test</p>
-                    </div>
-                </div>
-                <div style="margin-top: 30px;">
-                    <p><strong>Công cụ tiêu biểu:</strong> GitHub Copilot Workspace, Google Antigravity.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        // Keyboard Navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+            } else if (e.key === 'f') {
+                toggleFullScreen();
+            }
+        });
 
-<!-- SLIDE 7: MÔ HÌNH CỘNG TÁC -->
-<div class="slide-container" id="slide7">
-    <div class="content-area">
-        <h2 class="slide-title" style="text-align: center; width: 100%;">Mô Hình Cộng Tác: Human + AI</h2>
-        <div class="two-col" style="align-items: center;">
-            <div style="display: flex; justify-content: center;">
-                <div style="position: relative; width: 400px; height: 400px;">
-                    <img src="https://png.pngtree.com/png-vector/20260116/ourlarge/pngtree-abstract-digital-human-head-composed-of-interconnected-geometric-lines-and-glowing-png-image_18535472.webp" style="width:100%; height:100%; object-fit: contain; border-radius: 50%; opacity: 0.8;" alt="Collaboration Abstract">
-                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-                        <h3 style="font-size: 32px; text-shadow: 0 0 20px rgba(0,0,0,0.8);">CENTAUR</h3>
-                        <p style="font-size: 14px; color: #ccc;">Nhân Mã</p>
-                    </div>
-                </div>
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 20px;">
-                <div class="card">
-                    <h3><i class="fa-solid fa-users-gear" style="color: #4F8AFF;"></i> Human in the Loop</h3>
-                    <p>Con người đóng vai trò là khung sườn, định hướng chiến lược. AI thực hiện chi tiết, mở rộng ý tưởng và tối ưu hóa.</p>
-                </div>
-                <div class="card">
-                    <h3><i class="fa-solid fa-hand-holding-hand" style="color: #D96570;"></i> Cobot (Cộng tác Robot)</h3>
-                    <p>Trong sản xuất, robot làm việc cạnh con người, hỗ trợ việc nặng nhọc và đòi hỏi độ chính xác cao, đảm bảo an toàn.</p>
-                </div>
-                <div class="card">
-                    <h3><i class="fa-solid fa-chess-knight" style="color: #9B8DFF;"></i> Tư Duy Mới</h3>
-                    <p>Chuyển từ "Ra lệnh" sang "Cộng tác". Quản lý không chỉ quản lý người mà còn quản lý các tác nhân AI.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        // Toggle Controls Visibility
+        function toggleControls() {
+            controls.classList.toggle('hidden');
+        }
 
-<!-- SLIDE 8: LỢI ÍCH -->
-<div class="slide-container" id="slide8">
-    <div class="content-area">
-        <h2 class="slide-title">Lợi Ích Của Ứng Dụng AI</h2>
-        <div class="grid-4">
-            <div class="card" style="border-top: 4px solid #4F8AFF;">
-                <h3><i class="fa-solid fa-chart-line"></i> Tăng Năng Suất</h3>
-                <p>Tối ưu đầu ra trên mỗi đơn vị đầu vào. Hoàn thành công việc nhanh hơn, loại bỏ các tác vụ lặp lại nhàm chán.</p>
-                <span class="badge" style="margin-top: 10px; background: rgba(79, 138, 255, 0.1);">Định Lượng</span>
-            </div>
-            <div class="card" style="border-top: 4px solid #4F8AFF;">
-                <h3><i class="fa-solid fa-coins"></i> Tiết Kiệm Chi Phí</h3>
-                <p>Cắt giảm lãng phí, giảm sai sót do con người. Tự động hóa quy trình vận hành 24/7.</p>
-                <span class="badge" style="margin-top: 10px; background: rgba(79, 138, 255, 0.1);">Định Lượng</span>
-            </div>
-            <div class="card" style="border-top: 4px solid #D96570;">
-                <h3><i class="fa-solid fa-lightbulb"></i> Giải Phóng Sáng Tạo</h3>
-                <p>Khi máy móc làm việc lặp lại, con người tập trung vào tư duy chiến lược, sáng tạo và sự thấu cảm.</p>
-                <span class="badge" style="margin-top: 10px; background: rgba(217, 101, 112, 0.1); color: #D96570; border-color: #D96570;">Định Tính</span>
-            </div>
-            <div class="card" style="border-top: 4px solid #D96570;">
-                <h3><i class="fa-solid fa-fingerprint"></i> Cá Nhân Hóa</h3>
-                <p>Tạo ra trải nghiệm riêng biệt cho từng người dùng, tăng sự gắn kết và mức độ hài lòng.</p>
-                <span class="badge" style="margin-top: 10px; background: rgba(217, 101, 112, 0.1); color: #D96570; border-color: #D96570;">Định Tính</span>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- SLIDE 9: THÁCH THỨC -->
-<div class="slide-container" id="slide9">
-    <div class="content-area">
-        <h2 class="slide-title" style="color: #ff6b6b;">Những Vấn Đề Cần Lưu Ý</h2>
-        <div class="grid-3">
-            <div class="card" style="background: rgba(255, 50, 50, 0.05); border: 1px solid rgba(255, 50, 50, 0.2);">
-                <div class="icon-box" style="color: #ff6b6b; background: rgba(255, 50, 50, 0.1);"><i class="fa-solid fa-glasses"></i></div>
-                <h3 style="color: #ff6b6b;">Ảo Giác AI & Định Kiến</h3>
-                <p>AI có thể đưa ra thông tin sai lệch một cách rất tự tin (Hallucination). Kết quả phụ thuộc hoàn toàn vào dữ liệu đầu vào, dễ bị thiên kiến.</p>
-            </div>
-            <div class="card" style="background: rgba(255, 50, 50, 0.05); border: 1px solid rgba(255, 50, 50, 0.2);">
-                <div class="icon-box" style="color: #ff6b6b; background: rgba(255, 50, 50, 0.1);"><i class="fa-solid fa-user-secret"></i></div>
-                <h3 style="color: #ff6b6b;">Deepfake & Thao Túng</h3>
-                <p>Giả dạng video, giọng nói làm xói mòn niềm tin xã hội. Tạo điều kiện cho các hình thức lừa đảo công nghệ cao.</p>
-            </div>
-            <div class="card" style="background: rgba(255, 50, 50, 0.05); border: 1px solid rgba(255, 50, 50, 0.2);">
-                <div class="icon-box" style="color: #ff6b6b; background: rgba(255, 50, 50, 0.1);"><i class="fa-solid fa-briefcase"></i></div>
-                <h3 style="color: #ff6b6b;">Việc Làm & Kỹ Năng</h3>
-                <p>Nguy cơ thay thế các công việc rập khuôn. Tạo ra tình trạng "thừa người - thiếu kỹ năng" nếu người lao động không kịp đào tạo lại (Reskill).</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- SLIDE 10: ĐỊNH HƯỚNG TƯƠNG LAI -->
-<div class="slide-container" id="slide10">
-    <div class="content-area">
-        <h2 class="slide-title">Định Hướng Tương Lai</h2>
-        <div style="display: flex; gap: 30px; height: 100%; align-items: center;">
-            <div class="card" style="flex: 1; height: 400px; display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: center;">
-                <div style="font-size: 60px; color: #4F8AFF; margin-bottom: 20px;">01</div>
-                <h3>Phát Triển Năng Lực</h3>
-                <p>Tập trung vào các kỹ năng "Người": Sáng tạo, Giao tiếp, Tư duy phản biện. Học cách sử dụng AI như một công cụ bắt buộc.</p>
-            </div>
-            <div class="card" style="flex: 1; height: 400px; display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: center; background: linear-gradient(135deg, rgba(79, 138, 255, 0.1) 0%, rgba(155, 141, 255, 0.1) 100%);">
-                <div style="font-size: 60px; color: #9B8DFF; margin-bottom: 20px;">02</div>
-                <h3>Trách Nhiệm & Đạo Đức</h3>
-                <p>Sử dụng AI có trách nhiệm. Nguyên tắc <strong>"Human in the loop"</strong>: Con người luôn là người ra quyết định cuối cùng.</p>
-            </div>
-            <div class="card" style="flex: 1; height: 400px; display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: center;">
-                <div style="font-size: 60px; color: #D96570; margin-bottom: 20px;">03</div>
-                <h3>Khung Pháp Lý</h3>
-                <p>Xây dựng quy định về bảo vệ dữ liệu, minh bạch thuật toán và bản quyền nội dung do AI tạo ra.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- SLIDE 11: KẾT LUẬN -->
-<div class="slide-container" id="slide11">
-    <div class="content-area" style="justify-content: center; align-items: center; text-align: center;">
-        <i class="fa-solid fa-quote-left" style="font-size: 60px; color: rgba(255,255,255,0.1); margin-bottom: 30px;"></i>
-        <h2 style="font-size: 48px; max-width: 900px; line-height: 1.4; font-weight: 300;">
-            "AI là tấm gương phản chiếu xã hội.<br>
-            Khi <strong style="color: #4F8AFF;">NHẬN</strong> những điều đẹp đẽ,<br>
-            AI sẽ <strong style="color: #D96570;">TẠO</strong> ra những điều đẹp đẽ."
-        </h2>
-        <div style="margin-top: 60px; width: 100px; height: 2px; background: var(--gemini-gradient);"></div>
-        <p style="margin-top: 30px; font-size: 20px;">Hợp tác với AI không còn là lựa chọn, mà là kỹ năng sinh tồn của thời đại mới.</p>
-    </div>
-</div>
-
-<!-- SLIDE 12: THANK YOU -->
-<div class="slide-container" id="slide12">
-    <div class="content-area" style="justify-content: center; align-items: center;">
-        <h1 class="gradient-text" style="font-size: 100px; margin-bottom: 20px; background: var(--gemini-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Cảm Ơn!</h1>
-        <p style="font-size: 24px;">Q & A</p>
-        <div style="margin-top: 50px; display: flex; gap: 40px;">
-            <div class="card" style="padding: 20px 40px; border-radius: 50px;">
-                <i class="fa-solid fa-envelope"></i> nhom01@uit.edu.vn
-            </div>
-        </div>
-    </div>
-</div>
-
+        // Fullscreen Toggle
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+    </script>
 </body>
 </html>
