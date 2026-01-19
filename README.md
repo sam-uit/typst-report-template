@@ -145,3 +145,17 @@ typst compile slides.typ --font-path template/fonts
     ),
 ```
 
+#### Neural Network
+
+- Style của Gemini.
+
+```rust
+    config-colors(
+      primary: rgb("#6c0ef0"),        // Deep Purple - Đậm nhưng tươi
+      primary-dark: rgb("#3700B3"),
+      secondary: rgb("#ffffff"),
+      tertiary: rgb("#e53087"),       // Pink Accent - Tạo gradient tím-hồng rất modern
+      neutral-lightest: rgb("#ffffff"),
+      neutral-darkest: rgb("#1a1a1a"), // Gần như đen, tạo độ sâu mà không bị ám màu xanh
+    ),
+```
