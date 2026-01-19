@@ -104,7 +104,7 @@
     set align(horizon + left)
 
     // Badge
-    badge("Báo Cáo Đồ Án Cuối Môn")
+    badge("Giới Thiệu Ngành Công Nghệ Thông Tin")
     v(0.6em)
 
     // Title lớn
@@ -115,7 +115,7 @@
     v(0.6em)
     // Description
     text(
-      size: 1.2em,
+      size: 1em,
       fill: c-text-gray,
       "Khám phá cách Trí tuệ nhân tạo đang tái định hình thế giới của chúng ta.",
     )
