@@ -1,6 +1,6 @@
 # University Report & Thesis Template
 
-This is a Typst template for university reports and thesis, refactored to a modular, professional book-like structure.
+Đây là một template để tạo báo cáo và luận án, slides cho Trường Đại Học Công Nghệ Thông Tin TP. Hồ Chí Minh. Định dạng là [Typst](https://typst.app/).
 
 # CẢNH BÁO
 
