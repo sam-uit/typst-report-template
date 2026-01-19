@@ -119,6 +119,20 @@ typst compile slides.typ --font-path template/fonts
 
 ### Color Palettes
 
+- Thay đổi và thêm bảng màu tại: [`template/libslides.typ`](template/libslides.typ).
+    - `config-colors`
+
+```rust
+    config-colors(
+      primary: rgb("#6C5CE7"), // Màu chính, nơi hiện các heading (góc trên - trái).
+      primary-dark: rgb("#4834D4"), // Màu chính đậm hơn, của header và 2 ô bên trái trái footer.
+      secondary: rgb("#ffffff"),
+      tertiary: rgb("#55EFC4"), // Màu được blend/gradient từ màu chính ở trên dần sang phải.
+      neutral-lightest: rgb("#ffffff"), // Màu chữ.
+      neutral-darkest: rgb("#2D3436"), // Màu của header và 2 ô bên trái footer.
+    ),
+```
+
 #### Future Tech
 
 ```rust

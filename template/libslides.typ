@@ -22,10 +22,10 @@
     ),
     lang: "vi",
     config-colors(
-      primary: rgb("#1454de"),
+      primary: rgb("#0778b5"),
       primary-dark: rgb("#004078"),
       secondary: rgb("#ffffff"),
-      tertiary: rgb("#8b3de5"),
+      tertiary: rgb("#6709ea"),
       // Body text color
       neutral-lightest: rgb("#ffffff"),
       neutral-darkest: rgb("#1e1180"),
