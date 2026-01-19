@@ -8,6 +8,12 @@
 > - **KHÔNG** bao giờ merge các branch báo cáo: `report-xxx`, `report/xxx`, vv.. vào `main`.
 > - Chỉ merge các branch về chức năng: `feat/xxx`, `fix/xxx`, vv.. vào `main`.
 
+## Các Ví Dụ
+
+- [`report.pdf`](report.pdf): Báo cáo.
+- [`thesis.pdf`](thesis.pdf): Luận án.
+- [`slides.pdf`](slides.pdf): Slides.
+
 # Hướng Dẫn Nhanh
 
 Cách dùng:
