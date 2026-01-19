@@ -13,8 +13,8 @@
 - Nhất quán trong typography (fonts, size, heading, vv..), style (màu sắc), bố cục cho toàn bộ văn bản.
 - Khả năng hợp tác giữa nhiều thành viên, vì các file nội dung được chia nhỏ.
 - Git-friendly, lưu trữ, theo dõi phiên bản và thay đổi với git.
-- Tự động tạo Table of Contents, List of Figures, List of Tables.
-- Và nhiều hơn thế, cho một văn bản chuyên nghiệp.
+- Tự động tạo Table of Contents, List of Figures, List of Tables, và hơn thế.
+- Phù hợp cho một văn bản chuyên nghiệp, đặc biệt là academic.
 - Phương châm: *Code as XXX*, *XXX* ở đây là báo cáo, slides, luận án.
 
 ## Tại Sao Lại Là Typst?
@@ -29,7 +29,7 @@
 - [`thesis.pdf`](thesis.pdf): Luận án.
 - [`slides.pdf`](slides.pdf): Slides.
 
-# Hướng Dẫn Nhanh
+## Hướng Dẫn Nhanh
 
 Cách dùng:
 
@@ -75,7 +75,7 @@ Yêu cầu:
     - `metadata.typ`: Thông tin báo cáo.
 - `content/`: Chứa các file nội dung.
     - `content/assets`: Chứa các file tĩnh cho nội dung: `.png`, `.svg`, vv..
-    - `content/diagrams` (tùy chọn): Thư mục chứa các đồ họa, đồ thị đặc trưng cho nội dung.
+    - `content/diagrams` (Code as Diagrams): Thư mục chứa các đồ họa, đồ thị đặc trưng cho nội dung.
 
 ## Features
 
