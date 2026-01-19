@@ -148,12 +148,13 @@
   touying-slide(self: self, ..bodies)
 })
 
+// MARK: OUTLINE SLIDE
 // Slide Mục lục
 #let outline-slide() = touying-slide-wrapper(self => {
   self.store.header-left = text(size: 1.5em, weight: "bold", fill: white, "Mục Lục")
   touying-slide(self: self, {
     set align(horizon)
-    set text(size: 1.2em)
+    set text(size: 1.6em)
     components.custom-progressive-outline(
       level: 1,
       alpha: 100%,
@@ -166,6 +167,7 @@
   })
 })
 
+// MARK: NEW SECTION SLIDE
 // Slide chuyển đoạn (New Section)
 #let new-section-slide(title: auto, ..args) = touying-slide-wrapper(self => {
   let title = if title == auto {
