@@ -2,6 +2,12 @@
 
 This is a Typst template for university reports and thesis, refactored to a modular, professional book-like structure.
 
+# CẢNH BÁO
+
+> [!WARNING]
+> - **KHÔNG** bao giờ merge các branch báo cáo: `report-xxx`, `report/xxx`, vv.. vào `main`.
+> - Chỉ merge các branch về chức năng: `feat/xxx`, `fix/xxx`, vv.. vào `main`.
+
 # Hướng Dẫn Nhanh
 
 Cách dùng:
