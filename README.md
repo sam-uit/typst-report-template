@@ -8,6 +8,21 @@
 > - **KHÔNG** bao giờ merge các branch báo cáo: `report-xxx`, `report/xxx`, vv.. vào `main`.
 > - Chỉ merge các branch về chức năng: `feat/xxx`, `fix/xxx`, vv.. vào `main`.
 
+## Tại Sao Cần Template Này?
+
+- Nhất quán trong typography (fonts, size, heading, vv..), style (màu sắc), bố cục cho toàn bộ văn bản.
+- Khả năng hợp tác giữa nhiều thành viên, vì các file nội dung được chia nhỏ.
+- Git-friendly, lưu trữ, theo dõi phiên bản và thay đổi với git.
+- Tự động tạo Table of Contents, List of Figures, List of Tables.
+- Và nhiều hơn thế, cho một văn bản chuyên nghiệp.
+- Phương châm: *Code as XXX*, *XXX* ở đây là báo cáo, slides, luận án.
+
+## Tại Sao Lại Là Typst?
+
+- Nhanh, cực kỳ nhanh.
+- Đơn giản, dễ dùng, nhẹ nhàng hơn $LaTeX$/$TeX$.
+- Nhất quán, nhanh nhẹ hơn bất kỳ word processor nào (Google Docs, Microsoft Word).
+
 ## Các Ví Dụ
 
 - [`report.pdf`](report.pdf): Báo cáo.
