@@ -87,90 +87,6 @@
   )
 }
 
-// --- 3. TOUYING THEME SETUP ---
-
-#let stargazer-theme(
-  aspect-ratio: "16-9",
-  ..args,
-  body,
-) = {
-  // Cấu hình Header (Minimalist)
-  let header(self) = {
-    set align(top)
-    pad(x: 2em, y: 1em, grid(
-      columns: (1fr, auto),
-      align: (left, right),
-      // Breadcrumbs hoặc Navigation nhỏ
-      utils.call-or-display(self, self.store.header-left),
-      // Logo hoặc tên
-      text(fill: c-text-gray.transparentize(50%), size: 0.8em, self.info.title),
-    ))
-  }
-
-  // Cấu hình Footer (Minimalist)
-  let footer(self) = {
-    set align(bottom)
-    pad(x: 2em, y: 1em, grid(
-      columns: (1fr, auto),
-      text(fill: c-text-gray.transparentize(50%), size: 0.6em, self.info.institution),
-      text(fill: c-text-gray.transparentize(50%), size: 0.6em, context utils.slide-counter.display()
-        + " / "
-        + utils.last-slide-number),
-    ))
-  }
-
-  // Cấu hình Background (Gradient + Blobs giả lập)
-  let background-layer = {
-    rect(width: 100%, height: 100%, fill: bg-gradient)
-    // Giả lập blob ánh sáng
-    place(top + left, dx: -20%, dy: -40%, circle(radius: 20pt, fill: gradient.radial(
-      c-accent-blue.transparentize(85%),
-      rgb(0, 0, 0, 100%),
-    )))
-    place(bottom + right, dx: 10%, dy: 30%, circle(radius: 30pt, fill: gradient.radial(
-      c-accent-pink.transparentize(90%),
-      rgb(0, 0, 0, 100%),
-    )))
-  }
-
-  show: touying-slides.with(
-    config-page(
-      paper: "presentation-" + aspect-ratio,
-      margin: (top: 3em, bottom: 2em, x: 3em),
-      fill: background-layer, // Set background mặc định
-      header: header,
-      footer: footer,
-    ),
-    config-common(
-      slide-fn: slide,
-      new-section-slide-fn: new-section-slide,
-    ),
-    config-colors(
-      primary: c-text-white,
-      neutral-lightest: c-text-white,
-      neutral-darkest: c-bg-dark,
-    ),
-    config-store(
-      header-left: none,
-    ),
-    // Typography mặc định
-    config-methods(
-      init: (self: none, body) => {
-        // Cố gắng dùng font Humanist, fallback về sans-serif mặc định
-        set text(font: ("Outfit", "Inter", "Roboto", "Arial"), fill: c-text-white, size: 20pt, weight: "light")
-        set par(justify: true, leading: 0.8em)
-        show heading: set text(weight: "bold")
-        show strong: set text(weight: "bold", fill: c-accent-blue) // Bold text màu xanh
-
-        body
-      },
-    ),
-    ..args,
-  )
-
-  body
-}
-
 // --- 4. SLIDE FUNCTIONS (CUSTOMIZED) ---
 
 // Slide tiêu đề (Recreated from HTML Slide 1)
@@ -233,7 +149,7 @@
     components.custom-progressive-outline(
       level: 1,
       alpha: 100%,
-      indent: 2em,
+      indent: (1em, 2em),
       vspace: 1em,
       numbered: (true,),
       depth: 1,
@@ -243,7 +159,12 @@
 })
 
 // Slide chuyển đoạn (New Section)
-#let new-section-slide(title: "") = touying-slide-wrapper(self => {
+#let new-section-slide(title: auto, ..args) = touying-slide-wrapper(self => {
+  let title = if title == auto {
+    if args.pos().len() > 0 { args.pos().first() } else { "" }
+  } else {
+    title
+  }
   touying-slide(self: self, {
     set align(center + horizon)
     badge("Phần Tiếp Theo")
@@ -251,6 +172,94 @@
     gradient-text(text(size: 3em, weight: "bold", title))
   })
 })
+
+
+// --- 3. TOUYING THEME SETUP ---
+
+#let stargazer-theme(
+  aspect-ratio: "16-9",
+  ..args,
+  body,
+) = {
+  // Cấu hình Header (Minimalist)
+  let header(self) = {
+    set align(top)
+    pad(x: 2em, y: 1em, grid(
+      columns: (1fr, auto),
+      align: (left, right),
+      // Breadcrumbs hoặc Navigation nhỏ
+      utils.call-or-display(self, self.store.header-left),
+      // Logo hoặc tên
+      text(fill: c-text-gray.transparentize(50%), size: 0.8em, self.info.title),
+    ))
+  }
+
+  // Cấu hình Footer (Minimalist)
+  let footer(self) = {
+    set align(bottom)
+    pad(x: 2em, y: 1em, grid(
+      columns: (1fr, auto),
+      text(fill: c-text-gray.transparentize(50%), size: 0.6em, self.info.institution),
+      text(fill: c-text-gray.transparentize(50%), size: 0.6em, context utils.slide-counter.display()
+        + " / "
+        + utils.last-slide-number),
+    ))
+  }
+
+  // Cấu hình Background (Gradient + Blobs giả lập)
+  let background-layer = {
+    rect(width: 100%, height: 100%, fill: bg-gradient)
+    // Giả lập blob ánh sáng
+    place(top + left, dx: -20%, dy: -40%, circle(radius: 20pt, fill: gradient.radial(
+      c-accent-blue.transparentize(85%),
+      rgb(0, 0, 0, 100%),
+    )))
+    place(bottom + right, dx: 10%, dy: 30%, circle(radius: 30pt, fill: gradient.radial(
+      c-accent-pink.transparentize(90%),
+      rgb(0, 0, 0, 100%),
+    )))
+  }
+
+  show: touying-slides.with(
+    config-page(
+      paper: "presentation-" + aspect-ratio,
+      margin: (top: 3em, bottom: 2em, x: 3em),
+      fill: c-bg-dark,
+      background: background-layer,
+      header: header,
+      footer: footer,
+    ),
+    config-common(
+      slide-fn: slide,
+      new-section-slide-fn: new-section-slide,
+    ),
+    config-colors(
+      primary: c-text-white,
+      neutral-lightest: c-text-white,
+      neutral-darkest: c-bg-dark,
+    ),
+    config-store(
+      header-left: none,
+    ),
+    // Typography mặc định
+    config-methods(
+      init: (self: none, body) => {
+        // Cố gắng dùng font Humanist, fallback về sans-serif mặc định
+        set text(font: ("Outfit", "Inter", "Roboto", "Arial"), fill: c-text-white, size: 20pt, weight: "light")
+        set par(justify: true, leading: 0.8em)
+        show heading: set text(weight: "bold")
+        show strong: set text(weight: "bold", fill: c-accent-blue) // Bold text màu xanh
+
+        body
+      },
+    ),
+    ..args,
+  )
+
+  body
+}
+
+
 
 
 // --- 5. USAGE EXAMPLE (NỘI DUNG THỰC TẾ) ---
