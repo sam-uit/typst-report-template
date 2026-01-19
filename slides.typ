@@ -14,7 +14,7 @@
 #title-slide()
 
 // Unordered List of Content
-#outline-slide()
+// #outline-slide()
 
 // MARK: - Nội Dung Chính
 #include "content/contents.typ"
