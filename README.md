@@ -114,3 +114,76 @@ typst compile slides.typ --font-path template/fonts
 - Pandoc: [https://pandoc.org](https://pandoc.org)
 - `entr`: `brew install entr`
 - `make`: Pre-installed by default (mostly).
+
+## Slides
+
+### Color Palettes
+
+#### Future Tech
+
+```rust
+    config-colors(
+      primary: rgb("#2d73be"),        // Azure Blue - Sáng, năng động
+      primary-dark: rgb("#0051A8"),   // Darker Blue - Dùng cho điểm nhấn
+      secondary: rgb("#ffffff"),
+      tertiary: rgb("#05807a"),       // Teal/Cyan - Tạo gradient rất đẹp với màu Blue
+      neutral-lightest: rgb("#ffffff"),
+      neutral-darkest: rgb("#2c3e50"), // Midnight Blue nhạt
+    ),
+```
+
+#### Eco Smart
+
+```rust
+    config-colors(
+      primary: rgb("#009688"),        // Persian Green - Điềm đạm
+      primary-dark: rgb("#004D40"),
+      secondary: rgb("#ffffff"),
+      tertiary: rgb("#8BC34A"),       // Light Green - Tạo sự tươi mới
+      neutral-lightest: rgb("#ffffff"),
+      neutral-darkest: rgb("#455A64"), // Blue Grey - Nhẹ nhàng hơn màu đen
+    ),
+```
+
+#### Neural Network
+
+- Style của Gemini.
+
+```rust
+    config-colors(
+      primary: rgb("#6c0ef0"),        // Deep Purple - Đậm nhưng tươi
+      primary-dark: rgb("#3700B3"),
+      secondary: rgb("#ffffff"),
+      tertiary: rgb("#e53087"),       // Pink Accent - Tạo gradient tím-hồng rất modern
+      neutral-lightest: rgb("#ffffff"),
+      neutral-darkest: rgb("#1a1a1a"), // Gần như đen, tạo độ sâu mà không bị ám màu xanh
+    ),
+```
+
+#### Classic Academic
+
+```rust
+    config-colors(
+      primary: rgb("#1454de"),
+      primary-dark: rgb("#004078"),
+      secondary: rgb("#ffffff"),
+      tertiary: rgb("#8b3de5"),
+      // Body text color
+      neutral-lightest: rgb("#ffffff"),
+      neutral-darkest: rgb("#1e1180"),
+    ),
+```
+
+#### Unamed
+
+```rust
+    config-colors(
+      primary: rgb("#1d7c92"),
+      primary-dark: rgb("#093c48"),
+      secondary: rgb("#FFE2AF"),
+      tertiary: rgb("#FFE2AF"),
+      // Body text color
+      neutral-lightest: rgb("#ffffff"),
+      neutral-darkest: rgb("#023855"),
+    ),
+```
