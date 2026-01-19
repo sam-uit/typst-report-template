@@ -6,6 +6,13 @@
 == Lời Cảm Ơn
 
 #slide(composer: (70%, 30%))[
+
+// Đặt logo lên góc trên + giữa.
+// Cùng dòng với chữ "Nhà Trường"
+// #place(top + center, dy: -20pt )[
+//   #image("../static/Logo_UIT_updated.jpg", width: 10%) 
+// ]
+
 === Nhà Trường
 
 - Đại Học Quốc Gia Thành Phố Hồ Chí Minh.
@@ -18,13 +25,19 @@
 - IE005 - *Giới Thiệu Nghành Công Nghệ Thông Tin*.
 
 ][
-#align(center)[
-  #image("../static/Logo_UIT_updated.jpg", height: 40%)
-  // #block(width: 100%, stroke: (0.5pt + orange))
-  // #text(size: 2em, fill: orange)[#sym.star.op]
-]
+// Đặt logo ở giữa, ngay trên phần giới thiệu nhóm.
+// #align(center)[
+//   #image("../static/Logo_UIT_updated.jpg", width: 30%)
+// ]
 
 // #v(1em)
+
+// Đặt logo lên góc trên + phải.
+// Logo không có kênh alpha/nền trong suốt nên không đặt 
+// ra ngoài vùng nội dung được.
+#place(top + right, dy: -50pt )[
+  #image("../static/Logo_UIT_updated.jpg", width: 30%) 
+]
 
 === Thành Viên Nhóm
 
