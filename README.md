@@ -131,3 +131,17 @@ typst compile slides.typ --font-path template/fonts
       neutral-darkest: rgb("#2c3e50"), // Midnight Blue nhạt
     ),
 ```
+
+#### Eco Smart
+
+```rust
+    config-colors(
+      primary: rgb("#009688"),        // Persian Green - Điềm đạm
+      primary-dark: rgb("#004D40"),
+      secondary: rgb("#ffffff"),
+      tertiary: rgb("#8BC34A"),       // Light Green - Tạo sự tươi mới
+      neutral-lightest: rgb("#ffffff"),
+      neutral-darkest: rgb("#455A64"), // Blue Grey - Nhẹ nhàng hơn màu đen
+    ),
+```
+
