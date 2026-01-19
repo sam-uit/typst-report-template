@@ -8,15 +8,14 @@
 #slide(composer: (70%, 30%))[
 === Nhà Trường
 
-- #data.university.name
-- Trường Đại Học Công Nghệ Thông Tin
+- Đại Học Quốc Gia Thành Phố Hồ Chí Minh.
+- Trường Đại Học Công Nghệ Thông Tin.
 - Trung Tâm Phát Triển Công Nghệ Thông Tin.
 
 === Giảng Viên
 
-- #text(weight: 500, data.instructor)
-- Mã Môn: IE005.
-- *Giới Thiệu Nghành Công Nghệ Thông Tin*.
+- Thạc Sĩ Nguyễn Thì Thùy Trâm.
+- IE005 - *Giới Thiệu Nghành Công Nghệ Thông Tin*.
 
 ][
 #align(center)[
