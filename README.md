@@ -114,3 +114,20 @@ typst compile slides.typ --font-path template/fonts
 - Pandoc: [https://pandoc.org](https://pandoc.org)
 - `entr`: `brew install entr`
 - `make`: Pre-installed by default (mostly).
+
+## Slides
+
+### Color Palettes
+
+#### Future Tech
+
+```rust
+    config-colors(
+      primary: rgb("#2d73be"),        // Azure Blue - Sáng, năng động
+      primary-dark: rgb("#0051A8"),   // Darker Blue - Dùng cho điểm nhấn
+      secondary: rgb("#ffffff"),
+      tertiary: rgb("#05807a"),       // Teal/Cyan - Tạo gradient rất đẹp với màu Blue
+      neutral-lightest: rgb("#ffffff"),
+      neutral-darkest: rgb("#2c3e50"), // Midnight Blue nhạt
+    ),
+```
