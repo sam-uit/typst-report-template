@@ -15,7 +15,7 @@
   ),
   instructor: "Ths. Nguyễn Thị Thùy Trâm ",
   author: (
-    name: "Nhóm 01",
+    name: "Nhóm 01 - LT.2025.2-CNTT",
     members: (
       (
         name: lorem(3),
