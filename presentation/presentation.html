@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentation Template</title>
-    
-    <!-- Google Fonts: Montserrat (Humanist/Geometric) -->
+    <title>Presentation Template - Dark Theme</title>
+
+    <!-- Google Fonts: Montserrat + Inter or similar for a modern tech feel -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
 
     <style>
         :root {
-            /* Palette extracted from libslides.typ */
-            --primary: #D5724A;        /* Orange/Terracotta */
-            --primary-dark: #004078;   /* Deep Blue */
-            --neutral-darkest: #20293F; /* Dark Slate */
-            --neutral-lightest: #ffffff;
-            --accent: #b51d69;         /* Magenta-ish for list markers */
-            
-            --bg-color: #ffffff;
-            --text-color: var(--neutral-darkest);
-            
+            /* --- User Provided Theme Variables --- */
+            --bg-dark: #050505;
+            --bg-purple-deep: #130f25;
+            --text-white: #ffffff;
+            --text-gray: #e2e8f0;
+
+            /* Gradients */
+            --accent-gradient: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            --gemini-gradient: linear-gradient(90deg, #4F8AFF 0%, #9B8DFF 50%, #D96570 100%);
+
+            /* Glassmorphism */
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+            --card-radius: 24px;
+
+            /* Font */
             --font-main: 'Montserrat', sans-serif;
-            
+
             /* Sizing */
             --ratio-w: 16;
             --ratio-h: 9;
-            --base-width: 1280px; /* Reference width for scaling calculation */
         }
 
         * {
@@ -38,8 +46,10 @@
 
         body {
             font-family: var(--font-main);
-            background-color: #f0f2f5;
-            color: var(--text-color);
+            background-color: var(--bg-dark);
+            /* Deep cosmetic background gradient */
+            background: radial-gradient(circle at 10% 20%, #1a1535 0%, var(--bg-dark) 90%);
+            color: var(--text-white);
             height: 100vh;
             width: 100vw;
             display: flex;
@@ -50,28 +60,30 @@
 
         /* 
            The Container 
-           Maintains 16:9 Aspect Ratio using the padding-bottom hack or aspect-ratio property.
-           We use aspect-ratio for modern browser support + max-height/width constraints.
+           Maintains 16:9 Aspect Ratio
         */
         #presentation-container {
             width: 100%;
             max-width: 100%;
             aspect-ratio: 16 / 9;
-            background-color: var(--bg-color);
+            background: rgba(19, 15, 37, 0.4);
+            /* Subtle backing */
             position: relative;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        /* If screen is too wide (wider than 16:9), constrain height */
+        /* Responsive constraints */
         @media (min-aspect-ratio: 16/9) {
             #presentation-container {
-                height: 98vh; /* Leave a tiny gap */
+                height: 98vh;
                 width: auto;
             }
         }
-        
-        /* If screen is too tall (taller than 16:9), constrain width */
+
         @media (max-aspect-ratio: 16/9) {
             #presentation-container {
                 width: 98vw;
@@ -86,253 +98,312 @@
             left: 0;
             width: 100%;
             height: 100%;
-            padding: 4rem 5rem;
+            padding: 4rem 6rem;
             opacity: 0;
             pointer-events: none;
-            transition: opacity 0.4s ease-in-out;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease;
             z-index: 0;
             display: flex;
             flex-direction: column;
+            transform: scale(0.98);
+            /* Slight zoom in effect on active */
         }
 
         .slide.active {
             opacity: 1;
             pointer-events: auto;
             z-index: 1;
+            transform: scale(1);
         }
 
-        /* Typography & Content Styling */
-        h1, h2, h3, h4 {
-            color: var(--primary-dark);
-            text-transform: uppercase; /* Smallcaps feeling */
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.5em;
-        }
-        
-        h1 { font-size: 3.5rem; color: var(--primary); }
-        h2 { 
-            font-size: 2.2rem; 
-            border-bottom: 2px solid #ccc; /* Underline style from Typst */
-            padding-bottom: 0.2em;
-            margin-bottom: 1em;
+        /* 
+           Glass Card Layout 
+           Many user slides might benefit from being inside a "card" for better readability 
+        */
+        .glass-card {
+            background: var(--glass-bg);
+            border: var(--glass-border);
+            border-radius: var(--card-radius);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 3rem;
             width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
         }
-        
+
+        /* Typography */
+        h1,
+        h2,
+        h3 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            margin-bottom: 0.2em;
+            background: var(--gemini-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-white);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
         p {
             font-size: 1.5rem;
             line-height: 1.6;
-            margin-bottom: 1rem;
-            font-weight: 300;
+            margin-bottom: 1.5rem;
+            color: var(--text-gray);
+            font-weight: 400;
         }
 
+        /* Lists */
         ul {
             list-style: none;
-            padding-left: 1rem;
-        }
-        
-        ul li {
-            font-size: 1.4rem;
-            margin-bottom: 0.8rem;
-            position: relative;
-            padding-left: 1.5em;
         }
 
-        /* Custom Bullet: Circle with outline */
+        ul li {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-left: 1.8em;
+            position: relative;
+            color: var(--text-gray);
+        }
+
         ul li::before {
-            content: '';
+            content: '✦';
+            /* Star/Sparkle bullet */
             position: absolute;
             left: 0;
-            top: 0.4em;
-            width: 0.6em;
-            height: 0.6em;
-            border: 2px solid var(--accent);
-            border-radius: 50%;
-            display: inline-block;
+            color: #4F8AFF;
+            /* Pull from gradient start */
+            font-size: 1.2em;
+            top: -0.1em;
         }
 
-        /* Title Slide Variant */
+        /* Title Slide Styling */
         .slide.title-slide {
-            background: linear-gradient(135deg, var(--primary-dark) 0%, #1a5c9a 100%);
-            color: white;
             justify-content: center;
             align-items: center;
             text-align: center;
+            background: radial-gradient(circle at 50% 50%, rgba(79, 138, 255, 0.15) 0%, transparent 60%);
         }
-        
+
         .slide.title-slide h1 {
-            color: white;
-            border: none;
-            font-size: 4rem;
-            margin-bottom: 0.5rem;
+            font-size: 5.5rem;
+            line-height: 1.1;
+            margin-bottom: 1rem;
         }
 
-        .slide.title-slide h2 {
-            color: rgba(255,255,255,0.9);
-            border-bottom: 2px solid rgba(255,255,255,0.2);
-            font-size: 1.8rem;
-            text-transform: none;
-            font-weight: 400;
-            display: inline-block;
-            width: auto;
-            padding: 0 2rem 0.5rem 2rem;
-            margin-bottom: 3rem;
-        }
-        
-        .slide.title-slide .meta {
-            font-size: 1.2rem;
-            opacity: 0.8;
-            margin-top: 1rem;
+        .slide.title-slide .subtitle {
+            font-size: 2rem;
+            color: var(--text-gray);
+            font-weight: 300;
+            letter-spacing: 0.05em;
         }
 
-        /* Footer / Progress (Optional) */
+        /* Footer / Meta */
         .footer {
-            position: absolute;
-            bottom: 1.5rem;
-            right: 2rem;
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
             font-size: 0.9rem;
-            color: var(--primary);
-            font-weight: 500;
+            color: rgba(255, 255, 255, 0.3);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 1rem;
         }
 
-        /* Navigation Controls */
+        /* Controls */
         #controls {
             position: fixed;
-            bottom: 20px;
+            bottom: 30px;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(32, 41, 63, 0.8);
-            backdrop-filter: blur(5px);
-            padding: 10px 20px;
-            border-radius: 50px;
+            background: rgba(5, 5, 5, 0.6);
+            border: var(--glass-border);
+            backdrop-filter: blur(10px);
+            padding: 12px 24px;
+            border-radius: 40px;
             display: flex;
-            gap: 15px;
+            gap: 20px;
             z-index: 1000;
-            transition: opacity 0.3s, transform 0.3s;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
-        
+
+        #controls:hover {
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+            background: rgba(5, 5, 5, 0.8);
+        }
+
         #controls.hidden {
+            transform: translateX(-50%) translateY(100px);
             opacity: 0;
             pointer-events: none;
-            transform: translateX(-50%) translateY(20px);
         }
 
-        button {
+        button.control-btn {
             background: transparent;
-            border: 1px solid rgba(255,255,255,0.2);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
             cursor: pointer;
             font-family: var(--font-main);
-            font-size: 0.9rem;
-            transition: background 0.2s;
+            font-size: 1rem;
+            transition: color 0.2s, transform 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        button:hover {
-            background: rgba(255,255,255,0.1);
-        }
-        
-        button:active {
-            transform: translateY(1px);
+        button.control-btn:hover {
+            color: white;
+            transform: translateY(-2px);
         }
 
-        /* Toggle Button for Controls */
+        /* Toggle */
         #toggle-btn {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 40px;
-            height: 40px;
+            bottom: 30px;
+            right: 30px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
-            background: var(--neutral-darkest);
+            background: rgba(255, 255, 255, 0.05);
+            border: var(--glass-border);
             color: white;
-            border: none;
             cursor: pointer;
             z-index: 1001;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-            opacity: 0.3;
-            transition: opacity 0.3s;
-        }
-        
-        #toggle-btn:hover {
-            opacity: 1;
+            transition: all 0.3s;
         }
 
+        #toggle-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: rotate(90deg);
+        }
     </style>
 </head>
+
 <body>
 
     <div id="presentation-container">
-        
-        <!-- Slide 1: Title Slide -->
+
+        <!-- Slide 1: Title -->
         <div class="slide title-slide active">
-            <h1>Presentation Title</h1>
-            <h2>Subtitle or Author Name</h2>
-            <div class="meta">
-                <p>University of Information Technology</p>
-                <p>January 2026</p>
+            <!-- Optional ornamental glow -->
+            <div
+                style="position: absolute; width: 600px; height: 600px; background: var(--gemini-gradient); filter: blur(150px); opacity: 0.15; border-radius: 50%; z-index: -1;">
+            </div>
+
+            <h1>Future of Presentation</h1>
+            <div class="subtitle">AI-Powered Premium Template</div>
+
+            <div style="margin-top: 4rem; display: flex; gap: 2rem; justify-content: center;">
+                <div
+                    style="padding: 10px 20px; background: rgba(255,255,255,0.05); border-radius: 50px; border: var(--glass-border); font-size: 0.9rem;">
+                    2026 Edition
+                </div>
+                <div
+                    style="padding: 10px 20px; background: rgba(255,255,255,0.05); border-radius: 50px; border: var(--glass-border); font-size: 0.9rem;">
+                    @Antigravity
+                </div>
             </div>
         </div>
 
-        <!-- Slide 2: Standard Content -->
+        <!-- Slide 2: Glass Card Layout -->
         <div class="slide">
-            <h2>Introduction</h2>
-            <p>This is a static HTML presentation template designed to match the styling of the Typst Report Template project.</p>
-            <ul>
-                <li>Ratio: 16:9</li>
-                <li>Font: Montserrat (Google Fonts)</li>
-                <li>Colors: Custom Palette</li>
-            </ul>
-        </div>
-
-        <!-- Slide 3: Detailed List -->
-        <div class="slide">
-            <h2>Key Features</h2>
-            <p>The template is built with standard HTML, CSS, and vanilla JavaScript.</p>
-            <ul>
-                <li><strong>No Dependencies:</strong> No build step required.</li>
-                <li><strong>Easy to Edit:</strong> Just duplicate `.slide` divs.</li>
-                <li><strong>Responsive:</strong> Scales to fit the browser window.</li>
-                <li><strong>Navigation:</strong> Arrow keys or on-screen buttons.</li>
-            </ul>
-            <div class="footer">Slide 3</div>
-        </div>
-        
-        <!-- Slide 4: Image Example (Placeholder) -->
-        <div class="slide">
-            <h2>Image Example</h2>
-            <p>You can easily embed images or charts here.</p>
-            <div style="width: 100%; height: 50%; background: #eee; display: flex; align-items: center; justify-content: center; color: #888; border: 2px dashed #ccc; border-radius: 8px;">
-                Image Placeholder (16:9 friendly content area)
+            <div class="glass-card">
+                <h2>Design Philosophy</h2>
+                <p>We've restored the dark, premium feeling using glassmorphism and vibrant gradients.</p>
+                <ul>
+                    <li><strong>Dark Mode First</strong>: Utilizing deep charcoal and purple backgrounds.</li>
+                    <li><strong>Glassmorphism</strong>: Translucent cards with subtle borders.</li>
+                    <li><strong>Vibrant Accents</strong>: Gemini-inspired gradients for headings.</li>
+                    <li><strong>Humanist Type</strong>: Clean, readable Montserrat font.</li>
+                </ul>
+                <div class="footer">
+                    <span>Design Principles</span>
+                    <span>02 / 05</span>
+                </div>
             </div>
         </div>
-        
-        <!-- Slide 5: Thank You -->
+
+        <!-- Slide 3: Content & Image -->
+        <div class="slide">
+            <div class="glass-card" style="flex-direction: row; gap: 4rem; align-items: center;">
+                <div style="flex: 1;">
+                    <h2>Visual Richness</h2>
+                    <p>Unlike standard flat designs, this theme uses depth, blur, and lighting to create a sense of
+                        hierarchy.</p>
+                    <p>The layout adapts to the content, whether it's text-heavy or visual-first.</p>
+                    <button
+                        style="margin-top: 1rem; padding: 12px 30px; border-radius: 30px; border: none; background: var(--gemini-gradient); color: white; font-weight: 600; cursor: pointer;">
+                        Explore More
+                    </button>
+                </div>
+                <div
+                    style="flex: 1; height: 100%; background: rgba(0,0,0,0.2); border-radius: 16px; border: 1px dashed rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.4);">
+                    <span>[ Visual / Chart Area ]</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Code / Technical -->
+        <div class="slide">
+            <div class="glass-card">
+                <h2>Technical Implementation</h2>
+                <p>The entire template is contained within a single HTML file with no external dependencies.</p>
+                <div
+                    style="background: rgba(0,0,0,0.4); padding: 1.5rem; border-radius: 12px; font-family: 'Courier New', monospace; color: #e2e8f0; font-size: 1.1rem; border: var(--glass-border);">
+                    &lt;div class="slide glass-card"&gt;<br>
+                    &nbsp;&nbsp;&lt;h2&gt;Your Title&lt;/h2&gt;<br>
+                    &nbsp;&nbsp;&lt;p&gt;Content goes here...&lt;/p&gt;<br>
+                    &lt;/div&gt;
+                </div>
+                <div class="footer">
+                    <span>Code Snippet</span>
+                    <span>04 / 05</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: End -->
         <div class="slide title-slide">
             <h1>Thank You</h1>
+            <p style="font-size: 1.2rem; opacity: 0.6; margin-top: 1rem;">Press <strong>ESC</strong> or toggle controls
+                to exit</p>
         </div>
 
     </div>
 
-    <!-- Navigation Controls -->
+    <!-- Controls -->
     <div id="controls">
-        <button onclick="prevSlide()">Previous</button>
-        <span style="color:white; align-self: center; font-size: 0.8rem; opacity: 0.6;">Keyboards: ← / →</span>
-        <button onclick="nextSlide()">Next</button>
-        <button onclick="toggleFullScreen()">⛶ Fullscreen</button>
+        <button class="control-btn" onclick="prevSlide()">← Prev</button>
+        <button class="control-btn" onclick="nextSlide()">Next →</button>
+        <div style="width: 1px; height: 20px; background: rgba(255,255,255,0.2); margin: 0 5px;"></div>
+        <button class="control-btn" onclick="toggleFullScreen()">⛶</button>
     </div>
 
-    <button id="toggle-btn" onclick="toggleControls()" title="Toggle Controls">⚙</button>
+    <button id="toggle-btn" onclick="toggleControls()">⚙</button>
 
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
         const controls = document.getElementById('controls');
-        
+
         function showSlide(index) {
             slides.forEach((slide, i) => {
                 slide.classList.remove('active');
@@ -355,7 +426,6 @@
             }
         }
 
-        // Keyboard Navigation
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowRight' || e.key === ' ') {
                 nextSlide();
@@ -366,12 +436,10 @@
             }
         });
 
-        // Toggle Controls Visibility
         function toggleControls() {
             controls.classList.toggle('hidden');
         }
 
-        // Fullscreen Toggle
         function toggleFullScreen() {
             if (!document.fullscreenElement) {
                 document.documentElement.requestFullscreen();
@@ -383,4 +451,5 @@
         }
     </script>
 </body>
+
 </html>
