@@ -200,7 +200,7 @@
       // Breadcrumbs hoặc Navigation nhỏ
       utils.call-or-display(self, self.store.header-left),
       // Logo hoặc tên
-      text(fill: c-text-gray.transparentize(50%), size: 0.8em, self.info.title),
+      text(fill: c-text-gray.transparentize(50%), size: 0.8em, self.info.title + " " + self.info.subtitle),
     ))
   }
 
