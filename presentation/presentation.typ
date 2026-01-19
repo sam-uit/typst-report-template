@@ -184,6 +184,7 @@
 })
 
 
+// MARK: THEME TOUYING
 // --- 3. TOUYING THEME SETUP ---
 
 #let stargazer-theme(
