@@ -5,6 +5,9 @@
 
 == Lời Cảm Ơn
 
+// Chia cột 70/30 cho 2 phần
+// Trái: Nhà Trường, Giảng Viên
+// Phải: Nhóm 01
 #slide(composer: (70%, 30%))[
 
 // Đặt logo lên góc trên + giữa.
