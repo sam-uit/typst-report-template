@@ -159,3 +159,18 @@ typst compile slides.typ --font-path template/fonts
       neutral-darkest: rgb("#1a1a1a"), // Gần như đen, tạo độ sâu mà không bị ám màu xanh
     ),
 ```
+
+#### Classic Academic
+
+```rust
+    config-colors(
+      primary: rgb("#1454de"),
+      primary-dark: rgb("#004078"),
+      secondary: rgb("#ffffff"),
+      tertiary: rgb("#8b3de5"),
+      // Body text color
+      neutral-lightest: rgb("#ffffff"),
+      neutral-darkest: rgb("#1e1180"),
+    ),
+```
+
