@@ -128,7 +128,7 @@
       columns: (auto, auto),
       gutter: 4em,
       [
-        #text(size: 0.7em, fill: c-text-gray, upper("Nhóm Thực Hiện")) \
+        #text(size: 0.7em, fill: c-text-gray, upper("Thực Hiện")) \
         #text(weight: "medium", info.author)
       ],
       [
