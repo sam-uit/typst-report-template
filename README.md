@@ -174,3 +174,16 @@ typst compile slides.typ --font-path template/fonts
     ),
 ```
 
+#### Unamed
+
+```rust
+    config-colors(
+      primary: rgb("#1d7c92"),
+      primary-dark: rgb("#093c48"),
+      secondary: rgb("#FFE2AF"),
+      tertiary: rgb("#FFE2AF"),
+      // Body text color
+      neutral-lightest: rgb("#ffffff"),
+      neutral-darkest: rgb("#023855"),
+    ),
+```
