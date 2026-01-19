@@ -177,7 +177,7 @@
     // institution
     if info.institution != none {
       parbreak()
-      text(size: 1.5em, info.institution)
+      text(size: 1.5em, smallcaps[#info.institution])
     }
     // authors
     grid(
