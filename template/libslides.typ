@@ -28,7 +28,7 @@
       tertiary: rgb("#6709ea"),
       // Body text color
       neutral-lightest: rgb("#ffffff"),
-      neutral-darkest: rgb("#1e1180"),
+      neutral-darkest: rgb("#12092b"),
     ),
   )
 
