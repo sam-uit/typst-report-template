@@ -47,13 +47,17 @@
     inset: 1.5em,
     breakable: false,
     {
+      // Icon, top + centered
       if icon != none {
-        place(top + right, block(
-          fill: rgb(255, 255, 255, 10),
-          radius: 8pt,
-          inset: 8pt,
-          text(fill: color, size: 1.2em, icon),
-        ))
+        align(center)[
+          #text(fill: color, size: 1.2em, icon)
+        ]
+        // place(top + center, block(
+        //   fill: rgb(255, 255, 255, 10),
+        //   radius: 8pt,
+        //   inset: 8pt,
+        //   text(fill: color, size: 1.2em, icon),
+        // ))
       }
       if title != none {
         text(weight: "bold", size: 1.2em, fill: white, title)
