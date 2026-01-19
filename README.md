@@ -1,8 +1,35 @@
 # University Report & Thesis Template
 
-This is a Typst template for university reports and thesis, refactored to a modular, professional book-like structure.
+Đây là một template để tạo báo cáo và luận án, slides cho Trường Đại Học Công Nghệ Thông Tin TP. Hồ Chí Minh. Định dạng là [Typst](https://typst.app/).
 
-# Hướng Dẫn Nhanh
+# CẢNH BÁO
+
+> [!WARNING]
+> - **KHÔNG** bao giờ merge các branch báo cáo: `report-xxx`, `report/xxx`, vv.. vào `main`.
+> - Chỉ merge các branch về chức năng: `feat/xxx`, `fix/xxx`, vv.. vào `main`.
+
+## Tại Sao Cần Template Này?
+
+- Nhất quán trong typography (fonts, size, heading, vv..), style (màu sắc), bố cục cho toàn bộ văn bản.
+- Khả năng hợp tác giữa nhiều thành viên, vì các file nội dung được chia nhỏ.
+- Git-friendly, lưu trữ, theo dõi phiên bản và thay đổi với git.
+- Tự động tạo Table of Contents, List of Figures, List of Tables, và hơn thế.
+- Phù hợp cho một văn bản chuyên nghiệp, đặc biệt là academic.
+- Phương châm: *Code as XXX*, *XXX* ở đây là báo cáo, slides, luận án.
+
+## Tại Sao Lại Là Typst?
+
+- Nhanh, cực kỳ nhanh.
+- Đơn giản, dễ dùng, nhẹ nhàng hơn $LaTeX$/$TeX$.
+- Nhất quán, nhanh nhẹ hơn bất kỳ word processor nào (Google Docs, Microsoft Word).
+
+## Các Ví Dụ
+
+- [`report.pdf`](report.pdf): Báo cáo.
+- [`thesis.pdf`](thesis.pdf): Luận án.
+- [`slides.pdf`](slides.pdf): Slides.
+
+## Hướng Dẫn Nhanh
 
 Cách dùng:
 
@@ -33,46 +60,22 @@ Yêu cầu:
 
 - [Thesis Structure - AthenaCheck](https://athenacheck.nl/en/knowledge-base/writing/thesis-structure/thesis-structure)
 
-## Example
+## Cách Tổ Chức
 
-*   Please take a look at the example: [main.pdf](main.pdf).
-
-## Usage
-
-1.  **Clone/Copy** this directory.
-2.  **Edit Metadata**: Open `metadata.typ` and key in your report's details (University, Course, Author, Assignment).
-3.  **Edit Content**:
-    *   Add your chapters/sections in the `content/` directory.
-    *   You can use `.typ` files directly or `.md` files (which `make` will convert for you).
-4.  **Edit Main**:
-    *   Open `main.typ`.
-    *   Include your new content files from the `content/` folder.
-5.  **Compile**:
-    *   Run `make` to build `main.pdf`.
-    *   Run `make watch` to watch for changes and rebuild automatically.
-
-## Structure
-
-```
-.
-├── report.typ              # The REPORT format (edit this to assemble the report)
-├── thesis.typ              # The THESIS format (edit this to assemble the thesis)
-├── slides.typ              # The SLIDES format (edit this to assemble the slides)
-├── metadata.typ            # Project metadata (formerly data.typ) - Edit this first!
-├── assets/                 # Global assets (images, logos)
-├── content/                # Content chapters/sections
-│   ├── author.typ          # Author information
-│   ├── quiz1.typ
-│   └── ...
-└── template/               # The template logic (formerly libs)
-    ├── lib.typ             # Main template entry point & layout definition
-    ├── fonts.typ           # Font definitions
-    ├── utils.typ           # Helper functions (unheading, etc.)
-    └── components/         # UI Components
-        ├── callout.typ     # Callout boxes (Note, Warning, etc.)
-        ├── table.typ       # Rounded table wrappers
-        └── todo.typ        # TODO box component
-```
+- `template`:
+    - Chứa các file template chính.
+    - `fonts.typ`: Định nghĩa các font.
+    - `utils.typ`: Các hàm helper.
+    - `components/`: Các component UI.
+    - `libs.typ`: File chính để lắp ráp các component.
+    - `libreport.typ`, `libthesis.typ`, `libslides.typ`: Template chính cho các loại file tương ứng.
+- `report.typ`, `thesis.typ`, `slides.typ`: File chính để biên dịch.
+- `author/`: Chứa thông tin tác giả.
+- `config/`: Chứa thông tin cấu hình.
+    - `metadata.typ`: Thông tin báo cáo.
+- `content/`: Chứa các file nội dung.
+    - `content/assets`: Chứa các file tĩnh cho nội dung: `.png`, `.svg`, vv..
+    - `content/diagrams` (Code as Diagrams): Thư mục chứa các đồ họa, đồ thị đặc trưng cho nội dung.
 
 ## Features
 
