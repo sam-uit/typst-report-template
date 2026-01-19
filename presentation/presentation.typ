@@ -1,5 +1,5 @@
 #import "@preview/touying:0.6.1": *
-#import "@preview/fontawesome:0.5.0": *
+#import "@preview/fontawesome:0.6.0": *
 
 // --- 1. DESIGN SYSTEM & COLORS ---
 // Định nghĩa các biến màu sắc cốt lõi theo phong cách Gemini
@@ -245,7 +245,12 @@
     config-methods(
       init: (self: none, body) => {
         // Cố gắng dùng font Humanist, fallback về sans-serif mặc định
-        set text(font: ("Outfit", "Inter", "Roboto", "Arial"), fill: c-text-white, size: 20pt, weight: "light")
+        set text(
+          font: ("Google Sans", "Outfit", "Inter", "Roboto", "Arial"),
+          fill: c-text-white,
+          size: 20pt,
+          weight: "light",
+        )
         set par(justify: true, leading: 0.8em)
         show heading: set text(weight: "bold")
         show strong: set text(weight: "bold", fill: c-accent-blue) // Bold text màu xanh
