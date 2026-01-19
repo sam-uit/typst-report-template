@@ -95,6 +95,7 @@
 
 // --- 4. SLIDE FUNCTIONS (CUSTOMIZED) ---
 
+// MARK: TITLE SLIDE
 // Slide tiêu đề (Recreated from HTML Slide 1)
 #let title-slide(..args) = touying-slide-wrapper(self => {
   let info = self.info + args.named()
@@ -104,25 +105,25 @@
 
     // Badge
     badge("Báo Cáo Đồ Án Cuối Môn")
-    v(1em)
+    v(0.6em)
 
     // Title lớn
-    text(size: 3em, weight: "bold", info.title)
+    text(size: 2em, weight: "bold", info.title)
     linebreak()
-    gradient-text(text(size: 3em, weight: "bold", info.subtitle))
+    gradient-text(text(size: 2em, weight: "bold", info.subtitle))
 
-    v(1.5em)
+    v(0.6em)
     // Description
     text(
       size: 1.2em,
       fill: c-text-gray,
-      "Từ ứng dụng thực tiễn đến định hướng tương lai, khám phá cách Trí tuệ nhân tạo đang tái định hình thế giới của chúng ta.",
+      "Khám phá cách Trí tuệ nhân tạo đang tái định hình thế giới của chúng ta.",
     )
 
-    v(3em)
+    // v(3em)
     // Footer Info
-    line(length: 100%, stroke: 1pt + rgb(255, 255, 255, 20))
-    v(1em)
+    line(length: 100%, stroke: 0.75pt + rgb(255, 255, 255, 20))
+    v(0.6em)
     grid(
       columns: (auto, auto),
       gutter: 4em,
@@ -138,6 +139,7 @@
   })
 })
 
+// MARK: CONTENT SLIDE
 // Slide nội dung chuẩn
 #let slide(title: auto, ..bodies) = touying-slide-wrapper(self => {
   if title != auto {
