@@ -59,10 +59,12 @@
         //   text(fill: color, size: 1.2em, icon),
         // ))
       }
+      // Title
       if title != none {
         text(weight: "bold", size: 1.2em, fill: white, title)
         v(0.5em)
       }
+      // Body text
       set text(fill: c-text-gray, size: 0.9em, weight: "light")
       body
     },
