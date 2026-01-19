@@ -252,7 +252,7 @@
       init: (self: none, body) => {
         // Cố gắng dùng font Humanist, fallback về sans-serif mặc định
         set text(
-          font: ("Google Sans", "Outfit", "Inter", "Roboto", "Arial"),
+          font: "Google Sans",
           fill: c-text-white,
           size: 20pt,
           weight: "light",
