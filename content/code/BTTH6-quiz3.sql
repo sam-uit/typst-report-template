@@ -1,7 +1,7 @@
 -- IE103
 -- BTTH6
--- NHOM 2
--- CAU 3.
+-- NHÓM 2
+-- CÂU 3.
 
 -- ==================================================================
 -- 1. Tạo ra 3 users: `GIANGVIEN`, `GIAOVU` và `SINHVIEN`, đặt *mật khẩu tuỳ ý*.
