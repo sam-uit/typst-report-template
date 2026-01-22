@@ -233,9 +233,13 @@ GO
 
 ### Tất Cả Người Dùng
 
-- Tất cả người dùng trên đều không có quyền xoá thông tin.
+Yêu cầu:
 
-#### GIAOVU
+- Tất cả người dùng trên đều KHÔNG có quyền XÓA thông tin.
+
+Thực hiện:
+
+- `GIAOVU`: KHÔNG có quyền XÓA trên các bảng.
 
 ```sql
 DENY DELETE ON CHUYENNGANH TO GIAOVU;
@@ -256,7 +260,7 @@ DENY DELETE ON SV_DETAI TO GIAOVU;
 GO
 ```
 
-#### GIANGVIEN
+- `GIANGVIEN`: KHÔNG có quyền XÓA trên các bảng.
 
 ```sql
 DENY DELETE ON GIAOVIEN TO GIANGVIEN;
@@ -272,7 +276,7 @@ DENY DELETE ON SV_DETAI TO GIANGVIEN;
 GO
 ```
 
-#### SINHVIEN
+- `SINHVIEN`: KHÔNG có quyền XÓA trên các bảng.
 
 ```sql
 DENY DELETE ON SINHVIEN TO SINHVIEN;
