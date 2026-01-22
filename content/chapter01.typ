@@ -49,12 +49,40 @@ Dựa vào CSDL đã thiết kế ở BTTH số 2 (QLĐT), hãy thực hiện c�
 - `HOCHAM` 1 - n `GIAOVIEN`:
   - Một học hàm có thể có được cấp cho nhiều Giáo Viên.
   - Một Giáo viên chỉ có một Học Hàm chính.
-- `HOCVI` n - n `GIAOVIEN`: `GV_HV_CN`.
+- `HOCVI` m - n `GIAOVIEN`: `GV_HV_CN`.
   - Một học Vị có thể được cấp cho nhiều Giáo Viên.
   - Một giáo viên chỉ có thể có nhiều Học Vị trong nhiều năm khác nhau.
 - `CHUYENNGANH` m - n `GIAOVIEN`: `GV_HV_CN`.
   - Một chuyên ngành có thể có nhiều giáo viên.
   - Một giáo viên có thể dạy nhiều chuyên ngành.
+
+=== Danh Sách Các Bảng
+<danh-sach-cac-bang>
+
+Bao gồm:
+
+- Mỗi Thực Thể là một Bảng.
+- Các Quan Hệ m - n được tách thành bảng riêng.
+
+Danh sách:
+
+- `DETAI`: Đề Tài.
+- `GIAOVIEN`: Giáo Viên.
+- `HOCHAM`: Học Hàm.
+- `HOCVI`: Học Vị.
+- `HOIDONG`: Hội Đồng.
+- `SINHVIEN`: Sinh Viên.
+- `CHUYENNGANH`: Chuyên Ngành.
+- `SV_DETAI`: Sinh Viên - Đề Tài.
+- `GV_HDDT`: Giáo Viên - Đề Tài (Hướng Dẫn).
+- `GV_PBDT`: Giáo Viên - Đề Tài (Phản Biện).
+- `GV_UVDT`: Giáo Viên - Đề Tài (Làm Uỷ Viên).
+- `HOIDONG_GV`: Hội Đồng - Giáo Viên.
+- `HOIDONG_DT`: Hội Đồng - Đề Tài.
+- `GV_HV_CN`: Giáo Viên - Học Vị - Chuyên Ngành.
+
+=== Sơ Đồ ER (Chen) Tổng Quan
+<so-do-er-chen-tong-quan>
 
 #figure(image("diagrams/BTTH6-ER.svg"),
   caption: [
