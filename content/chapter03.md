@@ -94,13 +94,18 @@ GRANT SELECT, UPDATE ON CHUYENNGANH TO GIAOVU;
 GO
 ```
 
+![GIAOVU: Cấp Quyền Xem](./images/cau03-02-giaovu-01.png)
+
 - Kiểm tra `GIAOVU` XEM được bảng.
 
 ```sql
 EXECUTE AS USER = 'GIAOVU';
 SELECT * FROM GIAOVIEN;
 REVERT;
+GO
 ```
+
+![GIAOVU: Kiểm tra quyền Xem](./images/cau03-02-giaovu-02.png)
 
 - Kiểm tra `GIAOVU` Cập Nhật được bảng.
 
@@ -110,7 +115,10 @@ UPDATE GIAOVIEN
 SET TENGV = TENGV 
 WHERE MSGV = '001';
 REVERT;
+GO
 ```
+
+![GIAOVU: Kiểm tra quyền Cập Nhật](./images/cau03-02-giaovu-03.png)
 
 ### GIANGVIEN
 
