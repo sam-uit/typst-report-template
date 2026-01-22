@@ -64,8 +64,15 @@ WHERE name IN ('GIANGVIEN', 'GIAOVU', 'SINHVIEN');
 === GIAOVU
 <giaovu>
 
+Yêu cầu:
+
+- `GIAOVU` có quyền xem và chỉnh sửa (cập nhật) trên tất cả các bảng.
+
+Thực hiện:
+
+- Quền XEM:
+
 ```sql
--- 3.2.1 GIAOVU có quyền xem và chỉnh sửa (cập nhật) trên tất cả các bảng
 GRANT SELECT, UPDATE ON SV_DETAI TO GIAOVU;
 GRANT SELECT, UPDATE ON SINHVIEN TO GIAOVU;
 GRANT SELECT, UPDATE ON HOIDONG_GV TO GIAOVU;
@@ -83,15 +90,17 @@ GRANT SELECT, UPDATE ON DETAI TO GIAOVU;
 GRANT SELECT, UPDATE ON CHUYENNGANH TO GIAOVU;
 ```
 
+- Kiểm tra `GIAOVU` XEM được bảng.
+
 ```sql
-----test GIAOVU XEM ĐƯỢC Bảng
 EXECUTE AS USER = 'GIAOVU';
 SELECT * FROM GIAOVIEN;
 REVERT;
 ```
 
+- Kiểm tra `GIAOVU` Cập Nhật được bảng.
+
 ```sql
-----test GIAOVU Cập Nhập được
 EXECUTE AS USER = 'GIAOVU';
 UPDATE GIAOVIEN 
 SET TENGV = TENGV 
