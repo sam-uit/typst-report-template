@@ -88,6 +88,7 @@ GRANT SELECT, UPDATE ON GIAOVIEN TO GIAOVU;
 GRANT SELECT, UPDATE ON DETAI_DIEM TO GIAOVU;
 GRANT SELECT, UPDATE ON DETAI TO GIAOVU;
 GRANT SELECT, UPDATE ON CHUYENNGANH TO GIAOVU;
+GO
 ```
 
 - Kiểm tra `GIAOVU` XEM được bảng.
@@ -171,14 +172,15 @@ Yêu cầu:
 
 Thực hiện:
 
-- 2.1: thêm cột đăng nhập vào bảng `GIAOVIEN`.
+- 2.1 Thêm cột `TenDangNhap` vào bảng `GIAOVIEN`.
 
 ```sql
 ALTER TABLE GIAOVIEN
 ADD TenDangNhap VARCHAR(50);
+GO
 ```
 
-- 2.2: Giả sử gán `TenDangNhap = GIANGVIEN` với `MSGV` là `201`.
+- 2.2 Giả sử gán `TenDangNhap = GIANGVIEN` với `MSGV` là `201`.
 
 ```sql
 UPDATE GIAOVIEN
@@ -186,7 +188,7 @@ SET TenDangNhap = 'GIANGVIEN'
 WHERE MSGV = '201'; 
 ```
 
-- 2.3: tạo bảng View #emph[Thông Tin Của Tôi]
+- 2.3 tạo bảng View #emph[Thông Tin Của Tôi]
 
 ```sql
 CREATE VIEW GV_ThongTinCuaToi
@@ -197,7 +199,7 @@ WHERE TenDangNhap ='GIANGVIEN';
 GO
 ```
 
-- 2.4: Up thông tin `GIAOVIEN` theo tên đăng nhập trên View.
+- 2.4 Up thông tin `GIAOVIEN` theo tên đăng nhập trên View.
 
 ```sql
 GRANT SELECT, UPDATE ON GV_ThongTinCuaToi TO GIANGVIEN;
