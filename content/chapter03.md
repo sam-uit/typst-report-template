@@ -217,11 +217,18 @@ GO
 
 ### SINHVIEN
 
+Yêu cầu:
+
+- `SINHVIEN` có quyền xem thông tin của sinh viên, thông tin của hội đồng và danh sách các đề tài hiện có.
+
+Thực hiện:
+
 ```sql
 GRANT SELECT ON SINHVIEN TO SINHVIEN;
 GRANT SELECT ON HOIDONG TO SINHVIEN;
 GRANT SELECT ON HOIDONG_DT TO SINHVIEN;
 GRANT SELECT ON DETAI TO SINHVIEN;
+GO
 ```
 
 ### Tất Cả Người Dùng
