@@ -6,4 +6,56 @@ Dựa vào CSDL đã thiết kế ở BTTH số 2 (QLĐT), hãy thực hiện c�
 
 ## Sơ Đồ ERD (Chen Notation)
 
+### Các Thực Thể
+
+- `DETAI`: Đề Tài.
+- `GIAOVIEN`: Giáo Viên.
+- `HOCHAM`: Học Hàm.
+- `HOCVI`: Học Vị.
+- `HOIDONG`: Hội Đồng.
+- `SINHVIEN`: Sinh Viên.
+- `CHUYENNGANH`: Chuyên Ngành.
+
+### Các Quan Hệ
+
+- `SINHVIEN` m - n `DETAI`: `SV_DETAI`.
+    - Một sinh viên được THỰC HIỆN nhiều đề tài (nhiều lần).
+    - Một đề tài được THỰC HIỆN bởi nhiều sinh viên (tối đa 3).
+
+- `GIAOVIEN` m - n `DETAI`: `GV_HDDT`.
+    - Một giáo viên có thể HƯỚNG DẪN nhiều đề tài.
+    - Một đề tài có thể được HƯỚNG DẪN bởi nhiều giáo viên (tối đa 2).
+
+- `GIAOVIEN` m - n `DETAI`: `GV_PBDT`.
+    - Một giáo viên có thể PHẢN BIỆN nhiều đề tài.
+    - Một đề tài có thể được PHẢN BIỆN bởi nhiều giáo viên.
+
+- `GIAOVIEN` m -n `DETAI`: `GV_UVDT`.
+    - Một giáo viên có thể LÀM UỶ VIÊN nhiều đề tài.
+    - Một đề tài có thể có nhiều giáo viên LÀM UỶ VIÊN.
+
+- `GIAOVIEN` 1 - n `HOIDONG`:
+    - Một giáo viên có thể làm CHỦ TỊCH nhiều hội đồng.
+    - Một hội đồng chỉ có một CHỦ TỊCH.
+
+- `GIAOVIEN` m - n `HOIDONG`: `HOIDONG_GV`.
+    - Một giáo viên có thể tham gia THÀNH VIÊN nhiều hội đồng.
+    - Một hội đồng có thể có nhiều giáo viên là THÀNH VIÊN.
+
+- `DETAI` m - n `HOIDONG`: `HOIDONG_DT`.
+    - Một đề tài có thể có QUYẾT ĐỊNH từ nhiều hội đồng.
+    - Một hội đồng có thể có QUYẾT ĐỊNH nhiều đề tài.
+
+- `HOCHAM` 1 - n `GIAOVIEN`:
+    - Một học hàm có thể có được cấp cho nhiều Giáo Viên.
+    - Một Giáo viên chỉ có một Học Hàm chính.
+
+- `HOCVI` n - n `GIAOVIEN`: `GV_HV_CN`.
+    - Một học Vị có thể được cấp cho nhiều Giáo Viên.
+    - Một giáo viên chỉ có thể có nhiều Học Vị trong nhiều năm khác nhau.
+
+- `CHUYENNGANH` m - n `GIAOVIEN`: `GV_HV_CN`.
+    - Một chuyên ngành có thể có nhiều giáo viên.
+    - Một giáo viên có thể dạy nhiều chuyên ngành.
+
 ![Câu 1 - Sơ Đồ ERD](diagrams/BTTH6-ER.svg)
