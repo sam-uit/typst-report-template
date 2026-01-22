@@ -13,28 +13,42 @@ Dựa vào CSDL đã thiết kế ở BTTH số 2 (QLĐT), hãy thực hiện c�
 
 ## Tạo Ra 3 Users
 
+```sql
 --- Trước khi tạo 3 user ta tạo 3  login đăng nhập
 CREATE LOGIN GIANGVIEN WITH PASSWORD = 'gvi123';
 CREATE LOGIN GIAOVU WITH PASSWORD = 'gvu123';
 CREATE LOGIN SINHVIEN WITH PASSWORD = 'SV123';
+GO
+```
+
+```sql
 ---- Tạo 3 user trên DATABASE
 CREATE USER GIANGVIEN FOR LOGIN GIANGVIEN;
 CREATE USER GIAOVU FOR LOGIN GIAOVU;
 CREATE USER SINHVIEN FOR LOGIN SINHVIEN;
-----kiểm tra 3 login chưa
+GO
+```
+
+```sql
+--- kiểm tra 3 login chưa
 SELECT name 
 FROM sys.server_principals
 WHERE name IN ('GIANGVIEN', 'GIAOVU', 'SINHVIEN');
-----kiểm tra 3 user tạo chưa
+```
+
+```sql
+--- kiểm tra 3 user tạo chưa
 SELECT name 
 FROM sys.database_principals
 WHERE name IN ('GIANGVIEN', 'GIAOVU', 'SINHVIEN');
+```
 
 ## Phân Quyền Cho Các Users Trên Database
 
 ### GIAOVU
 
---3.2.1 GIAOVU có quyền xem và chỉnh sửa (cập nhật) trên tất cả các bảng
+```sql
+-- 3.2.1 GIAOVU có quyền xem và chỉnh sửa (cập nhật) trên tất cả các bảng
 GRANT SELECT, UPDATE ON SV_DETAI TO GIAOVU;
 GRANT SELECT, UPDATE ON SINHVIEN TO GIAOVU;
 GRANT SELECT, UPDATE ON HOIDONG_GV TO GIAOVU;
@@ -50,61 +64,98 @@ GRANT SELECT, UPDATE ON GIAOVIEN TO GIAOVU;
 GRANT SELECT, UPDATE ON DETAI_DIEM TO GIAOVU;
 GRANT SELECT, UPDATE ON DETAI TO GIAOVU;
 GRANT SELECT, UPDATE ON CHUYENNGANH TO GIAOVU;
+```
+
+```sql
 ----test GIAOVU XEM ĐƯỢC Bảng
 EXECUTE AS USER = 'GIAOVU';
 SELECT * FROM GIAOVIEN;
 REVERT;
+```
+
+```sql
 ----test GIAOVU Cập Nhập được
 EXECUTE AS USER = 'GIAOVU';
 UPDATE GIAOVIEN 
 SET TENGV = TENGV 
 WHERE MSGV = '001';
 REVERT;
+```
+
 ### GIANGVIEN
---GIANGVIEN.1: Có quyền xem trên các bảng có liên quan đến thông tin GV, các đề tài mà GV hướng dẫn, phản biện hay làm uỷ viên, xem thông tin hội đồng và danh sách các đề tài hiện có
 
+1. Có quyền xem trên các bảng có liên quan đến thông tin GV, các đề tài mà GV hướng dẫn, phản biện hay làm uỷ viên, xem thông tin hội đồng và danh sách các đề tài hiện có.
 
+```sql
 -- 1.1) Thông tin giảng viên (và các bảng mô tả thông tin GV nếu cần)
 GRANT SELECT ON GIAOVIEN TO GIANGVIEN;
 GRANT SELECT ON HOCHAM TO GIANGVIEN;
 GRANT SELECT ON CHUYENNGANH TO GIANGVIEN;
 GRANT SELECT ON GV_HV_CN TO GIANGVIEN; 
+```
 
+```sql
 --1.2) Danh sách đề tài hiện có + thông tin chi tiết đề tài
 GRANT SELECT ON DETAI TO GIANGVIEN;
 GRANT SELECT ON DETAI_DIEM  TO GIANGVIEN; 
 GRANT SELECT ON SV_DETAI TO GIANGVIEN; 
+```
 
+```sql
 --1.3) Các đề tài GV hướng dẫn / phản biện / uỷ viên
 GRANT SELECT ON GV_HDDT  TO GIANGVIEN; 
 GRANT SELECT ON GV_PBDT  TO GIANGVIEN;  
 GRANT SELECT ON GV_UVDT  TO GIANGVIEN; 
+```
 
+```sql
 --1.44) Thông tin hội đồng + danh sách đề tài trong hội đồng + GV trong hội đồng
 GRANT SELECT ON HOIDONG TO GIANGVIEN;
 GRANT SELECT ON HOIDONG_DT TO GIANGVIEN;
 GRANT SELECT ON HOIDONG_GV  TO GIANGVIEN;
---GIANGVIEN.2: Có quyền cập nhật thông tin của mình/tránh trường hợp được sửa hết nguyên bản giáo viên
---Ý tưởng: Thêm cột đăng nhập vào bảng GIAOVIEN, gán tài khoản đăng nhập cho từng giáo viên, tạo bảng view thông tin của tôi.
---2.1: thêm cột đăng nhập vào bảng GIAOVIEN
+```
+
+2. Có quyền cập nhật thông tin của mình/tránh trường hợp được sửa hết nguyên bản giáo viên
+
+Ý tưởng: Thêm cột đăng nhập vào bảng GIAOVIEN, gán tài khoản đăng nhập cho từng giáo viên, tạo bảng view thông tin của tôi.
+
+2.1: thêm cột đăng nhập vào bảng GIAOVIEN
+
+```sql
 ALTER TABLE GIAOVIEN
 ADD TenDangNhap VARCHAR(50);
---2.2: Giả sử gán TenDangNhap = GIANGVIEN với MSGV là 201.
+```
+
+2.2: Giả sử gán TenDangNhap = GIANGVIEN với MSGV là 201.
+
+```sql
 UPDATE GIAOVIEN
 SET TenDangNhap = 'GIANGVIEN'
 WHERE MSGV = '201'; 
---2.3: tạo bảng View Thông tin của tôi
+```
+
+2.3: tạo bảng View Thông tin của tôi
+
+```sql
 CREATE VIEW GV_ThongTinCuaToi
 AS
 SELECT MSGV, TENGV, DIACHI, SODT, NAMHH
 FROM dbo.GIAOVIEN
 WHERE TenDangNhap ='GIANGVIEN';
 GO
---2.4: up thông tin GIAOVIEN theo tên đăng nhập trên view
+```
+
+2.4: Up thông tin GIAOVIEN theo tên đăng nhập trên view
+
+```sql
 GRANT SELECT, UPDATE ON GV_ThongTinCuaToi TO GIANGVIEN;
 DENY UPDATE ON GIAOVIEN TO GIANGVIEN;
 GO
---2.5: Dùng tigger để up thông tin từ view xuống bảng giáo viên.
+```
+
+2.5 Dùng tigger để up thông tin từ view xuống bảng giáo viên.
+
+```sql
 CREATE TRIGGER trg_Update_GV
 ON GV_ThongTinCuaToi
 INSTEAD OF UPDATE
@@ -121,12 +172,20 @@ BEGIN
       AND GIAOVIEN.TenDangNhap = 'GIANGVIEN';
 END;
 GO
+```
+
 ### SINHVIEN
+
+```sql
 GRANT SELECT ON SINHVIEN TO SINHVIEN;
 GRANT SELECT ON HOIDONG TO SINHVIEN;
 GRANT SELECT ON HOIDONG_DT TO SINHVIEN;
 GRANT SELECT ON DETAI TO SINHVIEN;
+```
+
 ### Tất Cả Người Dùng
+
+```sql
 --GIAOVU
 DENY DELETE ON CHUYENNGANH TO GIAOVU;
 DENY DELETE ON DETAI TO GIAOVU;
@@ -143,6 +202,9 @@ DENY DELETE ON HOIDONG_DT TO GIAOVU;
 DENY DELETE ON HOIDONG_GV TO GIAOVU;
 DENY DELETE ON SINHVIEN TO GIAOVU;
 DENY DELETE ON SV_DETAI TO GIAOVU;
+```
+
+```sql
 --GIANGVIEN
 DENY DELETE ON GIAOVIEN TO GIANGVIEN;
 DENY DELETE ON DETAI TO GIANGVIEN;
@@ -154,9 +216,12 @@ DENY DELETE ON GV_PBDT TO GIANGVIEN;
 DENY DELETE ON GV_UVDT TO GIANGVIEN;
 DENY DELETE ON DETAI_DIEM TO GIANGVIEN;
 DENY DELETE ON SV_DETAI TO GIANGVIEN;
+```
+
+```sql
 --SINHVIEN
 DENY DELETE ON SINHVIEN TO SINHVIEN;
 DENY DELETE ON HOIDONG TO SINHVIEN;
 DENY DELETE ON HOIDONG_DT TO SINHVIEN;
 DENY DELETE ON DETAI TO SINHVIEN;
-
+```
