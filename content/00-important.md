@@ -6,11 +6,11 @@
 - #smallcaps[LT.2025.2-CNTT: Chỉ thực hiện câu 1, và 3 trong BTTH6.]
 ```
 
-## Bài Làm
+## Cách Trình Bày Bài Làm
 
-- Trình bày ngắn gọn các câu trả lời.
-- Đối với các câu hỏi liên quan đến thực thi code SQL, thực hiện dán code SQL vào file báo cáo tương ứng với câu hỏi.
-- Đối với các Crystal Report/Tableau, chụp Màn hình Design và Màn hình Preview của từng câu.
+- Trình bày *ngắn gọn* các câu trả lời.
+- Đối với các câu hỏi liên quan đến thực thi code SQL, thực hiện *dán code SQL vào file báo cáo* tương ứng với câu hỏi.
+- Đối với các Crystal Report/Tableau, *chụp Màn hình Design và Màn hình Preview* của từng câu.
 
 ## Quy Cách
 

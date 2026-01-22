@@ -2,12 +2,12 @@
 #unheading[Lưu Ý & Hướng Dẫn Thực Hiện]
 - #smallcaps[LT.2025.2-CNTT: Chỉ thực hiện câu 1, và 3 trong BTTH6.]
 
-== Bài Làm
-<bai-lam>
+== Cách Trình Bày Bài Làm
+<cach-trinh-bay-bai-lam>
 
-- Trình bày ngắn gọn các câu trả lời.
-- Đối với các câu hỏi liên quan đến thực thi code SQL, thực hiện dán code SQL vào file báo cáo tương ứng với câu hỏi.
-- Đối với các Crystal Report/Tableau, chụp Màn hình Design và Màn hình Preview của từng câu.
+- Trình bày #emph[ngắn gọn] các câu trả lời.
+- Đối với các câu hỏi liên quan đến thực thi code SQL, thực hiện #emph[dán code SQL vào file báo cáo] tương ứng với câu hỏi.
+- Đối với các Crystal Report/Tableau, #emph[chụp Màn hình Design và Màn hình Preview] của từng câu.
 
 == Quy Cách
 <quy-cach>
