@@ -306,6 +306,18 @@ GRANT SELECT ON DETAI TO SINHVIEN;
 GO
 ```
 
+Kiểm thử:
+
+```sql
+EXECUTE AS USER = 'SINHVIEN';
+SELECT *
+FROM SINHVIEN;
+REVERT;
+GO
+```
+
+![SINHVIEN: Kiểm thử quyền xem](./images/cau03-02-sinhvien-01.png)
+
 ### Tất Cả Người Dùng
 
 Yêu cầu:

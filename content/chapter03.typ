@@ -382,6 +382,22 @@ GRANT SELECT ON DETAI TO SINHVIEN;
 GO
 ```
 
+Kiểm thử:
+
+```sql
+EXECUTE AS USER = 'SINHVIEN';
+SELECT *
+FROM SINHVIEN;
+REVERT;
+GO
+```
+
+#figure(image("./images/cau03-02-sinhvien-01.png"),
+  caption: [
+    SINHVIEN: Kiểm thử quyền xem
+  ]
+)
+
 === Tất Cả Người Dùng
 <tat-ca-nguoi-dung>
 
