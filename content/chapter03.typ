@@ -405,9 +405,10 @@ Yêu cầu:
 
 - Tất cả người dùng trên đều KHÔNG có quyền XÓA thông tin.
 
-Thực hiện:
+==== GIAOVU
+<giaovu-1>
 
-- `GIAOVU`: KHÔNG có quyền XÓA trên các bảng.
+- Thực hiện:
 
 ```sql
 DENY DELETE ON CHUYENNGANH TO GIAOVU;
@@ -428,7 +429,25 @@ DENY DELETE ON SV_DETAI TO GIAOVU;
 GO
 ```
 
-- `GIANGVIEN`: KHÔNG có quyền XÓA trên các bảng.
+- Kiểm thử:
+
+```sql
+EXECUTE AS USER = 'GIAOVU';
+DELETE FROM CHUYENNGANH;
+REVERT;
+GO
+```
+
+#figure(image("./images/cau03-03-delete-giaovu.png"),
+  caption: [
+    GIAOVU: Kiểm thử quyền XÓA
+  ]
+)
+
+==== GIANGVIEN
+<giangvien-1>
+
+- Thực hiện:
 
 ```sql
 DENY DELETE ON GIAOVIEN TO GIANGVIEN;
@@ -444,7 +463,25 @@ DENY DELETE ON SV_DETAI TO GIANGVIEN;
 GO
 ```
 
-- `SINHVIEN`: KHÔNG có quyền XÓA trên các bảng.
+- Kiểm thử:
+
+```sql
+EXECUTE AS USER = 'GIANGVIEN';
+DELETE FROM DETAI_DIEM;
+REVERT;
+GO
+```
+
+#figure(image("./images/cau03-03-delete-giangvien.png"),
+  caption: [
+    GIANGVIEN: Kiểm thử quyền XÓA
+  ]
+)
+
+==== SINHVIEN
+<sinhvien-1>
+
+- Thực hiện:
 
 ```sql
 DENY DELETE ON SINHVIEN TO SINHVIEN;
@@ -453,3 +490,18 @@ DENY DELETE ON HOIDONG_DT TO SINHVIEN;
 DENY DELETE ON DETAI TO SINHVIEN;
 GO
 ```
+
+- Kiểm thử:
+
+```sql
+EXECUTE AS USER = 'SINHVIEN';
+DELETE FROM HOIDONG;
+REVERT;
+GO
+```
+
+#figure(image("./images/cau03-03-delete-sinhvien.png"),
+  caption: [
+    SINHVIEN: Kiểm thử quyền XÓA
+  ]
+)
