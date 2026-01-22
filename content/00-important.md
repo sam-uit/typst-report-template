@@ -41,4 +41,4 @@ Code SQL của BTTH2 được lưu tại: [LT.K2025.2-CNTT > courses > IE103 > a
     - Không chứa các stored procedure, function, trigger, view.
 - `content/code`:
     - Thư mục chứa code SQL của BTTH2.
-    - Có thể triển khai thủ công mọi thành phần.
+    - Có thể triển khai thủ công mọi thành phần (chỉ khi cần).

@@ -38,4 +38,4 @@ Code SQL của BTTH2 được lưu tại: #link("https://github.com/lt20252cntta
   - Không chứa các stored procedure, function, trigger, view.
 - `content/code`:
   - Thư mục chứa code SQL của BTTH2.
-  - Có thể triển khai thủ công mọi thành phần.
+  - Có thể triển khai thủ công mọi thành phần (chỉ khi cần).
