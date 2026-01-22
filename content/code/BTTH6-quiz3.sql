@@ -52,11 +52,13 @@ GRANT SELECT, UPDATE ON GIAOVIEN TO GIAOVU;
 GRANT SELECT, UPDATE ON DETAI_DIEM TO GIAOVU;
 GRANT SELECT, UPDATE ON DETAI TO GIAOVU;
 GRANT SELECT, UPDATE ON CHUYENNGANH TO GIAOVU;
+GO
 
 ----test GIAOVU XEM ĐƯỢC Bảng
 EXECUTE AS USER = 'GIAOVU';
 SELECT * FROM GIAOVIEN;
 REVERT;
+GO
 
 ----test GIAOVU Cập Nhập được
 EXECUTE AS USER = 'GIAOVU';
@@ -64,6 +66,7 @@ UPDATE GIAOVIEN
 SET TENGV = TENGV
 WHERE MSGV = '001';
 REVERT;
+GO
 
 -- 2.2 `GIANGVIEN`:
 -- 2.2a Có quyền xem trên các bảng có liên quan đến thông tin GV, các đề tài mà GV hướng dẫn, phản biện hay làm uỷ viên, xem thông tin hội đồng và danh sách các đề tài hiện có.
