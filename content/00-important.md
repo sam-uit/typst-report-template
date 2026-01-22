@@ -1,8 +1,10 @@
 ```{=typst}
-#unheading[Lưu Ý Quan Trọng]
+#unheading[Lưu Ý & Hướng Dẫn Thực Hiện]
 ```
 
-- **Chỉ thực hiện câu 1, và 3 trong BTTH6.**
+```{=typst}
+- #smallcaps[Chỉ thực hiện câu 1, và 3 trong BTTH6.]
+```
 
 ## Bài Làm
 
@@ -12,18 +14,19 @@
 
 ## Quy Cách
 
-- Tham khảo [BTTH5](https://github.com/sam-uit/typst-report-template/tree/report/IE103-BTTH5/content)
+<!-- - Tham khảo [BTTH5](https://github.com/sam-uit/typst-report-template/tree/report/IE103-BTTH5/content) -->
 
-Cấu trúc thư mục:
+Cấu trúc thư mục `content/` trong template Typst:
 
 - `./code/`: Các file code SQL.
 - `./assets/`: Các file ảnh.
+- `./diagrams/`: Các file diagram (d2, mermaid, vv...).
 - `./chapterX.md`: File báo cáo của câu hỏi X.
 
 Đặt tên file theo mô hình sau:
 
 - `BTTH6-quiz1-a.sql`: Code SQL của câu 1, mục a.
-- `BTTH6-quiz1-a.xml`: Code XML của câu 1, mục a.
+- `BTTH6-quiz1-a.xml`: Output XML của câu 1, mục a (nếu có, XML, JSON, vv...).
 - `BTTH6-quiz1-a1.png`: Màn hình Design của câu 1, mục a, ảnh 1.
 - `BTTH6-quiz1-a2.png`: Màn hình Preview của câu 1, mục a, ảnh 2.
 
