@@ -275,7 +275,7 @@ REVERT;
 GO
 ```
 
-![Cập nhật thông tin của bản thân](./images/cau03-02-giangvien-TenDangNhap-test01.png)
+![GIANGVIEN: Cập nhật thông tin của bản thân](./images/cau03-02-giangvien-TenDangNhap-test01.png)
 
 - Cập nhật thông tin của người khác: KHÔNG THÀNH CÔNG.
 
@@ -288,7 +288,7 @@ REVERT;
 GO
 ```
 
-![Cập nhật thông tin của người khác](./images/cau03-02-giangvien-TenDangNhap-test02.png)
+![GIANGVIEN: Cập nhật thông tin của người khác](./images/cau03-02-giangvien-TenDangNhap-test02.png)
 
 ### SINHVIEN
 

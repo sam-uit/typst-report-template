@@ -344,7 +344,7 @@ GO
 
 #figure(image("./images/cau03-02-giangvien-TenDangNhap-test01.png"),
   caption: [
-    Cập nhật thông tin của bản thân
+    GIANGVIEN: Cập nhật thông tin của bản thân
   ]
 )
 
@@ -361,7 +361,7 @@ GO
 
 #figure(image("./images/cau03-02-giangvien-TenDangNhap-test02.png"),
   caption: [
-    Cập nhật thông tin của người khác
+    GIANGVIEN: Cập nhật thông tin của người khác
   ]
 )
 
