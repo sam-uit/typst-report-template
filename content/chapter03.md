@@ -103,49 +103,71 @@ REVERT;
 
 ### GIANGVIEN
 
-1. Có quyền xem trên các bảng có liên quan đến thông tin GV, các đề tài mà GV hướng dẫn, phản biện hay làm uỷ viên, xem thông tin hội đồng và danh sách các đề tài hiện có.
+#### Quyền xem trên các bảng có liên quan đến thông tin GV
+
+Yêu cầu:
+
+- Có quyền xem trên các bảng có liên quan đến thông tin GV, các đề tài mà GV hướng dẫn, phản biện hay làm uỷ viên, xem thông tin hội đồng và danh sách các đề tài hiện có.
+- Có quyền cập nhật thông tin của mình.
+
+Thực hiện:
+
+- 1.1 Thông tin giảng viên (và các bảng mô tả thông tin GV nếu cần)
 
 ```sql
--- 1.1) Thông tin giảng viên (và các bảng mô tả thông tin GV nếu cần)
 GRANT SELECT ON GIAOVIEN TO GIANGVIEN;
 GRANT SELECT ON HOCHAM TO GIANGVIEN;
 GRANT SELECT ON CHUYENNGANH TO GIANGVIEN;
 GRANT SELECT ON GV_HV_CN TO GIANGVIEN; 
 ```
 
+- 1.2 Danh sách đề tài hiện có + thông tin chi tiết đề tài
+
 ```sql
---1.2) Danh sách đề tài hiện có + thông tin chi tiết đề tài
 GRANT SELECT ON DETAI TO GIANGVIEN;
 GRANT SELECT ON DETAI_DIEM  TO GIANGVIEN; 
 GRANT SELECT ON SV_DETAI TO GIANGVIEN; 
 ```
 
+- 1.3 Các đề tài GV Hướng Dẫn / Phản Biện / Uỷ Viên.
+
 ```sql
---1.3) Các đề tài GV hướng dẫn / phản biện / uỷ viên
 GRANT SELECT ON GV_HDDT  TO GIANGVIEN; 
 GRANT SELECT ON GV_PBDT  TO GIANGVIEN;  
 GRANT SELECT ON GV_UVDT  TO GIANGVIEN; 
 ```
 
+- 1.4 Thông tin hội đồng + danh sách đề tài trong hội đồng + GV trong hội đồng
+
 ```sql
---1.44) Thông tin hội đồng + danh sách đề tài trong hội đồng + GV trong hội đồng
 GRANT SELECT ON HOIDONG TO GIANGVIEN;
 GRANT SELECT ON HOIDONG_DT TO GIANGVIEN;
 GRANT SELECT ON HOIDONG_GV  TO GIANGVIEN;
 ```
 
-2. Có quyền cập nhật thông tin của mình/tránh trường hợp được sửa hết nguyên bản giáo viên
+#### Có quyền cập nhật thông tin của mình.
 
-Ý tưởng: Thêm cột đăng nhập vào bảng GIAOVIEN, gán tài khoản đăng nhập cho từng giáo viên, tạo bảng view thông tin của tôi.
+Yêu cầu:
 
-2.1: thêm cột đăng nhập vào bảng GIAOVIEN
+- Có quyền cập nhật thông tin của mình
+- Tránh trường hợp được sửa hết nguyên bản giáo viên
+
+Ý tưởng:
+
+- Thêm cột đăng nhập vào bảng `GIAOVIEN`.
+- Gán tài khoản đăng nhập cho từng giáo viên.
+- Tạo bảng view thông tin của tôi.
+
+Thực hiện:
+
+- 2.1: thêm cột đăng nhập vào bảng `GIAOVIEN`.
 
 ```sql
 ALTER TABLE GIAOVIEN
 ADD TenDangNhap VARCHAR(50);
 ```
 
-2.2: Giả sử gán TenDangNhap = GIANGVIEN với MSGV là 201.
+- 2.2: Giả sử gán `TenDangNhap = GIANGVIEN` với `MSGV` là `201`.
 
 ```sql
 UPDATE GIAOVIEN
@@ -153,7 +175,7 @@ SET TenDangNhap = 'GIANGVIEN'
 WHERE MSGV = '201'; 
 ```
 
-2.3: tạo bảng View Thông tin của tôi
+- 2.3: tạo bảng View *Thông Tin Của Tôi*
 
 ```sql
 CREATE VIEW GV_ThongTinCuaToi
@@ -164,7 +186,7 @@ WHERE TenDangNhap ='GIANGVIEN';
 GO
 ```
 
-2.4: Up thông tin GIAOVIEN theo tên đăng nhập trên view
+- 2.4: Up thông tin `GIAOVIEN` theo tên đăng nhập trên View.
 
 ```sql
 GRANT SELECT, UPDATE ON GV_ThongTinCuaToi TO GIANGVIEN;
@@ -172,7 +194,7 @@ DENY UPDATE ON GIAOVIEN TO GIANGVIEN;
 GO
 ```
 
-2.5 Dùng tigger để up thông tin từ view xuống bảng giáo viên.
+- 2.5 Dùng Trigger để up thông tin từ View xuống bảng `GIAOVIEN`.
 
 ```sql
 CREATE TRIGGER trg_Update_GV
