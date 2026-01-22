@@ -1,6 +1,6 @@
 #import "../template/lib.typ": *
 #unheading[Lưu Ý & Hướng Dẫn Thực Hiện]
-- #smallcaps[Chỉ thực hiện câu 1, và 3 trong BTTH6.]
+- #smallcaps[LT.2025.2-CNTT: Chỉ thực hiện câu 1, và 3 trong BTTH6.]
 
 == Bài Làm
 <bai-lam>
