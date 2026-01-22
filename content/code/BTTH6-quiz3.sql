@@ -7,25 +7,29 @@
 -- 1. Tạo ra 3 users: `GIANGVIEN`, `GIAOVU` và `SINHVIEN`, đặt *mật khẩu tuỳ ý*.
 -- ==================================================================
 
---- Trước khi tạo 3 user ta tạo 3  login đăng nhập
-CREATE LOGIN GIANGVIEN WITH PASSWORD = 'gvi123';
-CREATE LOGIN GIAOVU WITH PASSWORD = 'gvu123';
-CREATE LOGIN SINHVIEN WITH PASSWORD = 'SV123';
+--- Trước khi tạo 3 user ta tạo 3 login đăng nhập
+CREATE LOGIN GIANGVIEN WITH PASSWORD = 'gi@ngvien123';
+CREATE LOGIN GIAOVU WITH PASSWORD = 'gi@ovu123';
+CREATE LOGIN SINHVIEN WITH PASSWORD = 's@nhvien123';
+GO
 
 ---- Tạo 3 user trên DATABASE
 CREATE USER GIANGVIEN FOR LOGIN GIANGVIEN;
 CREATE USER GIAOVU FOR LOGIN GIAOVU;
 CREATE USER SINHVIEN FOR LOGIN SINHVIEN;
+GO
 
 ----kiểm tra 3 login chưa
 SELECT name
 FROM sys.server_principals
 WHERE name IN ('GIANGVIEN', 'GIAOVU', 'SINHVIEN');
+GO
 
 ----kiểm tra 3 user tạo chưa
 SELECT name
 FROM sys.database_principals
 WHERE name IN ('GIANGVIEN', 'GIAOVU', 'SINHVIEN');
+GO
 
 -- ==================================================================
 -- 2. Phân quyền cho các users trên database như sau
