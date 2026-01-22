@@ -197,6 +197,7 @@ GO
 UPDATE GIAOVIEN
 SET TenDangNhap = 'GIANGVIEN'
 WHERE MSGV = '201';
+GO
 ```
 
 - 2.3 tạo bảng View *Thông Tin Của Tôi*
@@ -204,9 +205,9 @@ WHERE MSGV = '201';
 ```sql
 CREATE VIEW GV_ThongTinCuaToi
 AS
-SELECT MSGV, TENGV, DIACHI, SODT, NAMHH
-FROM dbo.GIAOVIEN
-WHERE TenDangNhap ='GIANGVIEN';
+    SELECT MSGV, TENGV, DIACHI, SODT, NAMHH
+    FROM dbo.GIAOVIEN
+    WHERE TenDangNhap ='GIANGVIEN';
 GO
 ```
 

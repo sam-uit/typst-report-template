@@ -101,11 +101,13 @@ GO
 -- 2.2b.1: thêm cột đăng nhập vào bảng GIAOVIEN
 ALTER TABLE GIAOVIEN
 ADD TenDangNhap VARCHAR(50);
+GO
 
 -- 2.2b.2: Giả sử gán TenDangNhap = GIANGVIEN với MSGV là 201.
 UPDATE GIAOVIEN
 SET TenDangNhap = 'GIANGVIEN'
 WHERE MSGV = '201';
+GO
 
 -- 2.2b.3: tạo bảng View Thông tin của tôi
 CREATE VIEW GV_ThongTinCuaToi
