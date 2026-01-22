@@ -140,6 +140,24 @@ BEGIN
 END;
 GO
 
+-- Kiểm thử: Sửa thông tin của bản thân
+
+EXECUTE AS USER = 'GIANGVIEN';
+UPDATE GV_ThongTinCuaToi
+SET TENGV = TENGV
+WHERE MSGV = '201';
+REVERT;
+GO
+
+-- Kiểm thử: Sửa thông tin người khác
+
+EXECUTE AS USER = 'GIANGVIEN';
+UPDATE GV_ThongTinCuaToi
+SET TENGV = TENGV
+WHERE MSGV = '203';
+REVERT;
+GO
+
 -- 2.3 `SINHVIEN` có quyền xem thông tin của sinh viên, thông tin của hội đồng và danh sách các đề tài hiện có.
 
 GRANT SELECT ON SINHVIEN TO SINHVIEN;

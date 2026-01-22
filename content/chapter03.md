@@ -190,8 +190,8 @@ GO
 
 Yêu cầu:
 
-- Có quyền cập nhật thông tin của mình
-- Tránh trường hợp được sửa hết nguyên bản giáo viên
+- Có quyền cập nhật thông tin của mình.
+- Tránh trường hợp được sửa hết nguyên bản giáo viên.
 
 Ý tưởng:
 
@@ -218,7 +218,9 @@ WHERE MSGV = '201';
 GO
 ```
 
-- 2.3 tạo bảng View *Thông Tin Của Tôi*
+![GIAOVIEN.TenDangNhap](./images/cau03-02-giangvien-TenDangNhap.png)
+
+- 2.3 Tạo bảng View *Thông Tin Của Tôi*
 
 ```sql
 CREATE VIEW GV_ThongTinCuaToi
@@ -228,6 +230,8 @@ AS
     WHERE TenDangNhap ='GIANGVIEN';
 GO
 ```
+
+![VIEW GV_ThongTinCuaToi](./images/cau03-02-giangvien-GV_ThongTinCuaToi.png)
 
 - 2.4 Up thông tin `GIAOVIEN` theo tên đăng nhập trên View.
 
@@ -257,6 +261,34 @@ BEGIN
 END;
 GO
 ```
+
+Kiểm thử: GIANGVIEN với MSGV '101'.
+
+- Cập nhật thông tin của bản thân: THÀNH CÔNG.
+
+```sql
+EXECUTE AS USER = 'GIANGVIEN';
+UPDATE GV_ThongTinCuaToi
+SET TENGV = TENGV
+WHERE MSGV = '201';
+REVERT;
+GO
+```
+
+![Cập nhật thông tin của bản thân](./images/cau03-02-giangvien-TenDangNhap-test01.png)
+
+- Cập nhật thông tin của người khác: KHÔNG THÀNH CÔNG.
+
+```sql
+EXECUTE AS USER = 'GIANGVIEN';
+UPDATE GV_ThongTinCuaToi
+SET TENGV = TENGV
+WHERE MSGV = '203';
+REVERT;
+GO
+```
+
+![Cập nhật thông tin của người khác](./images/cau03-02-giangvien-TenDangNhap-test02.png)
 
 ### SINHVIEN
 
