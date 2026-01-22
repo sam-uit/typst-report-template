@@ -13,31 +13,41 @@ Dựa vào CSDL đã thiết kế ở BTTH số 2 (QLĐT), hãy thực hiện c�
 
 ## Tạo Ra 3 Users
 
+Yêu cầu:
+
+- Tạo ra 3 users: `GIANGVIEN`, `GIAOVU` và `SINHVIEN`, đặt *mật khẩu tuỳ ý*.
+
+Thực hiện:
+
+- Trước khi tạo 3 user ta tạo 3 login đăng nhập trên SERVER.
+
 ```sql
---- Trước khi tạo 3 user ta tạo 3  login đăng nhập
 CREATE LOGIN GIANGVIEN WITH PASSWORD = 'gvi123';
 CREATE LOGIN GIAOVU WITH PASSWORD = 'gvu123';
 CREATE LOGIN SINHVIEN WITH PASSWORD = 'SV123';
 GO
 ```
 
+- Tạo 3 user trên DATABASE.
+
 ```sql
----- Tạo 3 user trên DATABASE
 CREATE USER GIANGVIEN FOR LOGIN GIANGVIEN;
 CREATE USER GIAOVU FOR LOGIN GIAOVU;
 CREATE USER SINHVIEN FOR LOGIN SINHVIEN;
 GO
 ```
 
+- Kiểm tra 3 login đã tạo trên SERVER chưa.
+
 ```sql
---- kiểm tra 3 login chưa
 SELECT name 
 FROM sys.server_principals
 WHERE name IN ('GIANGVIEN', 'GIAOVU', 'SINHVIEN');
 ```
 
+- Kiểm tra 3 user đã tạo trên DATABASE chưa.
+
 ```sql
---- kiểm tra 3 user tạo chưa
 SELECT name 
 FROM sys.database_principals
 WHERE name IN ('GIANGVIEN', 'GIAOVU', 'SINHVIEN');
