@@ -127,7 +127,6 @@ GO
 Yêu cầu:
 
 - Có quyền xem trên các bảng có liên quan đến thông tin GV, các đề tài mà GV hướng dẫn, phản biện hay làm uỷ viên, xem thông tin hội đồng và danh sách các đề tài hiện có.
-- Có quyền cập nhật thông tin của mình.
 
 Thực hiện:
 
