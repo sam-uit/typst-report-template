@@ -178,6 +178,12 @@ GRANT SELECT ON GV_HV_CN TO GIANGVIEN;
 GO
 ```
 
+#figure(image("./images/cau03-02-giangvien-01.png"),
+  caption: [
+    GIANGVIEN: Quyền Xem Thông Tin GV
+  ]
+)
+
 - 1.2 Danh sách đề tài hiện có + thông tin chi tiết đề tài
 
 ```sql
@@ -186,6 +192,12 @@ GRANT SELECT ON DETAI_DIEM  TO GIANGVIEN;
 GRANT SELECT ON SV_DETAI TO GIANGVIEN;
 GO
 ```
+
+#figure(image("./images/cau03-02-giangvien-02.png"),
+  caption: [
+    GIANGVIEN: Quyền Xem Danh Sách De Tai
+  ]
+)
 
 - 1.3 Các đề tài GV Hướng Dẫn / Phản Biện / Uỷ Viên.
 
@@ -196,6 +208,12 @@ GRANT SELECT ON GV_UVDT  TO GIANGVIEN;
 GO
 ```
 
+#figure(image("./images/cau03-02-giangvien-03.png"),
+  caption: [
+    GIANGVIEN: Quyền Xem HDDT, PBDT, UVDT
+  ]
+)
+
 - 1.4 Thông tin hội đồng + danh sách đề tài trong hội đồng + GV trong hội đồng
 
 ```sql
@@ -204,6 +222,27 @@ GRANT SELECT ON HOIDONG_DT TO GIANGVIEN;
 GRANT SELECT ON HOIDONG_GV  TO GIANGVIEN;
 GO
 ```
+
+#figure(image("./images/cau03-02-giangvien-04.png"),
+  caption: [
+    GIANGVIEN: Quyền Xem HOIDONG, HOIDONG\_DT, HOIDONG\_GV
+  ]
+)
+
+- Kiểm thử quyền XEM.
+
+```sql
+EXECUTE AS USER = 'GIANGVIEN';
+SELECT * FROM GIAOVIEN;
+REVERT;
+GO
+```
+
+#figure(image("./images/cau03-02-giangvien-05.png"),
+  caption: [
+    GIANGVIEN: Kiểm tra quyền Xem
+  ]
+)
 
 ==== Có quyền cập nhật thông tin của mình.
 <co-quyen-cap-nhat-thong-tin-cua-minh>
