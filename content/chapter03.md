@@ -28,6 +28,19 @@ CREATE LOGIN SINHVIEN WITH PASSWORD = 's@nhvien123';
 GO
 ```
 
+![Tạo Login](./images/cau03-01-01.png)
+
+- Kiểm tra 3 login đã tạo trên SERVER chưa.
+
+```sql
+SELECT name 
+FROM sys.server_principals
+WHERE name IN ('GIANGVIEN', 'GIAOVU', 'SINHVIEN');
+GO
+```
+
+![Kiểm tra Login](./images/cau03-01-03.png)
+
 - Tạo 3 user trên DATABASE.
 
 ```sql
@@ -37,13 +50,7 @@ CREATE USER SINHVIEN FOR LOGIN SINHVIEN;
 GO
 ```
 
-- Kiểm tra 3 login đã tạo trên SERVER chưa.
-
-```sql
-SELECT name 
-FROM sys.server_principals
-WHERE name IN ('GIANGVIEN', 'GIAOVU', 'SINHVIEN');
-```
+![Tạo User](./images/cau03-01-02.png)
 
 - Kiểm tra 3 user đã tạo trên DATABASE chưa.
 
@@ -51,7 +58,10 @@ WHERE name IN ('GIANGVIEN', 'GIAOVU', 'SINHVIEN');
 SELECT name 
 FROM sys.database_principals
 WHERE name IN ('GIANGVIEN', 'GIAOVU', 'SINHVIEN');
+GO
 ```
+
+![Kiểm tra User](./images/cau03-01-04.png)
 
 ## Phân Quyền Cho Các Users Trên Database
 
