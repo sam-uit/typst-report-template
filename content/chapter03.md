@@ -28,7 +28,7 @@ CREATE LOGIN SINHVIEN WITH PASSWORD = 's@nhvien123';
 GO
 ```
 
-![Tạo Login](./images/cau03-01-01.png)
+![Câu 3.1a. Tạo Login](./images/cau03-01-01.png)
 
 - Kiểm tra 3 login đã tạo trên SERVER chưa.
 
@@ -39,7 +39,7 @@ WHERE name IN ('GIANGVIEN', 'GIAOVU', 'SINHVIEN');
 GO
 ```
 
-![Kiểm tra Login](./images/cau03-01-03.png)
+![Câu 3.1b. Kiểm tra Login](./images/cau03-01-03.png)
 
 - Tạo 3 user trên DATABASE.
 
@@ -50,7 +50,7 @@ CREATE USER SINHVIEN FOR LOGIN SINHVIEN;
 GO
 ```
 
-![Tạo User](./images/cau03-01-02.png)
+![Câu 3.1c. Tạo User](./images/cau03-01-02.png)
 
 - Kiểm tra 3 user đã tạo trên DATABASE chưa.
 
@@ -61,7 +61,7 @@ WHERE name IN ('GIANGVIEN', 'GIAOVU', 'SINHVIEN');
 GO
 ```
 
-![Kiểm tra User](./images/cau03-01-04.png)
+![Câu 3.1d. Kiểm tra User](./images/cau03-01-04.png)
 
 ## Phân Quyền Cho Các Users Trên Database
 
@@ -173,7 +173,7 @@ GRANT SELECT ON HOIDONG_GV  TO GIANGVIEN;
 GO
 ```
 
-![GIANGVIEN: Quyền Xem HOIDONG, HOIDONG_DT, HOIDONG_GV](./images/cau03-02-giangvien-04.png)
+![GIANGVIEN: Quyền Xem HOIDONG](./images/cau03-02-giangvien-04.png)
 
 - Kiểm thử quyền XEM.
 

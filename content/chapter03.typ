@@ -34,7 +34,7 @@ GO
 
 #figure(image("./images/cau03-01-01.png"),
   caption: [
-    Tạo Login
+    Câu 3.1a. Tạo Login
   ]
 )
 
@@ -49,7 +49,7 @@ GO
 
 #figure(image("./images/cau03-01-03.png"),
   caption: [
-    Kiểm tra Login
+    Câu 3.1b. Kiểm tra Login
   ]
 )
 
@@ -64,7 +64,7 @@ GO
 
 #figure(image("./images/cau03-01-02.png"),
   caption: [
-    Tạo User
+    Câu 3.1c. Tạo User
   ]
 )
 
@@ -79,7 +79,7 @@ GO
 
 #figure(image("./images/cau03-01-04.png"),
   caption: [
-    Kiểm tra User
+    Câu 3.1d. Kiểm tra User
   ]
 )
 
@@ -225,7 +225,7 @@ GO
 
 #figure(image("./images/cau03-02-giangvien-04.png"),
   caption: [
-    GIANGVIEN: Quyền Xem HOIDONG, HOIDONG\_DT, HOIDONG\_GV
+    GIANGVIEN: Quyền Xem HOIDONG
   ]
 )
 
