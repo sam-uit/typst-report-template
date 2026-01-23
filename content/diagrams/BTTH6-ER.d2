@@ -155,6 +155,15 @@ HOIDONG_DT -- hoidong_dt_msdt: {style: {stroke-width: 1}}
 # Ternary Relationship (GV_HV_CN)
 GV_HV_CN: {class: rel; label: "Bằng Cấp\n(GV_HV_CN)"}
 
+gv_hv_cn_msgv: {class: attr_pri; label: "MSGV"}
+GV_HV_CN -- gv_hv_cn_msgv: {style: {stroke-width: 1}}
+
+gv_hv_cn_mshv: {class: attr_pri; label: "MSHV"}
+GV_HV_CN -- gv_hv_cn_mshv: {style: {stroke-width: 1}}
+
+gv_hv_cn_mscn: {class: attr_pri; label: "MSCN"}
+GV_HV_CN -- gv_hv_cn_mscn: {style: {stroke-width: 1}}
+
 # 1-N Relationships (Logical)
 co_hoc_ham: {class: rel; label: "Có"}
 chu_tich: {class: rel; label: "Chủ Tịch"}
