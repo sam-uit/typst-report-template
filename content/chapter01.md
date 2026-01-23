@@ -98,4 +98,4 @@ Danh sách:
 
 ### Sơ Đồ ER (Chen) Tổng Quan
 
-![Câu 1 - Sơ Đồ ERD](diagrams/BTTH6-ER.svg)
+![Câu 1 - Sơ Đồ ERD Tổng Quan (Chen Notation)](diagrams/BTTH6-ER.svg)

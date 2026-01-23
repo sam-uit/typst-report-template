@@ -100,6 +100,6 @@ Danh sách:
 
 #figure(image("diagrams/BTTH6-ER.svg"),
   caption: [
-    Câu 1 - Sơ Đồ ERD
+    Câu 1 - Sơ Đồ ERD Tổng Quan (Chen Notation)
   ]
 )
