@@ -63,24 +63,38 @@ Dựa vào CSDL đã thiết kế ở BTTH số 2 (QLĐT), hãy thực hiện c�
 Bao gồm:
 
 - Mỗi Thực Thể là một Bảng.
-- Các Quan Hệ m - n được tách thành bảng riêng.
+- Các Quan Hệ *m - n* được tách thành bảng riêng.
 
 Danh sách:
 
 - `DETAI`: Đề Tài.
+    - <u>MSDT</u>, TENDT
 - `GIAOVIEN`: Giáo Viên.
+    - <u>MSGV</u>, TENGV, DIACHI, SODT, MSHH, NAMHH
 - `HOCHAM`: Học Hàm.
+    - <u>MSHH</u>, TENHH
 - `HOCVI`: Học Vị.
+    - <u>MSHV</u>, TENHV
 - `HOIDONG`: Hội Đồng.
+    - <u>MSHD</u>, PHONG, TGBD, NGAYHD, TINHTRANG, MSGV
 - `SINHVIEN`: Sinh Viên.
+    - <u>MSSV</u>, TENSV, SODT, LOP, DIACHI
 - `CHUYENNGANH`: Chuyên Ngành.
+    - <u>MSCN</u>, TENCN
 - `SV_DETAI`: Sinh Viên - Đề Tài.
+    - <u>MSSV, MSDT</u>
 - `GV_HDDT`: Giáo Viên - Đề Tài (Hướng Dẫn).
+    - <u>MSGV, MSDT</u>, DIEM
 - `GV_PBDT`: Giáo Viên - Đề Tài (Phản Biện).
+    - <u>MSGV, MSDT</u>, DIEM
 - `GV_UVDT`: Giáo Viên - Đề Tài (Làm Uỷ Viên).
+    - <u>MSGV, MSDT</u>, DIEM
 - `HOIDONG_GV`: Hội Đồng - Giáo Viên.
+    - <u>MSHD, MSGV</u>
 - `HOIDONG_DT`: Hội Đồng - Đề Tài.
+    - <u>MSHD, MSDT</u>, QUYETDINH
 - `GV_HV_CN`: Giáo Viên - Học Vị - Chuyên Ngành.
+    - <u>MSGV, MSHV, MSCN</u>, NAM
 
 ### Sơ Đồ ER (Chen) Tổng Quan
 
