@@ -5,6 +5,10 @@
 #import "template/lib.typ": *
 #import "config/metadata.typ": data
 
+// Hiện màu cho các tham chiếu chéo.
+// Màu blue/xanh dương, tương tự các link.
+#show ref: it => text(fill: blue, it)
+
 // Show document with report type
 #show: document.with(..data, doc-type: "report")
 
