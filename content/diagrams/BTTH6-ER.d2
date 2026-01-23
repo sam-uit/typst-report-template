@@ -57,7 +57,7 @@ classes: {
       fill: "#F0F8FF"
       stroke: "#0d95de"
       stroke-width: 1
-      font-size: 20
+      # font-size: 20
     }
   }
 
@@ -115,6 +115,30 @@ GV_PBDT: {class: rel; label: "Phản Biện\n(GV_PBDT)"}
 GV_UVDT: {class: rel; label: "Ủy Viên\n(GV_UVDT)"}
 HOIDONG_GV: {class: rel; label: "Thành Viên\n(HOIDONG_GV)"}
 HOIDONG_DT: {class: rel; label: "Quyết Định\n(HOIDONG_DT)"}
+
+sv_detai_mssv: {class: attr_pri; label: "MSSV"}
+SV_DETAI -- sv_detai_mssv: {style: {stroke-width: 1}}
+
+sv_detai_msdt: {class: attr_pri; label: "MSDT"}
+SV_DETAI -- sv_detai_msdt: {style: {stroke-width: 1}}
+
+gv_hddt_msgv: {class: attr_pri; label: "MSGV"}
+GV_HDDT -- gv_hddt_msgv: {style: {stroke-width: 1}}
+
+gv_hddt_msdt: {class: attr_pri; label: "MSDT"}
+GV_HDDT -- gv_hddt_msdt: {style: {stroke-width: 1}}
+
+gv_pbdt_msgv: {class: attr_pri; label: "MSGV"}
+GV_PBDT -- gv_pbdt_msgv: {style: {stroke-width: 1}}
+
+gv_pbdt_msdt: {class: attr_pri; label: "MSDT"}
+GV_PBDT -- gv_pbdt_msdt: {style: {stroke-width: 1}}
+
+gv_uvdt_msgv: {class: attr_pri; label: "MSGV"}
+GV_UVDT -- gv_uvdt_msgv: {style: {stroke-width: 1}}
+
+gv_uvdt_msdt: {class: attr_pri; label: "MSDT"}
+GV_UVDT -- gv_uvdt_msdt: {style: {stroke-width: 1}}
 
 # Ternary Relationship (GV_HV_CN)
 GV_HV_CN: {class: rel; label: "Bằng Cấp\n(GV_HV_CN)"}
