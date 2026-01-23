@@ -3,7 +3,7 @@
 ```
 
 ```{=typst}
-- #smallcaps[LT.2025.2-CNTT: Chỉ thực hiện câu 1, và 3 trong BTTH6.]
+- #smallcaps[LT.2025.2-CNTT: Chỉ thực hiện @cau-1-to-chuc-va-bieu-dien-thong-tin[Câu], và @cau-3-an-ninh-thong-tin[Câu] trong BTTH6.]
 ```
 
 ## Cách Trình Bày Bài Làm
@@ -12,7 +12,7 @@
 - Đối với các câu hỏi liên quan đến thực thi code SQL, thực hiện *dán code SQL vào file báo cáo* tương ứng với câu hỏi.
 - Đối với các Crystal Report/Tableau, *chụp Màn hình Design và Màn hình Preview* của từng câu.
 
-## Quy Cách
+## Quy Cách Tổ Chức Mã Nguồn và Soạn Thảo
 
 <!-- - Tham khảo [BTTH5](https://github.com/sam-uit/typst-report-template/tree/report/IE103-BTTH5/content) -->
 

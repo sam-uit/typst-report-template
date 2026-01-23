@@ -1,6 +1,6 @@
 #import "../template/lib.typ": *
 #unheading[Lưu Ý & Hướng Dẫn Thực Hiện]
-- #smallcaps[LT.2025.2-CNTT: Chỉ thực hiện câu 1, và 3 trong BTTH6.]
+- #smallcaps[LT.2025.2-CNTT: Chỉ thực hiện @cau-1-to-chuc-va-bieu-dien-thong-tin[Câu], và @cau-3-an-ninh-thong-tin[Câu] trong BTTH6.]
 
 == Cách Trình Bày Bài Làm
 <cach-trinh-bay-bai-lam>
@@ -9,8 +9,8 @@
 - Đối với các câu hỏi liên quan đến thực thi code SQL, thực hiện #emph[dán code SQL vào file báo cáo] tương ứng với câu hỏi.
 - Đối với các Crystal Report/Tableau, #emph[chụp Màn hình Design và Màn hình Preview] của từng câu.
 
-== Quy Cách
-<quy-cach>
+== Quy Cách Tổ Chức Mã Nguồn và Soạn Thảo
+<quy-cach-to-chuc-ma-nguon-va-soan-thao>
 
 Cấu trúc thư mục `content/` trong template Typst:
 
