@@ -28,4 +28,4 @@
 
 // Show bibliography
 #show: bibliography-page
-#bibliography("content/bibliography.bib", title: "Tài Liệu Tham Khảo")
+#bibliography("content/bibliography.yaml", title: "Tài Liệu Tham Khảo", style: "ieee")
