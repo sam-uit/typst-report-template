@@ -7,14 +7,13 @@
 == Cài Đặt Mô Hình Dữ Liệu
 <cai-dat-mo-hinh-du-lieu>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+Để sử dụng TODO, code như sau, mỗi TODO sẽ được đưa vào danh sách TODO ở trong phần mục lục.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+```typst
+#todo[@cai-dat-mo-hinh-du-lieu[Mục]: Ví dụ về TODO (`mermaid`, `plantuml`, `dbdiagram`).]
+```
 
-#todo[@cai-dat-mo-hinh-du-lieu[Mục]: Vẽ mô hình dữ liệu (`mermaid`, `plantuml`, `dbdiagram`).]
-
-- Một quá trình khôi phục dữ liệu dùng `testdisk`.
-  - (Sử dụng một USB FAT32/NTFS, format, copy file vào, xóa, và chạy testdisk để thử tìm kiếm/khôi phục lại, vv..)
+#todo[@cai-dat-mo-hinh-du-lieu[Mục]: Ví dụ về TODO (`mermaid`, `plantuml`, `dbdiagram`).]
 
 == Dữ Liệu Mẫu
 <du-lieu-mau>
