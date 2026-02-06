@@ -4,7 +4,7 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
-![Bài 2. Cây thư mục trong CLI của macOS.](assets/macos-fhs-root-system.png)
+![Ví dụ về chèn hình ảnh PNG.](assets/macos-fhs-root-system.png)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
 
@@ -14,31 +14,45 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
 
-Bảng Thông Tin (dàn trên nhiều trang):
-
-| **Thuộc tính**          | **Ổ đĩa (Volume/Drive)**          | **Thư mục (Folder)**             | **Tập tin (File)**                   |
-| ----------------------- | --------------------------------- | -------------------------------- | ------------------------------------ |
-| **Tên (Name)**          | Tên phân vùng (VD: Macintosh HD). | Tên thư mục.                     | Tên file + Đuôi mở rộng (Extension). |
-| **Loại (Kind)**         | Định dạng (APFS, NTFS...).        | Folder.                          | Định dạng (PDF, JPG, Docx...).       |
-| **Kích thước (Size)**   | Dung lượng tổng / Khả dụng.       | Tổng kích thước nội dung.        | Kích thước thực của file.            |
-| **Ngày tháng**          | Ngày tạo phân vùng.               | Ngày tạo, ngày sửa đổi nội dung. | Ngày tạo, sửa đổi, mở gần nhất.      |
-| **Quyền (Permissions)** | Quản trị hệ thống (System R/W).   | Read/Write/Execute (truy cập).   | Read/Write/Execute (thao tác).       |
-| **Khác**                | Mount point, thông tin phần cứng. | Số lượng mục con (items count).  | App mặc định (Open with).            |
-
 ## Mô Hình Mức Quan Niệm
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+
+```{=typst}
+#figure(
+table(
+  columns: (1fr,) * 3,
+  align: (left, left, left),
+  [#strong[Thực Thể]], [#strong[Quan Hệ]], [#strong[Thực Thể]],
+  [#strong[Quản Trị Viên]], [được gán], [#strong[Vai Trò]],
+  [#strong[Vai Trò]], [có các], [#strong[Quyền Hạn]],
+  [#strong[Phòng]], [thuộc], [#strong[Loại Phòng]],
+  [#strong[Người Dùng]], [thực hiện], [#strong[Đặt Phòng]],
+  [#strong[Đặt Phòng]], [bao gồm], [#strong[Phòng]],
+  [#strong[Đặt Phòng]], [được áp dụng], [#strong[Mã Giảm Giá]],
+  [#strong[Đặt Phòng]], [được], [#strong[Thanh Toán]],
+  [#strong[Đặt Phòng]], [được], [#strong[Đánh Giá]],
+  [#strong[Người Dùng]], [viết], [#strong[Đánh Giá]],
+  [#strong[Người Dùng]], [thực hiện], [#strong[Thanh Toán]],
+  [#strong[Người Dùng]], [yêu cầu], [#strong[Hoàn Tiền]],
+  [#strong[Thanh Toán]], [được], [#strong[Hoàn Tiền]],
+  [#strong[Quản Trị Viên]], [duyệt], [#strong[Hoàn Tiền]],
+  [#strong[Đặt Phòng]], [có kèm], [#strong[Dịch Vụ]]
+),
+caption: [Ví dụ về Bảng]
+)
+```
 
 Tóm tắt các thực thể và mối quan hệ bằng mô hình trực quan:
 
 <!-- Sử dụng layout elk cho riêng diagram này. -->
 
-![Trực Quan Hóa các Thực Thể và Mối Quan Hệ](diagrams/entity-relationship.svg)
+![Ví dụ về chèn Hình Ảnh SVG.](diagrams/entity-relationship.svg)
 
 
 <!-- TODO: Cân nhắc sử dụng direction TD -->
 
-![Mô Hình Quan Niệm: Biểu Đồ ERD Hoàn Chỉnh](diagrams/ch02-concept-erd.svg)
+![Ví dụ về Biểu Đồ ERD](diagrams/ch02-concept-erd-simplify.svg)
 
 ## Thiết Kế Cơ Sở Dữ Liệu
 
