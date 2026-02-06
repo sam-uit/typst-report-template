@@ -29,6 +29,17 @@ Bảng Thông Tin (dàn trên nhiều trang):
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
+Tóm tắt các thực thể và mối quan hệ bằng mô hình trực quan:
+
+<!-- Sử dụng layout elk cho riêng diagram này. -->
+
+![Trực Quan Hóa các Thực Thể và Mối Quan Hệ](diagrams/entity-relationship.svg)
+
+
+<!-- TODO: Cân nhắc sử dụng direction TD -->
+
+![Mô Hình Quan Niệm: Biểu Đồ ERD Hoàn Chỉnh](diagrams/ch02-concept-erd.svg)
+
 ## Thiết Kế Cơ Sở Dữ Liệu
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
