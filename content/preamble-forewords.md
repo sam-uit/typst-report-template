@@ -29,3 +29,10 @@ This will be the place to stay that I recommend to you when coming to Vietnam.
 ```
 
 Hoàn toàn có thể dùng `for` loop cho đoạn 5 chiếc sao đánh giá thay vì copy&paste.
+
+Lưu ý:
+
+- `co` có nghĩa là Call-Out, một chức năng tương tự Github Markdown chuẩn.
+- Có nghiều loại Call-Out, và được định nghĩa trong
+    - `template/components/callout.typ`.
+- Tham khảo ví dụ tại: `template/callout-examples.typ`.
