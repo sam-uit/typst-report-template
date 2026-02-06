@@ -35,6 +35,14 @@
     font: body-font,
     size: 12pt,
     weight: "regular",
+    // Ngôn ngữ:
+    // https://typst.app/docs/reference/text/text/#parameters-lang
+    lang: "vi",
+    region: "vn",
+    // Sử dụng ligatures?
+    // ligatures: true
+    // Ngắt từ với gạch ngang?
+    // hyphenate: false
   )
   set par(
     leading: 0.8em,
