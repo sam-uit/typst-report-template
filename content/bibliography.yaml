@@ -1,0 +1,17 @@
+ie103:
+  type: original
+  title: Quản Lý Thông Tin
+  author: Ths. Nguyễn Thành Luân
+  year: 2025
+  publisher: UIT - Trường Đại Học Công Nghệ Thông Tin
+  note: Môn Học Quản Lý Thông Tin
+
+technicalwritingapracticalguide:
+  type: book
+  author: "Laplante, Phillip and Laplante, Chris"
+  year: 2025
+  month: 10
+  pages: ""
+  title: "Technical Writing: A Practical Guide for Engineers, Scientists, and Nontechnical Professionals"
+  isbn: "9781003512431"
+  doi: "10.1201/9781003512431"
