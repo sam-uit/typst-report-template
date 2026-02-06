@@ -11,7 +11,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 #figure(image("assets/macos-fhs-root-system.png"),
   caption: [
-    Ví dụ về chèn hình ảnh PNG.
+    Ví dụ về chèn Hình Ảnh PNG.
   ]
 )
 

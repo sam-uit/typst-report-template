@@ -4,7 +4,7 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
-![Ví dụ về chèn hình ảnh PNG.](assets/macos-fhs-root-system.png)
+![Ví dụ về chèn Hình Ảnh PNG.](assets/macos-fhs-root-system.png)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
 
