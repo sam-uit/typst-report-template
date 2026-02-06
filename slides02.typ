@@ -99,7 +99,7 @@
 
 #title-slide()
 
-// #include "content/outline.typ"
+#include "content/outline.typ"
 
 // #outline-slide()
 
