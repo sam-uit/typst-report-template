@@ -65,6 +65,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
+Tóm tắt các thực thể và mối quan hệ bằng mô hình trực quan:
+
+#figure(image("diagrams/entity-relationship.svg"),
+  caption: [
+    Trực Quan Hóa các Thực Thể và Mối Quan Hệ
+  ]
+)
+
+#figure(image("diagrams/ch02-concept-erd.svg"),
+  caption: [
+    Mô Hình Quan Niệm: Biểu Đồ ERD Hoàn Chỉnh
+  ]
+)
+
 == Thiết Kế Cơ Sở Dữ Liệu
 <thiet-ke-co-so-du-lieu>
 
