@@ -9,17 +9,17 @@
     logo: "uit.jpeg",
   ),
   course: (
-    id: "IE103",
-    name: "Quản Lý Thông Tin",
-    class: "LT.K2025.2.CNTT",
+    id: "IE105",
+    name: "Nhập Môn Đảm Bảo và An Ninh Thông Tin",
+    class: "IE105.F22.LT.CNTT",
   ),
-  instructor: "Ths. Nguyễn Thành Luân ",
+  instructor: "ThS. Tô Nguyễn Nhật Quang",
   author: (
-    name: "Nhóm 02",
+    name: "Đinh Xuân Sâm",
     members: (
       (
-        name: lorem(3),
-        id: lorem(1),
+        name: "Đinh Xuân Sâm",
+        id: "25410291",
       ),
       (
         name: lorem(3),
@@ -28,11 +28,11 @@
     ),
   ),
   assignment: (
-    title: "BÁO CÁO ĐỒ ÁN",
-    subtitle: "Hệ Thống Quản Lý Đặt Phòng",
-    type: "Luận Án",
-    date: "TP.Hồ Chí Minh, tháng 01 năm 2026",
-    duration: "15 phút",
+    title: "BÀI TẬP THỰC HÀNH 1A",
+    subtitle: "MÃ HOÁ CỔ ĐIỂN",
+    type: "assignments",
+    date: "Ngày 24 Tháng 03 Năm 2026",
+    duration: "180 phút",
   ),
   company: "A Limited Company Name",
 )
