@@ -1,91 +1,95 @@
 #import "../template/lib.typ": *
 
-= Quản Lý Thông Tin
-<quan-ly-thong-tin>
+= BƯỚC 4 -- Playfair Cipher
+<buoc-4-playfair-cipher>
 
+- Encrypt → Playfair → key = `SECRETKEY`.
+- Ghi lại ma trận 5×5.
+- Nhập plaintext có ký tự lặp (`MEET ME AT THE BRIDGE`).
+- Quan sát cách CrypTool chèn X để xử lý chữ đôi.
+- Giải mã lại.
+- Thực hành mở rộng:
+  - thử với khóa khác và plaintext dài hơn.
 
-== Xử Lý Thông Tin
-<xu-ly-thong-tin>
+== Ma Trận Khóa
+<ma-tran-khoa>
 
-Có thể load code như sau:
+- Đây là ma trận $5 times 5$ vì văn bản gốc chỉ chứa các ký tự chữ cái (tối đa 26 ký tự), không chứa ký tự số.
+- Một ký tự sẽ được lược bỏ, thường là $J$ để chuỗi khóa vừa với tổng số 25 ký tự của ma trận khóa.
 
-```typst
-#figure(
-  raw(read("code/sample.sql"), lang: "sql", block: true),
-  caption: [Code ví dụ: SQL.]
+#table(
+  columns: (1fr,) * 6,
+  align: (center, center, center, center, center, center),
+  [#strong[\+]], [#strong[1]], [#strong[2]], [#strong[3]], [#strong[4]], [#strong[5]], [#strong[1]], [S], [E], [C], [R], [T], [#strong[2]], [K], [Y], [A], [B], [D], [#strong[3]], [F], [G], [H], [I], [L], [#strong[4]], [M], [N], [O], [P], [Q], [#strong[5]], [U], [V], [W], [X], [Z]
 )
-```
 
-Kết quả:
+== Mã Hóa
+<ma-hoa>
 
-#figure(
-  raw(read("code/sample.sql"), lang: "sql", block: true),
-  caption: [Code ví dụ: SQL.]
+- Menu #strong[Encrypt/Decrypt $arrow.r$ Symmetric (classic) $arrow.r$ Playfair].
+- Cửa sổ #strong[Key Entry: Playfair] hiện lên.
+- Có thể chỉ định ký tự thay thế/phân tách:
+  - $X$: mặc định.
+  - $Y$: nếu cần thêm.
+  - Chỉ chia tách khi có ký tự trùng trong cùng một cặp.
+- Chỉ định kích thước ma trận:
+  - $5 times 5$ : được chọn, vì không chứa ký tự số.
+
+#figure(image("assets/1a-b4-01.png"),
+  caption: [
+    BƯỚC 4 -- Playfair Cipher, Key Entry
+  ]
 )
 
-== An Toàn Thông Tin
-<an-toan-thong-tin>
+- Kết quả:
+  - Văn bản gốc được băm thành từng cặp.
+  - Văn bản đã mã hóa.
 
+#figure(image("assets/1a-b4-02.png"),
+  caption: [
+    BƯỚC 4 -- Playfair Cipher, Cặp Ký Tự và Kết Quả Mã Hóa
+  ]
+)
 
-=== Xác thực và phân quyền
-<xac-thuc-va-phan-quyen>
+== Meet Me At The Bridge
+<meet-me-at-the-bridge>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- Văn bản gốc `MEET ME AT THE BRIDGE`.
+- Menu #strong[Encrypt/Decrypt $arrow.r$ Symmetric (classic) $arrow.r$ Playfair].
 
-=== Import - Export Dữ Liệu
-<import-export-du-lieu>
+#figure(image("assets/1a-b4-03.png"),
+  caption: [
+    BƯỚC 4 -- Playfair Cipher, MEET ME AT THE BRIDGE
+  ]
+)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- Trong trường hợp này, văn bản gốc không đủ ký tự chẵn để tạo thành các cặp, nên cặp cuối cùng, CrypTool chèn thêm $X$ vào để thành cặp hoàn chỉnh:
+  - `ME ET ME AT TH EB RI DG EX`
 
-=== Backup -- Restore Dữ Liệu
-<backup-restore-du-lieu>
+#table(
+  columns: (1fr,) * 26,
+  align: (center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center),
+  [1], [2], [], [3], [4], [], [5], [6], [], [7], [8], [], [9], [10], [], [11], [12], [], [13], [14], [], [15], [16], [], [17], [18], [M], [E], [], [E], [T], [], [M], [E], [], [A], [T], [], [T], [H], [], [E], [B], [], [R], [I], [], [D], [G], [], [E], [X]
+)
+#figure(image("assets/1a-b4-04.png"),
+  caption: [
+    BƯỚC 4 -- Playfair Cipher, MEET ME AT THE BRIDGE, Encrypted
+  ]
+)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- Tại cửa sổ text của văn bản đã mã hóa, chọn menu #strong[Encrypt/Decrypt $arrow.r$ Classic $arrow.r$ Playfair]
+  - Nhập vào key = `SECRET`
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+#figure(image("assets/1a-b4-05.png"),
+  caption: [
+    BƯỚC 4 -- Playfair Cipher, MEET ME AT THE BRIDGE, Key Entry
+  ]
+)
 
-== Trình Bày Thông Tin
-<trinh-bay-thong-tin>
+- Giải mã thành công.
 
-
-=== Menu
-<menu>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Form
-<form>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Report
-<report>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-== Các Chức Năng Của Hệ Thống
-<cac-chuc-nang-cua-he-thong>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Quản Lý Thông Tin Nền Tảng
-<quan-ly-thong-tin-nen-tang>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Quản Lý Dữ Liệu Đặt Phòng
-<quan-ly-du-lieu-dat-phong>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Thống Kê Và Báo Cáo
-<thong-ke-va-bao-cao>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Quản Trị Hệ Thống
-<quan-tri-he-thong>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+#figure(image("assets/1a-b4-06.png"),
+  caption: [
+    BƯỚC 4 -- Playfair Cipher, MEET ME AT THE BRIDGE, Decrypted
+  ]
+)
