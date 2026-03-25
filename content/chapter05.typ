@@ -1,25 +1,48 @@
 #import "../template/lib.typ": *
 
-= Kết Luận
-<ket-luan>
+= PHẦN 5. KIỂM TRA ANTIVIRUS VÀ WINDOWS UPDATE
+<phan-5-kiem-tra-antivirus-va-windows-update>
 
 
-== Kết Quả Đạt Được
-<ket-qua-dat-duoc>
+== Bước 1. Kiểm tra trạng thái Antivirus
+<buoc-1-kiem-tra-trang-thai-antivirus>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
++ Start → Windows Security → Virus & threat protection.
++ Kiểm tra:
+  - Real-time protection: ON?
+  - Cloud protection: ON?
 
-== Hạn Chế
-<han-che>
+Kiểm tra:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- Real-time protection: OFF
+- Cloud protection: OFF
+- Hiện không có chương trình anti-virus nào được cài đặt.
 
-== Hướng Phát Triển
-<huong-phat-trien>
+#figure(image("assets/p5-b1.png"),
+  caption: [
+    Phần 5. Bước 1. Kiểm tra trạng thái Antivirus
+  ]
+)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+== Bước 2. Kiểm tra Windows Update
+<buoc-2-kiem-tra-windows-update>
 
-== Kết Luận
-<ket-luan>
++ Start → Settings → Update & Security → Windows Update.
++ Kiểm tra:
+  - Có bản update nào đang chờ?
+  - Hệ thống có bật Automatic Update không?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+Kiểm tra:
+
+- Hệ thống có bật Automatic Update không? Không, hiện Update đang được tắt.
+- Có bản update nào đang chờ? Không.
+  - Vì phiên bản Windows cơ bản đã bị ngừng hỗ trợ, và máy đang chạy với một môi trường không có internet.
+  - Có thể sử dụng Windows Upgrade Catelog để tải thủ công một số update nếu cần.
+    - https:/\/www.catalog.update.microsoft.com/
+    - Được miêu tả chi tiết hơn ở phần phụ lục.
+
+#figure(image("assets/p5-b2.png"),
+  caption: [
+    Phần 5. Bước 2. Kiểm tra Windows Update
+  ]
+)
