@@ -16,6 +16,7 @@
   instructor: lorem(4),
   author: (
     name: lorem(3),
+    id: lorem(1),
     members: (
       (
         name: lorem(3),

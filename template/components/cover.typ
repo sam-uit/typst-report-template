@@ -115,7 +115,8 @@
           [Tên Môn:],
           [Lớp:],
           [Giảng Viên:],
-          [Thực Hiện:],
+          [Sinh Viên:],
+          [Mã Sinh Viên],
         )
       ],
       // Cột bên phải chứa giá trị
@@ -127,6 +128,7 @@
           [#course.class],
           [#instructor],
           [#author.name],
+          [#author.id],
         )
       ],
     )
