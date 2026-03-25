@@ -3,7 +3,9 @@
 = Câu Hỏi Báo Cáo
 <cau-hoi-bao-cao>
 
-Quy ước không gian khóa:
+
+== Quy Ước Không Gian Khóa
+<quy-uoc-khong-gian-khoa>
 
 - Sử dụng trường hợp mặc định đánh chỉ số bắt đầu từ 0: $A = 0 \, B = 1 \, dots.h \, Z = 25$, như bảng sau đây:
 
@@ -12,6 +14,10 @@ Quy ước không gian khóa:
   align: (center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center),
   [0], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20], [21], [22], [23], [24], [25], [A], [B], [C], [D], [E], [F], [G], [H], [I], [J], [K], [L], [M], [N], [O], [P], [Q], [R], [S], [T], [U], [V], [W], [X], [Y], [Z]
 )
+
+== Các Câu Hỏi
+<cac-cau-hoi>
+
 + #strong[Giải thích lý do Caesar dễ bị phá].
   - Chỉ là sự dịch chuyển với các bước từ 0 tới số lượng tối đa của bảng chữ cái (26), nên có thể vét cạn.
   - Không gian khóa quá nhỏ, 25 trường hợp dịch chuyển, nên có thể thử với việc lặp lại rất nhanh với máy tính.
@@ -33,16 +39,17 @@ Quy ước không gian khóa:
     - Các mảnh ghép (ký tự) không đổi, khối lượng ký tự không đổi, chỉ có thứ tự bị xáo trộn theo một quy luật nào đó để che giấu đi ý nghĩa thực sự của bản gốc.
   - Số lá bài thực ra có thể chỉ định được, như ví dụ trước đó.
 + #strong[So sánh mức độ an toàn của 4 hệ mã nêu trên].
-  - Theo thứ tự an toàn từ thấp đến cao: $C a e s a r < T r a n s p o s i t i o n < V i g e n è r e < P l a y f a i r$.
-    - #strong[Caesar:]
-      - Yếu nhất
-      - Vét cạn hoặc phân tích tần suất thường đem ra kết quả ngay.
-    - #strong[Transposition (đơn giản):]
-      - Kém an toàn nếu đứng một mình
-      - Kẻ tấn công có thể đếm tần suất chữ cái (thấy khớp với tần suất chữ tiếng Anh chuẩn) là biết ngay #strong[đây là mã hoán vị], từ đó tìm cách xếp lại các cột.
-    - #strong[Vigenère:]
-      - Khá an toàn vì là mã đa bảng, giấu được tần suất chữ cái.
-      - Nay dễ dàng bị phá rách bằng phương pháp Kasiski hoặc tính chỉ số IC.
-    - #strong[Playfair:] An toàn nhất trong 4 loại này.
-      - Do nó mã hóa theo từng cặp ký tự (digraph) chứ không mã hóa từng chữ cái rời rạc.
-      - Mục đích: trung hòa tần suất xuất hiện của các chữ cái đơn, giúp nó chống lại các đòn tấn công phân tích tần suất truyền thống rất tốt.
+  - Theo thứ tự an toàn từ thấp đến cao:
+    - $C a e s a r < T r a n s p o s i t i o n < V i g e n è r e < P l a y f a i r$.
+  - #strong[Caesar:]
+    - Yếu nhất
+    - Vét cạn hoặc phân tích tần suất thường đem ra kết quả ngay.
+  - #strong[Transposition (đơn giản):]
+    - Kém an toàn nếu đứng một mình
+    - Kẻ tấn công có thể đếm tần suất chữ cái (thấy khớp với tần suất chữ tiếng Anh chuẩn) là biết ngay #strong[đây là mã hoán vị], từ đó tìm cách xếp lại các cột.
+  - #strong[Vigenère:]
+    - Khá an toàn vì là mã đa bảng, giấu được tần suất chữ cái.
+    - Nay dễ dàng bị phá rách bằng phương pháp Kasiski hoặc tính chỉ số IC.
+  - #strong[Playfair:] An toàn nhất trong 4 loại này.
+    - Do nó mã hóa theo từng cặp ký tự (digraph) chứ không mã hóa từng chữ cái rời rạc.
+    - Mục đích: trung hòa tần suất xuất hiện của các chữ cái đơn, giúp nó chống lại các đòn tấn công phân tích tần suất truyền thống rất tốt.
