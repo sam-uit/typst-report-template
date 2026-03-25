@@ -3,7 +3,7 @@
 
 = BÁO CÁO TÓM TẮT
 
-== Tiêu đề: #upper[#data.assignment.subtitle]
+== Tiêu đề: #upper[#data.assignment.subtitle] (Sử dụng CrypTool 1)
 == MỤC TIÊU
 
 - Hiểu và thực hành các hệ mã cổ điển:
@@ -21,94 +21,39 @@
 - Chuẩn bị đoạn văn bản để mã hoá.
 - Máy tính Windows 10/11.
 
+== NỘI DUNG CHÍNH
 
-=== Nội dung 1:
+=== BƯỚC 1 -- Làm quen CrypTool
 
-+ Đề mục 1:
-+ Đề mục 2:
-+ Đề mục 3:
++ Khởi động CrypTool 1.
++ Tìm hiểu giao diện:
+  - Menu chính
+  - Thanh công cụ
+  - Cửa sổ mã hoá/giải mã
+  - Cửa sổ phân tích
 
-=== Nội dung 2:
-
-+ Đề mục 1:
-+ Đề mục 2:
-+ Đề mục 3:
-
-=== Nội dung 3:
+=== BƯỚC 2 -- Caesar Cipher (Mở rộng)
 
 + Đề mục 1:
 + Đề mục 2:
 + Đề mục 3:
 
-== 4. Phân công công việc
+=== BƯỚC 3 -- Vigenère Cipher (Mở rộng)
 
-#figure(
-  align(center)[
-    // Mono font in column 0, 1
-    #show table.cell: current_cell => {
-      // Check if row (y > 0) AND the column is (0, 1, or 3)
-      if current_cell.y > 0 and current_cell.x in (0, 1) {
-        // Use a monofont: Iosevka
-        text(
-          font: "Iosevka",
-          weight: 300,
-          fill: black.lighten(40%),
-        )[#current_cell]
-      } else {
-        // Return normal formatting for other columns
-        current_cell
-      }
-    }
-    // TODO: Span full width automatically
-    // TODO: import/use csv data instead of hardcoding
-    #table(
-      columns: (10%, 15%, 35%, 45%),
-      align: (right, right, left, left),
-      table.header([No], [MSSV], [Họ và Tên], [Phụ Trách]),
-      table.hline(),
-      [01],
-      [15410301],
-      [Nguyễn Văn A],
-      [],
-      [02],
-      [15410319],
-      [Trần Minh Tuấn],
-      [],
-      [03],
-      [15410321],
-      [Lê Hoàng Phúc],
-      [],
-      [04],
-      [15410204],
-      [Phạm Minh Tuấn],
-      [],
-      [05],
-      [15410338],
-      [Lê Trần Minh Nhật],
-      [],
-      [06],
-      [15410176],
-      [Phan Văn Dũng],
-      [],
-      [07],
-      [15410247],
-      [Trần Thị Bích Ngọc],
-      [],
-      [08],
-      [15410337],
-      [Võ Thị Thu Hà],
-      [],
-      [09],
-      [15410209],
-      [Võ Nguyễn Thành Vinh],
-      [],
-      [10],
-      [15410271],
-      [Lê Thị Bảo Trân],
-      [],
-    )],
-  kind: table,
-  caption: [Phân Công Công Việc],
-  outlined: false, // Hides it from the List of Tables
-  numbering: none, // Hides the "Table X:" prefix (optional)
-)
++ Đề mục 1:
++ Đề mục 2:
++ Đề mục 3:
+
+=== BƯỚC 4 -- Playfair Cipher (Mở rộng)
+
+=== BƯỚC 5 -- Transposition Cipher
+
+=== BƯỚC 6 -- Solitaire Cipher
+
+=== CÂU HỎI BÁO CÁO
+
+1. Giải thích lý do Caesar dễ bị phá.
+2. IC hỗ trợ phá Vigenère như thế nào?
+3. Playfair xử lý chữ đôi ra sao?
+4. Tại sao Transposition giữ nguyên chữ nhưng thay đổi vị trí?
+5. So sánh mức độ an toàn của 4 hệ mã nêu trên.
