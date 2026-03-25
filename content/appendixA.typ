@@ -1,7 +1,7 @@
 #import "../template/lib.typ": *
 
-= Phụ Lục A
-<phu-luc-a>
+= Thông Tin Về Báo Cáo Này
+<thong-tin-ve-bao-cao-nay>
 
 
 == Repo Mã Nguồn
@@ -12,4 +12,10 @@
 <ma-nguon-bao-cao>
 
 - Miêu tả: Báo cáo này được xây dựng từ mã nguồn Typst, với nội dung chính được chuẩn bị từ Markdown.
-- Nguồn: #link("https://github.com/lt20252cnttalpha/typst-report-template")
+- Nguồn: #link("https://github.com/lt20252cnttalpha/typst-report-template")[lt20252cnttalpha/typst-report-template]
+
+=== Mã Nguồn Nội Dung Chính
+<ma-nguon-noi-dung-chinh>
+
+- Miêu tả: Được chuẩn bị với Markdown, trong kho của Obsidian.
+- Lưu trữ tại: #link("https://github.com/sam-uit/LT.K2025.2-CNTT/tree/main/uit/courses/IE105/assigments")[uit/courses/IE105/assigments]
