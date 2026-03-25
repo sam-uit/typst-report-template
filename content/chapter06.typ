@@ -18,10 +18,13 @@ Quy ước không gian khóa:
 
 - Sử dụng trường hợp mặc định đánh chỉ số bắt đầu từ 0: $A = 0 \, B = 1 \, dots.h \, Z = 25$, như bảng sau đây:
 
-#table(
+#figure(
+  table(
   columns: (1fr,) * 26,
   align: (center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center),
   [0], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20], [21], [22], [23], [24], [25], [A], [B], [C], [D], [E], [F], [G], [H], [I], [J], [K], [L], [M], [N], [O], [P], [Q], [R], [S], [T], [U], [V], [W], [X], [Y], [Z]
+),
+caption: [Bước 6 - Quy Ước Không Gian Khóa]
 )
 Nguyên lý cơ bản:
 
