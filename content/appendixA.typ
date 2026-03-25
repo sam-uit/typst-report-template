@@ -1,38 +1,17 @@
 #import "../template/lib.typ": *
 
-= Phụ Lục A
-<phu-luc-a>
+= Thông Tin Về Báo Cáo Này
+<thong-tin-ve-bao-cao-nay>
 
 
-== Link Video Demo
-<link-video-demo>
-
-- Mục đích: Tất cả các demo trong một video đầy đủ.
-- #link("https://www.youtube.com/watch?v=dQw4w9WgXcQ")[Video Demo]
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-== Repo Mã Nguồn
-<repo-ma-nguon>
-
-
-=== Mã Nguồn Báo Cáo
+== Mã Nguồn Báo Cáo
 <ma-nguon-bao-cao>
 
-- Mục đích: Tái tạo báo cáo này từ mã nguồn Typst.
+- Miêu tả: Báo cáo này được xây dựng từ mã nguồn #link("https://typst.app/")[Typst], với nội dung chính được chuẩn bị từ Markdown.
+- Lưu trữ tại: #link("https://github.com/sam-uit/typst-report-template")[sam-uit/typst-report-template]
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+== Mã Nguồn Nội Dung Chính
+<ma-nguon-noi-dung-chinh>
 
-=== Mã Nguồn Ứng Dụng
-<ma-nguon-ung-dung>
-
-- Mục đích: Tái tạo ứng dụng được trình bày trong báo cáo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Mã Nguồn SQL Projects
-<ma-nguon-sql-projects>
-
-- Mục đích: Tái tạo dự án SQL được trình bày trong báo cáo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- Miêu tả: Được chuẩn bị với Markdown, trong kho của #link("https://obsidian.md/")[Obsidian].
+- Lưu trữ tại: #link("https://github.com/sam-uit/LT.K2025.2-CNTT/tree/main/uit/courses/IE105/assigments")[uit/courses/IE105/assigments]

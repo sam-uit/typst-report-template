@@ -1,28 +1,11 @@
-# Phụ Lục A
+# Thông Tin Về Báo Cáo Này
 
-## Link Video Demo
+## Mã Nguồn Báo Cáo
 
-- Mục đích: Tất cả các demo trong một video đầy đủ.
-- [Video Demo](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- Miêu tả: Báo cáo này được xây dựng từ mã nguồn [Typst](https://typst.app/), với nội dung chính được chuẩn bị từ Markdown.
+- Lưu trữ tại: [sam-uit/typst-report-template](https://github.com/sam-uit/typst-report-template)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+## Mã Nguồn Nội Dung Chính
 
-## Repo Mã Nguồn
-
-### Mã Nguồn Báo Cáo
-
-- Mục đích: Tái tạo báo cáo này từ mã nguồn Typst.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-### Mã Nguồn Ứng Dụng
-
-- Mục đích: Tái tạo ứng dụng được trình bày trong báo cáo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-### Mã Nguồn SQL Projects
-
-- Mục đích: Tái tạo dự án SQL được trình bày trong báo cáo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- Miêu tả: Được chuẩn bị với Markdown, trong kho của [Obsidian](https://obsidian.md/).
+- Lưu trữ tại: [uit/courses/IE105/assigments](https://github.com/sam-uit/LT.K2025.2-CNTT/tree/main/uit/courses/IE105/assigments)
