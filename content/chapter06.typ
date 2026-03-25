@@ -1,7 +1,7 @@
 #import "../template/lib.typ": *
 
-= PHẦN 6 -- KIỂM TRA MẬT KHẨU MẠNH/YẾU (TỰ ĐÁNH GIÁ)
-<phan-6-kiem-tra-mat-khau-manh-yeu-tu-danh-gia>
+= PHẦN 6. KIỂM TRA MẬT KHẨU MẠNH/YẾU
+<phan-6-kiem-tra-mat-khau-manh-yeu>
 
 Sinh viên tự đánh giá mật khẩu theo tiêu chuẩn:
 
@@ -17,7 +17,9 @@ Yêu cầu ghi vào báo cáo: - Bạn có dùng mật khẩu mạnh không? - C
 == Mật khẩu ví dụ
 <mat-khau-vi-du>
 
-- `*M@laysiA_2026*UIT*`
+```
+*M@laysiA_2026*UIT*
+```
 
 == Đánh giá
 <danh-gia>

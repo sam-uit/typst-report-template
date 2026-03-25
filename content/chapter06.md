@@ -1,4 +1,4 @@
-# PHẦN 6 – KIỂM TRA MẬT KHẨU MẠNH/YẾU (TỰ ĐÁNH GIÁ)
+# PHẦN 6. KIỂM TRA MẬT KHẨU MẠNH/YẾU
 
 Sinh viên tự đánh giá mật khẩu theo tiêu chuẩn:
 
@@ -15,7 +15,9 @@ Yêu cầu ghi vào báo cáo:
 
 ## Mật khẩu ví dụ
 
-- `*M@laysiA_2026*UIT*`
+```
+*M@laysiA_2026*UIT*
+```
 
 ## Đánh giá
 
