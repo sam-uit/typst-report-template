@@ -9,18 +9,18 @@
     logo: "uit.jpeg",
   ),
   course: (
-    id: upper(lorem(1)),
-    name: lorem(6),
-    class: upper(lorem(2)),
+    id: "IE105",
+    name: "Nhập Môn Đảm Bảo và An Ninh Thông Tin",
+    class: "IE105.F22.LT.CNTT",
   ),
-  instructor: lorem(4),
+  instructor: "ThS. Tô Nguyễn Nhật Quang",
   author: (
-    name: lorem(3),
-    id: lorem(1),
+    name: "Đinh Xuân Sâm",
+    id: "25410291",
     members: (
       (
-        name: lorem(3),
-        id: lorem(1),
+        name: "Đinh Xuân Sâm",
+        id: "25410291",
       ),
       (
         name: lorem(3),
@@ -29,11 +29,11 @@
     ),
   ),
   assignment: (
-    title: upper(lorem(5)),
-    subtitle: upper(lorem(6)),
-    type: upper(lorem(2)),
-    date: lorem(6),
-    duration: "15 phút",
+    title: "BÀI TẬP THỰC HÀNH 2",
+    subtitle: "Kiểm Tra Bảo Mật Thông Tin Cơ Bản (Basic Security Assessment)",
+    type: "assignments",
+    date: "Ngày 24 Tháng 03 Năm 2026",
+    duration: "180 phút",
   ),
   company: "A Limited Company Name",
 )
