@@ -3,7 +3,7 @@
 ## Mã Nguồn Báo Cáo
 
 - Miêu tả: Báo cáo này được xây dựng từ mã nguồn Typst, với nội dung chính được chuẩn bị từ Markdown.
-- Nguồn: [lt20252cnttalpha/typst-report-template](https://github.com/lt20252cnttalpha/typst-report-template)
+- Nguồn: [sam-uit/typst-report-template](https://github.com/sam-uit/typst-report-template)
 
 ## Mã Nguồn Nội Dung Chính
 
