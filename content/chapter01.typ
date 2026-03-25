@@ -1,24 +1,80 @@
 #import "../template/lib.typ": *
 
-= Mô Tả Bài Toán
-<mo-ta-bai-toan>
+= PHẦN 1. CHUẨN BỊ MÁY WINDOWS
+<phan-1-chuan-bi-may-windows>
 
-Tài liệu tham khảo về trình bày báo cáo kỹ thuật: @technicalwritingapracticalguide[Technical Writing A Practical Guide].
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+== Bước 1. Kiểm tra phiên bản Windows
+<buoc-1-kiem-tra-phien-ban-windows>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
++ Nhấn Windows + R.
++ Gõ: `winver` → Enter.
++ Ghi lại thông tin phiên bản Windows.
 
-== Động Lực, Mục Tiêu, Ý Nghĩa của Đề Tài
-<dong-luc-muc-tieu-y-nghia-cua-de-tai>
+Thông tin phiên bản Windows:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- Windows 7 Ultimate
+- Version: 6.1 (Build 7601: Server Pack 1)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+#figure(image("assets/p1-b1-01.png"),
+  caption: [
+    Phần 1. Bước 1. Kiểm tra phiên bản Windows
+  ]
+)
 
-== Quy Trình Thực Tế Liên Quan Đến Đề Tài
-<quy-trinh-thuc-te-lien-quan-den-de-tai>
+== Bước 2. Kiểm tra quyền người dùng hiện tại
+<buoc-2-kiem-tra-quyen-nguoi-dung-hien-tai>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
++ Mở Command Prompt:
+  - Start → gõ cmd → Enter.
++ Gõ: `whoami`
++ Ghi lại tên tài khoản.
+  - `uit`
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+#figure(image("assets/p1-b2-01.png"),
+  caption: [
+    Phần 1. Bước 2. Kiểm tra quyền người dùng hiện tại
+  ]
+)
+
+== Bước 3. Liệt kê các tài khoản trong máy
+<buoc-3-liet-ke-cac-tai-khoan-trong-may>
+
++ Gõ lệnh: `net user`
++ Ghi chú:
+  - Nếu có account lạ → đánh dấu rủi ro.
+  - Nếu tài khoản Guest bật → rủi ro cao.
+
+Kết quả:
+
+- Account:
+  - Administrator
+  - Guest
+  - `uit`
+- Đánh giá rủi ro:
+  - Không có account lạ.
+  - Guest được bật: rủi ro cao.
+
+#figure(image("assets/p1-b3-01.png"),
+  caption: [
+    Phần 1. Bước 3. Liệt kê các tài khoản trong máy
+  ]
+)
+
+== Bước 4. Tắt Guest Account
+<buoc-4-tat-guest-account>
+
+- Chạy cmd với Administrator.
+- Chạy lệnh `net user guest /active:no`
+  - Nếu chạy với user thường, gặp lỗi như ở 1.
+  - Nếu chạy với Administrator, có thể hoàn thành, như ở 2.
+- Hoàn thành.
+- Kiểm tra lại, sử dụng Local Users and Groups
+- Xem thuộc tính của Guest
+  - #strong[Account is disabled] ở 3.
+
+#figure(image("assets/p1-b4-01.png"),
+  caption: [
+    Phần 1. Tắt Guest Account
+  ]
+)
