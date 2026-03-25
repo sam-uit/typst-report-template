@@ -3,12 +3,8 @@
 = BƯỚC 1 -- Làm Quen CrypTool
 <buoc-1-lam-quen-cryptool>
 
-- File → New.
-- Quan sát menu Encrypt, Decrypt, Analysis.
-  - Chụp lại hình các menu này, mô tả các mục trong menu.
-- Nhập văn bản mẫu để thử nghiệm một vài mục trong menu trên.
 
-=== Văn Bản Mẫu
+== Văn Bản Mẫu
 <van-ban-mau>
 
 - File $arrow.r$ New:
@@ -20,7 +16,7 @@
   ]
 )
 
-=== Các Menu
+== Các Menu
 <cac-menu>
 
 - Menu Encrypt/Decrypt:
@@ -50,7 +46,7 @@
   ]
 )
 
-=== Thử Nghiệm
+== Thử Nghiệm
 <thu-nghiem>
 
 - Mã hóa văn bản mẫu trên với Caesar:

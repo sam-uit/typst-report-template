@@ -1,18 +1,13 @@
 # BƯỚC 1 – Làm Quen CrypTool
 
-- File → New.
-- Quan sát menu Encrypt, Decrypt, Analysis.
-    - Chụp lại hình các menu này, mô tả các mục trong menu.
-- Nhập văn bản mẫu để thử nghiệm một vài mục trong menu trên.
-
-### Văn Bản Mẫu
+## Văn Bản Mẫu
 
 - File $\to$ New:
     - Cho phép tạo một đoạn văn bản mẫu, ví dụ: `TRUONG DAI HOC CONG NGHE THONG TIN`.
 
 ![Bước 1: Văn Bản Mẫu](assets/1a-b1-01.png)
 
-### Các Menu
+## Các Menu
 
 - Menu Encrypt/Decrypt:
     - Liệt kê các kỹ thuật Mã Hóa, bao gồm:
@@ -33,7 +28,7 @@
 
 ![Bước 1: Menu Analysis](assets/1a-b1-03.png)
 
-### Thử Nghiệm
+## Thử Nghiệm
 
 - Mã hóa văn bản mẫu trên với Caesar:
     - Tại cửa sổ chính với văn bản mẫu đã có, chọn **Encrypt/Decrypt $\to$ Symmetric (classic) $\to$ Caesar / Rot13...**
