@@ -102,9 +102,9 @@
       // Cột trái chiếm 40% chiều rộng, cột phải chiếm 60% chiều rộng
       columns: (40%, 60%),
       // Khoảng cách giữa các cột là 1em
-      column-gutter: 1em,
+      // column-gutter: 1em,
       // Khoảng cách giữa các hàng là 1em
-      row-gutter: 1em,
+      // row-gutter: 1em,
       // Căn chỉnh các cột là right (trái căn phải) và left (phải căn trái)
       align: (right, left),
       // Cột bên trái chứa danh sách thông tin
