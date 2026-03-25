@@ -1,59 +1,71 @@
-# Phân Tích Và Thiết Kế
+# PHẦN 2. KIỂM TRA THÔNG TIN HỆ THỐNG
 
-## Các Chức Năng Nghiệp Vụ
+## Bước 1. Kiểm tra cấu hình hệ thống
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+Gõ lệnh: `systeminfo`
 
-![Ví dụ về chèn Hình Ảnh PNG.](assets/macos-fhs-root-system.png)
+Quan sát:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+- Hệ điều hành: Microsoft Windows 7 Ultimate
+- Phiên bản OS: 6.1.7601 Service Pack 1 Build 7601
+- RAM: 2,045 MB
+- Thời gian cài đặt hệ điều hành: 3/24/2026, 8:24:48 PM
+- Các bản vá đã cài (hotfix):
+    - KB2534111
+    - KB976902
 
-## Đối Tượng và Mối Quan Hệ
+```ini
+C:\Windows\system32>systeminfo
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
-
-## Mô Hình Mức Quan Niệm
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-```{=typst}
-#figure(
-table(
-  columns: (1fr,) * 3,
-  align: (left, left, left),
-  [#strong[Thực Thể]], [#strong[Quan Hệ]], [#strong[Thực Thể]],
-  [#strong[Quản Trị Viên]], [được gán], [#strong[Vai Trò]],
-  [#strong[Vai Trò]], [có các], [#strong[Quyền Hạn]],
-  [#strong[Phòng]], [thuộc], [#strong[Loại Phòng]],
-  [#strong[Người Dùng]], [thực hiện], [#strong[Đặt Phòng]],
-  [#strong[Đặt Phòng]], [bao gồm], [#strong[Phòng]],
-  [#strong[Đặt Phòng]], [được áp dụng], [#strong[Mã Giảm Giá]],
-  [#strong[Đặt Phòng]], [được], [#strong[Thanh Toán]],
-  [#strong[Đặt Phòng]], [được], [#strong[Đánh Giá]],
-  [#strong[Người Dùng]], [viết], [#strong[Đánh Giá]],
-  [#strong[Người Dùng]], [thực hiện], [#strong[Thanh Toán]],
-  [#strong[Người Dùng]], [yêu cầu], [#strong[Hoàn Tiền]],
-  [#strong[Thanh Toán]], [được], [#strong[Hoàn Tiền]],
-  [#strong[Quản Trị Viên]], [duyệt], [#strong[Hoàn Tiền]],
-  [#strong[Đặt Phòng]], [có kèm], [#strong[Dịch Vụ]]
-),
-caption: [Ví dụ về Bảng]
-)
+Host Name:                 UIT-LAB
+OS Name:                   Microsoft Windows 7 Ultimate
+OS Version:                6.1.7601 Service Pack 1 Build 7601
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          uit
+Registered Organization:
+Product ID:                00426-292-0000007-85191
+Original Install Date:     3/24/2026, 8:24:48 PM
+System Boot Time:          3/25/2026, 4:05:58 PM
+...
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC+08:00) Kuala Lumpur, Singapore
+Total Physical Memory:     2,045 MB
+Available Physical Memory: 1,552 MB
+...
+Hotfix(s):                 2 Hotfix(s) Installed.
+                           [01]: KB2534111
+                           [02]: KB976902
+...
 ```
 
-Tóm tắt các thực thể và mối quan hệ bằng mô hình trực quan:
+![Phần 2. Bước 1. Kiểm tra cấu hình hệ thống](assets/p2-b1.png)
 
-<!-- Sử dụng layout elk cho riêng diagram này. -->
+## Bước 2. Kiểm tra tiến trình đang chạy
 
-![Ví dụ về chèn Hình Ảnh SVG.](diagrams/entity-relationship.svg)
+1. Nhấn Ctrl + Shift + Esc để mở Task Manager.
+2. Chụp màn hình tab Processes.
+3. Nếu thấy tiến trình lạ → ghi chú.
 
+Tiến trình lạ:
 
-<!-- TODO: Cân nhắc sử dụng direction TD -->
+- `spice-webdavd`:
+    - Đây không phải là tiến trình cài đặt sẵn theo Windows.
+    - Đây là một tiến trình hỗ trợ máy ảo chia sẻ file với máy thật (UTM trên macOS).
 
-![Ví dụ về Biểu Đồ ERD](diagrams/ch02-concept-erd-simplify.svg)
+![Phần 2. Bước 2. Kiểm tra tiến trình đang chạy](assets/p2-b2.png)
 
-## Thiết Kế Cơ Sở Dữ Liệu
+## Bước 3. Kiểm tra phần mềm khởi động cùng Windows
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+1. Trong Task Manager → tab Startup.
+2. Đánh dấu ứng dụng không cần thiết.
+
+Do đây là hệ điều hành Windows 7:
+
+- Thẻ Startup chưa có trong Task Manager.
+- Mà thuộc System Configuration (`msconfig`).
+- Hiện tại, không có ứng dụng không cần thiết.
+
+![Phần 2. Bước 3. Kiểm tra phần mềm khởi động cùng Windows](assets/p2-b3.png)
