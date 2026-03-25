@@ -10,10 +10,13 @@
 - Đây là ma trận $5 times 5$ vì văn bản gốc chỉ chứa các ký tự chữ cái (tối đa 26 ký tự), không chứa ký tự số.
 - Một ký tự sẽ được lược bỏ, thường là $J$ để chuỗi khóa vừa với tổng số 25 ký tự của ma trận khóa.
 
-#table(
+#figure(
+  table(
   columns: (1fr,) * 6,
   align: (center, center, center, center, center, center),
   [#strong[\+]], [#strong[1]], [#strong[2]], [#strong[3]], [#strong[4]], [#strong[5]], [#strong[1]], [S], [E], [C], [R], [T], [#strong[2]], [K], [Y], [A], [B], [D], [#strong[3]], [F], [G], [H], [I], [L], [#strong[4]], [M], [N], [O], [P], [Q], [#strong[5]], [U], [V], [W], [X], [Z]
+),
+caption: [BƯỚC 4 – Ma Trận Khóa]
 )
 
 == Mã Hóa
