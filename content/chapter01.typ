@@ -1,24 +1,16 @@
 #import "../template/lib.typ": *
 
-= Mô Tả Bài Toán
-<mo-ta-bai-toan>
+= CHUẨN BỊ
+<chuan-bi>
 
-Tài liệu tham khảo về trình bày báo cáo kỹ thuật: @technicalwritingapracticalguide[Technical Writing A Practical Guide].
+- Cài CrypTool 1.
+- Chuẩn bị đoạn văn bản để mã hoá.
+- Máy tính Windows 10/11.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+CrypTool 1:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
-
-== Động Lực, Mục Tiêu, Ý Nghĩa của Đề Tài
-<dong-luc-muc-tieu-y-nghia-cua-de-tai>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
-
-== Quy Trình Thực Tế Liên Quan Đến Đề Tài
-<quy-trinh-thuc-te-lien-quan-den-de-tai>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+#figure(image("assets/1a-01.png"),
+  caption: [
+    Chuẩn Bị: CrypTool 1
+  ]
+)
