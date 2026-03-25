@@ -3,6 +3,10 @@
 = BƯỚC 2 -- Caesar Cipher
 <buoc-2-caesar-cipher>
 
+
+== Mã Hóa
+<ma-hoa>
+
 - Nhập plaintext: `ATTACK AT DAWN`.
   - File $arrow.r$ New.
 - Encrypt → Classical → Caesar → key = 3.
@@ -21,6 +25,9 @@
     BƯỚC 2 -- Caesar Cipher, Encrypt, Kết Quả
   ]
 )
+
+== Giải Mã
+<giai-ma>
 
 - Dùng Decrypt để giải mã lại.
   - Menu Encrypt/Decrypt $arrow.r$ Symmetric (classic) $arrow.r$ Caesar / Rot13…
@@ -41,6 +48,9 @@
   ]
 )
 
+== Analysis
+<analysis>
+
 - Phân tích brute-force: #strong[Analysis → Classical → Caesar Analysis].
   - Cho biết khả năng để giải mã, với key là 3. Nhưng sẽ tùy thuộc vào offset cụ thể là 0, hay là 1.
     - Với 0 thì đó là D.
@@ -60,6 +70,9 @@
     BƯỚC 2 -- Caesar Cipher, Analysis, Decrypted
   ]
 )
+
+== Lặp Lại Với Các Key Khác
+<lap-lai-voi-cac-key-khac>
 
 - Lặp lại với các key khác: 5, 7, 13.
   - Sinh viên tự tạo 3 ciphertext và trao đổi để giải mã lẫn nhau.
