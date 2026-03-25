@@ -28,14 +28,15 @@
 
 ![Bước 1: Menu Analysis](assets/1a-b1-03.png)
 
-## Thử Nghiệm
+## Thử Nghiệm Với Caesar
 
-- Mã hóa văn bản mẫu trên với Caesar:
-    - Tại cửa sổ chính với văn bản mẫu đã có, chọn **Encrypt/Decrypt $\to$ Symmetric (classic) $\to$ Caesar / Rot13...**
-    - Cửa sổ **Key Entry: Caesar / Rot13** hiện lên.
-        - Chỉ định biến thể (**variant**): Caesar; Ký tự đầu tiên bắt đầu từ 0: $A = 0$.
-        - **Key entry as**: chỉ định ký tự (độ lớn của sự dịch chuyển), trong ví dụ này là $S$, với $S = 18$.
-    - Chọn nút **Encrypt**.
+### Mã Hóa
+
+- Tại cửa sổ chính với văn bản mẫu đã có, chọn **Encrypt/Decrypt $\to$ Symmetric (classic) $\to$ Caesar / Rot13...**
+- Cửa sổ **Key Entry: Caesar / Rot13** hiện lên.
+    - Chỉ định biến thể (**variant**): Caesar; Ký tự đầu tiên bắt đầu từ 0: $A = 0$.
+    - **Key entry as**: chỉ định ký tự (độ lớn của sự dịch chuyển), trong ví dụ này là $S$, với $S = 18$.
+- Chọn nút **Encrypt**.
 
 ![Thử nghiệm 1: Caesar, Encrypt, Key Entry](assets/1a-b1-04.png)
 
@@ -45,11 +46,12 @@
 
 ![Thử nghiệm 1: Caesar, Encrypt, Kết Quả](assets/1a-b1-05.png)
 
-- Giải mã
-    - Tại cửa sổ kết quả, chọn menu **Encrypt/Decrypt $\to$ Symmetric (classic) $\to$ Caesar / Rot13...**
-    - Cửa sổ **Key Entry: Caesar / Rot13** hiện lên.
-        - Thực hiện các thay đổi như ở phần mã hóa.
-    - Chọn nút **Decrypt**.
-    - Kết quả trả về là văn bản gốc, có hiện thị key và offset.
+### Giải Mã
+
+- Tại cửa sổ kết quả, chọn menu **Encrypt/Decrypt $\to$ Symmetric (classic) $\to$ Caesar / Rot13...**
+- Cửa sổ **Key Entry: Caesar / Rot13** hiện lên.
+    - Thực hiện các thay đổi như ở phần mã hóa.
+- Chọn nút **Decrypt**.
+- Kết quả trả về là văn bản gốc, có hiện thị key và offset.
 
 ![Thử nghiệm 1: Caesar, Decrypt, Kết Quả](assets/1a-b1-06.png)

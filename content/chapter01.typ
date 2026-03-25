@@ -46,15 +46,18 @@
   ]
 )
 
-== Thử Nghiệm
-<thu-nghiem>
+== Thử Nghiệm Với Caesar
+<thu-nghiem-voi-caesar>
 
-- Mã hóa văn bản mẫu trên với Caesar:
-  - Tại cửa sổ chính với văn bản mẫu đã có, chọn #strong[Encrypt/Decrypt $arrow.r$ Symmetric (classic) $arrow.r$ Caesar / Rot13…]
-  - Cửa sổ #strong[Key Entry: Caesar / Rot13] hiện lên.
-    - Chỉ định biến thể (#strong[variant]): Caesar; Ký tự đầu tiên bắt đầu từ 0: $A = 0$.
-    - #strong[Key entry as]: chỉ định ký tự (độ lớn của sự dịch chuyển), trong ví dụ này là $S$, với $S = 18$.
-  - Chọn nút #strong[Encrypt].
+
+=== Mã Hóa
+<ma-hoa>
+
+- Tại cửa sổ chính với văn bản mẫu đã có, chọn #strong[Encrypt/Decrypt $arrow.r$ Symmetric (classic) $arrow.r$ Caesar / Rot13…]
+- Cửa sổ #strong[Key Entry: Caesar / Rot13] hiện lên.
+  - Chỉ định biến thể (#strong[variant]): Caesar; Ký tự đầu tiên bắt đầu từ 0: $A = 0$.
+  - #strong[Key entry as]: chỉ định ký tự (độ lớn của sự dịch chuyển), trong ví dụ này là $S$, với $S = 18$.
+- Chọn nút #strong[Encrypt].
 
 #figure(image("assets/1a-b1-04.png"),
   caption: [
@@ -72,12 +75,14 @@
   ]
 )
 
-- Giải mã
-  - Tại cửa sổ kết quả, chọn menu #strong[Encrypt/Decrypt $arrow.r$ Symmetric (classic) $arrow.r$ Caesar / Rot13…]
-  - Cửa sổ #strong[Key Entry: Caesar / Rot13] hiện lên.
-    - Thực hiện các thay đổi như ở phần mã hóa.
-  - Chọn nút #strong[Decrypt].
-  - Kết quả trả về là văn bản gốc, có hiện thị key và offset.
+=== Giải Mã
+<giai-ma>
+
+- Tại cửa sổ kết quả, chọn menu #strong[Encrypt/Decrypt $arrow.r$ Symmetric (classic) $arrow.r$ Caesar / Rot13…]
+- Cửa sổ #strong[Key Entry: Caesar / Rot13] hiện lên.
+  - Thực hiện các thay đổi như ở phần mã hóa.
+- Chọn nút #strong[Decrypt].
+- Kết quả trả về là văn bản gốc, có hiện thị key và offset.
 
 #figure(image("assets/1a-b1-06.png"),
   caption: [
