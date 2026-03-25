@@ -1,7 +1,7 @@
 #import "/template/lib.typ": *
 #import "/config/metadata.typ": data
 
-= BÁO CÁO TÓM TẮT
+= TÓM TẮT NỘI DUNG
 
 == Tiêu đề: #upper[#data.assignment.subtitle] (Sử dụng CrypTool 1)
 == MỤC TIÊU
