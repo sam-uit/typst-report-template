@@ -1,59 +1,52 @@
-# Phân Tích Và Thiết Kế
+# BƯỚC 2 – Caesar Cipher
 
-## Các Chức Năng Nghiệp Vụ
+- Nhập plaintext: `ATTACK AT DAWN`.
+    - File $\to$ New.
+- Encrypt → Classical → Caesar → key = 3.
+    - Mục *Key entry as* chọn *Number value*, giá trị là 3.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+![BƯỚC 2 – Caesar Cipher, Encrypt, Key Entry](assets/1a-b2-01.png)
 
-![Ví dụ về chèn Hình Ảnh PNG.](assets/macos-fhs-root-system.png)
+- Kết quả: văn bản được mã hóa thành `DWWDFN DW GDZQ`.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+![BƯỚC 2 – Caesar Cipher, Encrypt, Kết Quả](assets/1a-b2-02.png)
 
-## Đối Tượng và Mối Quan Hệ
+- Dùng Decrypt để giải mã lại.
+    - Menu Encrypt/Decrypt $\to$ Symmetric (classic) $\to$ Caesar / Rot13...
+    - Nhập lại cấu hình như trước đó, cụ thể là key = 13.
+    - Chọn **Decrypt**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+![BƯỚC 2 – Caesar Cipher, Decrypt, Key Entry](assets/1a-b2-01.png)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+- Kết quả:
 
-## Mô Hình Mức Quan Niệm
+![BƯỚC 2 – Caesar Cipher, Decrypt, Kết Quả](assets/1a-b2-03.png)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- Phân tích brute-force: **Analysis → Classical → Caesar Analysis**.
+    - Cho biết khả năng để giải mã, với key là 3. Nhưng sẽ tùy thuộc vào offset cụ thể là 0, hay là 1.
+        - Với 0 thì đó là D.
+        - Với 1 thì đó là C.
+        - Trong trường hợp này, khi mã hóa, em đã chọn offset là 0, với key là 3, tức là D.
 
-```{=typst}
-#figure(
-table(
-  columns: (1fr,) * 3,
-  align: (left, left, left),
-  [#strong[Thực Thể]], [#strong[Quan Hệ]], [#strong[Thực Thể]],
-  [#strong[Quản Trị Viên]], [được gán], [#strong[Vai Trò]],
-  [#strong[Vai Trò]], [có các], [#strong[Quyền Hạn]],
-  [#strong[Phòng]], [thuộc], [#strong[Loại Phòng]],
-  [#strong[Người Dùng]], [thực hiện], [#strong[Đặt Phòng]],
-  [#strong[Đặt Phòng]], [bao gồm], [#strong[Phòng]],
-  [#strong[Đặt Phòng]], [được áp dụng], [#strong[Mã Giảm Giá]],
-  [#strong[Đặt Phòng]], [được], [#strong[Thanh Toán]],
-  [#strong[Đặt Phòng]], [được], [#strong[Đánh Giá]],
-  [#strong[Người Dùng]], [viết], [#strong[Đánh Giá]],
-  [#strong[Người Dùng]], [thực hiện], [#strong[Thanh Toán]],
-  [#strong[Người Dùng]], [yêu cầu], [#strong[Hoàn Tiền]],
-  [#strong[Thanh Toán]], [được], [#strong[Hoàn Tiền]],
-  [#strong[Quản Trị Viên]], [duyệt], [#strong[Hoàn Tiền]],
-  [#strong[Đặt Phòng]], [có kèm], [#strong[Dịch Vụ]]
-),
-caption: [Ví dụ về Bảng]
-)
-```
+![BƯỚC 2 – Caesar Cipher, Analysis, Caesar Analysis](assets/1a-b2-04.png)
 
-Tóm tắt các thực thể và mối quan hệ bằng mô hình trực quan:
+- Kết quả: văn bản mẫu được giải mã đúng.
 
-<!-- Sử dụng layout elk cho riêng diagram này. -->
+![BƯỚC 2 – Caesar Cipher, Analysis, Decrypted](assets/1a-b2-05.png)
 
-![Ví dụ về chèn Hình Ảnh SVG.](diagrams/entity-relationship.svg)
+- Lặp lại với các key khác: 5, 7, 13.
+    - Sinh viên tự tạo 3 ciphertext và trao đổi để giải mã lẫn nhau.
+    - Ví dụ với key = 13, chúng ta có văn bản đã mã hóa: `NGGNPX NG QNJA`
 
+![BƯỚC 2 – Caesar Cipher, Encrypt, Key Entry, key = 13](assets/1a-b2-06.png)
 
-<!-- TODO: Cân nhắc sử dụng direction TD -->
+- Sử dụng **Analysis → Classical → Caesar Analysis**:
+    - Cho biết key là 13, gồm 2 khả năng:
+        - Key là $M$, nếu offset là 1.
+        - Key là $N$, nếu offset là 0.
 
-![Ví dụ về Biểu Đồ ERD](diagrams/ch02-concept-erd-simplify.svg)
+![BƯỚC 2 – Caesar Cipher, Analysis, Caesar Analysis, Key 13](assets/1a-b2-07.png)
 
-## Thiết Kế Cơ Sở Dữ Liệu
+- Giải mã: văn bản gốc đã được giải mã đúng.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+![BƯỚC 2 – Caesar Cipher, Analysis, Decrypted, Key 13](assets/1a-b2-08.png)
