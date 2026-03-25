@@ -15,13 +15,16 @@
 ```{=typst}
 #figure(
 table(
-  columns: (5%, 30%, 15%, 15%, 35%),
-  align: (left, left, left, left, left),
-  [*stt*], [*Miêu Tả*], [*Loại*], [*Mức Độ*], [*Phương Án*], [1], [Tài Khoản Guest bật], [Người Dùng], [Cao], [Tắt Guest vì không sử dụng.], [2], [`spice-webdavd`], [Tiến Trình], [Thấp], [Đây là một tiến trình cần thiết cho máy ảo hoạt động.], [3], [Cổng 445 (SMB)], [Chia sẻ File], [Trung Bình], [Tắt dịch vụ hoặc dùng Policy của Firewall để chặn kết nối trên cổng này
-nếu không sử dụng.], [4], [Password required: No], [Mật Khẩu], [Cao], [Đặt mật khẩu người dùng với độ phức tạp đủ mạnh.], [5], [Password expires: Never], [Mật Khẩu], [Cao], [Đặt thời hạn mật khẩu hết hạn, và người dùng cần thay đổi mật khẩu định
-kỳ.], [6], [Anti-virus không có], [Bảo Mật], [Cao], [Cài đặt hoặc kích hoạt chương trình Anti-virus, cập nhật chương trình
-này định kỳ.], [7], [Windows Update không được bật/không update được], [Cập Nhật], [Cao], [Cập nhật hệ điều hành định kỳ. Ưu tiên nâng cấp phiên bản hệ điều hành
-mới nhất.]
+    columns: (5%, 30%, 15%, 15%, 35%),
+    align: (left, left, left, left, left),
+    [*stt*], [*Miêu Tả*], [*Loại*], [*Mức Độ*], [*Phương Án*],
+    [1], [Tài Khoản Guest bật], [Tài Khoản], [Cao], [Tắt Guest vì không sử dụng.],
+    [2], [`spice-webdavd`], [Tiến Trình], [Thấp], [Đây là một tiến trình cần thiết cho máy ảo hoạt động.],
+    [3], [Cổng 445 (SMB)], [File Sharing], [Trung Bình], [Tắt dịch vụ hoặc dùng Policy của Firewall để chặn kết nối trên cổng này nếu không sử dụng.],
+    [4], [Password required: No], [Mật Khẩu], [Cao], [Đặt mật khẩu người dùng với độ phức tạp đủ mạnh.],
+    [5], [Password expires: Never], [Mật Khẩu], [Cao], [Đặt thời hạn mật khẩu hết hạn, và người dùng cần thay đổi mật khẩu định    kỳ.],
+    [6], [Anti-virus không có], [Bảo Mật], [Cao], [Cài đặt hoặc kích hoạt chương trình Anti-virus, cập nhật chương trình này định kỳ.],
+    [7], [Windows Update không được bật/không update được], [Cập Nhật], [Cao], [Cập nhật hệ điều hành định kỳ. Ưu tiên nâng cấp phiên bản hệ điều hành mới nhất.]
 ),
 caption: [Bảng Tổng Hợp Các Rủi Ro Phát Hiện]
 )
