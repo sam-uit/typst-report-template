@@ -3,15 +3,6 @@
 #import "template/lib.typ": *
 #import "config/metadata.typ": *
 
-// MARK: Document Settings
-#set document(
-  title: data.assignment.title,
-  author: data.author.name,
-  description: data.assignment.subtitle,
-  keywords: (data.course.id, data.course.name),
-  date: datetime.today(),
-)
-
 // MARK: THE TARGET for BACK TO TOP
 #metadata("top") <top>
 
