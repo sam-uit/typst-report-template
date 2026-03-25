@@ -1,5 +1,9 @@
 # TÓM TẮT
 
+## TIÊU ĐỀ
+
+- Kiểm Tra Bảo Mật Thông Tin Cơ Bản (Basic Security Assessment)
+
 ## MỤC TIÊU BÀI THỰC HÀNH
 
 Sau khi hoàn thành bài lab, sinh viên có thể:

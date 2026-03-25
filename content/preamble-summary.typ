@@ -4,6 +4,11 @@
 <tom-tat>
 
 
+== TIÊU ĐỀ
+<tieu-de>
+
+- Kiểm Tra Bảo Mật Thông Tin Cơ Bản (Basic Security Assessment)
+
 == MỤC TIÊU BÀI THỰC HÀNH
 <muc-tieu-bai-thuc-hanh>
 

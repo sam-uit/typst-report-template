@@ -30,7 +30,7 @@
   ),
   assignment: (
     title: "BÀI TẬP THỰC HÀNH 2",
-    subtitle: "Kiểm Tra Bảo Mật Thông Tin Cơ Bản (Basic Security Assessment)",
+    subtitle: "Kiểm Tra Bảo Mật Thông Tin Cơ Bản",
     type: "assignments",
     date: "Ngày 24 Tháng 03 Năm 2026",
     duration: "180 phút",
