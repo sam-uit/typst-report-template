@@ -4,10 +4,11 @@
 <danh-gia-rui-ro-va-de-xuat-bien-phap-phong-chong>
 
 
-== Bảng tổng hợp các rủi ro phát hiện
+== Bảng Tổng Hợp Các Rủi Ro Phát Hiện
 <bang-tong-hop-cac-rui-ro-phat-hien>
 
-#table(
+#figure(
+table(
   columns: (1fr,) * 5,
   align: (left, left, left, left, left),
   [STT], [Miêu Tả], [Hạng Mục], [Mức Độ], [Phương Án], [1], [Tài Khoản Guest bật], [Người Dùng], [Cao], [Tắt Guest vì không sử dụng.], [2], [`spice-webdavd`], [Tiến Trình], [Thấp], [Đây là một tiến trình cần thiết cho máy ảo hoạt động.], [3], [Cổng 445 (SMB)], [Chia sẻ File], [Trung Bình], [Tắt dịch vụ hoặc dùng Policy của Firewall để chặn kết nối trên cổng này
@@ -15,6 +16,8 @@ nếu không sử dụng.], [4], [Password required: No], [Mật Khẩu], [Cao],
 kỳ.], [6], [Anti-virus không có], [Bảo Mật], [Cao], [Cài đặt hoặc kích hoạt chương trình Anti-virus, cập nhật chương trình
 này định kỳ.], [7], [Windows Update không được bật/không update được], [Cập Nhật], [Cao], [Cập nhật hệ điều hành định kỳ. Ưu tiên nâng cấp phiên bản hệ điều hành
 mới nhất.]
+),
+caption: [Bảng Tổng Hợp Các Rủi Ro Phát Hiện]
 )
 
 == Đánh Giá Rủi Ro Và Biện Pháp
