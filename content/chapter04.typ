@@ -54,6 +54,7 @@ Quan sát:
 
 - Account active: Yes
 - Password required: No.~Không có mật khẩu, người dùng môi trường lab.
+- Password expires: Never. Rủi ro cao.
 
 ```
 C:\Windows\system32>net user uit
