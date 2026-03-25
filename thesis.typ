@@ -2,8 +2,16 @@
 // A Thesis Main Content File
 
 // Import template and metadata
-#import "template/lib.typ": *
 #import "config/metadata.typ": data
+
+#set document(
+  title: data.assignment.title + ": " + data.assignment.subtitle,
+  author: data.author.name + " (" + data.author.id + ")",
+  keywords: (data.course.id, data.course.name),
+  date: datetime.today(),
+)
+
+#import "template/lib.typ": *
 
 // Load acronyms
 #let acronyms = csv("content/acronyms.csv")
