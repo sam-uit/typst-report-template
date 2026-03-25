@@ -9,13 +9,13 @@
     logo: "uit.jpeg",
   ),
   course: (
-    id: "IE103",
-    name: "Quản Lý Thông Tin",
-    class: "LT.K2025.2.CNTT",
+    id: upper(lorem(1)),
+    name: lorem(6),
+    class: upper(lorem(2)),
   ),
-  instructor: "Ths. Nguyễn Thành Luân ",
+  instructor: lorem(4),
   author: (
-    name: "Nhóm 02",
+    name: lorem(3),
     members: (
       (
         name: lorem(3),
@@ -28,10 +28,10 @@
     ),
   ),
   assignment: (
-    title: "BÁO CÁO ĐỒ ÁN",
-    subtitle: "Hệ Thống Quản Lý Đặt Phòng",
-    type: "Luận Án",
-    date: "TP.Hồ Chí Minh, tháng 01 năm 2026",
+    title: upper(lorem(5)),
+    subtitle: upper(lorem(6)),
+    type: upper(lorem(2)),
+    date: lorem(6),
     duration: "15 phút",
   ),
   company: "A Limited Company Name",
