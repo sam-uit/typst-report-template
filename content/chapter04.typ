@@ -3,13 +3,6 @@
 = BƯỚC 4 -- Playfair Cipher
 <buoc-4-playfair-cipher>
 
-- Encrypt → Playfair → key = `SECRETKEY`.
-- Ghi lại ma trận $5 times 5$.
-- Nhập plaintext có ký tự lặp (`MEET ME AT THE BRIDGE`).
-- Quan sát cách CrypTool chèn X để xử lý chữ đôi.
-- Giải mã lại.
-- Thực hành mở rộng:
-  - thử với khóa khác và plaintext dài hơn.
 
 == Ma Trận Khóa
 <ma-tran-khoa>
