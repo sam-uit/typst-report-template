@@ -1,73 +1,77 @@
-# Quản Lý Thông Tin
+# PHẦN 4. KIỂM TRA CHIA SẺ FILE VÀ RỦI RO SMB
 
-## Xử Lý Thông Tin
+## Bước 1. Liệt kê thư mục chia sẻ
 
-Có thể load code như sau:
+- Trong CMD gõ: `net share`
+- Quan sát:
+    - `ADMIN$` → chia sẻ hệ thống (không vấn đề)
+    - `C$` → chia sẻ hệ thống
+    - Nếu thấy `D:\Share` hoặc thư mục cá nhân đang share → rủi ro
 
-```typst
-#figure(
-  raw(read("code/sample.sql"), lang: "sql", block: true),
-  caption: [Code ví dụ: SQL.]
-)
+SMB:
+
+- Chia sẻ hệ thống:
+    - `C$`
+    - `ADMIN$`
+    - `IPC$`
+- Chia sẻ mức User:
+    - `Users`
+
+```
+C:\Windows\system32>net share
+
+Share name   Resource                        Remark
+
+-------------------------------------------------------------------------------
+C$           C:\                             Default share
+IPC$                                         Remote IPC
+ADMIN$       C:\Windows                      Remote Admin
+Users        C:\Users
+The command completed successfully.
 ```
 
-Kết quả:
+![Phần 4. Bước 1. Liệt kê thư mục chia sẻ](assets/p4-b1.png)
 
-```{=typst}
-#figure(
-  raw(read("code/sample.sql"), lang: "sql", block: true),
-  caption: [Code ví dụ: SQL.]
-)
+## Bước 2. Kiểm tra xem User có đặt mật khẩu hay không
+
+1. Gõ: `net user <tên_user>`
+2. Kiểm tra:
+    - Password required: Yes
+    - Password never expires: NO
+    - Nếu Password never expires = YES → rủi ro.
+
+Quan sát:
+
+- Account active: Yes
+- Password required: No. Không có mật khẩu, người dùng môi trường lab.
+
+```
+C:\Windows\system32>net user uit
+User name                    uit
+Full Name
+Comment
+User's comment
+Country code                 000 (System Default)
+Account active               Yes
+Account expires              Never
+
+Password last set            3/24/2026 8:24:42 PM
+Password expires             Never
+Password changeable          3/24/2026 8:24:42 PM
+Password required            No
+User may change password     Yes
+
+Workstations allowed         All
+Logon script
+User profile
+Home directory
+Last logon                   3/25/2026 4:06:07 PM
+
+Logon hours allowed          All
+
+Local Group Memberships      *Administrators       *HomeUsers
+Global Group memberships     *None
+The command completed successfully.
 ```
 
-## An Toàn Thông Tin
-
-### Xác thực và phân quyền
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-### Import - Export Dữ Liệu
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-### Backup – Restore Dữ Liệu
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
-
-## Trình Bày Thông Tin
-
-### Menu
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-### Form
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-### Report
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-## Các Chức Năng Của Hệ Thống
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-### Quản Lý Thông Tin Nền Tảng
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-### Quản Lý Dữ Liệu Đặt Phòng
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-### Thống Kê Và Báo Cáo
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-### Quản Trị Hệ Thống
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+![Phần 4. Bước 2. Kiểm tra xem User có đặt mật khẩu hay không](assets/p4-b2.png)

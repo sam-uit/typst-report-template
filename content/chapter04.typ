@@ -1,91 +1,91 @@
 #import "../template/lib.typ": *
 
-= Quản Lý Thông Tin
-<quan-ly-thong-tin>
+= PHẦN 4. KIỂM TRA CHIA SẺ FILE VÀ RỦI RO SMB
+<phan-4-kiem-tra-chia-se-file-va-rui-ro-smb>
 
 
-== Xử Lý Thông Tin
-<xu-ly-thong-tin>
+== Bước 1. Liệt kê thư mục chia sẻ
+<buoc-1-liet-ke-thu-muc-chia-se>
 
-Có thể load code như sau:
+- Trong CMD gõ: `net share`
+- Quan sát:
+  - `ADMIN$` → chia sẻ hệ thống (không vấn đề)
+  - `C$` → chia sẻ hệ thống
+  - Nếu thấy `D:\Share` hoặc thư mục cá nhân đang share → rủi ro
 
-```typst
-#figure(
-  raw(read("code/sample.sql"), lang: "sql", block: true),
-  caption: [Code ví dụ: SQL.]
-)
+SMB:
+
+- Chia sẻ hệ thống:
+  - `C$`
+  - `ADMIN$`
+  - `IPC$`
+- Chia sẻ mức User:
+  - `Users`
+
+```
+C:\Windows\system32>net share
+
+Share name   Resource                        Remark
+
+-------------------------------------------------------------------------------
+C$           C:\                             Default share
+IPC$                                         Remote IPC
+ADMIN$       C:\Windows                      Remote Admin
+Users        C:\Users
+The command completed successfully.
 ```
 
-Kết quả:
-
-#figure(
-  raw(read("code/sample.sql"), lang: "sql", block: true),
-  caption: [Code ví dụ: SQL.]
+#figure(image("assets/p4-b1.png"),
+  caption: [
+    Phần 4. Bước 1. Liệt kê thư mục chia sẻ
+  ]
 )
 
-== An Toàn Thông Tin
-<an-toan-thong-tin>
+== Bước 2. Kiểm tra xem User có đặt mật khẩu hay không
+<buoc-2-kiem-tra-xem-user-co-dat-mat-khau-hay-khong>
 
++ Gõ: `net user <tên_user>`
++ Kiểm tra:
+  - Password required: Yes
+  - Password never expires: NO
+  - Nếu Password never expires = YES → rủi ro.
 
-=== Xác thực và phân quyền
-<xac-thuc-va-phan-quyen>
+Quan sát:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- Account active: Yes
+- Password required: No.~Không có mật khẩu, người dùng môi trường lab.
 
-=== Import - Export Dữ Liệu
-<import-export-du-lieu>
+```
+C:\Windows\system32>net user uit
+User name                    uit
+Full Name
+Comment
+User's comment
+Country code                 000 (System Default)
+Account active               Yes
+Account expires              Never
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+Password last set            3/24/2026 8:24:42 PM
+Password expires             Never
+Password changeable          3/24/2026 8:24:42 PM
+Password required            No
+User may change password     Yes
 
-=== Backup -- Restore Dữ Liệu
-<backup-restore-du-lieu>
+Workstations allowed         All
+Logon script
+User profile
+Home directory
+Last logon                   3/25/2026 4:06:07 PM
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+Logon hours allowed          All
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+Local Group Memberships      *Administrators       *HomeUsers
+Global Group memberships     *None
+The command completed successfully.
+```
 
-== Trình Bày Thông Tin
-<trinh-bay-thong-tin>
-
-
-=== Menu
-<menu>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Form
-<form>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Report
-<report>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-== Các Chức Năng Của Hệ Thống
-<cac-chuc-nang-cua-he-thong>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Quản Lý Thông Tin Nền Tảng
-<quan-ly-thong-tin-nen-tang>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Quản Lý Dữ Liệu Đặt Phòng
-<quan-ly-du-lieu-dat-phong>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Thống Kê Và Báo Cáo
-<thong-ke-va-bao-cao>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Quản Trị Hệ Thống
-<quan-tri-he-thong>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+#figure(image("assets/p4-b2.png"),
+  caption: [
+    Phần 4. Bước 2. Kiểm tra xem User có đặt mật khẩu hay không
+  ]
+)
