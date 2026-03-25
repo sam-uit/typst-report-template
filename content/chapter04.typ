@@ -62,14 +62,19 @@ caption: [BƯỚC 4 – Ma Trận Khóa]
 - Trong trường hợp này, văn bản gốc không đủ ký tự chẵn để tạo thành các cặp, nên cặp cuối cùng, CrypTool chèn thêm $X$ vào để thành cặp hoàn chỉnh:
   - `ME ET ME AT TH EB RI DG EX`
 
-#table(
+#figure(
+  table(
   columns: (1fr,) * 26,
   align: (center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center, center),
   [1], [2], [], [3], [4], [], [5], [6], [], [7], [8], [], [9], [10], [], [11], [12], [], [13], [14], [], [15], [16], [], [17], [18], [M], [E], [], [E], [T], [], [M], [E], [], [A], [T], [], [T], [H], [], [E], [B], [], [R], [I], [], [D], [G], [], [E], [X]
+  ),
+  caption: [BƯỚC 4 – Các Cặp Của Văn Bản Gốc]
 )
+- Kết quả:
+
 #figure(image("assets/1a-b4-04.png"),
   caption: [
-    BƯỚC 4 -- Playfair Cipher, MEET ME AT THE BRIDGE, Encrypted
+    BƯỚC 4 -- MEET ME AT THE BRIDGE, Encrypted
   ]
 )
 
@@ -78,7 +83,7 @@ caption: [BƯỚC 4 – Ma Trận Khóa]
 
 #figure(image("assets/1a-b4-05.png"),
   caption: [
-    BƯỚC 4 -- Playfair Cipher, MEET ME AT THE BRIDGE, Key Entry
+    BƯỚC 4 -- MEET ME AT THE BRIDGE, Key Entry
   ]
 )
 
@@ -86,6 +91,6 @@ caption: [BƯỚC 4 – Ma Trận Khóa]
 
 #figure(image("assets/1a-b4-06.png"),
   caption: [
-    BƯỚC 4 -- Playfair Cipher, MEET ME AT THE BRIDGE, Decrypted
+    BƯỚC 4 -- MEET ME AT THE BRIDGE, Decrypted
   ]
 )
