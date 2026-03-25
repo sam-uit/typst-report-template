@@ -25,30 +25,50 @@
 
 === BƯỚC 1 -- Làm quen CrypTool
 
-+ Khởi động CrypTool 1.
-+ Tìm hiểu giao diện:
-  - Menu chính
-  - Thanh công cụ
-  - Cửa sổ mã hoá/giải mã
-  - Cửa sổ phân tích
+- File → New.
+- Quan sát menu Encrypt, Decrypt, Analysis. Chụp lại hình các menu này, mô tả các mục trong menu.
+- Nhập văn bản mẫu để thử nghiệm một vài mục trong menu trên.
 
 === BƯỚC 2 -- Caesar Cipher (Mở rộng)
 
-+ Đề mục 1:
-+ Đề mục 2:
-+ Đề mục 3:
+- Nhập plaintext: ATTACK AT DAWN.
+- Encrypt → Classical → Caesar → key = 3.
+- Dùng Decrypt để giải mã lại.
+- Phân tích brute-force: Analysis → Classical → Caesar Analysis.
+- Lặp lại với các key khác: 5, 7, 13.
 
 === BƯỚC 3 -- Vigenère Cipher (Mở rộng)
 
-+ Đề mục 1:
-+ Đề mục 2:
-+ Đề mục 3:
+- Nhập plaintext dài 3 -- 4 dòng để tăng độ phức tạp.
+- Encrypt → Vigenère → key = LEMON.
+- Decrypt lại bằng key.
+- Phân tích khóa bằng Analysis → Vigenère Analysis.
+- Quan sát IC và độ dài khóa dự đoán.
+- Tạo một ciphertext mới với key khác (APPLE, SECRET).
+- Thực hành: sinh viên đổi ciphertext cho nhau để phá bằng Kasiski + IC.
 
 === BƯỚC 4 -- Playfair Cipher (Mở rộng)
 
+- Encrypt → Playfair → key = SECRETKEY.
+- Ghi lại ma trận 5x5.
+- Nhập plaintext có ký tự lặp (MEET ME AT THE BRIDGE).
+- Quan sát cách CrypTool chèn X để xử lý chữ đôi.
+- Giải mã lại.
+- Thực hành mở rộng:
+  - Thử với khóa khác và plaintext dài hơn.
+
 === BƯỚC 5 -- Transposition Cipher
 
+- Encrypt → Transposition → Columnar.
+- Key: 4312567.
+- Giải mã lại.
+- Dùng Analysis → Transposition Analysis để phá mã.
+- Tạo thêm 2 ví dụ khác để sinh viên thử nghiệm.
+
 === BƯỚC 6 -- Solitaire Cipher
+
+- Tìm hiểu và cho biết cách thức mã hoá và giải mã của giải thuật.
+- Cho ví dụ mã hoá và giải mã, với plaintext là họ tên sinh viên.
 
 === CÂU HỎI BÁO CÁO
 
