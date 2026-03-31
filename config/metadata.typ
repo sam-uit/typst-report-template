@@ -29,10 +29,10 @@
     ),
   ),
   assignment: (
-    title: "BÀI TẬP THỰC HÀNH 2",
-    subtitle: "Kiểm Tra Bảo Mật Thông Tin Cơ Bản",
+    title: "BÀI TẬP THỰC HÀNH 3",
+    subtitle: "Dò Tìm Mật Khẩu Bằng Tấn Công Chủ Động",
     type: "assignments",
-    date: "Ngày 24 Tháng 03 Năm 2026",
+    date: "Ngày 31 Tháng 03 Năm 2026",
     duration: "180 phút",
   ),
   company: "A Limited Company Name",
