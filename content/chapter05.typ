@@ -21,6 +21,13 @@
 == Thực Hiện
 <thuc-hien>
 
+- Thay đổi #strong[Account lockout threshold] thành #emph[10 invalid logon attempts].
+
+#figure(image("assets/b5-01.png"),
+  caption: [
+    Bước 5. Thay Đổi Chính Sách Khóa Tài Khoản
+  ]
+)
 
 == Thảo Luận
 <thao-luan>

@@ -14,6 +14,11 @@
 
 ## Thực Hiện
 
+- Thay đổi **Account lockout threshold** thành *10 invalid logon attempts*.
+
+![Bước 5. Thay Đổi Chính Sách Khóa Tài Khoản](assets/b5-01.png)
+
+
 ## Thảo Luận
 
 - Khi threshold = 3, hệ thống nhạy với tấn công dò mật khẩu hơn, kẻ tấn công chỉ cần 3 lần nhập/thử sai để bị khóa tài khoản và mất/giảm cơ hội đoán mật khẩu, nhưng người dùng hợp lệ cũng dễ bị khóa tài khoản hơn nếu nhập sai mật khẩu cùng số lần.
