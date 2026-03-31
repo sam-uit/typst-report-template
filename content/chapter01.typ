@@ -37,12 +37,16 @@ Nếu CHƯA có tài khoản UserTest:
 === Tạo Tài Khoản Nạn Nhân
 <tao-tai-khoan-nan-nhan>
 
-- Tài khoản nạn nhân:
-
-#table(
-  columns: (1fr,) * 2,
-  align: (left, left),
-  [Thành Phần], [Giá Trị], [Tài Khoản], [`UserTest`], [Mật Khẩu], [`P@ssw0rd123`]
+#figure(
+  table(
+    columns: (40%, 60%),
+    align: (left, left),
+    [Thành Phần], [Giá Trị],
+    [Tài Khoản], [`UserTest`],
+    [Mật Khẩu], [`P@ssw0rd123`]
+  ),
+  kind: table,
+  caption: [Bước 1. Thông Tin Tài Khoản Nạn Nhân]
 )
 - Sử dụng #strong[Computer Management] để tạo tài khoản mới `UserTest`:
 
