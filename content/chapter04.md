@@ -89,23 +89,10 @@ Nội dung:
 - Chi tiết của event 4740 ở dạng XML (có lược bỏ):
     - Phần **EventData** chứa ít thông tin hơn event **4625: Account Lockout**.
 
-```xml
-- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
-    - <System>
-        <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
-        <EventID>4740</EventID>
-        ...
-        <TimeCreated SystemTime="2026-03-31T13:40:11.642382800Z" />
-        ...
-    </System>
-    - <EventData>
-        <Data Name="TargetUserName">UserTest</Data>
-        <Data Name="TargetDomainName">UIT-LAB</Data>
-        <Data Name="TargetSid">S-1-5-21-246133735-4113561269-1434406650-1003</Data>
-        <Data Name="SubjectUserSid">S-1-5-18</Data>
-        <Data Name="SubjectUserName">UIT-LAB$</Data>
-        <Data Name="SubjectDomainName">WORKGROUP</Data>
-        <Data Name="SubjectLogonId">0x3e7</Data>
-    </EventData>
-  </Event>
+```{=typst}
+#figure(
+  raw(read("code/b4-4740.xml"), lang: "xml", block: true),
+  kind: raw,
+  caption: [Bước 4. Event ID 4740: User Account Management],
+)
 ```
