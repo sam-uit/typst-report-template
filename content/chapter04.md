@@ -80,34 +80,40 @@ Lưu ý:
 
 - Nội dung của event **4625: Account Lockout** ở dạng XML (có lược bỏ):
     
-```xml
-- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
-    - <System>
-        <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
-        <EventID>4625</EventID> 
-        ...
-        <TimeCreated SystemTime="2026-03-31T14:02:25.433398400Z" /> 
-        ...
-        <Channel>Security</Channel> 
-        <Computer>uit-lab</Computer> 
-        <Security /> 
-    </System>
-    - <EventData>
-        <Data Name="SubjectUserSid">S-1-5-18</Data> 
-        <Data Name="SubjectUserName">UIT-LAB$</Data> 
-        <Data Name="SubjectDomainName">WORKGROUP</Data> 
-        ...
-        <Data Name="TargetUserName">UserTest</Data> 
-        <Data Name="TargetDomainName">uit-lab</Data> 
-        ...
-        <Data Name="AuthenticationPackageName">Negotiate</Data> 
-        <Data Name="WorkstationName">UIT-LAB</Data> 
-        ...
-        <Data Name="ProcessName">C:\Windows\System32\winlogon.exe</Data> 
-        <Data Name="IpAddress">127.0.0.1</Data> 
-        <Data Name="IpPort">0</Data> 
-    </EventData>
-</Event>
+```{=typst}
+#figure(
+  ```xml
+  - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+      - <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+          <EventID>4625</EventID>
+          ...
+          <TimeCreated SystemTime="2026-03-31T14:02:25.433398400Z" />
+          ...
+          <Channel>Security</Channel>
+          <Computer>uit-lab</Computer>
+          <Security />
+      </System>
+      - <EventData>
+          <Data Name="SubjectUserSid">S-1-5-18</Data>
+          <Data Name="SubjectUserName">UIT-LAB$</Data>
+          <Data Name="SubjectDomainName">WORKGROUP</Data>
+          ...
+          <Data Name="TargetUserName">UserTest</Data>
+          <Data Name="TargetDomainName">uit-lab</Data>
+          ...
+          <Data Name="AuthenticationPackageName">Negotiate</Data>
+          <Data Name="WorkstationName">UIT-LAB</Data>
+          ...
+          <Data Name="ProcessName">C:\Windows\System32\winlogon.exe</Data>
+          <Data Name="IpAddress">127.0.0.1</Data>
+          <Data Name="IpPort">0</Data>
+      </EventData>
+  </Event>
+  ```,
+  kind: raw,
+  caption: [Bước 4. Event ID 4625: Account Lockout],
+)
 ```
 
 ### Event ID 4740: User Account Management
