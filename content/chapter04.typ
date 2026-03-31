@@ -127,15 +127,21 @@ Lưu ý:
 </Event>
 ```
 
-=== Event ID 4740
-<event-id-4740>
+=== Event ID 4740: User Account Management
+<event-id-4740-user-account-management>
 
-```
-- Tài khoản `UserTest` bị khóa.
-- "A user account was locked out."
-- Account Name: UserTest
-- Logged: 3/31/2026 9:40:11 PM
-```
+Thông tin:
+
+- Đây là event ID khả dụng trước khi bật event ID 4625.
+- Được thay thế bởi event ID #strong[4625: Account Lockout].
+
+Nội dung:
+
+- Event ID #strong[4740: User Account Management]
+  - Tài khoản `UserTest` bị khóa.
+  - "A user account was locked out."
+  - Account Name: UserTest
+  - Logged: 3/31/2026 9:40:11 PM
 
 #figure(image("assets/b4-4740.png"),
   caption: [
@@ -143,25 +149,17 @@ Lưu ý:
   ]
 )
 
-- Chi tiết của event 4740 ở dạng XML:
+- Chi tiết của event 4740 ở dạng XML (có lược bỏ):
+  - Phần #strong[EventData] chứa ít thông tin hơn event #strong[4625: Account Lockout].
 
 ```xml
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
     - <System>
         <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
         <EventID>4740</EventID>
-        <Version>0</Version>
-        <Level>0</Level>
-        <Task>13824</Task>
-        <Opcode>0</Opcode>
-        <Keywords>0x8020000000000000</Keywords>
+        ...
         <TimeCreated SystemTime="2026-03-31T13:40:11.642382800Z" />
-        <EventRecordID>3334</EventRecordID>
-        <Correlation />
-        <Execution ProcessID="432" ThreadID="468" />
-        <Channel>Security</Channel>
-        <Computer>uit-lab</Computer>
-        <Security />
+        ...
     </System>
     - <EventData>
         <Data Name="TargetUserName">UserTest</Data>
