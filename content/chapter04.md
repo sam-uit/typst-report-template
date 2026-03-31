@@ -29,7 +29,7 @@ Lưu ý:
 
 ### Event ID 4625: Logon
 
-- Có tối đa 3 event của event id 4625: Logon.
+- Có tối đa 3 event của event id **4625: Logon**.
     - Thông báo: "*Unknown user name or bad password.*"
     - Tài khoản `UserTest` bị nhập sai mật khẩu.
     - Điều này thể hiện rằng:
@@ -37,7 +37,7 @@ Lưu ý:
 
 ![Bước 4. Các Event ID 4625: Logon](assets/b4-4625-01.png)
 
-- Nội dung của event 4625: Logon ở dạng XML:
+- Nội dung của event **4625: Logon** ở dạng XML (có lược bỏ):
     - Chứa đủ các thông tin về:
         - Tên tài khoản bị khóa: `UserTest`
         - Thời gian xảy ra.
@@ -48,69 +48,46 @@ Lưu ý:
     - <System>
         <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
         <EventID>4625</EventID>
-        <Version>0</Version>
-        <Level>0</Level>
-        <Task>12544</Task>
-        <Opcode>0</Opcode>
-        <Keywords>0x8010000000000000</Keywords>
+        ...
         <TimeCreated SystemTime="2026-03-31T14:02:15.386523400Z" />
-        <EventRecordID>3358</EventRecordID>
-        <Correlation />
-        <Execution ProcessID="432" ThreadID="468" />
-        <Channel>Security</Channel>
-        <Computer>uit-lab</Computer>
-        <Security />
+        ...
     </System>
     - <EventData>
         <Data Name="SubjectUserSid">S-1-5-18</Data>
         <Data Name="SubjectUserName">UIT-LAB$</Data>
         <Data Name="SubjectDomainName">WORKGROUP</Data>
-        <Data Name="SubjectLogonId">0x3e7</Data>
-        <Data Name="TargetUserSid">S-1-0-0</Data>
+        ...
         <Data Name="TargetUserName">UserTest</Data>
         <Data Name="TargetDomainName">uit-lab</Data>
-        <Data Name="Status">0xc000006d</Data>
-        <Data Name="FailureReason">%%2313</Data>
-        <Data Name="SubStatus">0xc000006a</Data>
-        <Data Name="LogonType">2</Data>
-        <Data Name="LogonProcessName">User32</Data>
+        ...
         <Data Name="AuthenticationPackageName">Negotiate</Data>
         <Data Name="WorkstationName">UIT-LAB</Data>
-        <Data Name="TransmittedServices">-</Data>
-        <Data Name="LmPackageName">-</Data>
-        <Data Name="KeyLength">0</Data>
-        <Data Name="ProcessId">0xfc</Data>
+        ...
         <Data Name="ProcessName">C:\Windows\System32\winlogon.exe</Data>
         <Data Name="IpAddress">127.0.0.1</Data>
-        <Data Name="IpPort">0</Data>
+        ...
     </EventData>
 </Event>
 ```
 
 ### Event ID 4625: Account Lockout
 
-- Ngay sau đó là các event id 4625: Account Lockout.
+- Ngay sau đó là các event id **4625: Account Lockout**.
     - Thông báo: "*Account locked out.*"
     - Tài khoản `UserTest` bị khóa sau 3 lần sai mật khẩu.
 
 ![Bước 4. Các Event ID 4625: Account Lockout](assets/b4-4625-02.png)
 
-- Nội dung của event 4625: Account Lockout ở dạng XML:
+- Nội dung của event **4625: Account Lockout** ở dạng XML (có lược bỏ):
     
 ```xml
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
     - <System>
         <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
         <EventID>4625</EventID> 
-        <Version>0</Version> 
-        <Level>0</Level> 
-        <Task>12546</Task> 
-        <Opcode>0</Opcode> 
-        <Keywords>0x8010000000000000</Keywords> 
+        ...
         <TimeCreated SystemTime="2026-03-31T14:02:25.433398400Z" /> 
-        <EventRecordID>3361</EventRecordID> 
-        <Correlation /> 
-        <Execution ProcessID="432" ThreadID="468" /> 
+        ...
         <Channel>Security</Channel> 
         <Computer>uit-lab</Computer> 
         <Security /> 
@@ -119,21 +96,13 @@ Lưu ý:
         <Data Name="SubjectUserSid">S-1-5-18</Data> 
         <Data Name="SubjectUserName">UIT-LAB$</Data> 
         <Data Name="SubjectDomainName">WORKGROUP</Data> 
-        <Data Name="SubjectLogonId">0x3e7</Data> 
-        <Data Name="TargetUserSid">S-1-0-0</Data> 
+        ...
         <Data Name="TargetUserName">UserTest</Data> 
         <Data Name="TargetDomainName">uit-lab</Data> 
-        <Data Name="Status">0xc0000234</Data> 
-        <Data Name="FailureReason">%%2307</Data> 
-        <Data Name="SubStatus">0x0</Data> 
-        <Data Name="LogonType">2</Data> 
-        <Data Name="LogonProcessName">User32</Data> 
+        ...
         <Data Name="AuthenticationPackageName">Negotiate</Data> 
         <Data Name="WorkstationName">UIT-LAB</Data> 
-        <Data Name="TransmittedServices">-</Data> 
-        <Data Name="LmPackageName">-</Data> 
-        <Data Name="KeyLength">0</Data> 
-        <Data Name="ProcessId">0xfc</Data> 
+        ...
         <Data Name="ProcessName">C:\Windows\System32\winlogon.exe</Data> 
         <Data Name="IpAddress">127.0.0.1</Data> 
         <Data Name="IpPort">0</Data> 
