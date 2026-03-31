@@ -20,6 +20,7 @@ Lưu ý:
 
 - Windows 7 mặc định không ghi nhận event id 4625.
     - Cần sử dụng **Local Security Policy** để bật chức năng **Audit Logon**.
+        - **Security Settings** → **Advanced Audit Policy Configuration** → **System Audit Policies - Local Group Policy Object** → **Logon/Logoff** → **Audit Logon**.
     - Khi đó, event 4740 sẽ không được sử dụng nữa.
     - Các thông báo liên quan đến sai mật khẩu khi đăng nhập, hoặc tài khoản bị khóa đều là id 4625, nhưng có **Task Category** là khác.
     - Các **Task Category** cho event id 4625 tương ứng:
