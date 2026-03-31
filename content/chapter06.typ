@@ -27,3 +27,8 @@
     - Và các yếu tố khác tương tự event 4625, nhưng nếu có đồng thời nhiều tài khoản bị khóa, thì thường không phải là sự ngẫu nhiên, trừ khi đó là lỗi hệ thống.
     - Đồng thời, luôn kiểm tra các ticket mới trong hệ thống, thường người dùng sẽ tạo ticket theo hình thức này hoặc hình thức khác khi gặp lỗi. Nếu có sự tăng đột biến, đó chắc chắn là có vấn đề. Nếu rải rác, thì hoặc có vấn đề nhưng người dùng chưa nhận ra, hoặc là trùng hợp ngẫu nhiên.
 + Đề xuất tối thiểu 3 biện pháp để giảm rủi ro tấn công dò mật khẩu (gợi ý: mật khẩu mạnh, khóa tài khoản, MFA, hạn chế truy cập từ xa, v.v.).
+  - Luôn sử dụng mật khẩu mạnh: \> 12 ký tự; có ký tự đặc biệt -- HOA -- thường; có ý nghĩa nhưng không phải thông tin cá nhân; không lặp lại mật khẩu cũ; không sử dụng mật khẩu đã bị rò rỉ (có thể kiểm tra qua các trang web chuyên dụng).
+  - Sử dụng bổ sung các phương thức xác thực 2 bước: ví dụ mã #emph[OTP]\; thẻ định danh vật lý, vv…
+  - Sử dụng bổ sung các phương thức đăng nhập Sinh Trắc Học: vân tay; mống mắt; khuôn mặt, vv…
+  - Hạn chế truy cập từ xa: chỉ cho phép truy cập từ mạng LAN nội bộ (cắm dây hoặc mạng WIFI tin cậy cài đặt trước); sử dụng VPN là bắt buộc.
+  - Hạn chế số lần thử đăng nhập: 3 là một con số phù hợp, và được nhiều doanh nghiệp sử dụng hiện nay.
