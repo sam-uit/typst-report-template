@@ -52,8 +52,12 @@
 == Thảo Luận
 <thao-luan>
 
-- Khi threshold = 3, hệ thống nhạy với tấn công dò mật khẩu hơn, kẻ tấn công chỉ cần 3 lần nhập/thử sai để bị khóa tài khoản và mất/giảm cơ hội đoán mật khẩu, nhưng người dùng hợp lệ cũng dễ bị khóa tài khoản hơn nếu nhập sai mật khẩu cùng số lần.
-- Khi threshold = 10, hệ thống ít nhạy hơn, kẻ tấn công cần tới 10 lần nhập sai để khóa tài khoản, nhưng người dùng hợp lệ cũng ít bị khóa tài khoản hơn nếu nhập sai mật khẩu cùng số lần.
+- Khi #emph[threshold = 3]: hệ thống nhạy với tấn công dò mật khẩu hơn.
+  - Kẻ tấn công chỉ cần 3 lần nhập/thử sai để bị khóa tài khoản và mất/giảm cơ hội đoán mật khẩu.
+  - Nhưng người dùng hợp lệ cũng dễ bị khóa tài khoản hơn nếu nhập sai mật khẩu cùng số lần.
+- Khi #emph[threshold = 10]: hệ thống ít nhạy hơn.
+  - Kẻ tấn công cần tới 10 lần nhập sai để khóa tài khoản.
+  - Nhưng người dùng hợp lệ có cơ hội để được sai mật khẩu nhiều lần hơn trước khi bị khóa.
 
 Điều này yêu cầu người Quản Trị phải cân nhắc kỹ lưỡng khi cấu hình chính sách khóa tài khoản, đảm bảo rằng hệ thống đủ nhạy để phát hiện tấn công dò mật khẩu, nhưng không quá nhạy để khóa tài khoản của người dùng hợp lệ trong những trường hợp sai sót nhất định, ví dụ mật khẩu quá phức tạp và sai vài ký tự ở các lần thử khác nhau.
 
