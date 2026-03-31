@@ -8,7 +8,7 @@
 <ma-nguon-bao-cao>
 
 - Miêu tả: Báo cáo này được xây dựng từ mã nguồn #link("https://typst.app/")[Typst], với nội dung chính được chuẩn bị từ Markdown.
-- Lưu trữ tại: #link("https://github.com/sam-uit/typst-report-template")[sam-uit/typst-report-template]
+- Lưu trữ tại: nhánh #link("https://github.com/sam-uit/typst-report-template/tree/report%2FIE105-BTTH3")[report/IE105-BTTH3] của repo #link("https://github.com/sam-uit/typst-report-template")[sam-uit/typst-report-template]
 
 == Mã Nguồn Nội Dung Chính
 <ma-nguon-noi-dung-chinh>

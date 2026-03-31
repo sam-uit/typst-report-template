@@ -3,7 +3,7 @@
 ## Mã Nguồn Báo Cáo
 
 - Miêu tả: Báo cáo này được xây dựng từ mã nguồn [Typst](https://typst.app/), với nội dung chính được chuẩn bị từ Markdown.
-- Lưu trữ tại: [sam-uit/typst-report-template](https://github.com/sam-uit/typst-report-template)
+- Lưu trữ tại: nhánh [report/IE105-BTTH3](https://github.com/sam-uit/typst-report-template/tree/report%2FIE105-BTTH3) của repo [sam-uit/typst-report-template](https://github.com/sam-uit/typst-report-template)
 
 ## Mã Nguồn Nội Dung Chính
 
