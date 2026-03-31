@@ -8,4 +8,4 @@
 ## Mã Nguồn Nội Dung Chính
 
 - Miêu tả: Được chuẩn bị với Markdown, trong kho của [Obsidian](https://obsidian.md/).
-- Lưu trữ tại: [uit/courses/IE105/assigments](https://github.com/sam-uit/LT.K2025.2-CNTT/tree/main/uit/courses/IE105/assigments)
+- Lưu trữ tại: [uit/courses/IE105/assignments](https://github.com/sam-uit/LT.K2025.2-CNTT/tree/main/uit/courses/IE105/assignments)

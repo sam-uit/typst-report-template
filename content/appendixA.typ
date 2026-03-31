@@ -14,4 +14,4 @@
 <ma-nguon-noi-dung-chinh>
 
 - Miêu tả: Được chuẩn bị với Markdown, trong kho của #link("https://obsidian.md/")[Obsidian].
-- Lưu trữ tại: #link("https://github.com/sam-uit/LT.K2025.2-CNTT/tree/main/uit/courses/IE105/assigments")[uit/courses/IE105/assigments]
+- Lưu trữ tại: #link("https://github.com/sam-uit/LT.K2025.2-CNTT/tree/main/uit/courses/IE105/assignments")[uit/courses/IE105/assignments]
