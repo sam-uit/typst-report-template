@@ -39,11 +39,11 @@ Nếu CHƯA có tài khoản UserTest:
 
 - Tài khoản nạn nhân:
 
-```c
-Tài Khoản:  UserTest
-Mật Khẩu:   P@ssw0rd123
-```
-
+#table(
+  columns: (1fr,) * 2,
+  align: (left, left),
+  [Thành Phần], [Giá Trị], [Tài Khoản], [`UserTest`], [Mật Khẩu], [`P@ssw0rd123`]
+)
 - Sử dụng #strong[Computer Management] để tạo tài khoản mới `UserTest`:
 
 #figure(image("assets/b1-01.png"),

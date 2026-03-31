@@ -28,10 +28,10 @@ Nếu CHƯA có tài khoản UserTest:
 
 - Tài khoản nạn nhân:
 
-```c
-Tài Khoản:  UserTest
-Mật Khẩu:   P@ssw0rd123
-```
+| Thành Phần | Giá Trị |
+|:-----------|:---------|
+| Tài Khoản | `UserTest` |
+| Mật Khẩu | `P@ssw0rd123` |
 
 - Sử dụng **Computer Management** để tạo tài khoản mới `UserTest`:
 
