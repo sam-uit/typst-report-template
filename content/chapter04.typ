@@ -1,7 +1,7 @@
 #import "../template/lib.typ": *
 
-= PHẦN 4. KIỂM TRA CHIA SẺ FILE VÀ RỦI RO SMB
-<phan-4-kiem-tra-chia-se-file-va-rui-ro-smb>
+= Bước 4. Quan Sát Nhật Ký Sự Kiện (Event Viewer)
+<buoc-4-quan-sat-nhat-ky-su-kien-event-viewer>
 
 
 == Bước 1. Liệt kê thư mục chia sẻ

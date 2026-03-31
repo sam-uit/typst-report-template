@@ -1,4 +1,4 @@
-# PHẦN 2. KIỂM TRA THÔNG TIN HỆ THỐNG
+# Bước 2. Cấu Hình Chính Sách Khóa Tài Khoản (Account Lockout Policy)
 
 ## Bước 1. Kiểm tra cấu hình hệ thống
 

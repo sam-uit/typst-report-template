@@ -1,4 +1,4 @@
-# PHẦN 1. CHUẨN BỊ MÁY WINDOWS
+# Bước 1. Kiểm Tra / Tạo Tài Khoản Mục Tiêu UserTest
 
 ## Bước 1. Kiểm tra phiên bản Windows
 

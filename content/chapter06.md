@@ -1,4 +1,4 @@
-# PHẦN 6. KIỂM TRA MẬT KHẨU MẠNH/YẾU
+# CÂU HỎI BÁO CÁO
 
 Sinh viên tự đánh giá mật khẩu theo tiêu chuẩn:
 

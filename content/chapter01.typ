@@ -1,7 +1,7 @@
 #import "../template/lib.typ": *
 
-= PHẦN 1. CHUẨN BỊ MÁY WINDOWS
-<phan-1-chuan-bi-may-windows>
+= Bước 1. Kiểm Tra / Tạo Tài Khoản Mục Tiêu UserTest
+<buoc-1-kiem-tra-tao-tai-khoan-muc-tieu-usertest>
 
 
 == Bước 1. Kiểm tra phiên bản Windows

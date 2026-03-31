@@ -1,7 +1,7 @@
 #import "../template/lib.typ": *
 
-= PHẦN 5. KIỂM TRA ANTIVIRUS VÀ WINDOWS UPDATE
-<phan-5-kiem-tra-antivirus-va-windows-update>
+= Bước 5. Thay Đổi Chính Sách Khóa Tài Khoản Và So Sánh
+<buoc-5-thay-doi-chinh-sach-khoa-tai-khoan-va-so-sanh>
 
 
 == Bước 1. Kiểm tra trạng thái Antivirus

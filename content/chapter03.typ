@@ -1,7 +1,7 @@
 #import "../template/lib.typ": *
 
-= PHẦN 3. KIỂM TRA MẠNG VÀ CỔNG MỞ
-<phan-3-kiem-tra-mang-va-cong-mo>
+= Bước 3. Mô Phỏng Tấn Công Dò Mật Khẩu (Từ Màn Hình Đăng Nhập)
+<buoc-3-mo-phong-tan-cong-do-mat-khau-tu-man-hinh-dang-nhap>
 
 
 == Bước 1. Kiểm tra IP

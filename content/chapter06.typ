@@ -1,7 +1,7 @@
 #import "../template/lib.typ": *
 
-= PHẦN 6. KIỂM TRA MẬT KHẨU MẠNH/YẾU
-<phan-6-kiem-tra-mat-khau-manh-yeu>
+= CÂU HỎI BÁO CÁO
+<cau-hoi-bao-cao>
 
 Sinh viên tự đánh giá mật khẩu theo tiêu chuẩn:
 

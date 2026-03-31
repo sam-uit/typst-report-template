@@ -1,4 +1,4 @@
-# PHẦN 5. KIỂM TRA ANTIVIRUS VÀ WINDOWS UPDATE
+# Bước 5. Thay Đổi Chính Sách Khóa Tài Khoản Và So Sánh
 
 ## Bước 1. Kiểm tra trạng thái Antivirus
 

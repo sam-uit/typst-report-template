@@ -1,4 +1,4 @@
-# PHẦN 3. KIỂM TRA MẠNG VÀ CỔNG MỞ
+# Bước 3. Mô Phỏng Tấn Công Dò Mật Khẩu (Từ Màn Hình Đăng Nhập)
 
 ## Bước 1. Kiểm tra IP
 

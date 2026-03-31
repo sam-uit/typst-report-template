@@ -1,4 +1,4 @@
-# PHẦN 4. KIỂM TRA CHIA SẺ FILE VÀ RỦI RO SMB
+# Bước 4. Quan Sát Nhật Ký Sự Kiện (Event Viewer)
 
 ## Bước 1. Liệt kê thư mục chia sẻ
 
