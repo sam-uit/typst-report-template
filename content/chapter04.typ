@@ -129,5 +129,5 @@ Nội dung:
     [3], [3], [4740], [User Account Management], [1]
   ),
   kind: table,
-  caption: [Bước 4. Loại và Số Lượng Event ID]
+  caption: [Bước 4. Loại và Số Lượng Event ID (threshold = 3)]
 )
