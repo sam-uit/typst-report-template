@@ -49,6 +49,22 @@
   ]
 )
 
+#strong[Bảng Tóm Tắt]:
+
+- Sau khi thay đổi #strong[Account lockout threshold] thành #emph[10 invalid logon attempts]:
+
+#figure(
+  table(
+    columns: (10%, 15%, 15%, 45%, 15%),
+    align: (center, center, center, left, center),
+    [STT], [Threshold], [Event ID], [Task Category], [Số Lượng],
+    [1], [10], [4625], [Logon], [10],
+    [2], [10], [4625], [Account Lockout], [1]
+  ),
+  kind: table,
+  caption: [Bước 5. Loại và Số Lượng Event ID]
+)
+
 == Thảo Luận
 <thao-luan>
 

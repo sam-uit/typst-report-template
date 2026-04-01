@@ -30,6 +30,29 @@
 
 ![Bước 5. Event Viewer Sau Khi Thử Đăng Nhập Sai 10 Lần](assets/b5-03.png)
 
+**Bảng Tóm Tắt**:
+
+- Sau khi thay đổi **Account lockout threshold** thành *10 invalid logon attempts*:
+
+<!-- | STT | Threshold | Event ID | Task Category | Số Lượng |
+|:---:|:---------:|:---------------:|:-------------:|:-------------:|
+| 1 | 10 | 4625 | Logon | 10 |
+| 2 | 10 | 4625 | Account Lockout | 1 | -->
+
+```{=typst}
+#figure(
+  table(
+    columns: (10%, 15%, 15%, 45%, 15%),
+    align: (center, center, center, left, center),
+    [STT], [Threshold], [Event ID], [Task Category], [Số Lượng],
+    [1], [10], [4625], [Logon], [10],
+    [2], [10], [4625], [Account Lockout], [1]
+  ),
+  kind: table,
+  caption: [Bước 5. Loại và Số Lượng Event ID]
+)
+```
+
 ## Thảo Luận
 
 - Khi *threshold = 3*: hệ thống nhạy với tấn công dò mật khẩu hơn.
