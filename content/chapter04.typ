@@ -112,3 +112,22 @@ Nội dung:
   kind: raw,
   caption: [Bước 4. Event ID 4740: User Account Management],
 )
+
+=== Bảng Tóm Tắt
+<bang-tom-tat>
+
+- Với #strong[Account lockout threshold] thành #emph[3 invalid logon attempts]:
+  - Lưu ý: #strong[4740: User Account Management] được thay thế (tương đương) bởi #strong[4625: Account Lockout].
+
+#figure(
+  table(
+    columns: (10%, 15%, 15%, 45%, 15%),
+    align: (center, center, center, left, center),
+    [STT], [Threshold], [Event ID], [Task Category], [Số Lượng],
+    [1], [3], [4625], [Logon], [3],
+    [2], [3], [4625], [Account Lockout], [1],
+    [3], [3], [4740], [User Account Management], [1]
+  ),
+  kind: table,
+  caption: [Bước 4. Loại và Số Lượng Event ID]
+)
