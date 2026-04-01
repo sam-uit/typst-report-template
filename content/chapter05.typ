@@ -49,7 +49,8 @@
   ]
 )
 
-#strong[Bảng Tóm Tắt]:
+== Bảng Tóm Tắt
+<bang-tom-tat>
 
 - Sau khi thay đổi #strong[Account lockout threshold] thành #emph[10 invalid logon attempts]:
 
@@ -62,7 +63,7 @@
     [2], [10], [4625], [Account Lockout], [1]
   ),
   kind: table,
-  caption: [Bước 5. Loại và Số Lượng Event ID]
+  caption: [Bước 5. Loại và Số Lượng Event ID (threshold = 10)]
 )
 
 == Thảo Luận

@@ -30,7 +30,7 @@
 
 ![Bước 5. Event Viewer Sau Khi Thử Đăng Nhập Sai 10 Lần](assets/b5-03.png)
 
-**Bảng Tóm Tắt**:
+## Bảng Tóm Tắt
 
 - Sau khi thay đổi **Account lockout threshold** thành *10 invalid logon attempts*:
 
@@ -49,7 +49,7 @@
     [2], [10], [4625], [Account Lockout], [1]
   ),
   kind: table,
-  caption: [Bước 5. Loại và Số Lượng Event ID]
+  caption: [Bước 5. Loại và Số Lượng Event ID (threshold = 10)]
 )
 ```
 
