@@ -29,10 +29,10 @@
     ),
   ),
   assignment: (
-    title: "BÀI TẬP THỰC HÀNH 3",
-    subtitle: "Dò Tìm Mật Khẩu Bằng Tấn Công Chủ Động",
+    title: "BÀI TẬP BUỔI 5 - BÀI 2B",
+    subtitle: "CHỨNG THỰC DỮ LIỆU",
     type: "assignments",
-    date: "Ngày 31 Tháng 03 Năm 2026",
+    date: "Ngày 07 Tháng 04 Năm 2026",
     duration: "180 phút",
   ),
   company: "A Limited Company Name",
