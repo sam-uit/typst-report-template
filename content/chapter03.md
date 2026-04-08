@@ -1,26 +1,36 @@
-# Bước 3. Mô Phỏng Tấn Công Dò Mật Khẩu (Từ Màn Hình Đăng Nhập)
+# Câu 3. Mô Hình Chứng Thực Dữ Liệu
 
-## Mục Tiêu
+- Dựa trên 6 công dụng của hàm băm trong bài học:
+    - Xây dựng 1 mô hình có:
+        - bảo mật
+        - chứng thực
+        - chữ ký số.
+    - Phân tích hoạt động.
+    - Nêu ưu nhược điểm của mô hình này.
 
-- Thử nhiều mật khẩu sai để kích hoạt cơ chế khóa tài khoản đã cấu hình ở bước 2.
+## Sơ Đồ Trực Quan
 
-## Hướng Dẫn
+![Câu 3. Mô Hình Ký Trước & Mã Hóa Sau](assets/IE105-BT5-b3.png)
 
-- Tại màn hình đăng nhập, chọn tài khoản `UserTest`.
-- Thực hiện ít nhất 3 lần đăng nhập sai (theo *threshold* đã cấu hình):
-- Lần 1: nhập mật khẩu sai (ví dụ: `123456`) → Enter.
-- Lần 2: nhập mật khẩu sai khác (ví dụ: `User1234`) → Enter.
-- Lần 3: tiếp tục nhập mật khẩu sai (ví dụ: `Password!`) → Enter.
-- Quan sát thông báo sau lần thử thứ 3: tài khoản `UserTest` sẽ bị khóa trong khoảng thời gian đã cấu hình (ví dụ 15 phút).
+## Miêu Tả Hoạt Động
 
-## Thực Hiện
+- Ký $S$: Người gửi $A$ sử dụng Khóa Riêng Tư ($PR_a$) để tạo Chữ Ký Số cho thông điệp.
+    - Điều này đảm bảo mỗi thông điệp có một chữ ký số riêng biệt.
+    - Đồng thời đảm bảo chỉ có người gửi gốc mới có Khóa Riêng Tư đúng.
+- Mã Hóa $E$: Thông Điệp + Chữ Ký Số được mã hóa với Khóa Công Khai của người nhận $B$ ($PU_b$).
+    - Khi mã hóa với $PU_b$, chỉ người nhận đúng có $PR_b$ mới có thể giải mã được.
+- Giải Mã $D$:
+    - Người nhận $B$ sử dụng Khóa Riêng Tư ($PR_b$) để giải mã và nhận lại thông điệp + Chữ Ký Số.
+- Xác Thực $V$:
+    - Người nhận $B$ sử dụng Khóa Công Khai của người gửi $A$ ($PU_a$) để xác thực/verify Chữ Ký Số để đảm bảo thông điệp là toàn vẹn và đúng người gửi.
 
-- Thử đăng nhập vào tài khoản `UserTest` với mật khẩu sai, 3 lần.
-    - Nhận thông báo: *The user name or password is incorrect.*
+## Ưu và Nhược:
 
-![Bước 3. Đăng Nhập UserTest Với Mật Khẩu Sai](assets/b3-01.png)
+- Ưu:
+    - Đảm bảo các tiêu chí đề bài đưa ra: chữ ký số ($S$); chứng thực ($V$); bảo mật ($E$).
+- Nhược:
+    - Chậm vì sử dụng cặp mã khóa bất đồng bộ, không phù hợp với các ứng dụng real-time.
 
-- **Kết quả:** Tài khoản `UserTest` bị khóa và từ chối đăng nhập, có thể xem thông báo ở các lần tiếp theo (lần thứ 4 trở lên).
-    - Nhận thông báo: *The referrenced account is currently locked out and may not be logged on to.*
+## Ứng Dụng
 
-![Bước 3. Tài Khoản UserTest Bị Khóa](assets/b3-02.png)
+- Phù hợp các ứng dụng trao đổi thông tin yêu cầu về bảo mật và chứng thực, nhưng không cần thời gian thực, ví dụ gửi/nhận email/file, có độ trễ chấp nhận được, đặc biệt đề cao tính pháp lý của thông điệp và quan hệ gửi/nhận.
