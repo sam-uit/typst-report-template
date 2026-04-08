@@ -165,9 +165,9 @@
   show block.where(fill: rgb("#f0f8ff")): it => align(left, it)
   // Quotes
   show quote: it => block(
-    align(center),
+    // align(center),
     fill: luma(248),
-    stroke: (left: 3pt + luma(180)),
+    stroke: (left: 3pt + orange.lighten(50%)),
     inset: (left: 1em, rest: 0.8em),
     radius: (right: 3pt),
   )[
