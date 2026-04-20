@@ -70,3 +70,12 @@ $ diff test.md5 test-new.md5
 ---
 > 4b4cd50b491638b12620a4bd31d00094  test.txt
 ```
+
+== Demo
+<demo>
+
+#figure(image("assets/b5-1.png"),
+  caption: [
+    Bước 5. Kiểm Tra Tính Toàn Vẹn & Xác Thực
+  ]
+)

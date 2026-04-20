@@ -64,3 +64,7 @@ $ diff test.md5 test-new.md5
 ---
 > 4b4cd50b491638b12620a4bd31d00094  test.txt
 ```
+
+## Demo
+
+![Bước 5. Kiểm Tra Tính Toàn Vẹn & Xác Thực](assets/b5-1.png)
