@@ -1,83 +1,8 @@
 #import "../template/lib.typ": *
 
-= Bước 5. Thay Đổi Chính Sách Khóa Tài Khoản Và So Sánh
-<buoc-5-thay-doi-chinh-sach-khoa-tai-khoan-va-so-sanh>
+= Bước 5. Kiểm Tra Tính Toàn Vẹn & Xác Thực
+<buoc-5-kiem-tra-tinh-toan-ven-xac-thuc>
 
-
-== Mục Tiêu
-<muc-tieu>
-
-- Thấy được mối liên hệ giữa cấu hình chính sách và mức độ an toàn.
-
-== Hướng Dẫn
-<huong-dan>
-
-- Mở lại #strong[Local Security Policy] (`secpol.msc`).
-- Vào #strong[Account Policies → Account Lockout Policy].
-- Thay đổi #strong[Account lockout threshold], ví dụ từ 3 → 10 #emph[invalid logon attempts].
-- Đăng xuất và lặp lại quá trình thử mật khẩu sai cho `UserTest` như ở Bước 3, đếm số lần nhập sai trước khi tài khoản bị khóa.
-- Quan sát lại log trong #strong[Event Viewer] để xem số lượng sự kiện `4625` và sự kiện `4740` thay đổi như thế nào so với cấu hình trước.
-
-== Thực Hiện
-<thuc-hien>
-
-- Thay đổi #strong[Account lockout threshold] thành #emph[10 invalid logon attempts].
-
-#figure(image("assets/b5-01.png"),
-  caption: [
-    Bước 5. Thay Đổi Chính Sách Khóa Tài Khoản
-  ]
-)
-
-- Thử đăng nhập sai 10 lần với tài khoản `UserTest`.
-  - Tài khoản bị khóa sau lần thứ 10 nhập sai mật khẩu.
-
-#figure(image("assets/b5-02.png"),
-  caption: [
-    Bước 5. Thử Đăng Nhập Sai 10 Lần Tài Khoản UserTest
-  ]
-)
-
-- Refresh cửa sổ #strong[Event Viewer] và chúng ta thấy (đã có clear trước đó):
-  - Chính xác #emph[10] event #strong[4625: Logon]. Và sau đó là
-  - Có #emph[1] event #strong[4625: Accout Lockout].
-  - Điều này cho biết rằng hệ điều hành đã khóa tài khoản sau khi phát hiện có 10 lần đăng nhập không thành công liên tiếp.
-
-#figure(image("assets/b5-03.png"),
-  caption: [
-    Bước 5. Event Viewer Sau Khi Thử Đăng Nhập Sai 10 Lần
-  ]
-)
-
-== Bảng Tóm Tắt
-<bang-tom-tat>
-
-- Sau khi thay đổi #strong[Account lockout threshold] thành #emph[10 invalid logon attempts]:
-
-#figure(
-  table(
-    columns: (10%, 15%, 15%, 45%, 15%),
-    align: (center, center, center, left, center),
-    [STT], [Threshold], [Event ID], [Task Category], [Số Lượng],
-    [1], [10], [4625], [Logon], [10],
-    [2], [10], [4625], [Account Lockout], [1]
-  ),
-  kind: table,
-  caption: [Bước 5. Loại và Số Lượng Event ID (threshold = 10)]
-)
-
-== Thảo Luận
-<thao-luan>
-
-- Khi #emph[threshold = 3]: hệ thống nhạy với tấn công dò mật khẩu hơn.
-  - Kẻ tấn công chỉ cần 3 lần nhập/thử sai để bị khóa tài khoản và mất/giảm cơ hội đoán mật khẩu.
-  - Nhưng người dùng hợp lệ cũng dễ bị khóa tài khoản hơn nếu nhập sai mật khẩu cùng số lần.
-- Khi #emph[threshold = 10]: hệ thống ít nhạy hơn.
-  - Kẻ tấn công cần tới 10 lần nhập sai để khóa tài khoản.
-  - Nhưng người dùng hợp lệ có cơ hội để được sai mật khẩu nhiều lần hơn trước khi bị khóa.
-
-Điều này yêu cầu người Quản Trị phải cân nhắc kỹ lưỡng khi cấu hình chính sách khóa tài khoản, đảm bảo rằng hệ thống đủ nhạy để phát hiện tấn công dò mật khẩu, nhưng không quá nhạy để khóa tài khoản của người dùng hợp lệ trong những trường hợp sai sót nhất định, ví dụ mật khẩu quá phức tạp và sai vài ký tự ở các lần thử khác nhau.
-
-Threshold = 3 là một con số hợp lý, hoặc thậm chí dư thừa cho các môi trường doanh nghiệp, nhạy cảm với bảo mật và các sai sót. Vì ở môi trường doanh nghiệp, mật khẩu thường không phải là hình thức đăng nhập duy nhất, mà có thể có thêm các hình thức khác, ví dụ: Sinh Trắc Học (Vân Tay, Mống Mắt, vv..); Thẻ Từ Định Danh, vv…
-
-Threshold = 10 là quá nhiều, kể cả cho máy tính người dùng cá nhân, vì vậy đây là một con số không hợp lý, hoặc nhẹ hơn là không cần thiết.
+- Người gửi gửi văn bản + hash.
+- Người nhận tạo hash mới rồi so sánh.
+- Nếu hash không khớp → dữ liệu bị thay đổi.
