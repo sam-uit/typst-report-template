@@ -70,12 +70,53 @@ THIS IS A SECRET MESSAGE USED FOR ASYMMETRIC ENCRYPTION DEMO.
 == Mã Hóa Văn Bản Với Public Key
 <ma-hoa-van-ban-voi-public-key>
 
-- Dùng Public Key để mã hoá văn bản.
+- Chọn #strong[Encrypt/Decrypt] → #strong[Asymmetric] → #strong[RSA] → #strong[Encryption].
+  - Chọn key vừa tạo.
+
+#figure(image("assets/b3-6.png"),
+  caption: [
+    Bước 3.6. Mã Hóa Văn Bản Với Public Key
+  ]
+)
+
+- Mã hóa thành công, trong chưa tới 1 giây
+
+#figure(image("assets/b3-7.png"),
+  caption: [
+    Bước 3.7. Văn Bản Mã Hóa
+  ]
+)
 
 == Giải Mã Với Private Key
 <giai-ma-voi-private-key>
 
-- Dùng Private Key để giải mã.
+- Chọn #strong[Encrypt/Decrypt] → #strong[Asymmetric] → #strong[RSA] → #strong[Decryption].
+  - Chọn key vừa tạo cần dùng.
+  - Điền vào mã PIN khi tạo key.
+
+#figure(image("assets/b3-8.png"),
+  caption: [
+    Bước 3.8. Giải Mã Văn Bản Với Private Key
+  ]
+)
+
+- Kết quả giải mã:
+  - Văn bản gốc ở bên phải.
+  - Hoàn thành trong 0.016 giây.
+
+#figure(image("assets/b3-9.png"),
+  caption: [
+    Bước 3.9. Văn Bản Giải Mã
+  ]
+)
+
+- Lưu ý: Nếu không điền đúng mã PIN, nhận thông báo lỗi.
+
+#figure(image("assets/b3-10.png"),
+  caption: [
+    Bước 3.10. Thông Báo Sai Mã PIN
+  ]
+)
 
 == Thử Nghiệm Với Độ Dài Bit 2048
 <thu-nghiem-voi-do-dai-bit-2048>

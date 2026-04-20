@@ -42,11 +42,32 @@ THIS IS A SECRET MESSAGE USED FOR ASYMMETRIC ENCRYPTION DEMO.
 
 ## Mã Hóa Văn Bản Với Public Key 
 
-- Dùng Public Key để mã hoá văn bản.
+- Chọn **Encrypt/Decrypt** → **Asymmetric** → **RSA** → **Encryption**.
+    - Chọn key vừa tạo.
+
+![Bước 3.6. Mã Hóa Văn Bản Với Public Key](assets/b3-6.png)
+
+- Mã hóa thành công, trong chưa tới 1 giây
+
+![Bước 3.7. Văn Bản Mã Hóa](assets/b3-7.png)
 
 ## Giải Mã Với Private Key
 
-- Dùng Private Key để giải mã.
+- Chọn **Encrypt/Decrypt** → **Asymmetric** → **RSA** → **Decryption**.
+    - Chọn key vừa tạo cần dùng.
+    - Điền vào mã PIN khi tạo key.
+
+![Bước 3.8. Giải Mã Văn Bản Với Private Key](assets/b3-8.png)
+
+- Kết quả giải mã:
+    - Văn bản gốc ở bên phải.
+    - Hoàn thành trong 0.016 giây.
+
+![Bước 3.9. Văn Bản Giải Mã](assets/b3-9.png)
+
+- Lưu ý: Nếu không điền đúng mã PIN, nhận thông báo lỗi.
+
+![Bước 3.10. Thông Báo Sai Mã PIN](assets/b3-10.png)
 
 ## Thử Nghiệm Với Độ Dài Bit 2048
 
