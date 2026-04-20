@@ -29,10 +29,10 @@
     ),
   ),
   assignment: (
-    title: "BÀI TẬP BUỔI 5 - BÀI 2B",
-    subtitle: "CHỨNG THỰC DỮ LIỆU",
+    title: "BÀI TẬP THỰC HÀNH 1B",
+    subtitle: "MÃ HOÁ HIỆN ĐẠI, CHỨNG THỰC VÀ CHỮ KÝ SỐ",
     type: "assignments",
-    date: "Ngày 07 Tháng 04 Năm 2026",
+    date: "Ngày 15 Tháng 04 Năm 2026",
     duration: "180 phút",
   ),
   company: "A Limited Company Name",
