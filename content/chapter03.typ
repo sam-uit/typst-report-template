@@ -121,4 +121,56 @@ THIS IS A SECRET MESSAGE USED FOR ASYMMETRIC ENCRYPTION DEMO.
 == Thử Nghiệm Với Độ Dài Bit 2048
 <thu-nghiem-voi-do-dai-bit-2048>
 
-- Thử dùng key 2048 bit và ghi nhận thay đổi tốc độ.
+- Tạo mã key mới với cùng thông tin nhưng khác về độ dài bit.
+  - Độ dài bit: 2048
+
+#figure(image("assets/b3-11.png"),
+  caption: [
+    Bước 3.11. Tạo Cặp Khóa RSA 2048 Bit
+  ]
+)
+
+- Thông báo tạo cặp key mới hoàn thành: 3.656 giây.
+
+#figure(image("assets/b3-12.png"),
+  caption: [
+    Bước 3.12. Thông Báo Tạo Cặp Khóa RSA 2048 Bit
+  ]
+)
+
+- Mã key mới đã sẵn sàng: Sam Dinh RSA-2048
+
+#figure(image("assets/b3-13.png"),
+  caption: [
+    Bước 3.13. Show Key Pair
+  ]
+)
+
+- Mã hóa văn bản gốc với key RSA 2048 bit.
+
+#figure(image("assets/b3-14.png"),
+  caption: [
+    Bước 3.14. Mã Hóa Văn Bản Với Public Key 2048 Bit
+  ]
+)
+
+- Giải mã với key RSA 2048 bit: nhập mã PIN đã dùng.
+
+#figure(image("assets/b3-15.png"),
+  caption: [
+    Bước 3.15. Giải Mã Văn Bản Với Private Key 2048 Bit
+  ]
+)
+
+- Kết quả giải mã: Hoàn thành trong 0.046 giây.
+
+#figure(image("assets/b3-16.png"),
+  caption: [
+    Bước 3.16. Văn Bản Giải Mã
+  ]
+)
+
+- Như vậy, có sự chênh lệch đáng kể khi giải mã với key RSA 1024 bit và 2048 bit.
+  - 1024: 0.016 giây
+  - 2048: 0.046 giây
+  - Gấp khoảng 3 lần.
