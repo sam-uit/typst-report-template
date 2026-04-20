@@ -4,12 +4,48 @@
 <tom-tat>
 
 
-== Bài Tập Buổi 5 - Bài 2B: Chứng Thực Dữ Liệu
-<bai-tap-buoi-5-bai-2b-chung-thuc-du-lieu>
+== MỤC TIÊU
+<muc-tieu>
 
-+ Tìm 3 phần mềm có kèm theo mã băm, kiểm tra mã băm (dùng phần mềm hoặc website) để suy ra độ tin cậy của các phần mềm này.
-+ Tìm 3 chứng chỉ số đính kèm theo trên các trang web có yêu cầu bảo mật cao. Cho biết hàm băm tương ứng?
-+ Dựa trên 6 công dụng của hàm băm trong bài học
-  - Xây dựng 1 mô hình có bảo mật, chứng thực, chữ ký số.
-  - Phân tích hoạt động.
-  - Nêu ưu nhược điểm của mô hình này.
+- Hiểu nguyên lý mã hoá khóa đối xứng (AES, DES), khóa công khai (RSA), hàm băm (SHA, MD5), chữ ký số.
+- Sử dụng CrypTool 1 để mã hoá/giải mã, tạo và kiểm tra chữ ký số, sinh khóa RSA.
+- Thực hành kiểm tra tính toàn vẹn bằng hash.
+- Viết báo cáo phân tích dựa trên kết quả thực hành.
+
+== LÝ THUYẾT NỀN TẢNG
+<ly-thuyet-nen-tang>
+
+
+=== 1. Mã hoá khóa đối xứng
+<1-ma-hoa-khoa-doi-xung>
+
+- Dùng một khóa duy nhất để mã hoá và giải mã.
+- Thuật toán: AES, DES, 3DES.
+- Nhanh nhưng khó phân phối khóa.
+
+=== 2. Mã hoá khóa công khai (RSA)
+<2-ma-hoa-khoa-cong-khai-rsa>
+
+- Dùng 2 khóa (public/private).
+- Dùng trong chữ ký số và trao đổi khóa.
+
+=== 3. Hàm băm (Hash)
+<3-ham-bam-hash>
+
+- Tạo chuỗi dài cố định (128--256 bit).
+- Không thể đảo ngược.
+- Dùng để kiểm tra toàn vẹn dữ liệu.
+
+=== 4. Chữ ký số
+<4-chu-ky-so>
+
+- Private key dùng để ký.
+- Public key dùng để xác minh.
+- Dùng để xác thực và chống chối bỏ.
+
+== CHUẨN BỊ
+<chuan-bi>
+
+- Máy Windows 10/11.
+- Cài phần mềm CrypTool 1.
+- Tạo sẵn các đoạn văn bản để thử nghiệm.
