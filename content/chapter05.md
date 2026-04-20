@@ -7,7 +7,11 @@
 ## Văn Bản Gốc Và Hash
 
 - Tạo file văn bản gốc `test.txt` với giá trị:
-  - 'THIS IS A SECRET MESSAGE USED FOR ASYMMETRIC ENCRYPTION DEMO.'
+
+```
+THIS IS A SECRET MESSAGE USED FOR ASYMMETRIC ENCRYPTION DEMO.
+```
+
 - Tạo giá trị hash cho file văn bản trên: `test.md5`.
 - Gửi tới người nhận cả 2 file trên.
 
