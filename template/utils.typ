@@ -4,6 +4,21 @@
 // Version: 0.1.0
 // License: MIT
 
+// MARK: Dictionary Merge
+/// Shallow merge of two dictionaries. Values in `b` override `a`.
+/// Used to overlay user overrides on top of class defaults.
+///
+/// - a (dictionary): Base dictionary
+/// - b (dictionary): Override dictionary
+/// -> dictionary
+#let dict-merge(a, b) = {
+  let result = a
+  for (key, val) in b {
+    result.insert(key, val)
+  }
+  result
+}
+
 // MARK: Unheading (Heading without numbering, for TOC entries)
 #let unheading(body) = {
   heading(level: 1, numbering: none, outlined: true)[#body]
