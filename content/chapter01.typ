@@ -51,10 +51,24 @@ Sử dụng Resource Monitor: #strong[Overview].
 
 5 tiến trình sử dụng nhiều RAM nhất:
 
-#table(
-  columns: (1fr,) * 4,
-  align: (left, left, left, left),
-  [STT], [Tên tiến trình], [PID], [Lượng RAM sử dụng], [1], ["Ứng dụng"], [“”], [“”], [2], ["Ứng dụng"], [“”], [“”], [3], ["Ứng dụng"], [“”], [“”], [4], ["Ứng dụng"], [“”], [“”], [5], ["Ứng dụng"], [“”], [“”]
+#figure(image("assets/a2-1.png"),
+  caption: [
+    A2. Task Manager - Processes
+  ]
+)
+
+#figure(
+table(
+  columns: (10%, 20%, 25%,  15%, 30%),
+  align: (center, left, left, right, left),
+  [STT], [Tiến Trình], [User Name], [RAM (K)], [Miêu Tả],
+  [1], [`svchost.exe`], [LOCAL SERVICE], [4,752], [Host Process for Windows Services],
+  [2], [`iexplorer.exe`], [uit], [4,392], [Internet Explorer],
+  [3], [`spoolsv.exe`], [SYSTEM], [3,984], [Spooler Subsystem App],
+  [4], [`iexplorer.exe`], [uit], [3,976], [Internet Explorer],
+  [5], [`services.exe`], [SYSTEM], [3,896], [Services and Controller app]
+),
+caption: [A2. 5 Tiến Trình Sử Dụng Nhiều RAM Nhất]
 )
 
 == A3 -- Quan sát tiến trình chi tiết
