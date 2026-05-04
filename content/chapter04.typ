@@ -36,13 +36,34 @@ C:\Users\uit\AppData\Local\Temp\notepad.DMP
 == D3 -- Kiểm Tra File Dump
 <d3-kiem-tra-file-dump>
 
-- Mở bằng Notepad++ hoặc Visual Studio.
-- Tìm text:
+Có thể duyệt file .DMP và tìm thấy rất nhiều thông tin về tiến trình và các dữ liệu của tiến trình, bao gồm đường dẫn tới file thực thi, các thư viện được sử dụng, vv.. như các ví dụ dưới đây:
 
-```
-password
-token
-session
-```
+#figure(image("assets/d3-notepad.png"),
+  caption: [
+    D3. Kiểm Tra File Dump Của Notepad
+  ]
+)
 
-\(Ghi chú: Đây là bài mô phỏng -- không phân tích dữ liệu thật.)
+- password
+
+#figure(image("assets/d3-password.png"),
+  caption: [
+    D3. Kiểm Tra File Dump Của Notepad - password
+  ]
+)
+
+- token
+
+#figure(image("assets/d3-token.png"),
+  caption: [
+    D3. Kiểm Tra File Dump Của Notepad - token
+  ]
+)
+
+- session
+
+#figure(image("assets/d3-session.png"),
+  caption: [
+    D3. Kiểm Tra File Dump Của Notepad - session
+  ]
+)
