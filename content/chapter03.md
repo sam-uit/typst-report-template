@@ -62,7 +62,14 @@ Khi Notepad làm việc với file có nội dung:
 
 ## C4 – Kiểm Tra Chuỗi Ký Tự Trong Bộ Nhớ Notepad
 
-Trong Process Explorer → Properties → tab “Strings”.
+Trong Process Explorer → Properties → tab **Strings**.
 
 - Tìm các đoạn text ứng dụng đang xử lý.
 - Ghi nhận: có thể tìm thấy nội dung vừa gõ.
+
+Notepad > Properties > Strings:
+
+- Các ký tự được nhập vào file và được "giải mã" bởi Process Explorer thành dạng xem được (printable).
+- Có thể tìm thấy hoặc không các ký tự đang gõ vào file (và được lưu trong RAM).
+
+![C3. Process Explorer - Notepad - String](assets/c4-1.png)
