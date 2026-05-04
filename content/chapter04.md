@@ -10,11 +10,13 @@ Task Manager → tab Details → chuột phải tiến trình → Create dump fi
 
 ## D2 – Lưu File
 
-Windows sẽ tạo file dạng:
+Windows tạo file tại:
 
 ```
-C:\Users\<username>\AppData\Local\Temp\<process>.dmp
+C:\Users\uit\AppData\Local\Temp\notepad.DMP
 ```
+
+![D2. File Process Dump Của Notepad](assets/d2-1.png)
 
 ## D3 – Kiểm Tra File Dump
 
