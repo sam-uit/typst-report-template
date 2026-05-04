@@ -56,7 +56,13 @@ Tiến trình chiếm nhiều RAM nhất:
 PowerShell:
 
 ```powershell
-Get-Process -Name notepad
+Get-Process -Name iexplore
 ```
 
-\(Thử tìm tiến trình của ứng dụng đang mở, ví dụ Notepad/Chrome).
+- Đây là Internet Explorer, hiện có nhiều tab đang mở, nên có thể thấy nhiều tiến trình từ chương trình này.
+
+#figure(image("assets/b3-1.png"),
+  caption: [
+    B3. Tìm Tiến Trình Theo Tên
+  ]
+)
