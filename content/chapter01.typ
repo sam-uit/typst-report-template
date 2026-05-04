@@ -7,21 +7,73 @@
 == A1 -- Mở Task Manager
 <a1-mo-task-manager>
 
-+ Nhấn tổ hợp phím: Ctrl + Shift + Esc
-+ Chọn tab “Processes”.
++ Nhấn tổ hợp phím: #strong[Ctrl + Shift + Esc].
++ Chọn tab "#strong[Processes]".
 + Chụp màn hình lại (những ứng dụng nào đang sử dụng CPU, Ram, đĩa cứng…).
 + Mục tiêu: Xác định ứng dụng nào đang chạy và sử dụng RAM.
+
+Sử dụng Task Manager: #strong[Processes].
+
+- Thông tin từng tiến trình và lượng CPU/RAM sử dụng tương ứng.
+
+#figure(image("assets/a1-1.png"),
+  caption: [
+    A1. Task Manager - Processes
+  ]
+)
+
+Sử dụng Task Manager: #strong[Performance].
+
+- Thông tin sử dụng CPU/RAM tổng quan cho toàn bộ các tiến trình.
+
+#figure(image("assets/a1-2.png"),
+  caption: [
+    A1. Task Manager - Performance
+  ]
+)
+
+Sử dụng Resource Monitor: #strong[Overview].
+
+- Thông tin sử dụng CPU/Disk/Memory tổng quan với nhiều thông tin chi tiết hơn.
+
+#figure(image("assets/a1-3.png"),
+  caption: [
+    A1. Resource Monitor - Overview
+  ]
+)
 
 == A2 -- Sắp xếp theo lượng RAM
 <a2-sap-xep-theo-luong-ram>
 
-+ Tại tab “Processes”, nhấn vào cột Memory để sắp xếp giảm dần.
++ Tại tab "#strong[Processes]", nhấn vào cột #strong[Memory] để sắp xếp giảm dần.
 + Ghi lại 5 tiến trình chiếm RAM nhiều nhất.
 + Chụp màn hình.
+
+5 tiến trình sử dụng nhiều RAM nhất:
+
+#table(
+  columns: (1fr,) * 4,
+  align: (left, left, left, left),
+  [STT], [Tên tiến trình], [PID], [Lượng RAM sử dụng], [1], ["Ứng dụng"], [“”], [“”], [2], ["Ứng dụng"], [“”], [“”], [3], ["Ứng dụng"], [“”], [“”], [4], ["Ứng dụng"], [“”], [“”], [5], ["Ứng dụng"], [“”], [“”]
+)
 
 == A3 -- Quan sát tiến trình chi tiết
 <a3-quan-sat-tien-trinh-chi-tiet>
 
-+ Chuyển sang tab “Details”.
-+ Quan sát PID -- Process ID.
++ Chuyển sang tab "#strong[Details]".
++ Quan sát #strong[PID -- Process ID].
 + Ghi lại 3 PID của các tiến trình lạ hoặc không rõ chức năng. Tìm hiểu trên mạng Internet để xem có thể biết các tiến trình đó là tiến trình gì?
+
+Sử dụng Resource Monitor:
+
+#figure(image("assets/a3-1.png"),
+  caption: [
+    Resource Monitor
+  ]
+)
+
+#table(
+  columns: (1fr,) * 4,
+  align: (left, left, left, left),
+  [STT], [Tên Tiến Trình], [PID], [Miêu Tả], [1], ["Ứng dụng"], [“”], [“”], [2], ["Ứng dụng"], [“”], [“”], [3], ["Ứng dụng"], [“”], [“”]
+)
