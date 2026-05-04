@@ -42,7 +42,7 @@ Sử dụng Resource Monitor: #strong[Overview].
   ]
 )
 
-== A2 -- Sắp xếp theo lượng RAM
+== A2 -- Sắp Xếp Theo Lượng RAM
 <a2-sap-xep-theo-luong-ram>
 
 + Tại tab "#strong[Processes]", nhấn vào cột #strong[Memory] để sắp xếp giảm dần.
@@ -71,7 +71,7 @@ table(
 caption: [A2. 5 Tiến Trình Sử Dụng Nhiều RAM Nhất]
 )
 
-== A3 -- Quan sát tiến trình chi tiết
+== A3 -- Quan Sát Tiến Trình Chi Tiết
 <a3-quan-sat-tien-trinh-chi-tiet>
 
 + Chuyển sang tab "#strong[Details]".
@@ -82,12 +82,18 @@ Sử dụng Resource Monitor:
 
 #figure(image("assets/a3-1.png"),
   caption: [
-    Resource Monitor
+    A3. Quan Sát Tiến Trình Chi Tiết
   ]
 )
 
-#table(
-  columns: (1fr,) * 4,
-  align: (left, left, left, left),
-  [STT], [Tên Tiến Trình], [PID], [Miêu Tả], [1], ["Ứng dụng"], [“”], [“”], [2], ["Ứng dụng"], [“”], [“”], [3], ["Ứng dụng"], [“”], [“”]
+#figure(
+table(
+  columns: (10%, 15%, 15%, 25%, 35%),
+  align: (center, left, right, left, left),
+  [STT], [Tiến Trình], [PID], [Miêu Tả], [Thông Tin Thêm],
+  [1], [`vdagent.exe`], [1712], [Spice Agent], [SPICE Guest Agent (Máy này là máy ảo - VM)],
+  [2], [`lsass.exe`], [436], [Local Security Authority Process], [Enforcing security policies, managing user logins, password changes, and creating access tokens],
+  [3], [`svchost.exe (secsvcs)`], [2216], [Host Process for Windows Services], [Security Service group]
+),
+caption: [A3. Quan Sát Tiến Trình Chi Tiết]
 )
