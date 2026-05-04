@@ -2,11 +2,18 @@
 
 ## B1 – Liệt Kê Tiến Trình Bằng CMD
 
-CMD: tasklist
+CMD: `tasklist`
+
 Yêu cầu:
 
 - Chụp ảnh kết quả.
-- Nhận diện tiến trình “không rõ nguồn gốc”.
+- Nhận diện tiến trình "không rõ nguồn gốc".
+
+Không có tiến trình lạ trong danh sách:
+
+- Ngoại trừ `spice-webdavd.exe` là cài đặt thêm như một phần của phần mềm ảo hóa.
+
+![B1. Liệt Kê Tiến Trình Bằng CMD](assets/b1-1.png)
 
 ## B2 – Kiểm Tra Tiến Trình Theo RAM Bằng PowerShell
 

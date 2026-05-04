@@ -7,10 +7,22 @@
 == B1 -- Liệt Kê Tiến Trình Bằng CMD
 <b1-liet-ke-tien-trinh-bang-cmd>
 
-CMD: tasklist Yêu cầu:
+CMD: `tasklist`
+
+Yêu cầu:
 
 - Chụp ảnh kết quả.
-- Nhận diện tiến trình “không rõ nguồn gốc”.
+- Nhận diện tiến trình "không rõ nguồn gốc".
+
+Không có tiến trình lạ trong danh sách:
+
+- Ngoại trừ `spice-webdavd.exe` là cài đặt thêm như một phần của phần mềm ảo hóa.
+
+#figure(image("assets/b1-1.png"),
+  caption: [
+    B1. Liệt Kê Tiến Trình Bằng CMD
+  ]
+)
 
 == B2 -- Kiểm Tra Tiến Trình Theo RAM Bằng PowerShell
 <b2-kiem-tra-tien-trinh-theo-ram-bang-powershell>
