@@ -30,6 +30,12 @@ Yêu cầu:
 - Chụp ảnh kết quả.
 - Ghi chú tiến trình chiếm nhiều RAM nhất.
 
+Tiến trình chiếm nhiều RAM nhất:
+
+- **explorer** với giá trị là 57680 KB.
+
+![B2. Kiểm Tra Tiến Trình Theo RAM Bằng PowerShell](assets/b2-1.png)
+
 ## B3 – Tìm Tiến Trình Theo Tên
 
 PowerShell:

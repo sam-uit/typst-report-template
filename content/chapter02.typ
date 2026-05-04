@@ -40,6 +40,16 @@ Yêu cầu:
 - Chụp ảnh kết quả.
 - Ghi chú tiến trình chiếm nhiều RAM nhất.
 
+Tiến trình chiếm nhiều RAM nhất:
+
+- #strong[explorer] với giá trị là 57680 KB.
+
+#figure(image("assets/b2-1.png"),
+  caption: [
+    B2. Kiểm Tra Tiến Trình Theo RAM Bằng PowerShell
+  ]
+)
+
 == B3 -- Tìm Tiến Trình Theo Tên
 <b3-tim-tien-trinh-theo-ten>
 
