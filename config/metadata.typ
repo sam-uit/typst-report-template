@@ -29,10 +29,10 @@
     ),
   ),
   assignment: (
-    title: "BÀI TẬP THỰC HÀNH 1B",
-    subtitle: "MÃ HOÁ HIỆN ĐẠI, CHỨNG THỰC VÀ CHỮ KÝ SỐ",
+    title: "BÀI TẬP THỰC HÀNH 4",
+    subtitle: "DÒ TÌM THÔNG TIN TRONG BỘ NHỚ MÁY TÍNH",
     type: "assignments",
-    date: "Ngày 15 Tháng 04 Năm 2026",
+    date: "Ngày 29 Tháng 04 Năm 2026",
     duration: "180 phút",
   ),
   company: "A Limited Company Name",
