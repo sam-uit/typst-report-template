@@ -1,6 +1,6 @@
 # PHẦN B. KIỂM TRA TIẾN TRÌNH BẰNG LỆNH WINDOWS
 
-## B1 – Liệt kê tiến trình bằng CMD
+## B1 – Liệt Kê Tiến Trình Bằng CMD
 
 CMD: tasklist
 Yêu cầu:
@@ -8,7 +8,7 @@ Yêu cầu:
 - Chụp ảnh kết quả.
 - Nhận diện tiến trình “không rõ nguồn gốc”.
 
-## B2 – Kiểm tra tiến trình theo RAM bằng PowerShell
+## B2 – Kiểm Tra Tiến Trình Theo RAM Bằng PowerShell
 
 PowerShell:
 
@@ -23,7 +23,7 @@ Yêu cầu:
 - Chụp ảnh kết quả.
 - Ghi chú tiến trình chiếm nhiều RAM nhất.
 
-## B3 – Tìm tiến trình theo tên
+## B3 – Tìm Tiến Trình Theo Tên
 
 PowerShell:
 

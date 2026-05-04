@@ -4,7 +4,7 @@
 <phan-b-kiem-tra-tien-trinh-bang-lenh-windows>
 
 
-== B1 -- Liệt kê tiến trình bằng CMD
+== B1 -- Liệt Kê Tiến Trình Bằng CMD
 <b1-liet-ke-tien-trinh-bang-cmd>
 
 CMD: tasklist Yêu cầu:
@@ -12,7 +12,7 @@ CMD: tasklist Yêu cầu:
 - Chụp ảnh kết quả.
 - Nhận diện tiến trình “không rõ nguồn gốc”.
 
-== B2 -- Kiểm tra tiến trình theo RAM bằng PowerShell
+== B2 -- Kiểm Tra Tiến Trình Theo RAM Bằng PowerShell
 <b2-kiem-tra-tien-trinh-theo-ram-bang-powershell>
 
 PowerShell:
@@ -28,7 +28,7 @@ Yêu cầu:
 - Chụp ảnh kết quả.
 - Ghi chú tiến trình chiếm nhiều RAM nhất.
 
-== B3 -- Tìm tiến trình theo tên
+== B3 -- Tìm Tiến Trình Theo Tên
 <b3-tim-tien-trinh-theo-ten>
 
 PowerShell:
