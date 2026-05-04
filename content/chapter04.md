@@ -1,50 +1,28 @@
-# Bước 4. Chữ Ký Số (Digital Signature)
+# PHẦN D. TẠO MEMORY DUMP CỦA MỘT TIẾN TRÌNH
 
-## Sign Document
+> Phần D và E là phần tuỳ chọn. Sinh viên tự tìm hiểu cách thực hiện để hoàn thành nội dung này.
 
-- Chọn **Digitals Signatures/PKI** → **Sign Document...**
-  - Hash function: SHA1
-  - Algorithms: RSA
-  - PSE: Cặp khóa RSA-1024 bit vừa tạo.
-  - PIN: 1234 (của cặp khóa vừa tạo).
-  - Chọn **Sign**.
+## D1 – Tạo dump
 
-![Bước 4.1. Tạo Chữ Ký Số](assets/b4-1.png)
+Task Manager → tab Details → chuột phải tiến trình → Create dump file.
 
-- Văn bản đã ký và chữ ký.
+## D2 – Lưu file
 
-![Bước 4.2. Văn Bản Đã Ký Và Chữ Ký](assets/b4-2.png)
+Windows sẽ tạo file dạng:
 
-- Xem chữ ký vừa tạo ra.
+```
+C:\Users\<username>\AppData\Local\Temp\<process>.dmp
+```
 
-![Bước 4.3. Xem Chữ Ký](assets/b4-3.png)
+## D3 – Kiểm tra file dump
 
-## Verify Signature
+- Mở bằng Notepad++ hoặc Visual Studio.
+- Tìm text:
 
-- Chọn **Digitals Signatures/PKI** → **Verify Signature...**
-  - Chọn RSA-1024 vừa tạo.
-  - Xác nhận các thông số:
-    - Algorithm: RSA
-    - Hash function: SHA-1
-  - Bấm **Verify signature**
+```
+password
+token
+session
+```
 
-![Bước 4.4. Xác Nhận Chữ Ký](assets/b4-4.png)
-
-- Kết quả xác nhận chữ ký.
-  - Thành công: chữ ký đúng.
-
-![Bước 4.5. Kết Quả Xác Nhận Chữ Ký](assets/b4-5.png)
-
-## Giả Lập Chữ Ký Sai
-
-- Thay đổi 1 ký tự trong văn bản và tạo hash lại: Đổi dấu '.' thành dấu '!'.
-
-![Bước 4.6. Giả Lập Chữ Ký Sai](assets/b4-6.png)
-
-- Chạy lại **Verify Signature** với văn bản đã thay đổi.
-
-![Bước 4.7. Chạy Lại Xác Nhận Chữ Ký Sai](assets/b4-7.png)
-
-- Kết quả của chữ ký đã thay đổi: Sai.
-
-![Bước 4.8. Kết Quả Xác Nhận Chữ Ký Sai](assets/b4-8.png)
+(Ghi chú: Đây là bài mô phỏng – không phân tích dữ liệu thật.)
