@@ -28,16 +28,37 @@ Cây Tiến Trình:
 ## C3 – Phân Tích Memory Của Notepad
 
 1. Mở Notepad.
-2. Gõ 1 đoạn text ví dụ: “password=12345678” (dùng dữ liệu giả).
+2. Gõ 1 đoạn text ví dụ: "password=12345678" (dùng dữ liệu giả).
 3. KHÔNG lưu file.
-4. Trở lại Process Explorer → chuột phải vào notepad.exe → Properties.
-5. Chọn tab “Memory”.
-6. Quan sát các vùng Private Bytes, Working Set, Heap…
+4. Trở lại Process Explorer → chuột phải vào *notepad.exe* → Properties.
+5. Chọn tab **Memory**.
+6. Quan sát các vùng **Private Bytes**, **Working Set**, **Heap**.
 7. Chụp màn hình.
 
 Ghi nhận:
 
-→ Dữ liệu “password=12345678” tồn tại trong RAM dù không lưu file.
+→ Dữ liệu "password=12345678" tồn tại trong RAM dù không lưu file.
+
+Notepad:
+
+- Tab **Performance** (tùy phiên bản của Process Explorer).
+- Các giá trị liên quan đến bộ nhớ thay đổi tương ứng khi Notepad làm việc với file.
+
+Khi Notepad làm việc với file trống chưa có nội dung:
+
+- Private Bytes: 1,196 KB
+- Working Set: 4,060 KB
+- Đây là lượng bộ nhớ khởi đầu của Notepad.
+
+![C3. Process Explorer - Memory Của Notepad](assets/c3-1.png)
+
+Khi Notepad làm việc với file có nội dung:
+
+- Private Bytes: 1,244 KB
+- Working Set: 4,508 KB
+- Có sự tăng nhẹ tương ứng với lượng nội dung của file.
+
+![C3. Process Explorer - Memory Của Notepad (tiếp)](assets/c3-2.png)
 
 ## C4 – Kiểm Tra Chuỗi Ký Tự Trong Bộ Nhớ Notepad
 
