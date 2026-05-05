@@ -70,12 +70,21 @@ Một số thông tin về 3 loại mã độc (Malware) bao gồm các loại k
 
 ## Phụ Lục: Giải Thích Thuật Ngữ Kỹ Thuật
 
-- **Process Hollowing:** Kỹ thuật tiêm mã độc bằng cách tạo ra một tiến trình hợp lệ ở trạng thái tạm dừng, sau đó xóa bỏ phần mã gốc trong bộ nhớ và thay thế bằng mã độc hại trước khi cho tiến trình chạy tiếp.
-- **EDR (Endpoint Detection and Response):** Giải pháp an ninh tập trung vào việc giám sát và phản hồi các mối đe dọa tại điểm cuối (máy tính, máy chủ) dựa trên phân tích hành vi thời gian thực.
-- **Fileless Malware:** Mã độc không tệp, hoạt động trực tiếp trong RAM và sử dụng các công cụ hệ thống hợp lệ để thực thi, không để lại dấu vết trên ổ cứng.
-- **MaaS (Malware-as-a-Service):** Mô hình kinh doanh tội phạm mạng, trong đó kẻ phát triển mã độc cho thuê hạ tầng và công cụ tấn công cho các đối tượng khác để thu phí.
-- **File Infector:** Loại mã độc ký sinh bằng cách đính kèm mã độc vào các tệp thực thi hợp lệ và lan truyền khi người dùng chạy các tệp đó.
-- **Polymorphic (Đa hình):** Khả năng tự thay đổi hình dạng mã (mã hóa hoặc làm rối) sau mỗi lần lây nhiễm nhưng vẫn giữ nguyên chức năng độc hại, nhằm lẩn tránh sự phát hiện của chữ ký số tĩnh.
-- **Zero-click:** Loại tấn công không cần bất kỳ sự tương tác nào của người dùng (như nhấp link hay mở tệp) để mã độc được thực thi.
-- **Adversarial Self-Replicating Prompts:** Các câu lệnh độc hại được thiết kế để đánh lừa mô hình AI, khiến nó tạo ra kết quả bao gồm chính câu lệnh đó (kết quả bình thường) cùng với hành vi phá hoại (kết quả độc hại).
-- **C2 (Command & Control):** Máy chủ điều khiển do tin tặc vận hành dùng để gửi lệnh và nhận dữ liệu đánh cắp được từ máy nạn nhân.
+- **Process Hollowing:**
+  - Kỹ thuật tiêm mã độc bằng cách tạo ra một tiến trình hợp lệ ở trạng thái tạm dừng, sau đó xóa bỏ phần mã gốc trong bộ nhớ RAM và thay thế bằng mã độc hại trước khi cho tiến trình chạy tiếp.
+- **EDR (Endpoint Detection and Response):**
+  - Giải pháp an ninh tập trung vào việc giám sát và phản hồi các mối đe dọa tại điểm cuối (máy tính, máy chủ) dựa trên phân tích hành vi thời gian thực.
+- **Fileless Malware:**
+  - Mã độc không tệp, hoạt động trực tiếp trong RAM và sử dụng các công cụ hệ thống hợp lệ để thực thi, không để lại dấu vết trên ổ cứng.
+- **MaaS (Malware-as-a-Service):**
+  - Mô hình kinh doanh tội phạm mạng, trong đó kẻ phát triển mã độc cho thuê hạ tầng và công cụ tấn công cho các đối tượng khác để thu phí.
+- **File Infector:**
+  - Loại mã độc ký sinh bằng cách đính kèm mã độc vào các tệp thực thi hợp lệ và lan truyền khi người dùng chạy các tệp đó.
+- **Polymorphic (Đa hình):**
+  - Khả năng tự thay đổi hình dạng mã (mã hóa hoặc làm rối) sau mỗi lần lây nhiễm nhưng vẫn giữ nguyên chức năng độc hại, nhằm lẩn tránh sự phát hiện của chữ ký số tĩnh.
+- **Zero-click:**
+  - Loại tấn công không cần bất kỳ sự tương tác nào của người dùng (như nhấp link hay mở tệp) để mã độc được thực thi.
+- **Adversarial Self-Replicating Prompts:**
+  - Các câu lệnh độc hại được thiết kế để đánh lừa mô hình AI, khiến nó tạo ra kết quả bao gồm chính câu lệnh đó (kết quả bình thường) cùng với hành vi phá hoại (kết quả độc hại).
+- **C2 (Command & Control):**
+  - Máy chủ điều khiển do tin tặc vận hành dùng để gửi lệnh và nhận dữ liệu đánh cắp được từ máy nạn nhân.
