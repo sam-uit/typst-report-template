@@ -1,42 +1,13 @@
 #import "../template/lib.typ": *
 
-= TÓM TẮT NỘI DUNG
-<tom-tat-noi-dung>
+= Mã Độc Và Kỹ Thuật Phân Tích Mã Độc
+<ma-doc-va-ky-thuat-phan-tich-ma-doc>
 
-
-== I. MỤC TIÊU BÀI THỰC HÀNH
-<i-muc-tieu-bai-thuc-hanh>
-
-Sau khi hoàn thành bài thực hành, sinh viên có thể:
-
-+ Hiểu cơ chế lưu trữ thông tin trong bộ nhớ RAM.
-+ Biết cách xem, phân tích tiến trình và bộ nhớ bằng Task Manager, CMD, PowerShell và Process Explorer.
-+ Tự tạo memory dump của tiến trình và (tuỳ chọn) phân tích bằng công cụ ngoài.
-+ Nhận diện rủi ro an toàn thông tin liên quan đến RAM.
-+ PHẦN NÂNG CAO: Làm quen với forensic memory analysis bằng Volatility Framework.
-
-== II. YÊU CẦU BÁO CÁO
-<ii-yeu-cau-bao-cao>
-
-Sinh viên phải nộp: file báo cáo (.docx), ghi lại quá trình thực hiện, chụp ảnh màn hình, mô tả các bước thực hiện, phân tích kết quả…, trong đó:
-
-+ Hình chụp tiến trình trong Task Manager.
-+ Hình `tasklist` / `Get-Process`.
-+ Hình Process Explorer → Properties → Memory.
-+ Hình dump file đã tạo.
-+ Bảng phân tích rủi ro.
-+ Trả lời câu hỏi:
-  - Tại sao dữ liệu chưa lưu vẫn tồn tại trong RAM?
-  - Hacker có thể lấy gì từ RAM?
-  - Làm sao để giảm rủi ro rò rỉ dữ liệu?
-+ Kết luận cá nhân.
-
-== III. CHUẨN BỊ MÔI TRƯỜNG
-<iii-chuan-bi-moi-truong>
-
-- Windows 10 hoặc 11.
-- Internet (để tải Sysinternals Process Explorer).
-- CMD / PowerShell.
-- Task Manager.
-- #link("https://learn.microsoft.com/sysinternals/downloads/process-explorer")[Process Explorer].
-- \(Tuỳ chọn nâng cao) RAM Capture / DumpIt / #link("https://www.volatilityfoundation.org/")[Volatility Framework].
++ Nêu chức năng và cách sử dụng một số công cụ sau đây:
+  + Netstat
+  + Fport
+  + TCPView
+  + CurrPorts Tool
+  + Process Viewer
++ Liệt kê một số biện pháp phòng chống Trojan, Virus và Worm theo thứ tự ưu tiên từ cao đến thấp.
++ Tìm và nêu đặc điểm của 3 loại mã độc (1 Trojan, 1 Virus, 1 Worm…) xuất hiện trong thời gian gần đây (tên, nguồn gốc, đặc điểm, phương thức phá hoại, biện pháp phòng chống, nguồn tham khảo).
