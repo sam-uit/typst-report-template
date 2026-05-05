@@ -1,16 +1,34 @@
 # Các Biện Pháp Phòng Chống
 
-Để phòng chống Trojan, Virus và Worm một cách hiệu quả, hệ thống cần thiết lập các rào cản từ mức độ con người đến mức độ kỹ thuật. Dưới đây là các biện pháp được sắp xếp theo **thứ tự ưu tiên từ cao đến thấp**:
+Để phòng chống Trojan, Virus và Worm một cách hiệu quả, hệ thống cần thiết lập các rào cản từ mức độ con người đến mức độ kỹ thuật. Dưới đây là các biện pháp được sắp xếp theo **thứ tự ưu tiên từ cao đến thấp** về mức độ ảnh hưởng, và xét the hướng từ con Người (quan trọng nhất) đến biện pháp kỹ thuật thuần tùy.
 
-1. **Nâng Cao Nhận Thức Người Dùng (Phòng Ngừa Cấp Độ Người Dùng)**
-    - Đây là ưu tiên số một vì phần lớn mã độc lây nhiễm qua kỹ thuật lừa đảo (social engineering). Không mở file đính kèm lạ (như `.docm`, `.exe`) hoặc click vào link không rõ nguồn gốc trong email. Tuyệt đối không cài phần mềm crack, keygen hay dùng USB lạ.
-2. **Cập Nhật Hệ Điều Hành Và Phần Mềm (Patch Management)**
-    - Thường xuyên cài đặt các bản vá lỗi bảo mật cho Windows và các ứng dụng. Worms thường lợi dụng lỗ hổng mạng của HĐH cũ để tự động lây lan mà không cần người dùng thao tác.
-3. **Sử Dụng Giải Pháp Antivirus/EDR Mạnh Mẽ**
-    - Cài đặt, kích hoạt và liên tục cập nhật cơ sở dữ liệu của phần mềm diệt virus (Windows Defender hoặc các giải pháp Endpoint Protection). Quét định kỳ toàn bộ hệ thống và thiết lập chế độ bảo vệ thời gian thực (Real-time protection).
-4. **Phân Quyền Tối Thiểu Và Bảo Vệ Cấu Hình (Least Privilege & Hardening)**
-    - Sử dụng tài khoản User thường thay vì Administrator cho các tác vụ hàng ngày. Vô hiệu hóa tính năng Macro của Office, tắt các dịch vụ Windows không dùng đến (như SMB, RDP nếu không cần) để thu hẹp bề mặt tấn công.
-5. **Bảo Mật Cấp Độ Mạng (Tường Lửa & IDS/IPS)**
-    - Kích hoạt tường lửa (Firewall) để đóng các cổng (ports) không cần thiết. Triển khai IDS/IPS và DNS Filtering để chặn truy cập đến các tên miền độc hại, ngăn chặn Trojan kết nối về máy chủ điều khiển (C2).
-6. **Sao Lưu Dữ Liệu Định Kỳ (Data Backup)**
-    - Thực hiện chiến lược sao lưu 3-2-1 (3 bản sao, 2 phương tiện, 1 bản offline). Đây là chốt chặn cuối cùng giúp khôi phục hệ thống an toàn nếu lỡ bị Virus phá hủy file hoặc bị Ransomware mã hóa tống tiền.
+## Phòng Ngừa Ở Cấp Độ Người Dùng
+
+- Nâng cao nhận thức người dùng nói chung.
+- Phổ biến các quy trình, quy định về an toàn thông tin.
+- Nhận biết và phản ứng với các kỹ thuật lừa đảo social engineering.
+- Không mở file đính kèm lạ (như `.docm`, `.exe`) hoặc click vào link không rõ nguồn gốc trong email.
+- Tuyệt đối không cài phần mềm crack, keygen hay dùng USB lạ.
+- Tuân thủ quy trình bảo đảm an toàn dữ liệu của tổ chức: mật khẩu mạnh, cập nhật mật khẩu thường xuyên, vv...
+
+## Phòng Vệ Ở Cấp Độ Hệ Thống
+
+- Tiếp theo là cấp độ hệ thống, nơi người dùng tương tác thường xuyên.
+- Cập nhật bản vá lỗ hổng của ứng dụng và hệ điều hành.
+- Quản lý quyền hạn cẩn trọng: quyền hạn tối thiểu; phân quyền tùy nhu cầu và vai trò công việc.
+- Tắt các dịch vụ hệ thống không cần thiết.
+- Triển khai các phần mềm diệt Virus mạnh mẽ.
+- Triển khai các dịch vụ mã hóa dữ liệu cấp độ hệ thống.
+
+## Phòng Vệ Ở Cấp Độ Mạng
+
+- Ngăn chặn các cổng và dịch vụ không chủ đích sử dụng từ hệ thống mạng/Fireware.
+- Phát hiện và ngăn chặn các lưu lượng bất thường.
+- Phân chia hệ thống mạng (segmentation) tùy vào khu vực và vai trò đặc trưng.
+- Triển khai các hệ thống phát hiện và ngăn chặn (IDS/IPS).
+
+## Phòng Vệ Ở Cấp Độ Dữ Liệu
+
+- Thực hiện chiến lược sao lưu 3-2-1 (3 bản sao, 2 phương tiện, 1 bản offline).
+- Mã hóa và cô lập các dữ liệu quan trọng.
+- Phân quyền truy cập dữ liệu hợp lý, có tính xác thực cao: ví dụ xác thực sinh học.
