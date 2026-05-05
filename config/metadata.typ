@@ -29,10 +29,10 @@
     ),
   ),
   assignment: (
-    title: "BÀI TẬP THỰC HÀNH 4",
-    subtitle: "DÒ TÌM THÔNG TIN TRONG BỘ NHỚ MÁY TÍNH",
+    title: "BÀI TẬP BÀI 5 (BUỔI 8)",
+    subtitle: "MÃ ĐỘC VÀ KỸ THUẬT PHÂN TÍCH MÃ ĐỘC",
     type: "assignments",
-    date: "Ngày 29 Tháng 04 Năm 2026",
+    date: "Ngày 05 Tháng 05 Năm 2026",
     duration: "180 phút",
   ),
   company: "A Limited Company Name",
