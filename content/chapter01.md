@@ -8,12 +8,14 @@ Trong quá trình phân tích và giám sát mã độc, việc theo dõi các t
 
 ### Chức Năng
 
-- Là một công cụ dòng lệnh (command-line) tích hợp sẵn trên các hệ điều hành (Windows, Linux).
+- Là một công cụ dòng lệnh (command-line).
+- Tích hợp sẵn trên các Hệ Điều Hành (Windows, Linux, macOS).
 - Giúp hiển thị các:
   - Kết nối mạng TCP/UDP đang hoạt động (ESTABLISHED).
   - Cổng đang lắng nghe (LISTEN).
   - Bảng định tuyến.
   - Các thống kê giao diện mạng.
+  - PID của tiến trình tương ứng với kết nối đang có.
 
 ### Cách Sử Dụng
 
