@@ -1,6 +1,6 @@
 # 03 Loại Mã độc Tiêu Biểu Gần Đây
 
-Dưới đây là một số thông tin về 3 loại mã độc (Malware) bao gồm các loại khác nhau (Trojan, Virus, Worm) đang gây ảnh hưởng lớn nhất trong không gian mạng hiện nay.
+Một số thông tin về 3 loại mã độc (Malware) bao gồm các loại khác nhau (Trojan, Virus, Worm) đang gây ảnh hưởng lớn nhất trong không gian mạng hiện nay.
 
 ## Trojan: Lumma Stealer (LummaC2)
 
@@ -10,10 +10,10 @@ Dưới đây là một số thông tin về 3 loại mã độc (Malware) bao g
   - Được phát triển bởi cá nhân có bí danh "Shamel" (Lumma).
   - Vận hành theo mô hình Mã độc như một dịch vụ (Malware as a Service - MaaS) trên các diễn đàn tiếng Nga và Telegram.
 - **Đặc điểm:**
-  - Viết bằng ngôn ngữ C và ASM. nhẹ và nhanh.
+  - Viết bằng ngôn ngữ C và ASM, nhẹ và nhanh.
   - Sử dụng kỹ thuật:
     - "ClickFix" (lừa người dùng copy-paste lệnh vào cửa sổ Run thông qua CAPTCHA giả).
-    - "EtherHiding" (lưu trữ mã độc trên blockchain Binance Smart Chain) để lẩn tránh các hệ thống phòng thủ.
+    - "EtherHiding" (lưu trữ mã độc trên [blockchain Binance Smart Chain](https://blackpointcyber.com/beyond-the-click-forensic-analysis-of-etherhiding-in-clickfix-campaign-infrastructure/)) để lẩn tránh các hệ thống phòng thủ.
 - **Phương thức phá hoại:**
   - Đánh cắp thông tin trình duyệt (mật khẩu, cookie phiên), ví tiền điện tử (MetaMask, Electrum) và cấu hình VPN.
   - Sử dụng kỹ thuật *process hollowing* để tiêm mã độc vào các tiến trình Windows hợp lệ như `explorer.exe` hoặc `msbuild.exe` để hoạt động ngầm.
@@ -22,7 +22,6 @@ Dưới đây là một số thông tin về 3 loại mã độc (Malware) bao g
   - Đào tạo người dùng nhận biết kỹ thuật thao túng tâm lý CAPTCHA giả.
   - Thực hiện nguyên tắc đặc quyền tối thiểu (Least Privilege).
 - **Nguồn tham khảo:**
-  - Báo cáo từ Microsoft Digital Defense (2025)
   - [https://www.microsoft.com/en-us/corporate-responsibility/cybersecurity/microsoft-digital-defense-report-2025/](https://www.microsoft.com/en-us/corporate-responsibility/cybersecurity/microsoft-digital-defense-report-2025/)
   - [https://blog.qualys.com/vulnerabilities-threat-research/2024/10/20/unmasking-lumma-stealer-analyzing-deceptive-tactics-with-fake-captcha](https://blog.qualys.com/vulnerabilities-threat-research/2024/10/20/unmasking-lumma-stealer-analyzing-deceptive-tactics-with-fake-captcha)
   - [https://www.sophos.com/en-us/blog/lumma-stealer-coming-and-going](https://www.sophos.com/en-us/blog/lumma-stealer-coming-and-going)
@@ -32,7 +31,7 @@ Dưới đây là một số thông tin về 3 loại mã độc (Malware) bao g
 - **Tên:** Virus Sality.
 - **Nguồn gốc:**
   - Là dòng virus lâu đời (xuất hiện từ 2003).
-  - Đã ghi nhận sự bùng phát mạnh mẽ trở lại trong năm 2024 và đầu năm 2025 với hạ tầng điều khiển (C2) được nâng cấp.
+  - Đã ghi nhận sự bùng phát mạnh mẽ trở lại trong năm 2024 và đầu năm 2025 với hạ tầng điều khiển (C2 - Command & Control) được nâng cấp.
 - **Đặc điểm:**
   - Thuộc loại virus lây nhiễm tệp (*file infector*) đa hình (*polymorphic*) cực kỳ tinh vi.
   - Mã nguồn của nó liên tục thay đổi sau mỗi lần lây nhiễm để vượt qua các phần mềm diệt virus dựa trên chữ ký tĩnh.
@@ -44,11 +43,9 @@ Dưới đây là một số thông tin về 3 loại mã độc (Malware) bao g
   - Sử dụng phần mềm diệt virus dựa trên phân tích hành vi (*Behavior-based*) thay vì chỉ dựa vào chữ ký.
   - Quét hệ thống định kỳ bằng các công cụ chuyên dụng có khả năng khử nhiễm (*disinfection*) tệp tin và bảo vệ tính toàn vẹn của hệ thống.
 - **Nguồn tham khảo:**
-  - Báo cáo xu hướng mã độc H1 2025 của *Recorded Future (Insikt Group)*.
-  - Phân tích kỹ thuật từ *MITRE ATT&CK*.
   - [https://www.recordedfuture.com/research/h1-2025-malware-and-vulnerability-trends](https://www.recordedfuture.com/research/h1-2025-malware-and-vulnerability-trends)
   - [https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-threat-report-h22025.pdf](https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-threat-report-h22025.pdf)
-  
+
 ## Worm: Morris II (Sâu AI)
 
 - **Tên:** Morris II.
@@ -67,7 +64,6 @@ Dưới đây là một số thông tin về 3 loại mã độc (Malware) bao g
   - Cách ly các tác nhân AI (*AI agents*) trong môi trường riêng biệt (*Segmentation*);
   - Và áp dụng xác thực API nghiêm ngặt cùng giám sát bất thường về tần suất truy vấn.
 - **Nguồn tham khảo:**
-  - Nghiên cứu từ Cornell Tech, IBM Think Insights, SentinelOne và arXiv (2024-2025).
   - [https://arxiv.org/html/2403.02817v2](https://arxiv.org/html/2403.02817v2)
   - [https://www.ibm.com/think/insights/morris-ii-self-replicating-malware-genai-email-assistants](https://www.ibm.com/think/insights/morris-ii-self-replicating-malware-genai-email-assistants)
   - [https://www.sentinelone.com/cybersecurity-101/cybersecurity/ai-worms/](https://www.sentinelone.com/cybersecurity-101/cybersecurity/ai-worms/)
@@ -83,17 +79,3 @@ Dưới đây là một số thông tin về 3 loại mã độc (Malware) bao g
 - **Zero-click:** Loại tấn công không cần bất kỳ sự tương tác nào của người dùng (như nhấp link hay mở tệp) để mã độc được thực thi.
 - **Adversarial Self-Replicating Prompts:** Các câu lệnh độc hại được thiết kế để đánh lừa mô hình AI, khiến nó tạo ra kết quả bao gồm chính câu lệnh đó cùng với hành vi phá hoại.
 - **C2 (Command & Control):** Máy chủ điều khiển do tin tặc vận hành dùng để gửi lệnh và nhận dữ liệu đánh cắp được từ máy nạn nhân.
-
-## Nguồn/Tham Chiếu
-
-1. **Lumma Stealer:**
-    - [https://www.microsoft.com/en-us/corporate-responsibility/cybersecurity/microsoft-digital-defense-report-2025/](https://www.microsoft.com/en-us/corporate-responsibility/cybersecurity/microsoft-digital-defense-report-2025/)
-    - [https://blog.qualys.com/vulnerabilities-threat-research/2024/10/20/unmasking-lumma-stealer-analyzing-deceptive-tactics-with-fake-captcha](https://blog.qualys.com/vulnerabilities-threat-research/2024/10/20/unmasking-lumma-stealer-analyzing-deceptive-tactics-with-fake-captcha)
-    - [https://www.sophos.com/en-us/blog/lumma-stealer-coming-and-going](https://www.sophos.com/en-us/blog/lumma-stealer-coming-and-going)
-2. **Sality Virus:**
-    - [https://www.recordedfuture.com/research/h1-2025-malware-and-vulnerability-trends](https://www.recordedfuture.com/research/h1-2025-malware-and-vulnerability-trends)
-    - [https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-threat-report-h22025.pdf](https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-threat-report-h22025.pdf)
-3. **Morris II Worm:**
-    - [https://arxiv.org/html/2403.02817v2](https://arxiv.org/html/2403.02817v2)
-    - [https://www.ibm.com/think/insights/morris-ii-self-replicating-malware-genai-email-assistants](https://www.ibm.com/think/insights/morris-ii-self-replicating-malware-genai-email-assistants)
-    - [https://www.sentinelone.com/cybersecurity-101/cybersecurity/ai-worms/](https://www.sentinelone.com/cybersecurity-101/cybersecurity/ai-worms/)
