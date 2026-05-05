@@ -69,16 +69,54 @@ Ví dụ 2: `netstat -ano`
 - Download: [Fport](https://github.com/interference-security/kali-windows-binaries/tree/master/fport)
 - Lưu ý:
   - Chương trình đã quá cũ, đây là một phiên bản tìm được trên GitHub
-  - Có thể sử dụng `netsat` như một thay thế.
+  - Có thể sử dụng `netsat` hoặc CurrPorts hoặc TCPViewer như các giải pháp thay thế.
 
 ### Chức Năng
 
-Là một công cụ dòng lệnh cũ của Foundstone, dùng để báo cáo tất cả các cổng TCP/IP và UDP đang mở và ánh xạ (map) chúng trực tiếp tới các tiến trình/ứng dụng đang chạy. Nó giúp phát hiện nhanh các cổng đang bị mã độc (như Trojan hay Backdoor) mở để lắng nghe.
+- Là một công cụ dòng lệnh cũ của Foundstone (hiện đã không thể tìm thấy trang chủ).
+- Dùng để báo cáo tất cả các cổng TCP/IP và UDP đang mở.
+- Ánh xạ (map) chúng trực tiếp tới các tiến trình/ứng dụng đang chạy.
+- Nó giúp phát hiện nhanh các cổng đang bị mã độc (như Trojan hay Backdoor) mở để lắng nghe.
 
 ### Cách Sử Dụng
 
 - Chạy file `fport.exe` trong Command Prompt (yêu cầu quyền Admin).
 - Màn hình sẽ trả về danh sách gồm Process Name, PID, Port và Protocol.
+
+### Ví Dụ
+
+- Đây là một mô phỏng khi chạy chương trình.
+
+```cmd
+C:\>fport
+FPort v2.0 - TCP/IP Process to Port Mapper
+Copyright 2000 by Foundstone, Inc.
+http://nez
+Pid   Process            Port  Proto Path
+392   svchost        ->  135   TCP   C:\WINNT\system32\svchost.exe
+8     System         ->  139   TCP
+8     System         ->  445   TCP
+508   MSTask         ->  1025  TCP   C:\WINNT\system32\MSTask.exe
+
+392   svchost        ->  135   UDP   C:\WINNT\system32\svchost.exe
+8     System         ->  137   UDP
+8     System         ->  138   UDP
+8     System         ->  445   UDP
+224   lsass          ->  500   UDP   C:\WINNT\system32\lsass.exe
+212   services       ->  1026  UDP   C:\WINNT\system32\services.exe
+
+The program contains five (5) switches.  The switches may be utilized using either a '/' 
+or a '-' preceding the switch.  The switches are;
+
+Usage:
+	/?	 usage help
+        /p       sort by port
+        /a       sort by application
+        /i       sort by pid
+        /ap      sort by application path
+
+For updates visit:  www.foundstone.com
+```
 
 ## 3. TCPView
 
