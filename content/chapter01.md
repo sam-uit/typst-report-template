@@ -54,6 +54,11 @@ tcp4       0      0  localhost.63976        localhost.63990        ESTABLISHED
 
 ## 2. Fport
 
+- Download: [Fport](https://github.com/interference-security/kali-windows-binaries/tree/master/fport)
+- Lưu ý:
+  - Chương trình đã quá cũ, đây là một phiên bản tìm được trên GitHub
+  - Có thể sử dụng `netsat` như một thay thế.
+
 ### Chức Năng
 
 Là một công cụ dòng lệnh cũ của Foundstone, dùng để báo cáo tất cả các cổng TCP/IP và UDP đang mở và ánh xạ (map) chúng trực tiếp tới các tiến trình/ứng dụng đang chạy. Nó giúp phát hiện nhanh các cổng đang bị mã độc (như Trojan hay Backdoor) mở để lắng nghe.
@@ -76,6 +81,8 @@ Là công cụ đồ họa của bộ Sysinternals (Microsoft), cung cấp danh 
 
 ## 4. CurrPorts Tool
 
+- Download: [CurrPorts Tool at NirSoft](https://www.nirsoft.net/utils/cports.html)
+
 ### Chức Năng
 
 Tương tự TCPView, đây là một phần mềm giám sát mạng (của NirSoft) hiển thị danh sách tất cả các cổng TCP/IP và UDP hiện đang mở trên máy tính.
@@ -84,7 +91,9 @@ Tương tự TCPView, đây là một phần mềm giám sát mạng (của NirS
 
 - Khởi chạy `cports.exe`. Ứng dụng sẽ liệt kê chi tiết tên tiến trình, đường dẫn file thực thi, và thông tin version của phần mềm đang mở cổng. Người dùng có thể bôi đen các tiến trình độc hại, nhấn nút "Kill Processes" để đóng chúng, hoặc xuất báo cáo ra file HTML/XML để phân tích thêm.
 
-## 5. Process Viewer (hoặc Process Explorer)
+## 5. Process Viewer (ay Process Explorer)
+
+- Download: [Process Explorer](https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer)
 
 ### Chức Năng
 
