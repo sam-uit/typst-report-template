@@ -1,103 +1,77 @@
 #import "../template/lib.typ": *
 
-= PHẦN C. KIỂM TRA VÙNG NHỚ ỨNG DỤNG VỚI PROCESS EXPLORER
-<phan-c-kiem-tra-vung-nho-ung-dung-voi-process-explorer>
+= 3 Loại Mã Độc Mới Nhất
+<3-loai-ma-doc-moi-nhat>
 
 
-== C1 -- Tải Và Chạy Process Explorer
-<c1-tai-va-chay-process-explorer>
+== 1. Trojan: Grandoreiro (Banking Trojan)
+<trojan-grandoreiro-banking-trojan>
 
-+ Truy cập: #link("https://learn.microsoft.com/sysinternals/downloads/process-explorer")[learn.microsoft.com/sysinternals/downloads/process-explorer]
-+ Giải nén file ZIP.
-+ Chạy #strong[procexp.exe] (#emph[Run as Administrator]).
 
-#figure(image("assets/c1-1.png"),
-  caption: [
-    C1. Chạy Process Explorer với Quyền Quản Trị
-  ]
-)
+=== Nguồn Gốc
+<nguon-goc>
 
-== C2 -- Quan Sát Cây Tiến Trình
-<c2-quan-sat-cay-tien-trinh>
+Xuất phát từ khu vực Nam Mỹ (đặc biệt là Brazil), hoạt động mạnh mẽ và mở rộng nhắm mục tiêu vào hàng chục quốc gia trên thế giới trong giai đoạn 2023-2024 (liên kết với các nhóm tội phạm tài chính).
 
-+ Mở Process Explorer.
-+ Nhận diện tiến trình bị tô màu tím, xanh lá, xanh dương (theo chuẩn Sysinternals).
-+ Giải thích:
-  - Màu xanh lá: tiến trình mới tạo
-  - Màu xanh dương: tiến trình đang chạy
-  - Màu đỏ: tiến trình mới đóng
+=== Đặc Điểm
+<dac-diem>
 
-Cây Tiến Trình:
+Là một loại Trojan ngân hàng (Banking Trojan) được phát tán chủ yếu qua các chiến dịch Phishing email có đính kèm file nén chứa mã độc ngụy trang dưới dạng hóa đơn, chứng từ.
 
-- Vòng đời Tiến trình bắt đầu với màu Xanh Lá, sau đó chuyển sang màu Xanh Dương, và cuối cùng kết thúc là màu Đỏ.
-- Một tiến trình có thể gọi/chạy một tiến trình khác, tạo thành Cây Tiến Trình.
-  - Ví dụ: #emph[explorer.exe] gọi/chạy #emph[iexplore.exe] được biểu diễn bằng sự thụt lề của #emph[iexplore.exe] so với #emph[explorer.exe].
+=== Phương Thức Phá Hoại
+<phuong-thuc-pha-hoai>
 
-#figure(image("assets/c2-1.png"),
-  caption: [
-    C2. Process Explore - Quan Sát Cây Tiến Trình
-  ]
-)
+Khi lây nhiễm, nó sẽ âm thầm chạy nền, theo dõi các thao tác trên trình duyệt. Khi người dùng truy cập trang web ngân hàng, nó sẽ hiển thị màn hình đăng nhập giả mạo (overlay) để đánh cắp tên đăng nhập, mật khẩu, và thậm chí lấy cắp cả mã OTP. Kẻ tấn công còn có thể chiếm quyền điều khiển chuột/bàn phím từ xa để tự thực hiện các lệnh chuyển tiền.
 
-== C3 -- Phân Tích Memory Của Notepad
-<c3-phan-tich-memory-cua-notepad>
+=== Biện Pháp Phòng Chống
+<bien-phap-phong-chong>
 
-+ Mở Notepad.
-+ Gõ 1 đoạn text ví dụ: "password=12345678" (dùng dữ liệu giả).
-+ KHÔNG lưu file.
-+ Trở lại Process Explorer → chuột phải vào #emph[notepad.exe] → Properties.
-+ Chọn tab #strong[Memory].
-+ Quan sát các vùng #strong[Private Bytes], #strong[Working Set], #strong[Heap].
-+ Chụp màn hình.
+Trang bị bộ lọc email chống thư rác/lừa đảo mạnh mẽ. Sử dụng xác thực sinh trắc học hoặc phần cứng bảo mật cho tài khoản ngân hàng. Giám sát hành vi tiến trình bằng EDR để phát hiện các tiến trình lạ cố gắng đọc bộ nhớ trình duyệt.
 
-Ghi nhận:
+== 2. Worm: Raspberry Robin
+<worm-raspberry-robin>
 
-→ Dữ liệu "password=12345678" tồn tại trong RAM dù không lưu file.
 
-Notepad:
+=== Nguồn Gốc
+<nguon-goc>
 
-- Tab #strong[Performance] (tùy phiên bản của Process Explorer).
-- Các giá trị liên quan đến bộ nhớ thay đổi tương ứng khi Notepad làm việc với file.
+Lần đầu tiên được hãng bảo mật Red Canary phát hiện vào cuối năm 2021 và liên tục tiến hóa, bùng nổ lây nhiễm trong mạng lưới các doanh nghiệp và tổ chức lớn trên toàn cầu.
 
-Khi Notepad làm việc với file trống chưa có nội dung:
+=== Đặc Điểm
+<dac-diem>
 
-- Private Bytes: 1,196 KB
-- Working Set: 4,060 KB
-- Đây là lượng bộ nhớ khởi đầu của Notepad.
+Hoạt động như một con giun (Worm) với phương thức lây lan cổ điển nhưng rất hiệu quả: sử dụng ổ đĩa USB (removable drives).
 
-#figure(image("assets/c3-1.png"),
-  caption: [
-    C3. Process Explorer - Memory Của Notepad
-  ]
-)
+=== Phương Thức Phá Hoại
+<phuong-thuc-pha-hoai>
 
-Khi Notepad làm việc với file có nội dung:
+Khi USB bị nhiễm cắm vào máy tính, nó lợi dụng tính năng AutoRun (nếu bật) hoặc lừa người dùng nhấp vào file shortcut. Đặc biệt, nó sử dụng công cụ Windows Installer (`msiexec.exe`) hợp pháp của hệ điều hành để tải xuống và thực thi mã độc từ máy chủ C2, nhằm qua mặt phần mềm Antivirus. Mục tiêu chính là mở cửa hậu (backdoor) tạo tiền đề cài cắm mã độc tống tiền (Ransomware) vào mạng nội bộ.
 
-- Private Bytes: 1,244 KB
-- Working Set: 4,508 KB
-- Có sự tăng nhẹ tương ứng với lượng nội dung của file.
+=== Biện Pháp Phòng Chống
+<bien-phap-phong-chong>
 
-#figure(image("assets/c3-2.png"),
-  caption: [
-    C3. Process Explorer - Memory Của Notepad (tiếp)
-  ]
-)
+Vô hiệu hóa triệt để tính năng AutoRun/AutoPlay cho tất cả các thiết bị lưu trữ ngoài. Áp dụng chính sách kiểm soát thiết bị ngoại vi (Device Control). Đưa `msiexec.exe` vào danh sách giám sát đặc biệt trên hệ thống SIEM/EDR để bắt các tham số dòng lệnh kết nối ra internet.
 
-== C4 -- Kiểm Tra Chuỗi Ký Tự Trong Bộ Nhớ Notepad
-<c4-kiem-tra-chuoi-ky-tu-trong-bo-nho-notepad>
+== 3. Virus: Ramnit (Biến thể File Infector)
+<3-virus-ramnit-bien-the-file-infector>
 
-Trong Process Explorer → Properties → tab #strong[Strings].
 
-- Tìm các đoạn text ứng dụng đang xử lý.
-- Ghi nhận: có thể tìm thấy nội dung vừa gõ.
+=== Nguồn Gốc
+<nguon-goc>
 
-Notepad \> Properties \> Strings:
+Ramnit ra đời từ năm 2010, nhưng liên tục được các băng nhóm tội phạm cập nhật kiến trúc để tạo ra các biến thể mới phức tạp và vẫn là một trong những malware lây nhiễm file phổ biến hiện nay.
 
-- Các ký tự được nhập vào file và được "giải mã" bởi Process Explorer thành dạng xem được (printable).
-- Có thể tìm thấy hoặc không các ký tự đang gõ vào file (và được lưu trong RAM).
+=== Đặc Điểm
+<dac-diem>
 
-#figure(image("assets/c4-1.png"),
-  caption: [
-    C3. Process Explorer - Notepad - String
-  ]
-)
+Là một virus lây nhiễm file đa hình (Polymorphic File Infector). Nó chèn trực tiếp mã độc của mình vào các tập tin thực thi (như `.exe`, `.dll`) và các tập tin web (như `.html`, `.htm`).
+
+=== Phương Thức Phá Hoại
+<phuong-thuc-pha-hoai>
+
+Mỗi khi người dùng mở một tập tin đã bị lây nhiễm, đoạn mã virus sẽ tự động chạy trước, âm thầm chép bản thân nó vào bộ nhớ rồi tìm các file sạch khác trên ổ cứng để lây lan tiếp. Không chỉ phá hỏng cấu trúc tập tin, biến thể mới của Ramnit còn đánh cắp cookie duyệt web, mật khẩu FTP, và mở port cho phép tin tặc truy cập từ xa.
+
+=== Biện Pháp Phòng Chống
+<bien-phap-phong-chong>
+
+Quét toàn bộ hệ thống với phần mềm Antivirus có khả năng bóc tách mã độc khỏi file lây nhiễm (disinfect). Thường xuyên kiểm tra hàm băm (hash) và chữ ký số của các ứng dụng tải về. Không sử dụng các bộ cài đặt phần mềm lậu bị chia sẻ trôi nổi trên mạng.
