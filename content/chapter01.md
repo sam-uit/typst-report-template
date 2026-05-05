@@ -176,11 +176,31 @@ For updates visit:  www.foundstone.com
 ## Process Viewer (ay Process Explorer)
 
 - Download: [Process Explorer](https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer)
+- Đã được đề cập ở Bài Tập Thực Hành 4.
 
 ### Chức Năng
 
-Là công cụ giám sát tiến trình nâng cao, cho phép theo dõi chi tiết cấu trúc tiến trình (tiến trình cha/con), tài nguyên CPU/RAM sử dụng, và các thư viện (DLL) đang được nạp vào bộ nhớ.
+- Là công cụ giám sát tiến trình nâng cao.
+- Cho phép theo dõi chi tiết:
+  - Cấu trúc tiến trình (tiến trình cha/con).
+  - Tài nguyên CPU/RAM sử dụng.
+  - Các thư viện (DLL) đang được nạp vào bộ nhớ.
 
 ### Cách Sử Dụng
 
-- Mở ứng dụng để xem cây tiến trình (Process Tree). Nếu phát hiện một tiến trình lạ ngụy trang thành file hệ thống (ví dụ `svchost.exe` nhưng chạy sai đường dẫn), bạn có thể click đúp vào để xem các luồng (threads), kiểm tra chữ ký số, hoặc gửi trực tiếp mã băm (hash) của tiến trình đó lên VirusTotal để quét mã độc.
+- Mở ứng dụng để xem cây tiến trình (Process Tree).
+- Nếu phát hiện một tiến trình lạ ngụy trang thành file hệ thống (ví dụ `svchost.exe` nhưng chạy từ đường dẫn lạ):
+  - Có thể click đúp vào để xem các luồng (threads)
+  - Kiểm tra chữ ký số
+  - Hoặc gửi trực tiếp mã băm (hash) của tiến trình đó lên VirusTotal để quét mã độc.
+
+### Ví Dụ
+
+- Cây tiến trình (Process Tree) trực quan, giúp dễ dàng phát hiện tiến trình lạ.
+
+![Process Explorer](assets/1-process-explorer.png)
+
+## TCPView
+
+- Download: [TCPView](https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview)
+- Đã được đề cập ở Bài Tập Thực Hành 2.
