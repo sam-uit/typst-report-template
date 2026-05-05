@@ -10,7 +10,7 @@ Là một công cụ dòng lệnh (command-line) tích hợp sẵn trên các h�
 
 ### Cách Sử Dụng
 
-- Mở Command Prompt (cmd) dưới quyền Quản trị viên (Administrator).
+- Mở Command Prompt (`cmd`) dưới quyền Quản Trị Viên (Administrator, Windows) hoặc root (Linux).
 - Gõ lệnh `netstat -a` để xem tất cả các kết nối, hoặc `netstat -ano` để hiển thị thêm cột PID (Process ID).
 - Từ PID này, bạn có thể đối chiếu với Task Manager để biết tiến trình nào đang lén lút kết nối ra Internet.
 
