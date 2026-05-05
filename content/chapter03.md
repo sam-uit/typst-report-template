@@ -22,9 +22,9 @@ Một số thông tin về 3 loại mã độc (Malware) bao gồm các loại k
   - Đào tạo người dùng nhận biết kỹ thuật thao túng tâm lý CAPTCHA giả.
   - Thực hiện nguyên tắc đặc quyền tối thiểu (Least Privilege).
 - **Nguồn tham khảo:**
-  - [https://www.microsoft.com/en-us/corporate-responsibility/cybersecurity/microsoft-digital-defense-report-2025/](https://www.microsoft.com/en-us/corporate-responsibility/cybersecurity/microsoft-digital-defense-report-2025/)
-  - [https://blog.qualys.com/vulnerabilities-threat-research/2024/10/20/unmasking-lumma-stealer-analyzing-deceptive-tactics-with-fake-captcha](https://blog.qualys.com/vulnerabilities-threat-research/2024/10/20/unmasking-lumma-stealer-analyzing-deceptive-tactics-with-fake-captcha)
-  - [https://www.sophos.com/en-us/blog/lumma-stealer-coming-and-going](https://www.sophos.com/en-us/blog/lumma-stealer-coming-and-going)
+  - [Microsoft - Microsoft Digital Defense Report 2025](https://www.microsoft.com/en-us/corporate-responsibility/cybersecurity/microsoft-digital-defense-report-2025/)
+  - [Qualys - Unmasking Lumma Stealer: Analyzing Deceptive Tactics with Fake CAPTCHA](https://blog.qualys.com/vulnerabilities-threat-research/2024/10/20/unmasking-lumma-stealer-analyzing-deceptive-tactics-with-fake-captcha)
+  - [Sophos - Lumma Stealer: coming and going](https://www.sophos.com/en-us/blog/lumma-stealer-coming-and-going)
 
 ## Virus: Sality (Biến thể Đa hình 2024-2025)
 
@@ -43,8 +43,8 @@ Một số thông tin về 3 loại mã độc (Malware) bao gồm các loại k
   - Sử dụng phần mềm diệt virus dựa trên phân tích hành vi (*Behavior-based*) thay vì chỉ dựa vào chữ ký.
   - Quét hệ thống định kỳ bằng các công cụ chuyên dụng có khả năng khử nhiễm (*disinfection*) tệp tin và bảo vệ tính toàn vẹn của hệ thống.
 - **Nguồn tham khảo:**
-  - [https://www.recordedfuture.com/research/h1-2025-malware-and-vulnerability-trends](https://www.recordedfuture.com/research/h1-2025-malware-and-vulnerability-trends)
-  - [https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-threat-report-h22025.pdf](https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-threat-report-h22025.pdf)
+  - [Recorded Future - H1 2025 Malware and Vulnerability Trends](https://www.recordedfuture.com/research/h1-2025-malware-and-vulnerability-trends)
+  - [ESET - Threat Report H2 2025](https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-threat-report-h22025.pdf)
 
 ## Worm: Morris II (Sâu AI)
 
@@ -64,9 +64,9 @@ Một số thông tin về 3 loại mã độc (Malware) bao gồm các loại k
   - Cách ly các tác nhân AI (*AI agents*) trong môi trường riêng biệt (*Segmentation*);
   - Và áp dụng xác thực API nghiêm ngặt cùng giám sát bất thường về tần suất truy vấn.
 - **Nguồn tham khảo:**
-  - [https://arxiv.org/html/2403.02817v2](https://arxiv.org/html/2403.02817v2)
-  - [https://www.ibm.com/think/insights/morris-ii-self-replicating-malware-genai-email-assistants](https://www.ibm.com/think/insights/morris-ii-self-replicating-malware-genai-email-assistants)
-  - [https://www.sentinelone.com/cybersecurity-101/cybersecurity/ai-worms/](https://www.sentinelone.com/cybersecurity-101/cybersecurity/ai-worms/)
+  - [arXiv - Here Comes The AI Worm: Unleashing Zero-click Worms that Target GenAI-Powered Applications](https://arxiv.org/html/2403.02817v2)
+  - [IBM - Morris II Self-Replicating Malware in GenAI Email Assistants](https://www.ibm.com/think/insights/morris-ii-self-replicating-malware-genai-email-assistants)
+  - [SentinelOne - AI Worms Explained: Adaptive Malware Threats](https://www.sentinelone.com/cybersecurity-101/cybersecurity/ai-worms/)
 
 ## Phụ Lục: Giải Thích Thuật Ngữ Kỹ Thuật
 
@@ -75,7 +75,7 @@ Một số thông tin về 3 loại mã độc (Malware) bao gồm các loại k
 - **Fileless Malware:** Mã độc không tệp, hoạt động trực tiếp trong RAM và sử dụng các công cụ hệ thống hợp lệ để thực thi, không để lại dấu vết trên ổ cứng.
 - **MaaS (Malware-as-a-Service):** Mô hình kinh doanh tội phạm mạng, trong đó kẻ phát triển mã độc cho thuê hạ tầng và công cụ tấn công cho các đối tượng khác để thu phí.
 - **File Infector:** Loại mã độc ký sinh bằng cách đính kèm mã độc vào các tệp thực thi hợp lệ và lan truyền khi người dùng chạy các tệp đó.
-- **Polymorphic (Đa hình):** Khả năng tự thay đổi hình dạng mã (mã hóa hoặc làm rối) sau mỗi lần lây nhiễm nhưng vẫn giữ nguyên chức năng độc hại, nhằm lẩn tránh sự phát hiện của chữ ký tĩnh.
+- **Polymorphic (Đa hình):** Khả năng tự thay đổi hình dạng mã (mã hóa hoặc làm rối) sau mỗi lần lây nhiễm nhưng vẫn giữ nguyên chức năng độc hại, nhằm lẩn tránh sự phát hiện của chữ ký số tĩnh.
 - **Zero-click:** Loại tấn công không cần bất kỳ sự tương tác nào của người dùng (như nhấp link hay mở tệp) để mã độc được thực thi.
-- **Adversarial Self-Replicating Prompts:** Các câu lệnh độc hại được thiết kế để đánh lừa mô hình AI, khiến nó tạo ra kết quả bao gồm chính câu lệnh đó cùng với hành vi phá hoại.
+- **Adversarial Self-Replicating Prompts:** Các câu lệnh độc hại được thiết kế để đánh lừa mô hình AI, khiến nó tạo ra kết quả bao gồm chính câu lệnh đó (kết quả bình thường) cùng với hành vi phá hoại (kết quả độc hại).
 - **C2 (Command & Control):** Máy chủ điều khiển do tin tặc vận hành dùng để gửi lệnh và nhận dữ liệu đánh cắp được từ máy nạn nhân.
