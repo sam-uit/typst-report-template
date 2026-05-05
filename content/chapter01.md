@@ -69,7 +69,7 @@ Ví dụ 2: `netstat -ano`
 - Download: [Fport](https://github.com/interference-security/kali-windows-binaries/tree/master/fport)
 - Lưu ý:
   - Chương trình đã quá cũ, đây là một phiên bản tìm được trên GitHub
-  - Có thể sử dụng `netsat` hoặc CurrPorts hoặc TCPViewer như các giải pháp thay thế.
+  - Có thể sử dụng `netsat` hoặc CurrPorts hoặc TCPViewe như các giải pháp thay thế.
 
 ### Chức Năng
 
@@ -118,18 +118,39 @@ Usage:
 For updates visit:  www.foundstone.com
 ```
 
-## 3. TCPView
+## TCPView
+
+- Download: [TCPView](https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview)
 
 ### Chức Năng
 
-Là công cụ đồ họa của bộ Sysinternals (Microsoft), cung cấp danh sách chi tiết và trực quan về tất cả các endpoint TCP và UDP trên hệ thống, bao gồm địa chỉ local/remote và trạng thái hiện tại của kết nối.
+- Là công cụ đồ họa của bộ Sysinternals (Microsoft), rất khả tín.
+- Cung cấp danh sách chi tiết và trực quan về tất cả các endpoint TCP và UDP trên hệ thống.
+- Bao gồm địa chỉ local/remote và trạng thái hiện tại của kết nối.
 
 ### Cách Sử Dụng
 
-- Mở ứng dụng `Tcpview.exe`. Các kết nối mới tạo sẽ được tô màu xanh lá, kết nối bị đóng tô màu đỏ.
-- Bạn có thể nhấp chuột phải vào một kết nối khả nghi để chọn "Close Connection" (đóng kết nối) hoặc "End Process" (buộc dừng tiến trình lây nhiễm).
+- Mở ứng dụng `Tcpview.exe`.
+- Các kết nối mới tạo sẽ được tô màu xanh lá.
+- Kết nối bị đóng tô màu đỏ.
+- Nhấp chuột phải vào một kết nối khả nghi để chọn:
+  - **Close Connection** (đóng kết nối)
+  - **Kill Process** (buộc dừng tiến trình lây nhiễm).
+- Có thể lựa chọn bật tắt các giao thức:
+  - TCP v4 / TCP v6
+  - UDP v4 / UDP v6
 
-## 4. CurrPorts Tool
+### Ví Dụ
+
+- Một giao diện rất đặc trưng và quen thuộc tương tự Process Explorer.
+
+![TCPView](assets/1-tcpview.png)
+
+- Có thể chọn **Close Connection** / **Kill Process** từ menu ngữ cảnh.
+
+![TCPView - Menu Ngữ Cảnh](assets/1-tcpview-2.png)
+
+## CurrPorts Tool
 
 - Download: [CurrPorts Tool at NirSoft](https://www.nirsoft.net/utils/cports.html)
 
@@ -141,7 +162,7 @@ Tương tự TCPView, đây là một phần mềm giám sát mạng (của NirS
 
 - Khởi chạy `cports.exe`. Ứng dụng sẽ liệt kê chi tiết tên tiến trình, đường dẫn file thực thi, và thông tin version của phần mềm đang mở cổng. Người dùng có thể bôi đen các tiến trình độc hại, nhấn nút "Kill Processes" để đóng chúng, hoặc xuất báo cáo ra file HTML/XML để phân tích thêm.
 
-## 5. Process Viewer (ay Process Explorer)
+## Process Viewer (ay Process Explorer)
 
 - Download: [Process Explorer](https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer)
 
