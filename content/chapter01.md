@@ -4,6 +4,8 @@ Trong quá trình phân tích và giám sát mã độc, việc theo dõi các t
 
 ## 1. Netstat
 
+- Download: N/A (tích hợp sẵn trong Windows/Linux/macOS)
+
 ### Chức Năng
 
 - Là một công cụ dòng lệnh (command-line) tích hợp sẵn trên các hệ điều hành (Windows, Linux).
