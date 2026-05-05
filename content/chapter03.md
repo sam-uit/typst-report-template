@@ -2,6 +2,11 @@
 
 ## 1. Trojan: Grandoreiro (Banking Trojan)
 
+* **Nguồn tham khảo (Source of truth):** Báo cáo tình báo mối đe dọa (Threat Intelligence Report) từ **Kaspersky Securelist** và Cơ quan An ninh Mạng và Cơ sở Hạ tầng Mỹ (**CISA**). Các báo cáo này phân tích chi tiết cách Grandoreiro lây nhiễm, cấu trúc kỹ thuật và chiến dịch mở rộng toàn cầu của nó.
+* **Đường link tham chiếu:** 
+  * [Kaspersky Securelist - Grandoreiro technical analysis](https://securelist.com/grandoreiro-we-know-what-you-did-last-summer/112028/)
+  * [CISA Cybersecurity Advisory - Grandoreiro Banking Trojan](https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-061a)
+
 ### Nguồn Gốc
 
 Xuất phát từ khu vực Nam Mỹ (đặc biệt là Brazil), hoạt động mạnh mẽ và mở rộng nhắm mục tiêu vào hàng chục quốc gia trên thế giới trong giai đoạn 2023-2024 (liên kết với các nhóm tội phạm tài chính).
@@ -20,6 +25,11 @@ Trang bị bộ lọc email chống thư rác/lừa đảo mạnh mẽ. Sử d�
 
 ## 2. Worm: Raspberry Robin
 
+* **Nguồn tham khảo (Source of truth):** Báo cáo gốc từ hãng bảo mật **Red Canary** (đơn vị đầu tiên phát hiện ra loại Worm này vào năm 2021) và phân tích hành vi lây lan qua USB từ **Microsoft Threat Intelligence**.
+* **Đường link tham chiếu:**
+  * [Red Canary - Raspberry Robin: Highly evasive worm spreads through USB drives](https://redcanary.com/blog/raspberry-robin/)
+  * [Microsoft Security Blog - Raspberry Robin worm part of larger ecosystem](https://www.microsoft.com/en-us/security/blog/2022/10/27/raspberry-robin-worm-part-of-larger-threat-ecosystem/)
+
 ### Nguồn Gốc
 
 Lần đầu tiên được hãng bảo mật Red Canary phát hiện vào cuối năm 2021 và liên tục tiến hóa, bùng nổ lây nhiễm trong mạng lưới các doanh nghiệp và tổ chức lớn trên toàn cầu.
@@ -37,6 +47,12 @@ Khi USB bị nhiễm cắm vào máy tính, nó lợi dụng tính năng AutoRun
 Vô hiệu hóa triệt để tính năng AutoRun/AutoPlay cho tất cả các thiết bị lưu trữ ngoài. Áp dụng chính sách kiểm soát thiết bị ngoại vi (Device Control). Đưa `msiexec.exe` vào danh sách giám sát đặc biệt trên hệ thống SIEM/EDR để bắt các tham số dòng lệnh kết nối ra internet.
 
 ## 3. Virus: Ramnit (Biến thể File Infector)
+
+* **Nguồn tham khảo (Source of truth):** Bách khoa toàn thư về mối đe dọa của **Trend Micro** và cơ sở dữ liệu mã độc **Malpedia** (của Viện Fraunhofer FKIE). Các tài nguyên này mô tả kỹ thuật đa hình và cách Ramnit lây nhiễm chéo vào các file .exe, .dll và .html.
+* **Đường link tham chiếu:**
+  * [Malpedia - Win.Ramnit Family Details](https://malpedia.caad.fkie.fraunhofer.ch/details/win.ramnit)
+  * [Trend Micro Threat Encyclopedia - Ramnit File Infector](https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/ramnit/)
+
 
 ### Nguồn Gốc
 
