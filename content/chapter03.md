@@ -23,6 +23,9 @@ Dưới đây là một số thông tin về 3 loại mã độc (Malware) bao g
   - Thực hiện nguyên tắc đặc quyền tối thiểu (Least Privilege).
 - **Nguồn tham khảo:**
   - Báo cáo từ Microsoft Digital Defense (2025)
+  - [https://www.microsoft.com/en-us/corporate-responsibility/cybersecurity/microsoft-digital-defense-report-2025/](https://www.microsoft.com/en-us/corporate-responsibility/cybersecurity/microsoft-digital-defense-report-2025/)
+  - [https://blog.qualys.com/vulnerabilities-threat-research/2024/10/20/unmasking-lumma-stealer-analyzing-deceptive-tactics-with-fake-captcha](https://blog.qualys.com/vulnerabilities-threat-research/2024/10/20/unmasking-lumma-stealer-analyzing-deceptive-tactics-with-fake-captcha)
+  - [https://www.sophos.com/en-us/blog/lumma-stealer-coming-and-going](https://www.sophos.com/en-us/blog/lumma-stealer-coming-and-going)
 
 ## Virus: Sality (Biến thể Đa hình 2024-2025)
 
@@ -43,7 +46,9 @@ Dưới đây là một số thông tin về 3 loại mã độc (Malware) bao g
 - **Nguồn tham khảo:**
   - Báo cáo xu hướng mã độc H1 2025 của *Recorded Future (Insikt Group)*.
   - Phân tích kỹ thuật từ *MITRE ATT&CK*.
-
+  - [https://www.recordedfuture.com/research/h1-2025-malware-and-vulnerability-trends](https://www.recordedfuture.com/research/h1-2025-malware-and-vulnerability-trends)
+  - [https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-threat-report-h22025.pdf](https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-threat-report-h22025.pdf)
+  
 ## Worm: Morris II (Sâu AI)
 
 - **Tên:** Morris II.
@@ -63,6 +68,9 @@ Dưới đây là một số thông tin về 3 loại mã độc (Malware) bao g
   - Và áp dụng xác thực API nghiêm ngặt cùng giám sát bất thường về tần suất truy vấn.
 - **Nguồn tham khảo:**
   - Nghiên cứu từ Cornell Tech, IBM Think Insights, SentinelOne và arXiv (2024-2025).
+  - [https://arxiv.org/html/2403.02817v2](https://arxiv.org/html/2403.02817v2)
+  - [https://www.ibm.com/think/insights/morris-ii-self-replicating-malware-genai-email-assistants](https://www.ibm.com/think/insights/morris-ii-self-replicating-malware-genai-email-assistants)
+  - [https://www.sentinelone.com/cybersecurity-101/cybersecurity/ai-worms/](https://www.sentinelone.com/cybersecurity-101/cybersecurity/ai-worms/)
 
 ## Phụ Lục: Giải Thích Thuật Ngữ Kỹ Thuật
 
