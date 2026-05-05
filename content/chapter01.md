@@ -25,7 +25,7 @@ Trong quá trình phân tích và giám sát mã độc, việc theo dõi các t
 
 ### Ví Dụ
 
-- Dưới đây là phiên bản trên macOS như một ví dụ.
+<!-- - Dưới đây là phiên bản trên macOS như một ví dụ.
 
 ```shell
 $ netstat -a
@@ -52,7 +52,15 @@ tcp4       0      0  localhost.63987        localhost.63994        ESTABLISHED
 tcp4       0      0  localhost.63994        localhost.63987        ESTABLISHED
 tcp4       0      0  192.168.10.14.63991    pnkula-af-in-f10.https ESTABLISHED
 tcp4       0      0  localhost.63976        localhost.63990        ESTABLISHED
-```
+``` -->
+
+Ví dụ 1: `netstat -a`
+
+![netstat -a](assets/1-netstat-1.png)
+
+Ví dụ 2: `netstat -ano`
+
+![netstat -ano](assets/1-netstat-2.png)
 
 ## 2. Fport
 
