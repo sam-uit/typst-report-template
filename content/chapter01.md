@@ -27,7 +27,7 @@ Trong quá trình phân tích và giám sát mã độc, việc theo dõi các t
 ```shell
 $ netstat -a
 Active Internet connections (including servers)
-Proto Recv-Q Send-Q  Local Address                                 Foreign Address                               (state)    
+Proto Recv-Q Send-Q  Local Address          Foreign Address        (state)    
 tcp4       0      0  192.168.10.14.64346    pnkula-ad-in-f10.https ESTABLISHED
 tcp4       0      0  192.168.10.14.64347    pnkula-ad-in-f10.https ESTABLISHED
 tcp4       0      0  192.168.10.14.64344    pnkulb-al-in-f10.https ESTABLISHED
