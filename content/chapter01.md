@@ -6,17 +6,23 @@ Trong quá trình phân tích và giám sát mã độc, việc theo dõi các t
 
 ### Chức Năng
 
-Là một công cụ dòng lệnh (command-line) tích hợp sẵn trên các hệ điều hành (Windows, Linux), giúp hiển thị các kết nối mạng TCP/UDP đang hoạt động, các cổng đang lắng nghe (listening ports), bảng định tuyến và các thống kê giao diện mạng.
+- Là một công cụ dòng lệnh (command-line) tích hợp sẵn trên các hệ điều hành (Windows, Linux).
+- Giúp hiển thị các:
+   - Kết nối mạng TCP/UDP đang hoạt động (ESTABLISHED).
+   - Cổng đang lắng nghe (LISTEN).
+   - Bảng định tuyến.
+   - Các thống kê giao diện mạng.
 
 ### Cách Sử Dụng
 
 - Mở Command Prompt (`cmd`) dưới quyền Quản Trị Viên (Administrator, Windows) hoặc root (Linux).
-- Gõ lệnh `netstat -a` để xem tất cả các kết nối, hoặc `netstat -ano` để hiển thị thêm cột PID (Process ID).
-- Từ PID này, bạn có thể đối chiếu với Task Manager để biết tiến trình nào đang lén lút kết nối ra Internet.
+- Gõ lệnh `netstat -a` để xem tất cả các kết nối.
+- Gõ lệnh `netstat -ano` để hiển thị thêm cột PID (Process ID).
+- Đối chiếu PID này với Task Manager để biết tiến trình nào đang kết nối ra ngoài.
 
 ### Ví Dụ
 
-- Đây là phiên bản trên macOS.
+- Dưới đây là phiên bản trên macOS như một ví dụ.
 
 ```shell
 $ netstat -a
