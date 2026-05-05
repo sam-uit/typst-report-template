@@ -152,15 +152,26 @@ For updates visit:  www.foundstone.com
 
 ## CurrPorts Tool
 
-- Download: [CurrPorts Tool at NirSoft](https://www.nirsoft.net/utils/cports.html)
+- Download: [CurrPorts Tool at NirSoft](https://www.nirsoft.net/utils/cports.html).
+- Là một trong loạt các tiện ích rất hữu dụng từ NirSoft.
 
 ### Chức Năng
 
-Tương tự TCPView, đây là một phần mềm giám sát mạng (của NirSoft) hiển thị danh sách tất cả các cổng TCP/IP và UDP hiện đang mở trên máy tính.
+- Tương tự TCPView
+- Đây là một phần mềm/tiện ích giám sát mạng (của NirSoft).
+- Hiển thị danh sách tất cả các cổng TCP/IP và UDP hiện đang mở trên máy tính.
+- Cung cấp nhiều tùy chọn làm việc, đặc biệt cho phép trích xuất danh sách thành HTML trực quan.
 
 ### Cách Sử Dụng
 
-- Khởi chạy `cports.exe`. Ứng dụng sẽ liệt kê chi tiết tên tiến trình, đường dẫn file thực thi, và thông tin version của phần mềm đang mở cổng. Người dùng có thể bôi đen các tiến trình độc hại, nhấn nút "Kill Processes" để đóng chúng, hoặc xuất báo cáo ra file HTML/XML để phân tích thêm.
+- Khởi chạy `cports.exe`.
+- Ứng dụng sẽ liệt kê chi tiết tên tiến trình, đường dẫn file thực thi, và thông tin version của phần mềm đang mở cổng.
+- Người dùng có thể bôi đen các tiến trình độc hại, nhấn nút **Kill Processes Of Selected Ports** để đóng chúng.
+- Xuất báo cáo ra file HTML/XML để phân tích thêm.
+
+### Ví Dụ
+
+![CurrPorts Tool](assets/1-currports.png)
 
 ## Process Viewer (ay Process Explorer)
 
