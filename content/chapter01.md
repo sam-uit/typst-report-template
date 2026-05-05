@@ -1,10 +1,10 @@
 # Các Công Cụ Phổ Biến
 
-Trong quá trình phân tích và giám sát mã độc, việc theo dõi các tiến trình và kết nối mạng là cực kỳ quan trọng. Dưới đây là chức năng và cách sử dụng của 5 công cụ phổ biến:
+Trong quá trình phân tích và giám sát mã độc, việc theo dõi các tiến trình và kết nối mạng là cực kỳ quan trọng. Dưới đây là chức năng và cách sử dụng của 5 công cụ phổ biến.
 
-## 1. Netstat
+## Netstat
 
-- Download: N/A (tích hợp sẵn trong Windows/Linux/macOS)
+- Download: Không cần (tích hợp sẵn trong Windows/Linux/macOS).
 
 ### Chức Năng
 
@@ -64,7 +64,7 @@ Ví dụ 2: `netstat -ano`
 
 ![netstat -ano](assets/1-netstat-2.png)
 
-## 2. Fport
+## Fport
 
 - Download: [Fport](https://github.com/interference-security/kali-windows-binaries/tree/master/fport)
 - Lưu ý:
@@ -76,7 +76,7 @@ Ví dụ 2: `netstat -ano`
 - Là một công cụ dòng lệnh cũ của Foundstone (hiện đã không thể tìm thấy trang chủ).
 - Dùng để báo cáo tất cả các cổng TCP/IP và UDP đang mở.
 - Ánh xạ (map) chúng trực tiếp tới các tiến trình/ứng dụng đang chạy.
-- Nó giúp phát hiện nhanh các cổng đang bị mã độc (như Trojan hay Backdoor) mở để lắng nghe.
+- Nó giúp phát hiện nhanh các cổng đang bị mã độc (như Trojan hay Backdoor) mở để chờ các kết nối tới.
 
 ### Cách Sử Dụng
 
@@ -199,8 +199,3 @@ For updates visit:  www.foundstone.com
 - Cây tiến trình (Process Tree) trực quan, giúp dễ dàng phát hiện tiến trình lạ.
 
 ![Process Explorer](assets/1-process-explorer.png)
-
-## TCPView
-
-- Download: [TCPView](https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview)
-- Đã được đề cập ở Bài Tập Thực Hành 2.
