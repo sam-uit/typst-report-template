@@ -44,3 +44,15 @@ Thiết bị: iPhone
 - Bước 2: Chọn 1 ứng dụng → chỉnh:
   - While using app / Ask every time
 - Bước 3: Chụp màn hình
+
+Ứng dụng: AirAsia MOVE
+
+- Camera: Tắt.
+  - Không có lý do gì để ứng dụng này có quyền truy cập camera trong khi chỉ dùng để mua vé máy bay.
+
+![Bài 10. Kiểm Soát Quyền Ứng Dụng - Camera](assets/10-camera.png)
+
+- Location: While Using (the App).
+  - Chỉ cho phép truy cập vị trí khi đang sử dụng ứng dụng, nhằm gợi ý các chuyến bay phù hợp với vị trí hiện tại.
+
+![Bài 10. Kiểm Soát Quyền Ứng Dụng - Location](assets/10-location.png)
