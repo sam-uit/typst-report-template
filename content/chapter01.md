@@ -1,4 +1,4 @@
-# Các Công Cụ Phổ Biến
+# TIẾT 1. KHẢO SÁT WI-FI & NHẬN DIỆN NGUY CƠ
 
 Trong quá trình phân tích và giám sát mã độc, việc theo dõi các tiến trình và kết nối mạng là cực kỳ quan trọng. Dưới đây là chức năng và cách sử dụng của 5 công cụ phổ biến.
 

@@ -1,4 +1,4 @@
-# Các Biện Pháp Phòng Chống
+# TIẾT 2. PHÂN TÍCH CHUẨN BẢO MẬT & CẤU HÌNH WI-FI AN TOÀN
 
 Để phòng chống Trojan, Virus và Worm một cách hiệu quả, hệ thống cần thiết lập các rào cản từ mức độ con người đến mức độ kỹ thuật. Dưới đây là các biện pháp được sắp xếp theo **thứ tự ưu tiên từ cao đến thấp** về mức độ ảnh hưởng, và xét the hướng từ con Người (quan trọng nhất) đến biện pháp kỹ thuật thuần tùy.
 

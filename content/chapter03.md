@@ -1,4 +1,4 @@
-# 03 Loại Mã độc Tiêu Biểu Gần Đây
+# TIẾT 3. RỦI RO WI-FI CÔNG CỘNG & HTTPS
 
 Một số thông tin về 3 loại mã độc (Malware) bao gồm các loại khác nhau (Trojan, Virus, Worm) đang gây ảnh hưởng lớn nhất trong không gian mạng hiện nay.
 
