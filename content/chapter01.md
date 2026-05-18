@@ -84,3 +84,63 @@ Danh sách các mạng Wi-Fi xung quanh khu vực sinh viên học tập:
 caption: [Bài 1. Bảng Liệt Kê Và Đánh Giá WIFI]
 )
 ```
+
+## Bài 2. Phân Loại Wi-Fi Theo Mức Độ An Toàn
+
+Sinh viên tự chia các Wi-Fi đã quét vào 3 nhóm:
+
+- Nhóm A: An Toàn
+- Nhóm B: Trung Bình
+- Nhóm C: Nguy Hiểm
+
+Đánh giá chung:
+
+- Nhóm A là các Wi-Fi dùng WPA2/WPA3, nhóm B là các Wi-Fi dùng WPA/WPA2.
+- Tất cả các mạng Wi-Fi đều dùng một cơ chế bảo mật nhất định.
+  - Vì vậy, không có Wi-Fi nào được xếp vào nhóm C.
+- Các chuẩn phổ biến được dùng là WPA2, vì các Wi-Fi đều ở quy mô gia đình.
+  - Một số Wi-Fi hỗ trợ WPA3, đây thường là các thiết bị phát sóng thế hệ mới.
+
+<!-- | stt  | SSID                | Authentication      | Nhóm       | Lý Do                                        |
+| ---- | ------------------- | ------------------- | ---------- | -------------------------------------------- |
+| 1    | \@Ruijie-b56D2       | WPA/WPA2 (PSK)      | Trung Bình | Cho phép fall-back về WPA vốn yếu hơn.       |
+| 2    | Appalasami Family   | WPA2 (PSK)          | An Toàn    | WPA2 vẫn rất tốt cho quy mô nhỏ.             |
+| 3    | appalasami-TIME5Ghz | WPA2 (PSK)          | An Toàn    | WPA2 vẫn rất tốt cho quy mô nhỏ.             |
+| 4    | Charlesmanor        | WPA/WPA2 (PSK)      | Trung Bình | Cho phép fall-back về WPA vốn yếu hơn.       |
+| 5    | dato_salim-2.4G     | WPA/WPA2 (PSK)      | Trung Bình | Cho phép fall-back về WPA vốn yếu hơn.       |
+| 6    | Hash                | WPA2/WPA3 (PSK/SAE) | An Toàn    | WPA3 phù hợp cho cả môi trường doanh nghiệp. |
+| 7    | Hecoo               | WPA2/WPA3 (PSK/SAE) | An Toàn    | WPA3 phù hợp cho cả môi trường doanh nghiệp. |
+| 8    | jhsw1965 5G         | WPA2 (PSK)          | An Toàn    | WPA2 vẫn rất tốt cho quy mô nhỏ.             |
+| 9    | JustinTmj           | WPA/WPA2 (PSK)      | Trung Bình | Cho phép fall-back về WPA vốn yếu hơn.       |
+| 10   | Perlla              | WPA2/WPA3 (PSK/SAE) | An Toàn    | WPA3 phù hợp cho cả môi trường doanh nghiệp. |
+| 11   | r33_5G              | WPA2 (PSK)          | An Toàn    | WPA2 vẫn rất tốt cho quy mô nhỏ.             |
+| 12   | Rog_SpgC47          | WPA2 (PSK)          | An Toàn    | WPA2 vẫn rất tốt cho quy mô nhỏ.             | -->
+
+```{=typst}
+#figure(
+table(
+  columns: (5%, 24%, 28%, 15%, 28%),
+  align: (left, left, left, left, left),
+  [stt], [SSID], [Authentication], [Nhóm], [Lý Do], 
+  [1], [\@Ruijie-b56D2], [WPA/WPA2 (PSK)], [Trung Bình], [Cho phép fall-back về WPA vốn yếu hơn.],
+  [2], [Appalasami Family], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.],
+  [3], [appalasami-TIME5Ghz], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.],
+  [4], [Charlesmanor], [WPA/WPA2 (PSK)], [Trung Bình], [Cho phép fall-back về WPA vốn yếu hơn.],
+  [5], [dato\_salim-2.4G], [WPA/WPA2 (PSK)], [Trung Bình], [Cho phép fall-back về WPA vốn yếu hơn.],
+  [6], [Hash], [WPA2/WPA3 (PSK/SAE)], [An Toàn], [WPA3 phù hợp cho cả môi trường doanh nghiệp.],
+  [7], [Hecoo], [WPA2/WPA3 (PSK/SAE)], [An Toàn], [WPA3 phù hợp cho cả môi trường doanh nghiệp.],
+  [8], [jhsw1965 5G], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.],
+  [9], [JustinTmj], [WPA/WPA2 (PSK)], [Trung Bình], [Cho phép fall-back về WPA vốn yếu hơn.],
+  [10], [Perlla], [WPA2/WPA3 (PSK/SAE)], [An Toàn], [WPA3 phù hợp cho cả môi trường doanh nghiệp.],
+  [11], [r33\_5G], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.],
+  [12], [Rog\_SpgC47], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.]
+),
+caption: [Bài 2. Phân Loại WIFI Theo Mức Độ An Toàn]
+)
+```
+
+
+## Câu Hỏi Ngắn
+
+> Vì sao Wi-Fi không đặt mật khẩu vẫn có người sử dụng?
+
