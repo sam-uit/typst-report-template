@@ -2,9 +2,26 @@
 
 ## Bài 8. Thiết Lập Khóa Màn Hình An Toàn
 
-- PIN $\ge$ 6 số hoặc mật khẩu
-- Bật vân tay / FaceID (nếu có)
-- Chụp màn hình mục cấu hình (không lộ mã)
+- PIN $\ge$ 6 số hoặc mật khẩu.
+- Bật vân tay / FaceID (nếu có).
+- Chụp màn hình mục cấu hình (không lộ mã).
+
+Thiết bị: iPhone.
+
+Mã Pin: 10111997
+
+- 6 chữ số
+- Luôn yêu cầu mã PIN ngay khi khóa màn hình.
+
+![Bài 8. Màn Hình Khóa Điện Thoại](assets/08-passcode.png)
+
+Luôn yêu cầu FaceID cho bất kỳ tác vụ quan trọng nào:
+
+- Mở khóa iPhone.
+- Thanh toán.
+- Điền mật khẩu.
+
+![Bài 8. FaceID](assets/08-faceid.png)
 
 ## Bài 9. Kiểm Tra Cập Nhật Hệ Điều Hành
 
