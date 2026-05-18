@@ -4,9 +4,9 @@
 
 Tình huống:
 
-Sinh viên dùng Wi-Fi quán cà phê để:
-- Đăng nhập email
-- Thanh toán online
+- Sinh viên dùng Wi-Fi quán cà phê để:
+    - Đăng nhập email
+    - Thanh toán online
 
 Yêu cầu trình bày:
 
@@ -31,7 +31,7 @@ Yêu cầu trình bày:
 
 1. Luôn dùng VPN, đặc biệt trong công việc.
     - VPN mã hóa toàn bộ lưu lượng truy cập của người dùng, ẩn danh tính và vị trí, giúp ngăn chặn kẻ tấn công đánh cắp dữ liệu hoặc theo dõi hoạt động trực tuyến.
-2. Sử dụng HTTPS
+2. Sử dụng HTTPS hoặc các giao thức tương đương như FTPS, SSH, vv...
     - HTTPS mã hóa dữ liệu trao đổi giữa người dùng và website, giúp tránh được rò rỉ dữ liệu dù kẻ tấn công có thể bắt các gói tin.
 3. Vô hiệu hóa dịch vụ chia sẻ tệp
     - Tắt chia sẻ tệp (ví dụ SMB trên Windows) để ngăn chặn kẻ tấn công truy cập vào tệp của người dùng khi kết nối vào mạng Wi-Fi công cộng.
@@ -54,4 +54,4 @@ Yêu cầu trình bày:
 3. Không chia sẻ hoặc nhận chia sẻ file từ các máy trong mạng.
     - Chia sẻ ngang hàng thường nhanh chóng nhưng tiềm ẩn rủi ro vì các trao đổi gần như là trực tiếp giữa các thiết bị.
     - Không tải file hoặc truy cập các website lạ.
-    - Hạn chế các loại website truy cập, và giới hạn lưu lượng và thời lượng.
+    - Hạn chế các loại website truy cập; và giới hạn lưu lượng và thời lượng có mặt trên mạng công cộng.
