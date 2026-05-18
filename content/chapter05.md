@@ -29,13 +29,20 @@ Yêu cầu trình bày:
 
 ### 7 Biện Pháp An Toàn Khi Dùng Wi-Fi Công Cộng
 
-1. Luôn dùng VPN
+1. Luôn dùng VPN, đặc biệt trong công việc.
+  - VPN mã hóa toàn bộ lưu lượng truy cập của người dùng, ẩn danh tính và vị trí, giúp ngăn chặn kẻ tấn công đánh cắp dữ liệu hoặc theo dõi hoạt động trực tuyến.
 2. Sử dụng HTTPS
-3. Vô hiệu hóa chia sẻ tệp
+  - HTTPS mã hóa dữ liệu trao đổi giữa người dùng và website, giúp tránh được rò rỉ dữ liệu dù kẻ tấn công có thể bắt các gói tin.
+3. Vô hiệu hóa dịch vụ chia sẻ tệp
+  - Tắt chia sẻ tệp (ví dụ SMB trên Windows) để ngăn chặn kẻ tấn công truy cập vào tệp của người dùng khi kết nối vào mạng Wi-Fi công cộng.
 4. Tắt Wi-Fi khi không dùng
+  - Tắt Wi-Fi khi không dùng hoặc dùng một cách có kiểm soát: thời lượng ít, ngẫu nhiên, ưu tiên Wi-Fi có mật khẩu mạnh.
 5. Sử dụng xác thực 2 yếu tố (2FA)
+  - Các dịch vụ quan trọng thường cung cấp chức năng này, hãy chắc chắn luôn luôn bật.
 6. Luôn cập nhật hệ điều hành & ứng dụng
+  - Tự động cập nhật là một cách để đảm bảo thiết bị có các phiên bản mới nhất vốn thường vá các lỗi bảo mật đã biết.
 7. Không thực hiện giao dịch nhạy cảm
+  - Không truy cập ngân hàng hoặc thanh toán online, không đăng nhập vào tài khoản quan trọng (email, mạng xã hội). Sử dụng có chọn lọc.
 
 ### 3 Việc Tuyệt Đối Không Làm
 
