@@ -1,6 +1,6 @@
 # TIẾT 3. RỦI RO WI-FI CÔNG CỘNG & HTTPS
 
-## Bài 6. Kiểm tra HTTPS trên Wi-Fi công cộng
+## Bài 6. Kiểm Tra HTTPS Trên Wi-Fi Công Cộng
 
 - Bước 1: Kết nối vào Wi-Fi công cộng (nếu có) (Nếu không có, dùng Wi-Fi bất kỳ)
 - Bước 2:
@@ -22,7 +22,7 @@ Trang không có HTTPS (chỉ có HTTP):
 
 ![Bài 6. Kiểm Tra HTTP](assets/06-http.png)
 
-### Câu hỏi phân tích
+### Câu Hỏi Phân Tích
 
 > Điều gì có thể xảy ra nếu đăng nhập tài khoản trên HTTP?
 
@@ -40,3 +40,17 @@ Khuyến nghị:
 - Không truy cập hoặc sử dụng các website chỉ dùng HTTP.
 - Nếu cần thiết phải truy cập website dùng HTTP, không trao đổi các dữ liệu quan trọng: tên người dùng, mật khẩu, các thông tin thanh toán, thông tin cá nhân, vv...
 - Trong trường hợp website sử dụng HTTPS nhưng vẫn nhận cảnh báo "Not Secure", không truy cập hoặc sử dụng website đó. Hoặc kiểm tra lại các chứng chỉ SSL/TLS của website đó, tránh trường hợp giả mạo, DNS spoofing, man-in-the-middle, v.v. 
+
+## Bài 7. Quản Lý Wi-Fi Đã Lưu Trên Windows
+
+- Bước 1: Settings → Wi-Fi → Manage known networks.
+- Bước 2: Chọn 1 Wi-Fi công cộng → Forget.
+- Bước 3: Chụp màn hình.
+
+Do bài lab này đang được thực hiện trên macOS, vậy sinh viên xin phép sử dụng hình ảnh của macOS để biểu diễn, có giá trị và ý nghĩa tương tự.
+
+- Vào **Settings** > **Wi-Fi**.
+- Kiểm tra mục **Known Networks**.
+- Bấm vào biểu tượng 3 chấm của Wi-Fi muonso loại bỏ, chọn **Forget This Network...**.
+
+![Bài 7. Quản Lý Wi-Fi Đã Lưu](assets/07-01.png)
