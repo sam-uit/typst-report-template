@@ -29,10 +29,10 @@
     ),
   ),
   assignment: (
-    title: "BÀI TẬP BÀI 5 (BUỔI 8)",
-    subtitle: "MÃ ĐỘC VÀ KỸ THUẬT PHÂN TÍCH MÃ ĐỘC",
+    title: "BÀI TẬP THỰC HÀNH 5 (BUỔI 9)",
+    subtitle: "BẢO MẬT MẠNG KHÔNG DÂY (WI-FI) VÀ THIẾT BỊ DI ĐỘNG",
     type: "assignments",
-    date: "Ngày 05 Tháng 05 Năm 2026",
+    date: "Ngày 12 Tháng 05 Năm 2026",
     duration: "180 phút",
   ),
   company: "A Limited Company Name",
