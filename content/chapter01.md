@@ -139,8 +139,14 @@ caption: [Bài 2. Phân Loại WIFI Theo Mức Độ An Toàn]
 )
 ```
 
-
 ## Câu Hỏi Ngắn
 
 > Vì sao Wi-Fi không đặt mật khẩu vẫn có người sử dụng?
 
+Một số nguyên nhân như:
+
+- Môi trường chia sẻ Wi-Fi công cộng và muốn đơn giản hóa việc kết nối.
+- Sự tương thích với các thiết bị có chuẩn cũ, hoặc kết nối đặc thù.
+- Các mạng ngang hàng/Ad-hoc, vòng đời chia sẻ ngắn.
+- Các mạng Wi-Fi cô lập và không có kết nối Internet hoặc hạ tầng quan trọng.
+- Sử dụng các hình thức xác thực khác, ví dụ đăng ký qua cổng Captive Portal, hoặc cơ chế xác thực nội bộ (Enterprise).
