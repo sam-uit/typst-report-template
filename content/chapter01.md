@@ -11,7 +11,7 @@
   - Signal
 - Bước 4: Hoàn thành bảng sau (ít nhất 8 mạng, nếu không đủ thì ghi rõ lý do):
 
-| STT | SSID | Authentication | Encryption | Signal | Đánh giá |
+<!-- | STT | SSID | Authentication | Encryption | Signal | Đánh giá |
 |-----|------|----------------|------------|--------|----------|
 | 1   |      |                |            |        |          |
 | 2   |      |                |            |        |          |
@@ -20,7 +20,24 @@
 | 5   |      |                |            |        |          |
 | 6   |      |                |            |        |          |
 | 7   |      |                |            |        |          |
-| 8   |      |                |            |        |          |
+| 8   |      |                |            |        |          | -->
+
+```{=typst}
+#show table.cell: set text(size: 0.8em)
+#table(
+  columns: (1fr,) * 6,
+  align: (left, left, left, left, left, left),
+  [STT], [SSID], [Authentication], [Encryption], [Signal], [Đánh giá],
+  [1], [], [], [], [], [],
+  [2], [], [], [], [], [],
+  [3], [], [], [], [], [],
+  [4], [], [], [], [], [],
+  [5], [], [], [], [], [],
+  [6], [], [], [], [], [],
+  [7], [], [], [], [], [],
+  [8], [], [], [], [], []
+)
+```
 
 Gợi ý đánh giá:
 
@@ -62,7 +79,6 @@ Danh sách các mạng Wi-Fi xung quanh khu vực sinh viên học tập:
 | 12   | Rog_SpgC47          | WPA2 (PSK)          | CCMP-128           | -46          | Tốt      | -->
 
 ```{=typst}
-#show table.cell: set text(size: 0.8em)
 #figure(
   table(
     columns: (5%, 24%, 28%, 14%, 15%, 14%),
