@@ -29,3 +29,13 @@ Dẫn chứng:
 - Tất cả các Wi-Fi tìm thấy đều sử dụng từ WPA2 trở lên (mặc dù cho hỗ trợ tương thích WPA nhưng không ưu tiên).
 
 ![Bài 3. Các Wi-Fi Đều Sử Dụng Từ WPA2 Trở Lên](assets/01-01-wifi-list.png)
+
+## Bài 4. Tạo Wi-Fi An Toàn Bằng Hotspot Điện Thoại (Mô Phỏng Router)
+
+iPhone:
+
+- Bước 1: Settings → Personal Hotspot.
+- Bước 2: Đổi Wi-Fi Password ($\ge$ 12 ký tự): `$@mDinh2026!`.
+- Bước 3: Chụp màn hình cấu hình.
+
+![Bài 4. iPhone Hotspot Configured](assets/03-01-iphone.png)
