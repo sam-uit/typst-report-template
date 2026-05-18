@@ -1,13 +1,40 @@
 #import "../template/lib.typ": *
 
-= Mã Độc Và Kỹ Thuật Phân Tích Mã Độc
-<ma-doc-va-ky-thuat-phan-tich-ma-doc>
+= BÀI TẬP THỰC HÀNH 5
+<bai-tap-thuc-hanh-5>
 
-+ Nêu chức năng và cách sử dụng một số công cụ sau đây:
-  + Netstat
-  + Fport
-  + TCPView
-  + CurrPorts Tool
-  + Process Viewer
-+ Liệt kê một số biện pháp phòng chống Trojan, Virus và Worm theo thứ tự ưu tiên từ cao đến thấp.
-+ Tìm và nêu đặc điểm của 3 loại mã độc (1 Trojan, 1 Virus, 1 Worm…) xuất hiện trong thời gian gần đây (tên, nguồn gốc, đặc điểm, phương thức phá hoại, biện pháp phòng chống, nguồn tham khảo).
+
+== MỤC TIÊU BÀI THỰC HÀNH
+<muc-tieu-bai-thuc-hanh>
+
+Sau bài này, sinh viên có thể:
+
++ Khảo sát và đánh giá mức độ an toàn của các mạng Wi-Fi xung quanh.
++ Phân biệt WEP -- WPA -- WPA2 -- WPA3 dựa trên quan sát thực tế.
++ Thiết lập và kiểm chứng một Wi-Fi an toàn (mô phỏng router bằng hotspot).
++ Nhận diện rủi ro khi dùng Wi-Fi công cộng.
++ Thực hiện các cấu hình bảo mật bắt buộc trên thiết bị di động.
++ Phân tích tình huống thực tế và đề xuất biện pháp phòng ngừa.
+
+== CHUẨN BỊ MÔI TRƯỜNG
+<chuan-bi-moi-truong>
+
+
+=== 1. Thiết Bị
+<1-thiet-bi>
+
+- 01 Laptop (Windows 10/11).
+- 01 Smartphone (Android hoặc iOS).
+- Có Wi-Fi xung quanh (nhà, trường, quán, hotspot).
+
+=== 2. Quy Định Phòng Lab
+<2-quy-dinh-phong-lab>
+
+- Không dò mật khẩu, không tấn công mạng người khác.
+- Chỉ quan sát -- đánh giá -- cấu hình bảo mật.
+- Mọi thao tác đều phải chụp màn hình minh chứng.
+
+== NỘI DUNG THỰC HÀNH (THEO TIẾT)
+<noi-dung-thuc-hanh-theo-tiet>
+
+- Được trình bày chi tiết ở mỗi chương trong báo cáo này.
