@@ -1,41 +1,107 @@
 #import "../template/lib.typ": *
 
-= Các Biện Pháp Phòng Chống
-<cac-bien-phap-phong-chong>
+= TIẾT 2. PHÂN TÍCH CHUẨN BẢO MẬT & CẤU HÌNH WI-FI AN TOÀN
+<tiet-2-phan-tich-chuan-bao-mat-cau-hinh-wi-fi-an-toan>
 
-Để phòng chống Trojan, Virus và Worm một cách hiệu quả, hệ thống cần thiết lập các rào cản từ mức độ con người đến mức độ kỹ thuật. Dưới đây là các biện pháp được sắp xếp theo #strong[thứ tự ưu tiên từ cao đến thấp] về mức độ ảnh hưởng, và xét the hướng từ con Người (quan trọng nhất) đến biện pháp kỹ thuật thuần tùy.
 
-== Phòng Ngừa Ở Cấp Độ Người Dùng
-<phong-ngua-o-cap-do-nguoi-dung>
+== Bài 3. So Sánh Chuẩn Bảo Mật Wi-Fi (Có Dẫn Chứng)
+<bai-3-so-sanh-chuan-bao-mat-wi-fi-co-dan-chung>
 
-- Nâng cao nhận thức người dùng nói chung.
-- Phổ biến các quy trình, quy định về an toàn thông tin.
-- Nhận biết và phản ứng với các kỹ thuật lừa đảo social engineering.
-- Không mở file đính kèm lạ (như `.docm`, `.exe`) hoặc click vào link không rõ nguồn gốc trong email.
-- Tuyệt đối không cài phần mềm crack, keygen hay dùng USB lạ.
-- Tuân thủ quy trình bảo đảm an toàn dữ liệu của tổ chức: mật khẩu mạnh, cập nhật mật khẩu thường xuyên, vv…
+#figure(
+table(
+  columns: (10%, 15%, 20%, 55%),
+  align: (left, left, left, left),
+  [Chuẩn], [Khảo Sát], [Độ An Toàn], [Nhận Xét],
+  [WEP], [Không], [Kém tới rất kém], [Gần như đã được loại bỏ khỏi sử dụng ở các thiết bị gia đình thường thấy từ các nhà cung cấp Internet.],
+  [WPA], [Có], [Trung bình], [Mặc dù có cải thiện so với WEP nhưng không được phổ biến rộng rãi do sự xuất hiện của WPA2.],
+  [WPA2], [Có], [Khá tốt], [Là chuẩn bảo mật phổ biến nhất hiện nay. Vẫn còn tồn tại các giới hạn bảo mật nhất định.],
+  [WPA3], [Có], [Rất tốt.], [Là chuẩn bảo mật mới nhất và an toàn nhất hiện nay, phù hợp cho cả môi trường gia đình và doanh nghiệp.]
+),
+  caption: [Bài 3. Bảng So Sánh Chuẩn Bảo Mật Wi-Fi]
+)
+Dẫn chứng:
 
-== Phòng Vệ Ở Cấp Độ Hệ Thống
-<phong-ve-o-cap-do-he-thong>
+- Tất cả các Wi-Fi tìm thấy đều sử dụng từ WPA2 trở lên (mặc dù cho hỗ trợ tương thích WPA nhưng không ưu tiên).
 
-- Tiếp theo là cấp độ hệ thống, nơi người dùng tương tác thường xuyên.
-- Cập nhật bản vá lỗ hổng của ứng dụng và hệ điều hành.
-- Quản lý quyền hạn cẩn trọng: quyền hạn tối thiểu; phân quyền tùy nhu cầu và vai trò công việc.
-- Tắt các dịch vụ hệ thống không cần thiết.
-- Triển khai các phần mềm diệt Virus mạnh mẽ.
-- Triển khai các dịch vụ mã hóa dữ liệu cấp độ hệ thống.
+#figure(image("assets/01-01-wifi-list.png"),
+  caption: [
+    Bài 3. Các Wi-Fi Đều Sử Dụng Từ WPA2 Trở Lên
+  ]
+)
 
-== Phòng Vệ Ở Cấp Độ Mạng
-<phong-ve-o-cap-do-mang>
+== Bài 4. Tạo Wi-Fi An Toàn Bằng Hotspot Điện Thoại (Mô Phỏng Router)
+<bai-4-tao-wi-fi-an-toan-bang-hotspot-dien-thoai-mo-phong-router>
 
-- Ngăn chặn các cổng và dịch vụ không chủ đích sử dụng từ hệ thống mạng/Fireware.
-- Phát hiện và ngăn chặn các lưu lượng bất thường.
-- Phân chia hệ thống mạng (segmentation) tùy vào khu vực và vai trò đặc trưng.
-- Triển khai các hệ thống phát hiện và ngăn chặn (IDS/IPS).
+iPhone:
 
-== Phòng Vệ Ở Cấp Độ Dữ Liệu
-<phong-ve-o-cap-do-du-lieu>
+- Bước 1: Settings → Personal Hotspot.
+- Bước 2: Đổi Wi-Fi Password ($gt.eq$ 12 ký tự): `$@mDinh2026!`.
+- Bước 3: Chụp màn hình cấu hình.
 
-- Thực hiện chiến lược sao lưu 3-2-1 (3 bản sao, 2 phương tiện, 1 bản offline).
-- Mã hóa và cô lập các dữ liệu quan trọng.
-- Phân quyền truy cập dữ liệu hợp lý, có tính xác thực cao: ví dụ xác thực sinh học.
+#figure(image("assets/03-01-iphone.png"),
+  caption: [
+    Bài 4. iPhone Hotspot Configured
+  ]
+)
+
+== Bài 5. Kiểm Chứng Mã Hóa Wi-Fi Vừa Tạo (Laptop)
+<bai-5-kiem-chung-ma-hoa-wi-fi-vua-tao-laptop>
+
+
+=== Kiểm Chứng Mã Hóa Wi-Fi
+<kiem-chung-ma-hoa-wi-fi>
+
++ Kết Nối Vào Hotspot.
+
+#figure(image("assets/05-01-hotspot.png"),
+  caption: [
+    Bài 5. Kết Nối Vào Hotspot
+  ]
+)
+
+#block[
+#set enum(numbering: "1.", start: 2)
++ Duyệt Wi-Fi để kiểm tra thông số.
+]
+
+- Encryption (hay Cipher): CCMP-128.
+  - CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol)
+  - Đây là AES với thuật toán mã hóa 128 bit.
+
+#figure(image("assets/05-02-wifi.png"),
+  caption: [
+    Bài 5. Kiểm Tra Thông Số Wi-Fi
+  ]
+)
+
+=== Câu hỏi
+<cau-hoi>
+
+#quote(block: true)[
+Cipher AES có ý nghĩa gì trong bảo mật Wi-Fi?
+]
+
+Đầu tiên, chúng ta sẽ phân biệt các thành phần được quan sát ở trên:
+
+- WPA2/WPA3: là các giao thức bảo mật (luật lệ).
+- CCMP: CCMP là giao thức mã hóa dữ liệu (cách thức đóng gói) và sẽ sử dụng các thuật toán mã hóa nhất định.
+- AES: là lõi thuật toán (ổ khóa toán học) mà CCMP sử dụng để xáo trộn dữ liệu.
+  - Viết tắt của Advanced Encryption Standard.
+  - AES-128 là một thuật toán mã hóa khối (block cipher).
+  - AES là một thuật toán mã hóa đối xứng, có nghĩa là cùng một khóa được sử dụng để mã hóa và giải mã dữ liệu.
+- Kết hợp thành CCMP-AES-128, hay tạm gọi là Cipher AES.
+  - CCMP sử dụng AES để mã hóa dữ liệu, đảm bảo tính bảo mật và toàn vẹn của dữ liệu.
+
+#strong[Vai trò & Ý nghĩa của AES trong bảo mật Wi-Fi:]
+
+Ứng dụng:
+
+- Mã hóa: Dữ liệu từ thiết bị được mã hóa bằng AES, với một khóa dựa trên mật khẩu Wi-Fi đã được thống nhất giữa thiết bị và Router.
+- Truyền tải: Khối dữ liệu này được truyền tải qua mạng không dây, kẻ tấn công có thể bắt (sniff) các gói tin và lấy ra các khối dữ liệu.
+- Giải mã: Kẻ tấn công không thể giải mã dữ liệu nếu không có khóa. Router sẽ giải mã vì sở hữu khóa tương ứng.
+
+Ý nghĩa:
+
+- Xác thực: AES đảm bảo rằng chỉ những thiết bị có khóa chính xác mới có thể kết nối vào mạng Wi-Fi.
+- Tính toàn vẹn: AES đảm bảo rằng dữ liệu không bị thay đổi trong quá trình truyền.
+- An toàn: Gói tin hoặc khối dữ liệu có thể được bắt (sniff) nhưng không thể được giải mã nếu không có khóa chính xác.
