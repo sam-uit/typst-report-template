@@ -27,7 +27,16 @@ Luôn yêu cầu FaceID cho bất kỳ tác vụ quan trọng nào:
 
 - Android: System Update
 - iOS: Software Update
-- Chụp màn hình
+
+Thiết bị: iPhone
+
+- Phiên bản iOS: mới nhất tại thời điểm hiện tại.
+
+![Bài 9. Kiểm Tra Cập Nhật Hệ Điều Hành](assets/09-ios.jpg)
+
+- Auto Update: bật. Đảm bảo luôn nhận thông báo về phiên bản mới nhất.
+
+![Bài 9. Auto Update](assets/09-update.jpg)
 
 ## Bài 10. Kiểm Soát Quyền Ứng Dụng
 
