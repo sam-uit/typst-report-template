@@ -1,130 +1,75 @@
 #import "../template/lib.typ": *
 
-= TIẾT 1. KHẢO SÁT WI-FI & NHẬN DIỆN NGUY CƠ
-<tiet-1-khao-sat-wi-fi-nhan-dien-nguy-co>
+= PHẦN 1 — XÁC ĐỊNH TÀI SẢN (ASSET IDENTIFICATION)
+<phan-1-xac-dinh-tai-san>
 
 
-== Bài 1. Quét Và Liệt Kê Wi-Fi Xung Quanh
-<bai-1-quet-va-liet-ke-wi-fi-xung-quanh>
+== Bối Cảnh Được Chọn
+<boi-canh-duoc-chon>
 
-- Bước 1: Mở Command Prompt
-- Bước 2: Chạy lệnh `netsh wlan show networks mode=bssid`
-- Bước 3: Quan sát và chụp màn hình các thông tin:
-  - SSID
-  - Authentication
-  - Encryption
-  - Signal
-- Bước 4: Hoàn thành bảng sau (ít nhất 8 mạng, nếu không đủ thì ghi rõ lý do):
+Sinh viên chọn *Bối cảnh 3*: Điện thoại thông minh của sinh viên dùng cho:
 
-#show table.cell: set text(size: 0.8em)
-#table(
-  columns: (1fr,) * 6,
-  align: (left, left, left, left, left, left),
-  [STT], [SSID], [Authentication], [Encryption], [Signal], [Đánh giá],
-  [1], [], [], [], [], [],
-  [2], [], [], [], [], [],
-  [3], [], [], [], [], [],
-)
-Gợi ý đánh giá:
+- Mạng xã hội (Facebook, Instagram, TikTok, Zalo)
+- Ngân hàng / ví điện tử (Internet Banking, MoMo, ViettelPay)
+- Email (Gmail)
 
-- Open / None → Không an toàn
-- WPA2-PSK (AES) → Tốt
-- WPA3 → Rất tốt
+Điện thoại thông minh ngày nay không chỉ là thiết bị liên lạc mà còn là kho lưu trữ
+tập trung nhiều loại dữ liệu nhạy cảm — từ thông tin tài chính, danh tính cá nhân
+đến lịch sử giao tiếp. Vì vậy đây là bối cảnh phù hợp để thực hành nhận diện và
+phân tích rủi ro an ninh thông tin.
 
-=== Liệt Kê Wi-Fi Xung Quanh
-<liet-ke-wi-fi-xung-quanh>
+== Bước 1 & 2 — Danh Sách Tài Sản Thông Tin
+<buoc-1-2-danh-sach-tai-san>
 
-Do đang sử dụng macOS trên Apple Silicon, và không có khả năng triển khai các Windows VM có hỗ trợ wifi, và hiện cũng không mượn được máy Windows, vì vậy sinh viên xin phép sử dụng ứng dụng WIFI Explore Pro (có trên App Store) để thực hiện bài thực hành này.
-
-Danh sách các mạng Wi-Fi xung quanh khu vực sinh viên học tập:
-
-- SSID ở đây được gọi là Network Name.
-- Tất cả các WIFI đều sử dụng một chế độ bảo mật cụ thể.
-- Luôn yêu cầu xác thực (không có mạng mở free-wifi).
-- Tín hiệu khá tốt ở hầu hết các WIFI (trên 50%).
-
-#figure(image("assets/01-01-wifi-list.png"),
-  caption: [
-    Bài 1. Danh Sách Wi-Fi Tìm Thấy
-  ]
-)
-
-=== Bảng Liệt Kê Và Đánh Giá
-<bang-liet-ke-va-danh-gia>
-
-- Encryption cho biết rõ là CCMP bao nhiêu bit.
-- Signal hiển thị ở dạng số nguyên, giá trị càng lớn, wifi càng mạnh.
+Dưới đây là 6 tài sản thông tin được xác định trong bối cảnh sử dụng điện thoại
+thông minh, kèm mô tả ngắn gọn và đánh giá giá trị.
 
 #figure(
   table(
-    columns: (5%, 24%, 28%, 14%, 15%, 14%),
-    align: (left, left, left, left, right, left),
-    [stt], [SSID], [Authentication], [Encryption], [Signal (dBm)], [Đánh Giá],
-    [1], [\@Ruijie-b56D2], [WPA/WPA2 (PSK)], [CCMP-128], [\-70], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [2], [Appalasami Family], [WPA2 (PSK)], [CCMP-128], [\-71], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [3], [appalasami-TIME5Ghz], [WPA2 (PSK)], [CCMP-128], [\-73], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [4], [Charlesmanor], [WPA/WPA2 (PSK)], [TKIP], [\-71], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [5], [dato\_salim\_2.4G], [WPA/WPA2 (PSK)], [TKIP], [\-69], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [6], [Hash], [WPA2/WPA3 (PSK/SAE)], [CCMP-128], [\-64], [#text(fill: green)[#sym.checkmark.heavy #sym.checkmark.heavy] Rất Tốt],
-    [7], [Hecoo], [WPA2/WPA3 (PSK/SAE)], [CCMP-128], [\-63], [#text(fill: green)[#sym.checkmark.heavy #sym.checkmark.heavy] Rất Tốt],
-    [8], [jhsw1965 5G], [WPA2 (PSK)], [CCMP-128], [\-71], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [9], [JustinTmj], [WPA/WPA2 (PSK)], [CCMP-128], [\-74], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [10], [Perlla], [WPA2/WPA3 (PSK/SAE)], [CCMP-128], [\-87], [#text(fill: green)[#sym.checkmark.heavy #sym.checkmark.heavy] Rất Tốt],
-    [11], [r33\_5G], [WPA2 (PSK)], [CCMP-128], [\-70], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [12], [Rog\_SpgC47], [WPA2 (PSK)], [CCMP-128], [\-46], [#text(fill: green)[#sym.checkmark.heavy] Tốt]
+    columns: (4%, 28%, 48%, 20%),
+    align: (center, left, left, center),
+    table.header(
+      [*STT*], [*Tài Sản*], [*Mô Tả*], [*Giá Trị*],
+    ),
+    [1],
+    [Tài khoản mạng xã hội \ (Facebook, Instagram, TikTok, Zalo)],
+    [Chứa thông tin cá nhân, danh sách bạn bè, lịch sử hội thoại, ảnh/video cá nhân. Bị xâm phạm có thể dẫn đến mạo danh, lừa đảo người thân hoặc tống tiền.],
+    [#text(fill: red)[Cao]],
+
+    [2],
+    [Tài khoản ngân hàng / ví điện tử \ (Internet Banking, MoMo, ViettelPay)],
+    [Liên kết trực tiếp đến tài sản tài chính. Bị mất quyền kiểm soát đồng nghĩa với nguy cơ mất tiền ngay lập tức và khó thu hồi.],
+    [#text(fill: red)[Cao]],
+
+    [3],
+    [Email cá nhân \ (Gmail)],
+    [Là "chìa khóa chủ" — dùng để khôi phục mật khẩu hầu hết các dịch vụ khác. Nếu bị chiếm, kẻ tấn công có thể kiểm soát toàn bộ danh tính số của người dùng.],
+    [#text(fill: red)[Cao]],
+
+    [4],
+    [Danh bạ liên lạc],
+    [Chứa số điện thoại, tên và mối quan hệ của người thân, bạn bè, đồng nghiệp. Dữ liệu này có giá trị với kẻ lừa đảo (social engineering) hoặc spammer.],
+    [#text(fill: orange)[Trung Bình]],
+
+    [5],
+    [Ảnh và video cá nhân \ (Bộ nhớ trong / thư viện ảnh)],
+    [Lưu trữ kỷ niệm cá nhân, ảnh nhạy cảm, tài liệu chụp bằng camera (CMND, thẻ ngân hàng, hợp đồng). Rò rỉ có thể gây tổn hại danh dự hoặc tạo điều kiện giả mạo giấy tờ.],
+    [#text(fill: orange)[Trung Bình]],
+
+    [6],
+    [Lịch sử trò chuyện \ (SMS, Messenger, Zalo)],
+    [Ghi lại các cuộc hội thoại riêng tư, có thể chứa thông tin nhạy cảm như mã OTP, địa chỉ, kế hoạch cá nhân. Bị rò rỉ ảnh hưởng đến quyền riêng tư và có thể bị dùng để ép buộc.],
+    [#text(fill: orange)[Trung Bình]],
   ),
-caption: [Bài 1. Bảng Liệt Kê Và Đánh Giá WIFI]
+  caption: [Bảng 1 — Danh Sách Tài Sản Thông Tin (Bối Cảnh 3: Điện Thoại Thông Minh)]
 )
 
-== Bài 2. Phân Loại Wi-Fi Theo Mức Độ An Toàn
-<bai-2-phan-loai-wi-fi-theo-muc-do-an-toan>
+== Nhận Xét Chung
+<nhan-xet-chung-phan-1>
 
-Sinh viên tự chia các Wi-Fi đã quét vào 3 nhóm:
-
-- Nhóm A: An Toàn
-- Nhóm B: Trung Bình
-- Nhóm C: Nguy Hiểm
-
-Đánh giá chung:
-
-- Nhóm A là các Wi-Fi dùng WPA2/WPA3, nhóm B là các Wi-Fi dùng WPA/WPA2.
-- Tất cả các mạng Wi-Fi đều dùng một cơ chế bảo mật nhất định.
-  - Vì vậy, không có Wi-Fi nào được xếp vào nhóm C.
-- Các chuẩn phổ biến được dùng là WPA2, vì các Wi-Fi đều ở quy mô gia đình.
-  - Một số Wi-Fi hỗ trợ WPA3, đây thường là các thiết bị phát sóng thế hệ mới.
-
-#figure(
-table(
-  columns: (5%, 24%, 28%, 15%, 28%),
-  align: (left, left, left, left, left),
-  [stt], [SSID], [Authentication], [Nhóm], [Lý Do], 
-  [1], [\@Ruijie-b56D2], [WPA/WPA2 (PSK)], [Trung Bình], [Cho phép fall-back về WPA vốn yếu hơn.],
-  [2], [Appalasami Family], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.],
-  [3], [appalasami-TIME5Ghz], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.],
-  [4], [Charlesmanor], [WPA/WPA2 (PSK)], [Trung Bình], [Cho phép fall-back về WPA vốn yếu hơn.],
-  [5], [dato\_salim-2.4G], [WPA/WPA2 (PSK)], [Trung Bình], [Cho phép fall-back về WPA vốn yếu hơn.],
-  [6], [Hash], [WPA2/WPA3 (PSK/SAE)], [An Toàn], [WPA3 phù hợp cho cả môi trường doanh nghiệp.],
-  [7], [Hecoo], [WPA2/WPA3 (PSK/SAE)], [An Toàn], [WPA3 phù hợp cho cả môi trường doanh nghiệp.],
-  [8], [jhsw1965 5G], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.],
-  [9], [JustinTmj], [WPA/WPA2 (PSK)], [Trung Bình], [Cho phép fall-back về WPA vốn yếu hơn.],
-  [10], [Perlla], [WPA2/WPA3 (PSK/SAE)], [An Toàn], [WPA3 phù hợp cho cả môi trường doanh nghiệp.],
-  [11], [r33\_5G], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.],
-  [12], [Rog\_SpgC47], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.]
-),
-caption: [Bài 2. Phân Loại WIFI Theo Mức Độ An Toàn]
-)
-
-== Câu Hỏi Ngắn
-<cau-hoi-ngan>
-
-#quote(block: true)[
-Vì sao Wi-Fi không đặt mật khẩu vẫn có người sử dụng?
-]
-
-Một số nguyên nhân như:
-
-- Môi trường chia sẻ Wi-Fi công cộng và muốn đơn giản hóa việc kết nối.
-- Sự tương thích với các thiết bị có chuẩn cũ, hoặc kết nối đặc thù.
-- Các mạng ngang hàng/Ad-hoc, vòng đời chia sẻ ngắn.
-- Các mạng Wi-Fi cô lập và không có kết nối Internet hoặc hạ tầng quan trọng.
-- Sử dụng các hình thức xác thực khác, ví dụ đăng ký qua cổng Captive Portal, hoặc cơ chế xác thực nội bộ (Enterprise).
+Trong 6 tài sản trên, ba tài sản đầu (tài khoản mạng xã hội, tài khoản tài chính,
+và email) được đánh giá ở mức *Cao* vì chúng gắn trực tiếp đến danh tính, tài
+sản và khả năng phục hồi các tài khoản khác. Ba tài sản còn lại mang giá trị
+*Trung Bình* — không gây thiệt hại tài chính trực tiếp nhưng vẫn ảnh hưởng
+nghiêm trọng đến quyền riêng tư nếu bị xâm phạm. Không có tài sản nào được
+xếp loại *Thấp* vì tất cả đều chứa thông tin cá nhân có thể bị lợi dụng.
