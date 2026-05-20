@@ -8,12 +8,17 @@
 // Load acronyms
 #let acronyms = csv("content/acronyms.csv")
 
-// Show document with thesis type
-#show: document.with(..data, acronyms: acronyms, doc-type: "thesis")
-
-// Đặt font cho code ở 0.8 để tiết kiệm không gian.
-// TODO: Cập nhật raw text size vào template.
-#show raw: set text(size: 0.8em)
+// Show document with thesis class
+#show: document.with(
+  ..data,
+  doc-class: "thesis",
+  paper: "a4",
+  font-size: 11pt,
+  two-sided: false,
+  output: "digital",
+  lang: "vi",
+  acronyms: acronyms,
+)
 
 // Content goes here
 #include "content/chapter01.typ"
@@ -23,9 +28,9 @@
 #include "content/chapter05.typ"
 
 // Show appendix
-#show: appendix
+#show: appendix-l10n.with("vi")
 #include "content/appendixA.typ"
 
 // Show bibliography
-#show: bibliography-page
+#show: bibliography-page-l10n.with("vi")
 #bibliography("content/bibliography.yaml", title: "Tài Liệu Tham Khảo", style: "ieee")
