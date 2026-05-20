@@ -1,90 +1,61 @@
 #import "../template/lib.typ": *
 
-= PHẦN 3 — XÁC ĐỊNH LỖ HỔNG (VULNERABILITY IDENTIFICATION)
-<phan-3-xac-dinh-lo-hong>
+= PHẦN 3 — LỢI ÍCH VÀ THÁCH THỨC
+<phan-3-loi-ich-va-thach-thuc>
 
+Việc triển khai Zero Trust Security mang lại nhiều lợi ích đáng kể cho tổ chức,
+nhưng cũng đi kèm với không ít thách thức. Phần này phân tích cả hai mặt để có
+cái nhìn toàn diện.
 
-== Bước 4 — Phân Tích Lỗ Hổng Theo Mối Đe Dọa
-<buoc-4-phan-tich-lo-hong>
-
-Với mỗi mối đe dọa đã xác định ở Phần 2, dưới đây phân tích lỗ hổng hiện có
-trong thói quen sử dụng điện thoại thông minh khiến mối đe dọa đó dễ xảy ra hơn.
-
-#show table.cell: set text(size: 0.82em)
 #figure(
   table(
-    columns: (5%, 34%, 61%),
-    align: (center, left, left),
+    columns: (12%, 5%, 28%, 55%),
+    align: (center, center, left, left),
     table.header(
-      [*Mã*], [*Mối Đe Dọa*], [*Lỗ Hổng Liên Quan*],
+      [*Nhóm*], [*STT*], [*Nội Dung*], [*Giải Thích*],
     ),
-    [T1],
-    [Account Hijacking (TS1)],
-    [Không bật xác thực 2 bước (2FA); mật khẩu ngắn, đơn giản hoặc tái sử dụng trên nhiều dịch vụ.],
 
-    [T2],
-    [Lộ thông tin qua privacy sai (TS1)],
-    [Cài đặt mặc định của ứng dụng mạng xã hội thường là "công khai"; người dùng không kiểm tra lại sau khi ứng dụng cập nhật chính sách.],
+    table.cell(rowspan: 4, align: center + horizon)[#text(fill: green.darken(20%))[*Lợi\ ích*]],
+    [1],
+    [Giảm thiểu phạm vi tấn công],
+    [Nhờ nguyên tắc quyền tối thiểu và phân đoạn vi mô, ngay cả khi kẻ tấn công xâm nhập được một phần hệ thống, chúng không thể di chuyển ngang sang các tài nguyên khác. Theo thống kê, tổ chức triển khai Zero Trust giảm đến 50% số vụ vi phạm dữ liệu.],
 
-    [T3],
-    [Fake App (TS1)],
-    [Thói quen tải APK từ nguồn ngoài kho chính thức (sideloading); thiếu kiểm tra danh tính nhà phát triển và đánh giá ứng dụng.],
+    [2],
+    [Tăng cường khả năng phát hiện sớm],
+    [Giám sát liên tục và phân tích hành vi cho phép phát hiện các bất thường (anomaly) trong thời gian thực. Hệ thống có thể tự động thu hồi quyền truy cập ngay khi nhận thấy dấu hiệu đáng ngờ, thay vì chờ đến khi thiệt hại đã xảy ra.],
 
-    [T4],
-    [Phishing / Smishing (TS2)],
-    [Nhấp vào đường link trong SMS/email mà không kiểm tra URL; thiếu nhận thức về dấu hiệu nhận biết trang web giả mạo.],
+    [3],
+    [Hỗ trợ làm việc từ xa an toàn],
+    [Zero Trust không phụ thuộc vào vị trí mạng, nên nhân viên có thể truy cập tài nguyên công ty từ bất kỳ đâu mà vẫn đảm bảo an toàn — không cần VPN truyền thống. Điều này đặc biệt phù hợp với xu thế hybrid/remote work hậu COVID-19.],
 
-    [T5],
-    [SIM Swapping (TS2)],
-    [Thông tin cá nhân (tên, ngày sinh, số CMND) bị lộ trên mạng xã hội; phụ thuộc hoàn toàn vào SMS OTP làm phương thức xác thực duy nhất.],
+    [4],
+    [Đáp ứng yêu cầu tuân thủ],
+    [Mô hình Zero Trust cung cấp kiểm toán chi tiết (audit trail) cho mọi truy cập, giúp tổ chức dễ dàng chứng minh tuân thủ các quy định như GDPR, HIPAA hay Luật An ninh mạng Việt Nam. Khả năng kiểm soát truy cập theo ngữ cảnh cũng đáp ứng các tiêu chuẩn bảo mật quốc tế.],
 
-    [T6],
-    [Trojan trên điện thoại (TS2)],
-    [Cài ứng dụng từ kho bên thứ ba hoặc file APK chia sẻ qua Zalo/Telegram; không bật tính năng Play Protect (Android).],
+    table.cell(rowspan: 4, align: center + horizon)[#text(fill: red.darken(10%))[*Thách\ thức*]],
+    [1],
+    [Chi phí triển khai cao],
+    [Chuyển đổi từ mô hình truyền thống sang Zero Trust đòi hỏi đầu tư lớn về hạ tầng, phần mềm và nhân lực. 48% doanh nghiệp trong một khảo sát năm 2025 cho biết chi phí và nguồn lực là rào cản lớn nhất. Đặc biệt, việc tích hợp với hệ thống legacy (cũ) có thể rất phức tạp và tốn kém.],
 
-    [T7],
-    [Credential Stuffing (TS3)],
-    [Tái sử dụng cùng một mật khẩu cho nhiều dịch vụ; không bật cảnh báo đăng nhập từ thiết bị hoặc địa điểm lạ.],
+    [2],
+    [Thay đổi văn hóa tổ chức],
+    [Zero Trust yêu cầu chuyển từ tư duy "tin tưởng rồi xác minh" sang "không tin tưởng, luôn xác minh". Sự thay đổi này gặp phải sức ép từ nhân viên quen với cách làm việc cũ, cảm thấy bất tiện khi phải xác thực nhiều lần. Cần có chương trình đào tạo và truyền thông bài bản để thay đổi nhận thức.],
 
-    [T8],
-    [Truy cập thiết bị bị mất (TS3)],
-    [Không đặt mã PIN / mật khẩu màn hình khóa; thời gian tự khóa màn hình quá dài (> 5 phút) hoặc bị tắt hoàn toàn.],
+    [3],
+    [Độ phức tạp kỹ thuật],
+    [Triển khai phân đoạn vi mô, giám sát liên tục và chính sách truy cập động trên quy mô lớn là thách thức kỹ thuật đáng kể. Trong môi trường đa đám mây (multi-cloud) với container, serverless và microservices, việc áp dụng Zero Trust cho từng thành phần đòi hỏi chuyên môn sâu và công cụ phù hợp.],
 
-    [T9],
-    [App quyền danh bạ (TS4)],
-    [Cấp quyền tùy tiện khi ứng dụng yêu cầu mà không đọc mục đích sử dụng; không rà soát lại danh sách quyền đã cấp định kỳ.],
-
-    [T10],
-    [Đồng bộ cloud không bảo mật (TS4)],
-    [Mật khẩu tài khoản Google / iCloud yếu hoặc tái sử dụng; không bật 2FA cho tài khoản cloud.],
-
-    [T11],
-    [Rò rỉ qua cloud backup (TS5)],
-    [Sao lưu tự động được bật mặc định mà người dùng không kiểm tra nội dung được đồng bộ; ảnh nhạy cảm không được lưu riêng hoặc mã hóa cục bộ.],
-
-    [T12],
-    [App chỉnh sửa ảnh độc hại (TS5)],
-    [Cấp quyền đọc/ghi toàn bộ thư viện ảnh cho ứng dụng không đáng tin cậy; tải ứng dụng chỉnh sửa ảnh miễn phí từ nguồn không chính thống.],
-
-    [T13],
-    [SMS Interception (TS6)],
-    [Phụ thuộc hoàn toàn vào SMS để nhận OTP thay vì dùng ứng dụng xác thực (Authenticator App) độc lập với mạng di động.],
-
-    [T14],
-    [Spyware (TS6)],
-    [Cho phép người khác mượn và sử dụng điện thoại không có giám sát; không bật App Lock cho các ứng dụng nhạy cảm.],
+    [4],
+    [Ảnh hưởng đến trải nghiệm người dùng],
+    [Xác thực liên tục và kiểm soát truy cập nghiêm ngặt có thể gây ra ma sát (friction) trong trải nghiệm làm việc hàng ngày. Nếu không được thiết kế cẩn thận, hệ thống có thể làm giảm năng suất lao động khi người dùng phải xác thực quá nhiều lần hoặc bị từ chối quyền truy cập do chính sách quá khắt khe.],
   ),
-  caption: [Bảng 3 — Lỗ Hổng Liên Quan Đến Từng Mối Đe Dọa],
+  caption: [Bảng 2 — Lợi Ích và Thách Thức Của Zero Trust Security]
 )
 
-== Nhận Xét Tổng Hợp Về Lỗ Hổng
-<nhan-xet-lo-hong>
+== Tổng Kết
+<tong-ket-loi-ich-thach-thuc>
 
-Phân tích cho thấy hầu hết các lỗ hổng đều bắt nguồn từ *thói quen người dùng*
-chứ không phải từ lỗi kỹ thuật của hệ thống. Ba nhóm lỗ hổng nổi bật nhất:
-
-- *Xác thực yếu*: Không dùng 2FA, mật khẩu đơn giản, tái sử dụng mật khẩu -- xuất hiện trong 5/14 mối đe dọa.
-- *Cài đặt ứng dụng thiếu cẩn thận*: Sideloading APK, không kiểm tra quyền -- xuất hiện trong 4/14 mối đe dọa.
-- *Thiếu cấu hình bảo vệ thiết bị*: Không có màn hình khóa, thời gian tự khóa dài -- ảnh hưởng trực tiếp đến truy cập vật lý trái phép.
-
-#co-info[Lỗ hổng phổ biến trong thói quen người dùng đồng nghĩa với xác suất bị khai thác cao hơn -- đây là nền tảng để đánh giá Khả năng xảy ra (Likelihood) trong Phần 4.]
+Nhìn chung, lợi ích của Zero Trust vượt trội so với thách thức — nhưng thách thức
+không nên bị xem nhẹ. Các tổ chức thành công thường áp dụng chiến lược triển khai
+từng giai đoạn (phased approach), bắt đầu từ những tài sản quan trọng nhất và mở
+rộng dần, thay vì cố gắng chuyển đổi toàn bộ cùng lúc.

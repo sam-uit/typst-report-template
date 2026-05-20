@@ -1,89 +1,49 @@
 #import "../template/lib.typ": *
 
-= TIẾT 4. BẢO MẬT THIẾT BỊ DI ĐỘNG (THỰC HÀNH BẮT BUỘC)
-<tiet-4-bao-mat-thiet-bi-di-dong-thuc-hanh-bat-buoc>
+= PHẦN 4 — TÁC ĐỘNG ĐẾN AN NINH THÔNG TIN
+<phan-4-tac-dong-den-attt>
 
+Zero Trust Security không chỉ là một công nghệ hay sản phẩm cụ thể mà là một sự
+thay đổi mô hình tư duy (paradigm shift) trong cách tiếp cận an ninh thông tin.
+Phần này phân tích tác động của xu thế đến ba nhóm đối tượng chính.
 
-== Bài 8. Thiết Lập Khóa Màn Hình An Toàn
-<bai-8-thiet-lap-khoa-man-hinh-an-toan>
+== Tác Động Đến Người Dùng Cá Nhân
+<tac-dong-nguoi-dung>
 
-- PIN $gt.eq$ 6 số hoặc mật khẩu.
-- Bật vân tay / FaceID (nếu có).
-- Chụp màn hình mục cấu hình (không lộ mã).
+Đối với người dùng cá nhân, Zero Trust thể hiện qua những thay đổi cụ thể trong
+cách họ tương tác với các dịch vụ số hàng ngày. Xác thực đa yếu tố (MFA) — từ
+mã OTP qua SMS đến xác thực sinh trắc học trên điện thoại — đã trở thành tiêu
+chuẩn bắt buộc trên hầu hết các nền tảng lớn như Google, Facebook và các ứng dụng
+ngân hàng. Người dùng cũng ngày càng quen thuộc với việc bị yêu cầu xác thực lại
+khi truy cập từ thiết bị mới hoặc vị trí bất thường. Dù đôi khi gây bất tiện,
+những biện pháp này đã giúp giảm đáng kể số vụ đánh cắp tài khoản cá nhân. Đặc
+biệt, các ứng dụng ngân hàng tại Việt Nam đã áp dụng xác thực sinh trắc học theo
+quy định của Ngân hàng Nhà nước từ năm 2024, đây chính là việc áp dụng triết lý
+Zero Trust ở cấp người dùng cuối.
 
-Thiết bị: iPhone.
+== Tác Động Đến Doanh Nghiệp và Tổ Chức
+<tac-dong-doanh-nghiep>
 
-Mã Pin: 10111997
+Với doanh nghiệp, Zero Trust tạo ra sự thay đổi căn bản trong kiến trúc bảo mật.
+Thay vì đầu tư vào tường lửa vành đai ngày càng lớn, doanh nghiệp chuyển sang
+mô hình bảo mật phân tán — mỗi ứng dụng, mỗi dịch vụ đều có lớp bảo vệ riêng.
+Google là ví dụ tiên phong khi triển khai BeyondCorp từ năm 2011, cho phép nhân
+viên làm việc từ bất kỳ mạng nào mà không cần VPN. Mô hình này đặc biệt quan
+trọng trong bối cảnh 81% doanh nghiệp toàn cầu có kế hoạch triển khai Zero Trust
+trước năm 2026. Tại Việt Nam, Công ty An ninh mạng Viettel (thuộc Tập đoàn Viettel)
+là một trong những đơn vị đi đầu trong việc nghiên cứu và triển khai mô hình
+Zero Trust cho các hệ thống nội bộ và khách hàng doanh nghiệp.
 
-- 6 chữ số
-- Luôn yêu cầu mã PIN ngay khi khóa màn hình.
+== Tác Động Đến Công Tác Quản Lý An Toàn Thông Tin
+<tac-dong-quan-ly-attt>
 
-#figure(image("assets/08-passcode.png"),
-  caption: [
-    Bài 8. Màn Hình Khóa Điện Thoại
-  ]
-)
-
-Luôn yêu cầu FaceID cho bất kỳ tác vụ quan trọng nào:
-
-- Mở khóa iPhone.
-- Thanh toán.
-- Điền mật khẩu.
-
-#figure(image("assets/08-faceid.png"),
-  caption: [
-    Bài 8. FaceID
-  ]
-)
-
-== Bài 9. Kiểm Tra Cập Nhật Hệ Điều Hành
-<bai-9-kiem-tra-cap-nhat-he-dieu-hanh>
-
-- Android: System Update
-- iOS: Software Update
-
-Thiết bị: iPhone
-
-- Phiên bản iOS: mới nhất tại thời điểm hiện tại.
-
-#figure(image("assets/09-ios.jpg"),
-  caption: [
-    Bài 9. Kiểm Tra Cập Nhật Hệ Điều Hành
-  ]
-)
-
-- Auto Update: bật. Đảm bảo luôn nhận thông báo về phiên bản mới nhất.
-
-#figure(image("assets/09-update.jpg"),
-  caption: [
-    Bài 9. Auto Update
-  ]
-)
-
-== Bài 10. Kiểm Soát Quyền Ứng Dụng
-<bai-10-kiem-soat-quyen-ung-dung>
-
-- Bước 1: Settings → Privacy → Location / Camera / Microphone
-- Bước 2: Chọn 1 ứng dụng → chỉnh:
-  - While using app / Ask every time
-- Bước 3: Chụp màn hình
-
-Ứng dụng: AirAsia MOVE
-
-- Camera: Tắt.
-  - Không có lý do gì để ứng dụng này có quyền truy cập camera trong khi chỉ dùng để mua vé máy bay.
-
-#figure(image("assets/10-camera.png"),
-  caption: [
-    Bài 10. Kiểm Soát Quyền Ứng Dụng - Camera
-  ]
-)
-
-- Location: While Using (the App).
-  - Chỉ cho phép truy cập vị trí khi đang sử dụng ứng dụng, nhằm gợi ý các chuyến bay phù hợp với vị trí hiện tại.
-
-#figure(image("assets/10-location.png"),
-  caption: [
-    Bài 10. Kiểm Soát Quyền Ứng Dụng - Location
-  ]
-)
+Về mặt quản lý, Zero Trust buộc các tổ chức phải xây dựng lại chính sách an toàn
+thông tin từ nền tảng. Thay vì phân loại đơn giản "mạng nội bộ = an toàn", quản
+trị viên phải thiết kế chính sách truy cập dựa trên ngữ cảnh (context-aware
+access) — xem xét danh tính người dùng, trạng thái thiết bị, thời gian truy cập
+và mức độ nhạy cảm của tài nguyên. Điều này đòi hỏi đội ngũ quản lý ATTT phải
+nâng cao năng lực chuyên môn, đầu tư vào công cụ SIEM (Security Information and
+Event Management) và SOAR (Security Orchestration, Automation and Response) để
+xử lý lượng lớn dữ liệu giám sát. Mặt tích cực là Zero Trust cung cấp khả năng
+kiểm toán (audit) và báo cáo chi tiết hơn, giúp công tác quản lý ATTT trở nên
+minh bạch và có cơ sở dữ liệu hơn so với mô hình truyền thống.
