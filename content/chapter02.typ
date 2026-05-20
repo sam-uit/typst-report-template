@@ -1,71 +1,51 @@
 #import "../template/lib.typ": *
 
-= Phân Tích Và Thiết Kế
-<phan-tich-va-thiet-ke>
+= Callout Boxes
+<callout-boxes>
 
+Callout boxes được dùng để làm nổi bật thông tin quan trọng. Có năm kiểu callout
+với màu sắc và ý nghĩa khác nhau.
 
-== Các Chức Năng Nghiệp Vụ
-<cac-chuc-nang-nghiep-vu>
+== Các Kiểu Callout
+<cac-kieu-callout>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+#co-note[
+  *Note* -- Ghi chú thông thường, dùng cho thông tin bổ sung không quan trọng.
+  Ví dụ: nhắc nhở về cú pháp hoặc quy ước đặt tên.
+]
 
-#figure(image("assets/macos-fhs-root-system.png"),
-  caption: [
-    Ví dụ về chèn Hình Ảnh PNG.
-  ]
-)
+#co-info[
+  *Info* -- Thông tin hữu ích, dùng để giải thích khái niệm hoặc cung cấp
+  ngữ cảnh bổ sung cho người đọc.
+]
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+#co-warn(title: "Lưu Ý Quan Trọng")[
+  *Warning* -- Cảnh báo, dùng khi người dùng cần thực hiện thêm bước
+  hoặc có nguy cơ mắc lỗi. Tiêu đề có thể tùy chỉnh qua tham số `title:`.
+]
 
-== Đối Tượng và Mối Quan Hệ
-<doi-tuong-va-moi-quan-he>
+#co-erro[
+  *Error* -- Lỗi nghiêm trọng hoặc điều không được phép làm. Dùng để
+  đánh dấu các hành động có thể gây mất dữ liệu hoặc lỗi hệ thống.
+]
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+#co-succ[
+  *Success* -- Thành công hoặc kết quả tích cực. Dùng để xác nhận một bước
+  đã hoàn thành đúng cách, hoặc highlight điểm mạnh của một giải pháp.
+]
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+== Callout Lồng Nhau Với Nội Dung Phong Phú
 
-== Mô Hình Mức Quan Niệm
-<mo-hinh-muc-quan-niem>
+#co-note(title: "Cú Pháp Sử Dụng")[
+  Tất cả callout hỗ trợ tham số `title:` tùy chọn và nội dung Typst đầy đủ:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+  ```typst
+  #co-note(title: "Tiêu Đề Tùy Chỉnh")[Nội dung callout...]
+  #co-warn[Nội dung không cần tiêu đề]
+  ```
 
-#figure(
-table(
-  columns: (1fr,) * 3,
-  align: (left, left, left),
-  [#strong[Thực Thể]], [#strong[Quan Hệ]], [#strong[Thực Thể]],
-  [#strong[Quản Trị Viên]], [được gán], [#strong[Vai Trò]],
-  [#strong[Vai Trò]], [có các], [#strong[Quyền Hạn]],
-  [#strong[Phòng]], [thuộc], [#strong[Loại Phòng]],
-  [#strong[Người Dùng]], [thực hiện], [#strong[Đặt Phòng]],
-  [#strong[Đặt Phòng]], [bao gồm], [#strong[Phòng]],
-  [#strong[Đặt Phòng]], [được áp dụng], [#strong[Mã Giảm Giá]],
-  [#strong[Đặt Phòng]], [được], [#strong[Thanh Toán]],
-  [#strong[Đặt Phòng]], [được], [#strong[Đánh Giá]],
-  [#strong[Người Dùng]], [viết], [#strong[Đánh Giá]],
-  [#strong[Người Dùng]], [thực hiện], [#strong[Thanh Toán]],
-  [#strong[Người Dùng]], [yêu cầu], [#strong[Hoàn Tiền]],
-  [#strong[Thanh Toán]], [được], [#strong[Hoàn Tiền]],
-  [#strong[Quản Trị Viên]], [duyệt], [#strong[Hoàn Tiền]],
-  [#strong[Đặt Phòng]], [có kèm], [#strong[Dịch Vụ]]
-),
-caption: [Ví dụ về Bảng]
-)
-Tóm tắt các thực thể và mối quan hệ bằng mô hình trực quan:
-
-#figure(image("diagrams/entity-relationship.svg"),
-  caption: [
-    Ví dụ về chèn Hình Ảnh SVG.
-  ]
-)
-
-#figure(image("diagrams/ch02-concept-erd-simplify.svg"),
-  caption: [
-    Ví dụ về Biểu Đồ ERD
-  ]
-)
-
-== Thiết Kế Cơ Sở Dữ Liệu
-<thiet-ke-co-so-du-lieu>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+  Danh sách bên trong callout cũng hoạt động bình thường:
+  - Mục 1: kiểm tra API
+  - Mục 2: kiểm tra hiệu năng
+  - Mục 3: kiểm tra bảo mật
+]
