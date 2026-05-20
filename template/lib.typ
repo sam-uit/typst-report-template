@@ -1,465 +1,284 @@
 // /template/lib.typ
-// Template library for reports and thesis
+// Template library — Public API
 // Author: Sam Dinh
-// Version: 0.1.0
+// Version: 0.2.0
 // License: MIT
+//
+// Usage (LaTeX-inspired):
+//
+//   #show: document.with(
+//     doc-class: "thesis",     // "article" | "report" | "book" | "thesis"
+//     paper: "a4",             // "a4" | "a5" | "letter"
+//     font-size: 12pt,         // any length
+//     two-sided: true,         // true | false
+//     output: "digital",       // "digital" | "print"
+//     lang: "vi",              // "en" | "vi" | "ms" | "zh-Hant" | "zh-Hans"
+//     components: (            // override individual toggles
+//       show-toc: true,
+//       show-lof: false,
+//     ),
+//     ..data,                  // metadata spread
+//     acronyms: acronyms,
+//   )
 
 // MARK: Imports
+
+// Sub-modules
 #import "fonts.typ": *
+#import "colors.typ": *
 #import "utils.typ": *
+#import "i18n.typ": i18n-labels
+#import "class-defaults.typ": class-defaults
+#import "geometry.typ": page-geometry, resolve-margins
+#import "output-profiles.typ": output-profile
+#import "formatting.typ": *
+#import "front-matter.typ": render-preamble-sections, render-lists
+
+// Components (re-exported for user convenience)
 #import "components/callout.typ": *
 #import "components/todo.typ": *
 #import "components/table.typ": *
 #import "components/cover.typ": cover-page
 
-// MARK: The Template
-// Chuẩn hóa: Gọi tên là document thay vì report
+// MARK: The Document Template
+
+/// The main document template function.
+/// Designed as a LaTeX-inspired class system with sensible defaults
+/// that can be overridden per-parameter.
+///
+/// Parameters marked `auto` fall through to the class defaults.
 #let document(
+  // ── Document Class ──────────────────────────────────
+  /// "article" | "report" | "book" | "thesis"
+  doc-class: "report",
+
+  // ── Page Geometry ───────────────────────────────────
+  /// "a4" | "a5" | "letter" — auto falls through to class default
+  paper: auto,
+  /// length | dictionary — auto falls through to class default
+  margin: auto,
+  /// true | false — auto falls through to class default
+  two-sided: auto,
+
+  // ── Typography ──────────────────────────────────────
+  /// Default font size — auto falls through to class default
+  font-size: auto,
+  /// Language code for i18n labels and Typst text lang
+  lang: "en",
+  /// Region code for Typst text region
+  region: auto,
+
+  // ── Output Mode ─────────────────────────────────────
+  /// "digital" | "print"
+  output: "digital",
+
+  // ── Component Toggles ───────────────────────────────
+  /// Dictionary of booleans — merged onto class defaults
+  /// e.g., (show-toc: false, show-lof: false)
+  components: (:),
+
+  // ── Content Metadata ────────────────────────────────
   university: (:),
   course: (:),
   instructor: "",
   author: (:),
   assignment: (:),
-  // Lớp/Loại tài liệu, mặc định là report
-  doc-type: "report",
   acronyms: none,
+
+  // ── Sink + Body ─────────────────────────────────────
   ..args,
   body,
 ) = {
-  // Cài đặt metadata cho file PDF (tránh shadow function document)
+  // ════════════════════════════════════════════════════
+  // 1. RESOLVE CONFIGURATION
+  // ════════════════════════════════════════════════════
+
+  // Get class defaults, fallback to "report" if unknown class
+  let defaults = if doc-class in class-defaults {
+    class-defaults.at(doc-class)
+  } else {
+    class-defaults.at("report")
+  }
+
+  // Resolve auto parameters — user overrides take precedence
+  let cfg-paper = if paper == auto { defaults.paper } else { paper }
+  let cfg-font-size = if font-size == auto { defaults.font-size } else { font-size }
+  let cfg-two-sided = if two-sided == auto { defaults.two-sided } else { two-sided }
+  let cfg-margin = if margin == auto { defaults.margin } else { margin }
+  let cfg-par-leading = defaults.par-leading
+  let cfg-par-spacing = defaults.par-spacing
+  let cfg-heading-numbering = defaults.heading-numbering
+  let cfg-chapter-pagebreak = defaults.chapter-pagebreak
+
+  // Merge component flags: class defaults ← user overrides
+  let cfg = dict-merge(defaults, components)
+  // Inject resolved geometry and typography back into config
+  let cfg = dict-merge(cfg, (
+    doc-class: doc-class,
+    paper: cfg-paper,
+    font-size: cfg-font-size,
+    two-sided: cfg-two-sided,
+    margin: cfg-margin,
+    chapter-pagebreak: cfg-chapter-pagebreak,
+  ))
+
+  // Resolve output profile and i18n labels
+  let profile = output-profile(output)
+  let labels = i18n-labels(lang)
+
+  // Resolve page geometry
+  let geo = page-geometry(cfg-paper, cfg-margin, cfg-two-sided)
+
+  // Resolve region from lang if auto
+  let cfg-region = if region == auto {
+    if lang == "vi" { "vn" }
+    else if lang == "ms" { "my" }
+    else if lang == "zh-Hant" { "tw" }
+    else if lang == "zh-Hans" { "cn" }
+    else { "us" }
+  } else { region }
+
+  // ════════════════════════════════════════════════════
+  // 2. PDF METADATA
+  // ════════════════════════════════════════════════════
+
   set std.document(
     title: if "title" in assignment { assignment.title } else { "" }
       + if "subtitle" in assignment { ": " + assignment.subtitle } else { "" },
-    author: if "name" in author { author.name } else { "" } + if "id" in author { " (" + author.id + ")" } else { "" },
-    keywords: (if "id" in course { course.id } else { "" }, if "name" in course { course.name } else { "" }),
+    author: if "name" in author { author.name } else { "" }
+      + if "id" in author { " (" + author.id + ")" } else { "" },
+    keywords: (
+      if "id" in course { course.id } else { "" },
+      if "name" in course { course.name } else { "" },
+    ),
     date: datetime.today(),
   )
 
-  // Anchor/Móc cho nút [Back to Top]
+  // ════════════════════════════════════════════════════
+  // 3. PAGE & TEXT SETUP
+  // ════════════════════════════════════════════════════
+
+  // Anchor for [Back to Top]
   [#metadata("top") <top>]
 
-  // MARK: Page & Text Setup
-  // Cài đặt khoảng cách lề (margin) cho trang.
-  set page(margin: 2.5cm)
+  // Page geometry
+  set page(..geo)
 
-  // Cài đặt font chữ cho body.
+  // Typography
   set text(
     font: body-font,
-    size: 12pt,
+    size: cfg-font-size,
     weight: "regular",
-    // Ngôn ngữ:
-    // https://typst.app/docs/reference/text/text/#parameters-lang
-    lang: "vi",
-    region: "vn",
-    // Sử dụng ligatures?
-    // ligatures: true
-    // Ngắt từ với gạch ngang?
-    // hyphenate: false
+    lang: lang,
+    region: cfg-region,
   )
 
-  // Cài đặt đoạn văn bản
+  // Paragraph settings
   set par(
-    // Khoảng cách dòng, mặc định 0.65em
-    // leading: 0.6em,
-    // Căn lề, mặc định false
+    leading: cfg-par-leading,
     justify: true,
-    // Khoảng cách giữa các đoạn, mặc định 1.2em
-    // spacing: 1em,
+    spacing: cfg-par-spacing,
   )
 
-  // MARK: Citation Text Style
-  show cite: set text(style: "italic", fill: blue)
+  // ════════════════════════════════════════════════════
+  // 4. APPLY FORMATTING RULES
+  // ════════════════════════════════════════════════════
 
-  // MARK: Formatting - Headings
-  set heading(numbering: "1.")
-  show heading: set block(below: 1.2em)
+  show: apply-preamble-heading-rules.with(cfg)
+  show: apply-code-rules
+  show: apply-table-rules.with(profile.accent-color)
+  show: apply-general-rules.with(profile)
+  show: apply-figure-supplements.with(labels)
 
-  // Custom Heading 1 Style
-  show heading.where(level: 1): it => [
-    #set align(left)
-    #set text(font: heading-font, size: 20pt, weight: "regular")
-    #block(
-      width: 100%,
-      stroke: (bottom: 0.5pt + rgb("#808080")),
-      inset: (bottom: 0.5em),
-      below: 0.8em,
-    )[
-      #smallcaps[#it.body]
-    ]
-  ]
+  // ════════════════════════════════════════════════════
+  // 5. COVER PAGE
+  // ════════════════════════════════════════════════════
 
-  // MARK: Formatting - Tables
-  // Bảng có đường viền và màu nền
-  // Tắt căn bằng lề cho văn bản trong bảng
-  show table: set par(justify: false)
-  // Cỡ chữ nhỏ hơn trong bảng để tiết kiệm không gian
-  show table: set text(size: 0.9em)
-  set table(
-    // Hàng tiêu đề sẽ có cột đậm hơn chút so với các hàng còn lại
-    stroke: (x, y) => if y == 0 { 0.5pt + blue.lighten(86%) } else { 0.5pt + blue.lighten(90%) },
-    // Màu nền cho hàng đầu tiên (header) và hàng chẵn (nhạt hơn)
-    fill: (x, y) => if y == 0 { blue.lighten(90%) } else if calc.even(y) { blue.lighten(98%) } else { none },
-  )
+  if cfg.show-cover {
+    // No headers/footers, no numbering on cover
+    set page(header: none, footer: none, numbering: none)
+    cover-page(
+      university: university,
+      course: course,
+      instructor: instructor,
+      author: author,
+      assignment: assignment,
+    )
+    pagebreak()
+  }
 
-  // Bảng có góc bo tròn và có thể span nhiều trang.
-  // Typst 0.14+ cho phép clip:true và breakable:true cùng lúc.
-  show table: it => block(
-    radius: 8pt,
-    stroke: 1pt + blue.lighten(90%),
-    clip: true,
-    breakable: true,
-    width: 100%,
-    inset: 0pt,
-    it,
-  )
+  // ════════════════════════════════════════════════════
+  // 6. FRONT MATTER (Roman numbering)
+  // ════════════════════════════════════════════════════
 
-  // Cho phép figure chứa bảng span nhiều trang (figure mặc định không breakable)
-  show figure.where(kind: table): set block(breakable: true)
-
-  // MARK: Formatting - Code Blocks
-  // Inline code style
-  show raw.where(block: false): box.with(
-    fill: luma(240),
-    inset: (x: 3pt, y: 0pt),
-    outset: (y: 3pt),
-    radius: 2pt,
-  )
-
-  // Block code style with Line Numbering
-  show raw.where(block: true): it => align(start)[
-    #block(
-      radius: 8pt,
-      fill: luma(240),
-      inset: 0pt,
-      stroke: none,
-      breakable: false,
-      width: 100%,
-      clip: true,
-    )[
-      #text(font: code-font, size: 1em)[
-        #grid(
-          columns: (auto, 1fr),
-          inset: (x, y) => {
-            let v = 1em
-            let inner = 0.5em
-            let outer = 1.5em
-            if x == 0 { (top: v, bottom: v, left: outer, right: inner) } else {
-              (top: v, bottom: v, left: inner, right: outer)
-            }
-          },
-          stroke: (x, y) => if x == 0 { (right: 1pt + luma(300)) } else { none },
-          align: (right, left),
-          // Line number column
-          align(right, text(fill: gray)[
-            #for i in range(1, it.text.split("\n").len() + 1) [ #i \ ]
-          ]),
-          // Code content column
-          it,
-        )
-      ]
-    ]
-  ]
-
-  // MARK: General Formatting
-  // Emph & Strong
-  show emph: it => text(style: "italic", weight: "medium")[#it.body]
-  show strong: it => text(weight: "bold")[#it.body]
-  // Links
-  show link: set text(fill: rgb("#0000EE"))
-  // Lists
-  set list(indent: 1em)
-  set enum(indent: 1em)
-  // Callouts (Left align text inside specialized blocks)
-  show block.where(fill: rgb("#f0f8ff")): it => align(left, it)
-  // Quotes
-  show quote: it => block(
-    // align(center),
-    fill: luma(248),
-    stroke: (left: 3pt + orange.lighten(50%)),
-    inset: (left: 1em, rest: 0.8em),
-    radius: (right: 3pt),
-  )[
-    #set text(style: "italic")
-    #it
-  ]
-  // TODOs
-  show figure.where(kind: "todo"): it => it.body
-
-  // MARK: Cover Page
-  // ----- BÌA CỨNG --------------------
-  // No headers/footers, no numbering
-  set page(header: none, footer: none, numbering: none)
-  cover-page(
-    university: university,
-    course: course,
-    instructor: instructor,
-    author: author,
-    assignment: assignment,
-  )
-
-  // Ngắt trang sau trang bìa.
-  pagebreak()
-  // Có thể bổ sung trang bìa mềm ở đây
-  // ----- BÌA MỀM --------------------
-
-  // MARK: Preamble
-  // Roman numbering, Header/Footer active
   counter(page).update(1)
 
-  // Căn giữa và làm mờ số trang
+  // Centered, muted page numbers
   set page(
     header: auto,
     numbering: "i",
     number-align: center,
     footer: context [
-      #set text(size: 10pt, fill: gray)
+      #set text(size: 10pt, fill: clr-neutral-text)
       #align(center)[
         #counter(page).display(page.numbering)
       ]
     ],
   )
 
-  // MARK: Tóm Tắt Luận Án
-  // Dùng nếu có yêu cầu.
-  if doc-type == "thesis" {
-    // No Header/Footer, No Numbering
-    // set page(header: none, footer: auto)
-    // No Heading Numbering, No Outlined
-    set heading(numbering: none, outlined: false)
-    // We place the thesis summary here
-    include "/content/preamble-summary.typ"
-    pagebreak()
-  }
+  // Preamble sections (summary, forewords, etc.)
+  render-preamble-sections(cfg, labels)
 
-  // MARK: Forewords
-  if doc-type == "thesis" {
-    // No Header/Footer, No Numbering
-    // set page(header: none, footer: none, numbering: none)
-    // No Heading Numbering, No Outlined
-    set heading(numbering: none, outlined: false)
-    // We place the forewords here
-    include "/content/preamble-forewords.typ"
-    pagebreak()
-  }
+  // Lists (TOC, LOT, LOF, LOC, TODOs, Acronyms)
+  let needs-pagebreak = doc-class == "thesis" or doc-class == "book"
+  render-lists(cfg, labels, profile.accent-color, acronyms, needs-pagebreak)
 
-  // MARK: Acknowledgement
-  if doc-type == "thesis" {
-    // No Header/Footer, No Numbering
-    // set page(header: none, footer: none, numbering: none)
-    // No Heading Numbering, No Outlined
-    set heading(numbering: none, outlined: false)
-    // We place the acknowledgement here
-    include "/content/preamble-ack.typ"
-    pagebreak()
-  }
+  // ════════════════════════════════════════════════════
+  // 7. MAIN CONTENT (Arabic numbering)
+  // ════════════════════════════════════════════════════
 
-  // MARK: Instructor's comment
-  if doc-type == "thesis" {
-    // No Header/Footer, No Numbering
-    // set page(header: none, footer: none, numbering: none)
-    // No Heading Numbering, No Outlined
-    set heading(numbering: none, outlined: false)
-    // We place the instructor's comment here
-    include "/content/preamble-comment.typ"
-    pagebreak()
-  }
-
-  // MARK: Report Author
-  if doc-type == "report" {
-    // No Header/Footer, No Numbering
-    // set page(header: none, footer: none, numbering: none)
-    // No Heading Numbering, No Outlined
-    set heading(numbering: none, outlined: false)
-    // We place the author information here
-    include "/author/author.typ"
-  }
-
-  // MARK: TOC & Lists
-  // Rename "Figure" supplements
-  show figure.where(kind: raw): set figure(supplement: "Mã nguồn")
-  show figure.where(kind: image): set figure(supplement: "Hình ảnh")
-  show figure.where(kind: table): set figure(supplement: "Bảng")
-
-  // MARK: Table of Contents
-  toc-section-wrapper(blue)[
-    #unheading[Mục Lục]
-    #outline(title: none, indent: auto, depth: 2)
-  ]
-
-  // Nếu tài liệu là luận văn, thêm trang trắng
-  if doc-type == "thesis" {
-    pagebreak()
-  }
-
-  // MARK: List of Tables
-  toc-section-wrapper(blue)[
-    #unheading[Danh Sách Bảng]
-    #outline(title: none, target: figure.where(kind: table))
-  ]
-
-  // Nếu tài liệu là luận văn, thêm trang trắng
-  if doc-type == "thesis" {
-    pagebreak()
-  }
-
-  // MARK: List of Figures
-  toc-section-wrapper(blue)[
-    #unheading[Danh Sách Hình Ảnh]
-    #outline(title: none, target: figure.where(kind: image))
-  ]
-
-  // Nếu tài liệu là luận văn, thêm trang trắng
-  if doc-type == "thesis" {
-    pagebreak()
-  }
-
-  // MARK: List of Code Snippets
-  toc-section-wrapper(blue)[
-    #unheading[Danh Sách Mã Nguồn]
-    #outline(title: none, target: figure.where(kind: raw))
-  ]
-
-  // MARK: List of TODOs (Conditional)
-  context {
-    let todos = query(figure.where(kind: "todo"))
-    // Chỉ hiện thị danh sách TODO nếu có
-    if todos.len() > 0 {
-      // Nếu tài liệu là luận văn, thêm trang trắng
-      if doc-type == "thesis" {
-        pagebreak()
-        toc-section-wrapper(red)[
-          #unheading[Danh Sách TODO]
-          #outline(title: none, target: figure.where(kind: "todo"))
-        ]
-      }
-    }
-  }
-
-  // MARK: Bảng Viết Tắt
-  // Chỉ hiện thị bảng viết tắt nếu được chỉ định
-  if acronyms != none and acronyms.len() > 0 {
-    // Nếu tài liệu là luận văn, thêm trang trắng
-    if doc-type == "thesis" {
-      pagebreak()
-    }
-
-    // Heading của bảng viết tắt
-    [ #unheading[Bảng Viết Tắt] ]
-
-    // Nếu acronyms là dictionary
-    let content = if type(acronyms) == dictionary {
-      acronyms.pairs().map(((key, value)) => (key, value)).flatten()
-      // Nếu acronyms là array
-    } else if type(acronyms) == array {
-      // Nếu file csv có sẵn header, bỏ header ra khỏi array
-      if acronyms.len() > 0 and acronyms.at(0).at(0) == "Viết Tắt" {
-        acronyms.slice(1).flatten()
-      } else {
-        acronyms.flatten()
-      }
-    } else {
-      ()
-    }
-
-    // Tạo bảng viết tắt
-    figure(
-      table(
-        // Tỉ lệ cột là 20% và 80%
-        columns: (20%, 80%),
-        // Khoảng cách giữa các cột
-        // gutter: 2em,
-        // Khoảng cách từ boder đến edge
-        inset: (x: 0.6em, y: 0.4em),
-        // Chỉ vẽ đường kẻ ngang (bottom), không có đường viền dọc
-        stroke: (bottom: 0.5pt + orange.lighten(90%)),
-        // Căn lề cột
-        align: (right, left),
-        table.header([*Viết Tắt*], [*Nghĩa Đầy Đủ*]),
-        ..content,
-      ),
-      caption: [*Bảng Viết Tắt*],
-      kind: table,
-      // Đặc thù, không thêm vào danh sách bảng.
-      outlined: false,
-      // Không đánh số thứ tự cho bảng.
-      numbering: none,
-    )
-  }
-
-  // Spacing after TOC
-  // v(2em)
-  // v(0.5em)
-
-  // MARK: Nội Dung Chính
-  // Arabic numbering, Right aligned
   set page(numbering: "1", number-align: right)
   counter(page).update(1)
 
-  // Custom Heading 1 Style
-  show heading.where(level: 1): it => {
-    // Tự động ngắt trang
-    pagebreak()
-    // Dành cho Report
-    if doc-type == "report" {
-      align(left)[
-        #set text(
-          font: heading-font,
-          size: 20pt,
-          weight: "regular",
-        )
-        #block(
-          width: 100%,
-          stroke: (bottom: 0.5pt + black.lighten(60%)),
-          inset: (bottom: 0.5em),
-        )[
-          #smallcaps[#it.body]
-        ]
-      ]
+  // Apply chapter heading styling for main content
+  show: apply-chapter-heading-rules.with(cfg, labels)
+
+  // Footer with optional "Back to Top"
+  set page(footer: context [
+    #set text(size: 10pt, fill: clr-neutral-text)
+    #if profile.show-back-to-top {
+      grid(
+        columns: (1fr, 1fr),
+        align: (left, right),
+        link(<top>)[#text(fill: clr-neutral-text)[#labels.back-to-top]],
+        counter(page).display(page.numbering),
+      )
     } else {
-      // Dành cho Thesis
-      align(left)[
-        #stack(
-          dir: ttb,
-          spacing: 2em,
-          text(
-            font: heading-font,
-            size: 18pt,
-            weight: "regular",
-            fill: black.lighten(60%),
-          )[#if it.numbering != none [CHƯƠNG #counter(heading).display(it.numbering)]],
-          text(
-            font: heading-font,
-            size: 30pt,
-            weight: "regular",
-          )[#smallcaps[#it.body]],
-          line(length: 100%, stroke: 1pt + black.lighten(60%)),
-        )
+      align(right)[
+        #counter(page).display(page.numbering)
       ]
     }
-    // Thêm khoảng trắng (vspace) sau heading title
-    v(0.5em)
-  }
-
-  // MARK: Footer
-  // Footer with "Back to Top"
-  set page(footer: context [
-    #set text(size: 10pt, fill: gray)
-    #grid(
-      columns: (1fr, 1fr),
-      align: (left, right),
-      link(<top>)[#text(fill: gray)[↑ Back to Top]], counter(page).display(page.numbering),
-    )
   ])
 
-  // MARK: Body
+  // ════════════════════════════════════════════════════
+  // 8. BODY
+  // ════════════════════════════════════════════════════
+
   body
 }
 
 // MARK: Appendix Helper
-// Phụ Lục
+
+/// Switches heading style to appendix format (A.1, A.2, ...).
+/// Usage: `#show: appendix`
 #let appendix(body) = {
   counter(heading).update(0)
-  set heading(numbering: "A.1", supplement: "Phụ Lục")
+
+  // Resolve labels from context — appendix uses the lang set in the document
+  // We use a simple fallback approach here
+  let _labels = i18n-labels("en")
+
+  set heading(numbering: "A.1", supplement: _labels.appendix-supplement)
 
   show heading.where(level: 1): it => {
     pagebreak()
@@ -471,17 +290,51 @@
           font: heading-font,
           size: 18pt,
           weight: "regular",
-          fill: black.lighten(60%),
-        )[PHỤ LỤC #counter(heading).display()],
+          fill: clr-heading-rule,
+        )[#_labels.appendix-prefix #counter(heading).display()],
         text(
           font: heading-font,
           size: 30pt,
           weight: "regular",
         )[#it.body],
-        line(length: 100%, stroke: 1pt + black.lighten(60%)),
+        line(length: 100%, stroke: 1pt + clr-heading-rule),
       )
     ]
-    // Thêm khoảng trắng (vspace) sau heading title
+    v(0.5em)
+  }
+
+  body
+}
+
+/// Localized appendix helper — pass the language code to use correct labels.
+/// Usage: `#show: appendix-l10n.with("vi")`
+#let appendix-l10n(lang, body) = {
+  counter(heading).update(0)
+
+  let _labels = i18n-labels(lang)
+
+  set heading(numbering: "A.1", supplement: _labels.appendix-supplement)
+
+  show heading.where(level: 1): it => {
+    pagebreak()
+    align(left)[
+      #stack(
+        dir: ttb,
+        spacing: 1.5em,
+        text(
+          font: heading-font,
+          size: 18pt,
+          weight: "regular",
+          fill: clr-heading-rule,
+        )[#_labels.appendix-prefix #counter(heading).display()],
+        text(
+          font: heading-font,
+          size: 30pt,
+          weight: "regular",
+        )[#it.body],
+        line(length: 100%, stroke: 1pt + clr-heading-rule),
+      )
+    ]
     v(0.5em)
   }
 
@@ -489,10 +342,15 @@
 }
 
 // MARK: Bibliography Helper
-// Tài liệu tham khảo
+
+/// Switches heading style to bibliography format.
+/// Usage: `#show: bibliography-page`
 #let bibliography-page(body) = {
   counter(heading).update(0)
-  set heading(numbering: "I", supplement: "Tài Liệu Tham Khảo")
+
+  let _labels = i18n-labels("en")
+
+  set heading(numbering: "I", supplement: _labels.bibliography-supplement)
   show link: set text(fill: blue)
 
   show heading.where(level: 1): it => {
@@ -505,19 +363,52 @@
           font: heading-font,
           size: 18pt,
           weight: "regular",
-          fill: black.lighten(60%),
-          // Không hiển thị dòng chữ "Tài Liệu Tham Khảo"
+          fill: clr-heading-rule,
         )[],
         text(
           font: heading-font,
           size: 30pt,
           weight: "regular",
-          // Chỉ hiện thị tiêu đề thực tế, từ lệnh bibliography
         )[#it.body],
-        line(length: 100%, stroke: 1pt + black.lighten(60%)),
+        line(length: 100%, stroke: 1pt + clr-heading-rule),
       )
     ]
-    // Thêm khoảng trắng (vspace) sau heading title
+    v(0.5em)
+  }
+
+  body
+}
+
+/// Localized bibliography helper.
+/// Usage: `#show: bibliography-page-l10n.with("vi")`
+#let bibliography-page-l10n(lang, body) = {
+  counter(heading).update(0)
+
+  let _labels = i18n-labels(lang)
+
+  set heading(numbering: "I", supplement: _labels.bibliography-supplement)
+  show link: set text(fill: blue)
+
+  show heading.where(level: 1): it => {
+    pagebreak()
+    align(left)[
+      #stack(
+        dir: ttb,
+        spacing: 1.5em,
+        text(
+          font: heading-font,
+          size: 18pt,
+          weight: "regular",
+          fill: clr-heading-rule,
+        )[],
+        text(
+          font: heading-font,
+          size: 30pt,
+          weight: "regular",
+        )[#it.body],
+        line(length: 100%, stroke: 1pt + clr-heading-rule),
+      )
+    ]
     v(0.5em)
   }
 
