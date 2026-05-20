@@ -1,5 +1,5 @@
 // MARK: Report Details
-// Define the author and report details here
+// Demo metadata — showcasing the LaTeX-inspired Typst template
 #let data = (
   university: (
     name: "Đại Học Quốc Gia Thành Phố Hồ Chí Minh",
@@ -9,31 +9,25 @@
     logo: "uit.jpeg",
   ),
   course: (
-    id: upper(lorem(1)),
-    name: lorem(6),
-    class: upper(lorem(2)),
+    id: "DEMO101",
+    name: "Giới Thiệu Mẫu Báo Cáo Chuyên Nghiệp",
+    class: "LT.K2025.2-CNTT",
   ),
-  instructor: lorem(4),
+  instructor: "Nguyễn Văn Giảng Viên",
   author: (
-    name: lorem(3),
-    id: lorem(1),
+    name: "Trần Thị Sinh Viên",
+    id: "25410000",
     members: (
-      (
-        name: lorem(3),
-        id: lorem(1),
-      ),
-      (
-        name: lorem(3),
-        id: lorem(1),
-      ),
+      (name: "Trần Thị Sinh Viên", id: "25410000"),
+      (name: "Lê Văn Thành Viên", id: "25410001"),
     ),
   ),
   assignment: (
-    title: upper(lorem(5)),
-    subtitle: upper(lorem(6)),
-    type: upper(lorem(2)),
-    date: lorem(6),
-    duration: "15 phút",
+    title: "BÀI TẬP THỰC HÀNH DEMO",
+    subtitle: "TEMPLATE SHOWCASE — TẤT CẢ THÀNH PHẦN ĐỊNH DẠNG",
+    type: "assignments",
+    date: "Ngày 20 Tháng 05 Năm 2026",
+    duration: "Tự học",
   ),
-  company: "A Limited Company Name",
+  company: "UIT Typst Template Project",
 )
