@@ -4,7 +4,7 @@
   block(
     radius: 8pt, // Góc bo tròn
     stroke: 1pt + blue.lighten(90%), // Đường viền ngoài
-    clip: false, // Không cắt góc để bảng có thể span nhiều trang
+    clip: true, // Typst 0.14+ hỗ trợ clip:true + breakable:true đồng thời
     breakable: true, // Cho phép span nhiều trang
     width: 100%, // Đảm bảo nó vừa với trang
     inset: 0pt, // Không có khoảng trống giữa viền và bảng

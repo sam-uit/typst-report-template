@@ -95,17 +95,14 @@
   // Cỡ chữ nhỏ hơn trong bảng để tiết kiệm không gian
   show table: set text(size: 0.9em)
   set table(
-    // Đường viền cho bảng
-    stroke: (x, y) => if y == 0 { 0.5pt + blue.lighten(86%) } else {0.5pt + blue.lighten(90%)},
-    // stroke: none,
+    // Hàng tiêu đề sẽ có cột đậm hơn chút so với các hàng còn lại
+    stroke: (x, y) => if y == 0 { 0.5pt + blue.lighten(86%) } else { 0.5pt + blue.lighten(90%) },
     // Màu nền cho hàng đầu tiên (header) và hàng chẵn (nhạt hơn)
     fill: (x, y) => if y == 0 { blue.lighten(90%) } else if calc.even(y) { blue.lighten(98%) } else { none },
   )
 
-  // Bảng có góc bo tròn.
-  // LƯU Ý: clip:true và breakable:true xung đột trong Typst (block bị clip
-  // không thể span nhiều trang). Dùng clip:false để giữ rounded border stroke
-  // nhưng cho phép bảng dài tràn sang trang tiếp theo.
+  // Bảng có góc bo tròn và có thể span nhiều trang.
+  // Typst 0.14+ cho phép clip:true và breakable:true cùng lúc.
   show table: it => block(
     radius: 8pt,
     stroke: 1pt + blue.lighten(90%),
@@ -372,10 +369,9 @@
         // Khoảng cách giữa các cột
         // gutter: 2em,
         // Khoảng cách từ boder đến edge
-        // inset: 0.5em,
-        // Màu border
+        inset: (x: 0.6em, y: 0.4em),
+        // Chỉ vẽ đường kẻ ngang (bottom), không có đường viền dọc
         stroke: (bottom: 0.5pt + orange.lighten(90%)),
-        // stroke: none,
         // Căn lề cột
         align: (right, left),
         table.header([*Viết Tắt*], [*Nghĩa Đầy Đủ*]),
