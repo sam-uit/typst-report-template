@@ -1,5 +1,10 @@
 # Build artifacts
 *.lock
+*.pdf
+
+# Backup files (from editing/testing sessions)
+*.bak
+*.bak[0-9]*
 
 # OS files
 .DS_Store
