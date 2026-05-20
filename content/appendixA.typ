@@ -1,38 +1,76 @@
 #import "../template/lib.typ": *
 
-= Phụ Lục A
-<phu-luc-a>
+= Phụ Lục
+<phu-luc>
 
+== Mã Nguồn Template
+<ma-nguon-template>
 
-== Link Video Demo
-<link-video-demo>
+Toàn bộ mã nguồn template được lưu trữ công khai trên GitHub:
 
-- Mục đích: Tất cả các demo trong một video đầy đủ.
-- #link("https://www.youtube.com/watch?v=dQw4w9WgXcQ")[Video Demo]
+- *Repository*: #link("https://github.com/samdinh-uit/typst-report-template")[github.com/samdinh-uit/typst-report-template]
+- *Nhánh demo này*: `refactor-demo` (tách từ `refactor-docs-structure`)
+- *Giấy phép*: MIT License
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+== Công Cụ Sử Dụng
+<cong-cu-su-dung>
 
-== Repo Mã Nguồn
-<repo-ma-nguon>
+#figure(
+  rounded-table(
+    columns: (25%, 15%, 60%),
+    align: (left, center, left),
+    table.header([*Công Cụ*], [*Phiên Bản*], [*Mục Đích*]),
+    [Typst],          [0.14+],  [Biên dịch `.typ` → PDF],
+    [Cowork / Claude],[Sonnet 4.6], [Hỗ trợ soạn thảo và tự động hóa workflow],
+    [Git],            [2.x],    [Quản lý phiên bản và nhánh],
+    [Pandoc],         [3.0+],   [Chuyển đổi Markdown → Typst (tùy chọn)],
+    [GNU Make],       [4.x],    [Tự động hóa biên dịch qua Makefile],
+  ),
+  caption: [Công Cụ Hỗ Trợ],
+  kind: table,
+  outlined: false,
+  numbering: none,
+)
 
+== Hướng Dẫn Nhanh
+<huong-dan-nhanh>
 
-=== Mã Nguồn Báo Cáo
-<ma-nguon-bao-cao>
+=== Cài Đặt
 
-- Mục đích: Tái tạo báo cáo này từ mã nguồn Typst.
+```bash
+# Clone repository
+git clone https://github.com/samdinh-uit/typst-report-template.git
+cd typst-report-template
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+# Tạo nhánh mới cho bài tập
+git checkout -b IE105-TH7A
+```
 
-=== Mã Nguồn Ứng Dụng
-<ma-nguon-ung-dung>
+=== Biên Dịch
 
-- Mục đích: Tái tạo ứng dụng được trình bày trong báo cáo.
+```bash
+# Qua Makefile (khuyến nghị)
+make thesis.pdf
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+# Thủ công
+typst compile thesis.typ --font-path template/fonts
+```
 
-=== Mã Nguồn SQL Projects
-<ma-nguon-sql-projects>
+=== Cấu Trúc Thư Mục
 
-- Mục đích: Tái tạo dự án SQL được trình bày trong báo cáo.
+```
+typst-report-template/
+├── template/           ← API template (lib.typ, components/, ...)
+├── content/            ← Nội dung bài tập (.typ + .md)
+├── config/
+│   └── metadata.typ    ← Thông tin bài tập, sinh viên, môn học
+├── docs/               ← Tài liệu tham khảo (getting-started.md, ...)
+├── thesis.typ          ← Entry point chính
+└── Makefile            ← Build automation
+```
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+#co-note[
+  File `.md` trong `content/` là bản dự phòng tương thích Obsidian và
+  là đầu vào cho quy trình `make typ` (pandoc). File `.typ` là file
+  thực sự được biên dịch bởi Typst.
+]
