@@ -1,24 +1,40 @@
 #import "../template/lib.typ": *
 
-= Mô Tả Bài Toán
-<mo-ta-bai-toan>
+= Tổng Quan Template
+<tong-quan-template>
 
-Tài liệu tham khảo về trình bày báo cáo kỹ thuật: @technicalwritingapracticalguide[Technical Writing A Practical Guide].
+Tài liệu này là bản trình diễn đầy đủ các thành phần định dạng của mẫu báo cáo Typst
+được thiết kế theo phong cách LaTeX chuyên nghiệp. Mọi thành phần đều được minh họa
+bằng dữ liệu mẫu thực tế. @technicalwritingapracticalguide[Tham khảo về viết báo cáo kỹ thuật].
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+Mẫu hỗ trợ bốn lớp tài liệu: `article`, `report`, `book`, và `thesis` -- mỗi lớp có
+cài đặt mặc định riêng về lề trang, kích thước chữ, và các thành phần hiển thị.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+== Cú Pháp Cơ Bản
+<cu-phap-co-ban>
 
-== Động Lực, Mục Tiêu, Ý Nghĩa của Đề Tài
-<dong-luc-muc-tieu-y-nghia-cua-de-tai>
+Văn bản thông thường hỗ trợ *in đậm*, _in nghiêng_, và `code nội dòng`. Dấu gạch
+ngang kép -- được dùng cho dấu gạch ngang dài (em-dash). Liên kết tự động được tô màu
+theo cấu hình đầu ra: #link("https://github.com")[github.com].
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+=== Danh Sách Có Thứ Tự
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
++ Cài đặt Typst 0.14 trở lên (hỗ trợ `breakable: true` cùng `clip: true`)
++ Sao chép thư mục `template/` vào dự án
++ Cập nhật `config/metadata.typ` với thông tin bài tập
++ Biên dịch: `typst compile thesis.typ --font-path template/fonts`
 
-== Quy Trình Thực Tế Liên Quan Đến Đề Tài
-<quy-trinh-thuc-te-lien-quan-den-de-tai>
+=== Danh Sách Không Thứ Tự
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+- Hỗ trợ đa ngôn ngữ: tiếng Việt (`vi`), tiếng Anh (`en`), tiếng Mã Lai (`ms`)
+- Hai chế độ đầu ra: `digital` (liên kết màu) và `print` (liên kết đen)
+- Bốn lớp tài liệu với cài đặt mặc định tối ưu
+- Phông chữ nhúng sẵn: Libertinus Serif, Source Sans 3, Fira Code
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+=== Trích Dẫn Block
+
+#quote[
+  Một công cụ tốt không chỉ hoàn thành công việc -- nó còn giúp người dùng
+  làm việc tốt hơn. Mẫu này được thiết kế để sinh viên tập trung vào nội dung,
+  không phải định dạng.
+]
