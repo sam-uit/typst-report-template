@@ -12,15 +12,20 @@
 #show: document.with(..data, acronyms: acronyms, doc-type: "thesis")
 
 // Đặt font cho code ở 0.8 để tiết kiệm không gian.
+// TODO: Cập nhật raw text size vào template.
 #show raw: set text(size: 0.8em)
 
-// TH6A: Quản Lý Rủi Ro An Ninh Thông Tin
+// Content goes here
 #include "content/chapter01.typ"
 #include "content/chapter02.typ"
 #include "content/chapter03.typ"
 #include "content/chapter04.typ"
 #include "content/chapter05.typ"
 
-// Appendix
+// Show appendix
 #show: appendix
 #include "content/appendixA.typ"
+
+// Show bibliography
+#show: bibliography-page
+#bibliography("content/bibliography.yaml", title: "Tài Liệu Tham Khảo", style: "ieee")

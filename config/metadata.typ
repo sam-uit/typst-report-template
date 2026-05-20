@@ -29,10 +29,10 @@
     ),
   ),
   assignment: (
-    title: "BÀI TẬP THỰC HÀNH 6A (BUỔI 10)",
-    subtitle: "QUẢN LÝ RỦI RO AN NINH THÔNG TIN",
+    title: "BÀI TẬP THỰC HÀNH 6B (BUỔI 10)",
+    subtitle: "TÌM HIỂU MỘT SỐ XU THẾ AN NINH THÔNG TIN HIỆN ĐẠI",
     type: "assignments",
-    date: "Ngày 19 Tháng 05 Năm 2026",
+    date: "Ngày 20 Tháng 05 Năm 2026",
     duration: "4–5 tiết",
   ),
   company: "A Limited Company Name",

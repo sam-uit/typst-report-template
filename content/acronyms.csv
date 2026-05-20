@@ -1,28 +1,16 @@
 Viết Tắt,Nghĩa Đầy Đủ
-2FA,Two-Factor Authentication
 AES,Advanced Encryption Standard
-APK,Android Package Kit
 CCMP,Counter Mode with Cipher Block Chaining Message Authentication Code Protocol
-CMND,Chứng Minh Nhân Dân
 DHCP,Dynamic Host Configuration Protocol
 DNS,Domain Name System
 FTPS,File Transfer Protocol Secure
 HTTP,Hypertext Transfer Protocol
 HTTPS,Hypertext Transfer Protocol Secure
-IMSI,International Mobile Subscriber Identity
 KRACK,Key Reinstallation Attacks
 MAC,Media Access Control
-MFA,Multi-Factor Authentication
-MXH,Mạng Xã Hội
-OTP,One-Time Password
-PIN,Personal Identification Number
-SIM,Subscriber Identity Module
-SMS,Short Message Service
 SSH,Secure Shell
 SSID,Service Set Identifier
 TKIP,Temporal Key Integrity Protocol
-TOTP,Time-Based One-Time Password
-URL,Uniform Resource Locator
 VPN,Virtual Private Network
 WEP,Wired Equivalent Privacy
 Wi-Fi,Wireless Fidelity
