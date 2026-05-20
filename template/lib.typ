@@ -99,11 +99,12 @@
     fill: (x, y) => if y == 0 { blue.lighten(90%) } else if calc.even(y) { blue.lighten(98%) } else { none },
   )
 
-  // Bảng có góc bo tròn
+  // Bảng có góc bo tròn (clip: false để bảng có thể span nhiều trang)
   show table: it => block(
     radius: 8pt,
     stroke: 1pt + blue.lighten(90%),
-    clip: true,
+    clip: false,
+    breakable: true,
     width: 100%,
     it,
   )

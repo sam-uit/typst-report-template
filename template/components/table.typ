@@ -4,7 +4,8 @@
   block(
     radius: 8pt, // Góc bo tròn
     stroke: 1pt + blue.lighten(90%), // Đường viền ngoài
-    clip: true, // Cắt góc vuông
+    clip: false, // Không cắt góc để bảng có thể span nhiều trang
+    breakable: true, // Cho phép span nhiều trang
     width: 100%, // Đảm bảo nó vừa với trang
     inset: 0pt, // Không có khoảng trống giữa viền và bảng
 
@@ -29,7 +30,8 @@
   radius: 8pt,
   // Đường viền ngoài
   stroke: 1pt + blue.lighten(90%),
-  clip: true,
+  clip: false, // Không cắt góc để bảng có thể span nhiều trang
+  breakable: true, // Cho phép span nhiều trang
   width: 100%,
   inset: 0pt,
   table(
