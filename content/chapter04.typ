@@ -1,91 +1,126 @@
 #import "../template/lib.typ": *
 
-= Quản Lý Thông Tin
-<quan-ly-thong-tin>
+= Khối Code
+<khoi-code>
 
+Mẫu hỗ trợ code nội dòng và code block với syntax highlighting. Phông chữ
+Fira Code được dùng cho tất cả các đoạn code.
 
-== Xử Lý Thông Tin
-<xu-ly-thong-tin>
+== Code Nội Dòng
 
-Có thể load code như sau:
+Sử dụng backtick để viết `code nội dòng`. Ví dụ: hàm `document()` nhận tham số
+`doc-class: "thesis"`, phương thức `git cherry-pick`, hoặc lệnh shell `make thesis.pdf`.
+
+== Code Block Đơn Ngôn Ngữ
 
 ```typst
-#figure(
-  raw(read("code/sample.sql"), lang: "sql", block: true),
-  caption: [Code ví dụ: SQL.]
+// Cú pháp tối thiểu để sử dụng template
+#import "template/lib.typ": *
+#import "config/metadata.typ": data
+
+#let acronyms = csv("content/acronyms.csv")
+
+#show: document.with(
+  ..data,
+  doc-class: "thesis",
+  paper: "a4",
+  font-size: 11pt,
+  two-sided: false,
+  output: "digital",
+  lang: "vi",
+  acronyms: acronyms,
 )
+
+#include "content/chapter01.typ"
+// ... thêm các chương khác
+
+#show: appendix-l10n.with("vi")
+#include "content/appendixA.typ"
 ```
 
-Kết quả:
+== Code Python
 
-#figure(
-  raw(read("code/sample.sql"), lang: "sql", block: true),
-  caption: [Code ví dụ: SQL.]
-)
+```python
+#!/usr/bin/env python3
+"""Script kiểm tra bảo mật đơn giản."""
 
-== An Toàn Thông Tin
-<an-toan-thong-tin>
+import hashlib
+import secrets
+from datetime import datetime, timedelta
 
+def generate_token(user_id: int, secret_key: str) -> str:
+    """Tạo token xác thực có thời hạn."""
+    expiry = datetime.utcnow() + timedelta(hours=24)
+    payload = f"{user_id}:{expiry.isoformat()}:{secrets.token_hex(16)}"
+    signature = hashlib.sha256(f"{payload}{secret_key}".encode()).hexdigest()
+    return f"{payload}:{signature}"
 
-=== Xác thực và phân quyền
-<xac-thuc-va-phan-quyen>
+def verify_token(token: str, secret_key: str) -> bool:
+    """Xác minh token và kiểm tra thời hạn."""
+    try:
+        parts = token.rsplit(":", 1)
+        payload, signature = parts[0], parts[1]
+        expected = hashlib.sha256(f"{payload}{secret_key}".encode()).hexdigest()
+        if not secrets.compare_digest(signature, expected):
+            return False
+        _, expiry_str, _ = payload.split(":", 2)
+        return datetime.fromisoformat(expiry_str) > datetime.utcnow()
+    except (ValueError, IndexError):
+        return False
+```
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+== Code SQL
 
-=== Import - Export Dữ Liệu
-<import-export-du-lieu>
+```sql
+-- Truy vấn phân tích rủi ro bảo mật
+SELECT
+    a.asset_id,
+    a.asset_name,
+    COUNT(t.threat_id)                          AS threat_count,
+    MAX(r.likelihood * r.impact)                AS max_risk_score,
+    SUM(CASE WHEN r.severity = 'HIGH'
+             THEN 1 ELSE 0 END)                 AS high_severity_count
+FROM assets a
+    LEFT JOIN threats      t ON t.asset_id    = a.asset_id
+    LEFT JOIN risk_matrix  r ON r.threat_id   = t.threat_id
+WHERE a.active = TRUE
+GROUP BY a.asset_id, a.asset_name
+HAVING MAX(r.likelihood * r.impact) > 6
+ORDER BY max_risk_score DESC;
+```
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+== Code Bash / Shell
 
-=== Backup -- Restore Dữ Liệu
-<backup-restore-du-lieu>
+```bash
+#!/usr/bin/env bash
+# Biên dịch và sao chép PDF vào thư mục môn học
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
+REPO="$HOME/UIT/typst-report-template"
+COURSE="IE105"
+ASSIGN="TH6B"
+DEST="$HOME/UIT/LT.K2025.2-CNTT/uit/courses/$COURSE/assignments/$ASSIGN"
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+cd "$REPO" || exit 1
 
-== Trình Bày Thông Tin
-<trinh-bay-thong-tin>
+# Biên dịch
+typst compile thesis.typ \
+  --font-path template/fonts \
+  --output thesis.pdf
 
+# Kiểm tra kết quả
+if [[ $? -eq 0 ]]; then
+  cp thesis.pdf "$DEST/thesis.pdf"
+  echo "✓ Đã sao chép thesis.pdf → $DEST"
+else
+  echo "✗ Biên dịch thất bại" >&2
+  exit 1
+fi
+```
 
-=== Menu
-<menu>
+== Ghi Chú Về Code Block
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Form
-<form>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Report
-<report>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-== Các Chức Năng Của Hệ Thống
-<cac-chuc-nang-cua-he-thong>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Quản Lý Thông Tin Nền Tảng
-<quan-ly-thong-tin-nen-tang>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Quản Lý Dữ Liệu Đặt Phòng
-<quan-ly-du-lieu-dat-phong>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Thống Kê Và Báo Cáo
-<thong-ke-va-bao-cao>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-=== Quản Trị Hệ Thống
-<quan-tri-he-thong>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat.
+#co-note[
+  Kích thước chữ trong code block mặc định là `0.9em` so với văn bản thường,
+  giúp tiết kiệm không gian khi đoạn code dài. Có thể ghi đè qua `thesis.typ`:
+  `#show raw: set text(size: 0.8em)`
+]
