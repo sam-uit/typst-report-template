@@ -96,9 +96,9 @@
   // Book + thesis-specific preamble sections.
   thesis: (
     paper: "a4",
-    font-size: 12pt,
+    font-size: 11pt,
     margin: (inside: 3cm, outside: 2cm, top: 2.5cm, bottom: 2.5cm),
-    two-sided: true,
+    two-sided: false,
     heading-numbering: "1.",
     chapter-pagebreak: true,
     par-leading: 0.8em,
