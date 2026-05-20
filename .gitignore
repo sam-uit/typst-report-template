@@ -1,1 +1,8 @@
+# Build artifacts
 *.lock
+
+# OS files
+.DS_Store
+
+# Editor files
+.vscode/
