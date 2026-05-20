@@ -92,21 +92,29 @@
   // Bảng có đường viền và màu nền
   // Tắt căn bằng lề cho văn bản trong bảng
   show table: set par(justify: false)
+  // Cỡ chữ nhỏ hơn trong bảng để tiết kiệm không gian
+  show table: set text(size: 0.9em)
   set table(
-    // Đường viền cho bảng
-    stroke: 0.5pt + blue.lighten(90%),
+    // Hàng tiêu đề sẽ có cột đậm hơn chút so với các hàng còn lại
+    stroke: (x, y) => if y == 0 { 0.5pt + blue.lighten(86%) } else { 0.5pt + blue.lighten(90%) },
     // Màu nền cho hàng đầu tiên (header) và hàng chẵn (nhạt hơn)
     fill: (x, y) => if y == 0 { blue.lighten(90%) } else if calc.even(y) { blue.lighten(98%) } else { none },
   )
 
-  // Bảng có góc bo tròn
+  // Bảng có góc bo tròn và có thể span nhiều trang.
+  // Typst 0.14+ cho phép clip:true và breakable:true cùng lúc.
   show table: it => block(
     radius: 8pt,
     stroke: 1pt + blue.lighten(90%),
     clip: true,
+    breakable: true,
     width: 100%,
+    inset: 0pt,
     it,
   )
+
+  // Cho phép figure chứa bảng span nhiều trang (figure mặc định không breakable)
+  show figure.where(kind: table): set block(breakable: true)
 
   // MARK: Formatting - Code Blocks
   // Inline code style
@@ -165,9 +173,9 @@
   show block.where(fill: rgb("#f0f8ff")): it => align(left, it)
   // Quotes
   show quote: it => block(
-    align(center),
+    // align(center),
     fill: luma(248),
-    stroke: (left: 3pt + luma(180)),
+    stroke: (left: 3pt + orange.lighten(50%)),
     inset: (left: 1em, rest: 0.8em),
     radius: (right: 3pt),
   )[
@@ -361,9 +369,9 @@
         // Khoảng cách giữa các cột
         // gutter: 2em,
         // Khoảng cách từ boder đến edge
-        inset: 0.5em,
-        // Màu border
-        stroke: 0.5pt + orange.lighten(90%),
+        inset: (x: 0.6em, y: 0.4em),
+        // Chỉ vẽ đường kẻ ngang (bottom), không có đường viền dọc
+        stroke: (bottom: 0.5pt + orange.lighten(90%)),
         // Căn lề cột
         align: (right, left),
         table.header([*Viết Tắt*], [*Nghĩa Đầy Đủ*]),
