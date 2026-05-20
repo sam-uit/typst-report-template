@@ -92,6 +92,8 @@
   // Bảng có đường viền và màu nền
   // Tắt căn bằng lề cho văn bản trong bảng
   show table: set par(justify: false)
+  // Cỡ chữ nhỏ hơn trong bảng để tiết kiệm không gian
+  show table: set text(size: 0.9em)
   set table(
     // Đường viền cho bảng
     stroke: 0.5pt + blue.lighten(90%),
@@ -99,7 +101,10 @@
     fill: (x, y) => if y == 0 { blue.lighten(90%) } else if calc.even(y) { blue.lighten(98%) } else { none },
   )
 
-  // Bảng có góc bo tròn (clip: false để bảng có thể span nhiều trang)
+  // Bảng có góc bo tròn.
+  // LƯU Ý: clip:true và breakable:true xung đột trong Typst (block bị clip
+  // không thể span nhiều trang). Dùng clip:false để giữ rounded border stroke
+  // nhưng cho phép bảng dài tràn sang trang tiếp theo.
   show table: it => block(
     radius: 8pt,
     stroke: 1pt + blue.lighten(90%),
@@ -108,6 +113,9 @@
     width: 100%,
     it,
   )
+
+  // Cho phép figure chứa bảng span nhiều trang (figure mặc định không breakable)
+  show figure.where(kind: table): set block(breakable: true)
 
   // MARK: Formatting - Code Blocks
   // Inline code style
