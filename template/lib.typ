@@ -96,7 +96,8 @@
   show table: set text(size: 0.9em)
   set table(
     // Đường viền cho bảng
-    stroke: 0.5pt + blue.lighten(90%),
+    stroke: (x, y) => if y == 0 { 0.5pt + blue.lighten(86%) } else {0.5pt + blue.lighten(90%)},
+    // stroke: none,
     // Màu nền cho hàng đầu tiên (header) và hàng chẵn (nhạt hơn)
     fill: (x, y) => if y == 0 { blue.lighten(90%) } else if calc.even(y) { blue.lighten(98%) } else { none },
   )
@@ -108,9 +109,10 @@
   show table: it => block(
     radius: 8pt,
     stroke: 1pt + blue.lighten(90%),
-    clip: false,
+    clip: true,
     breakable: true,
     width: 100%,
+    inset: 0pt,
     it,
   )
 
@@ -370,9 +372,10 @@
         // Khoảng cách giữa các cột
         // gutter: 2em,
         // Khoảng cách từ boder đến edge
-        inset: 0.5em,
+        // inset: 0.5em,
         // Màu border
-        stroke: 0.5pt + orange.lighten(90%),
+        stroke: (bottom: 0.5pt + orange.lighten(90%)),
+        // stroke: none,
         // Căn lề cột
         align: (right, left),
         table.header([*Viết Tắt*], [*Nghĩa Đầy Đủ*]),
