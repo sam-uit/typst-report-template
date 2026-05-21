@@ -13,30 +13,33 @@ Sử dụng backtick để viết `code nội dòng`. Ví dụ: hàm `document()
 
 == Code Block Đơn Ngôn Ngữ
 
-```typst
-// Cú pháp tối thiểu để sử dụng template
-#import "template/lib.typ": *
-#import "config/metadata.typ": data
+#figure(
+  ```typst
+  // Cú pháp tối thiểu để sử dụng template
+  #import "template/lib.typ": *
+  #import "config/metadata.typ": data
 
-#let acronyms = csv("content/acronyms.csv")
+  #let acronyms = csv("content/acronyms.csv")
 
-#show: document.with(
-  ..data,
-  doc-class: "thesis",
-  paper: "a4",
-  font-size: 11pt,
-  two-sided: false,
-  output: "digital",
-  lang: "vi",
-  acronyms: acronyms,
+  #show: document.with(
+    ..data,
+    doc-class: "thesis",
+    paper: "a4",
+    font-size: 11pt,
+    two-sided: false,
+    output: "digital",
+    lang: "vi",
+    acronyms: acronyms,
+  )
+
+  #include "content/chapter01.typ"
+  // ... thêm các chương khác
+
+  #show: appendix-l10n.with("vi")
+  #include "content/appendixA.typ"
+  ```,
+  caption: [Code Block Đơn Ngôn Ngữ],
 )
-
-#include "content/chapter01.typ"
-// ... thêm các chương khác
-
-#show: appendix-l10n.with("vi")
-#include "content/appendixA.typ"
-```
 
 == Code Python
 
