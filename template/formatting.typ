@@ -116,9 +116,9 @@
       fill: clr-code-bg,
       inset: 0pt,
       stroke: none,
-      breakable: false,
       width: 100%,
       clip: true,
+      breakable: true,
     )[
       #text(font: code-font, size: 1em)[
         #grid(
@@ -131,7 +131,7 @@
               (top: v, bottom: v, left: inner, right: outer)
             }
           },
-          stroke: (x, y) => if x == 0 { (right: 1pt + clr-code-line) } else { none },
+          stroke: (x, y) => if x == 0 { (right: 0.5pt + clr-code-line) } else { none },
           align: (right, left),
           // Line number column
           align(right, text(fill: gray)[
@@ -143,6 +143,9 @@
       ]
     ]
   ]
+
+  // Cho phép code block trong #figure trải dài trên nhiều trang
+  show figure.where(kind: raw): set block(breakable: true)
 
   body
 }
