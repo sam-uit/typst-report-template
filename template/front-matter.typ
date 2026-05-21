@@ -19,7 +19,7 @@
 /// - two-sided (bool): Whether to use blank pages for odd-start
 #let render-preamble-sections(config, labels) = {
   // No Heading Numbering, No Outlined for preamble sections
-  set heading(numbering: none, outlined: false)
+  set heading(numbering: none, outlined: true)
 
   // Summary / Abstract (thesis only)
   if config.show-summary {
