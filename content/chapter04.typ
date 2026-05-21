@@ -38,7 +38,7 @@ Sử dụng backtick để viết `code nội dòng`. Ví dụ: hàm `document()
   #show: appendix-l10n.with("vi")
   #include "content/appendixA.typ"
   ```,
-  caption: [Code Block Đơn Ngôn Ngữ],
+  caption: [Code Ví Dụ -- Typst],
 )
 
 == Code Python
@@ -48,7 +48,7 @@ Cách dùng:
 ```typst
 #figure(
   raw(read("code/sample-code.py"), block: true, lang: "python"),
-  caption: [Code Python Ví Dụ],
+  caption: [Code Ví Dụ -- Python],
 )
 ```
 
@@ -56,56 +56,40 @@ Kết quả:
 
 #figure(
   raw(read("code/sample-code.py"), block: true, lang: "python"),
-  caption: [Code Python Ví Dụ],
+  caption: [Code Ví Dụ -- Python],
 )
 
 == Code SQL
 
-```sql
--- Truy vấn phân tích rủi ro bảo mật
-SELECT
-    a.asset_id,
-    a.asset_name,
-    COUNT(t.threat_id)                          AS threat_count,
-    MAX(r.likelihood * r.impact)                AS max_risk_score,
-    SUM(CASE WHEN r.severity = 'HIGH'
-             THEN 1 ELSE 0 END)                 AS high_severity_count
-FROM assets a
-    LEFT JOIN threats      t ON t.asset_id    = a.asset_id
-    LEFT JOIN risk_matrix  r ON r.threat_id   = t.threat_id
-WHERE a.active = TRUE
-GROUP BY a.asset_id, a.asset_name
-HAVING MAX(r.likelihood * r.impact) > 6
-ORDER BY max_risk_score DESC;
+```typst
+#figure(
+  raw(read("code/sample-code.sql"), block: true, lang: "sql"),
+  caption: [Code Ví Dụ -- SQL],
+)
 ```
+
+Kết quả:
+
+#figure(
+  raw(read("code/sample-code.sql"), block: true, lang: "sql"),
+  caption: [Code Ví Dụ -- SQL],
+)
 
 == Code Bash / Shell
 
-```bash
-#!/usr/bin/env bash
-# Biên dịch và sao chép PDF vào thư mục môn học
-
-REPO="$HOME/UIT/typst-report-template"
-COURSE="IE105"
-ASSIGN="TH6B"
-DEST="$HOME/UIT/LT.K2025.2-CNTT/uit/courses/$COURSE/assignments/$ASSIGN"
-
-cd "$REPO" || exit 1
-
-# Biên dịch
-typst compile thesis.typ \
-  --font-path template/fonts \
-  --output thesis.pdf
-
-# Kiểm tra kết quả
-if [[ $? -eq 0 ]]; then
-  cp thesis.pdf "$DEST/thesis.pdf"
-  echo "✓ Đã sao chép thesis.pdf → $DEST"
-else
-  echo "✗ Biên dịch thất bại" >&2
-  exit 1
-fi
+```typst
+#figure(
+  raw(read("code/sample-code.sh"), block: true, lang: "bash"),
+  caption: [Code Ví Dụ -- Bash],
+)
 ```
+
+Kết quả:
+
+#figure(
+  raw(read("code/sample-code.sh"), block: true, lang: "bash"),
+  caption: [Code Ví Dụ -- Bash],
+)
 
 == Ghi Chú Về Code Block
 
