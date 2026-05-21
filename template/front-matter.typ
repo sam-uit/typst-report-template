@@ -42,7 +42,7 @@
   // Instructor's comment (thesis only)
   if config.show-instructor-comment {
     include "/content/preamble-comment.typ"
-    pagebreak()
+    // pagebreak()
   }
 
   // Author page (report)
@@ -65,11 +65,11 @@
 #let render-lists(config, labels, accent, acronyms, needs-pagebreak) = {
   // MARK: Table of Contents
   if config.show-toc {
+    if needs-pagebreak { pagebreak() }
     toc-section-wrapper(accent)[
       #unheading[#labels.toc]
       #outline(title: none, indent: auto, depth: 2)
     ]
-    if needs-pagebreak { pagebreak() }
   }
 
   // MARK: List of Tables
