@@ -1,4 +1,4 @@
-// /template/fonts.typ
+// /template/core/fonts.typ
 // Common font settings for reports and thesis
 // Author: Sam Dinh
 // Version: 0.1.0

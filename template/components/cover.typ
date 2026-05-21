@@ -1,5 +1,5 @@
-#import "/template/fonts.typ": *
-#import "/template/utils.typ": static
+#import "/template/core/fonts.typ": *
+#import "/template/core/utils.typ": static
 
 // MARK: Cover Page
 // Khai báo một macro để tạo trang bìa

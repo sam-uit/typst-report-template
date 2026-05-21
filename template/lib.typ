@@ -24,15 +24,15 @@
 // MARK: Imports
 
 // Sub-modules
-#import "fonts.typ": *
-#import "colors.typ": *
-#import "utils.typ": *
-#import "i18n.typ": i18n-labels
-#import "class-defaults.typ": class-defaults
-#import "geometry.typ": page-geometry, resolve-margins
-#import "output-profiles.typ": output-profile
-#import "formatting.typ": *
-#import "front-matter.typ": render-preamble-sections, render-lists
+#import "core/fonts.typ": *
+#import "core/colors.typ": *
+#import "core/utils.typ": *
+#import "langs/i18n.typ": i18n-labels
+#import "core/class-defaults.typ": class-defaults
+#import "core/geometry.typ": page-geometry, resolve-margins
+#import "core/output-profiles.typ": output-profile
+#import "core/formatting.typ": *
+#import "core/front-matter.typ": render-preamble-sections, render-lists
 
 // Components (re-exported for user convenience)
 #import "components/callout.typ": *

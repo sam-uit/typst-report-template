@@ -1,4 +1,4 @@
-// /template/geometry.typ
+// /template/core/geometry.typ
 // Paper size and margin resolution
 // Author: Sam Dinh
 // Version: 0.2.0

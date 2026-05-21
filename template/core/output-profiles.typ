@@ -1,4 +1,4 @@
-// /template/output-profiles.typ
+// /template/core/output-profiles.typ
 // Output mode profiles: digital vs print
 // Author: Sam Dinh
 // Version: 0.2.0

@@ -1,4 +1,4 @@
-// /template/front-matter.typ
+// /template/core/front-matter.typ
 // Front-matter / preamble orchestration
 // Author: Sam Dinh
 // Version: 0.2.0

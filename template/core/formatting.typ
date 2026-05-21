@@ -1,4 +1,4 @@
-// /template/formatting.typ
+// /template/core/formatting.typ
 // Show rules for headings, code blocks, tables, and general formatting
 // Author: Sam Dinh
 // Version: 0.2.0

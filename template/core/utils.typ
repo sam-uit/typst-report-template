@@ -1,4 +1,4 @@
-// /template/utils.typ
+// /template/core/utils.typ
 // Common utility functions for reports and thesis
 // Author: Sam Dinh
 // Version: 0.1.0

@@ -1,5 +1,5 @@
 #import "/themes/stargazer.typ": *
-#import "fonts.typ": *
+#import "core/fonts.typ": *
 
 // MARK: Presentation Template
 #let presentation(

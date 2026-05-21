@@ -1,4 +1,4 @@
-// /template/colors.typ
+// /template/core/colors.typ
 // Themed color palette for the document template
 // Author: Sam Dinh
 // Version: 0.2.0

@@ -1,4 +1,4 @@
-// /template/class-defaults.typ
+// /template/core/class-defaults.typ
 // Document class presets — the Typst equivalent of LaTeX .cls defaults
 // Author: Sam Dinh
 // Version: 0.2.0
