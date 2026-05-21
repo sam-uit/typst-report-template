@@ -126,15 +126,20 @@
   let profile = output-profile(output)
   let labels = i18n-labels(lang)
 
+  // Extract 2–3 letter ISO 639 base code for set text(lang: …)
+  // BCP 47 tags like "vi-vn" or "zh-Hant" must be stripped to "vi" / "zh"
+  let text-lang = if "-" in lang { lang.split("-").first() } else { lang }
+
   // Resolve page geometry
   let geo = page-geometry(cfg-paper, cfg-margin, cfg-two-sided)
 
-  // Resolve region from lang if auto
+  // Resolve region from lang if auto (supports both short and BCP 47 forms)
   let cfg-region = if region == auto {
-    if lang == "vi" { "vn" }
-    else if lang == "ms" { "my" }
-    else if lang == "zh-Hant" { "tw" }
-    else if lang == "zh-Hans" { "cn" }
+    let lower = lower(lang)
+    if lower in ("vi", "vi-vn") { "vn" }
+    else if lower in ("ms", "ms-my") { "my" }
+    else if lower in ("zh-hant", "zh-tw") { "tw" }
+    else if lower in ("zh-hans", "zh-cn") { "cn" }
     else { "us" }
   } else { region }
 
@@ -169,7 +174,7 @@
     font: body-font,
     size: cfg-font-size,
     weight: "regular",
-    lang: lang,
+    lang: text-lang,
     region: cfg-region,
   )
 

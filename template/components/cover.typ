@@ -15,20 +15,20 @@
 ) = {
   align(center)[
     // MARK: University Name
-    #if university.name != "" [
-      #text(font: heading-font, size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.name)] \
+    #if university.at("name", default: "") != "" [
+      #text(font: heading-font, size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.at("name", default: ""))] \
       #v(0.2em)
     ]
-    #if university.college != "" [
-      #text(font: heading-font, size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.college)] \
+    #if university.at("college", default: "") != "" [
+      #text(font: heading-font, size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.at("college", default: ""))] \
       #v(0.2em)
     ]
     // #if university.center != "" [
     //   #text(font: heading-font, size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.center)] \
     //   #v(0.2em)
     // ]
-    #if university.faculty != "" [
-      #text(font: heading-font, size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.faculty)] \
+    #if university.at("faculty", default: "") != "" [
+      #text(font: heading-font, size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.at("faculty", default: ""))] \
       #v(0.2em)
     ]
 
@@ -75,11 +75,11 @@
         dir: ttb,
         spacing: 2em, // Khoảng cách (vspace) giữa title và subtitle
         text(font: heading-font, size: 20pt, weight: "regular")[
-          #smallcaps[#assignment.title]
+          #smallcaps[#assignment.at("title", default: "")]
         ],
-        if assignment.subtitle != none and assignment.subtitle != "" {
+        if assignment.at("subtitle", default: "") != none and assignment.at("subtitle", default: "") != "" {
           text(font: heading-font, size: 28pt, weight: "regular")[
-            #assignment.subtitle
+            #assignment.at("subtitle", default: "")
           ]
         },
       )
@@ -123,12 +123,12 @@
       [
         #list(
           marker: none,
-          [#course.id],
-          [#course.name],
-          [#course.class],
+          [#course.at("id", default: "")],
+          [#course.at("name", default: "")],
+          [#course.at("class", default: "")],
           [#instructor],
-          [#author.name],
-          [#author.id],
+          [#author.at("name", default: "")],
+          [#author.at("id", default: "")],
         )
       ],
     )
@@ -139,7 +139,7 @@
     // Hiển thị Ngày tháng và Nơi thực hiện
     // Mặc định là today()
     #align(center)[
-      #assignment.date
+      #assignment.at("date", default: "")
     ]
     #v(0.8em)
   ]
