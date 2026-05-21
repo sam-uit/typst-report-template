@@ -191,7 +191,7 @@
     it,
   )
 
-  // Allow figure-wrapped tables to also span multiple pages
+  // Cho phép table trong #figure trải dài trên nhiều trang
   show figure.where(kind: table): set block(breakable: true)
 
   body
