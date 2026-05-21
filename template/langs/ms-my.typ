@@ -1,10 +1,10 @@
-// /template/langs/ms.typ
+// /template/langs/ms-my.typ
 // Bahasa Malaysia (ms) label definitions
 // Author: Sam Dinh
 // Version: 0.3.0
 // License: MIT
 
-#let labels-ms = (
+#let labels-ms-my = (
   toc: "Isi Kandungan",
   lot: "Senarai Jadual",
   lof: "Senarai Rajah",

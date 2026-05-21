@@ -1,10 +1,10 @@
-// /template/langs/en.typ
+// /template/langs/en-us.typ
 // English (en) label definitions
 // Author: Sam Dinh
 // Version: 0.3.0
 // License: MIT
 
-#let labels-en = (
+#let labels-en-us = (
   // Front matter
   toc: "Table of Contents",
   lot: "List of Tables",

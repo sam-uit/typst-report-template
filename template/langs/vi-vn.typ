@@ -1,10 +1,10 @@
-// /template/langs/vi.typ
+// /template/langs/vi-vn.typ
 // Vietnamese (vi) label definitions
 // Author: Sam Dinh
 // Version: 0.3.0
 // License: MIT
 
-#let labels-vi = (
+#let labels-vi-vn = (
   toc: "Mục Lục",
   lot: "Danh Sách Bảng",
   lof: "Danh Sách Hình Ảnh",
