@@ -74,28 +74,44 @@
 
   // MARK: List of Tables
   if config.show-lot {
-    toc-section-wrapper(accent)[
-      #unheading[#labels.lot]
-      #outline(title: none, target: figure.where(kind: table))
-    ]
-    if needs-pagebreak { pagebreak() }
+    context {
+      let lots = query(figure.where(kind: table))
+      if lots.len() > 0 {
+        if needs-pagebreak { pagebreak() }
+        toc-section-wrapper(accent)[
+          #unheading[#labels.lot]
+          #outline(title: none, target: figure.where(kind: table))
+        ]
+      }
+    }
   }
 
   // MARK: List of Figures
   if config.show-lof {
-    toc-section-wrapper(accent)[
-      #unheading[#labels.lof]
-      #outline(title: none, target: figure.where(kind: image))
-    ]
-    if needs-pagebreak { pagebreak() }
+    context {
+      let lofs = query(figure.where(kind: image))
+      if lofs.len() > 0 {
+        if needs-pagebreak { pagebreak() }
+        toc-section-wrapper(accent)[
+          #unheading[#labels.lof]
+          #outline(title: none, target: figure.where(kind: image))
+        ]
+      }
+    }
   }
 
   // MARK: List of Code Snippets
   if config.show-loc {
-    toc-section-wrapper(accent)[
-      #unheading[#labels.loc]
-      #outline(title: none, target: figure.where(kind: raw))
-    ]
+    context {
+      let locs = query(figure.where(kind: raw))
+      if locs.len() > 0 {
+        if needs-pagebreak { pagebreak() }
+        toc-section-wrapper(accent)[
+          #unheading[#labels.loc]
+          #outline(title: none, target: figure.where(kind: raw))
+        ]
+      }
+    }
   }
 
   // MARK: List of TODOs (conditional on existence)
