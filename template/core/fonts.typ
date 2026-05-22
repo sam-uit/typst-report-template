@@ -23,7 +23,7 @@
 // Path is relative to this file: ../../config/template.yaml
 // If the file is missing Typst will error — ship config/template.yaml
 // with the project (it is tracked in git and safe to edit).
-#let _cfg = yaml("../../config/template.yaml")
+#let _cfg = yaml("../../config/config.yaml")
 #let _user-fonts = _cfg.at("fonts", default: (:))
 
 // MARK: Resolved fonts
