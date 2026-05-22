@@ -13,9 +13,10 @@ Thành viên của nhóm và bảng nhiệm vụ.
     #show table.cell: current_cell => {
       // Check if row (y > 0) AND the column is (0, 1, or 3)
       if current_cell.y > 0 and current_cell.x in (0, 1) {
-        // Use a monofont: Iosevka
+        // Use a monofont for the student id column
         text(
-          font: "Iosevka",
+          font: document-fonts.mono,
+          size: 0.9em,
           weight: 300,
           fill: black.lighten(40%),
         )[#current_cell]
