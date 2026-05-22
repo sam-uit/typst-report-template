@@ -63,7 +63,8 @@ typst-report-template/
 ├── template/           ← API template (lib.typ, components/, ...)
 ├── content/            ← Nội dung bài tập (.typ + .md)
 ├── config/
-│   └── metadata.typ    ← Thông tin bài tập, sinh viên, môn học
+│   ├── metadata.yaml   ← Thông tin bài tập, sinh viên, môn học
+│   └── config.yaml     ← Cấu hình font, màu, theme
 ├── docs/               ← Tài liệu tham khảo (getting-started.md, ...)
 ├── thesis.typ          ← Entry point chính
 └── Makefile            ← Build automation

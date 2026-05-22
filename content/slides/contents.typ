@@ -1,6 +1,6 @@
 #import "@preview/touying:0.6.1": *
 #import themes.stargazer: *
-#import "../config/metadata.typ": *
+#let data = yaml("../config/metadata.yaml")
 
 // TODO: Use the config/metadata file.
 

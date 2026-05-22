@@ -1,6 +1,6 @@
 // #import "@preview/touying:0.6.1": *
 // #import themes.aqua: *
-#import "config/metadata.typ": *
+#let data = yaml("config/metadata.yaml")
 #import "themes/aqua.typ": *
 #import "template/fonts.typ": *
 

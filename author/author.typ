@@ -1,5 +1,5 @@
 #import "../template/lib.typ": *
-#import "../config/metadata.typ": *
+#let data = yaml("../config/metadata.yaml")
 
 // YOUR CONTENT HERE
 

@@ -1,5 +1,5 @@
 #import "template/libslides.typ": *
-#import "config/metadata.typ": *
+#let data = yaml("config/metadata.yaml")
 #import "@preview/numbly:0.1.0": numbly
 
 #show: presentation.with(

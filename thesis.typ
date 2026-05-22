@@ -3,7 +3,7 @@
 
 // Import template and metadata
 #import "template/lib.typ": *
-#import "config/metadata.typ": data
+#let data = yaml("config/metadata.yaml")
 
 // Load acronyms
 #let acronyms = csv("content/acronyms.csv")

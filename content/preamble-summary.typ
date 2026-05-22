@@ -1,5 +1,5 @@
 #import "/template/lib.typ": *
-#import "/config/metadata.typ": data
+#let data = yaml("/config/metadata.yaml")
 
 = BÁO CÁO TÓM TẮT
 

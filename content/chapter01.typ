@@ -21,7 +21,7 @@ theo cấu hình đầu ra: #link("https://github.com")[github.com].
 
 + Cài đặt Typst 0.14 trở lên (hỗ trợ `breakable: true` cùng `clip: true`)
 + Sao chép thư mục `template/` vào dự án
-+ Cập nhật `config/metadata.typ` với thông tin bài tập
++ Cập nhật `config/metadata.yaml` với thông tin bài tập
 + Biên dịch: `typst compile thesis.typ --font-path template/fonts`
 
 === Danh Sách Không Thứ Tự

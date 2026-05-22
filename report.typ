@@ -3,7 +3,7 @@
 
 // Import template and metadata
 #import "template/lib.typ": *
-#import "config/metadata.typ": data
+#let data = yaml("config/metadata.yaml")
 
 // Show document with report class
 #show: document.with(
