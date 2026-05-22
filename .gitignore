@@ -11,3 +11,6 @@
 
 # Editor files
 .vscode/
+
+# Track pre-compiled language samples
+!samples/sample-*.pdf

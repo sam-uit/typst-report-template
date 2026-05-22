@@ -1,52 +1,50 @@
 // /template/langs/i18n.typ
-// Internationalization dispatcher — imports all language packs
+// Internationalization dispatcher — data-driven from manifest.yaml
 // Author: Sam Dinh
-// Version: 0.3.0
+// Version: 0.5.0
 // License: MIT
 //
-// Files follow BCP 47 tag format, all lowercase:
-//   en-us.typ, vi-vn.typ, ms-my.typ, zh-hant.typ, zh-hans.typ
+// Available languages are defined entirely by:
+//   1. A YAML data file in this directory:  <bcp47-lowercase>.yaml
+//   2. An entry in manifest.yaml listing the code and any aliases
+//
+// To add a new language — no Typst code changes needed:
+//   1. Create template/langs/<bcp47-lowercase>.yaml with all label keys
+//   2. Add an entry to manifest.yaml (code + aliases)
 //
 // Usage:
-//   #import "langs/i18n.typ": i18n-labels
-//   #let labels = i18n-labels("vi")        // short code
-//   #let labels = i18n-labels("vi-vn")     // full BCP 47, also works
+//   #import "langs/i18n.typ": i18n-labels, i18n-supported-languages
+//   #let labels = i18n-labels("vi")       // short alias
+//   #let labels = i18n-labels("vi-vn")    // full BCP 47
 //   labels.toc  // => "Mục Lục"
-//
-// To add a new language:
-//   1. Create langs/<bcp47-lowercase>.typ with a `labels-<bcp47>` dict
-//   2. Import it below and add entries to _registry
 
-#import "en-us.typ": labels-en-us
-#import "vi-vn.typ": labels-vi-vn
-#import "ms-my.typ": labels-ms-my
-#import "zh-hant.typ": labels-zh-hant
-#import "zh-hans.typ": labels-zh-hans
+// MARK: Load registry from manifest
 
-// MARK: Language Registry
-// Keys: full BCP 47 lowercase. Short-code aliases are listed below.
+#let _manifest = yaml("manifest.yaml")
 
-#let _registry = (
-  // Full BCP 47 keys (canonical)
-  "en-us":   labels-en-us,
-  "vi-vn":   labels-vi-vn,
-  "ms-my":   labels-ms-my,
-  "zh-hant": labels-zh-hant,
-  "zh-hans": labels-zh-hans,
-  // Short-code aliases (backward-compatible)
-  "en":      labels-en-us,
-  "vi":      labels-vi-vn,
-  "ms":      labels-ms-my,
-  // Typst canonical casing aliases (zh-Hant / zh-Hans)
-  "zh-Hant": labels-zh-hant,
-  "zh-Hans": labels-zh-hans,
-)
+// Build registry: map every canonical code AND alias → its label dict
+#let _registry = {
+  let reg = (:)
+  for entry in _manifest.languages {
+    let code   = entry.code
+    let labels = yaml(code + ".yaml")
+    reg.insert(code, labels)
+    for alias in entry.at("aliases", default: ()) {
+      reg.insert(alias, labels)
+    }
+  }
+  reg
+}
+
+// Canonical fallback code (first language listed in manifest)
+#let _fallback = _manifest.languages.first().code
 
 // MARK: Public API
 
 /// Returns the label dictionary for the given language code.
-/// Accepts full BCP 47 lowercase tags ("vi-vn"), short codes ("vi"),
-/// or Typst-canonical casing ("zh-Hant"). Falls back to English if unknown.
+/// Accepts canonical BCP 47 lowercase codes ("vi-vn"), short codes ("vi"),
+/// or alternate casing ("zh-Hant"). Falls back to the first language in
+/// manifest.yaml (typically en-us) if the code is not found.
 ///
 /// - lang (str): Language code
 /// -> dictionary
@@ -54,12 +52,12 @@
   if lang in _registry {
     _registry.at(lang)
   } else {
-    _registry.at("en-us")
+    _registry.at(_fallback)
   }
 }
 
-/// Returns the list of canonical BCP 47 language codes supported.
+/// Returns the list of canonical BCP 47 codes defined in manifest.yaml.
 /// -> array
 #let i18n-supported-languages() = {
-  ("en-us", "vi-vn", "ms-my", "zh-hant", "zh-hans")
+  _manifest.languages.map(e => e.code)
 }
