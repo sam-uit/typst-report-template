@@ -24,9 +24,16 @@ Bước 7: Phân loại rủi ro:
 
 Mỗi mối đe dọa được đánh giá theo thang điểm:
 
-- **Khả năng xảy ra (Likelihood)**: Thấp (1) / Trung Bình (2) / Cao (3)
-- **Mức độ ảnh hưởng (Impact)**: Thấp (1) / Trung Bình (2) / Cao (3)
+- **Khả năng xảy ra (Likelihood)**: 1 / 2 / 3
+  - 1: Rất khó xảy ra hoặc không có nhu cầu thực hiện.
+  - 2: Có thể xảy ra hoặc có nhu cầu thực hiện ở mức độ nhất định.
+  - 3: Dễ dàng xảy ra hoặc có chủ đích thực hiện.
+- **Mức độ ảnh hưởng (Impact)**: 1 / 2 / 3
+  - 1: Ảnh hưởng không đáng kể, có thể khắc phục dễ dàng.
+  - 2: Ảnh hưởng ở mức độ nhất định, có thể khắc phục.
+  - 3: Ảnh hưởng nghiêm trọng, khó khắc phục hoặc không thể khắc phục.
 - **Mức độ rủi ro (Risk Level)** = Likelihood × Impact
+  - Phản ánh tương quan tuyến tính giữa Likelihood và Impact.
 
 ```{=typst}
 #figure(
