@@ -13,7 +13,8 @@ Bảng 5: Kế hoạch xử lý rủi ro
 
 | Rủi ro | Mức | Chiến lược | Biện pháp đề xuất |
 | --- | --- | --- | --- |
-| | | | |
+| ABC | | | |
+| DEF | | | |
 
 ## Bước 8. Chiến Lược Xử Lý Rủi Ro
 
