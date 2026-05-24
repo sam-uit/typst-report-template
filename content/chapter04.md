@@ -45,7 +45,7 @@ Mỗi mối đe dọa được đánh giá theo thang điểm:
     [T2], [TS1. Mạng xã hội], [Lộ thông tin qua privacy sai], [#text(fill: red)[3]], [#text(fill: orange)[2]], [#text(fill: red)[6]],
     [T3], [TS1. Mạng xã hội], [Cài đặt Fake App], [#text(fill: orange)[2]], [#text(fill: orange)[3]], [#text(fill: red)[6]],
     [T4], [TS2. Ngân hàng/Ví], [Tấn công lừa đảo], [#text(fill: red)[3]], [#text(fill: red)[3]], [#text(fill: red)[9]],
-    [T5], [TS2. Ngân hàng/Ví], [SIM Swapping], [#text(fill: orange)[1]], [#text(fill: orange)[3]], [#text(fill: orange)[3]],
+    [T5], [TS2. Ngân hàng/Ví], [SIM Swapping], [#text(fill: yellow)[1]], [#text(fill: orange)[3]], [#text(fill: orange)[3]],
     [T6], [TS2. Ngân hàng/Ví], [Trojan trên điện thoại], [#text(fill: orange)[2]], [#text(fill: orange)[3]], [#text(fill: red)[6]],
     [T7], [TS3. Email], [Credential Stuffing], [#text(fill: orange)[2]], [#text(fill: orange)[3]], [#text(fill: red)[6]],
     [T8], [TS3. Email], [Truy cập thiết bị bị mất], [#text(fill: orange)[2]], [#text(fill: orange)[3]], [#text(fill: red)[6]],
@@ -53,8 +53,8 @@ Mỗi mối đe dọa được đánh giá theo thang điểm:
     [T10], [TS4. Danh bạ], [Đồng bộ cloud không bảo mật], [#text(fill: orange)[2]], [#text(fill: orange)[2]], [#text(fill: orange)[4]],
     [T11], [TS5. Ảnh/Video], [Rò rỉ qua cloud backup], [#text(fill: orange)[2]], [#text(fill: orange)[2]], [#text(fill: orange)[4]],
     [T12], [TS5. Ảnh/Video], [App chỉnh sửa ảnh độc hại], [#text(fill: orange)[2]], [#text(fill: orange)[2]], [#text(fill: orange)[4]],
-    [T13], [TS6. Lịch sử chat], [Đánh cắp tin nhắn], [#text(fill: orange)[1]], [#text(fill: orange)[3]], [#text(fill: orange)[3]],
-    [T14], [TS6. Lịch sử chat], [Phần mềm gián điệp], [#text(fill: orange)[1]], [#text(fill: orange)[3]], [#text(fill: orange)[3]]
+    [T13], [TS6. Lịch sử chat], [Đánh cắp tin nhắn], [#text(fill: yellow)[1]], [#text(fill: orange)[3]], [#text(fill: orange)[3]],
+    [T14], [TS6. Lịch sử chat], [Phần mềm gián điệp], [#text(fill: yellow)[1]], [#text(fill: orange)[3]], [#text(fill: orange)[3]]
   ),
   caption: "Đánh Giá Rủi Ro",
 )
@@ -69,26 +69,33 @@ Mỗi mối đe dọa được đánh giá theo thang điểm:
 - Risk Level 6–9: **Cao**
   - Có chủ đích thực hiện rõ ràng và ảnh hưởng nghiêm trọng.
 
+Trong 14 rủi ro được đánh giá:
+
+- 8 rủi ro **Cao** và 6 rủi ro **Trung Bình**.
+- Không có rủi ro nào ở mức **Thấp** — phản ánh thực tế rằng điện thoại thông minh là mục tiêu tấn công
+hấp dẫn do tập trung nhiều loại tài sản có giá trị.
+- Rủi ro **T4** (Phishing/Smishing) đạt mức cao nhất (9/9), là một trong những hình thức tấn công phổ biến và nguy hiểm nhất hiện nay.
+
 ```{=typst}
 #figure(
   table(
-    columns: (10%, 35%, 12.5%, 12.5%, 13%, 20%),
+    columns: (8%, 40%, 12.5%, 12%, 12.5%, 18%),
     align: (left, left, left, left, left, left),
     [Mã], [Mối Đe Dọa], [Likelihood], [Impact], [Risk Level], [Phân Loại],
-    [T1], [Chiếm đoạt tài khoản], [2], [3], [6], [Cao],
-    [T2], [Lộ thông tin qua privacy sai], [3], [2], [6], [Cao],
-    [T3], [Cài đặt Fake App], [2], [3], [6], [Cao],
-    [T4], [Tấn công lừa đảo], [3], [3], [9], [Cao],
-    [T5], [SIM Swapping], [1], [3], [3], [Trung Bình],
-    [T6], [Trojan trên điện thoại], [2], [3], [6], [Cao],
-    [T7], [Credential Stuffing], [2], [3], [6], [Cao],
-    [T8], [Truy cập thiết bị bị mất], [2], [3], [6], [Cao],
-    [T9], [App yêu cầu quyền danh bạ], [3], [2], [6], [Cao],
-    [T10], [Đồng bộ cloud không bảo mật], [2], [2], [4], [Trung Bình],
-    [T11], [Rò rỉ qua cloud backup], [2], [2], [4], [Trung Bình],
-    [T12], [App chỉnh sửa ảnh độc hại], [2], [2], [4], [Trung Bình],
-    [T13], [Đánh cắp tin nhắn], [1], [3], [3], [Trung Bình],
-    [T14], [Phần mềm gián điệp], [1], [3], [3], [Trung Bình],
+    [T1], [Chiếm đoạt tài khoản], [2], [3], [6], [#text(fill: red)[Cao]],
+    [T2], [Lộ thông tin qua privacy sai], [3], [2], [6], [#text(fill: red)[Cao]],
+    [T3], [Cài đặt Fake App], [2], [3], [6], [#text(fill: red)[Cao]],
+    [T4], [Tấn công lừa đảo (Phishing/Smishing)], [3], [3], [9], [#text(fill: red)[Cao]],
+    [T5], [SIM Swapping], [1], [3], [3], [#text(fill: orange)[Trung Bình]],
+    [T6], [Trojan trên điện thoại], [2], [3], [6], [#text(fill: red)[Cao]],
+    [T7], [Credential Stuffing], [2], [3], [6], [#text(fill: red)[Cao]],
+    [T8], [Truy cập thiết bị bị mất], [2], [3], [6], [#text(fill: red)[Cao]],
+    [T9], [App yêu cầu quyền danh bạ], [3], [2], [6], [#text(fill: red)[Cao]],
+    [T10], [Đồng bộ cloud không bảo mật], [2], [2], [4], [#text(fill: orange)[Trung Bình]],
+    [T11], [Rò rỉ qua cloud backup], [2], [2], [4], [#text(fill: orange)[Trung Bình]],
+    [T12], [App chỉnh sửa ảnh độc hại], [2], [2], [4], [#text(fill: orange)[Trung Bình]],
+    [T13], [Đánh cắp tin nhắn], [1], [3], [3], [#text(fill: orange)[Trung Bình]],
+    [T14], [Phần mềm gián điệp], [1], [3], [3], [#text(fill: orange)[Trung Bình]]
   ),
   caption: "Phân Loại Rủi Ro",
 )
