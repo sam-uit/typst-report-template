@@ -15,6 +15,10 @@
 // TODO: Cập nhật raw text size vào template.
 #show raw: set text(size: 0.8em)
 
+// Đặt font cho table ở 0.8em để tiết kiệm không gian.
+// TODO: Cập nhật table text size vào template.
+#show table: set text(size: 0.8em)
+
 // Content goes here
 #include "content/chapter01.typ"
 #include "content/chapter02.typ"
