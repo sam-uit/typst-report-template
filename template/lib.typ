@@ -425,7 +425,7 @@
           )[#if it.numbering != none [CHƯƠNG #counter(heading).display(it.numbering)]],
           text(
             font: heading-font,
-            size: 30pt,
+            size: 28pt,
             weight: "regular",
           )[#smallcaps[#it.body]],
           line(length: 100%, stroke: 1pt + black.lighten(60%)),
