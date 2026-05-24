@@ -74,7 +74,7 @@ Trong 14 rủi ro được đánh giá:
 - 8 rủi ro **Cao** và 6 rủi ro **Trung Bình**.
 - Không có rủi ro nào ở mức **Thấp** — phản ánh thực tế rằng điện thoại thông minh là mục tiêu tấn công
 hấp dẫn do tập trung nhiều loại tài sản có giá trị.
-- Rủi ro **T4** (Phishing/Smishing) đạt mức cao nhất (9/9), là một trong những hình thức tấn công phổ biến và nguy hiểm nhất hiện nay.
+- Rủi ro **T4** (Phishing/Smishing) đạt mức cao nhất (9/9), là một trong những hình thức tấn công phổ biến và nguy hiểm nhất hiện nay đặc biệt thiết bị di động được xem là phổ cập.
 
 ```{=typst}
 #figure(
