@@ -45,7 +45,8 @@ Chiến lược sử dụng:
 | T14 | Phần mềm gián điệp | TB | Mitigate | Không cho mượn điện thoại không có giám sát; bật App Lock cho ứng dụng nhạy cảm; kiểm tra ứng dụng lạ định kỳ. | -->
 
 ```{=typst}
-#table(
+#figure(
+  table(
   columns: (8%, 20%, 10%, 14%, 48%),
   align: (left, left, left, left, left),
   [Mã], [Rủi Ro], [Mức], [Chiến Lược], [Biện Pháp Đề Xuất],
@@ -94,7 +95,7 @@ Chiến lược sử dụng:
     - Đổi mật khẩu thành chuỗi mạnh dài ≥ 12 ký tự, có số, ký tự đặc biệt.
   ],
   [T11], [Rò rỉ cloud backup], [TB], [Mitigate], [
-    - Kiểm tra và giới hạn nội dung được sao lưu (nếu không cần thiết).,
+    - Kiểm tra và giới hạn nội dung được sao lưu (nếu không cần thiết).
     - Lưu ảnh quan trọng trong album ẩn hoặc thư mục có mã khóa riêng (nếu có thể).
   ],
   [T12], [App chỉnh sửa ảnh độc hại], [TB], [Avoid], [
@@ -109,6 +110,7 @@ Chiến lược sử dụng:
     - Bật App Lock cho ứng dụng nhạy cảm.
     - Kiểm tra ứng dụng lạ định kỳ.
   ]
+  ),
+  caption: "Kế Hoạch Xử Lý Rủi Ro",
 )
-
 ```
