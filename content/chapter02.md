@@ -97,3 +97,12 @@ Với **mỗi tài sản** đã xác định ở Phần 1, dưới đây ta có 
   caption: [Bảng 2. Mối Đe Dọa Đối Với Các Tài Sản (Bối Cảnh 3: Điện Thoại Thông Minh)]
 )
 ```
+
+## Tổng Hợp Các Nhóm Mối Đe Dọa
+
+Nhìn chung, các mối đe dọa có thể phân nhóm theo tính chất như sau:
+
+- **Tấn công từ xa** (phishing, smishing, credential stuffing, SIM swapping): Không cần tiếp xúc vật lý với thiết bị, thường nhắm vào tài khoản tài chính và email do giá trị cao.
+- **Phần mềm độc hại** (Trojan, fake app, spyware): Khai thác thói quen cài ứng dụng từ nguồn ngoài kho chính thức hoặc click vào đường link lạ.
+- **Lỗi cấu hình / thói quen người dùng** (quyền riêng tư sai, không khóa màn hình, tái sử dụng mật khẩu): Tạo cơ hội cho cả tấn công từ xa lẫn tấn công vật lý.
+- **Rò rỉ qua bên thứ ba** (ứng dụng lấy quyền danh bạ/ảnh, dịch vụ đám mây): Thường bị bỏ qua nhưng có tần suất xảy ra cao do người dùng ít chú ý đến quyền ứng dụng.
