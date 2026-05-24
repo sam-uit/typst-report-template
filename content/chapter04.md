@@ -56,5 +56,33 @@ Mỗi mối đe dọa được đánh giá theo thang điểm:
 ## Bước 7 — Phân Loại Rủi Ro
 
 - Risk Level 1–2: **Thấp**
+  - Khó hoặc không có nhu cầu thực hiện, hoặc ảnh hưởng không đáng kể.
 - Risk Level 3–4: **Trung Bình**
+  - Có thể thực hiện và ảnh hưởng ở mức độ nhất định.
 - Risk Level 6–9: **Cao**
+  - Có chủ đích thực hiện rõ ràng và ảnh hưởng nghiêm trọng.
+
+```{=typst}
+#figure(
+  table(
+    columns: (10%, 35%, 12.5%, 12.5%, 13%, 20%),
+    align: (left, left, left, left, left, left),
+    [Mã], [Mối Đe Dọa], [Likelihood], [Impact], [Risk Level], [Phân Loại],
+    [T1], [Chiếm đoạt tài khoản], [2], [3], [6], [Cao],
+    [T2], [Lộ thông tin qua privacy sai], [3], [2], [6], [Cao],
+    [T3], [Cài đặt Fake App], [2], [3], [6], [Cao],
+    [T4], [Tấn công lừa đảo], [3], [3], [9], [Cao],
+    [T5], [SIM Swapping], [1], [3], [3], [Trung Bình],
+    [T6], [Trojan trên điện thoại], [2], [3], [6], [Cao],
+    [T7], [Credential Stuffing], [2], [3], [6], [Cao],
+    [T8], [Truy cập thiết bị bị mất], [2], [3], [6], [Cao],
+    [T9], [App yêu cầu quyền danh bạ], [3], [2], [6], [Cao],
+    [T10], [Đồng bộ cloud không bảo mật], [2], [2], [4], [Trung Bình],
+    [T11], [Rò rỉ qua cloud backup], [2], [2], [4], [Trung Bình],
+    [T12], [App chỉnh sửa ảnh độc hại], [2], [2], [4], [Trung Bình],
+    [T13], [Đánh cắp tin nhắn], [1], [3], [3], [Trung Bình],
+    [T14], [Phần mềm gián điệp], [1], [3], [3], [Trung Bình],
+  ),
+  caption: "Phân Loại Rủi Ro",
+)
+```
