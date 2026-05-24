@@ -106,7 +106,7 @@ Chiến lược sử dụng:
     - Chuyển sang dùng Authenticator App (Google Authenticator, Microsoft Authenticator) cho tất cả dịch vụ hỗ trợ TOTP.
   ],
   [T14], [Phần mềm gián điệp], [TB], [Mitigate], [
-    - Không cho mượn điện thoại không có giám sát.
+    - Không cho mượn điện thoại không có giám sát, đặc biệt có chứa dữ liệu công việc.
     - Bật App Lock cho ứng dụng nhạy cảm.
     - Kiểm tra ứng dụng lạ định kỳ.
   ]
