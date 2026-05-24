@@ -19,6 +19,7 @@
 // TODO: Cập nhật table text size vào template.
 #show table: set text(size: 0.8em)
 
+// Tắt justify (căn đều) cho tất cả heading
 #show heading: set par(justify: false)
 
 // Content goes here
