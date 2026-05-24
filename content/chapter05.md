@@ -56,7 +56,9 @@ Chiến lược sử dụng:
   table(
   columns: (8%, 20%, 10%, 14%, 48%),
   align: (left, left, left, left, left),
-  [Mã], [Rủi Ro], [Mức], [Chiến Lược], [Biện Pháp Đề Xuất],
+  table.header(
+    [Mã], [Rủi Ro], [Mức], [Chiến Lược], [Biện Pháp Đề Xuất]
+  ),
   [T1], [Chiếm đoạt tài khoản], [Cao], [Mitigate], [
     - Bật 2FA trên tất cả tài khoản online.
     - Dùng password manager để tạo và lưu mật khẩu mạnh, riêng biệt.

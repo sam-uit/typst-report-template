@@ -40,7 +40,9 @@ Mỗi mối đe dọa được đánh giá theo thang điểm:
   table(
     columns: (5%, 25%, 32%, 12.5%, 12.5%, 13%),
     align: (left, left, left, left, left, left),
-    [Mã], [Tài Sản], [Mối Đe Dọa], [Likelihood], [Impact], [Risk Level],
+    table.header(
+      [Mã], [Tài Sản], [Mối Đe Dọa], [Likelihood], [Impact], [Risk Level]
+    ),
     [T1], [TS1. Mạng xã hội], [Chiếm đoạt tài khoản], [#text(fill: orange)[2]], [#text(fill: orange)[3]], [#text(fill: red)[6]],
     [T2], [TS1. Mạng xã hội], [Lộ thông tin qua privacy sai], [#text(fill: red)[3]], [#text(fill: orange)[2]], [#text(fill: red)[6]],
     [T3], [TS1. Mạng xã hội], [Cài đặt Fake App], [#text(fill: orange)[2]], [#text(fill: orange)[3]], [#text(fill: red)[6]],
@@ -81,7 +83,9 @@ hấp dẫn do tập trung nhiều loại tài sản có giá trị.
   table(
     columns: (8%, 40%, 12.5%, 12%, 12.5%, 18%),
     align: (left, left, left, left, left, left),
-    [Mã], [Mối Đe Dọa], [Likelihood], [Impact], [Risk Level], [Phân Loại],
+    table.header(
+      [Mã], [Mối Đe Dọa], [Likelihood], [Impact], [Risk Level], [Phân Loại]
+    ),
     [T1], [Chiếm đoạt tài khoản], [2], [3], [6], [#text(fill: red)[Cao]],
     [T2], [Lộ thông tin qua privacy sai], [3], [2], [6], [#text(fill: red)[Cao]],
     [T3], [Cài đặt Fake App], [2], [3], [6], [#text(fill: red)[Cao]],

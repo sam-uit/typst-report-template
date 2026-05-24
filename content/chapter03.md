@@ -35,7 +35,9 @@ Với mỗi mối đe dọa đã xác định ở Phần 2, dưới đây phân 
     table(
     columns: (5%, 25%, 70%),
     align: (left, left, left),
-    [Mã], [Mối Đe Dọa], [Lỗ Hổng Liên Quan],
+    table.header(
+      [Mã], [Mối Đe Dọa], [Lỗ Hổng Liên Quan]
+    ),
     [T1], [Chiếm đoạt tài khoản (TS1)], [
       - Không bật xác thực 2 bước (2FA).
       - Mật khẩu ngắn, đơn giản hoặc tái sử dụng trên nhiều dịch vụ.],
