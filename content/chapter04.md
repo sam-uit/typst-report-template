@@ -1,58 +1,35 @@
-# TIẾT 4. BẢO MẬT THIẾT BỊ DI ĐỘNG (THỰC HÀNH BẮT BUỘC)
+# PHẦN 4 — ĐÁNH GIÁ RỦI RO (RISK ASSESSMENT)
 
-## Bài 8. Thiết Lập Khóa Màn Hình An Toàn
+Bước 5: Đánh giá **Khả năng xảy ra (Likelihood)** và **Mức độ ảnh hưởng (Impact)** theo thang điểm:
 
-- PIN $\ge$ 6 số hoặc mật khẩu.
-- Bật vân tay / FaceID (nếu có).
-- Chụp màn hình mục cấu hình (không lộ mã).
+- Thấp (1)
+- Trung bình (2)
+- Cao (3)
 
-Thiết bị: iPhone.
+Bước 6: Tính **Mức độ rủi ro** = Likelihood × Impact.
 
-Mã Pin: 10111997
+Bảng 4: Đánh giá rủi ro
 
-- 6 chữ số
-- Luôn yêu cầu mã PIN ngay khi khóa màn hình.
+| Tài sản | Mối đe dọa | Likelihood | Impact | Risk Level |
+| --- | --- | --- | --- | --- |
+| TS1 | T1 | 1 | 1 | 1 |
 
-![Bài 8. Màn Hình Khóa Điện Thoại](assets/08-passcode.png)
+Bước 7: Phân loại rủi ro:
 
-Luôn yêu cầu FaceID cho bất kỳ tác vụ quan trọng nào:
+- 1–2: Thấp
+- 3–4: Trung bình
+- 6–9: Cao
 
-- Mở khóa iPhone.
-- Thanh toán.
-- Điền mật khẩu.
+## Bước 5 & 6 — Ma Trận Đánh Giá Rủi Ro
 
-![Bài 8. FaceID](assets/08-faceid.png)
+Mỗi mối đe dọa được đánh giá theo thang điểm:
 
-## Bài 9. Kiểm Tra Cập Nhật Hệ Điều Hành
+- **Khả năng xảy ra (Likelihood)**: Thấp (1) / Trung Bình (2) / Cao (3)
+- **Mức độ ảnh hưởng (Impact)**: Thấp (1) / Trung Bình (2) / Cao (3)
+- **Mức độ rủi ro (Risk Level)** = Likelihood × Impact
 
-- Android: System Update
-- iOS: Software Update
+## Bước 7 — Phân Loại Rủi Ro
 
-Thiết bị: iPhone
-
-- Phiên bản iOS: mới nhất tại thời điểm hiện tại.
-
-![Bài 9. Kiểm Tra Cập Nhật Hệ Điều Hành](assets/09-ios.jpg)
-
-- Auto Update: bật. Đảm bảo luôn nhận thông báo về phiên bản mới nhất.
-
-![Bài 9. Auto Update](assets/09-update.jpg)
-
-## Bài 10. Kiểm Soát Quyền Ứng Dụng
-
-- Bước 1: Settings → Privacy → Location / Camera / Microphone
-- Bước 2: Chọn 1 ứng dụng → chỉnh:
-  - While using app / Ask every time
-- Bước 3: Chụp màn hình
-
-Ứng dụng: AirAsia MOVE
-
-- Camera: Tắt.
-  - Không có lý do gì để ứng dụng này có quyền truy cập camera trong khi chỉ dùng để mua vé máy bay.
-
-![Bài 10. Kiểm Soát Quyền Ứng Dụng - Camera](assets/10-camera.png)
-
-- Location: While Using (the App).
-  - Chỉ cho phép truy cập vị trí khi đang sử dụng ứng dụng, nhằm gợi ý các chuyến bay phù hợp với vị trí hiện tại.
-
-![Bài 10. Kiểm Soát Quyền Ứng Dụng - Location](assets/10-location.png)
+- Risk Level 1–2: **Thấp**
+- Risk Level 3–4: **Trung Bình**
+- Risk Level 6–9: **Cao**
