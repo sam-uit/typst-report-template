@@ -29,11 +29,11 @@
     ),
   ),
   assignment: (
-    title: "BÀI TẬP THỰC HÀNH 5 (BUỔI 9)",
-    subtitle: "BẢO MẬT MẠNG KHÔNG DÂY (WI-FI) VÀ THIẾT BỊ DI ĐỘNG",
+    title: "BÀI TẬP THỰC HÀNH 6A (BUỔI 10)",
+    subtitle: "QUẢN LÝ RỦI RO AN NINH THÔNG TIN",
     type: "assignments",
-    date: "Ngày 12 Tháng 05 Năm 2026",
-    duration: "180 phút",
+    date: "Ngày 19 Tháng 05 Năm 2026",
+    duration: "4-5 tiết",
   ),
   company: "A Limited Company Name",
 )
