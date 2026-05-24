@@ -43,7 +43,7 @@ Với mỗi mối đe dọa đã xác định ở Phần 2, dưới đây phân 
       - Cài đặt mặc định của ứng dụng mạng xã hội thường là "công khai".
       - Người dùng không kiểm tra lại sau khi cập nhật ứng dụng],
     [T3], [Ứng dụng giả mạo (TS1)], [
-      - Thói quen tải APK từ nguồn ngoài kho chính thức (sideloading).
+      - Thói quen tải app từ nguồn ngoài kho chính thức (sideloading/jailbreak).
       - Thiếu kiểm tra nhà phát triển và đánh giá ứng dụng],
     [T4], [Tấn công lừa đảo (TS2)], [
       - Nhấp vào đường link trong SMS/email mà không kiểm tra URL.
@@ -81,3 +81,13 @@ Với mỗi mối đe dọa đã xác định ở Phần 2, dưới đây phân 
   caption: "Lỗ Hổng", 
 )
 ```
+
+## Tổng Hợp Về Lỗ Hổng
+
+Phân tích cho thấy hầu hết các lỗ hổng đều bắt nguồn từ **bản thân người dùng** chứ không phải từ lỗi kỹ thuật của hệ thống.
+
+Ba nhóm lỗ hổng nổi bật nhất:
+
+- **Xác thực yếu**: Không dùng 2FA, mật khẩu đơn giản, tái sử dụng mật khẩu — xuất hiện trong 5/14 mối đe dọa.
+- **Cài đặt ứng dụng thiếu cẩn thận**: Sideloading APK/Jailbreak, không kiểm tra quyền — xuất hiện trong 4/14 mối đe dọa.
+- **Thiếu cấu hình bảo vệ thiết bị**: Không có màn hình khóa, thời gian tự khóa dài — ảnh hưởng trực tiếp đến truy cập vật lý trái phép.
