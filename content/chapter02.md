@@ -94,7 +94,7 @@ Với **mỗi tài sản** đã xác định ở Phần 1, dưới đây ta có 
     [6.2. Đọc lịch sử chat qua phần mềm gián điệp (Spyware)],
     [Spyware được cài lên điện thoại (thường qua quyền truy cập vật lý) có thể đọc và gửi lén lịch sử hội thoại trên Messenger, Zalo về máy chủ của kẻ theo dõi mà nạn nhân không hay biết.],
   ),
-  caption: [Bảng 2. Mối Đe Dọa Đối Với Các Tài Sản (Bối Cảnh 3: Điện Thoại Thông Minh)]
+  caption: [Mối Đe Dọa Đối Với Các Tài Sản]
 )
 ```
 
