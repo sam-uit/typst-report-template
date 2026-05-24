@@ -52,7 +52,7 @@ Dưới đây là 6 tài sản thông tin được xác định trong bối cả
     [Ghi lại các cuộc hội thoại riêng tư, có thể chứa thông tin nhạy cảm như mã OTP, địa chỉ, kế hoạch cá nhân. Bị rò rỉ ảnh hưởng đến quyền riêng tư và có thể bị dùng để ép buộc.],
     [#text(fill: orange)[Trung Bình]],
   ),
-  caption: [Bảng 1. Danh Sách Tài Sản Thông Tin]
+  caption: [Danh Sách Tài Sản]
 )
 ```
 
