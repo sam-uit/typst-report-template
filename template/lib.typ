@@ -99,6 +99,8 @@
     fill: (x, y) => if y == 0 { blue.lighten(90%) } else if calc.even(y) { blue.lighten(98%) } else { none },
   )
 
+  // TODO: Cho phép table trong figure tràn nhiều trang
+
   // Bảng có góc bo tròn
   show table: it => block(
     radius: 8pt,
