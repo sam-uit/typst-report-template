@@ -56,3 +56,8 @@ Dưới đây là 6 tài sản thông tin được xác định trong bối cả
 )
 ```
 
+## Nhận Xét Chung
+
+Trong 6 tài sản trên, ba tài sản đầu (tài khoản mạng xã hội, tài khoản tài chính, và email) được đánh giá ở mức **Cao** vì chúng gắn trực tiếp đến danh tính, tài sản và khả năng phục hồi các tài khoản khác.
+
+Ba tài sản còn lại mang giá trị **Trung Bình** — không gây thiệt hại tài chính trực tiếp nhưng vẫn ảnh hưởng nghiêm trọng đến quyền riêng tư nếu bị xâm phạm. Không có tài sản nào được xếp loại **Thấp** vì tất cả đều chứa thông tin cá nhân có thể bị lợi dụng.
