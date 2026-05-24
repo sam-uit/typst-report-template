@@ -105,6 +105,7 @@
     stroke: 1pt + blue.lighten(90%),
     clip: true,
     width: 100%,
+    breakable: true,
     it,
   )
 
@@ -124,7 +125,7 @@
       fill: luma(240),
       inset: 0pt,
       stroke: none,
-      breakable: false,
+      breakable: true,
       width: 100%,
       clip: true,
     )[
