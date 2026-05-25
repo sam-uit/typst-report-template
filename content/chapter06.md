@@ -31,3 +31,13 @@ Zero Trust chắc chắn sẽ **phát triển mạnh mẽ** trong 5 năm tới (
 + **Sự trưởng thành của công nghệ:** AI và Machine Learning đang được tích hợp vào các giải pháp Zero Trust, giúp tự động hóa việc phát hiện bất thường, phân tích hành vi và đưa ra quyết định truy cập theo thời gian thực.
 
 Tuy nhiên, Zero Trust cũng sẽ tiến hóa — không còn là một "dự án" có điểm bắt đầu và kết thúc, mà trở thành một **tư duy bảo mật liên tục** (continuous security mindset) được tích hợp vào mọi khía cạnh của hạ tầng CNTT.
+
+## Sinh Viên Ngành CNTT Cần Chuẩn Bị Gì?
+
+Là sinh viên ngành Công nghệ Thông tin, để thích nghi với xu thế Zero Trust, cần chuẩn bị ở ba khía cạnh:
+
+**Về kiến thức:** Nắm vững nền tảng an ninh mạng (mã hóa, xác thực, kiểm soát truy cập), hiểu rõ kiến trúc đám mây (cloud-native, containerization, microservices) và các khung Zero Trust tiêu chuẩn như NIST SP 800-207. Đồng thời, không thể bỏ qua các framework về IT Service Management như ITIL, COBIT... song song đó cần theo dõi sự phát triển của AI/ML trong bảo mật vì đây là xu hướng tích hợp tất yếu.
+
+**Về kỹ năng thực hành:** Làm quen với các công cụ và nền tảng Zero Trust phổ biến (Google BeyondCorp, Microsoft Azure AD Conditional Access, Cloudflare Access). Thực hành cấu hình xác thực đa yếu tố (MFA), thiết lập chính sách truy cập dựa trên vai trò (Role-Based Access Control -- RBAC) và theo ngữ cảnh (context-based access policy). Tham gia các phòng thí nghiệm ảo (cyber range) và các cuộc thi CTF để rèn luyện tư duy bảo mật.
+
+**Về tư duy:** Quan trọng nhất là xây dựng tư duy **"security-first"** — coi an ninh thông tin là yêu cầu thiết kế từ đầu (security by design), không phải là lớp phủ thêm sau khi hệ thống đã hoàn thành. Zero Trust không chỉ là công nghệ hay công cụ mà là một cách tư duy: **luôn đặt câu hỏi, không bao giờ giả định an toàn**.
