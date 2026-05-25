@@ -25,14 +25,12 @@ Bảng 3: Ví dụ thực tế
 
 Để minh họa cho cách Zero Trust được triển khai trong thực tế, sinh viên chọn phân tích *Google BeyondCorp* — được coi là triển khai Zero Trust đầu tiên ở quy mô lớn trên thế giới.
 
-- [BeyondCorp tại Google Cloud Platform](https://cloud.google.com/beyondcorp)
-- [BeyondCorp: A New Approach to Enterprise Security](https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/)
-
 ```{=typst}
-#co-warn(title: "BeyondCorp Principles")[
-- Connecting from a particular network must not determine which services you can access.
-- Access to services is granted based on what we know about you and your device.
-- All access to services must be authenticated, authorized, and encrypted. 
+#co-info(title: "Thông tin về Google BeyondCorp")[
+BeyondCorp là giải pháp triển khai Zero Trust của Google. Nó được xây dựng dựa trên kinh nghiệm thực tế trong hơn một thập kỷ tại Google, kết hợp với các ý tưởng và phương pháp hay nhất từ cộng đồng. Bằng cách chuyển quyền kiểm soát truy cập từ ranh giới mạng sang từng người dùng, BeyondCorp cho phép làm việc an toàn từ hầu hết mọi nơi mà không cần VPN truyền thống.
+
+- #link("https://cloud.google.com/beyondcorp", "BeyondCorp tại Google Cloud Platform")
+- #link("https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/", "BeyondCorp: A New Approach to Enterprise Security")
 ]
 ```
 
@@ -45,6 +43,14 @@ Bảng 3: Ví dụ thực tế
   - Trạng thái thiết bị (có được đăng ký hay không, đang ở vị trí địa lý nào, v.v..).
 - Mọi truy cập phải được **xác thực**, **cấp phép** và **mã hóa**.
   - Chứng minh danh tính, cấp quyền truy cập, mã hóa mọi dữ liệu.
+
+```{=typst}
+#co-warn(title: "BeyondCorp Principles")[
+- Connecting from a particular network must not determine which services you can access.
+- Access to services is granted based on what we know about you and your device.
+- All access to services must be authenticated, authorized, and encrypted. 
+]
+```
 
 ```{=typst}
 #figure(
@@ -80,7 +86,8 @@ Bảng 3: Ví dụ thực tế
     ],
     [Hạn chế/Rủi ro],
     [
-      - Triển khai BeyondCorp tốn chi phí, nhưng nếu không triển khai sẽ tốn kém hơn.
+      - BeyondCorp được thiết kế và triển khai bởi Google, do đó có thể không phù hợp với các doanh nghiệp khác có quy mô và mức độ trưởng thành về công nghệ (tech-savvy) khác nhau.
+      - Việc triển khai BeyondCorp tốn chi phí, nhưng nếu không triển khai sẽ tốn kém hơn.
       - Không thể truy cập khi không có kết nối internet.
       - Thiết bị không được quản lý (MDM - Mobile Device Management) sẽ không thể truy cập vào tài nguyên nội bộ.
     ]
