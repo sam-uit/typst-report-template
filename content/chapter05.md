@@ -21,6 +21,15 @@ Bảng 3: Ví dụ thực tế
 
 Để minh họa cho cách Zero Trust được triển khai trong thực tế, sinh viên chọn phân tích *Google BeyondCorp* — được coi là triển khai Zero Trust đầu tiên ở quy mô lớn trên thế giới.
 
+- [BeyondCorp tại Google Cloud Platform](https://cloud.google.com/beyondcorp)
+- [BeyondCorp: A New Approach to Enterprise Security](https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/)
+
+*BeyondCorp Principles*:
+
+- Connecting from a particular network must not determine which services you can access.
+- Access to services is granted based on what we know about you and your device.
+- All access to services must be authenticated, authorized, and encrypted.
+
 ```{=typst}
 #figure(
   table(
@@ -53,6 +62,12 @@ Bảng 3: Ví dụ thực tế
       - Mô hình đã được chứng minh hiệu quả qua hơn 10 năm vận hành, trở thành chuẩn mực cho ngành công nghiệp.
       - Giúp các hành hàng của GCP được tiếp cận giải pháp tiên tiến mà không cần đầu tư hạ tầng hay công cụ phức tạp, và tập trung vào phần quan trọng nhất: Con Người.
     ],
+    [Hạn chế/Rủi ro],
+    [
+      - Triển khai BeyondCorp tốn chi phí, nhưng nếu không triển khai sẽ tốn kém hơn.
+      - Không thể truy cập khi không có kết nối internet.
+      - Thiết bị không được quản lý (MDM - Mobile Device Management) sẽ không thể truy cập vào tài nguyên nội bộ.
+    ]
   ),
   caption: [Ví Dụ Thực Tế: Google BeyondCorp]
 )
