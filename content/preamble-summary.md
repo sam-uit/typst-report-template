@@ -1,55 +1,36 @@
-# BÀI TẬP THỰC HÀNH 6A: QUẢN LÝ RỦI RO AN NINH THÔNG TIN
+# BÀI TẬP THỰC HÀNH 6B: MỘT SỐ XU THẾ AN NINH THÔNG TIN HIỆN ĐẠI
 
 ## MỤC TIÊU BÀI THỰC HÀNH
 
-Sau khi hoàn thành bài thực hành, sinh viên có thể:
+Sau bài thực hành, sinh viên có thể
 
-1. Hiểu được khái niệm **rủi ro an ninh thông tin**.
-2. Nhận diện **tài sản thông tin (Information Assets)**.
-3. Xác định **mối đe dọa (Threats)** và **lỗ hổng (Vulnerabilities)**.
-4. Đánh giá **mức độ rủi ro** dựa trên *Khả năng xảy ra* và *Mức độ ảnh hưởng*.
-5. Đề xuất **biện pháp xử lý rủi ro** phù hợp.
-6. Trình bày báo cáo theo **quy trình quản lý rủi ro cơ bản**.
+1. Nhận biết các **xu thế an ninh thông tin hiện đại**.
+2. Phân tích **nguyên nhân hình thành xu thế**.
+3. Đánh giá **tác động của xu thế đến an toàn thông tin**.
+4. Liên hệ xu thế với **người dùng, tổ chức, doanh nghiệp**.
+5. Rèn luyện **kỹ năng tìm kiếm — tổng hợp — trình bày kỹ thuật**.
 
-## KIẾN THỨC NỀN (SINH VIÊN TỰ TÌM HIỂU)
+## YÊU CẦU CHUNG
 
-Sinh viên cần nắm các khái niệm sau:
+- Sinh viên **tự nghiên cứu tài liệu**
+- Không sao chép Wikipedia nguyên văn.
+- Nội dung phải **diễn giải bằng lời của sinh viên**
+- Có **nhận xét, đánh giá cá nhân**.
 
-- Asset (Tài sản)
-- Threat (Mối đe dọa)
-- Vulnerability (Lỗ hổng)
-- Risk (Rủi ro)
-- Risk Assessment (Đánh giá rủi ro)
-- Risk Treatment (Xử lý rủi ro)
+## DANH SÁCH XU THẾ (BẮT BUỘC CHỌN)
 
-## BỐI CẢNH ĐƯỢC CHỌN
+Sinh viên chọn 01 xu thế trong danh sách sau (ghi rõ đã chọn xu thế nào):
 
-Sinh viên CHỌN 01 trong 3 bối cảnh sau (ghi rõ đã chọn bối cảnh nào):
+1. Zero Trust Security.
+2. Cloud Security.
+3. AI trong An ninh Thông tin.
+4. An ninh IoT.
+5. Bảo mật thiết bị di động.
+6. Bảo mật dữ liệu cá nhân & quyền riêng tư.
+7. An ninh chuỗi cung ứng (Supply Chain Security).
+8. An ninh mạng trong môi trường làm việc từ xa (Remote Work Security).
 
-### Bối cảnh 1
-
-Máy tính cá nhân của sinh viên dùng cho:
-
-- Học tập
-- Email
-- Lưu tài liệu cá nhân
-
-### Bối cảnh 2
-
-Mạng Wi-Fi gia đình dùng cho:
-
-- Nhiều thiết bị
-- Học tập / làm việc online
-
-### Bối cảnh 3
-
-Điện thoại thông minh của sinh viên dùng cho:
-
-- Mạng xã hội
-- Ngân hàng / ví điện tử
-- Email
-
-Không tự tạo bối cảnh khác.
+Không chọn ngoài danh sách nêu trên.
 
 ## TÓM TẮT & CẤU TRÚC BÁO CÁO
 
