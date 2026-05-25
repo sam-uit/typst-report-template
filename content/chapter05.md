@@ -1,3 +1,7 @@
+```{=typst}
+#import "../template/lib.typ": *
+```
+
 # PHẦN 5 — LIÊN HỆ THỰC TẾ
 
 **Bước 5**:
@@ -24,11 +28,19 @@ Bảng 3: Ví dụ thực tế
 - [BeyondCorp tại Google Cloud Platform](https://cloud.google.com/beyondcorp)
 - [BeyondCorp: A New Approach to Enterprise Security](https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/)
 
-*BeyondCorp Principles*:
-
+```{=typst}
+#co-warn(title: "BeyondCorp Principles")[
 - Connecting from a particular network must not determine which services you can access.
 - Access to services is granted based on what we know about you and your device.
-- All access to services must be authenticated, authorized, and encrypted.
+- All access to services must be authenticated, authorized, and encrypted. 
+]
+```
+
+**Nguyên Tắc Cốt Lõi của BeyondCorp**:
+
+- Kết nối từ một mạng cụ thể **không quyết định** bạn có thể truy cập vào những dịch vụ nào.
+- Truy cập vào tài nguyên được cấp dựa trên **thông tin về người dùng** và **trạng thái thiết bị** của họ.
+- Mọi truy cập phải được **xác thực**, **cấp phép** và **mã hóa**.
 
 ```{=typst}
 #figure(
