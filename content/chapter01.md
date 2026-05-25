@@ -18,7 +18,11 @@ Sinh viên chọn **Xu thế 1**: **Zero Trust Security** (An ninh theo mô hìn
 
 Khác với mô hình bảo mật truyền thống vốn phân chia rõ ràng giữa **bên trong** (tin cậy) và **bên ngoài** (không tin cậy), Zero Trust coi mọi yêu cầu truy cập — dù xuất phát từ bên trong hay bên ngoài mạng — đều là tiềm ẩn rủi ro và cần được xác minh nghiêm ngặt trước khi cấp quyền.
 
+Ở môi trường truyền thống, hạ tầng được phân tách thành các khu vực (zone) như DMZ, Internal, DB... Từng khu vực sẽ có các chính sách bảo mật tương ứng. Tuy nhiên, khi dữ liệu và các ứng dụng được triển khai trên nhiều môi trường khác nhau, việc quản lý trở nên khó khăn hơn. Hoặc cách phát triển ứng dụng bây giờ đã thay đổi, nhiều dịch vụ quan trọng tập trung trong các môi trường khác nhau, không còn nằm trong khu vực cụ thể để dễ dàng phân loại và cô lập nữa. Dẫn đến việc kiểm soát quyền truy cập của người dùng với từng ứng dụng ngày càng trở nên khó khăn và phức tạp hơn.
+
 **Zero Trust Security** kết hợp với một cách quản lý hệ thống mạng mới gọi là **Micro Segmentation**. Từ đó, một mô hình đầy đủ hơn được gọi là **Zero Trust Architecture** được ứng dụng rộng rãi trong môi trường doanh nghiệp.
+
+Ví dụ: **VMware NSX**, đây là một nền tảng ảo hóa mạng được phát triển bởi VMware, được triển khai trên các môi trường ảo hóa vSphere -- một môi trường điện toán đám mây riêng (Private Cloud) ảo hóa rộng lớn, cho phép các tổ chức xây dựng và quản lý mạng ảo của riêng mình trên nền tảng hạ tầng vật lý. NSX nhấn mạnh vào Zero Trust và Micro Segmentation, từ đó tạo ra một mô hình bảo mật toàn diện và linh hoạt, phục vụ cho cả môi trường hạ tầng truyền thống như mô hình 3-Tier (App - Web - DB) và cả môi trường microservices (Tanzu) đang ngày càng phổ biến.
 
 ## Bối Cảnh Xuất Hiện
 
