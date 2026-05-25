@@ -25,7 +25,7 @@ Phần này phân tích cả hai mặt để có cái nhìn đầy đủ hơn.
 ```{=typst}
 #figure(
   table(
-    columns: (12%, 5%, 25%, 58%),
+    columns: (12%, 5%, 20%, 63%),
     align: (center, center, left, left),
     table.header(
       [*Nhóm*], [*STT*], [*Nội Dung*], [*Giải Thích*],
@@ -97,3 +97,7 @@ Phần này phân tích cả hai mặt để có cái nhìn đầy đủ hơn.
   caption: [Lợi Ích và Thách Thức Của Zero Trust Security]
 )
 ```
+
+## Đánh Giá Chung
+
+Lợi ích của Zero Trust vượt trội — nhưng thách thức không nên bị xem nhẹ. Các tổ chức thành công thường áp dụng chiến lược triển khai từng giai đoạn (phased approach), bắt đầu từ những tài sản quan trọng nhất và mở rộng dần, thay vì cố gắng chuyển đổi toàn bộ cùng lúc. Và, quan trọng nhất là vẫn là văn hóa tổ chức: từ quản lý đến sử dụng, và mọi cá nhân đều phải tham gia vào quá trình bảo mật, bắt buộc mọi người đều chia sẻ chung tầm nhìn (về bảo mật và chuyển đổi), chỉ khác nhau về trách nhiệm.
