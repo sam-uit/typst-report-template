@@ -40,6 +40,8 @@ Khái niệm **Zero Trust** được John Kindervag --- nhà phân tích tại F
 
 Mô hình bảo mật truyền thống dựa trên giả định rằng mọi thứ bên trong mạng nội bộ đều an toàn --- giống như một lâu đài với bức tường thành kiên cố, ai đã vào bên trong thì được tự do di chuyển. Tuy nhiên, thực tế đã chứng minh giả định này không còn đúng.
 
-Theo thống kê, các tổ chức triển khai Zero Trust đầy đủ giảm đến 50% số vụ vi phạm dữ liệu và tiết kiệm trung bình 43% chi phí xử lý sự cố. Đến cuối năm 2026, khoảng 10% doanh nghiệp lớn trên thế giới sẽ có chương trình Zero Trust trưởng thành và đo lường được --- tăng mạnh so với mức dưới 1% vào năm 2023. Thị trường Zero Trust toàn cầu được dự báo đạt 86,57 tỷ USD vào năm 2030 với tốc độ tăng trưởng hàng năm (CAGR) 17,7%.
+Môi trường doanh nghiệp nói riêng, và môi trường ứng dụng & dữ liệu CNTT nói chung trong những năm gần đây đã có sự thay đổi lớn: rộng hơn, phân tán hơn, kết nối đa dạng hơn, vv.. với cấp số nhân, từ đó dẫn đến sự xuất hiện của các thách thức và yêu cầu bảo mật mới. Chúng ta cần các công cụ mới, cách tiếp cận mới thay thế mô hình truyền thống.
 
-Những con số trên cho thấy Zero Trust không còn là một khái niệm lý thuyết mà đã trở thành chiến lược bảo mật bắt buộc trong kỷ nguyên số, khi mà ranh giới mạng không còn tồn tại rõ ràng và mối đe dọa có thể đến từ bất kỳ đâu --- kể cả từ bên trong tổ chức.
+Trong số đó, Zero Trust Security đang trở thành một trong những mô hình bảo mật được quan tâm và áp dụng nhiều nhất hiện nay. Zero Trust Security không chỉ là một công nghệ hay giải pháp, mà là một triết lý bảo mật, một cách tiếp cận toàn diện, có hệ thống nhằm bảo vệ doanh nghiệp khỏi các mối đe dọa ngày càng tinh vi và đa dạng.
+
+Zero Trust không còn là một khái niệm lý thuyết mà đã trở thành chiến lược bảo mật bắt buộc trong kỷ nguyên số, khi mà ranh giới mạng không còn tồn tại rõ ràng và mối đe dọa có thể đến từ bất kỳ đâu --- kể cả từ bên trong tổ chức.
