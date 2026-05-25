@@ -88,8 +88,8 @@ BeyondCorp là giải pháp triển khai Zero Trust của Google. Nó được x
     [
       - BeyondCorp được thiết kế và triển khai bởi Google, do đó có thể không phù hợp với các doanh nghiệp khác có quy mô và mức độ trưởng thành về công nghệ (tech-savvy) khác nhau.
       - Việc triển khai BeyondCorp tốn chi phí, nhưng nếu không triển khai sẽ tốn kém hơn.
-      - Không thể truy cập khi không có kết nối internet.
-      - Thiết bị không được quản lý (MDM - Mobile Device Management) sẽ không thể truy cập vào tài nguyên nội bộ.
+      - Phù hợp và yêu cầu mức độ hạ tầng nhất định, không thể đơn giản triển khai được ngay lập tức.
+      - Cần sự đồng bộ từ chiến lược cho tới quản lý, vận hành, và là một sự thay đổi lớn về văn hóa làm việc.
     ]
   ),
   caption: [Ví Dụ Thực Tế: Google BeyondCorp]
