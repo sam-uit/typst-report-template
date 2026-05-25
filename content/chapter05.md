@@ -96,3 +96,10 @@ BeyondCorp là giải pháp triển khai Zero Trust của Google. Nó được x
 )
 ```
 
+## Tổng Quan
+
+Google bắt đầu phát triển BeyondCorp từ năm 2011 như một phản ứng trước các cuộc tấn công APT (Advanced Persistent Threat) nhắm vào các công ty công nghệ lớn tại Silicon Valley. Trước đó, Google cũng giống nhiều doanh nghiệp khác — phụ thuộc vào mô hình bảo mật phân cấp trong/ngoài: ai ở trong mạng nội bộ thì được tin cậy. Tuy nhiên, với sự gia tăng của thiết bị di động và điện toán đám mây, khái niệm "vành đai" ngày càng mờ nhạt.
+
+Giải pháp của Google là chuyển quyền kiểm soát truy cập từ **vị trí mạng** (location-based) sang **danh tính cá nhân** (identity-based). Mỗi yêu cầu truy cập đều phải thỏa mãn ba điều kiện: xác thực **danh tính người dùng**, kiểm tra **trạng thái bảo mật thiết bị** (đã cập nhật patch chưa? có phần mềm đồng bộ policy của Google hay không? v.v...), và xác nhận **quyền truy cập ứng dụng** cụ thể.
+
+BeyondCorp không phải là một dự án triển khai nhanh chóng — đó là một quá trình chuyển đổi **kéo dài nhiều năm**, đòi hỏi **đầu tư lớn** về công nghệ, quy trình và đào tạo nhân viên. Tuy nhiên, kết quả đã chứng minh giá trị: Google hiện là một trong những tổ chức an toàn nhất thế giới, và BeyondCorp đã được thương mại hóa để các doanh nghiệp khác có thể áp dụng mô hình tương tự thông qua Google Cloud Platform (GCP).
