@@ -18,6 +18,8 @@ Sinh viên chọn **Xu thế 1**: **Zero Trust Security** (An ninh theo mô hìn
 
 Khác với mô hình bảo mật truyền thống vốn phân chia rõ ràng giữa **bên trong** (tin cậy) và **bên ngoài** (không tin cậy), Zero Trust coi mọi yêu cầu truy cập — dù xuất phát từ bên trong hay bên ngoài mạng — đều là tiềm ẩn rủi ro và cần được xác minh nghiêm ngặt trước khi cấp quyền.
 
+**Zero Trust Security** kết hợp với một cách quản lý hệ thống mạng mới gọi là **Micro Segmentation**. Từ đó, một mô hình đầy đủ hơn được gọi là **Zero Trust Architecture** được ứng dụng rộng rãi trong môi trường doanh nghiệp.
+
 ## Bối Cảnh Xuất Hiện
 
 Khái niệm **Zero Trust** được John Kindervag — nhà phân tích tại Forrester Research — đề xuất lần đầu vào năm 2010. Tuy nhiên, xu thế này thực sự bùng nổ trong giai đoạn 2020–2025 khi hội tụ nhiều yếu tố:
@@ -30,3 +32,10 @@ Khái niệm **Zero Trust** được John Kindervag — nhà phân tích tại F
 
 - **Sự phức tạp của các loại thiết bị:** Sự gia tăng của thiết bị IoT, BYOD (Bring Your Own Device) và thiết bị di động khiến việc kiểm soát truy cập dựa trên vị trí mạng ngày càng bất khả thi.
 
+## Vì Sao Zero Trust Trở Nên Cần Thiết?
+
+Mô hình bảo mật truyền thống dựa trên giả định rằng mọi thứ bên trong mạng nội bộ đều an toàn — giống như một lâu đài với bức tường thành kiên cố, ai đã vào bên trong thì được tự do di chuyển. Tuy nhiên, thực tế đã chứng minh giả định này không còn đúng.
+
+Theo thống kê, các tổ chức triển khai Zero Trust đầy đủ giảm đến 50% số vụ vi phạm dữ liệu và tiết kiệm trung bình 43% chi phí xử lý sự cố. Đến cuối năm 2026, khoảng 10% doanh nghiệp lớn trên thế giới sẽ có chương trình Zero Trust trưởng thành và đo lường được — tăng mạnh so với mức dưới 1% vào năm 2023. Thị trường Zero Trust toàn cầu được dự báo đạt 86,57 tỷ USD vào năm 2030 với tốc độ tăng trưởng hàng năm (CAGR) 17,7%.
+
+Những con số trên cho thấy Zero Trust không còn là một khái niệm lý thuyết mà đã trở thành chiến lược bảo mật bắt buộc trong kỷ nguyên số, khi mà ranh giới mạng không còn tồn tại rõ ràng và mối đe dọa có thể đến từ bất kỳ đâu — kể cả từ bên trong tổ chức.
