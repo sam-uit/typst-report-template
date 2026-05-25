@@ -20,3 +20,14 @@ Thứ hai, lĩnh vực tài chính — ngân hàng tại Việt Nam đã bắt �
 
 Tuy nhiên, thách thức lớn nhất tại Việt Nam là *nguồn nhân lực* và *văn hóa*: nhiều tổ chức vẫn thiếu đội ngũ chuyên gia ATTT có đủ năng lực để thiết kế và vận hành hệ thống Zero Trust, và còn quen với mô hình cũ, "bảo mật là việc của IT". Ngoài ra, *chi phí* triển khai có thể là rào cản với doanh nghiệp vừa và nhỏ (SME) — vốn chiếm đa số trong nền kinh tế Việt Nam.
 
+## Xu Thế Này Sẽ Phát Triển Hay Giảm Trong 5 Năm Tới?
+
+Zero Trust chắc chắn sẽ **phát triển mạnh mẽ** trong 5 năm tới (2026–2031). Có ba lý do chính cho nhận định này:
+
++ **Xu thế không thể đảo ngược:** Chuyển đổi số, điện toán đám mây và làm việc từ xa đã trở thành tiêu chuẩn mới. Mô hình bảo mật vành đai phân cấp ngày càng lỗi thời khi ranh giới mạng tiếp tục mờ nhạt. Zero Trust là câu trả lời tự nhiên cho thực tế mới này.
+
++ **Áp lực quy định:** Các chính phủ trên toàn thế giới đang đưa ra quy định bắt buộc về bảo vệ dữ liệu (GDPR, CCPA, Luật An ninh mạng Việt Nam). Zero Trust giúp tổ chức tuân thủ hiệu quả hơn nhờ khả năng kiểm soát và kiểm toán truy cập chi tiết.
+
++ **Sự trưởng thành của công nghệ:** AI và Machine Learning đang được tích hợp vào các giải pháp Zero Trust, giúp tự động hóa việc phát hiện bất thường, phân tích hành vi và đưa ra quyết định truy cập theo thời gian thực.
+
+Tuy nhiên, Zero Trust cũng sẽ tiến hóa — không còn là một "dự án" có điểm bắt đầu và kết thúc, mà trở thành một **tư duy bảo mật liên tục** (continuous security mindset) được tích hợp vào mọi khía cạnh của hạ tầng CNTT.
