@@ -12,9 +12,9 @@ Sau bài thực hành, sinh viên có thể
 
 ## YÊU CẦU CHUNG
 
-- Sinh viên **tự nghiên cứu tài liệu**
+- Sinh viên **tự nghiên cứu tài liệu**.
 - Không sao chép Wikipedia nguyên văn.
-- Nội dung phải **diễn giải bằng lời của sinh viên**
+- Nội dung phải **diễn giải bằng lời của sinh viên**.
 - Có **nhận xét, đánh giá cá nhân**.
 
 ## DANH SÁCH XU THẾ (BẮT BUỘC CHỌN)
