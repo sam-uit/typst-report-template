@@ -72,3 +72,9 @@ Zero Trust Security được xây dựng trên một số đặc điểm cốt l
   caption: [Các Đặc Điểm Chính Của Zero Trust Security]
 )
 ```
+
+## Nhận Xét
+
+Sáu đặc điểm trên tạo thành một hệ thống phòng thủ nhiều lớp: từ xác minh danh tính (MFA, xác minh liên tục), kiểm soát quyền (least privilege), phân vùng hạ tầng (micro-segmentation), đến giám sát liên tục (monitoring).
+
+Điểm chung là tất cả đều hướng tới mục tiêu: _giảm thiểu niềm tin ngầm_ (implicit trust) hoặc _nguy cơ từ người nội bộ_ (insider threat) trong hệ thống, buộc mọi thực thể phải liên tục chứng minh quyền hợp lệ của mình, mọi lúc, mọi nơi, mọi hành vi.
