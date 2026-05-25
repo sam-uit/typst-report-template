@@ -2,7 +2,7 @@
 #import "../template/lib.typ": *
 ```
 
-# PHẦN 5 — LIÊN HỆ THỰC TẾ
+# PHẦN 5 --- LIÊN HỆ THỰC TẾ
 
 **Bước 5**:
 
@@ -23,7 +23,7 @@ Bảng 3: Ví dụ thực tế
 
 ## Ví Dụ Thực Tế -- Google BeyondCorp
 
-Để minh họa cho cách Zero Trust được triển khai trong thực tế, sinh viên chọn phân tích *Google BeyondCorp* — được coi là triển khai Zero Trust đầu tiên ở quy mô lớn trên thế giới.
+Để minh họa cho cách Zero Trust được triển khai trong thực tế, sinh viên chọn phân tích *Google BeyondCorp* --- được coi là triển khai Zero Trust đầu tiên ở quy mô lớn trên thế giới.
 
 ```{=typst}
 #co-info(title: "Thông tin về Google BeyondCorp")[
@@ -70,16 +70,16 @@ BeyondCorp là giải pháp triển khai Zero Trust của Google. Nó được x
 
     [Xu thế áp dụng],
     [
-      - *Zero Trust Security* — loại bỏ hoàn toàn mô hình bảo mật theo vành đai truyền thống.
+      - *Zero Trust Security* --- loại bỏ hoàn toàn mô hình bảo mật theo vành đai truyền thống.
       - Mọi truy cập vào tài nguyên nội bộ đều được xác thực dựa trên danh tính người dùng (là ai, bộ phận nào, v.v...) và trạng thái thiết bị (có được đăng ký hay không, đang ở vị trí địa lý nào, v.v..).
-      - Mọi thiết bị: Chromebook, Macbook, Windows, Android, iOS, Linux — tất cả.
+      - Mọi thiết bị: Chromebook, Macbook, Windows, Android, iOS, Linux --- tất cả.
       - Bất kể kết nối từ mạng nội bộ Google hay Wi-Fi công cộng hay các bên khác (vendor), có nghĩa không quan trọng điểm kết nối, đã tham gia mạng lưới sẽ đều áp dụng.
     ],
 
     [Lợi ích mang lại],
     [
       - Hơn 100.000 nhân viên Google làm việc từ mọi nơi mà không cần VPN, vẫn đảm bảo an toàn.
-      - Giảm nguy cơ lateral movement — kể cả khi một tài khoản bị xâm phạm, kẻ tấn công không thể truy cập tài nguyên khác.
+      - Giảm nguy cơ lateral movement --- kể cả khi một tài khoản bị xâm phạm, kẻ tấn công không thể truy cập tài nguyên khác.
       - Cung cấp trải nghiệm người dùng mượt mà: nhân viên không cần kết nối VPN chậm, chỉ cần xác thực qua trình duyệt.
       - Mô hình đã được chứng minh hiệu quả qua hơn 10 năm vận hành, trở thành chuẩn mực cho ngành công nghiệp.
       - Giúp các hành hàng của GCP được tiếp cận giải pháp tiên tiến mà không cần đầu tư hạ tầng hay công cụ phức tạp, và tập trung vào phần quan trọng nhất: Con Người.
@@ -98,8 +98,8 @@ BeyondCorp là giải pháp triển khai Zero Trust của Google. Nó được x
 
 ## Tổng Quan
 
-Google bắt đầu phát triển BeyondCorp từ năm 2011 như một phản ứng trước các cuộc tấn công APT (Advanced Persistent Threat) nhắm vào các công ty công nghệ lớn tại Silicon Valley. Trước đó, Google cũng giống nhiều doanh nghiệp khác — phụ thuộc vào mô hình bảo mật phân cấp trong/ngoài: ai ở trong mạng nội bộ thì được tin cậy. Tuy nhiên, với sự gia tăng của thiết bị di động và điện toán đám mây, khái niệm "vành đai" ngày càng mờ nhạt.
+Google bắt đầu phát triển BeyondCorp từ năm 2011 như một phản ứng trước các cuộc tấn công APT (Advanced Persistent Threat) nhắm vào các công ty công nghệ lớn tại Silicon Valley. Trước đó, Google cũng giống nhiều doanh nghiệp khác --- phụ thuộc vào mô hình bảo mật phân cấp trong/ngoài: ai ở trong mạng nội bộ thì được tin cậy. Tuy nhiên, với sự gia tăng của thiết bị di động và điện toán đám mây, khái niệm "vành đai" ngày càng mờ nhạt.
 
 Giải pháp của Google là chuyển quyền kiểm soát truy cập từ **vị trí mạng** (location-based) sang **danh tính cá nhân** (identity-based). Mỗi yêu cầu truy cập đều phải thỏa mãn ba điều kiện: xác thực **danh tính người dùng**, kiểm tra **trạng thái bảo mật thiết bị** (đã cập nhật patch chưa? có phần mềm đồng bộ policy của Google hay không? v.v...), và xác nhận **quyền truy cập ứng dụng** cụ thể.
 
-BeyondCorp không phải là một dự án triển khai nhanh chóng — đó là một quá trình chuyển đổi **kéo dài nhiều năm**, đòi hỏi **đầu tư lớn** về công nghệ, quy trình và đào tạo nhân viên. Tuy nhiên, kết quả đã chứng minh giá trị: Google hiện là một trong những tổ chức an toàn nhất thế giới, và BeyondCorp đã được thương mại hóa để các doanh nghiệp khác có thể áp dụng mô hình tương tự thông qua Google Cloud Platform (GCP).
+BeyondCorp không phải là một dự án triển khai nhanh chóng --- đó là một quá trình chuyển đổi **kéo dài nhiều năm**, đòi hỏi **đầu tư lớn** về công nghệ, quy trình và đào tạo nhân viên. Tuy nhiên, kết quả đã chứng minh giá trị: Google hiện là một trong những tổ chức an toàn nhất thế giới, và BeyondCorp đã được thương mại hóa để các doanh nghiệp khác có thể áp dụng mô hình tương tự thông qua Google Cloud Platform (GCP).
