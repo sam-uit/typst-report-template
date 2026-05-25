@@ -32,21 +32,17 @@ Sinh viên chọn 01 xu thế trong danh sách sau (ghi rõ đã chọn xu thế
 
 Không chọn ngoài danh sách nêu trên.
 
-## TÓM TẮT & CẤU TRÚC BÁO CÁO
+## NỘI DUNG THỰC HÀNH
 
-Bối cảnh được chọn là **Bối cảnh 3**:
+Sinh viên chọn **Xu thế 1**: **Zero Trust Security** (An ninh theo mô hình Không Tin Cậy) — mô hình bảo mật hoạt động dựa trên triết lý **"Không bao giờ tin cậy, luôn luôn xác minh"**. Xu thế này được chọn vì tính thời sự cao, sự phổ biến toàn cầu và mức độ tác động sâu rộng đến cả người dùng cá nhân lẫn doanh nghiệp trong bối cảnh chuyển đổi số.
 
-- Điện thoại thông minh của sinh viên dùng cho mạng xã hội, ngân hàng/ví điện tử và email.
-- Bối cảnh này được chọn vì điện thoại thông minh hiện đại tập trung nhiều loại tài sản thông tin có giá trị khác nhau trong một thiết bị duy nhất,
-đồng thời phản ánh thói quen sử dụng thực tế của sinh viên.
+Báo cáo được tổ chức theo 6 phần theo yêu cầu bài thực hành:
 
-Báo cáo được tổ chức theo 6 phần theo quy trình quản lý rủi ro:
-
-- **Phần 1**: Xác Định Tài Sản: Liệt kê và đánh giá giá trị 6 tài sản thông tin.
-- **Phần 2**: Xác Định Mối Đe Dọa: Xác định 13 mối đe dọa (≥ 2 mỗi tài sản).
-- **Phần 3**: Xác Định Lỗ Hổng: Phân tích lỗ hổng tạo điều kiện cho từng mối đe dọa.
-- **Phần 4**: Đánh Giá Rủi Ro: Tính Mức Độ Rủi Ro = Khả Năng Xảy Ra × Mức Độ Ảnh Hưởng và phân loại.
-- **Phần 5**: Xử Lý Rủi Ro: Chọn chiến lược và đề xuất biện pháp cụ thể.
-- **Phần 6**: Nhận Xét & Tự Đánh Giá: Phân tích tổng hợp và rút kinh nghiệm.
+- **Phần 1**: Giới Thiệu Xu Thế: Bối cảnh, lý do Zero Trust trở nên cần thiết.
+- **Phần 2**: Các Đặc Điểm Chính: 6 đặc điểm cốt lõi của mô hình Zero Trust.
+- **Phần 3**: Lợi Ích & Thách Thức: 4 lợi ích và 4 thách thức khi triển khai.
+- **Phần 4**: Tác Động Đến ATTT: Phân tích tác động đến người dùng, doanh nghiệp, quản lý ATTT.
+- **Phần 5**: Liên Hệ Thực Tế: Ví dụ Google BeyondCorp — triển khai Zero Trust quy mô lớn.
+- **Phần 6**: Nhận Xét Cá Nhân: Đánh giá tính phù hợp với Việt Nam, triển vọng 5 năm, và chuẩn bị cho sinh viên CNTT.
 
 Mỗi phần sẽ được trình bày trong mỗi chương riêng biệt trong báo cáo.
