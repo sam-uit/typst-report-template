@@ -46,3 +46,11 @@ Báo cáo được tổ chức theo 6 phần theo yêu cầu bài thực hành:
 - **Phần 6**: Nhận Xét Cá Nhân: Đánh giá tính phù hợp với Việt Nam, triển vọng 5 năm, và chuẩn bị cho sinh viên CNTT.
 
 Mỗi phần sẽ được trình bày trong mỗi chương riêng biệt trong báo cáo.
+
+```{=typst}
+#import "../template/lib.typ": *
+#line(length: 100%, stroke: 0.5pt + gradient.linear(orange, red, blue, green))
+#co-info(title: "Lời Nhắn")[
+    Nội dung của báo cáo này được thu thập, tổng hợp từ nhiều nguồn Internet, đồng thời kết hợp với kinh nghiệm trong lĩnh vực, từ các sản phẩm và dịch vụ của Dell Technologies (VxRail/PowerFlex), VMware (vSphere/vSAN/NSX), Nutanix (AHV), Google Cloud (GCP), vv... và có thể có các sai sót hoặc thiếu đồng bộ. Người viết rất vui nếu nhận được đóng góp để hoàn thiện.
+]
+```
