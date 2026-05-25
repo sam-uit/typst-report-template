@@ -30,6 +30,8 @@ Mô hình này đặc biệt quan trọng trong bối cảnh nhiều doanh nghi�
 
 ## Tác Động Đến Công Tác Quản Lý An Toàn Thông Tin
 
+Các mô hình/framework về quản lý hạ tầng hoặc/và dịch vụ IT như ITILv4, COBIT, vv... đều có vai trò trong việc quản lý ATTT của doanh nghiệp. Và các framework này đề cập Zero Trust theo các góc độ khác nhau từ đó tác động đến cách các doanh nghiệp tiếp cận/triển khai Zero Trust. Ví dụ, tập trung vào Con Người, rồi tới Quy Trình, và cuối cùng là Công Nghệ, đúng như chúng ta đã đề cập ở trên, Con Người trong tổ chức là mắt xích quan trọng nhất.
+
 Về mặt quản lý, Zero Trust buộc các tổ chức phải xây dựng lại chính sách an toàn thông tin từ nền tảng. Thay vì phân loại đơn giản "mạng nội bộ = an toàn", quản trị viên phải thiết kế chính sách truy cập dựa trên ngữ cảnh (context-aware access) — xem xét danh tính người dùng, trạng thái thiết bị, thời gian truy cập và mức độ nhạy cảm của tài nguyên.
 
 Điều này đòi hỏi đội ngũ quản lý ATTT phải nâng cao năng lực chuyên môn, đầu tư vào công cụ SIEM (Security Information and Event Management) và SOAR (Security Orchestration, Automation and Response) để xử lý lượng lớn dữ liệu giám sát.
