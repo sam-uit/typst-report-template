@@ -1,107 +1,82 @@
 #import "../template/lib.typ": *
 
-= TIẾT 2. PHÂN TÍCH CHUẨN BẢO MẬT & CẤU HÌNH WI-FI AN TOÀN
-<tiet-2-phan-tich-chuan-bao-mat-cau-hinh-wi-fi-an-toan>
+= PHẦN 2 --- CÁC ĐẶC ĐIỂM CHÍNH
+<phan-2-cac-dac-diem-chinh>
 
+#strong[Bước 2]:
 
-== Bài 3. So Sánh Chuẩn Bảo Mật Wi-Fi (Có Dẫn Chứng)
-<bai-3-so-sanh-chuan-bao-mat-wi-fi-co-dan-chung>
+- Liệt kê ít nhất 4 đặc điểm quan trọng của xu thế đã chọn.
+
+Bảng 1: Đặc điểm
+
+#table(
+  columns: (1fr,) * 3,
+  align: (left, left, left),
+  [STT], [Đặc Điểm], [Giải Thích Ngắn], [1], [], [], [2], [], [], [3], [], [], [4], [], []
+)
+
+== Bước 2. Các Đặc Điểm Chính
+<buoc-2-cac-dac-diem-chinh>
+
+Zero Trust Security được xây dựng trên một số đặc điểm cốt lõi giúp phân biệt rõ ràng với mô hình bảo mật vành đai truyền thống. Dưới đây là các đặc điểm quan trọng nhất.
 
 #figure(
-table(
-  columns: (10%, 15%, 20%, 55%),
-  align: (left, left, left, left),
-  [Chuẩn], [Khảo Sát], [Độ An Toàn], [Nhận Xét],
-  [WEP], [Không], [Kém tới rất kém], [Gần như đã được loại bỏ khỏi sử dụng ở các thiết bị gia đình thường thấy từ các nhà cung cấp Internet.],
-  [WPA], [Có], [Trung bình], [Mặc dù có cải thiện so với WEP nhưng không được phổ biến rộng rãi do sự xuất hiện của WPA2.],
-  [WPA2], [Có], [Khá tốt], [Là chuẩn bảo mật phổ biến nhất hiện nay. Vẫn còn tồn tại các giới hạn bảo mật nhất định.],
-  [WPA3], [Có], [Rất tốt.], [Là chuẩn bảo mật mới nhất và an toàn nhất hiện nay, phù hợp cho cả môi trường gia đình và doanh nghiệp.]
-),
-  caption: [Bài 3. Bảng So Sánh Chuẩn Bảo Mật Wi-Fi]
-)
-Dẫn chứng:
+  table(
+    columns: (5%, 25%, 70%),
+    align: (center, left, left),
+    table.header(
+      [*stt*], [*Đặc Điểm*], [*Giải Thích Ngắn*],
+    ),
+    [1],
+    [Xác minh liên tục (Continuous Verification)],
+    [
+      - Mỗi yêu cầu truy cập đều phải được xác thực và ủy quyền, bất kể người dùng đã đăng nhập trước đó hay đang ở trong mạng nội bộ.
+      - Hệ thống đánh giá ngữ cảnh truy cập theo thời gian thực -- bao gồm danh tính, vị trí, trạng thái thiết bị và hành vi -- để quyết định cấp hoặc thu hồi quyền.
+    ],
 
-- Tất cả các Wi-Fi tìm thấy đều sử dụng từ WPA2 trở lên (mặc dù cho hỗ trợ tương thích WPA nhưng không ưu tiên).
+    [2],
+    [Quyền truy cập tối thiểu (Least Privilege Access)],
+    [
+      - Người dùng và thiết bị chỉ được cấp đúng mức quyền cần thiết để thực hiện nhiệm vụ, trong khoảng thời gian ngắn nhất có thể.
+      - Need to Know: Chỉ cấp quyền truy cập khi thực sự cần thiết, nếu không có lý do nghiệp vụ, không cấp quyền.
+      - Nguyên tắc này hạn chế tối đa phạm vi thiệt hại nếu tài khoản bị xâm phạm -- kẻ tấn công không thể dùng một tài khoản bị chiếm để truy cập toàn bộ hệ thống.
+    ],
 
-#figure(image("assets/01-01-wifi-list.png"),
-  caption: [
-    Bài 3. Các Wi-Fi Đều Sử Dụng Từ WPA2 Trở Lên
-  ]
-)
+    [3],
+    [Phân đoạn vi mô (Micro-segmentation)],
+    [
+      - Mạng được chia thành nhiều vùng nhỏ (micro-segmentation) độc lập.
+      - Mỗi vùng có chính sách bảo mật riêng, ngăn chặn kẻ tấn công di chuyển ngang (lateral movement) từ một hệ thống bị xâm nhập sang các hệ thống khác (còn gọi là East-West traffic).
+      - Đây là điểm khác biệt lớn nhất so với mô hình truyền thống, nơi toàn bộ mạng nội bộ chia sẻ cùng một mức tin cậy.
+    ],
 
-== Bài 4. Tạo Wi-Fi An Toàn Bằng Hotspot Điện Thoại (Mô Phỏng Router)
-<bai-4-tao-wi-fi-an-toan-bang-hotspot-dien-thoai-mo-phong-router>
+    [4],
+    [Xác thực đa yếu tố (Multi-Factor Authentication)],
+    [
+      - Danh tính người dùng được xác minh qua nhiều yếu tố (mật khẩu + mã OTP + sinh trắc học) thay vì chỉ dựa vào một mật khẩu duy nhất.
+      - MFA là nền tảng không thể thiếu trong mô hình Zero Trust vì nó giảm đáng kể rủi ro từ các cuộc tấn công đánh cắp thông tin đăng nhập (credential theft).
+    ],
 
-iPhone:
+    [5],
+    [Giám sát và phân tích hành vi (Continuous Monitoring)],
+    [
+      - Hệ thống liên tục thu thập và phân tích dữ liệu về hành vi người dùng, lưu lượng mạng và trạng thái thiết bị.
+      - Các bất thường (ví dụ: đăng nhập vào lúc 3 giờ sáng từ một quốc gia/khu vực địa lý lạ, tải lên/xuống lượng dữ liệu lớn bất thường) sẽ tự động kích hoạt cảnh báo hoặc thu hồi quyền truy cập ngay lập tức.
+    ],
 
-- Bước 1: Settings → Personal Hotspot.
-- Bước 2: Đổi Wi-Fi Password ($gt.eq$ 12 ký tự): `$@mDinh2026!`.
-- Bước 3: Chụp màn hình cấu hình.
-
-#figure(image("assets/03-01-iphone.png"),
-  caption: [
-    Bài 4. iPhone Hotspot Configured
-  ]
-)
-
-== Bài 5. Kiểm Chứng Mã Hóa Wi-Fi Vừa Tạo (Laptop)
-<bai-5-kiem-chung-ma-hoa-wi-fi-vua-tao-laptop>
-
-
-=== Kiểm Chứng Mã Hóa Wi-Fi
-<kiem-chung-ma-hoa-wi-fi>
-
-+ Kết Nối Vào Hotspot.
-
-#figure(image("assets/05-01-hotspot.png"),
-  caption: [
-    Bài 5. Kết Nối Vào Hotspot
-  ]
-)
-
-#block[
-#set enum(numbering: "1.", start: 2)
-+ Duyệt Wi-Fi để kiểm tra thông số.
-]
-
-- Encryption (hay Cipher): CCMP-128.
-  - CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol)
-  - Đây là AES với thuật toán mã hóa 128 bit.
-
-#figure(image("assets/05-02-wifi.png"),
-  caption: [
-    Bài 5. Kiểm Tra Thông Số Wi-Fi
-  ]
+    [6],
+    [Bảo mật dựa trên danh tính (Identity-Centric Security)],
+    [
+      - Thay vì dựa vào vị trí mạng (IP, VLAN) để phân quyền, Zero Trust lấy danh tính người dùng và thiết bị làm trung tâm.
+      - Việc kết nối từ mạng nội bộ công ty không tự động mang lại quyền truy cập -- mỗi danh tính đều phải chứng minh mình đáng tin cậy qua từng phiên làm việc.
+    ],
+  ),
+  caption: [Các Đặc Điểm Chính Của Zero Trust Security]
 )
 
-=== Câu hỏi
-<cau-hoi>
+== Nhận Xét
+<nhan-xet>
 
-#quote(block: true)[
-Cipher AES có ý nghĩa gì trong bảo mật Wi-Fi?
-]
+Sáu đặc điểm trên tạo thành một hệ thống phòng thủ nhiều lớp: từ xác minh danh tính (MFA, xác minh liên tục), kiểm soát quyền (least privilege), phân vùng hạ tầng (micro-segmentation), đến giám sát liên tục (monitoring).
 
-Đầu tiên, chúng ta sẽ phân biệt các thành phần được quan sát ở trên:
-
-- WPA2/WPA3: là các giao thức bảo mật (luật lệ).
-- CCMP: CCMP là giao thức mã hóa dữ liệu (cách thức đóng gói) và sẽ sử dụng các thuật toán mã hóa nhất định.
-- AES: là lõi thuật toán (ổ khóa toán học) mà CCMP sử dụng để xáo trộn dữ liệu.
-  - Viết tắt của Advanced Encryption Standard.
-  - AES-128 là một thuật toán mã hóa khối (block cipher).
-  - AES là một thuật toán mã hóa đối xứng, có nghĩa là cùng một khóa được sử dụng để mã hóa và giải mã dữ liệu.
-- Kết hợp thành CCMP-AES-128, hay tạm gọi là Cipher AES.
-  - CCMP sử dụng AES để mã hóa dữ liệu, đảm bảo tính bảo mật và toàn vẹn của dữ liệu.
-
-#strong[Vai trò & Ý nghĩa của AES trong bảo mật Wi-Fi:]
-
-Ứng dụng:
-
-- Mã hóa: Dữ liệu từ thiết bị được mã hóa bằng AES, với một khóa dựa trên mật khẩu Wi-Fi đã được thống nhất giữa thiết bị và Router.
-- Truyền tải: Khối dữ liệu này được truyền tải qua mạng không dây, kẻ tấn công có thể bắt (sniff) các gói tin và lấy ra các khối dữ liệu.
-- Giải mã: Kẻ tấn công không thể giải mã dữ liệu nếu không có khóa. Router sẽ giải mã vì sở hữu khóa tương ứng.
-
-Ý nghĩa:
-
-- Xác thực: AES đảm bảo rằng chỉ những thiết bị có khóa chính xác mới có thể kết nối vào mạng Wi-Fi.
-- Tính toàn vẹn: AES đảm bảo rằng dữ liệu không bị thay đổi trong quá trình truyền.
-- An toàn: Gói tin hoặc khối dữ liệu có thể được bắt (sniff) nhưng không thể được giải mã nếu không có khóa chính xác.
+Điểm chung là tất cả đều hướng tới mục tiêu: #emph[giảm thiểu niềm tin ngầm] (implicit trust) hoặc #emph[nguy cơ từ người nội bộ] (insider threat) trong hệ thống, buộc mọi thực thể phải liên tục chứng minh quyền hợp lệ của mình, mọi lúc, mọi nơi, mọi hành vi.

@@ -1,130 +1,53 @@
 #import "../template/lib.typ": *
 
-= TIẾT 1. KHẢO SÁT WI-FI & NHẬN DIỆN NGUY CƠ
-<tiet-1-khao-sat-wi-fi-nhan-dien-nguy-co>
+= PHẦN 1 --- GIỚI THIỆU XU THẾ
+<phan-1-gioi-thieu-xu-the>
 
+#strong[Bước 1]: Trình bày:
 
-== Bài 1. Quét Và Liệt Kê Wi-Fi Xung Quanh
-<bai-1-quet-va-liet-ke-wi-fi-xung-quanh>
+- Tên xu thế
+- Xu thế này xuất hiện trong bối cảnh nào?
+- Vì sao xu thế này trở nên cần thiết?
 
-- Bước 1: Mở Command Prompt
-- Bước 2: Chạy lệnh `netsh wlan show networks mode=bssid`
-- Bước 3: Quan sát và chụp màn hình các thông tin:
-  - SSID
-  - Authentication
-  - Encryption
-  - Signal
-- Bước 4: Hoàn thành bảng sau (ít nhất 8 mạng, nếu không đủ thì ghi rõ lý do):
+#strong[Yêu cầu]: 1--1,5 trang
 
-#show table.cell: set text(size: 0.8em)
-#table(
-  columns: (1fr,) * 6,
-  align: (left, left, left, left, left, left),
-  [STT], [SSID], [Authentication], [Encryption], [Signal], [Đánh giá],
-  [1], [], [], [], [], [],
-  [2], [], [], [], [], [],
-  [3], [], [], [], [], [],
-)
-Gợi ý đánh giá:
+== Xu Thế Được Chọn: Zero Trust Security
+<xu-the-duoc-chon-zero-trust-security>
 
-- Open / None → Không an toàn
-- WPA2-PSK (AES) → Tốt
-- WPA3 → Rất tốt
+Sinh viên chọn #strong[Xu thế 1]: #strong[Zero Trust Security] (An ninh theo mô hình Không Tin Cậy).
 
-=== Liệt Kê Wi-Fi Xung Quanh
-<liet-ke-wi-fi-xung-quanh>
+#strong[Zero Trust Security] là một mô hình bảo mật hoạt động dựa trên triết lý cốt lõi:
 
-Do đang sử dụng macOS trên Apple Silicon, và không có khả năng triển khai các Windows VM có hỗ trợ wifi, và hiện cũng không mượn được máy Windows, vì vậy sinh viên xin phép sử dụng ứng dụng WIFI Explore Pro (có trên App Store) để thực hiện bài thực hành này.
+- #strong["Không bao giờ tin cậy, luôn luôn xác minh"] (Never Trust, Always Verify).
 
-Danh sách các mạng Wi-Fi xung quanh khu vực sinh viên học tập:
+Khác với mô hình bảo mật truyền thống vốn phân chia rõ ràng giữa #strong[bên trong] (tin cậy) và #strong[bên ngoài] (không tin cậy), Zero Trust coi mọi yêu cầu truy cập -- dù xuất phát từ bên trong hay bên ngoài mạng -- đều là tiềm ẩn rủi ro và cần được xác minh nghiêm ngặt trước khi cấp quyền.
 
-- SSID ở đây được gọi là Network Name.
-- Tất cả các WIFI đều sử dụng một chế độ bảo mật cụ thể.
-- Luôn yêu cầu xác thực (không có mạng mở free-wifi).
-- Tín hiệu khá tốt ở hầu hết các WIFI (trên 50%).
+Ở môi trường truyền thống, hạ tầng được phân tách thành các khu vực (zone) như DMZ, Internal, DB… Từng khu vực sẽ có các chính sách bảo mật tương ứng. Tuy nhiên, khi dữ liệu và các ứng dụng được triển khai trên nhiều môi trường khác nhau, việc quản lý trở nên khó khăn hơn. Hoặc cách phát triển ứng dụng bây giờ đã thay đổi, nhiều dịch vụ quan trọng tập trung trong các môi trường khác nhau, không còn nằm trong khu vực cụ thể để dễ dàng phân loại và cô lập nữa. Dẫn đến việc kiểm soát quyền truy cập của người dùng với từng ứng dụng ngày càng trở nên khó khăn và phức tạp hơn.
 
-#figure(image("assets/01-01-wifi-list.png"),
-  caption: [
-    Bài 1. Danh Sách Wi-Fi Tìm Thấy
-  ]
-)
+#strong[Zero Trust Security] kết hợp với một cách quản lý hệ thống mạng mới gọi là #strong[Micro Segmentation]. Từ đó, một mô hình đầy đủ hơn được gọi là #strong[Zero Trust Architecture] được ứng dụng rộng rãi trong môi trường doanh nghiệp.
 
-=== Bảng Liệt Kê Và Đánh Giá
-<bang-liet-ke-va-danh-gia>
+Ví dụ: #strong[VMware NSX], đây là một nền tảng ảo hóa mạng được phát triển bởi VMware, được triển khai trên các môi trường ảo hóa vSphere -- một môi trường điện toán đám mây riêng (Private Cloud) ảo hóa rộng lớn, cho phép các tổ chức xây dựng và quản lý mạng ảo của riêng mình trên nền tảng hạ tầng vật lý. NSX nhấn mạnh vào Zero Trust và Micro Segmentation, từ đó tạo ra một mô hình bảo mật toàn diện và linh hoạt, phục vụ cho cả môi trường hạ tầng truyền thống như mô hình 3-Tier (App - Web - DB) và cả môi trường microservices (Tanzu) đang ngày càng phổ biến.
 
-- Encryption cho biết rõ là CCMP bao nhiêu bit.
-- Signal hiển thị ở dạng số nguyên, giá trị càng lớn, wifi càng mạnh.
+== Bối Cảnh Xuất Hiện
+<boi-canh-xuat-hien>
 
-#figure(
-  table(
-    columns: (5%, 24%, 28%, 14%, 15%, 14%),
-    align: (left, left, left, left, right, left),
-    [stt], [SSID], [Authentication], [Encryption], [Signal (dBm)], [Đánh Giá],
-    [1], [\@Ruijie-b56D2], [WPA/WPA2 (PSK)], [CCMP-128], [\-70], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [2], [Appalasami Family], [WPA2 (PSK)], [CCMP-128], [\-71], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [3], [appalasami-TIME5Ghz], [WPA2 (PSK)], [CCMP-128], [\-73], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [4], [Charlesmanor], [WPA/WPA2 (PSK)], [TKIP], [\-71], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [5], [dato\_salim\_2.4G], [WPA/WPA2 (PSK)], [TKIP], [\-69], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [6], [Hash], [WPA2/WPA3 (PSK/SAE)], [CCMP-128], [\-64], [#text(fill: green)[#sym.checkmark.heavy #sym.checkmark.heavy] Rất Tốt],
-    [7], [Hecoo], [WPA2/WPA3 (PSK/SAE)], [CCMP-128], [\-63], [#text(fill: green)[#sym.checkmark.heavy #sym.checkmark.heavy] Rất Tốt],
-    [8], [jhsw1965 5G], [WPA2 (PSK)], [CCMP-128], [\-71], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [9], [JustinTmj], [WPA/WPA2 (PSK)], [CCMP-128], [\-74], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [10], [Perlla], [WPA2/WPA3 (PSK/SAE)], [CCMP-128], [\-87], [#text(fill: green)[#sym.checkmark.heavy #sym.checkmark.heavy] Rất Tốt],
-    [11], [r33\_5G], [WPA2 (PSK)], [CCMP-128], [\-70], [#text(fill: green)[#sym.checkmark.heavy] Tốt],
-    [12], [Rog\_SpgC47], [WPA2 (PSK)], [CCMP-128], [\-46], [#text(fill: green)[#sym.checkmark.heavy] Tốt]
-  ),
-caption: [Bài 1. Bảng Liệt Kê Và Đánh Giá WIFI]
-)
+Khái niệm #strong[Zero Trust] được John Kindervag -- nhà phân tích tại Forrester Research -- đề xuất lần đầu vào năm 2010. Tuy nhiên, xu thế này thực sự bùng nổ trong giai đoạn 2020--2025 khi hội tụ nhiều yếu tố:
 
-== Bài 2. Phân Loại Wi-Fi Theo Mức Độ An Toàn
-<bai-2-phan-loai-wi-fi-theo-muc-do-an-toan>
+- #strong[Chuyển đổi số và điện toán đám mây:] Dữ liệu và ứng dụng doanh nghiệp không còn nằm gọn trong một trung tâm dữ liệu duy nhất mà phân tán trên nhiều nền tảng đám mây (AWS, Azure, Google Cloud), hoặc trong các môi trường ảo hóa và hybrid phức tạp. Điều này khiến ranh giới phân chia ranh giới giữa bên trong và bên ngoài theo mô hình mạng truyền thống trở nên mờ nhạt.
 
-Sinh viên tự chia các Wi-Fi đã quét vào 3 nhóm:
+- #strong[Làm việc từ xa:] Đại dịch COVID-19 thúc đẩy mô hình làm việc từ xa trên quy mô toàn cầu. Nhân viên truy cập hệ thống công ty từ mạng gia đình, quán cà phê, hay thiết bị cá nhân -- đều là những môi trường nằm ngoài vành đai bảo mật truyền thống.
 
-- Nhóm A: An Toàn
-- Nhóm B: Trung Bình
-- Nhóm C: Nguy Hiểm
+- #strong[Tấn công mạng ngày càng tinh vi:] Các vụ tấn công lớn như SolarWinds (2020) và Colonial Pipeline (2021) cho thấy kẻ tấn công có thể xâm nhập sâu vào hệ thống nội bộ và di chuyển ngang (lateral movement) mà không bị phát hiện trong thời gian dài. Mô hình bảo mật vành đai truyền thống đã thất bại trong việc ngăn chặn những cuộc tấn công này.
 
-Đánh giá chung:
+- #strong[Sự phức tạp của các loại thiết bị:] Sự gia tăng của thiết bị IoT, BYOD (Bring Your Own Device) và thiết bị di động khiến việc kiểm soát truy cập dựa trên vị trí mạng ngày càng bất khả thi.
 
-- Nhóm A là các Wi-Fi dùng WPA2/WPA3, nhóm B là các Wi-Fi dùng WPA/WPA2.
-- Tất cả các mạng Wi-Fi đều dùng một cơ chế bảo mật nhất định.
-  - Vì vậy, không có Wi-Fi nào được xếp vào nhóm C.
-- Các chuẩn phổ biến được dùng là WPA2, vì các Wi-Fi đều ở quy mô gia đình.
-  - Một số Wi-Fi hỗ trợ WPA3, đây thường là các thiết bị phát sóng thế hệ mới.
+== Vì Sao Zero Trust Trở Nên Cần Thiết?
+<vi-sao-zero-trust-tro-nen-can-thiet>
 
-#figure(
-table(
-  columns: (5%, 24%, 28%, 15%, 28%),
-  align: (left, left, left, left, left),
-  [stt], [SSID], [Authentication], [Nhóm], [Lý Do], 
-  [1], [\@Ruijie-b56D2], [WPA/WPA2 (PSK)], [Trung Bình], [Cho phép fall-back về WPA vốn yếu hơn.],
-  [2], [Appalasami Family], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.],
-  [3], [appalasami-TIME5Ghz], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.],
-  [4], [Charlesmanor], [WPA/WPA2 (PSK)], [Trung Bình], [Cho phép fall-back về WPA vốn yếu hơn.],
-  [5], [dato\_salim-2.4G], [WPA/WPA2 (PSK)], [Trung Bình], [Cho phép fall-back về WPA vốn yếu hơn.],
-  [6], [Hash], [WPA2/WPA3 (PSK/SAE)], [An Toàn], [WPA3 phù hợp cho cả môi trường doanh nghiệp.],
-  [7], [Hecoo], [WPA2/WPA3 (PSK/SAE)], [An Toàn], [WPA3 phù hợp cho cả môi trường doanh nghiệp.],
-  [8], [jhsw1965 5G], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.],
-  [9], [JustinTmj], [WPA/WPA2 (PSK)], [Trung Bình], [Cho phép fall-back về WPA vốn yếu hơn.],
-  [10], [Perlla], [WPA2/WPA3 (PSK/SAE)], [An Toàn], [WPA3 phù hợp cho cả môi trường doanh nghiệp.],
-  [11], [r33\_5G], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.],
-  [12], [Rog\_SpgC47], [WPA2 (PSK)], [An Toàn], [WPA2 vẫn rất tốt cho quy mô nhỏ.]
-),
-caption: [Bài 2. Phân Loại WIFI Theo Mức Độ An Toàn]
-)
+Mô hình bảo mật truyền thống dựa trên giả định rằng mọi thứ bên trong mạng nội bộ đều an toàn -- giống như một lâu đài với bức tường thành kiên cố, ai đã vào bên trong thì được tự do di chuyển. Tuy nhiên, thực tế đã chứng minh giả định này không còn đúng.
 
-== Câu Hỏi Ngắn
-<cau-hoi-ngan>
+Môi trường doanh nghiệp nói riêng, và môi trường ứng dụng & dữ liệu CNTT nói chung trong những năm gần đây đã có sự thay đổi lớn: rộng hơn, phân tán hơn, kết nối đa dạng hơn, vv.. với cấp số nhân, từ đó dẫn đến sự xuất hiện của các thách thức và yêu cầu bảo mật mới. Chúng ta cần các công cụ mới, cách tiếp cận mới thay thế mô hình truyền thống.
 
-#quote(block: true)[
-Vì sao Wi-Fi không đặt mật khẩu vẫn có người sử dụng?
-]
+Trong số đó, Zero Trust Security đang trở thành một trong những mô hình bảo mật được quan tâm và áp dụng nhiều nhất hiện nay. Zero Trust Security không chỉ là một công nghệ hay giải pháp, mà là một triết lý bảo mật, một cách tiếp cận toàn diện, có hệ thống nhằm bảo vệ doanh nghiệp khỏi các mối đe dọa ngày càng tinh vi và đa dạng.
 
-Một số nguyên nhân như:
-
-- Môi trường chia sẻ Wi-Fi công cộng và muốn đơn giản hóa việc kết nối.
-- Sự tương thích với các thiết bị có chuẩn cũ, hoặc kết nối đặc thù.
-- Các mạng ngang hàng/Ad-hoc, vòng đời chia sẻ ngắn.
-- Các mạng Wi-Fi cô lập và không có kết nối Internet hoặc hạ tầng quan trọng.
-- Sử dụng các hình thức xác thực khác, ví dụ đăng ký qua cổng Captive Portal, hoặc cơ chế xác thực nội bộ (Enterprise).
+Zero Trust không còn là một khái niệm lý thuyết mà đã trở thành chiến lược bảo mật bắt buộc trong kỷ nguyên số, khi mà ranh giới mạng không còn tồn tại rõ ràng và mối đe dọa có thể đến từ bất kỳ đâu -- kể cả từ bên trong tổ chức.

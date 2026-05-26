@@ -1,65 +1,161 @@
 #import "../template/lib.typ": *
+#import "../template/lib.typ": *
 
-= TIẾT 5. TÌNH HUỐNG & BÁO CÁO
-<tiet-5-tinh-huong-bao-cao>
+= PHẦN 5 --- LIÊN HỆ THỰC TẾ
+<phan-5-lien-he-thuc-te>
 
+#strong[Bước 5]:
 
-== Bài 11. Tình Huống Bắt Buộc
-<bai-11-tinh-huong-bat-buoc>
+Sinh viên tự tìm #strong[1 ví dụ thực tế] (trong hoặc ngoài nước):
 
-Tình huống:
+- Sản phẩm
+- Dịch vụ
+- Mô hình triển khai
 
-- Sinh viên dùng Wi-Fi quán cà phê để:
-  - Đăng nhập email
-  - Thanh toán online
+Bảng 3: Ví dụ thực tế
 
-Yêu cầu trình bày:
+#table(
+  columns: (1fr,) * 2,
+  align: (left, left),
+  [Nội dung], [Mô tả], [Tên sản phẩm/dịch vụ], [], [Xu thế áp dụng], [], [Lợi ích mang lại], [], [Hạn chế/Rủi ro], []
+)
 
-+ Ít nhất 5 rủi ro
-+ Ít nhất 7 biện pháp an toàn
-+ 3 việc tuyệt đối không làm
+== Google BeyondCorp -- Giới Thiệu
+<google-beyondcorp-gioi-thieu>
 
-=== 5 Rủi Ro Khi Dùng Wi-Fi Công Cộng
-<5-rui-ro-khi-dung-wi-fi-cong-cong>
+Để minh họa cho cách Zero Trust được triển khai trong thực tế, sinh viên chọn phân tích #strong[Google BeyondCorp], vốn được coi là một trong những triển khai Zero Trust đầu tiên ở quy mô lớn trên thế giới.
 
-+ Nghe lén dữ liệu (Eavesdropping)
-  - Kẻ tấn công có thể ở trong cùng mạng Wi-Fi và nghe lén toàn bộ dữ liệu, vì đây là kết nối công cộng, không có giới hạn về ai được phép truy cập. Đặc biệt khi kết nối không sử dụng mã hóa hoặc mã hóa yếu.
-+ Tấn công giả mạo điểm truy cập (Rogue AP)
-  - Kẻ tấn công có thể giả mạo điểm truy cập như một Wi-Fi của quán cà phê đang ngồi hoặc bên cạnh, để đánh lừa người dùng kết nối vào mạng của chúng. Nếu người dùng kết nối vào mạng giả mạo, kẻ tấn công có thể kiểm soát toàn bộ lưu lượng truy cập và đánh cắp dữ liệu.
-+ Tấn công Man-in-the-Middle (MitM)
-  - Kẻ tấn công có thể ở giữa người dùng và điểm truy cập, giả mạo cả hai phía để đánh lừa người dùng.
-+ Đánh cắp thông tin đăng nhập (Credential Theft)
-  - Kẻ tấn công có thể đánh cắp thông tin đăng nhập của người dùng, bao gồm tên người dùng, mật khẩu, thông tin thanh toán, thông tin cá nhân, v.v. khi trao đổi qua mạng công cộng, đặc biệt với mật khẩu Wi-Fi tức mã hóa yếu hoặc không có.
-+ Lây nhiễm mã độc (Malware Infection)
-  - Kẻ tấn công có thể lây nhiễm mã độc vào thiết bị của người dùng khi kết nối vào mạng Wi-Fi công cộng khi ở trong cùng một broadcast domain, nhằm mục đích đánh cắp dữ liệu hoặc kiểm soát thiết bị.
+Đầu tiên là một vài mô tả nhanh về BeyondCorp theo nguyên bản tài liệu.
 
-=== 7 Biện Pháp An Toàn Khi Dùng Wi-Fi Công Cộng
-<7-bien-phap-an-toan-khi-dung-wi-fi-cong-cong>
+#co-info(title: "Trích Dẫn")[
+*BeyondCorp là gì?*
 
-+ Luôn dùng VPN, đặc biệt trong công việc.
-  - VPN mã hóa toàn bộ lưu lượng truy cập của người dùng, ẩn danh tính và vị trí, giúp ngăn chặn kẻ tấn công đánh cắp dữ liệu hoặc theo dõi hoạt động trực tuyến.
-+ Sử dụng HTTPS hoặc các giao thức tương đương như FTPS, SSH, vv…
-  - HTTPS mã hóa dữ liệu trao đổi giữa người dùng và website, giúp tránh được rò rỉ dữ liệu dù kẻ tấn công có thể bắt các gói tin.
-+ Vô hiệu hóa dịch vụ chia sẻ tệp
-  - Tắt chia sẻ tệp (ví dụ SMB trên Windows) để ngăn chặn kẻ tấn công truy cập vào tệp của người dùng khi kết nối vào mạng Wi-Fi công cộng.
-+ Tắt Wi-Fi khi không dùng
-  - Tắt Wi-Fi khi không dùng hoặc dùng một cách có kiểm soát: thời lượng ít, ngẫu nhiên, ưu tiên Wi-Fi có mật khẩu mạnh.
-+ Sử dụng xác thực 2 yếu tố (2FA)
-  - Các dịch vụ quan trọng thường cung cấp chức năng này, hãy chắc chắn luôn luôn bật.
-+ Luôn cập nhật hệ điều hành & ứng dụng
-  - Tự động cập nhật là một cách để đảm bảo thiết bị có các phiên bản mới nhất vốn thường vá các lỗi bảo mật đã biết.
-+ Không thực hiện giao dịch nhạy cảm
-  - Không truy cập ngân hàng hoặc thanh toán online, không đăng nhập vào tài khoản quan trọng (email, mạng xã hội). Sử dụng có chọn lọc.
+BeyondCorp là một mô hình *bảo mật và hạ tầng liên quan* được Google phát triển từ năm 2011. Trong BeyondCorp, quyền truy cập vào các dịch vụ nội bộ được cấp dựa trên *chính sách bảo mật* thể hiện qua nhiều *tín hiệu* (như *danh tính người dùng*, *thông tin thiết bị*) thay vì chỉ dựa trên lòng tin vào kết nối mạng.
 
-=== 3 Việc Tuyệt Đối Không Làm
-<3-viec-tuyet-doi-khong-lam>
+Để biết thêm chi tiết, vui lòng xem tài liệu công khai tại:
 
-+ Không truy cập ngân hàng hoặc thanh toán online
-  - Các giao dịch tài chính luôn nhạy cảm, đi kèm với thông tin cá nhân, thông tin thẻ tín dụng, vv.
-  - Ưu tiên sử dụng mạng riêng hoặc có thể sử dụng Hotspot cá nhân cho các tác vụ tối quan trọng.
-+ Không đăng nhập vào tài khoản quan trọng (email, mạng xã hội)
-  - Các tài khoản này thường không chứa thông tin tài chính, nhưng chứa rất nhiều thông tin cá nhân và công việc. Nếu bị đánh cắp, kẻ tấn công có thể sử dụng thông tin này vào các mục đích xấu, hoặc khai thác để chiếm các thông tin về tài chính.
-+ Không chia sẻ hoặc nhận chia sẻ file từ các máy trong mạng.
-  - Chia sẻ ngang hàng thường nhanh chóng nhưng tiềm ẩn rủi ro vì các trao đổi gần như là trực tiếp giữa các thiết bị.
-  - Không tải file hoặc truy cập các website lạ.
-  - Hạn chế các loại website truy cập; và giới hạn lưu lượng và thời lượng có mặt trên mạng công cộng.
+- #link("https://cloud.google.com/beyondcorp", "BeyondCorp tại Google Cloud Platform")
+- #link("https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/", "BeyondCorp: A New Approach to Enterprise Security")
+]
+#co-succ(title: "Nguyên Văn")[
+*What is BeyondCorp?*
+
+BeyondCorp is a *security model and associated infrastructure* developed at Google since 2011. In BeyondCorp, access to internal services is granted *by expressive security policy based on multiple signals* (user identity, device inventory information) rather than *solely network-based trust*.
+
+For details, please see the externally available documentation below:
+
+- #link("https://cloud.google.com/beyondcorp", "BeyondCorp tại Google Cloud Platform")
+- #link("https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/", "BeyondCorp: A New Approach to Enterprise Security")
+]
+#co-info(title: "Trích Dẫn")[
+*Nguyên Tắc Cốt Lõi của BeyondCorp*
+
+- Kết nối từ một mạng cụ thể *không quyết định* bạn có thể truy cập vào những dịch vụ nào.
+  - Không còn "tin tưởng" mạng nội bộ như một vùng an toàn.
+- Truy cập vào tài nguyên được cấp dựa trên *thông tin về người dùng* và *trạng thái thiết bị* của họ.
+  - Dựa trên danh tính người dùng (là ai, bộ phận nào, v.v...).
+  - Trạng thái thiết bị (có được đăng ký hay không, đang ở vị trí địa lý nào, v.v..).
+- Mọi truy cập phải được *xác thực*, *cấp phép* và *mã hóa*.
+  - Chứng minh danh tính, cấp quyền truy cập, mã hóa mọi dữ liệu.
+]
+#co-warn(title: "Nguyên Văn")[
+*BeyondCorp Principles*
+
+- Connecting from a particular network *must not determine which services you can access*.
+- Access to services is granted *based on what we know about you and your device*.
+- All access to services must be *authenticated, authorized, and encrypted*.
+]
+Có nghĩa, đây không thuần túy là một giải pháp phần mềm thuần túy mà là một mô hình #strong[end--to--end] (từ đầu tới cuối) bao gồm mọi khía cạnh: từ con người, quy trình cho tới hạ tầng công nghệ tạo thành một hệ sinh thái.
+
+== Google BeyondCorp -- Ví Dụ Thực Tế
+<google-beyondcorp-vi-du-thuc-te>
+
+Ví dụ, ở khía cạnh kỹ thuật thuần túy có thể điểm qua một vài khía cạnh nổi bật như sau:
+
+- Mỗi thiết bị đều phải được khai báo, đăng ký và quản lý trong hệ thống.
+
+#figure(image("assets/chromebook.png"),
+  caption: [
+    BeyondCorp -- Quản Lý Thiết Bị
+  ]
+)
+
+- Tương tự, mỗi người dùng đều được quản lý, theo dõi: đăng nhập ở đâu, thiết bị nào, thiết bị đã được đăng ký trong hệ thống hay chưa, phiên bản hệ điều hành, các policy đã được đồng bộ, thời điểm đồng bộ, v.v… nói chung rất rất nhiều yếu tố theo thời gian thực.
+
+#figure(image("assets/user.png"),
+  caption: [
+    BeyondCorp -- Quản Lý Người Dùng
+  ]
+)
+
+- Tại bất kỳ thời điểm nào trong quá trình kết nối, hệ thống luôn có thông tin/trạng thái của thiết bị & người dùng.
+
+#figure(image("assets/status.png"),
+  caption: [
+    BeyondCorp -- Trạng Thái Truy Cập
+  ]
+)
+
+- Tóm lại, đây là một quá trình thường xuyên, liên tục và được tự động hóa bằng các Policy (chính sách) phù hợp, không phụ thuộc hoặc rất ít phụ thuộc vào sự can thiệp thủ công của con người. Điều này giảm tải cho đội ngũ quản trị hệ thống, đồng thời nâng cao tính chính xác và khách quan trong việc ra quyết định cấp quyền truy cập.
+
+#figure(image("assets/device.png"),
+  caption: [
+    BeyondCorp -- Thông Tin Thiết Bị
+  ]
+)
+
+== Google BeyondCorp -- Tổng Quan
+<google-beyondcorp-tong-quan>
+
+Dưới đây là các nội dung tóm tắt sau khi tìm hiểu về Google BeyondCorp.
+
+#figure(
+  table(
+    columns: (25%, 75%),
+    align: (left, left),
+    table.header(
+      [*Nội Dung*], [*Mô Tả*],
+    ),
+    [Tên sản phẩm/dịch vụ],
+    [
+      - *Google BeyondCorp Enterprise*.
+      - Là một nền tảng Zero Trust do Google phát triển.
+      - Ban đầu được triển khai nội bộ cho nhân viên Google từ năm 2011.
+      - Sau đó được thương mại hóa cho khách hàng doanh nghiệp thông qua Google Cloud Platform (GCP).
+    ],
+
+    [Xu thế áp dụng],
+    [
+      - *Zero Trust Security* -- loại bỏ hoàn toàn mô hình bảo mật theo vành đai truyền thống.
+      - Mọi truy cập vào tài nguyên nội bộ đều được xác thực dựa trên danh tính người dùng (là ai, bộ phận nào, v.v...) và trạng thái thiết bị (có được đăng ký hay không, đang ở vị trí địa lý nào, v.v..).
+      - Mọi thiết bị: Chromebook, Macbook, Windows, Android, iOS, Linux -- tất cả.
+      - Bất kể kết nối từ mạng nội bộ Google hay Wi-Fi công cộng hay các bên khác (vendor), có nghĩa không quan trọng điểm kết nối, đã tham gia mạng lưới sẽ đều áp dụng.
+    ],
+
+    [Lợi ích mang lại],
+    [
+      - Hơn 100.000 nhân viên Google làm việc từ mọi nơi mà không cần VPN, vẫn đảm bảo an toàn.
+      - Giảm nguy cơ lateral movement -- kể cả khi một tài khoản bị xâm phạm, kẻ tấn công không thể truy cập tài nguyên khác.
+      - Cung cấp trải nghiệm người dùng mượt mà: nhân viên không cần kết nối VPN chậm, chỉ cần xác thực qua trình duyệt.
+      - Mô hình đã được chứng minh hiệu quả qua hơn 10 năm vận hành, trở thành chuẩn mực cho ngành công nghiệp.
+      - Giúp các hành hàng của GCP được tiếp cận giải pháp tiên tiến mà không cần đầu tư hạ tầng hay công cụ phức tạp, và tập trung vào phần quan trọng nhất: Con Người.
+    ],
+    [Hạn chế/Rủi ro],
+    [
+      - BeyondCorp được thiết kế và triển khai bởi Google, do đó có thể không phù hợp với các doanh nghiệp khác có quy mô và mức độ trưởng thành về công nghệ (tech-savvy) khác nhau.
+      - Việc triển khai BeyondCorp tốn chi phí, nhưng nếu không triển khai sẽ tốn kém hơn.
+      - Phù hợp và yêu cầu mức độ hạ tầng nhất định, không thể đơn giản triển khai được ngay lập tức.
+      - Cần sự đồng bộ từ chiến lược cho tới quản lý, vận hành, và là một sự thay đổi lớn về văn hóa làm việc.
+    ]
+  ),
+  caption: [Ví Dụ Thực Tế: Google BeyondCorp]
+)
+
+== Google BeyondCorp -- Bình Luận
+<google-beyondcorp-binh-luan>
+
+Google bắt đầu phát triển BeyondCorp từ năm 2011 như một phản ứng trước các cuộc tấn công APT (Advanced Persistent Threat) nhắm vào các công ty công nghệ lớn tại Silicon Valley. Trước đó, Google cũng giống nhiều doanh nghiệp khác -- phụ thuộc vào mô hình bảo mật phân cấp trong/ngoài: ai ở trong mạng nội bộ thì được tin cậy. Tuy nhiên, với sự gia tăng của thiết bị di động và điện toán đám mây, khái niệm "vành đai" ngày càng mờ nhạt.
+
+Giải pháp của Google là chuyển quyền kiểm soát truy cập từ #strong[vị trí mạng] (location-based) sang #strong[danh tính cá nhân] (identity-based). Mỗi yêu cầu truy cập đều phải thỏa mãn ba điều kiện: xác thực #strong[danh tính người dùng], kiểm tra #strong[trạng thái bảo mật thiết bị] (đã cập nhật patch chưa? có phần mềm đồng bộ policy của Google hay không? v.v…), và xác nhận #strong[quyền truy cập ứng dụng] cụ thể.
+
+BeyondCorp không phải là một dự án triển khai nhanh chóng -- đó là một quá trình chuyển đổi #strong[kéo dài nhiều năm], đòi hỏi #strong[đầu tư lớn] về công nghệ, quy trình và đào tạo nhân viên. Tuy nhiên, kết quả đã chứng minh giá trị: Google hiện là một trong những tổ chức an toàn nhất thế giới, và BeyondCorp đã được thương mại hóa để các doanh nghiệp khác có thể áp dụng mô hình tương tự thông qua Google Cloud Platform (GCP).
