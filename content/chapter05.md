@@ -25,6 +25,8 @@ Bảng 3: Ví dụ thực tế
 
 Để minh họa cho cách Zero Trust được triển khai trong thực tế, sinh viên chọn phân tích **Google BeyondCorp**, vốn được coi là một trong những triển khai Zero Trust đầu tiên ở quy mô lớn trên thế giới.
 
+Đầu tiên là một vài mô tả nhanh về BeyondCorp theo nguyên bản tài liệu.
+
 ```{=typst}
 #co-info(title: "Trích Dẫn")[
 *BeyondCorp là gì?*
@@ -69,9 +71,9 @@ For details, please see the externally available documentation below:
 #co-warn(title: "Nguyên Văn")[
 *BeyondCorp Principles*
 
-- Connecting from a particular network must not determine which services you can access.
-- Access to services is granted based on what we know about you and your device.
-- All access to services must be authenticated, authorized, and encrypted. 
+- Connecting from a particular network *must not determine which services you can access*.
+- Access to services is granted *based on what we know about you and your device*.
+- All access to services must be *authenticated, authorized, and encrypted*.
 ]
 ```
 
