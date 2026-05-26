@@ -81,11 +81,17 @@ Có nghĩa, đây không thuần túy là một giải pháp phần mềm thuầ
 
 Ví dụ, ở khía cạnh kỹ thuật thuần túy: Mỗi thiết bị đều phải được khai báo, đăng ký và quản lý trong hệ thống.
 
-![Chromebook: Managed by google.com](assets/chromebook.png)
+![BeyondCorp -- Quản Lý Thiết Bị](assets/chromebook.png)
 
 Tương tự, mỗi người dùng đều được quản lý, theo dõi: đăng nhập ở đâu, thiết bị nào, thiết bị đã được đăng ký trong hệ thống hay chưa, vv...
 
-![User: Managed by google.com](assets/user.png)
+![BeyondCorp -- Quản Lý Người Dùng](assets/user.png)
+
+Tại bất kỳ thời điểm nào trong quá trình kết nối, hệ thống luôn có thông tin/trạng thái của thiết bị & người dùng.
+
+![BeyondCorp -- Trạng Thái Truy Cập](assets/status.png)
+
+Đây là một quá trình thường xuyên, liên tục và được tự động hóa bằng các Policy (chính sách) phù hợp, không phụ thuộc hoặc rất ít phụ thuộc vào sự can thiệp thủ công của con người. Điều này giảm tải cho đội ngũ quản trị hệ thống, đồng thời nâng cao tính chính xác và khách quan trong việc ra quyết định cấp quyền truy cập.
 
 ```{=typst}
 #figure(
