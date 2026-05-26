@@ -77,6 +77,16 @@ For details, please see the externally available documentation below:
 ]
 ```
 
+Có nghĩa, đây không thuần túy là một giải pháp phần mềm thuần túy mà là một mô hình **end--to--end** (từ đầu tới cuối) bao gồm mọi khía cạnh: từ con người, quy trình cho tới hạ tầng công nghệ tạo thành một hệ sinh thái.
+
+Ví dụ, ở khía cạnh kỹ thuật thuần túy: Mỗi thiết bị đều phải được khai báo, đăng ký và quản lý trong hệ thống.
+
+![Chromebook: Managed by google.com](assets/chromebook.png)
+
+Tương tự, mỗi người dùng đều được quản lý, theo dõi: đăng nhập ở đâu, thiết bị nào, thiết bị đã được đăng ký trong hệ thống hay chưa, vv...
+
+![User: Managed by google.com](assets/user.png)
+
 ```{=typst}
 #figure(
   table(
