@@ -55,12 +55,12 @@ For details, please see the externally available documentation below:
 #co-info(title: "Trích Dẫn")[
 *Nguyên Tắc Cốt Lõi của BeyondCorp*
 
-- Kết nối từ một mạng cụ thể **không quyết định** bạn có thể truy cập vào những dịch vụ nào.
+- Kết nối từ một mạng cụ thể *không quyết định* bạn có thể truy cập vào những dịch vụ nào.
   - Không còn "tin tưởng" mạng nội bộ như một vùng an toàn.
-- Truy cập vào tài nguyên được cấp dựa trên **thông tin về người dùng** và **trạng thái thiết bị** của họ.
+- Truy cập vào tài nguyên được cấp dựa trên *thông tin về người dùng* và *trạng thái thiết bị* của họ.
   - Dựa trên danh tính người dùng (là ai, bộ phận nào, v.v...).
   - Trạng thái thiết bị (có được đăng ký hay không, đang ở vị trí địa lý nào, v.v..).
-- Mọi truy cập phải được **xác thực**, **cấp phép** và **mã hóa**.
+- Mọi truy cập phải được *xác thực*, *cấp phép* và *mã hóa*.
   - Chứng minh danh tính, cấp quyền truy cập, mã hóa mọi dữ liệu.
 ]
 ```
