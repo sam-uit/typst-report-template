@@ -23,7 +23,7 @@ Bảng 3: Ví dụ thực tế
 
 ## Ví Dụ Thực Tế -- Google BeyondCorp
 
-Để minh họa cho cách Zero Trust được triển khai trong thực tế, sinh viên chọn phân tích *Google BeyondCorp* --- được coi là triển khai Zero Trust đầu tiên ở quy mô lớn trên thế giới.
+Để minh họa cho cách Zero Trust được triển khai trong thực tế, sinh viên chọn phân tích **Google BeyondCorp**, vốn được coi là một trong những triển khai Zero Trust đầu tiên ở quy mô lớn trên thế giới.
 
 ```{=typst}
 #co-info(title: "Trích Dẫn")[
@@ -39,7 +39,7 @@ BeyondCorp là một mô hình *bảo mật và hạ tầng liên quan* được
 ```
 
 ```{=typst}
-#co-info(title: "Nguyên Văn")[
+#co-succ(title: "Nguyên Văn")[
 *What is BeyondCorp?*
 
 BeyondCorp is a *security model and associated infrastructure* developed at Google since 2011. In BeyondCorp, access to internal services is granted *by expressive security policy based on multiple signals* (user identity, device inventory information) rather than *solely network-based trust*.
