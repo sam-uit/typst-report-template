@@ -10,7 +10,7 @@ Phân tích:
 Bảng 2: Lợi ích và thách thức
 
 | Nhóm | Nội dung | Giải thích |
-| --- | --- | --- |
+| -- | -- | -- |
 | Lợi ích | | |
 | Thách thức | | |
 
@@ -100,6 +100,6 @@ Phần này phân tích cả hai mặt để có cái nhìn đầy đủ hơn.
 
 ## Đánh Giá Chung
 
-Lợi ích của Zero Trust vượt trội --- nhưng thách thức không nên bị xem nhẹ. Các tổ chức thành công thường áp dụng chiến lược triển khai từng giai đoạn (phased approach), bắt đầu từ những tài sản quan trọng nhất và mở rộng dần, thay vì cố gắng chuyển đổi toàn bộ cùng lúc.
+Lợi ích của Zero Trust vượt trội -- nhưng thách thức không nên bị xem nhẹ. Các tổ chức thành công thường áp dụng chiến lược triển khai từng giai đoạn (phased approach), bắt đầu từ những tài sản quan trọng nhất và mở rộng dần, thay vì cố gắng chuyển đổi toàn bộ cùng lúc.
 
 Và, quan trọng nhất là vẫn là văn hóa tổ chức: từ quản lý đến sử dụng, và mọi cá nhân đều phải tham gia vào quá trình bảo mật, bắt buộc mọi người đều chia sẻ chung tầm nhìn (về bảo mật và chuyển đổi), chỉ khác nhau về trách nhiệm.

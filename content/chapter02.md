@@ -29,7 +29,7 @@ Zero Trust Security được xây dựng trên một số đặc điểm cốt l
     [Xác minh liên tục (Continuous Verification)],
     [
       - Mỗi yêu cầu truy cập đều phải được xác thực và ủy quyền, bất kể người dùng đã đăng nhập trước đó hay đang ở trong mạng nội bộ.
-      - Hệ thống đánh giá ngữ cảnh truy cập theo thời gian thực --- bao gồm danh tính, vị trí, trạng thái thiết bị và hành vi --- để quyết định cấp hoặc thu hồi quyền.
+      - Hệ thống đánh giá ngữ cảnh truy cập theo thời gian thực -- bao gồm danh tính, vị trí, trạng thái thiết bị và hành vi -- để quyết định cấp hoặc thu hồi quyền.
     ],
 
     [2],
@@ -37,7 +37,7 @@ Zero Trust Security được xây dựng trên một số đặc điểm cốt l
     [
       - Người dùng và thiết bị chỉ được cấp đúng mức quyền cần thiết để thực hiện nhiệm vụ, trong khoảng thời gian ngắn nhất có thể.
       - Need to Know: Chỉ cấp quyền truy cập khi thực sự cần thiết, nếu không có lý do nghiệp vụ, không cấp quyền.
-      - Nguyên tắc này hạn chế tối đa phạm vi thiệt hại nếu tài khoản bị xâm phạm --- kẻ tấn công không thể dùng một tài khoản bị chiếm để truy cập toàn bộ hệ thống.
+      - Nguyên tắc này hạn chế tối đa phạm vi thiệt hại nếu tài khoản bị xâm phạm -- kẻ tấn công không thể dùng một tài khoản bị chiếm để truy cập toàn bộ hệ thống.
     ],
 
     [3],
@@ -66,7 +66,7 @@ Zero Trust Security được xây dựng trên một số đặc điểm cốt l
     [Bảo mật dựa trên danh tính (Identity-Centric Security)],
     [
       - Thay vì dựa vào vị trí mạng (IP, VLAN) để phân quyền, Zero Trust lấy danh tính người dùng và thiết bị làm trung tâm.
-      - Việc kết nối từ mạng nội bộ công ty không tự động mang lại quyền truy cập --- mỗi danh tính đều phải chứng minh mình đáng tin cậy qua từng phiên làm việc.
+      - Việc kết nối từ mạng nội bộ công ty không tự động mang lại quyền truy cập -- mỗi danh tính đều phải chứng minh mình đáng tin cậy qua từng phiên làm việc.
     ],
   ),
   caption: [Các Đặc Điểm Chính Của Zero Trust Security]

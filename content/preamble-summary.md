@@ -8,7 +8,7 @@ Sau bài thực hành, sinh viên có thể
 2. Phân tích **nguyên nhân hình thành xu thế**.
 3. Đánh giá **tác động của xu thế đến an toàn thông tin**.
 4. Liên hệ xu thế với **người dùng, tổ chức, doanh nghiệp**.
-5. Rèn luyện **kỹ năng tìm kiếm --- tổng hợp --- trình bày kỹ thuật**.
+5. Rèn luyện **kỹ năng tìm kiếm -- tổng hợp -- trình bày kỹ thuật**.
 
 ## YÊU CẦU CHUNG
 
@@ -34,7 +34,7 @@ Không chọn ngoài danh sách nêu trên.
 
 ## NỘI DUNG THỰC HÀNH
 
-Sinh viên chọn **Xu thế 1**: **Zero Trust Security** (An ninh theo mô hình Không Tin Cậy) --- mô hình bảo mật hoạt động dựa trên triết lý **"Không bao giờ tin cậy, luôn luôn xác minh"**. Xu thế này được chọn vì tính thời sự cao, sự phổ biến toàn cầu và mức độ tác động sâu rộng đến cả người dùng cá nhân lẫn doanh nghiệp trong bối cảnh chuyển đổi số.
+Sinh viên chọn **Xu thế 1**: **Zero Trust Security** (An ninh theo mô hình Không Tin Cậy) -- mô hình bảo mật hoạt động dựa trên triết lý **"Không bao giờ tin cậy, luôn luôn xác minh"**. Xu thế này được chọn vì tính thời sự cao, sự phổ biến toàn cầu và mức độ tác động sâu rộng đến cả người dùng cá nhân lẫn doanh nghiệp trong bối cảnh chuyển đổi số.
 
 Báo cáo được tổ chức theo 6 phần theo yêu cầu bài thực hành:
 
@@ -42,7 +42,7 @@ Báo cáo được tổ chức theo 6 phần theo yêu cầu bài thực hành:
 - **Phần 2**: Các Đặc Điểm Chính: 6 đặc điểm cốt lõi của mô hình Zero Trust.
 - **Phần 3**: Lợi Ích & Thách Thức: 4 lợi ích và 4 thách thức khi triển khai.
 - **Phần 4**: Tác Động Đến ATTT: Phân tích tác động đến người dùng, doanh nghiệp, quản lý ATTT.
-- **Phần 5**: Liên Hệ Thực Tế: Ví dụ Google BeyondCorp --- triển khai Zero Trust quy mô lớn.
+- **Phần 5**: Liên Hệ Thực Tế: Ví dụ Google BeyondCorp -- triển khai Zero Trust quy mô lớn.
 - **Phần 6**: Nhận Xét Cá Nhân: Đánh giá tính phù hợp với Việt Nam, triển vọng 5 năm, và chuẩn bị cho sinh viên CNTT.
 
 Mỗi phần sẽ được trình bày trong mỗi chương riêng biệt trong báo cáo.
