@@ -26,8 +26,25 @@ Bảng 3: Ví dụ thực tế
 Để minh họa cho cách Zero Trust được triển khai trong thực tế, sinh viên chọn phân tích *Google BeyondCorp* --- được coi là triển khai Zero Trust đầu tiên ở quy mô lớn trên thế giới.
 
 ```{=typst}
-#co-info(title: "Thông tin về Google BeyondCorp")[
-BeyondCorp là giải pháp triển khai Zero Trust của Google. Nó được xây dựng dựa trên kinh nghiệm thực tế trong hơn một thập kỷ tại Google, kết hợp với các ý tưởng và phương pháp hay nhất từ cộng đồng. Bằng cách chuyển quyền kiểm soát truy cập từ ranh giới mạng sang từng người dùng, BeyondCorp cho phép làm việc an toàn từ hầu hết mọi nơi mà không cần VPN truyền thống.
+#co-info(title: "Trích Dẫn")[
+*BeyondCorp là gì?*
+
+BeyondCorp là một mô hình *bảo mật và hạ tầng liên quan* được Google phát triển từ năm 2011. Trong BeyondCorp, quyền truy cập vào các dịch vụ nội bộ được cấp dựa trên *chính sách bảo mật* thể hiện qua nhiều *tín hiệu* (như *danh tính người dùng*, *thông tin thiết bị*) thay vì chỉ dựa trên lòng tin vào kết nối mạng.
+
+Để biết thêm chi tiết, vui lòng xem tài liệu công khai tại:
+
+- #link("https://cloud.google.com/beyondcorp", "BeyondCorp tại Google Cloud Platform")
+- #link("https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/", "BeyondCorp: A New Approach to Enterprise Security")
+]
+```
+
+```{=typst}
+#co-info(title: "Nguyên Văn")[
+*What is BeyondCorp?*
+
+BeyondCorp is a *security model and associated infrastructure* developed at Google since 2011. In BeyondCorp, access to internal services is granted *by expressive security policy based on multiple signals* (user identity, device inventory information) rather than *solely network-based trust*.
+
+For details, please see the externally available documentation below:
 
 - #link("https://cloud.google.com/beyondcorp", "BeyondCorp tại Google Cloud Platform")
 - #link("https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/", "BeyondCorp: A New Approach to Enterprise Security")
