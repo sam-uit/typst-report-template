@@ -51,7 +51,9 @@ For details, please see the externally available documentation below:
 ]
 ```
 
-**Nguyên Tắc Cốt Lõi của BeyondCorp**:
+```{=typst}
+#co-info(title: "Trích Dẫn")[
+*Nguyên Tắc Cốt Lõi của BeyondCorp*
 
 - Kết nối từ một mạng cụ thể **không quyết định** bạn có thể truy cập vào những dịch vụ nào.
   - Không còn "tin tưởng" mạng nội bộ như một vùng an toàn.
@@ -60,9 +62,13 @@ For details, please see the externally available documentation below:
   - Trạng thái thiết bị (có được đăng ký hay không, đang ở vị trí địa lý nào, v.v..).
 - Mọi truy cập phải được **xác thực**, **cấp phép** và **mã hóa**.
   - Chứng minh danh tính, cấp quyền truy cập, mã hóa mọi dữ liệu.
+]
+```
 
 ```{=typst}
-#co-warn(title: "BeyondCorp Principles")[
+#co-warn(title: "Nguyên Văn")[
+*BeyondCorp Principles*
+
 - Connecting from a particular network must not determine which services you can access.
 - Access to services is granted based on what we know about you and your device.
 - All access to services must be authenticated, authorized, and encrypted. 
