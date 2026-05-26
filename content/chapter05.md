@@ -95,6 +95,8 @@ Ví dụ, ở khía cạnh kỹ thuật thuần túy có thể điểm qua một
 
 - Tóm lại, đây là một quá trình thường xuyên, liên tục và được tự động hóa bằng các Policy (chính sách) phù hợp, không phụ thuộc hoặc rất ít phụ thuộc vào sự can thiệp thủ công của con người. Điều này giảm tải cho đội ngũ quản trị hệ thống, đồng thời nâng cao tính chính xác và khách quan trong việc ra quyết định cấp quyền truy cập.
 
+![BeyondCorp -- Thông Tin Thiết Bị](assets/device.png)
+
 Dưới đây là các nội dung tóm tắt sau khi tìm hiểu về Google BeyondCorp.
 
 ```{=typst}
