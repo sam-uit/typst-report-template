@@ -79,19 +79,23 @@ For details, please see the externally available documentation below:
 
 Có nghĩa, đây không thuần túy là một giải pháp phần mềm thuần túy mà là một mô hình **end--to--end** (từ đầu tới cuối) bao gồm mọi khía cạnh: từ con người, quy trình cho tới hạ tầng công nghệ tạo thành một hệ sinh thái.
 
-Ví dụ, ở khía cạnh kỹ thuật thuần túy: Mỗi thiết bị đều phải được khai báo, đăng ký và quản lý trong hệ thống.
+Ví dụ, ở khía cạnh kỹ thuật thuần túy có thể điểm qua một vài khía cạnh nổi bật như sau:
+
+- Mỗi thiết bị đều phải được khai báo, đăng ký và quản lý trong hệ thống.
 
 ![BeyondCorp -- Quản Lý Thiết Bị](assets/chromebook.png)
 
-Tương tự, mỗi người dùng đều được quản lý, theo dõi: đăng nhập ở đâu, thiết bị nào, thiết bị đã được đăng ký trong hệ thống hay chưa, vv...
+- Tương tự, mỗi người dùng đều được quản lý, theo dõi: đăng nhập ở đâu, thiết bị nào, thiết bị đã được đăng ký trong hệ thống hay chưa, phiên bản hệ điều hành, các policy đã được đồng bộ, thời điểm đồng bộ, v.v... nói chung rất rất nhiều yếu tố theo thời gian thực.
 
 ![BeyondCorp -- Quản Lý Người Dùng](assets/user.png)
 
-Tại bất kỳ thời điểm nào trong quá trình kết nối, hệ thống luôn có thông tin/trạng thái của thiết bị & người dùng.
+- Tại bất kỳ thời điểm nào trong quá trình kết nối, hệ thống luôn có thông tin/trạng thái của thiết bị & người dùng.
 
 ![BeyondCorp -- Trạng Thái Truy Cập](assets/status.png)
 
-Đây là một quá trình thường xuyên, liên tục và được tự động hóa bằng các Policy (chính sách) phù hợp, không phụ thuộc hoặc rất ít phụ thuộc vào sự can thiệp thủ công của con người. Điều này giảm tải cho đội ngũ quản trị hệ thống, đồng thời nâng cao tính chính xác và khách quan trong việc ra quyết định cấp quyền truy cập.
+- Tóm lại, đây là một quá trình thường xuyên, liên tục và được tự động hóa bằng các Policy (chính sách) phù hợp, không phụ thuộc hoặc rất ít phụ thuộc vào sự can thiệp thủ công của con người. Điều này giảm tải cho đội ngũ quản trị hệ thống, đồng thời nâng cao tính chính xác và khách quan trong việc ra quyết định cấp quyền truy cập.
+
+Dưới đây là các nội dung tóm tắt sau khi tìm hiểu về Google BeyondCorp.
 
 ```{=typst}
 #figure(
