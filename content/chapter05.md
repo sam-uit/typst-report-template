@@ -21,7 +21,7 @@ Bảng 3: Ví dụ thực tế
 | Lợi ích mang lại | |
 | Hạn chế/Rủi ro | |
 
-## Ví Dụ Thực Tế -- Google BeyondCorp
+## Google BeyondCorp -- Giới Thiệu
 
 Để minh họa cho cách Zero Trust được triển khai trong thực tế, sinh viên chọn phân tích **Google BeyondCorp**, vốn được coi là một trong những triển khai Zero Trust đầu tiên ở quy mô lớn trên thế giới.
 
@@ -79,6 +79,8 @@ For details, please see the externally available documentation below:
 
 Có nghĩa, đây không thuần túy là một giải pháp phần mềm thuần túy mà là một mô hình **end--to--end** (từ đầu tới cuối) bao gồm mọi khía cạnh: từ con người, quy trình cho tới hạ tầng công nghệ tạo thành một hệ sinh thái.
 
+## Google BeyondCorp -- Ví Dụ Thực Tế
+
 Ví dụ, ở khía cạnh kỹ thuật thuần túy có thể điểm qua một vài khía cạnh nổi bật như sau:
 
 - Mỗi thiết bị đều phải được khai báo, đăng ký và quản lý trong hệ thống.
@@ -96,6 +98,8 @@ Ví dụ, ở khía cạnh kỹ thuật thuần túy có thể điểm qua một
 - Tóm lại, đây là một quá trình thường xuyên, liên tục và được tự động hóa bằng các Policy (chính sách) phù hợp, không phụ thuộc hoặc rất ít phụ thuộc vào sự can thiệp thủ công của con người. Điều này giảm tải cho đội ngũ quản trị hệ thống, đồng thời nâng cao tính chính xác và khách quan trong việc ra quyết định cấp quyền truy cập.
 
 ![BeyondCorp -- Thông Tin Thiết Bị](assets/device.png)
+
+## Google BeyondCorp -- Tổng Quan
 
 Dưới đây là các nội dung tóm tắt sau khi tìm hiểu về Google BeyondCorp.
 
@@ -143,7 +147,7 @@ Dưới đây là các nội dung tóm tắt sau khi tìm hiểu về Google Bey
 )
 ```
 
-## Tổng Quan
+## Google BeyondCorp -- Bình Luận
 
 Google bắt đầu phát triển BeyondCorp từ năm 2011 như một phản ứng trước các cuộc tấn công APT (Advanced Persistent Threat) nhắm vào các công ty công nghệ lớn tại Silicon Valley. Trước đó, Google cũng giống nhiều doanh nghiệp khác --- phụ thuộc vào mô hình bảo mật phân cấp trong/ngoài: ai ở trong mạng nội bộ thì được tin cậy. Tuy nhiên, với sự gia tăng của thiết bị di động và điện toán đám mây, khái niệm "vành đai" ngày càng mờ nhạt.
 
