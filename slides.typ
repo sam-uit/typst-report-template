@@ -1,8 +1,8 @@
 #import "template/libslides.typ": *
-#let data = yaml("config/metadata.yaml")
-#import "@preview/numbly:0.1.0": numbly
-
 #let build_lang = sys.inputs.at("lang", default: "vi")
+#let raw_data = yaml("config/metadata.yaml")
+#let data = raw_data.at(build_lang)
+#import "@preview/numbly:0.1.0": numbly
 
 #show: presentation.with(
   title: data.assignment.title,

@@ -17,7 +17,9 @@ Sử dụng backtick để viết `code nội dòng`. Ví dụ: hàm `document()
   ```typst
   // Cú pháp tối thiểu để sử dụng template
   #import "template/lib.typ": *
-  #let data = yaml("config/metadata.yaml")
+  #let build_lang = sys.inputs.at("lang", default: "vi")
+  #let raw_data = yaml("config/metadata.yaml")
+  #let data = raw_data.at(build_lang)
 
   #let acronyms = csv("content/acronyms.csv")
 

@@ -1,5 +1,7 @@
 #import "../template/lib.typ": *
-#let data = yaml("../config/metadata.yaml")
+#let build_lang = sys.inputs.at("lang", default: "vi")
+#let raw_data = yaml("../config/metadata.yaml")
+#let data = raw_data.at(build_lang)
 
 // YOUR CONTENT HERE
 

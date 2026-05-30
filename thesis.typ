@@ -3,12 +3,12 @@
 
 // Import template and metadata
 #import "template/lib.typ": *
-#let data = yaml("config/metadata.yaml")
+#let build_lang = sys.inputs.at("lang", default: "vi")
+#let raw_data = yaml("config/metadata.yaml")
+#let data = raw_data.at(build_lang)
 
 // Load acronyms
 #let acronyms = csv("content/acronyms.csv")
-
-#let build_lang = sys.inputs.at("lang", default: "vi")
 
 // Show document with thesis class
 #show: document.with(
