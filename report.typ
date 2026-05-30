@@ -3,7 +3,9 @@
 
 // Import template and metadata
 #import "template/lib.typ": *
-#let build_lang = sys.inputs.at("lang", default: "vi")
+#let cfg = yaml("config/config.yaml")
+#let fallback_lang = cfg.at("default_lang", default: "vi")
+#let build_lang = sys.inputs.at("lang", default: fallback_lang)
 #let raw_data = yaml("config/metadata.yaml")
 #let data = raw_data.at(build_lang)
 

@@ -4,7 +4,7 @@
 #let raw_data = yaml("config/metadata.yaml")
 #let data = raw_data.at(build_lang)
 #import "themes/aqua.typ": *
-#import "template/fonts.typ": *
+#import "template/core/tokens.typ": *
 
 #show: aqua-theme.with(
   aspect-ratio: "16-9",
@@ -25,7 +25,7 @@
   ),
 )
 
-#set text(font: body-font, size: 20pt)
+#set text(font: font-serif, size: 20pt)
 
 // Block code style with Line Numbering
 #show raw.where(block: true): it => align(start)[
@@ -38,7 +38,7 @@
     width: 100%,
     clip: true,
   )[
-    #text(font: code-font, size: 1em)[
+    #text(font: font-mono, size: 1em)[
       #grid(
         columns: (auto, 1fr),
         inset: (x, y) => {
