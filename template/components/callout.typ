@@ -1,7 +1,8 @@
 // MARK: Call Out Boxes
+#import "../core/design-tokens.typ": *
 
 // Generic Callout Function
-#let callout(body, title: "Note", color: blue, icon: "i") = {
+#let callout(body, title: "Note", color: brand-primary, icon: "i") = {
   block(
     fill: color.lighten(90%),
     stroke: (left: 4pt + color),
@@ -22,7 +23,7 @@
 }
 
 // Note/Information
-#let co-note(body, title: "Note") = callout(body, title: title, color: blue, icon: "n")
+#let co-note(body, title: "Note") = callout(body, title: title, color: brand-primary, icon: "n")
 #let co-info(body, title: "Info") = callout(body, title: title, color: teal, icon: "i")
 
 // Alert/Warning
