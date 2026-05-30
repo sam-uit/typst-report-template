@@ -24,8 +24,7 @@
 // MARK: Imports
 
 // Sub-modules
-#import "core/fonts.typ": *
-#import "core/colors.typ": *
+#import "core/tokens.typ": *
 // Removed design-tokens.typ as it's merged into colors
 #import "core/utils.typ": *
 #import "langs/i18n.typ": i18n-labels
@@ -172,7 +171,7 @@
 
   // Typography
   set text(
-    font: body-font,
+    font: font-serif,
     size: cfg-font-size,
     weight: "regular",
     lang: text-lang,
@@ -293,13 +292,13 @@
         dir: ttb,
         spacing: 1.5em,
         text(
-          font: heading-font,
+          font: font-sans,
           size: 18pt,
           weight: "regular",
           fill: clr-heading-rule,
         )[#_labels.appendix-prefix #counter(heading).display()],
         text(
-          font: heading-font,
+          font: font-sans,
           size: 30pt,
           weight: "regular",
         )[#it.body],
@@ -328,13 +327,13 @@
         dir: ttb,
         spacing: 1.5em,
         text(
-          font: heading-font,
+          font: font-sans,
           size: 18pt,
           weight: "regular",
           fill: clr-heading-rule,
         )[#_labels.appendix-prefix #counter(heading).display()],
         text(
-          font: heading-font,
+          font: font-sans,
           size: 30pt,
           weight: "regular",
         )[#it.body],
@@ -357,7 +356,7 @@
   let _labels = i18n-labels("en")
 
   set heading(numbering: "I", supplement: _labels.bibliography-supplement)
-  show link: set text(fill: brand-primary)
+  show link: set text(fill: clr-primary)
 
   show heading.where(level: 1): it => {
     pagebreak()
@@ -366,13 +365,13 @@
         dir: ttb,
         spacing: 1.5em,
         text(
-          font: heading-font,
+          font: font-sans,
           size: 18pt,
           weight: "regular",
           fill: clr-heading-rule,
         )[],
         text(
-          font: heading-font,
+          font: font-sans,
           size: 30pt,
           weight: "regular",
         )[#it.body],
@@ -393,7 +392,7 @@
   let _labels = i18n-labels(lang)
 
   set heading(numbering: "I", supplement: _labels.bibliography-supplement)
-  show link: set text(fill: brand-primary)
+  show link: set text(fill: clr-primary)
 
   show heading.where(level: 1): it => {
     pagebreak()
@@ -402,13 +401,13 @@
         dir: ttb,
         spacing: 1.5em,
         text(
-          font: heading-font,
+          font: font-sans,
           size: 18pt,
           weight: "regular",
           fill: clr-heading-rule,
         )[],
         text(
-          font: heading-font,
+          font: font-sans,
           size: 30pt,
           weight: "regular",
         )[#it.body],

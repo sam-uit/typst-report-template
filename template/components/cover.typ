@@ -1,4 +1,4 @@
-#import "/template/core/fonts.typ": *
+#import "/template/core/tokens.typ": *
 #import "/template/core/utils.typ": static
 
 // MARK: Cover Page
@@ -16,19 +16,19 @@
   align(center)[
     // MARK: University Name
     #if university.at("name", default: "") != "" [
-      #text(font: heading-font, size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.at("name", default: ""))] \
+      #text(font: font-sans, size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.at("name", default: ""))] \
       #v(0.2em)
     ]
     #if university.at("college", default: "") != "" [
-      #text(font: heading-font, size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.at("college", default: ""))] \
+      #text(font: font-sans, size: 18pt, weight: "regular", fill: black.lighten(50%))[#upper(university.at("college", default: ""))] \
       #v(0.2em)
     ]
     // #if university.center != "" [
-    //   #text(font: heading-font, size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.center)] \
+    //   #text(font: font-sans, size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.center)] \
     //   #v(0.2em)
     // ]
     #if university.at("faculty", default: "") != "" [
-      #text(font: heading-font, size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.at("faculty", default: ""))] \
+      #text(font: font-sans, size: 16pt, weight: "regular", fill: black.lighten(50%))[#upper(university.at("faculty", default: ""))] \
       #v(0.2em)
     ]
 
@@ -74,11 +74,11 @@
       #stack(
         dir: ttb,
         spacing: 2em, // Khoảng cách (vspace) giữa title và subtitle
-        text(font: heading-font, size: 20pt, weight: "regular")[
+        text(font: font-sans, size: 20pt, weight: "regular")[
           #smallcaps[#assignment.at("title", default: "")]
         ],
         if assignment.at("subtitle", default: "") != none and assignment.at("subtitle", default: "") != "" {
-          text(font: heading-font, size: 28pt, weight: "regular")[
+          text(font: font-sans, size: 28pt, weight: "regular")[
             #assignment.at("subtitle", default: "")
           ]
         },

@@ -7,8 +7,7 @@
 // Extracted from the monolithic lib.typ. Each function takes the
 // resolved configuration so rules adapt to class + output mode.
 
-#import "fonts.typ": *
-#import "colors.typ": *
+#import "tokens.typ": *
 
 // MARK: Heading Rules
 
@@ -23,7 +22,7 @@
 
   show heading.where(level: 1): it => [
     #set align(left)
-    #set text(font: heading-font, size: 20pt, weight: "regular")
+    #set text(font: font-sans, size: 20pt, weight: "regular")
     #block(
       width: 100%,
       stroke: (bottom: 0.5pt + clr-heading-rule),
@@ -54,7 +53,7 @@
       // Article / Report: simple underlined heading
       align(left)[
         #set text(
-          font: heading-font,
+          font: font-sans,
           size: 20pt,
           weight: "regular",
         )
@@ -73,13 +72,13 @@
           dir: ttb,
           spacing: 2em,
           text(
-            font: heading-font,
+            font: font-sans,
             size: 18pt,
             weight: "regular",
             fill: clr-heading-rule,
           )[#if it.numbering != none [#labels.chapter-prefix #counter(heading).display(it.numbering)]],
           text(
-            font: heading-font,
+            font: font-sans,
             size: 30pt,
             weight: "regular",
           )[#smallcaps[#it.body]],
@@ -120,7 +119,7 @@
       clip: true,
       breakable: true,
     )[
-      #text(font: code-font, size: 1em)[
+      #text(font: font-mono, size: 1em)[
         #grid(
           columns: (auto, 1fr),
           inset: (x, y) => {

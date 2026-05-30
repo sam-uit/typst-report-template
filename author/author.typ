@@ -17,7 +17,7 @@ Thành viên của nhóm và bảng nhiệm vụ.
       if current_cell.y > 0 and current_cell.x in (0, 1) {
         // Use a monofont for the student id column
         text(
-          font: document-fonts.mono,
+          font: font-mono,
           size: 0.9em,
           weight: 300,
           fill: black.lighten(40%),

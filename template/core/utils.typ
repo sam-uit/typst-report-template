@@ -5,13 +5,13 @@
 // License: MIT
 
 // MARK: Dictionary Merge
-#import "colors.typ": *
+#import "tokens.typ": *
 
 #let doc-format = sys.inputs.at("format", default: "thesis")
 
 #let summary(body) = {
   if doc-format == "slides" {
-    block(text(size: 20pt, fill: brand-primary, body)) // Use brand-primary here
+    block(text(size: 20pt, fill: clr-primary, body)) // Use clr-primary here
   } else {
     body
   }
@@ -74,7 +74,7 @@
 // MARK: Styled Link
 // Link that respects text color but underlines, or specific color
 #let styled-link(dest, content) = {
-  link(dest)[#text(fill: brand-primary)[#content]]
+  link(dest)[#text(fill: clr-primary)[#content]]
 }
 
 // MARK: TOC Section Wrapper

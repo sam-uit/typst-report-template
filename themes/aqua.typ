@@ -1,6 +1,5 @@
 #import "@preview/touying:0.6.1": *
-#import "/template/core/fonts.typ": *
-#import "/template/core/colors.typ": *
+#import "/template/core/tokens.typ": *
 
 /// Default slide function for the presentation.
 ///
@@ -44,9 +43,9 @@
         align(
           left + horizon,
           // VIẾT HOA heading level 2.
-          // Sử dụng heading-font.
+          // Sử dụng font-sans.
           h(1.5em)
-            + text(fill: white, font: heading-font, upper(utils.call-or-display(self, self.store.header))),
+            + text(fill: white, font: font-sans, upper(utils.call-or-display(self, self.store.header))),
         ),
       ),
     )
@@ -113,12 +112,12 @@
     stack(
       spacing: 3em,
       if info.title != none {
-        text(size: 50pt, weight: "bold", font: heading-font, fill: self.colors.primary, info.title)
+        text(size: 50pt, weight: "bold", font: font-sans, fill: self.colors.primary, info.title)
       },
       // Hiện thị subtitle nếu có
       // vd: Tên đề tài
       if info.subtitle != none {
-        text(size: 40pt, weight: "bold", font: heading-font, fill: self.colors.primary, info.subtitle)
+        text(size: 40pt, weight: "bold", font: font-sans, fill: self.colors.primary, info.subtitle)
       },
       if info.author != none {
         text(
@@ -222,7 +221,7 @@
           text(
             fill: self.colors.primary,
             size: 166pt,
-            font: heading-font,
+            font: font-sans,
             utils.display-current-heading-number(level: level),
           ),
         ),
@@ -232,7 +231,7 @@
             fill: self.colors.primary,
             size: 60pt,
             weight: "bold",
-            font: heading-font,
+            font: font-sans,
             utils.display-current-heading(level: level, numbered: false),
           ),
         ),
@@ -329,10 +328,10 @@
       alert: utils.alert-with-primary-color,
     ),
     config-colors(
-      primary: brand-primary,
-      primary-light: brand-primary-light,
-      primary-lightest: brand-primary-lightest,
-      neutral-lightest: brand-neutral-lightest,
+      primary: clr-primary,
+      primary-light: clr-primary-light,
+      primary-lightest: clr-primary-lightest,
+      neutral-lightest: clr-neutral-lightest,
     ),
     // save the variables for later use
     config-store(

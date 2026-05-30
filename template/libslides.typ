@@ -1,6 +1,5 @@
 #import "/themes/stargazer.typ": *
-#import "core/fonts.typ": *
-#import "core/colors.typ": *
+#import "core/tokens.typ": *
 
 // MARK: Presentation Template
 #let presentation(
@@ -23,12 +22,11 @@
     ),
     lang: "vi",
     config-colors(
-      primary: brand-secondary,
-      primary-dark: brand-secondary-dark,
-      secondary: brand-neutral-lightest,
-      tertiary: brand-tertiary,
+      primary: clr-primary,
+      primary-light: clr-primary-light,
+      primary-lightest: clr-primary-lightest,
       // Body text color
-      neutral-lightest: brand-neutral-lightest,
+      neutral-lightest: clr-neutral-lightest,
       neutral-darkest: brand-neutral-darkest,
     ),
   )
