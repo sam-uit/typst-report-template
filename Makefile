@@ -18,13 +18,21 @@ FILTERS := pandoc/vietnamese-slugs.lua pandoc/vspacing.lua
 
 # Definition of files to watch
 # Includes: Markdown, Config/Filters, and Typst templates
-# Removed main.typ, added report.typ, thesis.typ
 WATCH_FILES := $(MD_FILES) $(FILTERS) $(CONFIG) template/ report.typ thesis.typ slides.typ
 
-.PHONY: all clean typ watch report thesis slides
+.PHONY: all vi en clean typ watch help
 
-# Default target: Build all PDFs
-all: report.pdf thesis.pdf slides.pdf
+all: vi en
+
+vi:
+	typst compile --input lang=vi --input format=thesis thesis.typ output/Thesis_vi.pdf
+	typst compile --input lang=vi --input format=article report.typ output/Article_vi.pdf
+	typst compile --input lang=vi --input format=slides slides.typ output/Slides_vi.pdf
+
+en:
+	typst compile --input lang=en --input format=thesis thesis.typ output/Thesis_en.pdf
+	typst compile --input lang=en --input format=article report.typ output/Article_en.pdf
+	typst compile --input lang=en --input format=slides slides.typ output/Slides_en.pdf
 
 # Target: Only convert MD to TYP (no PDF compile)
 typ: $(TYP_FILES)
@@ -34,22 +42,9 @@ typ: $(TYP_FILES)
 %.typ: %.md $(CONFIG) $(FILTERS)
 	pandoc -d $(CONFIG) "$<" -o "$@"
 
-# Report PDF
-report.pdf: report.typ $(TYP_FILES)
-	typst compile report.typ --font-path template/fonts
-
-# Thesis PDF
-thesis.pdf: thesis.typ $(TYP_FILES)
-	typst compile thesis.typ --font-path template/fonts
-
-# Slides PDF
-slides.pdf: slides.typ
-	typst compile slides.typ --font-path template/fonts
-
-# Clean build artifacts
 clean:
+	rm -rf output/*.pdf
 	rm -f report.pdf thesis.pdf slides.pdf main.pdf
-	# rm -f content/*.typ
 
 # WATCH MODE
 # Finds all relevant files and runs 'make all' on change
@@ -57,3 +52,6 @@ watch:
 	@echo "Started watching with entr..."
 	@find config content author pandoc template . -maxdepth 2 -name "*.md" -o -name "*.typ" -o -name "*.lua" -o -name "*.yaml" \
 	| entr -r $(MAKE) all
+
+help:
+	@echo "  help         - Hiển thị trợ giúp này"
