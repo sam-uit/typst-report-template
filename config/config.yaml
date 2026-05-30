@@ -1,44 +1,26 @@
-# config/template.yaml
-# User-facing configuration for the UIT Typst Report Template.
-# Edit this file to customise fonts and colours without touching /template/.
-#
-# All keys are optional — omitting a key falls back to the built-in default.
-#
-# FONTS
-# ─────
-# Typst uses the font name exactly as it appears in the font file metadata.
-# Run `typst fonts` to list every font available in your environment.
-#
-# Suggested alternatives:
-#   sans  : "Montserrat", "Google Sans", "Noto Sans"
-#   serif : "Lora", "Linux Libertine", "Noto Serif"
-#   mono  : "Fira Code", "JetBrains Mono", "Ubuntu Mono"
+# config/config.yaml
+# Single Source of Truth for Project Config and Design Tokens
+
+default_lang: "vi" # Fallback language if not provided via CLI
 
 fonts:
-  # Used for headings, titles, and display text
   sans:  "Tex Gyre Adventor"
-  # Used for body text, captions, and tables
   serif: "CMU Serif"
-  # Used for code blocks and inline code
   mono:  "Google Sans Code"
 
-# TODO: Convert the template into a single-binary generator / engine that
-# embeds Typst as a library and generates .pdf from .md or .typ source files,
-# so that all configuration (fonts, colours, page geometry, metadata) lives in
-# a single YAML/TOML file and contributors do not need a Typst installation.
-
-# COLORS
-# ──────
-# Base hex color values used across the template, specifically compatible
-# with the Touying slides configuration.
 colors:
-  brand:
-    primary: "#003F88"
-    primary-light: "#2159A5"
-    primary-lightest: "#F2F4F8"
-    secondary: "#0778b5"
-    secondary-dark: "#004078"
-    tertiary: "#6709ea"
-  neutral:
-    lightest: "#FFFFFF"
-    darkest: "#20293F"
+  # Touying Aqua Theme Core Colors
+  primary:          "#003F88"
+  primary-light:    "#2159A5"
+  primary-lightest: "#F2F4F8"
+  neutral-lightest: "#FFFFFF"
+
+  # Semantic Colors (For Callouts & Alerts)
+  note:    "#003F88"
+  info:    "#008080"
+  warning: "#FFA500"
+  error:   "#FF0000"
+  success: "#008000"
+
+ui:
+  radius: 8 # Represents 8pt
