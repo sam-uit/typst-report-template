@@ -1,5 +1,5 @@
 // MARK: Call Out Boxes
-#import "../core/design-tokens.typ": *
+#import "../core/colors.typ": *
 
 // Generic Callout Function
 #let callout(body, title: "Note", color: brand-primary, icon: "i") = {

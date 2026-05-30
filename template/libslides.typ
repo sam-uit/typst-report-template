@@ -1,6 +1,6 @@
 #import "/themes/stargazer.typ": *
 #import "core/fonts.typ": *
-#import "core/design-tokens.typ": *
+#import "core/colors.typ": *
 
 // MARK: Presentation Template
 #let presentation(

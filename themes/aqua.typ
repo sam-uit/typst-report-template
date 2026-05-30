@@ -1,6 +1,6 @@
 #import "@preview/touying:0.6.1": *
 #import "/template/core/fonts.typ": *
-#import "/template/core/design-tokens.typ": *
+#import "/template/core/colors.typ": *
 
 /// Default slide function for the presentation.
 ///
@@ -46,7 +46,7 @@
           // VIẾT HOA heading level 2.
           // Sử dụng heading-font.
           h(1.5em)
-            + text(fill: white, font: font-heading, upper(utils.call-or-display(self, self.store.header))),
+            + text(fill: white, font: heading-font, upper(utils.call-or-display(self, self.store.header))),
         ),
       ),
     )
@@ -113,12 +113,12 @@
     stack(
       spacing: 3em,
       if info.title != none {
-        text(size: 50pt, weight: "bold", font: font-heading, fill: self.colors.primary, info.title)
+        text(size: 50pt, weight: "bold", font: heading-font, fill: self.colors.primary, info.title)
       },
       // Hiện thị subtitle nếu có
       // vd: Tên đề tài
       if info.subtitle != none {
-        text(size: 40pt, weight: "bold", font: font-heading, fill: self.colors.primary, info.subtitle)
+        text(size: 40pt, weight: "bold", font: heading-font, fill: self.colors.primary, info.subtitle)
       },
       if info.author != none {
         text(
@@ -222,7 +222,7 @@
           text(
             fill: self.colors.primary,
             size: 166pt,
-            font: font-heading,
+            font: heading-font,
             utils.display-current-heading-number(level: level),
           ),
         ),
@@ -232,7 +232,7 @@
             fill: self.colors.primary,
             size: 60pt,
             weight: "bold",
-            font: font-heading,
+            font: heading-font,
             utils.display-current-heading(level: level, numbered: false),
           ),
         ),

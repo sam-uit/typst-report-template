@@ -5,7 +5,7 @@
 // License: MIT
 
 // MARK: Dictionary Merge
-#import "design-tokens.typ": *
+#import "colors.typ": *
 
 #let doc-format = sys.inputs.at("format", default: "thesis")
 

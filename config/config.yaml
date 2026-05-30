@@ -26,3 +26,19 @@ fonts:
 # embeds Typst as a library and generates .pdf from .md or .typ source files,
 # so that all configuration (fonts, colours, page geometry, metadata) lives in
 # a single YAML/TOML file and contributors do not need a Typst installation.
+
+# COLORS
+# ──────
+# Base hex color values used across the template, specifically compatible
+# with the Touying slides configuration.
+colors:
+  brand:
+    primary: "#003F88"
+    primary-light: "#2159A5"
+    primary-lightest: "#F2F4F8"
+    secondary: "#0778b5"
+    secondary-dark: "#004078"
+    tertiary: "#6709ea"
+  neutral:
+    lightest: "#FFFFFF"
+    darkest: "#20293F"

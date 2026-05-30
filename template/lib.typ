@@ -26,7 +26,7 @@
 // Sub-modules
 #import "core/fonts.typ": *
 #import "core/colors.typ": *
-#import "core/design-tokens.typ": *
+// Removed design-tokens.typ as it's merged into colors
 #import "core/utils.typ": *
 #import "langs/i18n.typ": i18n-labels
 #import "core/class-defaults.typ": class-defaults
