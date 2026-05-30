@@ -23,20 +23,17 @@
 
   // Summary / Abstract (thesis only)
   if config.show-summary {
-    include "/content/preamble-summary.typ"
-    pagebreak()
+    // Moved to SSOT entry files
   }
 
   // Forewords (thesis only)
   if config.show-forewords {
-    include "/content/preamble-forewords.typ"
-    pagebreak()
+    // Moved to SSOT entry files
   }
 
   // Acknowledgement (thesis only)
   if config.show-acknowledgement {
-    include "/content/preamble-ack.typ"
-    pagebreak()
+    // Moved to SSOT entry files
   }
 
   // Instructor's comment (thesis only)
