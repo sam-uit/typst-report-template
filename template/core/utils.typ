@@ -5,6 +5,24 @@
 // License: MIT
 
 // MARK: Dictionary Merge
+#import "design-tokens.typ": *
+
+#let doc-format = sys.inputs.at("format", default: "thesis")
+
+#let summary(body) = {
+  if doc-format == "slides" {
+    block(text(size: 20pt, fill: brand-primary, body)) // Use brand-primary here
+  } else {
+    body
+  }
+}
+
+#let detail(body) = {
+  if doc-format != "slides" {
+    body
+  }
+}
+
 /// Shallow merge of two dictionaries. Values in `b` override `a`.
 /// Used to overlay user overrides on top of class defaults.
 ///
@@ -56,7 +74,7 @@
 // MARK: Styled Link
 // Link that respects text color but underlines, or specific color
 #let styled-link(dest, content) = {
-  link(dest)[#text(fill: blue)[#content]]
+  link(dest)[#text(fill: brand-primary)[#content]]
 }
 
 // MARK: TOC Section Wrapper
