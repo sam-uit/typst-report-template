@@ -2,6 +2,7 @@
 #let cfg = yaml("../../config/config.yaml")
 
 // Safely extract main blocks (fallback to empty dict if missing)
+#let fallback_lang = cfg.at("default_lang", default: "vi")
 #let _fonts = cfg.at("fonts", default: (:))
 #let _colors = cfg.at("colors", default: (:))
 #let _ui = cfg.at("ui", default: (:))

@@ -27,7 +27,6 @@
       primary-lightest: clr-primary-lightest,
       // Body text color
       neutral-lightest: clr-neutral-lightest,
-      neutral-darkest: brand-neutral-darkest,
     ),
   )
 
