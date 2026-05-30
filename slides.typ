@@ -2,6 +2,8 @@
 #let data = yaml("config/metadata.yaml")
 #import "@preview/numbly:0.1.0": numbly
 
+#let build_lang = sys.inputs.at("lang", default: "vi")
+
 #show: presentation.with(
   title: data.assignment.title,
   subtitle: data.assignment.subtitle,
@@ -17,7 +19,10 @@
 // #outline-slide()
 
 // MARK: - Nội Dung Chính
-#include "content/contents.typ"
+#let chapters = ("01", "02", "03", "04", "05")
+#for ch in chapters {
+  include "content/chapter-" + ch + "-" + build_lang + ".typ"
+}
 
 // MARK: - Kết Thúc
 
@@ -28,3 +33,5 @@
 ]
 
 #ending-slide(title: [Thank You!])[Questions?]
+
+#bibliography("content/bibliography.yaml", title: "Tài Liệu Tham Khảo", style: "ieee")

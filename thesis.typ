@@ -8,6 +8,8 @@
 // Load acronyms
 #let acronyms = csv("content/acronyms.csv")
 
+#let build_lang = sys.inputs.at("lang", default: "vi")
+
 // Show document with thesis class
 #show: document.with(
   ..data,
@@ -16,21 +18,20 @@
   font-size: 11pt,
   two-sided: false,
   output: "digital",
-  lang: "vi",
+  lang: build_lang,
   acronyms: acronyms,
 )
 
 // Content goes here
-#include "content/chapter01.typ"
-#include "content/chapter02.typ"
-#include "content/chapter03.typ"
-#include "content/chapter04.typ"
-#include "content/chapter05.typ"
+#let chapters = ("01", "02", "03", "04", "05")
+#for ch in chapters {
+  include "content/chapter-" + ch + "-" + build_lang + ".typ"
+}
 
 // Show appendix
-#show: appendix-l10n.with("vi")
+#show: appendix-l10n.with(build_lang)
 #include "content/appendixA.typ"
 
 // Show bibliography
-#show: bibliography-page-l10n.with("vi")
+#show: bibliography-page-l10n.with(build_lang)
 #bibliography("content/bibliography.yaml", title: "Tài Liệu Tham Khảo", style: "ieee")
