@@ -1,5 +1,13 @@
 # University Report & Thesis Template
 
+> [!IMPORTANT]
+> TODO: Làm một phiên bản đáp ứng các yêu cầu của UIT trong hướng dẫn về biểu mẫu tại: <https://httt.uit.edu.vn/cac-bieu-mau/>
+>
+> Bao gồm:
+>
+> - UIT_Phu-luc-3_Mau-bao-cao
+> - UIT_Phu-luc-2_Hinh-thuc-trinh-bay-KLTN
+
 A professional [Typst](https://typst.app/) template for academic reports, theses, and slide presentations.
 
 > [!WARNING]
